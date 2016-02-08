@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StringSplit</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StringSplit</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Splits up a string into substrings depending on the given delimiters.</span><span lang="fr" style="display: none">Découpe une chaîne en tableau de sous-chaînes selon des délimiteurs donnés.</span></span><br></p>
+  <p class="codeheader">StringSplit ( "string", "delimiters" [, flag = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">string</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The string to evaluate.</span><span lang="fr" style="display: none">La chaîne à traiter.</span></span></td>
+      </tr>
+      <tr>
+        <td>delimiters</td>
+        <td><span class="segments"><span lang="en">One or more characters to use as delimiters (case sensitive).</span><span lang="fr" style="display: none">Un ou plusieurs caractères à utiliser comme délimiteurs (sensible à la casse).</span></span></td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td>
+          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how the string split works, add multiple flag values together if required:</span><span lang="fr" style="display: none">Modifie le fonctionnement de la fonction, ajoutez plusieurs valeurs de flag ensemble si besoin:</span></span><br>
+          &nbsp;&nbsp;&nbsp; $STR_CHRSPLIT (0) = each character in the delimiter string will mark where to split the string (default)<br>
+          &nbsp;&nbsp;&nbsp; $STR_ENTIRESPLIT (1) = entire delimiter string is needed to mark the split<br>
+          &nbsp;&nbsp;&nbsp; $STR_NOCOUNT (2) = disable the return count in the first element - effectively makes the array 0-based (must use <a href="UBound.htm">UBound()</a> to get the size of the array in this case).<br>
+          <br>
+          Constants are defined in StringConstants.au3.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns an array, by default the first element ($aArray[0]) contains the number of strings returned, the remaining elements ($aArray[1], $aArray[2], etc.) contain the delimited strings.</span><span lang="fr" style="display: none">Retourne un tableau, par défaut le premier élément $array[0] contient le nombre de chaînes retournées, les éléments qui restent $array[1], $array[2], etc.contiennent les chaînes découpées.</span></span> <span class="segments"><span lang="en">If the flag parameter is set to $STR_NOCOUNT (2) then the count is not returned in the first element.</span><span lang="fr" style="display: none">Si le paramètre 'flag' est défini à $STR_NOCOUNT (2), alors le comptage n'est pas retourné dans le premier élément.</span></span><br>
+  <br>
+  If no delimiters were found then the @error flag is set to 1:<br>
+  If flag is not equal to $STR_NOCOUNT, $aArray[0] is set to 1 and the full string is returned in $aArray[1].<br>
+  If flag is equal to $STR_NOCOUNT, the full string is returned in $aArray[0].<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">If you use an empty string "" for the delimiters, each character will be returned as an element.</span><span lang="fr" style="display: none">Si vous utilisez une chaîne vide "" comme délimiteur, chaque caractère sera retourné comme un élément.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If the delimiter string contains several characters function behaviour depends on the flag setting.</span><span lang="fr" style="display: none">Si la chaîne des délimiteurs contient plusieurs caractères, le comportement de la fonction dépend du paramètre flag.</span></span> <span class="segments"><span lang="en">If set to $STR_CHRSPLIT the string will be split at every instance of each of the individual characters in the delimiter - if set to $STR_ENTIRESPLIT then the string will only be split when the entire delimiter string is encountered.</span><span lang="fr" style="display: none">S'il est défini à $STR_CHRSPLIT la chaîne sera coupée à chaque instance de chaque caractère delimiteur - s'il est défini à $STR_ENTIRESPLIT alors la chaîne sera coupée seulement quand la chaîne entière des délimiteurs est rencontrée.</span></span> <span class="segments"><span lang="en">See second example below.</span><span lang="fr" style="display: none">Voir le second exemple ci-dessous.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Note that the macro @CRLF is actually a 2 character string, so unless the flag parameter to $STR_ENTIRESPLIT extra blank lines will be generated as the string is split on both @CR and @LF.</span><span lang="fr" style="display: none">Remarquez que la macro @CRLF est actuellement une chaîne de 2 caractères, aussi si le paramètre flag est défini à $STR_ENTIRESPLIT des lignes vides seront générées puisque la chaîne sera coupée à la fois par @CR et @LF.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><a href="StringSplit.htm">StringSplit()</a> is very useful as an alternative to <a href="StringInStr.htm">StringInStr()</a> as well as a means to populate an array.</span><span lang="fr" style="display: none"><a href="StringSplit.htm">StringSplit()</a> est une très bonne alternative à <a href="StringInStr.htm">StringInStr()</a> et comme moyen de remplissage d'un tableau.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="StringInStr.htm">StringInStr</a>, <a href="StringLeft.htm">StringLeft</a>, <a href="StringLen.htm">StringLen</a>, <a href="StringLower.htm">StringLower</a>, <a href="StringMid.htm">StringMid</a>, <a href="StringRight.htm">StringRight</a>, <a href="StringTrimLeft.htm">StringTrimLeft</a>, <a href="StringTrimRight.htm">StringTrimRight</a>, <a href="StringUpper.htm">StringUpper</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringSplit.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aDays</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringSplit.htm"><span class="S4">StringSplit</span></a><span class="S8">(</span><span class="S7">"Mon,Tues,Wed,Thur,Fri,Sat,Sun"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">","</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Split the string of days using the delimiter "," and the default flag value.</span><span lang="fr" style="display: none">Diviser la chaîne de jour en utilisant le délimiteur \",\" et la valeur de l'indicateur de défaut.</span></span></span></span>
+<span class="S0">    </span><span class="S2">#cs</span>
+<span class="S2">        The array returned will contain the following values:</span>
+<span class="S2">        $aDays[1] = "Mon"</span>
+<span class="S2">        $aDays[2] = "Tues"</span>
+<span class="S2">        $aDays[3] = "Wed"</span>
+<span class="S2">        ...</span>
+<span class="S2">        $aDays[7] = "Sun"</span>
+<span class="S2">    #ce</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><span class="S9">$aDays</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Loop through the array returned by StringSplit to display the individual values.</span><span lang="fr" style="display: none">Boucle dans le tableau renvoyé par StringSplit pour afficher les valeurs individuelles.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"$aDays["</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"] - "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aDays</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">])</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringSplit[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StringConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sText</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"This\nline\ncontains\nC-style breaks."</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Define a variable with a string of text.</span><span lang="fr" style="display: none">Définir une variable avec une chaîne de texte.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringSplit.htm"><span class="S4">StringSplit</span></a><span class="S8">(</span><span class="S9">$sText</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'\n'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$STR_ENTIRESPLIT</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Pass the variable to StringSplit and using the delimiter "\n".</span><span lang="fr" style="display: none">Passer la variable à StringSplit et en utilisant le séparateur \"\\ n\".</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Note that flag parameter is set to $STR_ENTIRESPLIT (1) as it would split at \ or n otherwise.</span><span lang="fr" style="display: none">Notez que le paramètre de drapeau est défini sur $STR_ENTIRESPLIT (1) comme il serait divisé à \\ n ou autrement.</span></span></span></span>
+<span class="S0">    </span><span class="S2">#cs</span>
+<span class="S2">        The array returned will contain the following values:</span>
+<span class="S2">        $aArray[1] = "This"</span>
+<span class="S2">        $aArray[2] = "line"</span>
+<span class="S2">        ...</span>
+<span class="S2">        $aArray[4] = "C-style breaks."</span>
+<span class="S2">    #ce</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Loop through the array returned by StringSplit to display the individual values.</span><span lang="fr" style="display: none">Boucle dans le tableau renvoyé par StringSplit pour afficher les valeurs individuelles.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"$aArray["</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"] - "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">])</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 3</span><span lang="fr" style="display: none">Exemple 3</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringSplit[3].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext3">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StringConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sText</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"This\nline\ncontains\nC-style breaks."</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Define a variable with a string of text.</span><span lang="fr" style="display: none">Définir une variable avec une chaîne de texte.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Pass the variable to StringSplit and using the delimiter "\n".</span><span lang="fr" style="display: none">Passer la variable à StringSplit et en utilisant le séparateur \"\\ n\".</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Note that flag parameter is set to $STR_ENTIRESPLIT (1) as it would split at \ or n otherwise.</span><span lang="fr" style="display: none">Notez que le paramètre de drapeau est défini sur $STR_ENTIRESPLIT (1) comme il serait divisé à \\ n ou autrement.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringSplit.htm"><span class="S4">StringSplit</span></a><span class="S8">(</span><span class="S9">$sText</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'\n'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$STR_ENTIRESPLIT</span><span class="S8">)[</span><span class="S3">2</span><span class="S8">])</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Directly access the array index by using array access on expression.</span><span lang="fr" style="display: none">Accéde directement à l'index du tableau à l'aide d'un accès au tableau par une expression.</span></span></span></span>
+<span class="S0">    </span><span class="S2">#cs</span>
+<span class="S2">        An internal temporary array is used to return a string that may contain one of the following values:</span>
+<span class="S2">        $aArray[1] = "This"</span>
+<span class="S2">        $aArray[2] = "line"</span>
+<span class="S2">        ...</span>
+<span class="S2">        $aArray[4] = "C-style breaks."</span>
+<span class="S2">    #ce</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

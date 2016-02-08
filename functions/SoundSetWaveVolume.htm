@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction SoundSetWaveVolume</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>SoundSetWaveVolume</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the system wave volume by percent.</span><span lang="fr" style="display: none">Règle le volume du son du système en pourcentage.</span></span><br></p>
+  <p class="codeheader">SoundSetWaveVolume ( percent )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">percent</td>
+        <td style="width:85%"><span class="segments"><span lang="en">percentage number between 0 and 100</span><span lang="fr" style="display: none">nombre en pourcentage entre 0 et 100</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to 1 if percent is invalid.</span><span lang="fr" style="display: none">Retourne 0 et @error = 1 si pourcent est invalide.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">This controls the Wave volume, not the master volume control.</span><span lang="fr" style="display: none">Cette fonction contrôle le volume du son, pas le contrrôle du volume maître.</span></span> <span class="segments"><span lang="en">Also, a value of Zero does not set mute status.</span><span lang="fr" style="display: none">En outre, une valeur de zéro ne définit pas le statut muet.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">On Windows Vista, there is no system-wide wave volume.</span><span lang="fr" style="display: none">Sous Windows Vista, il n'y a pas de volume du son du système.</span></span> <span class="segments"><span lang="en">This function only changes the wave volume for the script.</span><span lang="fr" style="display: none">Cette fonction change seulement le volume du son pour le script.</span></span> <span class="segments"><span lang="en">It can not be used to change the wave volume of other programs.</span><span lang="fr" style="display: none">Elle ne peut pas être utilisée pour modifier le volume du son d'autres programmes.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="SoundPlay.htm">SoundPlay</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\SoundSetWaveVolume.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S1">; <span><span class="segments"><span lang="en">Set the volume to 50%.</span><span lang="fr" style="display: none">Règle le volume à 50 %.</span></span></span></span>
+
+<a class="codeSnippetLink" href="../functions/SoundSetWaveVolume.htm"><span class="S4">SoundSetWaveVolume</span></a><span class="S8">(</span><span class="S3">50</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction TraySetToolTip</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>TraySetToolTip</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">(Re)Sets the tooltip text for the tray icon.</span><span lang="fr" style="display: none">(Re)Définit le texte de l'info-bulle pour l'icône de la zone de notification.</span></span><br></p>
+  <p class="codeheader">TraySetToolTip ( [text] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">text</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The new text to be displayed as tooltip.</span><span lang="fr" style="display: none">Le nouveau texte qui doit être affiché comme info-bulle.</span></span> <span class="segments"><span lang="en">The length is limited - see Remarks.</span><span lang="fr" style="display: none">La longueur est limitée - Voir Remarques.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The tooltip length is limited to 128 characters.</span><span lang="fr" style="display: none">La longueur de l'info-bulle est limitée à 128 caractères.</span></span><br>
+  <br>
+  To reset the tooltip to the default text, use the function with no parameters <a href="TraySetToolTip.htm">TraySetToolTip()</a>.<br>
+  <br>
+  <span class="segments"><span lang="en">The tooltip text is only changed when the tray icon is visible!</span><span lang="fr" style="display: none">Le texte de l'info-bulle n'est modifié que lorsque l'icône est visible!</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="TrayTip.htm">TrayTip</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\TraySetToolTip.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/NoTrayIcon.htm"><span class="S11">#NoTrayIcon</span></a>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;TrayConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TraySetState.htm"><span class="S4">TraySetState</span></a><span class="S8">(</span><span class="S9">$TRAY_ICONSTATE_SHOW</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Show the tray menu.</span><span lang="fr" style="display: none">Affiche le menu de la barre.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TraySetToolTip.htm"><span class="S4">TraySetToolTip</span></a><span class="S8">(</span><span class="S7">"An example of a tray menu tooltip."</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">The tray menu icon must be shown before we can set some text.</span><span lang="fr" style="display: none">L'icône du menu de la barre doit être affichée avant que nous puissions mettre un peu de texte.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">An idle loop.</span><span lang="fr" style="display: none">Une boucle d'inactivité.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

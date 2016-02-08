@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUICtrlCreatePic</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUICtrlCreatePic</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a Picture control for the GUI.</span><span lang="fr" style="display: none">Crée un contrôle Picture (image) dans une GUI.</span></span><br></p>
+  <p class="codeheader">GUICtrlCreatePic ( filename, left, top [, width [, height [, style = -1 [, exStyle = -1]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">filename</td>
+        <td style="width:85%"><span class="segments"><span lang="en">filename of the picture to be loaded : supported types BMP, JPG, GIF(but not animated).</span><span lang="fr" style="display: none">Adresse de l'image à charger: types pris en charge BMP, JPG, GIF (mais sans animation).</span></span></td>
+      </tr>
+      <tr>
+        <td>left</td>
+        <td>
+          <span class="segments"><span lang="en">The left side of the control.</span><span lang="fr" style="display: none">La distance à gauche à la GUI.</span></span> <span class="segments"><span lang="en">If -1 is used then left will be computed according to <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a>.</span><span lang="fr" style="display: none">Si vous utilisez -1, elle sera calculée en accord avec <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a>.</span></span><a href="AutoItSetOption.htm#GUICoordMode"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>top</td>
+        <td>
+          <span class="segments"><span lang="en">The top of the control.</span><span lang="fr" style="display: none">La distance en haut à la GUI.</span></span> <span class="segments"><span lang="en">If -1 is used then top will be computed according to <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a>.</span><span lang="fr" style="display: none">Si -1 est utilisé, elle sera calculée en accord avec <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a> .</span></span><a href="AutoItSetOption.htm#GUICoordMode"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The width of the control (default is the previously used width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut, la largeur utilisée précédemment).</span></span></td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The height of the control (default is the previously used height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut, la hauteur précédemment utilisé ).</span></span></td>
+      </tr>
+      <tr>
+        <td>style</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Label">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm#Label">Styles des contrôles GUI</a>.</span></span><br>
+        &nbsp;&nbsp;&nbsp; default (-1) : $SS_NOTIFY<br>
+        &nbsp;&nbsp;&nbsp; forced style : $SS_BITMAP</td>
+      </tr>
+      <tr>
+        <td>exStyle</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Defines the extended style of the control.</span><span lang="fr" style="display: none">Définit le style étendu de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the identifier (controlID) of the new control.</span><span lang="fr" style="display: none">Retourne l'identifiant ( controlID ) du nouveau contrôle.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if picture cannot be created.</span><span lang="fr" style="display: none">Retourne 0 si le contrôle ne peut pas être créé.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">To set or change information in the control see <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...()</a> functions.</span><span lang="fr" style="display: none">Pour définir ou modifier des informations dans le contrôle, consultez les fonctions <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To update the picture after the dialog box is displayed just use <a href="GUICtrlSetImage.htm">GUICtrlSetImage()</a>.</span><span lang="fr" style="display: none">Pour mettre à jour l'image lorsque le contrôle est affichée il suffit d'utiliser <a href="GUICtrlSetImage.htm">GUICtrlSetImage</a></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To set the picture control to the same size as the file content set width and height to 0.</span><span lang="fr" style="display: none">Si vous voulez avoir une image ayant la même taille que le contenu du fichier il suffit d'utiliser width=height=0.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To have a transparent picture create the GUI with the WS_EX_LAYERED extended style.</span><span lang="fr" style="display: none">Pour avoir une image transparente, il est nécessaire pour créer la fenêtre GUI avec le style étendu WS_EX_LAYERED.</span></span> <span class="segments"><span lang="en">The left-top pixel will be used as the transparency color.</span><span lang="fr" style="display: none">Le pixel supérieur gauche est utilisé en tant que couleur de transparence.</span></span> <span class="segments"><span lang="en">If several pictures are created the last picture defines the transparent color.</span><span lang="fr" style="display: none">Si plusieurs photos sont créés la dernière photo définit la couleur de transparence.</span></span> <span class="segments"><span lang="en">See example 2.</span><span lang="fr" style="display: none">Consultez l'exemple 2.</span></span><br>
+  <br>
+  To combine styles with the default style use <a href="BitOR.htm">BitOR</a>($GUI_SS_DEFAULT_PIC, newstyle, ... <span class="segments"><span lang="en">).</span><span lang="fr" style="display: none">)..</span></span><br>
+  To use the values specified above you must #include &lt;StaticConstants.au3&gt; in your script.<br>
+  <br>
+  <span class="segments"><span lang="en">Default resizing is $GUI_DOCKSIZE.</span><span lang="fr" style="display: none">Par défaut redimensionnement est $ GUI_DOCKSIZE.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If a picture is set as a background picture the other controls will overlap, so it is important to disable the pic control:</span><span lang="fr" style="display: none">Si une image est définie comme une image de fond, comme les autres contrôles se chevauchent, il est important de désactiver le contrôle d'image et de le créer après les autres contrôles:&lt;a0&gt;GUICtrlSetState&lt;/a0&gt;(-1, $GUI_DISABLE).</span></span> <span class="segments"><span lang="en"><a href="GUICtrlSetState.htm">GUICtrlSetState</a>(-1, $GUI_DISABLE).</span><span lang="fr" style="display: none">Ce n'est pas suffisant pour l'onglet ou le contrôle ListView qui se comportent différemment.Dans ce cas, vous avez besoin de créer l'image avec le style $WS_CLIPSIBLINGS, GuiCtrlSetState(-1, $GUI_ONTOP) est nécessaire pour l'onglet, TreeView ou contrôle ListView.</span></span><a href="GUICtrlSetState.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">The extended style $GUI_WS_EX_PARENTDRAG can be used to allow the dragging of the parent window for windows that do not have a titlebar (no $WS_CAPTION style in <a href="GUICreate.htm">GUICreate()</a>).</span><span lang="fr" style="display: none">Le style étendu $GUI_WS_EX_PARENTDRAG peut être utilisé pour permettre le glissement de la fenêtre parent pour les fenêtres qui n'ont pas de barre de titre (pas de style $WS_CAPTION dans <a href="GUICreate.htm">GUICreate()</a>).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The background is always set to transparent.</span><span lang="fr" style="display: none">Le fond est toujours mis à transparent.</span></span> <a href="GUICtrlSetBkColor.htm">GUICtrlSetBkColor()</a> has no effect on pic control.<a href="GUICtrlSetBkColor.htm"></a><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode (Option)</a>, <a href="GUICtrlSetImage.htm">GUICtrlSetImage</a>, <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...</a>, <a href="AutoItSetOption.htm#GUICoordMode">GUIGetMsg</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICtrlCreatePic.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"My GUI picture"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">350</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_SIZEBOX</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$WS_SYSMENU</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">will create a dialog box that when displayed is centered</span><span lang="fr" style="display: none">Crée une boîte de dialogue qui s'affichera centrée</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetBkColor.htm"><span class="S4">GUISetBkColor</span></a><span class="S8">(</span><span class="S3">0xE0FFFF</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idPic</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreatePic.htm"><span class="S4">GUICtrlCreatePic</span></a><span class="S8">(</span><span class="S7">"..\GUI\mslogo.jpg"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">resize the control</span><span lang="fr" style="display: none">Redimensionne le contrôle</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetPos.htm"><span class="S4">GUICtrlSetPos</span></a><span class="S8">(</span><span class="S9">$idPic</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idMsg</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">()</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICtrlCreatePic[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Global</span></a><span class="S0"> </span><span class="S9">$g_hGui</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aGuiPos</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_hPic</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_hGui</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"test transparentpic"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$g_hPic</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">68</span><span class="S8">,</span><span class="S0"> </span><span class="S3">71</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_POPUp</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$WS_EX_LAYERED</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_EX_MDICHILD</span><span class="S8">),</span><span class="S0"> </span><span class="S9">$g_hGui</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreatePic.htm"><span class="S4">GUICtrlCreatePic</span></a><span class="S8">(</span><span class="S7">"..\GUI\merlin.gif"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_hPic</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_hGui</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Main"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Left}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></span>"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Right}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></span>"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Down}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Down"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Up}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Up"</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$g_aPicPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$g_aGuiPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hGui</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Left}</span><span class="S7">"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Right}</span><span class="S7">"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Down}</span><span class="S7">"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{Up}</span><span class="S7">"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Main</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_aGuiPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hGui</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$g_hGui</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aGuiPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aGuiPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Main</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Left</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_aPicPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Left</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Right</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_aPicPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Right</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Down</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_aPicPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Down</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Up</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_aPicPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$g_hPic</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$g_aPicPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Up</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

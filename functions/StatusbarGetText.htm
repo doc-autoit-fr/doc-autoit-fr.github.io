@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StatusbarGetText</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StatusbarGetText</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Retrieves the text from a standard status bar control.</span><span lang="fr" style="display: none">Récupère le texte d'un contrôle de barre d'état standard.</span></span><br></p>
+  <p class="codeheader">StatusbarGetText ( "title" [, "text" [, part = 1]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The title/hWnd/class of the window to check.</span><span lang="fr" style="display: none">Le titre/hWnd/class de la fenêtre à traiter.</span></span></td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The text of the window to check.</span><span lang="fr" style="display: none">Le texte de la fenêtre à contrôler.</span></span> <span class="segments"><span lang="en">Default is an empty string.</span><span lang="fr" style="display: none">La valeur par défaut est une chaîne vide.</span></span></td>
+      </tr>
+      <tr>
+        <td>part</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The "part" number of the status bar to read - the default is 1.</span><span lang="fr" style="display: none">Le numéro de la "partie" de la barre d'état à lire - la valeur par défaut est 1.</span></span> <span class="segments"><span lang="en">1 is the first possible part and usually the one that contains the useful messages like "Ready" "Loading...", etc.</span><span lang="fr" style="display: none">C'est la première partie possible et le plus souvent celle qui contient les messages utiles comme "Ready ", "Loading", etc...</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the text read.</span><span lang="fr" style="display: none">Retourne le texte lu.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">"" (empty string) and sets the @error flag to 1 if no text could be read.</span><span lang="fr" style="display: none">Retourne "" (Chaîne vide ) et @error = 1 si aucun texte n'a pu être lu.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">This functions attempts to read the first standard status bar on a window (Microsoft common control: msctls_statusbar32).</span><span lang="fr" style="display: none">Cette fonction tente de lire la première partie d'une barre d'état standard dans une fenêtre (contrôle commun Microsoft: msctls_statusbar32 ).</span></span> <span class="segments"><span lang="en">Some programs use their own status bars or special versions of the MS common control which <a href="StatusbarGetText.htm">StatusbarGetText()</a> cannot read.</span><span lang="fr" style="display: none">Certains programmes utilisent leurs propres barres d'état ou des versions spéciales du contrôle commun MS que <a href="StatusbarGetText.htm">StatusbarGetText()</a> ne peut pas lire.</span></span> <span class="segments"><span lang="en">For example, StatusbarGetText does not work on the program TextPad; however, the first region of TextPad's status bar can be read using <a href="ControlGetText.htm">ControlGetText</a>("TextPad", "", "HSStatusBar1")</span><span lang="fr" style="display: none">Par exemple, StatusbarGetText ne fonctionne pas avec le programme TextPad; cependant la première région de la barre d'état de TextPad peut être lue en utilisant <a href="ControlGetText.htm">ControlGetText</a>("TextPad ", "", "HSStatusBar1")</span></span><a href="StatusbarGetText.htm"></a><a href="ControlGetText.htm"></a><br>
+  <span class="segments"><span lang="en"><a href="StatusbarGetText.htm">StatusbarGetText()</a> can work on windows that are minimized or even hidden.</span><span lang="fr" style="display: none"><a href="StatusbarGetText.htm">StatusbarGetText()</a> peut travailler sur les fenêtres qui sont minimisées ou même cachées.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ControlCommand.htm">ControlCommand</a>, <a href="ControlGetText.htm">ControlGetText</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StatusbarGetText.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">AutoItSetOption</span></a><span class="S8">(</span><span class="S7">"WinTitleMatchMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sText</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StatusbarGetText.htm"><span class="S4">StatusbarGetText</span></a><span class="S8">(</span><span class="S7">"Internet Explorer"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Internet Explorer's status bar says: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sText</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _GDIPlus_BitmapCloneArea</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_GDIPlus_BitmapCloneArea</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Create a clone of a Bitmap object from the coordinates and format specified</span><span lang="fr" style="display: none">Crée un clone d'un objet Bitmap à partir des coordonnées et d'un format spécifiés</span></span><br></p>
+  <p class="codeheader">#include &lt;GDIPlus.au3&gt;<br>
+  _GDIPlus_BitmapCloneArea ( $hBitmap, $nLeft, $nTop, $nWidth, $nHeight [, $iFormat = 0x00021808] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hBitmap</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Handle to a Bitmap object</span><span lang="fr" style="display: none">Handle de l'objet Bitmap</span></span></td>
+      </tr>
+      <tr>
+        <td>$nLeft</td>
+        <td><span class="segments"><span lang="en">X coordinate of upper left corner of the rectangle to copy</span><span lang="fr" style="display: none">Coordonnée X du coin supérieur gauche du rectangle à copier</span></span></td>
+      </tr>
+      <tr>
+        <td>$nTop</td>
+        <td><span class="segments"><span lang="en">Y coordinate of upper left corner of the rectangle to copy</span><span lang="fr" style="display: none">Coordonnée Y du coin supérieur gauche du rectangle à copier</span></span></td>
+      </tr>
+      <tr>
+        <td>$nWidth</td>
+        <td><span class="segments"><span lang="en">The width of the rectangle that specifies the portion of this bitmap to copy</span><span lang="fr" style="display: none">Largeur du rectangle qui spécifie la partie du Bitmat à copier</span></span></td>
+      </tr>
+      <tr>
+        <td>$nHeight</td>
+        <td><span class="segments"><span lang="en">The height of the rectangle that specifies the portion of this bitmap to copy</span><span lang="fr" style="display: none">Hauteur du rectangle qui spécifie la partie du Bitmat à copier</span></span></td>
+      </tr>
+      <tr>
+        <td>$iFormat</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Pixel format for the new bitmap:</span><span lang="fr" style="display: none">Format de pixel pour le nouveau Bitmap:</span></span><br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF01INDEXED = 1 bit per pixel, indexed<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF04INDEXED = 4 bits per pixel, indexed<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF08INDEXED = 8 bits per pixel, indexed<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF16GRAYSCALE = 16 bits per pixel, grayscale<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF16RGB555 = 16 bits per pixel; 5 bits for each RGB component<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF16RGB565 = 16 bits per pixel; 5 bits for red, 6 bits for green and 5 bits blue<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF16ARGB1555 = 16 bits per pixel; 1 bit for alpha and 5 bits for each RGB component<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF24RGB = 24 bits per pixel; 8 bits for each RGB component<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF32RGB = 32 bits per pixel; 8 bits for each RGB component. <span class="segments"><span lang="en">No alpha component.</span><span lang="fr" style="display: none">Aucune composante alpha.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF32ARGB = 32 bits per pixel; 8 bits for each RGB and alpha component<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF32PARGB = 32 bits per pixel; 8 bits for each RGB and alpha component, pre-multiplied<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF48RGB = 48 bits per pixel; 16 bits for each RGB component<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF64ARGB = 64 bits per pixel; 16 bits for each RGB and alpha component<br>
+        &nbsp;&nbsp;&nbsp; $GDIP_PXF64PARGB = 64 bits per pixel; 16 bits for each RGB and alpha component, pre-multiplied</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a handle to a new Bitmap object.</span><span lang="fr" style="display: none">Retourne le handle d'un nouvel objet Bitmap.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).</span><span lang="fr" style="display: none">Retourne 0 et définit @error &lt;&gt; 0, @extended contient le code erreur GPSTATUS ($GPID_ERR*).</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">When you are done with the Bitmap object, call <a href="_GDIPlus_BitmapDispose.htm">_GDIPlus_BitmapDispose()</a> to release the resources</span><span lang="fr" style="display: none">Lorsque vous en avez terminé avec l'objet Bitmap, appelez <a href="_GDIPlus_BitmapDispose.htm">_GDIPlus_BitmapDispose()</a> pour libérer les ressources.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_GDIPlus_BitmapDispose.htm">_GDIPlus_BitmapDispose</a>, <a href="_GDIPlus_ImageGetPixelFormat.htm">_GDIPlus_ImageGetPixelFormat</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://search.msdn.microsoft.com/search/Default.aspx?brand=msdn&amp;query=GdipCloneBitmapAreaI">GdipCloneBitmapAreaI</a> in MSDN Library.</p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\_GDIPlus_BitmapCloneArea.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GDIPlus.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;ScreenCapture.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hBitmap</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hClone</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hImage</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iX</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iY</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Initialize GDI+ library</span><span lang="fr" style="display: none">Initialise GDI+ Librairie</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_Startup.htm"><span class="S15">_GDIPlus_Startup</span></a><span class="S8">()</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Capture 32 bit bitmap</span><span lang="fr" style="display: none">Capture un bitmap 32 bits</span></span></span></span>
+<span class="S0">    </span><span class="S9">$hBitmap</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_ScreenCapture_Capture.htm"><span class="S15">_ScreenCapture_Capture</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$hImage</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_BitmapCreateFromHBITMAP.htm"><span class="S15">_GDIPlus_BitmapCreateFromHBITMAP</span></a><span class="S8">(</span><span class="S9">$hBitmap</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create 24 bit bitmap clone</span><span lang="fr" style="display: none">Crée un clone 24 bits</span></span></span></span>
+<span class="S0">    </span><span class="S9">$iX</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_ImageGetWidth.htm"><span class="S15">_GDIPlus_ImageGetWidth</span></a><span class="S8">(</span><span class="S9">$hImage</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$iY</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_ImageGetHeight.htm"><span class="S15">_GDIPlus_ImageGetHeight</span></a><span class="S8">(</span><span class="S9">$hImage</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$hClone</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_BitmapCloneArea.htm"><span class="S15">_GDIPlus_BitmapCloneArea</span></a><span class="S8">(</span><span class="S9">$hImage</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iX</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iY</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GDIP_PXF24RGB</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Save bitmap to file</span><span lang="fr" style="display: none">Enregistre le bitmap dan un fichier</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_ImageSaveToFile.htm"><span class="S15">_GDIPlus_ImageSaveToFile</span></a><span class="S8">(</span><span class="S9">$hClone</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MyDocumentsDir"><span class="S6">@MyDocumentsDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\GDIPlus_Image.bmp"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Clean up resources</span><span lang="fr" style="display: none">Libère les ressources</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_ImageDispose.htm"><span class="S15">_GDIPlus_ImageDispose</span></a><span class="S8">(</span><span class="S9">$hClone</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_ImageDispose.htm"><span class="S15">_GDIPlus_ImageDispose</span></a><span class="S8">(</span><span class="S9">$hImage</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_DeleteObject.htm"><span class="S15">_WinAPI_DeleteObject</span></a><span class="S8">(</span><span class="S9">$hBitmap</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Shut down GDI+ library</span><span lang="fr" style="display: none">Ferme la librairie GDI+</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_Shutdown.htm"><span class="S15">_GDIPlus_Shutdown</span></a><span class="S8">()</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ShellExecute.htm"><span class="S4">ShellExecute</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@MyDocumentsDir"><span class="S6">@MyDocumentsDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\GDIPlus_Image.jpg"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

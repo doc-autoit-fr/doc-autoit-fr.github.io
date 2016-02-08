@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_ReplaceFile</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_ReplaceFile</h1>
+  <p class="funcdesc">Replaces one file with another file, and creates a backup copy of the original file<br></p>
+  <p class="codeheader">#include &lt;WinAPIFiles.au3&gt;<br>
+  _WinAPI_ReplaceFile ( $sReplacedFile, $sReplacementFile [, $sBackupFile = '' [, $iFlags = 0]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sReplacedFile</td>
+        <td style="width:85%">The name of the file to be replaced.</td>
+      </tr>
+      <tr>
+        <td>$sReplacementFile</td>
+        <td>The name of the file that will replace the $sReplacedFile file.</td>
+      </tr>
+      <tr>
+        <td>$sBackupFile</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of the file that will serve as a backup copy of the $sReplacedFile file. If this<br>
+        parameter is empty string, no backup file is created.</td>
+      </tr>
+      <tr>
+        <td>$iFlags</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The replacement options. This parameter can be one or more of the following values.<br>
+        $REPLACEFILE_WRITE_THROUGH<br>
+        $REPLACEFILE_IGNORE_MERGE_ERRORS<br>
+        $REPLACEFILE_IGNORE_ACL_ERRORS</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>False (see remarks).</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>If this function fails, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> function to get extended error information. The following<br>
+  are possible error codes for this function.<br>
+  <br>
+  ERROR_UNABLE_TO_MOVE_REPLACEMENT (1176)<br>
+  The replacement file could not be renamed. If $sBackupFile was specified, the replaced and replacement files<br>
+  retain their original file names. Otherwise, the replaced file no longer exists and the replacement file exists<br>
+  under its original name.<br>
+  <br>
+  ERROR_UNABLE_TO_MOVE_REPLACEMENT_2 (1177)<br>
+  The replacement file could not be moved. The replacement file still exists under its original name; however,<br>
+  it has inherited the file streams and attributes from the file it is replacing. The file to be replaced still<br>
+  exists with the name specified by $sReplacedFile.<br>
+  <br>
+  ERROR_UNABLE_TO_REMOVE_REPLACED (1175)<br>
+  The replaced file could not be deleted. The replaced and replacement files retain their original file names.<br>
+  <br>
+  If any other error is returned, such as ERROR_INVALID_PARAMETER (87), the replaced and replacement files will<br>
+  retain their original file names. In this scenario, a backup file does not exist and it is not guaranteed<br>
+  that the replacement file will have inherited all of the attributes and streams of the replaced file.<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(ReplaceFile);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">ReplaceFile</a> in MSDN Library.</p>
+</body>
+</html>

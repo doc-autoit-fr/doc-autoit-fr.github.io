@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction SplashImageOn</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>SplashImageOn</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a customizable image popup window.</span><span lang="fr" style="display: none">Crée une fenêtre d'image popup personnalisable.</span></span><br></p>
+  <p class="codeheader">SplashImageOn ( "title", "file" [, width [, height [, x pos [, y pos [, opt]]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Title for splash window.</span><span lang="fr" style="display: none">Titre de la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td>file</td>
+        <td><span class="segments"><span lang="en">full path\filename of image (BMP, GIF, or JPG)</span><span lang="fr" style="display: none">Chemin d'accès complet\nom du fichier image (BMP, GIF, ou JPG)</span></span></td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">width of window in pixels.</span><span lang="fr" style="display: none">largeur de la fenêtre en pixels.</span></span> <span class="segments"><span lang="en">(default is 500)</span><span lang="fr" style="display: none">(500 par défaut)</span></span></td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">height of window in pixels.</span><span lang="fr" style="display: none">hauteur de la fenêtre en pixels.</span></span> <span class="segments"><span lang="en">(default is 400)</span><span lang="fr" style="display: none">(400 par défaut)</span></span></td>
+      </tr>
+      <tr>
+        <td>x pos</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">position from left (in pixels) of splash window.</span><span lang="fr" style="display: none">position de la fenêtre splash à partir de la gauche (en pixels).</span></span> <span class="segments"><span lang="en">(default is centered)</span><span lang="fr" style="display: none">(centrée par défaut)</span></span></td>
+      </tr>
+      <tr>
+        <td>y pos</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">position from top (in pixels) of splash window.</span><span lang="fr" style="display: none">position de la fenêtre splash à partir du haut (en pixels).</span></span> <span class="segments"><span lang="en">(default is centered)</span><span lang="fr" style="display: none">(centrée par défaut)</span></span></td>
+      </tr>
+      <tr>
+        <td>opt</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Default is 'always on top/with title'</span><span lang="fr" style="display: none">Par défaut: toujours Au Premier Plan et avec Titre</span></span><br>
+        <span class="segments"><span lang="en">Add up the following options you want:</span><span lang="fr" style="display: none">Ajoute les options que vous souhaitez.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $DLG_NOTITLE (1) = borderless, titleless window<br>
+        &nbsp;&nbsp;&nbsp; $DLG_NOTONTOP (2) = Without "always on top" attribute<br>
+        &nbsp;&nbsp;&nbsp; $DLG_MOVEABLE (16) = Window can be moved<br>
+        <br>
+        Constants are defined in AutoItConstants.au3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">To skip an optional parameter, leaving its default value intact, use a value of -1.</span><span lang="fr" style="display: none">Pour sauter un paramètre optionnel, en laissant sa valeur par défaut intacte, utilisez la valeur -1.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The image is scaled to specified width and height and should be a Bitmap, GIF, or JPEG image.</span><span lang="fr" style="display: none">L'image est redimensionnée à la largeur et la hauteur spécifiée et devrait être une image Bitmap, GIF ou JPEG.</span></span> <span class="segments"><span lang="en">Icons (ICOs) will not display, though the window still appears.</span><span lang="fr" style="display: none">Les icônes (ICO) ne seront pas affichés, malgré l'apparition de la fenêtre.</span></span> <span class="segments"><span lang="en">PNG images throw an error message of failing to load, and so do invalid files/paths.</span><span lang="fr" style="display: none">Les images PNG provoquent un message d'erreur de chargement, tout comme les fichiers/chemins invalides.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Images are not embedded in the executable unless you use <a href="FileInstall.htm">FileInstall()</a></span><span lang="fr" style="display: none">Les images ne sont pas incorporées dans l'exécutable à moins que vous n'utilisiez <a href="FileInstall.htm">FileInstall()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Only one SplashImage/Text window is allowed at one time; so if you wish to cycle through multiple images/text, simply call <a href="SplashImageOn.htm">SplashImageOn()</a>/<a href="SplashTextOn.htm">SplashTextOn()</a> again with the new information.</span><span lang="fr" style="display: none">Une seule fenêtre splashImage/splashtext est permise en même temps, donc si vous souhaitez faire défiler plusieurs images/textes, utilisez simplement <a href="SplashImageOn.htm">SplashImageOn()</a>/<a href="SplashTextOn.htm">SplashTextOn()</a> à nouveau avec les nouvelles informations.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Splash with opt=1 cannot be moved and cannot be activated by click.</span><span lang="fr" style="display: none">Un splash avec opt=1 ne peut être déplacé et ne peut être activé par un clic.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="SplashOff.htm">SplashOff</a>, <a href="SplashTextOn.htm">SplashTextOn</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\SplashImageOn.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sDestination</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"..\GUI\mslogo.jpg"</span>
+
+<a class="codeSnippetLink" href="../functions/SplashImageOn.htm"><span class="S4">SplashImageOn</span></a><span class="S8">(</span><span class="S7">"Splash Screen"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sDestination</span><span class="S8">,</span><span class="S0"> </span><span class="S3">250</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">3000</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/SplashOff.htm"><span class="S4">SplashOff</span></a><span class="S8">()</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

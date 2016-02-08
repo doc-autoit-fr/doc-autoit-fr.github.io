@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ControlListView</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ControlListView</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sends a command to a ListView32 control.</span><span lang="fr" style="display: none">Envoie une commande à un contrôle ListView32.</span></span><br></p>
+  <p class="codeheader">ControlListView ( "title", "text", controlID, "command" [, option1 [, option2]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%">
+          <span class="segments"><span lang="en">The title/hWnd/class of the window to access.</span><span lang="fr" style="display: none">Le titre/handle/class de la fenêtre à atteindre.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsadvanced.htm">Title special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsadvanced.htm">Définiton spéciale de titre</a>.</span></span><a href="../intro/windowsadvanced.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>
+          <span class="segments"><span lang="en">The text of the window to access.</span><span lang="fr" style="display: none">Le texte de la fenêtre à accéder.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span><a href="../intro/windowsbasic.htm#specialtext"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>controlID</td>
+        <td>
+          <span class="segments"><span lang="en">The control to interact with.</span><span lang="fr" style="display: none">Le contrôle avec lequel interagir.</span></span> <span class="segments"><span lang="en">See <a href="../intro/controls.htm">Controls</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/controls.htm">Controls</a>.</span></span><a href="../intro/controls.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>command</td>
+        <td><span class="segments"><span lang="en">The command to send to the control (see below).</span><span lang="fr" style="display: none">La commande à envoyer au contrôle (Voir ci-dessous).</span></span></td>
+      </tr>
+      <tr>
+        <td>option1</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Additional parameter required by some commands.</span><span lang="fr" style="display: none">Paramètre additionnel requis par certaines commandes.</span></span></td>
+      </tr>
+      <tr>
+        <td>option2</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Additional parameter required by some commands.</span><span lang="fr" style="display: none">Paramètre additionnel requis par certaines commandes.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Return depends on command as table below shows.</span><span lang="fr" style="display: none">Dépend de la commande comme le montre le tableau ci-dessous.</span></span> <span class="segments"><span lang="en">In case of an error (such as an invalid command or window/control could not be found) then @error is set to 1.</span><span lang="fr" style="display: none">En cas d'erreur (telle qu'une commande ou fenêtre/contrôle invalide), @error = 1.</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:40%"><strong>Command, Option1, Option2</strong></td>
+        <td style="width:60%"><span class="segments"><span lang="en"><strong>Operation</strong></span><span lang="fr" style="display: none"><strong>Opération</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>"DeSelect", From [, To]</td>
+        <td><span class="segments"><span lang="en">Deselects one or more items.</span><span lang="fr" style="display: none">Dé-sélectionne un ou plusieurs éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"FindItem", "string to find" [, SubItem]</td>
+        <td><span class="segments"><span lang="en">Returns the item index of the string.</span><span lang="fr" style="display: none">Retourne l'index de la chaîne recherchée.</span></span> <span class="segments"><span lang="en">Returns -1 if the string is not found.</span><span lang="fr" style="display: none">Retourne -1 si la chaîne n'est pas trouvée.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetItemCount"</td>
+        <td><span class="segments"><span lang="en">Returns the number of list items.</span><span lang="fr" style="display: none">Retourne le nombre d'éléments de la liste.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetSelected" [, option]</td>
+        <td><span class="segments"><span lang="en">Returns a string containing the item index of selected items.</span><span lang="fr" style="display: none">Retourne une chaîne contenant l'index des éléments sélectionnés.</span></span> <span class="segments"><span lang="en">If option=0 (default) only the first selected item is returned.</span><span lang="fr" style="display: none">Si option=0 (défaut) seul l'index du premier élément sélectionné est retourné.</span></span> <span class="segments"><span lang="en">If option=1 then all the selected items are returned delimited by |, e.g:</span><span lang="fr" style="display: none">Si option=1 alors tout les index sélectionnés sont retournés séparés par le caractère "|", par exemple:</span></span> "0|3|4|10". <span class="segments"><span lang="en">If no items are selected a blank "" string is returned.</span><span lang="fr" style="display: none">Si aucun éléments n'est sélectionné, une chaine vide "" est retournée.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetSelectedCount"</td>
+        <td><span class="segments"><span lang="en">Returns the number of items that are selected.</span><span lang="fr" style="display: none">Retourne le nombre d'éléments qui sont sélectionnés.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetSubItemCount"</td>
+        <td><span class="segments"><span lang="en">Returns the number of subitems.</span><span lang="fr" style="display: none">Retourne le nombre de sous-éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetText", Item, SubItem</td>
+        <td><span class="segments"><span lang="en">Returns the text of a given item/subitem.</span><span lang="fr" style="display: none">Retourne le texte d'un élément/sous élément donné.</span></span></td>
+      </tr>
+      <tr>
+        <td>"IsSelected", Item</td>
+        <td><span class="segments"><span lang="en">Returns 1 if the item is selected, otherwise returns 0.</span><span lang="fr" style="display: none">Retourne 1 si l'élément est sélectionné, sinon retourne 0.</span></span></td>
+      </tr>
+      <tr>
+        <td>"Select", From [, To]</td>
+        <td><span class="segments"><span lang="en">Selects one or more items.</span><span lang="fr" style="display: none">Sélectionne un ou plusieurs éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"SelectAll"</td>
+        <td><span class="segments"><span lang="en">Selects all items.</span><span lang="fr" style="display: none">Sélectionne tous les éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"SelectClear"</td>
+        <td><span class="segments"><span lang="en">Clears the selection of all items.</span><span lang="fr" style="display: none">Efface la sélection de tous les éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"SelectInvert"</td>
+        <td><span class="segments"><span lang="en">Inverts the current selection.</span><span lang="fr" style="display: none">Inverse la sélection en cours.</span></span></td>
+      </tr>
+      <tr>
+        <td>"ViewChange", "view"</td>
+        <td><span class="segments"><span lang="en">Changes the current view.</span><span lang="fr" style="display: none">Change le type de vue en cours.</span></span> <span class="segments"><span lang="en">Valid views are "list", "details", "smallicons", "largeicons".</span><span lang="fr" style="display: none">Les types de vues possibles sont :"list", "details", "smallicons", "largeicons".</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <span class="segments"><span lang="en">In a "Details" view of a ListView32 control, the "item" can be thought of as the "row" and the "subitem" as the "column".</span><span lang="fr" style="display: none">Dans une vue "détaillée" d'un contrôle de type ListView32, un élément ("item") correspond à une ligne ("row") et un sous-élément ("subitem") à une colonne ("column").</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Some commands may fail when using a 32-bit AutoIt process to read from a 64-bit process.</span><span lang="fr" style="display: none">Certaines commandes peuvent échouer lors de l'utilisation d'un processus AutoIt 32-Bits pour lire un processus 64-bits.</span></span> <span class="segments"><span lang="en">Likewise commands may fail when using a 64-bit AutoIt process to read from a 32-bit process.</span><span lang="fr" style="display: none">De même des commandes peuvent échouer lors de l'utilisation d'un processus AutoIt 64-Bits pour lire un processus 32-bits.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ControlCommand.htm">ControlCommand</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ControlListView.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../functions/ControlListView.htm"><span class="S4">ControlListView</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ProgramFilesDir"><span class="S6">@ProgramFilesDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\AutoIt3"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SysListView321"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SelectAll"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/ControlListView.htm"><span class="S4">ControlListView</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ProgramFilesDir"><span class="S6">@ProgramFilesDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\AutoIt3"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SysListView321"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Deselect"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><span class="S3">5</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ControlListView.htm"><span class="S4">ControlListView</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ProgramFilesDir"><span class="S6">@ProgramFilesDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\AutoIt3"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SysListView321"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"GetText"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">))</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ControlListView.htm"><span class="S4">ControlListView</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ProgramFilesDir"><span class="S6">@ProgramFilesDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\AutoIt3"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SysListView321"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"FindItem"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"14 KB"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ControlListView.htm"><span class="S4">ControlListView</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ProgramFilesDir"><span class="S6">@ProgramFilesDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\AutoIt3"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SysListView321"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"GetSelected"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

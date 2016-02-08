@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_DuplicateEncryptionInfoFile</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_DuplicateEncryptionInfoFile</h1>
+  <p class="funcdesc">Copies the EFS metadata from one file or directory to another<br></p>
+  <p class="codeheader">#include &lt;WinAPIFiles.au3&gt;<br>
+  _WinAPI_DuplicateEncryptionInfoFile ( $sSrcFilePath, $sDestFilePath [, $iCreation = 2 [, $iAttributes = 0 [, $tSecurity = 0]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sSrcFilePath</td>
+        <td style="width:85%">The name of the file or directory from which the EFS metadata is to be copied.<br>
+        This source file or directory must be encrypted.</td>
+      </tr>
+      <tr>
+        <td>$sDestFilePath</td>
+        <td>The name of the file or directory to which the EFS metadata is to be copied.<br>
+        This destination file or directory does not have to be encrypted before the call to this function.<br>
+        If the source is a file, this parameter must also specify a file, and likewise for directories.</td>
+      </tr>
+      <tr>
+        <td>$iCreation</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies how the destination file or directory is to be opened.<br>
+        The following are the valid values of this parameter:<br>
+        &nbsp;&nbsp;&nbsp; $CREATE_NEW<br>
+        &nbsp;&nbsp;&nbsp; $CREATE_ALWAYS (Default)</td>
+      </tr>
+      <tr>
+        <td>$iAttributes</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The file attributes of the destination file or directory.<br>
+        The $FILE_READ_ONLY attribute is currently not processed by this function.</td>
+      </tr>
+      <tr>
+        <td>$tSecurity</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure that specifies the security attributes of the destination file or directory, if it does not already exist.<br>
+        If this parameter is 0 (Default), the file or directory gets a default security descriptor.<br>
+        The access-control lists (ACL) in the default security descriptor for a file or directory are inherited from its parent directory.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>0 and sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>The caller should have the EFS key for the source file or directory, and at least the $READ_ATTRIBUTE ACL for the source file or directory.<br>
+  <br>
+  The specified source and destination file or directories should reside on the same computer; otherwise, the function fails.<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(DuplicateEncryptionInfoFile);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">DuplicateEncryptionInfoFile</a> in MSDN Library.</p>
+</body>
+</html>

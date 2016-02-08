@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_CreateCompatibleBitmapEx</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_CreateCompatibleBitmapEx</h1>
+  <p class="funcdesc">Creates a bitmap compatible with the device and fills it the specified color<br></p>
+  <p class="codeheader">#include &lt;WinAPIGdi.au3&gt;<br>
+  _WinAPI_CreateCompatibleBitmapEx ( $hDC, $iWidth, $iHeight, $iRGB )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hDC</td>
+        <td style="width:85%">Handle to a device context.</td>
+      </tr>
+      <tr>
+        <td>$iWidth</td>
+        <td><span class="segments"><span lang="en">The bitmap width, in pixels.</span><span lang="fr" style="display: none">La largeur du bitmap, en pixels.</span></span></td>
+      </tr>
+      <tr>
+        <td>$iHeight</td>
+        <td><span class="segments"><span lang="en">The bitmap height, in pixels.</span><span lang="fr" style="display: none">La hauteur du bitmap, en pixels.</span></span></td>
+      </tr>
+      <tr>
+        <td>$iRGB</td>
+        <td>The bitmap color, in RGB.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">Handle to the compatible solid bitmap (DDB).</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>The color format of the bitmap created by the <a href="_WinAPI_CreateCompatibleBitmapEx.htm">_WinAPI_CreateCompatibleBitmapEx()</a> function matches the color format of the device identified by the $hDC parameter.<br>
+  This bitmap can be selected into any memory device context that is compatible with the original device.<br>
+  <br>
+  When you no longer need the bitmap, call the <a href="_WinAPI_DeleteObject.htm">_WinAPI_DeleteObject()</a> function to delete it.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_DeleteObject.htm">_WinAPI_DeleteObject</a></p>
+</body>
+</html>

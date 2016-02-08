@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _viInteractiveControl</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_viInteractiveControl</h1>
+  <p class="funcdesc">Interactive VISA control to test your SCPI commands<br></p>
+  <p class="codeheader">#include &lt;Visa.au3&gt;<br>
+  _viInteractiveControl ( [$sCommand_Save_FilePath = ""] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sCommand_Save_FilePath</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of the file in which the SCPI commands issued during the interactive session will be saved.<br>
+        If no filename is passed the funcion asks the user where does he wants to save the issued commands.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns the list of AutoIt3 VISA commands that were executed by the tool.<br>
+  This is the same list that is saved into the file if the a filename is passed to the function.<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>Type "FIND" in the Device Descriptor query to perform a GPIB search.<br>
+  <br>
+  This function lets you easily test your SCPI commands interactively.<br>
+  It also lets you save these commands into a file.<br>
+  Simply answer the questions (Device Descriptor, SCPI command and timeout).<br>
+  &nbsp;&nbsp;&nbsp; * If you click Cancel on the 1st question the interactive control ends.<br>
+  &nbsp;&nbsp;&nbsp; * If you click Cancel to the other queries, you will go back to the Device Descriptor question.<br></p>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction RunWait</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>RunWait</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Runs an external program and pauses script execution until the program finishes.</span><span lang="fr" style="display: none">Exécute un programme externe et interrompt l'exécution du script jusqu'à ce que le programme se termine.</span></span><br></p>
+  <p class="codeheader">RunWait ( "program" [, "workingdir" [, show_flag [, opt_flag]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">program</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The full path of the program (EXE, BAT, COM, or PIF) to run (see remarks).</span><span lang="fr" style="display: none">Le chemin d'accès complet du programme (EXE, BAT, COM, ou PIF) pour exécuter (Voir Remarques).</span></span></td>
+      </tr>
+      <tr>
+        <td>workingdir</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
+      </tr>
+      <tr>
+        <td>show_flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
+        &nbsp;&nbsp;&nbsp; @SW_HIDE = Hidden window (or Default keyword)<br>
+        &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimized window<br>
+        &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximized window</td>
+      </tr>
+      <tr>
+        <td>opt_flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
+        &nbsp;&nbsp;&nbsp; 0x10000 ($RUN_CREATE_NEW_CONSOLE) = The child console process should be created with its own window instead of using the parents window. <span class="segments"><span lang="en">This flag is only useful when the parent is compiled as a Console application.</span><span lang="fr" style="display: none">Ce drapeau n'est utile que lorsque le parent est compilé comme une application console.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the exit code of the program that was run.</span><span lang="fr" style="display: none">Retourne le code de sortie du programme qui a été exécuté.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Paths with spaces need to be enclosed in quotation marks.</span><span lang="fr" style="display: none">Les chemins avec des espaces doivent être placés entre guillemets.</span></span><br>
+  <br>
+  To run DOS commands, try <em><a href="RunWait.htm">RunWait</a>(@ComSpec & " /c " & "commandName")&nbsp;&nbsp;&nbsp; ; don't forget " " before "/c"</em><br>
+  <br>
+  <span class="segments"><span lang="en">After running the requested program the script pauses until the program terminates.</span><span lang="fr" style="display: none">Après avoir exécuté le programme demandé le script se met en pause jusqu'à la fin du programme.</span></span> <span class="segments"><span lang="en">To run a program and then immediately continue script execution use the <a href="Run.htm">Run()</a> function instead.</span><span lang="fr" style="display: none">Pour exécuter un programme puis continuer immédiatement l'exécution de script utilisez la fonction <a href="Run.htm">Run()</a> à la place.</span></span><a href="Run.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">Some programs will appear to return immediately even though they are still running; these programs spawn another process - you may be able to use the <a href="ProcessWaitClose.htm">ProcessWaitClose()</a> function to handle these cases.</span><span lang="fr" style="display: none">Certains programmes semble retourner immédiatement, même si elles sont encore en cours d'exécution; ces programmes engendrent un autre processus - vous pourriez être en mesure d'utiliser la fonction <a href="ProcessWaitClose.htm">ProcessWaitClose()</a> pour traiter ces cas.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ProcessWait.htm">ProcessWait</a>, <a href="ProcessWaitClose.htm">ProcessWaitClose</a>, <a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="RunAsWait.htm">RunAsWait</a>, <a href="ShellExecute.htm">ShellExecute</a>, <a href="ShellExecuteWait.htm">ShellExecuteWait</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\RunWait.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Run Notepad and wait for the Notepad process to close.</span><span lang="fr" style="display: none">Lance le Bloc-notes et attend que le processus du Bloc-notes se ferme.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iReturn</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/RunWait.htm"><span class="S4">RunWait</span></a><span class="S8">(</span><span class="S7">"notepad.exe"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the return code of the Notepad process.</span><span lang="fr" style="display: none">Affiche le code de retour du processus du Bloc-notes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The return code from Notepad was: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iReturn</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

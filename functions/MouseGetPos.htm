@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction MouseGetPos</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>MouseGetPos</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Retrieves the current position of the mouse cursor.</span><span lang="fr" style="display: none">Récupère la position actuelle du curseur de la souris.</span></span><br></p>
+  <p class="codeheader">MouseGetPos ( [dimension] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">dimension</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">argument that determines what the return value will be.</span><span lang="fr" style="display: none">Argument qui détermine ce que sera la valeur de retour.</span></span> <span class="segments"><span lang="en">See Return Value.</span><span lang="fr" style="display: none">Voir Valeur de retour.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">Dimension</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Values</span><span lang="fr" style="display: none">valeurs</span></span></td>
+      </tr>
+      <tr>
+        <td><em>None</em></td>
+        <td><span class="segments"><span lang="en">Returns a two-element <strong>array</strong> containing the mouse coordinates:</span><span lang="fr" style="display: none">Retourne un <strong>array</strong> à 2 éléments contenant les coordonnées de la souris :</span></span> <span class="segments"><span lang="en">$aArray[0] = X coord (horizontal), $aArray[1] = Y coord (vertical)</span><span lang="fr" style="display: none">$aArray[0] = X (abscisse), $aArray[1] = Y (ordonnée)</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td><span class="segments"><span lang="en">Returns the X co-ordinate as an integer.</span><span lang="fr" style="display: none">Retourne l'abscisse X sous la forme d'un 'integer'.</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en">1</span><span lang="fr" style="display: none">Retourne 1</span></span></td>
+        <td><span class="segments"><span lang="en">Returns the Y co-ordinate as an integer.</span><span lang="fr" style="display: none">Retourne l'ordonnée Y sous la forme d'un 'integer'.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">If dimension is not a number @error will be set to 1.</span><span lang="fr" style="display: none">Si 'dimension' n'est pas un nombre @error = 1.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">See MouseCoordMode for relative/absolute position settings.</span><span lang="fr" style="display: none">Voir MouseCoordMode pour paramètrer la position relative/absolue.</span></span> <span class="segments"><span lang="en">If relative positioning, numbers may be negative.</span><span lang="fr" style="display: none">Si le positionnement est relatif, les nombres retournés peuvent être négatifs.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="MouseClick.htm">MouseClick</a>, <a href="MouseClickDrag.htm">MouseClickDrag</a>, <a href="AutoItSetOption.htm#MouseCoordMode">MouseCoordMode (Option)</a>, <a href="MouseDown.htm">MouseDown</a>, <a href="MouseGetCursor.htm">MouseGetCursor</a>, <a href="MouseMove.htm">MouseMove</a>, <a href="MouseUp.htm">MouseUp</a>, <a href="MouseWheel.htm">MouseWheel</a>, <a href="PixelGetColor.htm">PixelGetColor</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\MouseGetPos.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MouseGetPos.htm"><span class="S4">MouseGetPos</span></a><span class="S8">()</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Mouse x, y:"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">", "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

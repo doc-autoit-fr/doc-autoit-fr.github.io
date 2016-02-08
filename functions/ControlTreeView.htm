@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ControlTreeView</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ControlTreeView</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sends a command to a TreeView32 control.</span><span lang="fr" style="display: none">Envoie une commande à un contrôle TreeView32.</span></span><br></p>
+  <p class="codeheader">ControlTreeView ( "title", "text", controlID, "command" [, option1] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%">
+          <span class="segments"><span lang="en">The title/hWnd/class of the window to access.</span><span lang="fr" style="display: none">Le titre/handle/class de la fenêtre à atteindre.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsadvanced.htm">Title special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsadvanced.htm">Définiton spéciale de titre</a>.</span></span><a href="../intro/windowsadvanced.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>
+          <span class="segments"><span lang="en">The text of the window to access.</span><span lang="fr" style="display: none">Le texte de la fenêtre à accéder.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span><a href="../intro/windowsbasic.htm#specialtext"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>controlID</td>
+        <td>
+          <span class="segments"><span lang="en">The control to interact with.</span><span lang="fr" style="display: none">Le contrôle avec lequel interagir.</span></span> <span class="segments"><span lang="en">See <a href="../intro/controls.htm">Controls</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/controls.htm">Controls</a>.</span></span><a href="../intro/controls.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>command</td>
+        <td><span class="segments"><span lang="en">The command to send to the control (see below).</span><span lang="fr" style="display: none">La commande à envoyer au contrôle (Voir ci-dessous).</span></span></td>
+      </tr>
+      <tr>
+        <td>option1</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Additional parameter required by some commands.</span><span lang="fr" style="display: none">Paramètre additionnel requis par certaines commandes.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Return depends on the command as table below shows.</span><span lang="fr" style="display: none">Dépend de la commande comme le montre le tableau ci-dessous.</span></span> <span class="segments"><span lang="en">In case of an error (such as an invalid command or window/control could not be found) then @error is set to 1.</span><span lang="fr" style="display: none">En cas d'erreur (telle qu'une commande ou fenêtre/contrôle invalide), @error = 1.</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:40%"><strong>Command, Option1</strong></td>
+        <td style="width:60%"><span class="segments"><span lang="en"><strong>Operation</strong></span><span lang="fr" style="display: none"><strong>Opération</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>"Check", "item"</td>
+        <td><span class="segments"><span lang="en">Checks an item (if the item supports it).</span><span lang="fr" style="display: none">Coche un élément (si celui-ci le permet).</span></span></td>
+      </tr>
+      <tr>
+        <td>"Collapse", "item"</td>
+        <td><span class="segments"><span lang="en">Collapses an item to hide its children.</span><span lang="fr" style="display: none">Replie un élément pour cacher ses sous-éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"Exists", "item"</td>
+        <td><span class="segments"><span lang="en">Returns 1 if an item exists, otherwise 0.</span><span lang="fr" style="display: none">Retourne 1 si un élément existe, sinon 0.</span></span></td>
+      </tr>
+      <tr>
+        <td>"Expand", "item"</td>
+        <td><span class="segments"><span lang="en">Expands an item to show its children.</span><span lang="fr" style="display: none">Déploie un élément pour montrer ses sous-éléments.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetItemCount", "item"</td>
+        <td><span class="segments"><span lang="en">Returns the number of children for a selected item.</span><span lang="fr" style="display: none">Retourne le nombre de sous-éléments pour un élément sélectionné.</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetSelected" [, UseIndex]</td>
+        <td><span class="segments"><span lang="en">Returns the item reference of the current selection using the text reference of the item (or index reference if UseIndex is set to 1).</span><span lang="fr" style="display: none">Retourne la référence de l'élément de la sélection en cours, par la référence de son texte (ou par son index si UseIndex est mis à 1).</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetText", "item"</td>
+        <td><span class="segments"><span lang="en">Returns the text of an item.</span><span lang="fr" style="display: none">Retourne le texte d'un élément.</span></span></td>
+      </tr>
+      <tr>
+        <td>"IsChecked"</td>
+        <td><span class="segments"><span lang="en">Returns the state of an item.</span><span lang="fr" style="display: none">Retourne l'état d'un élément.</span></span> <span class="segments"><span lang="en">1:checked, 0:unchecked, -1:not a checkbox.</span><span lang="fr" style="display: none">1:coché, 0:décoché, -1:n'est pas de type CheckBox.</span></span></td>
+      </tr>
+      <tr>
+        <td>"Select", "item"</td>
+        <td><span class="segments"><span lang="en">Selects an item.</span><span lang="fr" style="display: none">Sélectionne un élément.</span></span></td>
+      </tr>
+      <tr>
+        <td>"Uncheck", "item"</td>
+        <td><span class="segments"><span lang="en">Unchecks an item (if the item supports it).</span><span lang="fr" style="display: none">Décoche un élément (si celui-ci le permet).</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">The "item" parameter is a string-based parameter that is used to reference a particular treeview item using a combination of text and indices.</span><span lang="fr" style="display: none">Le paramètre "item" est un paramètre basée sur une chaîne qui est utilisé pour référencer un élément spécifique du 'treevieww' par une combinaison de texte et d'indices.</span></span> <span class="segments"><span lang="en">Indices are 0-based.</span><span lang="fr" style="display: none">Les indices sont indexés à partir de 0.</span></span> <span class="segments"><span lang="en">For example:</span><span lang="fr" style="display: none">Par exemple :</span></span><br>
+  <br>
+  <br>
+  Heading1<br>
+  ----&gt; H1SubItem1<br>
+  ----&gt; H1SubItem2<br>
+  ----&gt; H1SubItem3<br>
+  ----&gt; ----&gt; H1S1SubItem1<br>
+  Heading2<br>
+  Heading3<br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">Each "level" is separated by |.</span><span lang="fr" style="display: none">Chaque "niveau" est séparé par le caractère "|".</span></span> <span class="segments"><span lang="en">An index is preceded with #.</span><span lang="fr" style="display: none">Et chaque index est précédé du caractère "#".</span></span> <span class="segments"><span lang="en">Examples:</span><span lang="fr" style="display: none">Exemples:</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>Item</strong></span><span lang="fr" style="display: none"><strong>Elément</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Item Reference</strong></span><span lang="fr" style="display: none"><strong>Référence d'élément</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>Heading2</td>
+        <td><span class="segments"><span lang="en">"Heading2" or "#1"</span><span lang="fr" style="display: none">"Heading2" ou "#1"</span></span></td>
+      </tr>
+      <tr>
+        <td>H1SubItem2</td>
+        <td><span class="segments"><span lang="en">"Heading1|H1SubItem2" or "#0|#1"</span><span lang="fr" style="display: none">"Heading1|H1SubItem2" ou "#0|#1"</span></span></td>
+      </tr>
+      <tr>
+        <td>H1S1SubItem1</td>
+        <td><span class="segments"><span lang="en">"Heading1|H1SubItem3|H1S1SubItem1" or "#0|#2|#0"</span><span lang="fr" style="display: none">"Heading1|H1SubItem3|H1S1SubItem1" ou "#0|#2|#0"</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">As AutoIt is a 32-bit application some commands are not available when referencing a 64-bit application as Explorer when running on 64-bit Windows.</span><span lang="fr" style="display: none">Comme AutoIt est une application 32-bit, quelques commandes ne sont pas disponibles pour référencer une application 64-bit comme Explorer lors de l'exécution sur un Windows 64-bit.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ControlCommand.htm">ControlCommand</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ControlTreeView.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;TreeViewConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"ControlTreeView Example"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">212</span><span class="S8">,</span><span class="S0"> </span><span class="S3">212</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idTreeView_1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeView.htm"><span class="S4">GUICtrlCreateTreeView</span></a><span class="S8">(</span><span class="S3">6</span><span class="S8">,</span><span class="S0"> </span><span class="S3">6</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><span class="S3">160</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$TVS_HASBUTTONS</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$TVS_HASLINES</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$TVS_LINESATROOT</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$TVS_CHECKBOXES</span><span class="S8">),</span><span class="S0"> </span><span class="S9">$WS_EX_CLIENTEDGE</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hTreeView_1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ControlGetHandle.htm"><span class="S4">ControlGetHandle</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idTreeView_1</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idRoot</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Root"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idTreeView_1</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 1"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idRoot</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 2"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idRoot</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 3"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idRoot</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idItem_4</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 4"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idRoot</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 4.1"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idItem_4</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 4.2"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idItem_4</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateTreeViewItem.htm"><span class="S4">GUICtrlCreateTreeViewItem</span></a><span class="S8">(</span><span class="S7">"Item 5"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idRoot</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ControlTreeView.htm"><span class="S4">ControlTreeView</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hTreeView_1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Expand"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Root"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ControlTreeView.htm"><span class="S4">ControlTreeView</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hTreeView_1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Exists"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Root|Item 4"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ControlTreeView.htm"><span class="S4">ControlTreeView</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hTreeView_1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Check"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Root|Item 4"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ControlTreeView.htm"><span class="S4">ControlTreeView</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hTreeView_1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Select"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Root|Item 4"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ControlTreeView.htm"><span class="S4">ControlTreeView</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hTreeView_1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Expand"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Root|Item 4"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

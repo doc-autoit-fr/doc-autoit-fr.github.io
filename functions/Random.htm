@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction Random</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>Random</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Generates a pseudo-random float-type number.</span><span lang="fr" style="display: none">Génère un nombre pseudo-aléatoire de type 'float'.</span></span><br></p>
+  <p class="codeheader">Random ( [Min = 0 [, Max = 1 [, Flag = 0]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">Min</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The smallest number to be generated.</span><span lang="fr" style="display: none">Le plus petit nombre qui peut être généré.</span></span> <span class="segments"><span lang="en">The default is 0.</span><span lang="fr" style="display: none">Par défaut c'est 0.</span></span></td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The largest number to be generated.</span><span lang="fr" style="display: none">Le plus grand nombre qui peut être généré.</span></span> <span class="segments"><span lang="en">The default is 1.</span><span lang="fr" style="display: none">La valeur par défaut est 1.</span></span></td>
+      </tr>
+      <tr>
+        <td>Flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If this is set to 1 then an integer result will be returned.</span><span lang="fr" style="display: none">S'il est mis à 1, un résultat de type 'integer' sera retourné.</span></span> <span class="segments"><span lang="en">Default is a floating point number.</span><span lang="fr" style="display: none">Par défaut c'est un nombre de type 'float'.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a pseudo-random number between Min and Max.</span><span lang="fr" style="display: none">Retourne un nombre pseudo-aléatoire entre Min et Max.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">If only one argument is provided, then this is interpreted to be the Max parameter.</span><span lang="fr" style="display: none">Si un seul argument est fourni, il est considéré comme le paramètre Max.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The result will be in the range of Min to Max INCLUSIVE when using integers (just short of Max when using floats).</span><span lang="fr" style="display: none">Le résultat sera dans l'intervalle de Min à Max, bornes INCLUSES lors de l'utilisation des résultats de type 'integer' (un peu moins du Max lorsqu'il s'agit de 'float').</span></span><br>
+  <br>
+  If Min and Max are the same value then <a href="Random.htm">Random()</a> will return that value - the @error flag will not be set in this case<br>
+  <br>
+  <span class="segments"><span lang="en">When using integers Max-Min must be less than 2^31.</span><span lang="fr" style="display: none">Quand on utilise des 'integers' Min et MAx doivent être inférieurs à 2^31.</span></span><br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Comments based on the original source</strong></span><span lang="fr" style="display: none"><strong>Commentaires relatifs à l'origine de la source</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">This function uses the Mersenne Twister random number generator, MT19937, written by Takuji Nishimura, Makoto Matsumoto, Shawn Cokus, Matthe Bellew and Isaku Wada.</span><span lang="fr" style="display: none">Cette fonction utilise le générateur de nombre aléatoire Mersenne Twister, MT19937, écrit par Takuji Nishimura, Makoto Matsumoto, Shawn Cokus, Matthe Bellew et Isaku Wada.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The Mersenne Twister is an algorithm for generating random numbers.</span><span lang="fr" style="display: none">Le Mersenne Twister est un algorithme de génération de nombres aléatoires.</span></span> <span class="segments"><span lang="en">It was designed with consideration of the flaws in various other generators.</span><span lang="fr" style="display: none">Il a été conçu en tenant compte des failles de divers autres générateurs.</span></span> <span class="segments"><span lang="en">The period, 2<sup>19937</sup>-1, and the order of equidistribution, 623 dimensions, are far greater.</span><span lang="fr" style="display: none">La période, 2<sup>19937</sup>-1 et l'ordre de l'équidistribution, 623 dimensions, sont beaucoup plus grands.</span></span> <span class="segments"><span lang="en">The generator is also fast; it avoids multiplication and division, and it benefits from caches and pipelines.</span><span lang="fr" style="display: none">Le générateur est également rapide, il évite la multiplication et la division, et bénéficie de mémoire cache et de plusieurs canaux de traitement.</span></span> <span class="segments"><span lang="en">For more information see the inventors' web page at <a href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html">http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html</a></span><span lang="fr" style="display: none">Pour plus d'informations, voir la page web des inventeurs à <a href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html">http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html</a></span></span><a href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html"></a><br>
+  <br>
+  <span class="segments"><span lang="en">Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura, All rights reserved.</span><span lang="fr" style="display: none">Copyright © 1997 - 2002, Makoto Matsumoto et Takuji Nishimura, Tous droits réservés.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</span><span lang="fr" style="display: none">La redistribution et l'utilisation des codes source et binaire, avec ou sans modification, sont autorisées à condition que les conditions suivantes soient remplies :</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> <span class="segments"><span lang="en">Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span><span lang="fr" style="display: none">Les redistributions du code source doivent conserver la notice de copyright ci-dessus, cette liste de conditions et la décharge suivante.</span></span><br>
+  <br>
+  2. <span class="segments"><span lang="en">Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span><span lang="fr" style="display: none">Les redistributions sous forme binaire doivent reproduire la notice de copyright ci-dessus, cette liste de conditions et la décharge suivante dans la documentation et/ou d'autres documents fournis avec la distribution.</span></span><br>
+  <br>
+  3. <span class="segments"><span lang="en">The names of its contributors may not be used to endorse or promote products derived from this software without specific prior written permission.</span><span lang="fr" style="display: none">Les noms de ses contributeurs ne peuvent être utilisés pour avaliser ou promouvoir des produits dérivés de ce logiciel sans autorisation écrite spécifique préalable.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.</span><span lang="fr" style="display: none">CE LOGICIEL EST FOURNI PAR LES DÉTENTEURS DE DROITS D'AUTEURS ET LES CONTRIBUTEURS "TEL QUEL" ET TOUTE GARANTIE EXPLICITE OU IMPLICITE, Y COMPRIS MAIS SANS LIMITATION DE GARANTIE IMPLICITE DE VALEUR MARCHANDE ET D'ADAPTATION À UN USAGE PARTICULIER SONT RÉFUTÉS.</span></span> <span class="segments"><span lang="en">IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span><span lang="fr" style="display: none">EN AUCUN CAS LE PROPRIÉTAIRE DES DROITS D'AUTEUR OU LES CONTRIBUTEURS NE SAURAIENT ÊTRE TENUS RESPONSABLES DE TOUT DOMMAGE DIRECT, INDIRECT, ACCESSOIRE, SPÉCIAL, DOMMAGES ET INTÉRÊTS OU DOMMAGES CONSÉCUTIFS (Y COMPRIS MAIS SANS LIMITATION FOURNITURE DE MARCHANDISES OU SERVICES DE SUBSTITUTION ; PERTE DE JOUISSANCE, DE DONNÉES OU DE BÉNÉFICES ; NI INTERRUPTION D'ACTIVITÉ) QUELLES QUE SOIENT LEURS CAUSES ET QUEL QUE SOIT LE MOTIF JURIDIQUE INVOQUÉ, CONTRACTUEL, RESPONSABILITÉ CIVILE OU PÉNALE (Y COMPRIS NÉGLIGENCE OU AUTRE), SURVENANT DE QUELQUE MANIÈRE QUE CE SOIT SUITE À L'UTILISATION DU LOGICIEL, MÊME S'ILS ONT ÉTÉ AVISÉS DE LA POSSIBILITÉ DE TELS DOMMAGES.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="Round.htm">Round</a>, <a href="SRandom.htm">SRandom</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Random.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Flip a coin.</span><span lang="fr" style="display: none">Lancé d'une pièce.</span></span></span></span>
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Random.htm"><span class="S4">Random</span></a><span class="S8">(</span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Return an integer between 0 and 1.</span><span lang="fr" style="display: none">Retourne un nombre entier compris entre 0 et 1.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The side of the coin was: Heads"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">If the random integer was 1 then heads was thrown.</span><span lang="fr" style="display: none">Si le nombre aléatoire est 1 alors Face à été obtenu.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The side of the coin was: Tails"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">If the random integer was 0 then tails was thrown.</span><span lang="fr" style="display: none">Si le nombre aléatoire est 0, alors Pile a été obtenu.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Random[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Roll a die.</span><span lang="fr" style="display: none">Lancé d'un dé.</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The die landed on number "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Random.htm"><span class="S4">Random</span></a><span class="S8">(</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">6</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"."</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Return an integer between 1 and 6.</span><span lang="fr" style="display: none">Retourne un nombre entier compris entre 1 et 6.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 3</span><span lang="fr" style="display: none">Exemple 3</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Random[3].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext3">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Create a random string of text.</span><span lang="fr" style="display: none">Crée une chaîne aléatoire de texte.</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sText</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Random.htm"><span class="S4">Random</span></a><span class="S8">(</span><span class="S3">5</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Return an integer between 5 and 20 to determine the length of the string.</span><span lang="fr" style="display: none">Retourne un nombre entier compris entre 5 et 20 pour déterminer la longueur de la chaîne.</span></span></span></span>
+<span class="S0">        </span><span class="S9">$sText</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Chr.htm"><span class="S4">Chr</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/Random.htm"><span class="S4">Random</span></a><span class="S8">(</span><span class="S3">65</span><span class="S8">,</span><span class="S0"> </span><span class="S3">122</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Return an integer between 65 and 122 which represent the ASCII characters between a (lower-case) to Z (upper-case).</span><span lang="fr" style="display: none">Retourne un nombre entier compris entre 65 et 122 qui représentent les caractères ASCII entre 'a' (minuscule) à 'Z' (en majuscule).</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The random string of text was: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sText</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Display the string of text.</span><span lang="fr" style="display: none">Affiche la chaîne de texte.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3>Example 4</h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Random[4].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext4">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Result of when Min and Max are the same value.</span><span lang="fr" style="display: none">Résultat où Min et Max ont la même valeur.</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iRandom</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Random.htm"><span class="S4">Random</span></a><span class="S8">(</span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred, due to the fact both values are exactly the same: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iRandom</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

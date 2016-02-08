@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUICtrlSetResizing</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUICtrlSetResizing</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Defines the resizing method used by a control.</span><span lang="fr" style="display: none">Définit la méthode de redimensionnement utilisée par un contrôle.</span></span><br></p>
+  <p class="codeheader">GUICtrlSetResizing ( controlID, resizing )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">controlID</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The control identifier (controlID) as returned by a <a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...()</a> function, or -1 for the last created control.</span><span lang="fr" style="display: none">L'identifiant du contrôle (controlID) tel que renvoyé par une fonction <a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...()</a>, ou -1 pour désigner le dernier contrôle créé.</span></span></td>
+      </tr>
+      <tr>
+        <td>resizing</td>
+        <td><span class="segments"><span lang="en">See the <a href="#DockingValues">Docking Values table</a> below for values that can be used (add together multiple values if required).</span><span lang="fr" style="display: none">Voir la <a href="#DockingValues">Tableau des valeurs d'Ancrage</a> ci-dessous pour les valeurs qui peuvent être utilisées (additionner plusieurs valeurs si nécessaire).</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">When a GUI window is resized the controls within react - how they react is determined by this function.</span><span lang="fr" style="display: none">Quand une fenêtre GUI est redimensionnée, ses contrôles réagissent - la façon dont ils réagissent est déterminée par cette fonction.</span></span> <span class="segments"><span lang="en">To be able to resize a GUI window it needs to have been created with the $WS_SIZEBOX and $WS_SYSMENU styles.</span><span lang="fr" style="display: none">Pour être en mesure de redimensionner une fenêtre GUI, elle doit avoir été créée avec les styles $WS_SIZEBOX et $WS_SYSMENU.</span></span> <span class="segments"><span lang="en">See <a href="GUICreate.htm">GUICreate()</a>.</span><span lang="fr" style="display: none">Consultez <a href="GUICreate.htm">GUICreate()</a>.</span></span><a href="GUICreate.htm"></a><br>
+  <br>
+  &nbsp;&nbsp;&nbsp; <a id="DockingValues"><strong>Docking Values Table</strong><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>Resizing</strong></span><span lang="fr" style="display: none"><strong>Redimensionnement</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Value</strong></span><span lang="fr" style="display: none"><strong>Valeur</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>No displacement of</strong></span><span lang="fr" style="display: none"><strong>Effet</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKAUTO</td>
+        <td><span class="segments"><span lang="en">1</span><span lang="fr" style="display: none">Retourne 1</span></span></td>
+        <td><span class="segments"><span lang="en">resize and reposition according to new window size</span><span lang="fr" style="display: none">Redimensionne et repositionne en accord avec la nouvelle taille de la fenêtre</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKLEFT</td>
+        <td>2</td>
+        <td><span class="segments"><span lang="en">Left side</span><span lang="fr" style="display: none">Conserve la distance au coté gauche de la GUI (Left)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKRIGHT</td>
+        <td>4</td>
+        <td><span class="segments"><span lang="en">Right side</span><span lang="fr" style="display: none">Conserve la distance au coté droit de la GUI</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKHCENTER</td>
+        <td>8</td>
+        <td><span class="segments"><span lang="en">Position will not move relative to horizontal center</span><span lang="fr" style="display: none">Conserve la distance à l'axe central horizontal de la GUI</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKTOP</td>
+        <td>32</td>
+        <td><span class="segments"><span lang="en">Top side</span><span lang="fr" style="display: none">Conserve la distance au coté haut de la GUI (Top)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKBOTTOM</td>
+        <td>64</td>
+        <td><span class="segments"><span lang="en">Bottom side</span><span lang="fr" style="display: none">Conserve la distance au coté bas de la GUI</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKVCENTER</td>
+        <td>128</td>
+        <td><span class="segments"><span lang="en">Position will not move relative to vertical center</span><span lang="fr" style="display: none">Conserve la distance à l'axe central vertical de la GUI</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKWIDTH</td>
+        <td>256</td>
+        <td><span class="segments"><span lang="en">Width will not change</span><span lang="fr" style="display: none">Conserve la largeur du contrôle (Width)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKHEIGHT</td>
+        <td>512</td>
+        <td><span class="segments"><span lang="en">Height will not change</span><span lang="fr" style="display: none">Conserve la hauteur du contrôle (Height)</span></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span class="segments"><span lang="en">Composite resizing</span><span lang="fr" style="display: none">Redimensionnement composé</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKSIZE</td>
+        <td>768</td>
+        <td><span class="segments"><span lang="en">(256+512) Size will not change</span><span lang="fr" style="display: none">( 256 + 512 ) Conserve la taille du contrôle (Width/Height)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKMENUBAR</td>
+        <td>544</td>
+        <td><span class="segments"><span lang="en">(512+32) so the control will stay at the top of window with no change in Height</span><span lang="fr" style="display: none">( 512 + 32 ) Conserve la distance au coté haut de la GUI (Top), et la hauteur du contrôle (Height)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKSTATEBAR</td>
+        <td>576</td>
+        <td><span class="segments"><span lang="en">(512+64) so the control stay at the bottom of the window with no change in Height</span><span lang="fr" style="display: none">( 512 + 64 ) Conserve la distance au coté bas de la GUI, et la hauteur du contrôle (Height)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKALL</td>
+        <td>802</td>
+        <td><span class="segments"><span lang="en">(2+32+256+512) so the control will not move during resizing</span><span lang="fr" style="display: none">( 2 + 32 + 256 + 512 ) Conserve la position du contrôle (Left/Top) et sa taille (Width/Height)</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DOCKBORDERS</td>
+        <td>102</td>
+        <td><span class="segments"><span lang="en">(2+4+32+64) so the control will grow as the window</span><span lang="fr" style="display: none">( 2 + 4 + 32 + 64 ) Conserve les distances aux quatre cotés de la GUI de sorte que le contrôle se développera comme la GUI</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">The default resizing for a given control is control dependent see the control doc.</span><span lang="fr" style="display: none">La valeur par défaut de redimensionnement pour un contrôle donné est $GUI_DOCKAUTO, voir la documentation sur les contrôles.</span></span><br>
+  <span class="segments"><span lang="en">A default value for any control can be set with GUIResizeMode (Option).</span><span lang="fr" style="display: none">Une valeur par défaut pour tous les contrôles peut être définie avec GUIResizeMode (Option).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The automatic resizing event can be disabled if GUIEventOptions (Option) is set to 1.</span><span lang="fr" style="display: none">L'événement de redimensionnement automatique peut être désactivée si GUIEventOptions (Option) est mis à 1.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUIEventOptions (Option)</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIResizeMode (Option)</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICtrlSetResizing.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;EditConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUICoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"My InputBox"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">190</span><span class="S8">,</span><span class="S0"> </span><span class="S3">114</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_SIZEBOX</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$WS_SYSMENU</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">start the definition</span><span lang="fr" style="display: none">commence la définition</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetFont.htm"><span class="S4">GUISetFont</span></a><span class="S8">(</span><span class="S3">8</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Arial"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateLabel.htm"><span class="S4">GUICtrlCreateLabel</span></a><span class="S8">(</span><span class="S7">"Prompt"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">8</span><span class="S8">,</span><span class="S0"> </span><span class="S3">7</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">add prompt info</span><span lang="fr" style="display: none">ajoute des informations rapides</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetResizing.htm"><span class="S4">GUICtrlSetResizing</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DOCKLEFT</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$GUI_DOCKTOP</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idEdit</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateInput.htm"><span class="S4">GUICtrlCreateInput</span></a><span class="S8">(</span><span class="S7">"Default"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">,</span><span class="S0"> </span><span class="S3">175</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$ES_PASSWORD</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">add the input area</span><span lang="fr" style="display: none">ajoute une zone de saisie</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_FOCUS</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetResizing.htm"><span class="S4">GUICtrlSetResizing</span></a><span class="S8">(</span><span class="S9">$idEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DOCKBOTTOM</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$GUI_DOCKHEIGHT</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idOK</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"OK"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">,</span><span class="S0"> </span><span class="S3">75</span><span class="S8">,</span><span class="S0"> </span><span class="S3">24</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">add the button that will close the GUI</span><span lang="fr" style="display: none">ajoute le bouton qui fermera la GUI</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetResizing.htm"><span class="S4">GUICtrlSetResizing</span></a><span class="S8">(</span><span class="S9">$idOK</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DOCKBOTTOM</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$GUI_DOCKSIZE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$GUI_DOCKHCENTER</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idCancel</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Annuler"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">25</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">add the button that will close the GUI</span><span lang="fr" style="display: none">ajoute le bouton qui fermera la GUI</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetResizing.htm"><span class="S4">GUICtrlSetResizing</span></a><span class="S8">(</span><span class="S9">$idCancel</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DOCKBOTTOM</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$GUI_DOCKSIZE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$GUI_DOCKHCENTER</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">to display the GUI</span><span lang="fr" style="display: none">pour afficher l'interface graphique</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+</pre>
+      </div>
+    </div>
+  </div></a></p>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction TrayItemSetText</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>TrayItemSetText</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the itemtext of a tray menu/item control.</span><span lang="fr" style="display: none">Définit le texte d'un contrôle menu ou item de menu de la zone de notification.</span></span><br></p>
+  <p class="codeheader">TrayItemSetText ( controlID, text )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">controlID</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The control identifier (controlID) as returned by a <a href="../functions/TrayCreateItem.htm">TrayCreateItem</a> or <a href="../functions/TrayCreateMenu.htm">TrayCreateMenu</a> function.</span><span lang="fr" style="display: none">L'identifiant du contrôle (controlID) tel que retourné par la fonction <a href="../functions/TrayCreateItem.htm">TrayCreateItem</a> ou <a href="../functions/TrayCreateMenu.htm">TrayCreateMenu</a> fonction.</span></span></td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td><span class="segments"><span lang="en">The new text of the tray menu/item control.</span><span lang="fr" style="display: none">Le nouveau texte du contrôle menu ou item de menu de la zone de notification.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">To change the itemtext of the default menuitems (Script Paused/Exit) use the constants $TRAY_ITEM_EXIT and $TRAY_ITEM_PAUSE as controlID.</span><span lang="fr" style="display: none">Pour changer le texte des items de menu par défaut (script en Pause ou Exit), utilisez les constantes $TRAY_ITEM_EXIT et $TRAY_ITEM_PAUSE comme controlID.</span></span><br>
+  <br>
+  The above constants are defined in #include &lt;TrayConstants.au3&gt;.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="TrayCreateItem.htm">TrayCreateItem</a>, <a href="TrayCreateMenu.htm">TrayCreateMenu</a>, <a href="TrayItemGetText.htm">TrayItemGetText</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\TrayItemSetText.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/NoTrayIcon.htm"><span class="S11">#NoTrayIcon</span></a>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;TrayConstants.au3&gt;</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Required for the $TRAY_ICONSTATE_SHOW, $TRAY_ITEM_EXIT and $TRAY_ITEM_PAUSE constants.</span><span lang="fr" style="display: none">Nécessaire pour les constantes $TRAY_ICONSTATE_SHOW, $TRAY_ITEM_EXIT et $TRAY_ITEM_PAUSE.</span></span></span></span>
+
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayAutoPause"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">The script will not pause when selecting the tray icon.</span><span lang="fr" style="display: none">Le script ne sera pas une pause lors de la sélection de l'icône de la zone de notification.</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayMenuMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Items are not checked when selected.</span><span lang="fr" style="display: none">Les items ne sont pas cochés lorsqu'ils sont sélectionnés.</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idRandom</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">"Random:"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Select this item to change the text with a random number.</span><span lang="fr" style="display: none">Sélectionne cette option pour modifier le texte avec un nombre aléatoire.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Create a separator line.</span><span lang="fr" style="display: none">Crée une ligne de séparation.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idAbout</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">"About"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TraySetState.htm"><span class="S4">TraySetState</span></a><span class="S8">(</span><span class="S9">$TRAY_ICONSTATE_SHOW</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Show the tray menu.</span><span lang="fr" style="display: none">Affiche le menu de la barre.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TrayItemSetText.htm"><span class="S4">TrayItemSetText</span></a><span class="S8">(</span><span class="S9">$TRAY_ITEM_EXIT</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Exit Program"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set the text of the default 'Exit' item.</span><span lang="fr" style="display: none">Définit le texte de l'item par défaut 'Exit'.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TrayItemSetText.htm"><span class="S4">TrayItemSetText</span></a><span class="S8">(</span><span class="S9">$TRAY_ITEM_PAUSE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Pause Program"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set the text of the default 'Pause' item.</span><span lang="fr" style="display: none">Définit le texte de l'item par défaut 'Pause'.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayGetMsg.htm"><span class="S4">TrayGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idAbout</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Display a message box about the AutoIt version and installation path of the AutoIt executable.</span><span lang="fr" style="display: none">Affiche une boîte de message à propos de la version et du chemin d'installation de l'exécutable AutoIt.</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"AutoIt tray menu example."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">                        </span><span class="S7">"Version: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@AutoItVersion"><span class="S6">@AutoItVersion</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">                        </span><span class="S7">"Install Path: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringLeft.htm"><span class="S4">StringLeft</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@AutoItExe"><span class="S6">@AutoItExe</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringInStr.htm"><span class="S4">StringInStr</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@AutoItExe"><span class="S6">@AutoItExe</span></a><span class="S8">,</span><span class="S0"> </span><span class="S7">"\"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Find the folder of a full path.</span><span lang="fr" style="display: none">Trouve le dossier d'un chemin d'accès complet.</span></span></span></span>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idRandom</span>
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">Set the text of the 'Random' item with a random integer.</span><span lang="fr" style="display: none">Définit le texte de l'item 'Random' avec un nombre aléatoire.</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/TrayItemSetText.htm"><span class="S4">TrayItemSetText</span></a><span class="S8">(</span><span class="S9">$idRandom</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Random: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Int.htm"><span class="S4">Int</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/Random.htm"><span class="S4">Random</span></a><span class="S8">(</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)))</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StringRegExpReplace</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StringRegExpReplace</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Replace text in a string based on regular expressions.</span><span lang="fr" style="display: none">Remplace du texte, dans une chaîne, selon une expression régulière donnée.</span></span><br></p>
+  <p class="codeheader">StringRegExpReplace ( "test", "pattern", "replace" [, count = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">test</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The string to check</span><span lang="fr" style="display: none">La chaîne à traiter</span></span></td>
+      </tr>
+      <tr>
+        <td>pattern</td>
+        <td>
+          <span class="segments"><span lang="en">The regular expression to compare.</span><span lang="fr" style="display: none">L'expression régulière qui définit la recherche.</span></span> <span class="segments"><span lang="en">See <a href="StringRegExp.htm">StringRegExp</a> for pattern definition characters.</span><span lang="fr" style="display: none">Consultez <a href="StringRegExp.htm">StringRegExp</a> pour les caractères de définition du modèle.</span></span><a href="StringRegExp.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>replace</td>
+        <td><span class="segments"><span lang="en">The text to replace the regular expression matching text with.</span><span lang="fr" style="display: none">Le texte destiné à remplacer le texte trouvé par l'expression régulière.</span></span> To insert matched group text, \0 - \9 (or $0 - $9) can be used <strong>as</strong> back-references. (See remarks)</td>
+      </tr>
+      <tr>
+        <td>count</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The number of times to execute the replacement in the string.</span><span lang="fr" style="display: none">Le nombre de fois où exécuter le remplacement de la chaîne.</span></span> <span class="segments"><span lang="en">The default is 0.</span><span lang="fr" style="display: none">Par défaut c'est 0.</span></span> <span class="segments"><span lang="en">Use 0 for global replacement.</span><span lang="fr" style="display: none">Utilisez 0 pour un remplacement global.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">an updated string based on regular expressions.</span><span lang="fr" style="display: none">Retourne la chaîne modifiée selon l'expression régulière.</span></span> <span class="segments"><span lang="en">Check @extended for the number of replacements performed.</span><span lang="fr" style="display: none">Testez @extended pour obtenir le nombre de remplacements effectués.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td><span class="segments"><span lang="en">2 = Pattern invalid.</span><span lang="fr" style="display: none">2 = Modèle invalide.</span></span> <span class="segments"><span lang="en">@extended = offset of error in pattern.</span><span lang="fr" style="display: none">@extended = position de l'erreur dans le modèle.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">To separate back-reference replacements from actual (replaced) numbers, wrap them with curly braces, i.e:</span><span lang="fr" style="display: none">Pour séparer les remplacements avec référence arrière des nombres (remplacés) actuels, les encadrer avec des accolades, exemple:</span></span> "${1}5".<br>
+  <span class="segments"><span lang="en">If a "\" needs to be in the replaced string it must be doubled.</span><span lang="fr" style="display: none">Si un "\" doit être remplacé dans la chaîne il doit être doublé.</span></span> <span class="segments"><span lang="en">This is a consequence of the back-references mechanism.</span><span lang="fr" style="display: none">Ceci est une conséquence du mécanisme de référence arrière.</span></span><br>
+  <span class="segments"><span lang="en">The "\" and "$" replacement formats are the only valid back-references formats supported.</span><span lang="fr" style="display: none">Les formats de remplacement de "\" et "$" sont les seuls formats valides pour les références arrières supportées.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">See also the <a href="../tutorials/regexp/regexp.htm">Regular Expression</a> tutorial, in which you can run a script to test your regular expression(s).</span><span lang="fr" style="display: none">Consultez aussi le tutoriel <a href="../tutorials/regexp/regexp.htm">Expressions régulières</a>, dans lequel vous pouvez exécuter un script pour tester votre expression régulière.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="StringRegExp.htm">StringRegExp</a>, <a href="StringReplace.htm">StringReplace</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringRegExpReplace.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Test1</span><span class="S8">()</span>
+<span class="S0">Test2</span><span class="S8">()</span>
+<span class="S0">Test3</span><span class="S8">()</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">This example demonstrates a basic replacement.</span><span lang="fr" style="display: none">Cet exemple montre un remplacement de base.</span></span> <span class="segments"><span lang="en">It replaces the vowels aeiou</span><span lang="fr" style="display: none">Il remplace les voyelles aeiou</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">with the @ character.</span><span lang="fr" style="display: none">avec le caractère @.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Test1</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sInput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"Where have all the flowers gone, long time passing?"</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sOutput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExpReplace.htm"><span class="S4">StringRegExpReplace</span></a><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[aeiou]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"@"</span><span class="S8">)</span>
+<span class="S0">    Display</span><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Test1</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">The following example demonstrates using back-references to change the date</span><span lang="fr" style="display: none">L'exemple suivant illustre l'utilisation des références arrières pour changer la date</span></span></span></span>
+<span class="S1">; from MM/DD/YYYY to DD.MM.YYYY</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Test2</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sInput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">'some text1 12/31/2009 01:02:03 some text2'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">'some text3 02/28/2009 11:22:33 some text4'</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sOutput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExpReplace.htm"><span class="S4">StringRegExpReplace</span></a><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'(\d</span><span class="S10">{2}</span><span class="S7">)/(\d</span><span class="S10">{2}</span><span class="S7">)/(\d</span><span class="S10">{4}</span><span class="S7">)'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">' $2.$1.$3 '</span><span class="S8">)</span>
+<span class="S0">    Display</span><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Test2</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">The following example demonstrates the need to double backslash</span><span lang="fr" style="display: none">L'exemple suivant illustre la nécessité d'une double barre oblique inverse</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Test3</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sInput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">'%CommonProgramFiles%\Microsoft Shared\'</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sOutput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExpReplace.htm"><span class="S4">StringRegExpReplace</span></a><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'%([^%]*?)%'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'C:\\WINDOWS\\Some Other Folder$'</span><span class="S8">)</span>
+<span class="S0">    Display</span><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Test3</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Display</span><span class="S8">(</span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Format the output.</span><span lang="fr" style="display: none">Formate la sortie.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringFormat.htm"><span class="S4">StringFormat</span></a><span class="S8">(</span><span class="S7">"Input:\t%s\n\nOutput:\t%s"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sInput</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Results"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sMsg</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Display</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

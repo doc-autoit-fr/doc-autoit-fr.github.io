@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUICtrlSendToDummy</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUICtrlSendToDummy</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sends a message to a Dummy control.</span><span lang="fr" style="display: none">Envoie un message à un contrôle factice.</span></span><br></p>
+  <p class="codeheader">GUICtrlSendToDummy ( controlID [, state] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">controlID</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The control identifier (controlID) as returned by <a href="GUICtrlCreateDummy.htm">GUICtrlCreateDummy()</a></span><span lang="fr" style="display: none">L'identifiant du contrôle (controlID) tel que renvoyé par <a href="GUICtrlCreateDummy.htm">GUICtrlCreateDummy()</a></span></span></td>
+      </tr>
+      <tr>
+        <td>state</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">value that can be retrieved later on by <a href="GUICtrlRead.htm">GUICtrlRead()</a></span><span lang="fr" style="display: none">Valeur qui peut être récupéré plus tard par <a href="GUICtrlRead.htm">GUICtrlRead()</a></span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">When this function is called a notification that can be handled through the message loop or with a <a href="GUICtrlSetOnEvent.htm">GUICtrlSetOnEvent()</a> function is generated (as if the control had been "clicked" on).</span><span lang="fr" style="display: none">Lorsque cette fonction est appelée, une notification, qui peut être manipulé à travers la boucle de messages ou avec la fonction <a href="GUICtrlSetOnEvent.htm">GUICtrlSetOnEvent()</a>, est générée (comme si le contrôle avait été "cliqué").</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Note that the function will not action the dummy control if the GUI in which it was created is hidden, as by design none of the controls on such a GUI can be actioned.</span><span lang="fr" style="display: none">Notez que la fonction ne sera pas l'action du contrôle factice si la GUI dans laquelle il a été créé est cachée, comme pendant la conception où aucun contrôle ne peut être exécuté.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="GUICtrlCreateDummy.htm">GUICtrlCreateDummy</a>, <a href="GUICtrlRead.htm">GUICtrlRead</a>, <a href="GUICtrlSetOnEvent.htm">GUICtrlSetOnEvent</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICtrlSendToDummy.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Global</span></a><span class="S0"> </span><span class="S9">$g_idUserDummy</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$g_iState</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIOnEventMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set the option to use GUIOnEventMode.</span><span lang="fr" style="display: none">Définit l'option GUIOnEventMode.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"GUISendToDummy"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">220</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetBkColor.htm"><span class="S4">GUISetBkColor</span></a><span class="S8">(</span><span class="S3">0x00E0FFFF</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Change the background color of the GUI.</span><span lang="fr" style="display: none">Change la couleur du fond de la GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetOnEvent.htm"><span class="S4">GUISetOnEvent</span></a><span class="S8">(</span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"OnExit"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set an event to call the 'OnExit' function.</span><span lang="fr" style="display: none">Définit un événement pour appeler la fonction 'OnExit'.</span></span></span></span>
+
+<span class="S0">    </span><span class="S9">$g_idUserDummy</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateDummy.htm"><span class="S4">GUICtrlCreateDummy</span></a><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetOnEvent.htm"><span class="S4">GUICtrlSetOnEvent</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"OnDummy"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set an event to call the 'OnExit' function when this control is selected.</span><span lang="fr" style="display: none">Définit un événement pour appeler la fonction 'OnExit' lorsque ce contrôle est sélectionné.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Click"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">70</span><span class="S8">,</span><span class="S0"> </span><span class="S3">170</span><span class="S8">,</span><span class="S0"> </span><span class="S3">85</span><span class="S8">,</span><span class="S0"> </span><span class="S3">25</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetOnEvent.htm"><span class="S4">GUICtrlSetOnEvent</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"OnClick"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set an event to call the 'OnClick' function when this control is selected.</span><span lang="fr" style="display: none">Définir un événement pour appeler la fonction 'OnClick' lorsque ce contrôle est sélectionné.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSendToDummy.htm"><span class="S4">GUICtrlSendToDummy</span></a><span class="S8">(</span><span class="S9">$g_idUserDummy</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Set state to be checked Onclick</span><span lang="fr" style="display: none">Définition de l'état d'être coché sur Onclick</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI.</span><span lang="fr" style="display: none">Affiche la GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnClick</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlSendToDummy.htm"><span class="S4">GUICtrlSendToDummy</span></a><span class="S8">(</span><span class="S9">$g_idUserDummy</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Send a message to the dummy control that the close button was selected, which will then proceed to call the function 'OnExit'.</span><span lang="fr" style="display: none">Envoie un message au contrôle factice que le bouton de fermeture a été choisi, et que la fonction 'OnExit' sera appelée.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnClick</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnDummy</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlRead.htm"><span class="S4">GUICtrlRead</span></a><span class="S8">(</span><span class="S9">$g_idUserDummy</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/GUISetBkColor.htm"><span class="S4">GUISetBkColor</span></a><span class="S8">(</span><span class="S3">0x000000FF</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Change the background color of the GUI on dummy state</span><span lang="fr" style="display: none">Change la couleur de fond de la GUI sur l'état factice</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnDummy</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnExit</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Exit the script.</span><span lang="fr" style="display: none">Sortie du script.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnExit</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

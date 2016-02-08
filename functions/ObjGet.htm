@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ObjGet</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ObjGet</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Retrieves a reference to a COM object from an existing process or filename.</span><span lang="fr" style="display: none">Récupère une référence sur un objet COM à partir d'un processus ou d'un fichier existant.</span></span><br></p>
+  <p class="codeheader">ObjGet ( "filename" [, "classname" [, instance]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">filename</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The full path and name to the file containing the object (See remarks).</span><span lang="fr" style="display: none">Le chemin d'accès complet et le nom du fichier contenant l'objet (Voir Remarques ).</span></span></td>
+      </tr>
+      <tr>
+        <td>classname</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Class identifier.</span><span lang="fr" style="display: none">Identifiant de classe.</span></span> <span class="segments"><span lang="en">Can be in either ProgID or the string representation of the CLSID.</span><span lang="fr" style="display: none">Peut être ProgID ou la représentation chaîne du CLSID.</span></span></td>
+      </tr>
+      <tr>
+        <td>instance</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Instance of the object for ROT objects of the same (co)class.</span><span lang="fr" style="display: none">Instance de l'objet pour les objets ROT da la même classe.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">an object.</span><span lang="fr" style="display: none">Retourne un objet.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The filename is optional if you want to use only the class identifier, but the parameter can't be omitted.</span><span lang="fr" style="display: none">Le nom du fichier est facultatif si vous souhaitez utiliser uniquement l'identifiant de classe, mais le paramètre ne peut pas être omis.</span></span><br>
+  <span class="segments"><span lang="en">Use an empty string if you want to access objects from running objects table (ROT).</span><span lang="fr" style="display: none">Utilisez une chaîne vide si vous voulez accéder à des objets de la Table des Objets en cours d'Exécution (Running Object Table).</span></span> <span class="segments"><span lang="en">You can use third parameter to specify wanted instance in that case.</span><span lang="fr" style="display: none">Vous pouvez utiliser la troisième paramètre pour spécifier l'instance désirée dans ce cas.</span></span><br>
+  <span class="segments"><span lang="en">In all other cases third parameter is ignored.</span><span lang="fr" style="display: none">Dans tous les autres cas, la troisième paramètre est ignoré.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If you use a filename, the classname is optional.</span><span lang="fr" style="display: none">Si vous utilisez un nom de fichier, le nom de classe est facultatif.</span></span> <span class="segments"><span lang="en">It's only required when you want to load an object of a specific class.</span><span lang="fr" style="display: none">Il est uniquement nécessaire si vous voulez charger un objet d'une classe spécifique.</span></span><br>
+  <span class="segments"><span lang="en">Classname parameter <strong>does not</strong> have default value.</span><span lang="fr" style="display: none">Le paramètre Classname <strong>ne peut pas</strong> avoir une valeur par défaut.</span></span> <span class="segments"><span lang="en">If it's specified then it's processed.</span><span lang="fr" style="display: none">Si il est spécifié, alors il est traité.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for more information about Objects.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour plus d'informations sur les objets.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="GUICtrlCreateObj.htm">GUICtrlCreateObj</a>, <a href="IsObj.htm">IsObj</a>, <a href="ObjCreate.htm">ObjCreate</a>, <a href="ObjEvent.htm">ObjEvent</a>, <a href="ObjName.htm">ObjName</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjGet.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Example getting an Object using it's class name</span><span lang="fr" style="display: none">Exemple qui obtient un objet en utilisant son nom de classe</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">; Excel must be activated for this example to be successful</span><span lang="fr" style="display: none">; Excel doit être activé pour cet exemple</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oExcel</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjGet.htm"><span class="S4">ObjGet</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Excel.Application"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Get an existing Excel Object</span><span lang="fr" style="display: none">Obtient un objet Excel existant</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Excel File Test"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Error Getting an active Excel Object. Error code: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">,</span><span class="S0"> </span><span class="S3">8</span><span class="S8">))</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S9">$oExcel</span><span class="S8">.</span><span class="S14">Visible</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Let the guy show himself</span><span lang="fr" style="display: none">Affiche la gui</span></span></span></span>
+<span class="S0">    </span><span class="S9">$oExcel</span><span class="S8">.</span><span class="S14">workbooks</span><span class="S8">.</span><span class="S14">add</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Add a new workbook</span><span lang="fr" style="display: none">Ajoute un nouveau classeur</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjGet[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><span class="S1">; <span><span class="segments"><span lang="en">Example getting an Object using a file name</span><span lang="fr" style="display: none">Exemple qui obtient un objet en utilisant un nom de fichier</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">; An Excel file with filename Worksheet.xls must be created in the script directory</span><span lang="fr" style="display: none">; Un fichier Excel avec le nom du fichier Worksheet.xls doit être créé dans le répertoire de script</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">in order for this example to work.</span><span lang="fr" style="display: none">pour que cet exemple fonctionne.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sFileName</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptDir"><span class="S6">@ScriptDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\Worksheet.xls"</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileExists.htm"><span class="S4">FileExists</span></a><span class="S8">(</span><span class="S9">$sFileName</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Excel File Test"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Can't run this test, because you didn't create the Excel file "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sFileName</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oExcelDoc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjGet.htm"><span class="S4">ObjGet</span></a><span class="S8">(</span><span class="S9">$sFileName</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Get an Excel Object from an existing filename</span><span lang="fr" style="display: none">Obtient un objet Excel à partir d'un nom de fichier existant</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/IsObj.htm"><span class="S4">IsObj</span></a><span class="S8">(</span><span class="S9">$oExcelDoc</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">Tip:</span><span lang="fr" style="display: none">Astuce:</span></span> <span class="segments"><span lang="en">Uncomment these lines to make Excel visible (credit:</span><span lang="fr" style="display: none">Supprimez ces lignes pour rendre Excel visible:(crédit :</span></span> DaleHohm)</span></span>
+<span class="S0">        </span><span class="S1">; $oExcelDoc.Windows(1).Visible = 1; Set the first worksheet in the workbook visible</span>
+<span class="S0">        </span><span class="S1">; $oExcelDoc.Application.Visible = 1; Set the application visible (without this Excel will exit)</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sString</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">String for displaying purposes</span><span lang="fr" style="display: none">Chaîne à des fins d'affichage</span></span></span></span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$oProperty</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ForInNext.htm"><span class="S5">In</span></a><span class="S0"> </span><span class="S9">$oExcelDoc</span><span class="S8">.</span><span class="S14">BuiltinDocumentProperties</span>
+<span class="S0">            </span><span class="S9">$sString</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><span class="S9">$oProperty</span><span class="S8">.</span><span class="S14">Name</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">":"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oProperty</span><span class="S8">.</span><span class="S14">Value</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Excel File Test:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"The document properties of "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sFileName</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" are:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sString</span><span class="S8">)</span>
+
+<span class="S0">        </span><span class="S9">$oExcelDoc</span><span class="S8">.</span><span class="S14">Close</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Close the Excel document</span><span lang="fr" style="display: none">Ferme le document Excel</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Excel File Test"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Error: Could not open "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sFileName</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" as an Excel Object."</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

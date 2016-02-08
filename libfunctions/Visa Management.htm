@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>User Defined Functions</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1><span class="segments"><span lang="en">Visa user defined functions Reference</span><span lang="fr" style="display: none">Visa - Référence</span></span></h1>
+  <p><span class="segments"><span lang="en">Below is a complete list of the user defined functions available in AutoIt.</span><span lang="fr" style="display: none">Voici une liste complète des fonctions UDF de la rubrique.</span></span> <span class="segments"><span lang="en">Click on a user defined function name for a detailed description.</span><span lang="fr" style="display: none">Cliquez sur le nom pour une description détaillée.</span></span></p>
+  <p><span class="segments"><span lang="en">When using them you need to add a <strong>#include &lt;Visa.au3&gt;</strong>.</span><span lang="fr" style="display: none">Pour les utiliser, vous aurez besoin d'ajouter <strong>#include &lt;Visa.au3&gt;</strong>.</span></span></p>
+  <p>&nbsp;</p>
+  <table>
+    <tbody>
+      <tr>
+        <th style="width:25%">User Defined Function</th>
+        <th style="width:75%">Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viClose.htm">_viClose</a>
+        </td>
+        <td>Closes a VISA connection to an Instrument/Device<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viExecCommand.htm">_viExecCommand</a>
+        </td>
+        <td>Send a Command/Query to an Instrument/Device through the VISA interface (GPIB / TCP)<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viFindGpib.htm">_viFindGpib</a>
+        </td>
+        <td>Send a Command/Query to an Instrument/Device through the VISA interface (GPIB / TCP)<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viGpibBusReset.htm">_viGpibBusReset</a>
+        </td>
+        <td>GPIB BUS "reset": Use this function when the GPIB BUS gets stuck for some reason. You might be lucky and resolve the problem by calling this function<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viGTL.htm">_viGTL</a>
+        </td>
+        <td>Go To Local mode: Instruments that accept this command will exit the "Remote Control mode" and go to "Local mode". If the instrument is already in "Local mode" this is simply ignored. Normally, if an instrument does not support this command it will simply stay in the "Remote Control mode"<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viInteractiveControl.htm">_viInteractiveControl</a>
+        </td>
+        <td>Interactive VISA control to test your SCPI commands<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viOpen.htm">_viOpen</a>
+        </td>
+        <td>Opens a VISA connection to an Instrument/Device<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viSetAttribute.htm">_viSetAttribute</a>
+        </td>
+        <td>Set any VISA attribute This function, which is called by _viSetTimeout, can ALSO be used to set the other VISA specific attributes. Read the VISA documentation for more information and a list of VISA attributes and their corresponding values<br></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="_viSetTimeout.htm">_viSetTimeout</a>
+        </td>
+        <td>Sets the VISA timeout in MILISECONDS<br></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

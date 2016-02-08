@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ToolTip</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ToolTip</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a tooltip anywhere on the screen.</span><span lang="fr" style="display: none">Crée une info-bulle n'importe où sur l'écran.</span></span><br></p>
+  <p class="codeheader">ToolTip ( "text" [, x [, y [, "title" [, icon = 0 [, options]]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">text</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The text of the tooltip.</span><span lang="fr" style="display: none">Le texte de l'info-bulle.</span></span> <span class="segments"><span lang="en">(An empty string clears a displaying tooltip)</span><span lang="fr" style="display: none">(Une chaîne vide efface l'affichage d'une info-bulle)</span></span></td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The x position of the tooltip.</span><span lang="fr" style="display: none">La position x de l'info-bulle.</span></span></td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The y position of the tooltip.</span><span lang="fr" style="display: none">La position y de l'info-bulle.</span></span></td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The title for the tooltip.</td>
+      </tr>
+      <tr>
+        <td>icon</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Pre-defined icon to show next to the title:</span><span lang="fr" style="display: none">Icône pré-définie pour l'afficher à côté du titre:</span></span> <span class="segments"><span lang="en">Requires a title.</span><span lang="fr" style="display: none">Nécessite un titre.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $TIP_NOICON (0) = No icon<br>
+        &nbsp;&nbsp;&nbsp; $TIP_INFOICON (1) = Info icon<br>
+        &nbsp;&nbsp;&nbsp; $TIP_WARNINGICON (2) = Warning icon<br>
+        &nbsp;&nbsp;&nbsp; $TIP_ERRORICON (3) = Error Icon<br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+      <tr>
+        <td>options</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Sets different options for how the tooltip will be displayed (Can be added together):</span><span lang="fr" style="display: none">Définit différentes options déterminant la façon avec laquelle l'info-bulle sera affichée (Peuvent être additionnées ensemble):</span></span><br>
+        &nbsp;&nbsp;&nbsp; $TIP_BALLOON (1) = Display as Balloon Tip<br>
+        &nbsp;&nbsp;&nbsp; $TIP_CENTER (2) = Center the tip at the x,y coordinates instead of using them for the upper left corner.<br>
+        &nbsp;&nbsp;&nbsp; $TIP_FORCEVISIBLE (4) = Force the tooltip to always be visible confining it to monitor borders if necessary. <span class="segments"><span lang="en">If multiple monitors are used, then the tooltip will "snap-to" the nearest monitor.</span><span lang="fr" style="display: none">Si plusieurs moniteurs sont utilisés, alors l'info-bulle sera "snap-to" le moniteur le plus proche.</span></span><br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 when title length is greater than 99.</span><span lang="fr" style="display: none">Retourne 0 lorsque la longueur du titre est supérieur à 99.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">To skip an optional parameter, leaving its default value intact, use the <a href="../keywords/Default.htm">Default keyword</a>.</span><span lang="fr" style="display: none">Pour passer un paramètre optionnel, en laissant sa valeur par défaut intacte, utilisez le mot-clé <a href="../keywords/Default.htm">Default</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If the x and y coordinates are omitted, the tip is placed near the mouse cursor.</span><span lang="fr" style="display: none">Si les coordonnées x et y sont omises, l'info-bulle est placée près du curseur de la souris.</span></span><br>
+  <span class="segments"><span lang="en">A Tooltip will appear until the script terminates or <a href="ToolTip.htm">ToolTip</a>("") is called.</span><span lang="fr" style="display: none">Une info-bulle s'affiche jusqu'à ce que le script se termine ou <a href="ToolTip.htm">ToolTip</a>("") soit appelée.</span></span><br>
+  <span class="segments"><span lang="en">You may use @CR or @LF to create multi-line tooltips.</span><span lang="fr" style="display: none">Vous pouvez utiliser @CR ou @LF pour créer des info-bulles multi-lignes.</span></span><br>
+  <span class="segments"><span lang="en">To display an icon, you must specify a non-empty title.</span><span lang="fr" style="display: none">Pour afficher une icône, vous devez indiquer un titre non vide.</span></span> <span class="segments"><span lang="en">The icon appears on the same row as the title and thus requires a title to be present.</span><span lang="fr" style="display: none">L'icône apparaît sur la même ligne que le titre et nécessite donc qu'un titre soit présent.</span></span><br>
+  <span class="segments"><span lang="en">If using the center flag, the center of the tooltip will be at the coordinates specified.</span><span lang="fr" style="display: none">Si vous utilisez le flag 'center', le centre de l'info-bulle sera aux coordonnées spécifiées.</span></span> <span class="segments"><span lang="en">If using the center flag with a Balloon Tip, the stem will be centered on the balloon and will point to the coordinates specified.</span><span lang="fr" style="display: none">Si vous utilisez le flag 'center' avec la forme ballon, la tige sera centrée sur le ballon et pointera vers les coordonnées spécifiées.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="MsgBox.htm">MsgBox</a>, <a href="SplashTextOn.htm">SplashTextOn</a>, <a href="TrayTip.htm">TrayTip</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ToolTip.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S1">; <span><span class="segments"><span lang="en">This will create a tooltip in the upper left of the screen</span><span lang="fr" style="display: none">Création d'une info-bulle dans le coin supérieur gauche de l'écran</span></span></span></span>
+
+<a class="codeSnippetLink" href="../functions/ToolTip.htm"><span class="S4">ToolTip</span></a><span class="S8">(</span><span class="S7">"This is a tooltip"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">2000</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Sleep to give tooltip time to display</span><span lang="fr" style="display: none">Pause pout donner à l'info-bulle le temps de s'afficher</span></span></span></span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

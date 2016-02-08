@@ -1,0 +1,22 @@
+.segments:hover {
+  color: black !important;
+  background-color: #dfe6ef !important;
+}
+
+#toggleLangFloat {
+  float: right;
+  color: #000090;
+}
+
+#toggleLang {
+  position: fixed;
+  right: 8px;
+  top: 35px;
+  color: #000090;
+}
+
+.tooltip-segments {
+  max-width: 80%;
+  font-size: 1em;
+  color: #2a2a2a;
+}

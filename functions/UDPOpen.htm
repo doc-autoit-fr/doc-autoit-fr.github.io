@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction UDPOpen</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>UDPOpen</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Open a socket connected to an existing server .</span><span lang="fr" style="display: none">Ouvre un socket connecté à un serveur existant.</span></span><br></p>
+  <p class="codeheader">UDPOpen ( IPAddr, port [, flag = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">IPAddr</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Internet Protocol dotted address(IpV4) as "192.162.1.1".</span><span lang="fr" style="display: none">L'adresse IPv4 séparée par des points tel que :"192.162.1.1".</span></span></td>
+      </tr>
+      <tr>
+        <td>port</td>
+        <td><span class="segments"><span lang="en">port on which the created socket will be connected.</span><span lang="fr" style="display: none">Port sur lequel le socket créé sera connecté.</span></span></td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        &nbsp;&nbsp;&nbsp; $UDP_OPEN_DEFAULT (0) - (Default) - No additional options are set.<br>
+        &nbsp;&nbsp;&nbsp; $UDP_OPEN_BROADCAST (1) - Allow the broadcasting on the address "255.255.255.255".<br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">
+          <span class="segments"><span lang="en">an array :</span><span lang="fr" style="display: none">Retourne un tableau :</span></span> <span class="segments"><span lang="en">$aArray[1] contains the real socket, $aArray[2] contains the specified IP address and $aArray[3] contains the port.</span><span lang="fr" style="display: none">$array[1] contient le socket réel, $array[2] contient l'adresse IP spécifiée et $array[3] contient le port.</span></span> <span class="segments"><span lang="en">We need this information in subsequent calls to <a href="UDPSend.htm">UDPSend()</a>, where we pass this socket structure/array.</span><span lang="fr" style="display: none">Nous avons besoin de ces informations pour des appels ultérieurs à <a href="UDPSend.htm">UDPSend()</a>, où nous passons cette structure/tableau de socket.</span></span><a href="UDPSend.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">$aArray[0]=0 and set the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne $array[0]=0 et @error &lt;&gt; 0.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td><span class="segments"><span lang="en">Windows API WSAGetError return value (see <a href="http://msdn.microsoft.com/en-us/library/ms740668.aspx">MSDN</a>).</span><span lang="fr" style="display: none">Valeur retournée par l'API Windows WSAGetError (Consultez <a href="http://msdn.microsoft.com/en-us/library/ms740668.aspx">MSDN</a>).</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">This function is used by a client to communicate with the server.</span><span lang="fr" style="display: none">Aucune.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="UDPBind.htm">UDPBind</a>, <a href="UDPCloseSocket.htm">UDPCloseSocket</a>, <a href="UDPRecv.htm">UDPRecv</a>, <a href="UDPSend.htm">UDPSend</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\UDPRecv.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Start First clicking on "1.</span><span lang="fr" style="display: none">Commencez d'abord par cliquer sur "1.</span></span> <span class="segments"><span lang="en">Server"</span><span lang="fr" style="display: none">Serveur"</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">Then start a second instance of the script selecting "2.</span><span lang="fr" style="display: none">Puis démarrez une seconde instance du script en sélectionnant "2.</span></span> <span class="segments"><span lang="en">Client"</span><span lang="fr" style="display: none">Client\"</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPStartup.htm"><span class="S4">UDPStartup</span></a><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Start the UDP service.</span><span lang="fr" style="display: none">Démarre le service UDP.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Register OnAutoItExit to be called when the script is closed.</span><span lang="fr" style="display: none">Inscrit OnAutoItExit qui sera appelée lorsque le script se fermera.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/OnAutoItExitRegister.htm"><span class="S4">OnAutoItExitRegister</span></a><span class="S8">(</span><span class="S7">"OnAutoItExit"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign Local variables the loopback IP Address and the Port.</span><span lang="fr" style="display: none">Assigne des variables locales avec l'adresse IP et le port.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sIPAddress</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"127.0.0.1"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">This IP Address only works for testing on your own computer.</span><span lang="fr" style="display: none">Cette adresse IP ne fonctionne que pour les tests sur votre propre ordinateur.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iPort</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">65532</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Port used for the connection.</span><span lang="fr" style="display: none">Port utilisé pour la connexion.</span></span></span></span>
+
+<span class="S0">    </span><span class="S12">#Region GUI</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sTitle</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"UDP Start"</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S9">$sTitle</span><span class="S8">,</span><span class="S0"> </span><span class="S3">250</span><span class="S8">,</span><span class="S0"> </span><span class="S3">70</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idBtnServer</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> Server</span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">65</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">130</span><span class="S8">,</span><span class="S0"> </span><span class="S3">22</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idBtnClient</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"2. Client"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">65</span><span class="S8">,</span><span class="S0"> </span><span class="S3">40</span><span class="S8">,</span><span class="S0"> </span><span class="S3">130</span><span class="S8">,</span><span class="S0"> </span><span class="S3">22</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idBtnServer</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/WinSetTitle.htm"><span class="S4">WinSetTitle</span></a><span class="S8">(</span><span class="S9">$sTitle</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"UDP Server started"</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idBtnClient</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_HIDE</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idBtnServer</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DISABLE</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> MyUDP_Server</span><span class="S8">(</span><span class="S9">$sIPAddress</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iPort</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idBtnClient</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/WinSetTitle.htm"><span class="S4">WinSetTitle</span></a><span class="S8">(</span><span class="S9">$sTitle</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"UDP Client started"</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idBtnServer</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_HIDE</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idBtnClient</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DISABLE</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> MyUDP_Client</span><span class="S8">(</span><span class="S9">$sIPAddress</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iPort</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">10</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S12">#EndRegion GUI</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> MyUDP_Server</span><span class="S8">(</span><span class="S9">$sIPAddress</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iPort</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign a Local variable the socket and bind to the IP Address and Port specified.</span><span lang="fr" style="display: none">Assigne une variable locale avec le socket et se connecte à l'adresse IP et au port spécifié.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iSocket</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UDPBind.htm"><span class="S4">UDPBind</span></a><span class="S8">(</span><span class="S9">$sIPAddress</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iPort</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">If an error occurred display the error code and return False.</span><span lang="fr" style="display: none">Si une erreur s'est produite, affiche le code d'erreur et retourne.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">Someone is probably already binded on this IP Address and Port (script already running?).</span><span lang="fr" style="display: none">Quelqu'un est probablement déjà connecté sur cette adresse IP et ce port (script déjà en cours d"exécution?).</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iError</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_ICONHAND</span><span class="S8">),</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Server:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Could not bind, Error code: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iError</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign a Local variable to store the data received.</span><span lang="fr" style="display: none">Assigne une variable locale pour stocker les données reçues.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sReceived</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">We are waiting for the string "toto" OR "tata" (example script UDPSend):</span><span lang="fr" style="display: none">Nous attendons la chaîne "toto" OU "tata" (exemple de script UDPSend) :</span></span> <span class="segments"><span lang="en">4 bytes length.</span><span lang="fr" style="display: none">4 octets de longueur.</span></span></span></span>
+<span class="S0">        </span><span class="S9">$sReceived</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UDPRecv.htm"><span class="S4">UDPRecv</span></a><span class="S8">(</span><span class="S9">$iSocket</span><span class="S8">,</span><span class="S0"> </span><span class="S3">4</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><span class="S9">$sReceived</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;&gt;</span></a><span class="S0"> </span><span class="S7">""</span>
+
+<span class="S0">    </span><span class="S1">; <span>Notes: <span class="segments"><span lang="en">If you don't know how much length will be the data,</span><span lang="fr" style="display: none">Si vous ne savez pas de quelle longueur seront les données,</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">use e.g:</span><span lang="fr" style="display: none">utilisez, par exemple:</span></span> <span class="segments"><span lang="en">2048 for maxlen parameter and call the function until the it returns nothing/error.</span><span lang="fr" style="display: none">2048 pour paramètre maxlen et appelez la fonction jusqu'à ce qu'elle ne retourne rien ou erreur.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the string received.</span><span lang="fr" style="display: none">Affiche la chaîne reçue.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Server:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Received: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sReceived</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the socket.</span><span lang="fr" style="display: none">Ferme le socket.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPCloseSocket.htm"><span class="S4">UDPCloseSocket</span></a><span class="S8">(</span><span class="S9">$iSocket</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;MyUDP_Server</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> MyUDP_Client</span><span class="S8">(</span><span class="S9">$sIPAddress</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iPort</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign a Local variable the socket and connect to a listening socket with the IP Address and Port specified.</span><span lang="fr" style="display: none">Assigne une variable locale avec le socket et se connecte à un socket d'écoute avec l'adresse IP et le port spécifié.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iSocket</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UDPOpen.htm"><span class="S4">UDPOpen</span></a><span class="S8">(</span><span class="S9">$sIPAddress</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iPort</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iError</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">If an error occurred display the error code and return False.</span><span lang="fr" style="display: none">Si une erreur s'est produite, affiche le code d'erreur et retourne.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">The server is probably offline/port is not opened on the server.</span><span lang="fr" style="display: none">Le serveur est probablement hors ligne ou le port n'est pas ouvert sur le serveur.</span></span></span></span>
+<span class="S0">        </span><span class="S9">$iError</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_ICONHAND</span><span class="S8">),</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Client:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Could not connect, Error code: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iError</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Send the string "toto" converted to binary to the server.</span><span lang="fr" style="display: none">Envoie la chaîne "toto" convertie en binaire sur le serveur.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPSend.htm"><span class="S4">UDPSend</span></a><span class="S8">(</span><span class="S9">$iSocket</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringToBinary.htm"><span class="S4">StringToBinary</span></a><span class="S8">(</span><span class="S7">"toto"</span><span class="S8">))</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">If an error occurred display the error code and return False.</span><span lang="fr" style="display: none">Si une erreur s'est produite, affiche le code d'erreur et retourne.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><span class="S9">$iError</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_ICONHAND</span><span class="S8">),</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Client:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Could not send the data, Error code: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iError</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the socket.</span><span lang="fr" style="display: none">Ferme le socket.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPCloseSocket.htm"><span class="S4">UDPCloseSocket</span></a><span class="S8">(</span><span class="S9">$iSocket</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;MyUDP_Client</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnAutoItExit</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPShutdown.htm"><span class="S4">UDPShutdown</span></a><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Close the UDP service.</span><span lang="fr" style="display: none">Ferme le service UDP.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnAutoItExit</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

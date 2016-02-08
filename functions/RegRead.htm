@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction RegRead</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>RegRead</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Reads a value from the registry.</span><span lang="fr" style="display: none">Lit une valeur dans le Registre.</span></span><br></p>
+  <p class="codeheader">RegRead ( "keyname", "valuename" )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">keyname</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The registry key to read.</span><span lang="fr" style="display: none">La clé de registre à lire.</span></span></td>
+      </tr>
+      <tr>
+        <td>valuename</td>
+        <td><span class="segments"><span lang="en">The value to read.</span><span lang="fr" style="display: none">La valeur à lire.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the requested registry value.</span><span lang="fr" style="display: none">Retourne la valeur de Registre demandé.</span></span> <span class="segments"><span lang="en">@extended is set to the type of the value $REG_... .</span><span lang="fr" style="display: none">@extended contient le type de la valeur $REG_....</span></span> <span class="segments"><span lang="en">These types are defined in the "Constants.au3" include file.</span><span lang="fr" style="display: none">Ces types sont définis dans le fichier 'include' "Constants.au3".</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td><span class="segments"><span lang="en">1 = unable to open requested key</span><span lang="fr" style="display: none">1 = impossible d'ouvrir la clé demandée</span></span><br>
+        &nbsp;2 = unable to open requested main key<br>
+        &nbsp;3 = unable to remote connect to the registry<br>
+        <span class="segments"><span lang="en">-1 = unable to open requested value</span><span lang="fr" style="display: none">-1 = impossible d'ouvrir la valeur demandée</span></span><br>
+        <span class="segments"><span lang="en">-2 = value type not supported</span><span lang="fr" style="display: none">-2 = type de valeur non pris en charge</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">A registry key must start with "HKEY_LOCAL_MACHINE" ("HKLM") or "HKEY_USERS" ("HKU") or "HKEY_CURRENT_USER" ("HKCU") or "HKEY_CLASSES_ROOT" ("HKCR") or "HKEY_CURRENT_CONFIG" ("HKCC").</span><span lang="fr" style="display: none">Une clé de registre doit commencer par "HKEY_LOCAL_MACHINE" ("HKLM") ou "HKEY_USERS" ("HKU") ou "HKEY_CURRENT_USER" ("HKCU") ou "HKEY_CLASSES_ROOT" ("HKCR") ou "HKEY_CURRENT_CONFIG" ("HKCC") .</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">When running on 64-bit Windows if you want to read a value specific to the 64-bit environment you have to suffix the HK... with 64 i.e.</span><span lang="fr" style="display: none">Lors de l'exécution sur Windows 64 bits si vous souhaitez lire une valeur spécifique à l'environnement 64 bits, vous devez suffixer HK...</span></span> <span class="segments"><span lang="en">HKLM64.</span><span lang="fr" style="display: none">avec 64 c'est à dire HKLM64.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">AutoIt supports registry keys of type REG_BINARY, REG_SZ, REG_MULTI_SZ, REG_EXPAND_SZ, REG_QWORD, and REG_DWORD.</span><span lang="fr" style="display: none">AutoIt supporte les clés de registre de type REG_BINARY, REG_SZ, REG_MULTI_SZ, REG_EXPAND_SZ, REG_QWORD, et REG_DWORD.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To access the <strong>(Default)</strong> value use <strong>""</strong> (an empty string) for the valuename.</span><span lang="fr" style="display: none">Pour accéder à la valeur par <strong>(par défaut)</strong> utilisez <strong>""</strong> (une chaîne vide) pour le nom de la valeur.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">When reading a REG_BINARY key the result is a binary datatype (in previous versions it was a string of hex characters).</span><span lang="fr" style="display: none">Lors de la lecture d'une clé REG_BINARY le résultat est un type de données binaire (dans les versions précédentes, il était une chaîne de caractères hexadécimaux ).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">When reading a REG_MULTI_SZ key the multiple entries are separated by @LF - use with <a href="StringSplit.htm">StringSplit</a>(..., @LF) to get each entry.</span><span lang="fr" style="display: none">Lors de la lecture d'une clé de REG_MULTI_SZ les multiples entrées sont séparées par @LF - à utiliser avec <a href="StringSplit.htm">StringSplit</a> (..., @LF) pour obtenir chaque entrée.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">It is possible to access remote registries by using a keyname in the form "\\computername\keyname".</span><span lang="fr" style="display: none">Il est possible d'accéder à des registres à distance en utilisant des noms de valeur sous la forme "\\nom_ordinateur\nom_de_la_clé".</span></span> <span class="segments"><span lang="en">To use this feature you must have the correct access rights.</span><span lang="fr" style="display: none">Pour utiliser cette fonctionnalité vous devez avoir les droits d'accès corrects.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="RegDelete.htm">RegDelete</a>, <a href="RegWrite.htm">RegWrite</a>, <a href="StringSplit.htm">StringSplit</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\RegRead.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sVar</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/RegRead.htm"><span class="S4">RegRead</span></a><span class="S8">(</span><span class="S7">"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ProgramFilesDir"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Program files are in:"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sVar</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

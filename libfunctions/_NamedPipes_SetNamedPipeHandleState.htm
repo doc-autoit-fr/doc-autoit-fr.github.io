@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _NamedPipes_SetNamedPipeHandleState</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_NamedPipes_SetNamedPipeHandleState</h1>
+  <p class="funcdesc">Sets the read mode and the blocking mode of the specified named pipe<br></p>
+  <p class="codeheader">#include &lt;NamedPipes.au3&gt;<br>
+  _NamedPipes_SetNamedPipeHandleState ( $hNamedPipe, $iRead, $iWait [, $iBytes = 0 [, $iTimeOut = 0]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hNamedPipe</td>
+        <td style="width:85%">Handle to the named pipe instance</td>
+      </tr>
+      <tr>
+        <td>$iRead</td>
+        <td>Pipe read mode. <span class="segments"><span lang="en">Must be one of the following:</span><span lang="fr" style="display: none">Doit être l'un des suivants:</span></span><br>
+        &nbsp;&nbsp;&nbsp; 0 - Data is read from the pipe as a stream of bytes<br>
+        &nbsp;&nbsp;&nbsp; 1 - Data is read from the pipe as a stream of messages</td>
+      </tr>
+      <tr>
+        <td>$iWait</td>
+        <td>Pipe wait mode. <span class="segments"><span lang="en">Must be one of the following:</span><span lang="fr" style="display: none">Doit être l'un des suivants:</span></span><br>
+        &nbsp;&nbsp;&nbsp; 0 - Blocking mode is enabled<br>
+        &nbsp;&nbsp;&nbsp; 1 - Nonblocking mode is enabled</td>
+      </tr>
+      <tr>
+        <td>$iBytes</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Maximum number of bytes collected on the client computer before transmission to the server</td>
+      </tr>
+      <tr>
+        <td>$iTimeout</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Maximum time, in milliseconds, that can pass before a remote named pipe transfers information</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">False.</span><span lang="fr" style="display: none">Retourne False.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_NamedPipes_GetNamedPipeHandleState.htm">_NamedPipes_GetNamedPipeHandleState</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(SetNamedPipeHandleState);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">SetNamedPipeHandleState</a> in MSDN Library.</p>
+</body>
+</html>

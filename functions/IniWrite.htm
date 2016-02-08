@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction IniWrite</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>IniWrite</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Writes a value to a standard format .ini file.</span><span lang="fr" style="display: none">Écrit une valeur dans un fichier ini de format standard.</span></span><br></p>
+  <p class="codeheader">IniWrite ( "filename", "section", "key", "value" )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">filename</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The filename of the .ini file.</span><span lang="fr" style="display: none">Le nom du fichier ini.</span></span></td>
+      </tr>
+      <tr>
+        <td>section</td>
+        <td><span class="segments"><span lang="en">The section name in the .ini file.</span><span lang="fr" style="display: none">Le nom de la section dans le fichier ini.</span></span></td>
+      </tr>
+      <tr>
+        <td>key</td>
+        <td><span class="segments"><span lang="en">The key name in the .ini file.</span><span lang="fr" style="display: none">Le nom de la clé dans le fichier ini.</span></span></td>
+      </tr>
+      <tr>
+        <td>value</td>
+        <td><span class="segments"><span lang="en">The value to write/change.</span><span lang="fr" style="display: none">La valeur à écrire/changer.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if file is read-only.</span><span lang="fr" style="display: none">Retourne 0 si le fichier est en lecture seule.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">A standard ini file looks like:</span><span lang="fr" style="display: none">Un fichier ini standard ressemble à :</span></span><br>
+  <span class="segments"><span lang="en"><em>[SectionName]</em></span><em><span lang="fr" style="display: none"><em>[NomdelaSection]</em></span><br>
+  <span class="segments"><span lang="en">Key=Value</span></span><span lang="fr" style="display: none">clé=Valeur</span></em></span><br>
+  <br>
+  <span class="segments"><span lang="en">If the file does not already exist, it is created so long as the directory exists.</span><span lang="fr" style="display: none">Si le fichier n'existe pas, il est créé, autant que le répertoire existe.</span></span> <span class="segments"><span lang="en">Keys and/or sections are added to the end and are not sorted in any way.</span><span lang="fr" style="display: none">Les clés et/ou les sections sont ajoutés à la fin et ne sont pas triés en aucune façon.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If you would like to wrap quotes around an ini value, then you need to double up the quotation marks as the first set of quotation marks are stripped.</span><span lang="fr" style="display: none">Lorsque vous écrivez une valeur qui est entre guillemets, les guillemets sont supprimés.Pour pouvoir écrire des guillemets dans la valeur, vous devez mettre des doubles guillemets entouré par des simple guillemets.</span></span> <span class="segments"><span lang="en">For example:</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">""This is a test"" will produce "This is a test" when using <a href="IniRead.htm">IniRead()</a> or such-like.</span><span lang="fr" style="display: none">""Ceci est un test"" va produire "Ceci est un test" lors de l'utilisation de <a href="IniRead.htm">IniRead()</a> ou semblable.</span></span><a href="IniRead.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">Leading and trailing whitespace is stripped.</span><span lang="fr" style="display: none">Les espaces de début et de fin sont supprimés.</span></span> <span class="segments"><span lang="en">In order to preserve the whitespace, the string must be quoted.</span><span lang="fr" style="display: none">Pour conserver les espaces, la chaîne de caractère doit être entre guillemets.</span></span> For example, "&nbsp;&nbsp;&nbsp; this is a test" will preserve the whitespace but per above, the quotation marks are stripped.<br>
+  <br>
+  <span class="segments"><span lang="en">Multi-line values are not possible.</span><span lang="fr" style="display: none">Une valeur sur plusieurs lignes n'est pas possible.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If you want to use an ini file with Unicode encoding, first create an .ini file by using the <a href="FileOpen.htm">FileOpen()</a> function with the mode parameter set to a Unicode parameter.</span><span lang="fr" style="display: none">Si vous desirez utiliser un fichier ini avec un encodage Unicode, premièrement créez un fichier .ini en utilisant la fonction <a href="FileOpen.htm">FileOpen()</a> avec le paramètre de mode positionné sur Unicode.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="IniDelete.htm">IniDelete</a>, <a href="IniRead.htm">IniRead</a>, <a href="IniReadSection.htm">IniReadSection</a>, <a href="IniReadSectionNames.htm">IniReadSectionNames</a>, <a href="IniRenameSection.htm">IniRenameSection</a>, <a href="IniWriteSection.htm">IniWriteSection</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\IniWrite.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPIFiles.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a constant variable in Local scope of the filepath that will be read/written to.</span><span lang="fr" style="display: none">Créezune constante de portée locale avec le chemin du fichier qui sera lu/écrit.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Write the value of 'AutoIt' to the key 'Title' and in the section labelled 'General'.</span><span lang="fr" style="display: none">Ecrit la valeur de 'AutoIt' à la clé "Title" et dans la section "General".</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/IniWrite.htm"><span class="S4">IniWrite</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"General"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Title"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"AutoIt"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Read the INI file for the value of 'Title' in the section labelled 'General'.</span><span lang="fr" style="display: none">Lit le fichier INI pour la valeur de 'Title' dans la section 'General'.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sRead</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/IniRead.htm"><span class="S4">IniRead</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"General"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Title"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Default Value"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the value returned by IniRead.</span><span lang="fr" style="display: none">Affiche la valeur retournée par IniRead.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The value of 'Title' in the section labelled 'General' is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sRead</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the key labelled 'Title'.</span><span lang="fr" style="display: none">Supprime la clé 'Title'.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/IniDelete.htm"><span class="S4">IniDelete</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"General"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Title"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Read the INI file for the value of 'Title' in the section labelled 'General'.</span><span lang="fr" style="display: none">Lit le fichier INI pour la valeur de 'Title' dans la section 'General'.</span></span></span></span>
+<span class="S0">    </span><span class="S9">$sRead</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/IniRead.htm"><span class="S4">IniRead</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"General"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Title"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Default Value"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the value returned by IniRead.</span><span lang="fr" style="display: none">Affiche la valeur retournée par IniRead.</span></span> <span class="segments"><span lang="en">Since there is no key stored the value will be the 'Default Value' passed to IniRead.</span><span lang="fr" style="display: none">Comme il n'y a pas de clé stocké la valeur sera la 'Valeur par défaut' passée à IniRead.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The value of 'Title' in the section labelled 'General' is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sRead</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the INI file.</span><span lang="fr" style="display: none">Supprime le fichier INI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction AutoItSetOption</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>AutoItSetOption</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Changes the operation of various AutoIt functions/parameters.</span><span lang="fr" style="display: none">Change le mode de fonctionnement de divers fonctions/paramètres d'AutoIt.</span></span><br></p>
+  <p class="codeheader">AutoItSetOption ( "option" [, param] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">option</td>
+        <td style="width:85%">The option to change. <span class="segments"><span lang="en">See Remarks.</span><span lang="fr" style="display: none">Voir Remarque.</span></span></td>
+      </tr>
+      <tr>
+        <td>param</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The value to assign to the option.</span><span lang="fr" style="display: none">La valeur à assigner à l'option.</span></span> <span class="segments"><span lang="en">The type and meaning vary by option.</span><span lang="fr" style="display: none">Le type et la signification varient selon l'option.</span></span> <span class="segments"><span lang="en">See remarks below.</span><span lang="fr" style="display: none">Voir remarques ci-dessous.</span></span> <span class="segments"><span lang="en">If the param is not provided, then the function just returns the value already assigned to the option.</span><span lang="fr" style="display: none">Si le paramètre n'est pas indiqué, alors la fonction retourne la valeur qui lui est assignée.</span></span> <span class="segments"><span lang="en">The keyword <a href="../keywords/Default.htm">Default</a> can be used for the parameter to reset the option to its default value.</span><span lang="fr" style="display: none">Le mot clé <a href="../keywords/Default.htm">Default</a> peut être utilisé en paramètre pour réinitialiser la valeur par défaut de l'option.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the value of the previous setting for the option.</span><span lang="fr" style="display: none">Retourne la valeur du paramètre précédent pour l'option.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span> <span class="segments"><span lang="en">Failure will occur if the parameters are invalid (such as an option that does not exist).</span><span lang="fr" style="display: none">L'échec peut se produire si les paramètres sont invalides (tel qu'un paramètre qui n'existe pas).</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">You may use <a href="AutoItSetOption.htm">Opt()</a> as an alternative to <a href="AutoItSetOption.htm">AutoItSetOption()</a>.</span><span lang="fr" style="display: none">Vous pouvez utiliser <a href="AutoItSetOption.htm">Opt()</a> comme alternative à <a href="AutoItSetOption.htm">AutoItSetOption()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Options are as follows:</span><span lang="fr" style="display: none">Les paramètres sont les suivants :</span></span></p>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>Option</strong></td>
+        <td style="width:85%"><strong>Param</strong></td>
+      </tr>
+      <tr>
+        <td>CaretCoordMode</td>
+        <td>
+          <a id="CaretCoordMode">Sets the way coords are used in the caret functions, either absolute coords or coords relative to the current active window:<br>
+          <span class="segments"><span lang="en">0 = relative coords to the active window</span><span lang="fr" style="display: none">0 = Coordonnées relatives à la fenêtre active</span></span><br>
+          <span class="segments"><span lang="en">1 = (default) absolute screen coordinates</span><span lang="fr" style="display: none">1 = (défaut) Coordonnées absolues d'écran</span></span><br>
+          <span class="segments"><span lang="en">2 = relative coords to the client area of the active window</span><span lang="fr" style="display: none">2 = Coordonnées relatives à la zone client de la fenêtre active</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>ExpandEnvStrings</td>
+        <td>
+          <a id="ExpandEnvStrings">Changes how literal strings and % symbols are interpreted. <span class="segments"><span lang="en">By default strings are treated literally, this option allows you to use %environment% variables inside strings, e.g.,</span><span lang="fr" style="display: none">Par défaut les chaînes sont traitées littéralement.Ce paramètre vous permet d'utiliser les variables %environnement% à l'intérieur des chaînes.</span></span> <span class="segments"><span lang="en">"The temp directory is:</span><span lang="fr" style="display: none">"Le répertoire temporaire est :</span></span> %temp%".<br>
+          <span class="segments"><span lang="en">0 = (default) do not expand environment variables</span><span lang="fr" style="display: none">0 = (défaut) N'étend pas les variables d'environnement</span></span><br>
+          <span class="segments"><span lang="en">1 = expand environment variables</span><span lang="fr" style="display: none">1 = Étend les variables d'environnement (similaire à AutoIt v2)</span></span><br>
+          <span class="segments"><span lang="en">Without this option the usual way would be:</span><span lang="fr" style="display: none">Sans ce paramètre, la méthode classique est :</span></span> <span class="segments"><span lang="en">"The temp directory is:</span><span lang="fr" style="display: none">"Le répertoire temporaire est :</span></span> <span class="segments"><span lang="en">" &</span></span> <a href="EnvGet.htm">EnvGet</a>("temp")<span lang="fr" style="display: none">" &</span> <a href="EnvGet.htm">EnvGet</a>("temp") ;<a href="EnvGet.htm"></a></a>
+        </td>
+      </tr>
+      <tr>
+        <td>ExpandVarStrings</td>
+        <td>
+          <a id="ExpandVarStrings">Changes how literal strings and variable/macro ($ and @) symbols are interpreted. <span class="segments"><span lang="en">By default strings are treated literally, this option allows you to use variables and macros inside strings, e.g.,</span><span lang="fr" style="display: none">Par défaut les chaînes sont traitées littéralement.Ce paramètre vous permet d'utiliser les variables et le macros à l'intérieur des chaînes.</span></span> <span class="segments"><span lang="en">"The value of var1 is $var1$".</span><span lang="fr" style="display: none">Exemple :"La valeur de var1 est $var1$".</span></span><br>
+          <span class="segments"><span lang="en">0 = (default) do not expand variables</span><span lang="fr" style="display: none">1 = Étend les variables (Lorsque vous êtes dans ce mode et que vous voulez utiliser les symboles $ ou @ alors doublez les :"Ceci est le symbole dollar $$".</span></span><br>
+          1 = expand variables (when in this mode and you want to use a literal $ or @ then double it up: "This is a single dollar $$ sign".</a>
+        </td>
+      </tr>
+      <tr>
+        <td>GUICloseOnESC</td>
+        <td>
+          <a id="GUICloseOnESC">When ESC is pressed on a GUI the $GUI_EVENT_CLOSE message is sent. <span class="segments"><span lang="en">This option toggles this behavior on and off.</span><span lang="fr" style="display: none">Ce paramètre alterne ce comportement sur On et Off.</span></span><br>
+          <span class="segments"><span lang="en">0 = Don't send the $GUI_EVENT_CLOSE message when ESC is pressed.</span><span lang="fr" style="display: none">0 = N'envoie pas le message $GUI_EVENT_CLOSE lorsque la touche ESC est appuyée.</span></span><br>
+          <span class="segments"><span lang="en">1 = (default)</span></span> <a href="Send.htm">Send()</a> the $GUI_EVENT_CLOSE message when ESC is pressed.<span lang="fr" style="display: none">1 = (défaut)</span> <a href="Send.htm">Send()</a> le message $GUI_EVENT_CLOSE lorsque la touche ESC est appuyée.</a>
+        </td>
+      </tr>
+      <tr>
+        <td>GUICoordMode</td>
+        <td>
+          <a id="GUICoordMode">Alters the position of a control defined by <a href="GUICtrlSetPos.htm">GUICtrlSetPos()</a>.<br>
+          <span class="segments"><span lang="en">0 = relative position to the start of the last control (upper left corner).</span><span lang="fr" style="display: none">0 = position relative du coin haut/gauche du dernier contrôle.</span></span><br>
+          <span class="segments"><span lang="en">1 = (default) absolute coordinates still relative to the dialog box.</span><span lang="fr" style="display: none">1 = (défaut) Coordonnées absolues toujours relatives à la boite de dialogue.</span></span><br>
+          <span class="segments"><span lang="en">2 = cell positioning relative to current cell.</span><span lang="fr" style="display: none">2 = Positionnement de cellule relative à la cellule actuelle.</span></span> <span class="segments"><span lang="en">A -1 for left or top parameter don't increment the start.</span><span lang="fr" style="display: none">Un -1 en paramètre gauche ou haut n'incrémente pas le début.</span></span><br>
+          <span class="segments"><span lang="en">So next line is -1, offset; next cell is offset,-1; current cell is -1,-1.</span><span lang="fr" style="display: none">Donc la ligne est -1,offset; la cellule est offset,-1; la cellule actuelle est -1,-1.</span></span><br>
+          <span class="segments"><span lang="en">Obviously "offset" cannot be -1 which reserved to indicate the no increment.</span><span lang="fr" style="display: none">Évidemment le 'offset' ne peut être égal à -1 qui est réservé pour indiquer la non-incrémentation.</span></span> <span class="segments"><span lang="en">But if you can use a multiple of the width you choose to skip or go back.</span><span lang="fr" style="display: none">Mais si vous pouvez utiliser un multiple de la largeur vous choisissez de sauter ou revenir.</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>GUIDataSeparatorChar</td>
+        <td>
+          <a id="GUIDataSeparatorChar">Define the character which delimits subitems in <a href="GUICtrlSetData.htm">GUICtrlSetData()</a>.<br>
+          <span class="segments"><span lang="en">The default character is '|'.</span><span lang="fr" style="display: none">Le caractère par défaut est '|'.</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>GUIOnEventMode</td>
+        <td>
+          <a id="GUIOnEventMode">Enable/disable OnEvent functions notifications.<br>
+          <span class="segments"><span lang="en">0 = (default) disable.</span><span lang="fr" style="display: none">0 = (défaut) Désactive.</span></span><br>
+          <span class="segments"><span lang="en">1 = enable.</span><span lang="fr" style="display: none">1 = Active.</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>GUIResizeMode</td>
+        <td>
+          <a id="GUIResizeMode">Change default resizing for a control.<br>
+          <span class="segments"><span lang="en">0 = (default) keep default control resizing.</span><span lang="fr" style="display: none">0 = (défaut) Garde le mode de redimensionnement par défaut .</span></span><br>
+          <span class="segments"><span lang="en">&lt;1024 = any type of resizing see</span></span> <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing()</a>.<span lang="fr" style="display: none">&lt;1024 = n'importe quel type de redimensionnement.Consultez</span> <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing</a>.</a>
+        </td>
+      </tr>
+      <tr>
+        <td>GUIEventOptions</td>
+        <td>
+          <a id="GUIEventOptions">Change special event behavior or GUI function return values.<br>
+          <span class="segments"><span lang="en">0 = (default) Windows behavior on click on Minimize,Restore, Maximize, Resize.</span><span lang="fr" style="display: none">0 = (défaut) Comportement normal de fenêtres au clic sur réduction, rétablissement, maximisation, redimensionnement .</span></span><br>
+          <span class="segments"><span lang="en">1 = suppress windows behavior on minimize, restore or maximize click button or window resize.</span><span lang="fr" style="display: none">1 = Supprime le comportement normal de fenêtres au clic sur réduction, rétablissement, maximisation, redimensionnement.</span></span> <span class="segments"><span lang="en">Just sends the notification.</span><span lang="fr" style="display: none">Envoi la notification seulement.</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>MouseClickDelay</td>
+        <td>
+          <a id="MouseClickDelay">Alters the length of the brief pause in between mouse clicks.<br>
+          <span class="segments"><span lang="en">Time in milliseconds to pause (default=10).</span><span lang="fr" style="display: none">Temps de pause en millisecondes (défaut = 10).</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>MouseClickDownDelay</td>
+        <td>
+          <a id="MouseClickDownDelay">Alters the length a click is held down before release.<br>
+          <span class="segments"><span lang="en">Time in milliseconds to pause (default=10).</span><span lang="fr" style="display: none">Temps de pause en millisecondes (défaut = 10).</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>MouseClickDragDelay</td>
+        <td>
+          <a id="MouseClickDragDelay">Alters the length of the brief pause at the start and end of a mouse drag operation.<br>
+          <span class="segments"><span lang="en">Time in milliseconds to pause (default=250).</span><span lang="fr" style="display: none">&lt;a0&gt;Change la durée de la pause après une opération de fenêtre réussie.</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>MouseCoordMode</td>
+        <td>
+          <a id="MouseCoordMode">Sets the way coords are used in the mouse functions, either absolute coords or coords relative to the current active window:<br>
+          <span class="segments"><span lang="en">0 = relative coords to the active window</span><span lang="fr" style="display: none">0 = Coordonnées relatives à la fenêtre active</span></span><br>
+          <span class="segments"><span lang="en">1 = (default) absolute screen coordinates</span><span lang="fr" style="display: none">1 = (défaut) Coordonnées absolues d'écran</span></span><br>
+          <span class="segments"><span lang="en">2 = relative coords to the client area of the active window</span><span lang="fr" style="display: none">2 = Coordonnées relatives à la zone client de la fenêtre active</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>MustDeclareVars</td>
+        <td>
+          <a id="MustDeclareVars">If this option is used then all variables must be pre-declared with Local, Global or in some cases Dim before they can be used - removes the chance for misspelled variables causing bugs.<br>
+          <span class="segments"><span lang="en">0 = (default) Variables don't need to be pre-declared</span><span lang="fr" style="display: none">0 = (défaut) Les variables n'ont pas besoin d'être pré-déclarée</span></span><br>
+          <span class="segments"><span lang="en">1 = Variables must be pre-declared.</span><span lang="fr" style="display: none">1 = Les variables doivent être pré-déclarées.</span></span> <span class="segments"><span lang="en">See</span></span> <a href="../keywords/Dim.htm">Dim / Global / Local / Const</a> for details on declaring variables.<span lang="fr" style="display: none">Consultez</span> <a href="../keywords/Dim.htm">Dim / Global / Local / Const</a> pour des détails sur la déclaration des variables.<a href="../keywords/Dim.htm"></a></a>
+        </td>
+      </tr>
+      <tr>
+        <td>PixelCoordMode</td>
+        <td>
+          <a id="PixelCoordMode">Sets the way coords are used in the pixel functions, either absolute coords or coords relative to the window defined by hwnd (default active window):<br>
+          <span class="segments"><span lang="en">0 = relative coords to the defined window</span><span lang="fr" style="display: none">0 = Coordonnées relatives à la fenêtre définie</span></span><br>
+          <span class="segments"><span lang="en">1 = (default) absolute screen coordinates</span><span lang="fr" style="display: none">1 = (défaut) Coordonnées absolues d'écran</span></span><br>
+          <span class="segments"><span lang="en">2 = relative coords to the client area of the defined window</span><span lang="fr" style="display: none">2 = Coordonnées relatives à la zone client de la fenêtre définie</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>SendAttachMode</td>
+        <td>
+          <a id="SendAttachMode">Specifies if AutoIt attaches input threads when using <a href="Send.htm">Send()</a> function. <span class="segments"><span lang="en">When not attaching (default mode=0) detecting the state of capslock/scrolllock and numlock can be unreliable under NT4.</span><span lang="fr" style="display: none">Sans l'attachement (mode par défaut = 0) la détection de l'état de capslock/scrolllock et numlock peut être incertaine sous NT4.</span></span> <span class="segments"><span lang="en">However, when you specify attach mode=1 the</span></span> <a href="Send.htm">Send</a>("{... down/up}") syntax will not work and there may be problems with sending keys to "hung" windows.<span lang="fr" style="display: none">Toutefois, lorsque vous spécifiez le mode d'attachement mode = 1, la syntaxe</span> <a href="Send.htm">Send</a>("{...down/up}") ne fonctionnera pas et il peut y avoir des problèmes avec l'envoi de touches aux fenêtres "bloquées". <a href="ControlSend.htm">ControlSend()</a> ALWAYS attaches and is not affected by this mode.<a href="Send.htm"></a><a href="ControlSend.htm"></a><br>
+          <span class="segments"><span lang="en">0 = (default) don't attach</span><span lang="fr" style="display: none">0 = (défaut)N'attache pas</span></span><br>
+          <span class="segments"><span lang="en">1 = attach</span><span lang="fr" style="display: none">1 = Attache</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>SendCapslockMode</td>
+        <td>
+          <a id="SendCapslockMode">Specifies if AutoIt should store the state of capslock before a <a href="Send.htm">Send()</a> function and restore it afterwards.<br>
+          <span class="segments"><span lang="en">0 = don't store/restore</span><span lang="fr" style="display: none">0 = Ne stocke/restaure pas</span></span><br>
+          <span class="segments"><span lang="en">1 = (default) store and restore</span><span lang="fr" style="display: none">1 = (défaut) Stocke et restaure</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>SendKeyDelay</td>
+        <td>
+          <a id="SendKeyDelay">Alters the length of the brief pause in between sent keystrokes. <span class="segments"><span lang="en">A value of 0 removes the delay completely.</span><span lang="fr" style="display: none">Une valeur de 0 supprime complètement ce délais.</span></span><br>
+          <span class="segments"><span lang="en">Time in milliseconds to pause (default=5).</span><span lang="fr" style="display: none">Temps de pause en millisecondes (défaut=5).</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>SendKeyDownDelay</td>
+        <td>
+          <a id="SendKeyDownDelay">Alters the length of time a key is held down before being released during a keystroke. <span class="segments"><span lang="en">For applications that take a while to register keypresses you may need to raise this value from the default.</span><span lang="fr" style="display: none">Pour les applications qui prennent un certain temps pour enregistrer l'appui de touches, (et certains jeux) vous aurez besoin d'augmenter cette valeur.</span></span> <span class="segments"><span lang="en">A value of 0 removes the delay completely.</span><span lang="fr" style="display: none">Une valeur de 0 supprime complètement ce délais.</span></span><br>
+          <span class="segments"><span lang="en">Time in milliseconds to pause (default=5).</span><span lang="fr" style="display: none">Temps de pause en millisecondes (défaut=5).</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>TCPTimeout</td>
+        <td>
+          <a id="TCPTimeout">Defines the time before TCP functions stop if no communication.<br>
+          <span class="segments"><span lang="en">Time in milliseconds before timeout (default=100).</span><span lang="fr" style="display: none">Délai d'attente en millisecondes (défaut=100).</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>TrayAutoPause</td>
+        <td>
+          <a id="TrayAutoPause">Script pauses when click on tray icon.<br>
+          <span class="segments"><span lang="en">0 = no pause</span><span lang="fr" style="display: none">0 = Pas de pause</span></span><br>
+          <span class="segments"><span lang="en">1 = (default) pause.</span><span lang="fr" style="display: none">1 = (défaut) Pause.</span></span> <span class="segments"><span lang="en">If there is no DefaultMenu no pause will occurs.</span><span lang="fr" style="display: none">Si il n'y a pas de menu par défaut, aucune pause n'aura lieu.</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>TrayIconDebug</td>
+        <td>
+          <a id="TrayIconDebug">If enabled shows the current script line in the tray icon tip to help debugging.<br>
+          <span class="segments"><span lang="en">0 = (default) no debug information</span><span lang="fr" style="display: none">0 = (défaut) Aucune informations de débogage</span></span><br>
+          <span class="segments"><span lang="en">1 = show debug</span><span lang="fr" style="display: none">1 = Montre les informations de débogage</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>TrayIconHide</td>
+        <td>
+          <a id="TrayIconHide">Hides the AutoIt tray icon. <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">The icon will still initially appear for ~750 milliseconds.</span><span lang="fr" style="display: none">L'icône apparaitra ~750 millisecondes lors de l'initialisation.</span></span><br>
+          <span class="segments"><span lang="en">0 = (default) show icon</span><span lang="fr" style="display: none">0 = (défaut) Montre l'icône</span></span><br>
+          <span class="segments"><span lang="en">1 = hide icon</span><span lang="fr" style="display: none">1 = Cache l'icône</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>TrayMenuMode</td>
+        <td>
+          <a id="TrayMenuMode">Extend the behaviour of the script tray icon/menu. <span class="segments"><span lang="en">This can be done with a combination (adding) of the following values.</span><span lang="fr" style="display: none">Ceci peut être fait avec une combinaison (addition) des valeurs suivantes:</span></span><br>
+          0 = (default) default menu items (Script Paused/Exit) are appended to the usercreated menu; items will automatically be checked/unchecked when clicked; double clicking the tray icon returns the controlID of the $TRAY_DEFAULT item.<br>
+          <span class="segments"><span lang="en">1 = no default menu</span><span lang="fr" style="display: none">1 = Pas de menu par défaut</span></span><br>
+          2 = items will not automatically check/uncheck when clicked<br>
+          4 = do not return the $TRAY_DEFAULT item controlID when the tray icon is double clicked<br>
+          <span class="segments"><span lang="en">8 = turn off auto check of radio item groups</span><span lang="fr" style="display: none">8 = Désactive l'auto activation d'élément des groupes radio</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>TrayOnEventMode</td>
+        <td>
+          <a id="TrayOnEventMode">Enable/disable OnEvent functions notifications for the tray.<br>
+          <span class="segments"><span lang="en">0 = (default) disable</span><span lang="fr" style="display: none">0 = (défaut) Désactivé</span></span><br>
+          <span class="segments"><span lang="en">1 = enable</span><span lang="fr" style="display: none">1 = Activé</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>WinDetectHiddenText</td>
+        <td>
+          <a id="WinDetectHiddenText">Specifies if hidden window text can be "seen" by the window matching functions.<br>
+          <span class="segments"><span lang="en">0 = (default) Do not detect hidden text</span><span lang="fr" style="display: none">0 = (défaut) Ne détecte pas le texte caché</span></span><br>
+          <span class="segments"><span lang="en">1 = Detect hidden text</span><span lang="fr" style="display: none">1 = Détecte le texte caché</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>WinSearchChildren</td>
+        <td>
+          <a id="WinSearchChildren">Allows the window search routines to search child windows as well as top-level windows.<br>
+          <span class="segments"><span lang="en">0 = (default) Only search top-level windows</span><span lang="fr" style="display: none">0 = (défaut) Cherche les fenêtres de haut niveau seulement</span></span><br>
+          <span class="segments"><span lang="en">1 = Search top-level and child windows</span><span lang="fr" style="display: none">1 = Cherche les fenêtres de haut niveau et enfants</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>WinTextMatchMode</td>
+        <td>
+          <a id="WinTextMatchMode">Alters the method that is used to match window text during search operations.<br>
+          <span class="segments"><span lang="en">1 = (default) Complete / Slow mode</span><span lang="fr" style="display: none">1 = (défaut) Complète / Mode lent</span></span><br>
+          <span class="segments"><span lang="en">2 = Quick mode</span><span lang="fr" style="display: none">2 = Mode rapide</span></span><br>
+          In quick mode AutoIt can usually only "see" dialog text, button text and the captions of some controls. In the default mode much more text can be seen (for instance the contents of the Notepad window).<br>
+          <span class="segments"><span lang="en">If you are having performance problems when performing many window searches then changing to the "quick" mode may help.</span><span lang="fr" style="display: none">Dans le mode par défaut, beaucoup plus de texte peut être vu (par exemple le contenu de la fenêtre bloc-notes).</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>WinTitleMatchMode</td>
+        <td>
+          <a id="WinTitleMatchMode">Alters the method that is used to match window titles during search operations.<br>
+          <span class="segments"><span lang="en">1 = (default) Match the title from the start</span><span lang="fr" style="display: none">&lt;a0&gt;Change la méthode de comparaison du titre des fenêtres pendant les opérations de recherche.</span></span><br>
+          <span class="segments"><span lang="en">2 = Match any substring in the title</span><span lang="fr" style="display: none">1 = (défaut) Compare le titre du début</span></span><br>
+          <span class="segments"><span lang="en">3 = Exact title match</span><span lang="fr" style="display: none">2 = Compare n'importe quelle sous-chaîne dans le titre</span></span><br>
+          <span class="segments"><span lang="en">4 = Advanced mode (retained for backwards compatibility only - see</span></span> <a href="../intro/windowsadvanced.htm">Window Titles & Text (Advanced)</a>)<span lang="fr" style="display: none">3 = Compare l'exactitude du titre</span><br>
+          <span class="segments"><span lang="en">-1 to -4 = Case insensitive match according to the other type of match.</span><span lang="fr" style="display: none">4 = Mode avancé (conservé seulement pour compatibilité antérieure), consultez &lt;a0&gt;Titre et texte d'une fenêtre (Avancé)&lt;/a0&gt;</span></span></a>
+        </td>
+      </tr>
+      <tr>
+        <td>WinWaitDelay</td>
+        <td>
+          <a id="WinWaitDelay">Alters how long a script should briefly pause after a successful window-related operation.<br>
+          <span class="segments"><span lang="en">Time in milliseconds to pause (default=250).</span><span lang="fr" style="display: none">&lt;a0&gt;Change la durée de la pause après une opération de fenêtre réussie.</span></span></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\AutoItSetOption.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S1">; <span><span class="segments"><span lang="en">copy any you want to change ;default value is listed first</span><span lang="fr" style="display: none">Exemple</span></span></span></span>
+
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"CaretCoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=absolute, 0=relative, 2=client</span><span lang="fr" style="display: none">1=absolue, 0=relative, 2=client</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"ExpandEnvStrings"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=don't expand, 1=do expand</span><span lang="fr" style="display: none">0=ne s'étend pas, 1=s'étend</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"ExpandVarStrings"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=don't expand, 1=do expand</span><span lang="fr" style="display: none">0=ne s'étend pas, 1=s'étend</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUICloseOnESC"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=ESC closes, 0=ESC won't close</span><span lang="fr" style="display: none">1=ESC ferme, 0=ESC ne ferme pas</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUICoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=absolute, 0=relative, 2=cell</span><span lang="fr" style="display: none">1=absolue, 0=relative, 2=cellule</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIDataSeparatorChar"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"|"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">"|" is the default</span><span lang="fr" style="display: none">"|" est la valeur par défaut</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIOnEventMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=disabled, 1=OnEvent mode enabled</span><span lang="fr" style="display: none">0=désactivé, 1 mode=OnEvent activé</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIResizeMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=no resizing, &lt;1024 special resizing</span><span lang="fr" style="display: none">0=pas de redimensionnement, &lt; 1024 redimensionnement spécial</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIEventOptions"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=default, 1=just notification, 2=GUICtrlRead tab index</span><span lang="fr" style="display: none">0=défaut, 1=juste notification, 2=GUICtrlRead index de tabulation</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"MouseClickDelay"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">10 milliseconds</span><span lang="fr" style="display: none">10 millisecondes</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"MouseClickDownDelay"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">10 milliseconds</span><span lang="fr" style="display: none">10 millisecondes</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"MouseClickDragDelay"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">250</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">250 milliseconds</span><span lang="fr" style="display: none">250 millisecondes</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"MouseCoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=absolute, 0=relative, 2=client</span><span lang="fr" style="display: none">1=absolue, 0=relative, 2=client</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"MustDeclareVars"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=no, 1=require pre-declaration</span><span lang="fr" style="display: none">0=non, 1=requiert pré-déclaration</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"PixelCoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=absolute, 0=relative, 2=client</span><span lang="fr" style="display: none">1=absolue, 0=relative, 2=client</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"SendAttachMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=don't attach, 1=do attach</span><span lang="fr" style="display: none">0=n'attache pas, 1=attache</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"SendCapslockMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=store and restore, 0=don't</span><span lang="fr" style="display: none">1=sauvegarde et restaure, 0=ne le fait pas</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"SendKeyDelay"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">5</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">5 milliseconds</span><span lang="fr" style="display: none">5 millisecondes</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"SendKeyDownDelay"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1 millisecond</span><span lang="fr" style="display: none">1 milliseconde</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TCPTimeout"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">100 milliseconds</span><span lang="fr" style="display: none">100 millisecondes</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayAutoPause"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=no pause, 1=Pause</span><span lang="fr" style="display: none">0=pas de pause, 1=pause</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayIconDebug"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=no info, 1=debug line info</span><span lang="fr" style="display: none">0=pas d'info, 1=info de débogage de ligne</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayIconHide"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=show, 1=hide tray icon</span><span lang="fr" style="display: none">0=montre, 1=masque l'icône de plateau</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayMenuMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=append, 1=no default menu, 2=no automatic check, 4=menuitemID not return</span><span lang="fr" style="display: none">0=ajoute, 1=pas de menu par défaut, 2=pas de vérification automatique, 4=menuitemID sans retour</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayOnEventMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=disable, 1=enable</span><span lang="fr" style="display: none">0=désactivé, 1=activé</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"WinDetectHiddenText"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=don't detect, 1=do detect</span><span lang="fr" style="display: none">0=ne détecte pas, 1=détecte</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"WinSearchChildren"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">0=no, 1=search children also</span><span lang="fr" style="display: none">0=non, 1=recherche les enfants aussi</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"WinTextMatchMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=complete, 2=quick</span><span lang="fr" style="display: none">1=complet, 2=rapide</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"WinTitleMatchMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">1=start, 2=subStr, 3=exact, 4=advanced, -1 to -4=Nocase</span><span lang="fr" style="display: none">1=début, 2=sous-chaîne, 3=exact, 4=avancé, -1 à -4=NOCASE</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"WinWaitDelay"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">250</span><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">250 milliseconds</span><span lang="fr" style="display: none">250 millisecondes</span></span></span></span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

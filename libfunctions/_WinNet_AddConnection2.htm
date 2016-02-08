@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinNet_AddConnection2</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinNet_AddConnection2</h1>
+  <p class="funcdesc">Connects a local device to a network resource<br></p>
+  <p class="codeheader">#include &lt;WinNet.au3&gt;<br>
+  _WinNet_AddConnection2 ( $sLocalName, $sRemoteName [, $sUserName = 0 [, $sPassword = 0 [, $iType = 1 [, $iOptions = 1]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sLocalName</td>
+        <td style="width:85%">Name of a local device to be redirected, such as "F:" or "LPT1". The string is treated in a<br>
+        case-insensitive manner. If the Null keyword or an empty, a connection to the network resource is made without redirecting the local<br>
+        device.</td>
+      </tr>
+      <tr>
+        <td>$sRemoteName</td>
+        <td>Name of the network resource to connect to</td>
+      </tr>
+      <tr>
+        <td>$sUsername</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> User name for making the connection. If 0, the function uses the default user name.</td>
+      </tr>
+      <tr>
+        <td>$sPassword</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Password to be used to make a connection. If 0, the default password is used. If the string is<br>
+        empty, no password is used.</td>
+      </tr>
+      <tr>
+        <td>$iType</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the type of network resource to connect to:<br>
+        &nbsp;&nbsp;&nbsp; 0 - Any (only if $sLocalName is 0)<br>
+        &nbsp;&nbsp;&nbsp; 1 - Disk<br>
+        &nbsp;&nbsp;&nbsp; 2 - Print</td>
+      </tr>
+      <tr>
+        <td>$iOptions</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Connection options. <span class="segments"><span lang="en">Can be one or more of the following:</span><span lang="fr" style="display: none">Un ou plusieurs des éléments suivants:</span></span><br>
+        &nbsp;&nbsp;&nbsp; 1 - The network resource connection should be remembered<br>
+        &nbsp;&nbsp;&nbsp; 2 - The operating system may interact with the user for authentication purposes<br>
+        &nbsp;&nbsp;&nbsp; 4 - The system not to use any default setting for user names or passwords without offering the user the<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; opportunity to supply an alternative. This flag is ignored unless bit 2 (interactive) is also set.<br>
+        &nbsp;&nbsp;&nbsp; 8 - Forces the redirection of a local device when making the connection<br>
+        &nbsp;&nbsp;&nbsp; 16 - The operating system prompts the user for authentication using the command line instead of a GUI.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; This flag is ignored unless bit 2 (interactive) is also set.<br>
+        &nbsp;&nbsp;&nbsp; 32 - If this bit is set, and the operating system prompts for a credential, the credential is saved by the credential manager.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the credential manager is disabled for the caller's logon session, or if the network<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; provider does not support saving credentials, this flag is ignored.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; This flag is also ignored unless you set<br>
+        bit 5 (command line instead of GUI).</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">False.</span><span lang="fr" style="display: none">Retourne False.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinNet_AddConnection.htm">_WinNet_AddConnection</a>, <a href="_WinNet_AddConnection3.htm">_WinNet_AddConnection3</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(WNetAddConnection2);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">WNetAddConnection2</a> in MSDN Library.</p>
+</body>
+</html>

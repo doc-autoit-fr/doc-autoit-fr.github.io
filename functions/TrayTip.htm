@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction TrayTip</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>TrayTip</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Displays a balloon tip from the AutoIt Icon.</span><span lang="fr" style="display: none">Affiche une info-bulle 'balloon' depuis l'icône du script AutoIt.</span></span><br></p>
+  <p class="codeheader">TrayTip ( "title", "text", timeout [, option = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Text appears in bold at the top of the balloon tip.</span><span lang="fr" style="display: none">Le texte qui apparait en gras en haut de l'info-bulle 'balloon'.</span></span> <span class="segments"><span lang="en">(63 characters maximum)</span><span lang="fr" style="display: none">(63 caractères maximum)</span></span></td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td><span class="segments"><span lang="en">Message the balloon tip will display.</span><span lang="fr" style="display: none">Message qui sera affiché par l'info-bulle 'balloon'.</span></span> <span class="segments"><span lang="en">(255 characters maximum)</span><span lang="fr" style="display: none">(255 caractères maximum)</span></span></td>
+      </tr>
+      <tr>
+        <td>timeout</td>
+        <td><span class="segments"><span lang="en">A rough estimate of the time (in seconds) the balloon tip should be displayed.</span><span lang="fr" style="display: none">Une estimation approximative du temps (en secondes) d'affichage de l'info-bulle balloon.</span></span> <span class="segments"><span lang="en">(Windows has a min and max of about 10-30 seconds but does not always honor a time in that range.)</span><span lang="fr" style="display: none">(Windows a un mini/maxi d'environ 10-30 secondes, mais ne le respecte pas toujours.)</span></span></td>
+      </tr>
+      <tr>
+        <td>option</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        &nbsp;&nbsp;&nbsp; $TIP_ICONNONE (0) = No icon (default)<br>
+        &nbsp;&nbsp;&nbsp; $TIP_ICONASTERISK (1) = Info icon<br>
+        &nbsp;&nbsp;&nbsp; $TIP_ICONEXCLAMATION (2) = Warning icon<br>
+        &nbsp;&nbsp;&nbsp; $TIP_ICONHAND (3) = Error icon<br>
+        &nbsp;&nbsp;&nbsp; $TIP_NOSOUND (16) = Disable sound<br>
+        <br>
+        Constants are defined in TrayConstants.au3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">A Tray tip will close if the AutoIt tray icon disappears.</span><span lang="fr" style="display: none">L'info-bulle se fermera si l'icône du script AutoIt disparaît.</span></span> Consequently, the <a href="TrayTip.htm">TrayTip()</a> may not appear if <a href="AutoItSetOption.htm#TrayIconHide">Opt("TrayIconHide", 1)</a> is set or if the user has disabled balloon tips via registry settings!<a href="TrayTip.htm"></a><a href="AutoItSetOption.htm#TrayIconHide"></a><br>
+  <br>
+  <span class="segments"><span lang="en">Windows XP usually plays a sound when displaying a balloon tip.</span><span lang="fr" style="display: none">Windows XP joue habituellement un son lors de l'affichage d'une info-bulle.</span></span> <span class="segments"><span lang="en">This sound can be disabled by adding $TIP_NOSOUND to the <em>option</em> parameter or by setting an empty title.</span><span lang="fr" style="display: none">Ce son peut être désactivé en ajoutant $TIP_NOSOUND au paramètre <em>option</em> ou en utilisant un titre vide.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To clear a balloon tip that is being displayed, call another tip with an empty text string (and any title).</span><span lang="fr" style="display: none">Pour effacer une info-bulle affiché, appelez en une autre avec une chaîne de texte vide (et n'importe quel titre).</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="MsgBox.htm">MsgBox</a>, <a href="ToolTip.htm">ToolTip</a>, <a href="AutoItSetOption.htm#TrayIconHide">TrayIconHide (Option)</a>, <a href="TraySetToolTip.htm">TraySetToolTip</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\TrayTip.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;TrayConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../functions/TrayTip.htm"><span class="S4">TrayTip</span></a><span class="S8">(</span><span class="S7">"I'm a title"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"I'm the message"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$TIP_ICONASTERISK</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Press OK to reset the tip."</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/TrayTip.htm"><span class="S4">TrayTip</span></a><span class="S8">(</span><span class="S7">"clears any tray tip"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Press OK to see another tip."</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/TrayTip.htm"><span class="S4">TrayTip</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"A different tray tip."</span><span class="S8">,</span><span class="S0"> </span><span class="S3">5</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">5000</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

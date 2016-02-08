@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_InProcess</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_InProcess</h1>
+  <p class="funcdesc">Determines whether a window belongs to the current process<br></p>
+  <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
+  _WinAPI_InProcess ( $hWnd, ByRef $hLastWnd )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hWnd</td>
+        <td style="width:85%">Window handle to be tested</td>
+      </tr>
+      <tr>
+        <td>$hLastWnd</td>
+        <td>
+          Last window tested. If $hWnd = $hLastWnd, this process will immediately return True. Otherwise,<br>
+          <a href="_WinAPI_InProcess.htm">_WinAPI_InProcess()</a> will be called. If $hWnd is in process, $hLastWnd will be set to $hWnd on return.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">True:</td>
+        <td style="width:90%">Window handle belongs to the current process</td>
+      </tr>
+      <tr>
+        <td class="valign-top">False:</td>
+        <td>Window handle does not belong to the current process</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>This is one of the key functions to the control memory mapping technique. It checks the process ID of the<br>
+  window to determine if it belongs to the current process, which means it can be accessed without mapping the control memory.<br></p>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction RegDelete</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>RegDelete</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Deletes a key or value from the registry.</span><span lang="fr" style="display: none">Supprime une clé ou une valeur dans le registre.</span></span><br></p>
+  <p class="codeheader">RegDelete ( "keyname" [, "valuename"] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">keyname</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The registry key to delete.</span><span lang="fr" style="display: none">La clé de registre à supprimer.</span></span></td>
+      </tr>
+      <tr>
+        <td>valuename</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The valuename to delete.</span><span lang="fr" style="display: none">La valeur à supprimer.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Special:</td>
+        <td><span class="segments"><span lang="en">0 if the key/value does not exist.</span><span lang="fr" style="display: none">Retourne 0 si la clé/valeur n'existe pas.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">2 if error deleting key/value and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 2 si erreur lors de la suppression et @error &lt;&gt; 0.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td><span class="segments"><span lang="en">1 = unable to open requested key</span><span lang="fr" style="display: none">1 = impossible d'ouvrir la clé demandée</span></span><br>
+        &nbsp;2 = unable to open requested main key<br>
+        &nbsp;3 = unable to remote connect to the registry<br>
+        <span class="segments"><span lang="en">-1 = unable to delete requested value</span><span lang="fr" style="display: none">-1 = impossibilité de supprimer la valeur demandée</span></span><br>
+        <span class="segments"><span lang="en">-2 = unable to delete requested key/value</span><span lang="fr" style="display: none">-2 = impossibilité de supprimer la clé/valeur demandée</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">A registry key must start with "HKEY_LOCAL_MACHINE" ("HKLM") or "HKEY_USERS" ("HKU") or "HKEY_CURRENT_USER" ("HKCU") or "HKEY_CLASSES_ROOT" ("HKCR") or "HKEY_CURRENT_CONFIG" ("HKCC").</span><span lang="fr" style="display: none">Une clé de registre doit commencer par "HKEY_LOCAL_MACHINE" ("HKLM") ou "HKEY_USERS" ("HKU") ou "HKEY_CURRENT_USER" ("HKCU") ou "HKEY_CLASSES_ROOT" ("HKCR") ou "HKEY_CURRENT_CONFIG" ("HKCC") .</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">When running on 64-bit Windows if you want to delete a key or value specific to the 64-bit environment you have to suffix the HK... with 64 i.e.</span><span lang="fr" style="display: none">Dans un système Windows 64-bits, si vous souhaitez supprimer une clé ou une valeur spécifique à l'environnement 64-bits, il est nécessaire de faire suivre HK...par 64.</span></span> <span class="segments"><span lang="en">HKLM64.</span><span lang="fr" style="display: none">avec 64 c'est à dire HKLM64.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To access the <strong>(Default)</strong> value use <strong>""</strong> (an empty string) for the valuename.</span><span lang="fr" style="display: none">Pour accéder à la valeur par <strong>(par défaut)</strong> utilisez <strong>""</strong> (une chaîne vide) pour le nom de la valeur.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Deleting from the registry is potentially dangerous--please exercise caution!</span><span lang="fr" style="display: none">Supprimer une clé dans le registre est potentiellement dangereux -- A utiliser avec précaution!</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">It is possible to access remote registries by using a keyname in the form "\\computername\keyname".</span><span lang="fr" style="display: none">Il est possible d'accéder à des registres à distance en utilisant des noms de valeur sous la forme "\\nom_ordinateur\nom_de_la_clé".</span></span> <span class="segments"><span lang="en">To use this feature you must have the correct access rights.</span><span lang="fr" style="display: none">Pour utiliser cette fonctionnalité vous devez avoir les droits d'accès corrects.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="RegEnumKey.htm">RegEnumKey</a>, <a href="RegEnumVal.htm">RegEnumVal</a>, <a href="RegRead.htm">RegRead</a>, <a href="RegWrite.htm">RegWrite</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\RegDelete.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../functions/RegDelete.htm"><span class="S4">RegDelete</span></a><span class="S8">(</span><span class="S7">"HKEY_CURRENT_USER\Software\Test"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"TestKey"</span><span class="S8">)</span>
+
+<a class="codeSnippetLink" href="../functions/RegWrite.htm"><span class="S4">RegWrite</span></a><span class="S8">(</span><span class="S7">"HKEY_CURRENT_USER\Software\Test"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/RegWrite.htm"><span class="S4">RegWrite</span></a><span class="S8">(</span><span class="S7">"HKEY_CURRENT_USER\Software\Test1"</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

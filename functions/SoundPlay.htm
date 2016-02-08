@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction SoundPlay</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>SoundPlay</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Play a sound file.</span><span lang="fr" style="display: none">Joue un fichier audio.</span></span><br></p>
+  <p class="codeheader">SoundPlay ( "filename" [, wait = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">filename</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Name of the file to be played (typically a WAV or MP3)</span><span lang="fr" style="display: none">Nom du fichier à jouer (généralement un fichier WAV ou MP3)</span></span></td>
+      </tr>
+      <tr>
+        <td>wait</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">This flag determines if the script should wait for the sound to finish before continuing:</span><span lang="fr" style="display: none">Cet indicateur détermine si le script doit attendre que le son soit fini avant de poursuivre :</span></span><br>
+        &nbsp;&nbsp;&nbsp; $SOUND_WAIT(1) = wait until sound has finished<br>
+        &nbsp;&nbsp;&nbsp; $SOUND_NOWAIT(0) = continue script while sound is playing (default)<br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span> <span class="segments"><span lang="en">(Always returns 1 regardless of success.)</span><span lang="fr" style="display: none">(Retourne toujours 1 quel que soit le résultat.)</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Terminating the script will stop the sound (if it is still playing).</span><span lang="fr" style="display: none">La fermeture du script stoppera le son (s'il est encore joué).</span></span><br>
+  <span class="segments"><span lang="en">Calling <a href="SoundPlay.htm">SoundPlay</a>("") can be used to stop a currently playing sound.</span><span lang="fr" style="display: none">L'appel à <a href="SoundPlay.htm">SoundPlay</a>("") peut être utilisé pour arrêter un son en cours de lecture.</span></span> <span class="segments"><span lang="en">This has the side effect of also closing the open handle.</span><span lang="fr" style="display: none">Ceci à pour effet secondaire de fermer le handle ouvert.</span></span><br>
+  <span class="segments"><span lang="en">If you need to delete a sound file which you have played in the script, you should call <a href="SoundPlay.htm">SoundPlay</a>("") first to ensure the handle is closed.</span><span lang="fr" style="display: none">Si vous avez besoin de supprimer un fichier audio que vous avez joué dans le script, vous devez utiliser <a href="SoundPlay.htm">SoundPlay</a>("") en premier afin d'être sûr que le handle soit fermé.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="Beep.htm">Beep</a>, <a href="SoundSetWaveVolume.htm">SoundSetWaveVolume</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\SoundPlay.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../functions/SoundPlay.htm"><span class="S4">SoundPlay</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@WindowsDir"><span class="S6">@WindowsDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\media\tada.wav"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

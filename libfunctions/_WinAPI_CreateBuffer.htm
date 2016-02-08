@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_CreateBuffer</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_CreateBuffer</h1>
+  <p class="funcdesc">Allocates a block of memory from the internal library heap<br></p>
+  <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
+  _WinAPI_CreateBuffer ( $iLength [, $pBuffer = 0 [, $bAbort = True]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$iLength</td>
+        <td style="width:85%">The required buffer length, in bytes.</td>
+      </tr>
+      <tr>
+        <td>$pBuffer</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A pointer to the existing buffer that to be replaced by a new buffer.<br>
+        If this parameter is a valid buffer pointer, the memory will be reallocated for a new buffer.<br>
+        However, the new memory is allocated at a different location. Therefore, you should always use the pointer that returns this function.<br>
+        If this parameter is 0 (Default) or invalid buffer pointer, the function just allocates a new memory.</td>
+      </tr>
+      <tr>
+        <td>$bAbort</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether to exit the script if not enough memory, valid values:<br>
+        &nbsp;&nbsp;&nbsp; True - Displaying an error message and exit the script with error code 1 (Default).<br>
+        &nbsp;&nbsp;&nbsp; False - Continue the script and return an error.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">A pointer to the new buffer.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>0 and sets the @error flag to non-zero (if an exceptions is not set).</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>When a buffer is no longer needed, you must destroy it by calling the <a href="_WinAPI_FreeMemory.htm">_WinAPI_FreeMemory()</a> function.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_FreeMemory.htm">_WinAPI_FreeMemory</a></p>
+</body>
+</html>

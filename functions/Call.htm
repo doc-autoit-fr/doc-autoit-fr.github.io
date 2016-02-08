@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction Call</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>Call</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Calls a user-defined or built-in function contained in first parameter.</span><span lang="fr" style="display: none">Appelle une fonction utilisateur ou interne passée dans le premier paramètre.</span></span><br></p>
+  <p class="codeheader">Call ( "function" [, param1 [, param2 [, paramN]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">function</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The name of function or function to call.</span><span lang="fr" style="display: none">Le nom de la fonction ou la fonction à appeler.</span></span></td>
+      </tr>
+      <tr>
+        <td>param</td>
+        <td><span class="segments"><span lang="en">Arguments that will be passed to the function being invoked.</span><span lang="fr" style="display: none">Les arguments qui seront passés à la fonction invoquée.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the return value of the called function.</span><span lang="fr" style="display: none">Retourne la valeur de retour de la fonction appelée.</span></span> <span class="segments"><span lang="en">Both @error and @extended may contain values if the called function set them.</span><span lang="fr" style="display: none">De même @error et @extended peuvent contenir des valeurs si la fonction appelée les renseigne.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to 0xDEAD and @extended to 0xBEEF if the function does not exist or invalid number of parameters.</span><span lang="fr" style="display: none">Retourne @error = 0xDEAD et @extended = 0xBEEF si la fonction n'existe pas ou si le nombre d'arguments n'est pas correct.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>The function can pass arguments to functions, however, <em>ByRef</em> parameters are not supported; there is no way to retrieve the ByRef parameter.<br>
+  <br>
+  <span class="segments"><span lang="en">A special array can be passed in lieu of individual parameters.</span><span lang="fr" style="display: none">Un tableau spécial peut être passé à la place des paramètres individuels.</span></span> <span class="segments"><span lang="en">This array must have its first element set to "CallArgArray" and elements 1 - <em>n</em> will be passed as separate arguments to the function.</span><span lang="fr" style="display: none">Ce tableau doit avoir son premier élément égal à "CallArgArray" et les éléments de 1 à <em>n</em> contiendront les paramètres de la fonction passés séparemment.</span></span> <span class="segments"><span lang="en">If using this special array, no other arguments can be passed to <a href="Call.htm">Call()</a>.</span><span lang="fr" style="display: none">Si vous utilisez ce tableau spécial, aucun autre argument ne pourra être passé à <a href="Call.htm">Call()</a>.</span></span> <span class="segments"><span lang="en">See example for a demonstration.</span><span lang="fr" style="display: none">Consultez l'exemple pour une démonstration.</span></span><a href="Call.htm"></a><br>
+  <span class="segments"><span lang="en">Both <a href="Call.htm">Call()</a> itself can set the @error flag or the called function can set the @error flag.</span><span lang="fr" style="display: none"><a href="Call.htm">Call()</a> peut définir lui-même le flag @error, tout comme la fonction appelée.</span></span> <span class="segments"><span lang="en">If <a href="Call.htm">Call()</a> sets the @error flag, the value will be 0xDEAD and @extended will also be set to 0xBEEF.</span><span lang="fr" style="display: none">Si <a href="Call.htm">Call()</a> définit le flag @error, la valeur sera 0xDEAD et @extended sera défini à 0xBEEF.</span></span> <span class="segments"><span lang="en">See the example for a demonstration of testing for a function that was not found.</span><span lang="fr" style="display: none">Consultez l'exemple pour un exemple de fonction qui n'est pas trouvée.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="Execute.htm">Execute</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Call.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">This calls a function accepting no arguments.</span><span lang="fr" style="display: none">Ceci appelle une fonction acceptant aucun argument.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Call.htm"><span class="S4">Call</span></a><span class="S8">(</span><span class="S7">"Test1"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">This calls a function accepting one argument and passes it an argument.</span><span lang="fr" style="display: none">Ceci appelle une fonction acceptant un argument et le passe en argument.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Call.htm"><span class="S4">Call</span></a><span class="S8">(</span><span class="S7">"Test2"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Message from Call()!"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">This demonstrates how to use the special array argument.</span><span lang="fr" style="display: none">Ceci démontre comment utiliser le tableau spécial d'arguments.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArgs</span><span class="S8">[</span><span class="S3">4</span><span class="S8">]</span>
+<span class="S0">    </span><span class="S9">$aArgs</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"CallArgArray"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">This is required, otherwise, Call() will not recognize the array as containing arguments</span><span lang="fr" style="display: none">Cela est nécessaire, sinon, Call() ne reconnaîtra pas le tableau comme contenant des arguments</span></span></span></span>
+<span class="S0">    </span><span class="S9">$aArgs</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"This is a string"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Parameter one is a string</span><span lang="fr" style="display: none">Le premier paramètre est une chaîne</span></span></span></span>
+<span class="S0">    </span><span class="S9">$aArgs</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">47</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Parameter two is a number</span><span lang="fr" style="display: none">Le paramètre deux est un nombre</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]</span>
+<span class="S0">    </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"Array Element 0"</span>
+<span class="S0">    </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"Array Element 1"</span>
+<span class="S0">    </span><span class="S9">$aArgs</span><span class="S8">[</span><span class="S3">3</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Parameter three is an array</span><span lang="fr" style="display: none">Le paramètre trois est un tableau</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">We've built the special array, now call the function</span><span lang="fr" style="display: none">Nous avons construit le tableau spécial, maintenant, appelons la fonction</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Call.htm"><span class="S4">Call</span></a><span class="S8">(</span><span class="S7">"Test3"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aArgs</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Test calling a function that does not exist.</span><span lang="fr" style="display: none">Test de l'appel d'une fonction qui n'existe pas.</span></span> <span class="segments"><span lang="en">This shows the proper way to test by</span><span lang="fr" style="display: none">Cela montre la bonne façon de tester ensemble</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">checking that both @error and @extended contain the documented failure values.</span><span lang="fr" style="display: none">les deux flags @error et @extended qui contiennent les erreurs documentées.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sFunction</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"DoesNotExist"</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Call.htm"><span class="S4">Call</span></a><span class="S8">(</span><span class="S9">$sFunction</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0xDEAD</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">And</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0xBEEF</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Function does not exist."</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Test1</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Hello"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Test1</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Test2</span><span class="S8">(</span><span class="S9">$sMsg</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sMsg</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Test2</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Test3</span><span class="S8">(</span><span class="S9">$sString</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$nNumber</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The string is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sString</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The number is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$nNumber</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UBound.htm"><span class="S4">UBound</span></a><span class="S8">(</span><span class="S9">$aArray</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Array["</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"] contains:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">])</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Test3</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ConsoleWrite</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ConsoleWrite</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Writes data to the STDOUT stream.</span><span lang="fr" style="display: none">Écrit des données dans le flux STDOUT.</span></span> <span class="segments"><span lang="en">Some text editors can read this stream as can other programs which may be expecting data on this stream.</span><span lang="fr" style="display: none">Certains éditeurs de texte peuvent lire ce flux comme d'autres programmes peuvent attendre les données de ce flux.</span></span><br></p>
+  <p class="codeheader">ConsoleWrite ( "data" )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">data</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The data you wish to output.</span><span lang="fr" style="display: none">Les données que vous voulez sortir.</span></span> <span class="segments"><span lang="en">This may either be text or binary.</span><span lang="fr" style="display: none">Cela peut être du texte ou du binaire.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">The amount of data written.</span><span lang="fr" style="display: none">Retourne la quantité de données écrites.</span></span> <span class="segments"><span lang="en">If writing binary, the number of bytes written, if writing text, the number of characters written.</span><span lang="fr" style="display: none">Si l'écriture est binaire, se sera le nombre d'octets écrits, si l'écriture est du texte, alors ce sera le nombre de caractères écrits.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The purpose for this function is to write to the STDOUT stream.</span><span lang="fr" style="display: none">Le but de cette fonction est d'écrire dans le flux STDOUT.</span></span> <span class="segments"><span lang="en">Many popular text editors can read this stream.</span><span lang="fr" style="display: none">De nombreux éditeurs texte peuvent lire ce flux.</span></span> <span class="segments"><span lang="en">Scripts compiled as Console applications also have a STDOUT stream.</span><span lang="fr" style="display: none">Les scripts compilés comme applications console ont aussi un flux STDOUT.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>This does not write to a DOS console unless the script is compiled as a console application.</strong></span><span lang="fr" style="display: none"><strong>Cette fonction ne peut pas écrire dans une console DOS sauf si le script est compilé en tant qu'application console.</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Characters are converted to ANSI before being written.</span><span lang="fr" style="display: none">Les caractères sont convertis à la norme ANSI avant d'être écrits.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Binary data is written as-is.</span><span lang="fr" style="display: none">Les données binaires sont écrites en l'état.</span></span> <span class="segments"><span lang="en">It will not be converted to a string.</span><span lang="fr" style="display: none">Elles ne seront pas converties en une chaîne.</span></span> <span class="segments"><span lang="en">To print the hex representation of binary data, use the <a href="String.htm">String()</a> function to explicitly cast the data to a string.</span><span lang="fr" style="display: none">Pour visualiser la représentation hexadécimale de données binaires, utilisez la fonction <a href="String.htm">String()</a> pour convertir explicitement les données en chaîne.</span></span><a href="String.htm"></a><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ConsoleRead.htm">ConsoleRead</a>, <a href="ConsoleWriteError.htm">ConsoleWriteError</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ConsoleWrite.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sString</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"This is an example of writing to the console."</span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S9">$sString</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; Running this in a text editor which can trap console output e.g. SciTE, will display value of $sString.</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2 for writing in SciTe output pane</span><span lang="fr" style="display: none">Exemple 2 pour écrire dans Scite</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ConsoleWrite[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'! = Red'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span>! <span class="segments"><span lang="en">= red text color</span><span lang="fr" style="display: none">= Rouge couleur du texte</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'&gt; = Blue'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">&gt; = blue text color</span><span lang="fr" style="display: none">&gt; = Bleu couleur du texte</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'- = Orange'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">- = orange text color</span><span lang="fr" style="display: none">- = Orange, couleur du texte</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'+ = Green'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">+ = green text color</span><span lang="fr" style="display: none">+ = Vert couleur du texte</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'(5) : = Red (jump to line 5 when double-clicked)'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">'(5) :' red text color and double click jumps to (line number)</span><span lang="fr" style="display: none">'(5) :' rouge couleur du texte et un double-clic saute à (numéro de ligne)</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'Start with String or Integer then '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'6'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' = Pink (jump to line 6 when double-clicked)'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<span class="S1">; <span><span class="segments"><span lang="en">pink text color, any sign and then @TAB & 'line number'</span><span lang="fr" style="display: none">rose couleur du texte, tout signe, puis @TAB & 'numéro de ligne'</span></span></span></span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'('</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptLineNumber"><span class="S6">@ScriptLineNumber</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">') : = Red (jump to line '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptLineNumber"><span class="S6">@ScriptLineNumber</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' when double-clicked)'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Clear console output pane of SciTE after 5000 ms</span><span lang="fr" style="display: none">Effacer la sortie de la console dans le volet de SciTE après 5000 ms</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">5000</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/ControlSend.htm"><span class="S4">ControlSend</span></a><span class="S8">(</span><span class="S7">"[CLASS:SciTEWindow]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Scintilla2"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"</span><span class="S10">+{F5}</span><span class="S7">"</span><span class="S8">)</span>
+
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

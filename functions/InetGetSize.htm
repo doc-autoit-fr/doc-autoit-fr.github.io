@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction InetGetSize</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>InetGetSize</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the size (in bytes) of a file located on the internet.</span><span lang="fr" style="display: none">Retourne la taille (en octets) d'un fichier situé sur internet.</span></span><br></p>
+  <p class="codeheader">InetGetSize ( "URL" [, options = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">URL</td>
+        <td style="width:85%"><span class="segments"><span lang="en">URL of the file to download.</span><span lang="fr" style="display: none">URL du fichier à télécharger.</span></span> <span class="segments"><span lang="en">See remarks below.</span><span lang="fr" style="display: none">Voir remarques ci-dessous.</span></span></td>
+      </tr>
+      <tr>
+        <td>options</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        &nbsp;&nbsp;&nbsp; $INET_LOCALCACHE (0) = Get the file from local cache if available (default).<br>
+        &nbsp;&nbsp;&nbsp; $INET_FORCERELOAD (1) = Forces a reload from the remote site.<br>
+        &nbsp;&nbsp;&nbsp; $INET_IGNORESSL (2) = Ignore all SSL errors (with HTTPS connections).<br>
+        &nbsp;&nbsp;&nbsp; $INET_ASCIITRANSFER (4) = Use ASCII when transferring files with the FTP protocol (Can not be combined with flag $INET_BINARYTRANSFER (8)).<br>
+        &nbsp;&nbsp;&nbsp; $INET_BINARYTRANSFER (8) = Use BINARY when transferring files with the FTP protocol (Can not be combined with flag $INET_ASCIITRANSFER (4)). <span class="segments"><span lang="en">This is the default transfer mode if none are provided.</span><span lang="fr" style="display: none">Ceci est le mode de transfert par défaut si aucun n'est fourni.</span></span><br>
+        <br>
+        Constants are defined in InetConstants.au3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the size of the file in bytes.</span><span lang="fr" style="display: none">Retourne la taille du fichier en octets.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Internet Explorer 3 or greater must be installed for this function to work.</span><span lang="fr" style="display: none">Internet Explorer 3 ou plus récent doit être installé pour faire fonctionner la fonction.</span></span> <span class="segments"><span lang="en">(For ftp://</span><span lang="fr" style="display: none">(Pour les URLs ftp://,</span></span> <span class="segments"><span lang="en">URLs IE 5 is required!)</span><span lang="fr" style="display: none">IE 5 est requis !)</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The URL parameter should be in the form "http://www.somesite.com/path/file.html" - just like an address you would type into your web browser.</span><span lang="fr" style="display: none">Le paramètre URL devrait être de la forme "http://www.lesite.com/chemin/fichier.html" - tout comme une adresse que vous tapez dans votre navigateur web.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To use a username and password when connecting simply prefix the servername with "username:password@", e.g.</span><span lang="fr" style="display: none">Pour utiliser un nom d'utilisateur et un mot de passe lors de la connexion, préfixez simplement le nom de serveur avec "nomutilisateur:motdepasse@", par exemple:</span></span><br>
+  <span class="segments"><span lang="en">"http://myuser:mypassword@www.somesite.com"</span><span lang="fr" style="display: none">"http://nomutilisateur:motdepasse@www.lesite.fr"</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Not all servers will correctly give the file size, especially when using a proxy server.</span><span lang="fr" style="display: none">Tous les serveurs ne renverront pas correctement la taille du fichier, spécialement lors de l'utilisation d'un serveur proxy.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="FtpSetProxy.htm">FtpSetProxy</a>, <a href="HttpSetProxy.htm">HttpSetProxy</a>, <a href="HttpSetUserAgent.htm">HttpSetUserAgent</a>, <a href="InetGet.htm">InetGet</a>, <a href="InetRead.htm">InetRead</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\InetGetSize.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Retrieve the size of the file.</span><span lang="fr" style="display: none">Récupére la taille du fichier.</span></span> <span class="segments"><span lang="en">The option of 'get the file from the local cache' has been selected.</span><span lang="fr" style="display: none">L'option de 'obtenir le fichier à partir du cache local' a été choisie.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iSize</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/InetGetSize.htm"><span class="S4">InetGetSize</span></a><span class="S8">(</span><span class="S7">"http://www.autoitscript.com/autoit3/files/beta/update.dat"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The size of the file: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iSize</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_SetFileValidData</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_SetFileValidData</h1>
+  <p class="funcdesc">Sets the valid data length of the specified file<br></p>
+  <p class="codeheader">#include &lt;WinAPIFiles.au3&gt;<br>
+  _WinAPI_SetFileValidData ( $hFile, $iLength )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hFile</td>
+        <td style="width:85%">A handle to the file. This file must have been opened with the $GENERIC_WRITE access right, and the<br>
+        $SE_MANAGE_VOLUME_NAME privilege enabled. The file cannot be a network file, or be compressed,<br>
+        sparse, or transacted.</td>
+      </tr>
+      <tr>
+        <td>$iLength</td>
+        <td>The new valid data length. This parameter must be a positive value that is greater than the current<br>
+        valid data length, but less than the current file size.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">True</span><span lang="fr" style="display: none">Retourne True</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">False</span><span lang="fr" style="display: none">Retourne False</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>This function sets the logical end of a file. To set the size of a file, use the <a href="_WinAPI_SetEndOfFile.htm">_WinAPI_SetEndOfFile()</a><br>
+  function. The physical file size is also referred to as the end of the file.<br>
+  <br>
+  Typically, the <a href="_WinAPI_SetFileValidData.htm">_WinAPI_SetFileValidData()</a> function is used by system-level applications on their own private<br>
+  data. Not all file systems use valid data length. Some file systems can track multiple valid data ranges.<br>
+  In general, most applications will never need to call this function.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_SetEndOfFile.htm">_WinAPI_SetEndOfFile</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(SetFileValidData);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">SetFileValidData</a> in MSDN Library.</p>
+</body>
+</html>

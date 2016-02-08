@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_IsValidLocale</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_IsValidLocale</h1>
+  <p class="funcdesc">Determines if the specified locale is installed or supported on the operating system<br></p>
+  <p class="codeheader">#include &lt;WinAPILocale.au3&gt;<br>
+  _WinAPI_IsValidLocale ( $iLCID [, $iFlag = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$iLCID</td>
+        <td style="width:85%">The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
+        $LOCALE_INVARIANT<br>
+        $LOCALE_SYSTEM_DEFAULT<br>
+        $LOCALE_USER_DEFAULT<br>
+        <br>
+        <strong>Windows Vista or later</strong><br>
+        $LOCALE_CUSTOM_DEFAULT<br>
+        $LOCALE_CUSTOM_UI_DEFAULT<br>
+        $LOCALE_CUSTOM_UNSPECIFIED</td>
+      </tr>
+      <tr>
+        <td>$iFlag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Flag specifying the validity test to apply to the locale identifier.<br>
+        This parameter can have one of the following values.<br>
+        $LCID_INSTALLED<br>
+        $LCID_SUPPORTED</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">True:</td>
+        <td style="width:90%">the locale identifier passes the specified validity test.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">False:</td>
+        <td>the locale identifier is invalid.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(IsValidLocale);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">IsValidLocale</a> in MSDN Library.</p>
+</body>
+</html>

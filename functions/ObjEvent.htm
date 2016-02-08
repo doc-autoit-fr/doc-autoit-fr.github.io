@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ObjEvent</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ObjEvent</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Handles incoming events from the given Object.</span><span lang="fr" style="display: none">Gère les événements entrants de l'objet donné.</span></span><br></p>
+  <p class="codeheader">ObjEvent ( $ObjectVar, "functionprefix" [, "interface name"] )<br>
+  ObjEvent ( "AutoIt.Error" [, "function"] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$ObjectVar</td>
+        <td style="width:85%"><span class="segments"><span lang="en">A variable containing an Object from which you want to receive events</span><span lang="fr" style="display: none">Une variable contenant un objet à partir duquel vous souhaitez recevoir des événements</span></span></td>
+      </tr>
+      <tr>
+        <td>"functionprefix"</td>
+        <td><span class="segments"><span lang="en">The prefix of the functions you define to handle receiving events.</span><span lang="fr" style="display: none">Le préfixe des fonctions que vous définissez pour gérer les événements reçus.</span></span><br>
+        <span class="segments"><span lang="en">The prefix is appended by the Objects method name.</span><span lang="fr" style="display: none">Le préfixe est ajouté au nom des méthodes des objets.</span></span></td>
+      </tr>
+      <tr>
+        <td>"interface name"</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">name of an Event interface to use.</span><span lang="fr" style="display: none">nom d'une interface d'événement à utiliser.</span></span><br>
+        <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> It must be a supported as outgoing for the Object AND it must be of type DISPATCH.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">an object or a function name.</span><span lang="fr" style="display: none">Retourne un objet ou un nom de fonction.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The first format is used to receive Events from the given Object.</span><span lang="fr" style="display: none">Le premier format est utilisé pour recevoir des événements de l'objet donné.</span></span><br>
+  <span class="segments"><span lang="en">To receive a specific event, create an AutoIt function name using the given prefix appended with the event name.</span><span lang="fr" style="display: none">Pour recevoir un événement particulier, créez un nom de fonction AutoIt en utilisant le préfixe donné en annexe avec le nom de l'événement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The second format is used for COM Error Handling.</span><span lang="fr" style="display: none">Le second format est utilisé pour gérer les erreurs COM.</span></span><br>
+  <span class="segments"><span lang="en">If any COM error occurs, the given function is being called.</span><span lang="fr" style="display: none">Si une erreur COM se produit, la fonction donnée est appelée.</span></span> <span class="segments"><span lang="en">First parameter for the function will be error object.</span><span lang="fr" style="display: none">Le premier paramètre de la fonction sera l'objet d'erreur.</span></span><br>
+  <span class="segments"><span lang="en">You can use it to access different properties of this object.</span><span lang="fr" style="display: none">Vous pouvez l'utiliser pour accéder aux propriétés différentes de cet objet.</span></span><br>
+  <span class="segments"><span lang="en">If the second parameter is omitted, it will return the name of the current Error handler function or function, depending what was used when registering.</span><span lang="fr" style="display: none">Si le second paramètre est omis, elle retournera le nom de la fonction du gestionnaire d'erreur en cours ou de la fonction, selon ce qui a été utilisé lors de l'enregistrement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Properties of the AutoIt Error Object:</span><span lang="fr" style="display: none">Propriétés de l'objet Erreur AutoIt :</span></span><br></p>
+  <table>
+    <tbody>
+      <tr>
+        <td>.number</td>
+        <td><span class="segments"><span lang="en">The Windows HRESULT value from a COM call</span><span lang="fr" style="display: none">La valeur HRESULT de Windows d'un appel COM</span></span></td>
+      </tr>
+      <tr>
+        <td>.windescription</td>
+        <td><span class="segments"><span lang="en">The FormatWinError() text derived from .number</span><span lang="fr" style="display: none">Le texte FormatWinError() dérivé de .number</span></span></td>
+      </tr>
+      <tr>
+        <td>.source</td>
+        <td><span class="segments"><span lang="en">Name of the Object generating the error (contents from ExcepInfo.source)</span><span lang="fr" style="display: none">Nom de l'objet généré par l'erreur (contenu de ExcepInfo.source )</span></span></td>
+      </tr>
+      <tr>
+        <td>.description</td>
+        <td><span class="segments"><span lang="en">Source Object's description of the error (contents from ExcepInfo.description)</span><span lang="fr" style="display: none">Description de l'objet source de l'erreur (contenu de ExcepInfo.description)</span></span></td>
+      </tr>
+      <tr>
+        <td>.helpfile</td>
+        <td><span class="segments"><span lang="en">Source Object's helpfile for the error (contents from ExcepInfo.helpfile)</span><span lang="fr" style="display: none">Le fichier d'aide de l'objet source de l'erreur (contenu de ExcepInfo.helpfile)</span></span></td>
+      </tr>
+      <tr>
+        <td>.helpcontext</td>
+        <td><span class="segments"><span lang="en">Source Object's helpfile context id number (contents from ExcepInfo.helpcontext)</span><span lang="fr" style="display: none">L'ID du contexte du fichier d'aide de l'objet de la source (contenu de ExcepInfo.helpcontext)</span></span></td>
+      </tr>
+      <tr>
+        <td>.lastdllerror</td>
+        <td><span class="segments"><span lang="en">The number returned from GetLastError()</span><span lang="fr" style="display: none">Le nombre renvoyé par GetLastError()</span></span></td>
+      </tr>
+      <tr>
+        <td>.scriptline</td>
+        <td><span class="segments"><span lang="en">The script line on which the error was generated</span><span lang="fr" style="display: none">La ligne du script sur laquelle l'erreur est apparue</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for a detailed explanation.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour une explication détaillée.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="GUICtrlCreateObj.htm">GUICtrlCreateObj</a>, <a href="IsObj.htm">IsObj</a>, <a href="ObjCreate.htm">ObjCreate</a>, <a href="ObjGet.htm">ObjGet</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjEvent.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Error monitoring.</span><span lang="fr" style="display: none">Suivi d'erreur.</span></span> <span class="segments"><span lang="en">This will trap all COM errors while alive.</span><span lang="fr" style="display: none">Ce code piège toutes les erreurs COM pendant l'exécution.</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">This particular object is declared as local, meaning after the function returns it will not exist.</span><span lang="fr" style="display: none">Cet objet particulier est déclarée en local, ce qui signifie qu'après le retour de la fonction, il n'existera plus.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S7">"AutoIt.Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_ErrFunc"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create Internet Explorer object</span><span lang="fr" style="display: none">Crée un objet Internet Explorer</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"InternetExplorer.Application"</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Check for errors</span><span lang="fr" style="display: none">Vérifie les erreurs</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a>
+
+<span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">Visible</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">True</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">set visibility</span><span lang="fr" style="display: none">Définit la visibilité</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Custom sink object</span><span lang="fr" style="display: none">Objet sink personnel</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIEEvents</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S9">$oIE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_IEEvent_"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"DWebBrowserEvents2"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Navigate somewhere</span><span lang="fr" style="display: none">Navigue quelque part</span></span></span></span>
+<span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">navigate</span><span class="S8">(</span><span class="S7">"http://www.google.com/"</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Check for errors while loading</span><span lang="fr" style="display: none">Vérifie les erreurs lors du chargement</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">Quit</span><span class="S8">()</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait for page to load</span><span lang="fr" style="display: none">Attend que la page se charge</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">readyState</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"complete"</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Or</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">readyState</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">4</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">10</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Deliberately cause error by calling non-existing method</span><span lang="fr" style="display: none">Provoque délibérément une erreur en appelant une méthode qui n'existe pas</span></span></span></span>
+<span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">PlayMeARockAndRollSong</span><span class="S8">()</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Check for errors</span><span lang="fr" style="display: none">Vérifie les erreurs</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"COM Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"@error is set to COM error number."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"@error = 0x"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">))</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait few seconds to see if more events will be fired</span><span lang="fr" style="display: none">Attend quelques secondes pour voir si d'autres événements seront déclenchés</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">3000</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Nothing more to do.</span><span lang="fr" style="display: none">Rien de plus à faire.</span></span> <span class="segments"><span lang="en">Close IE and return from the function</span><span lang="fr" style="display: none">Ferme IE et retourne</span></span></span></span>
+<span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">Quit</span><span class="S8">()</span>
+
+<span class="S0">    </span><span class="S12">#forceref $oErrorHandler, $oIEEvents</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">BeforeNavigate2 method definition</span><span lang="fr" style="display: none">Définition de la méthode BeforeNavigate2</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> _IEEvent_BeforeNavigate2</span><span class="S8">(</span><span class="S9">$oIEpDisp</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sIEURL</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iIEFlags</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sIETargetFrameName</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sIEPostData</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iIEHeaders</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$bIECancel</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--BeforeNavigate2 fired--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"$oIEpDisp = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oIEpDisp</span><span class="S8">()</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"  -  "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjName.htm"><span class="S4">ObjName</span></a><span class="S8">(</span><span class="S9">$oIEpDisp</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">e.g. default property and name for the object</span><span lang="fr" style="display: none">par exemple la propriété et le nom par défaut de l'objet</span></span></span></span>
+<span class="S0">            </span><span class="S7">"$sIEURL = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sIEURL</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"$iIEFlags = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iIEFlags</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"$sIETargetFrameName = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sIETargetFrameName</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"$sIEPostData = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sIEPostData</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"$iIEHeaders = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iIEHeaders</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"$bIECancel = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$bIECancel</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;_IEEvent_BeforeNavigate2</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">User's COM error function.</span><span lang="fr" style="display: none">La fonction d'erreur COM de l'utilisateur.</span></span> <span class="segments"><span lang="en">Will be called if COM error occurs</span><span lang="fr" style="display: none">Sera appelée en cas d'erreur COM</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> _ErrFunc</span><span class="S8">(</span><span class="S9">$oError</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Do anything here.</span><span lang="fr" style="display: none">Faire quelque chose ici.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ScriptName"><span class="S6">@ScriptName</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" ("</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">scriptline</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">") : ==&gt; COM Error intercepted !"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.number is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"0x"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">number</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.windescription:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">windescription</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.description is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">description</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.source is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">source</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.helpfile is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">helpfile</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.helpcontext is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">helpcontext</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.lastdllerror is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">lastdllerror</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.scriptline is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">scriptline</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"err.retcode is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"0x"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$oError</span><span class="S8">.</span><span class="S14">retcode</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;_ErrFunc</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjEvent[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Global</span></a><span class="S0"> </span><span class="S9">$__g_oTemplateCOMErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oShell</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"Shell.Application"</span><span class="S8">)</span>
+
+<span class="S1">; Wrap calls that are likely to fatal error</span>
+
+<span class="S1">; This won't fatal error, it will set @error as in 3.3.11.0</span>
+<span class="S0">Template_COMErrorRegister</span><span class="S8">()</span>
+<span class="S9">$oShell</span><span class="S8">.</span><span class="S14">InvalidFunction</span><span class="S8">()</span>
+<a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S3">4096</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"COM Error Detected"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">)</span>
+<span class="S0">Template_COMErrorUnregister</span><span class="S8">()</span>
+
+<span class="S1">; This will fatal error, the 2nd line will not be reached.</span>
+<span class="S9">$oShell</span><span class="S8">.</span><span class="S14">InvalidFunction</span><span class="S8">()</span>
+<a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S3">4096</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"COM Error Detected"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">)</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Template_COMErrorRegister</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$__g_oTemplateCOMErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S7">"AutoIt.Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Template_COMErrFunc"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Template_COMErrorRegister</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Template_COMErrorUnregister</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$__g_oTemplateCOMErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Template_COMErrorUnregister</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Template_COMErrFunc</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; Do nothing special, just check @error after suspect functions.</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Template_COMErrFunc</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

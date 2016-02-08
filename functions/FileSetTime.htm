@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction FileSetTime</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>FileSetTime</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the timestamp of one of more files.</span><span lang="fr" style="display: none">Attribue le timestamp (l'horodatage) d'un ou plusieurs fichiers/dossiers.</span></span><br></p>
+  <p class="codeheader">FileSetTime ( "file pattern", "time" [, type = 0 [, recurse = 0]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">file pattern</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The path of the file(s) to set, e.g.</span><span lang="fr" style="display: none">Le chemin des Fichier(s) à modifier, ex :</span></span> C:\*.au3, C:\Dir. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
+      </tr>
+      <tr>
+        <td>time</td>
+        <td><span class="segments"><span lang="en">The new time to set in the format "YYYYMMDDHHMMSS" (Year, month, day, hours (24hr clock), seconds).</span><span lang="fr" style="display: none">La nouvelle date et heure à attribuer au format "YYYYMMDDHHMMSS" (Année, mois, jour, heures (au format 24hr), secondes).</span></span> <span class="segments"><span lang="en">If the time is blank "" then the current time is used.</span><span lang="fr" style="display: none">Si time est vide "" alors la date et l'heure en cours est utilisée.</span></span></td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The timestamp to change:</span><span lang="fr" style="display: none">Horodatage à modifier:</span></span><br>
+        &nbsp;&nbsp;&nbsp; $FT_MODIFIED (0) = Last modified (default)<br>
+        &nbsp;&nbsp;&nbsp; $FT_CREATED (1) = Created<br>
+        &nbsp;&nbsp;&nbsp; $FT_ACCESSED (2) = Last accessed<br>
+        <br>
+        <span class="segments"><span lang="en">Constants are defined in FileConstants.au3</span><span lang="fr" style="display: none">Les constantes sont définies dans FileConstants.au3</span></span></td>
+      </tr>
+      <tr>
+        <td>recurse</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        &nbsp;&nbsp;&nbsp; $FT_NONRECURSIVE (0) - no recursion (Default).<br>
+        &nbsp;&nbsp;&nbsp; $FT_RECURSIVE (1) - directories are recursed into.<br>
+        <br>
+        <span class="segments"><span lang="en">Constants are defined in FileConstants.au3</span><span lang="fr" style="display: none">Les constantes sont définies dans FileConstants.au3</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if error changing timestamp(s).</span><span lang="fr" style="display: none">Retourne 0 en cas d'erreur lors du changement du timestamp.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">See <a href="FileFindFirstFile.htm">FileFindFirstFile()</a> for a discussion about wildcards.</span><span lang="fr" style="display: none">Consultez <a href="FileFindFirstFile.htm">FileFindFirstFile()</a> pour des précisions sur les caractères spéciaux.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Using a date earlier than 1980-01-01 will have no effect.</span><span lang="fr" style="display: none">Utiliser une date antérieure au 01/01/1980 n'aura aucun effet.</span></span><br>
+  <span class="segments"><span lang="en">Trying to change a timestamp on read-only files will result in an error.</span><span lang="fr" style="display: none">Le changement de la date d'un fichier en lecture seule provoquera une erreur.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="FileGetAttrib.htm">FileGetAttrib</a>, <a href="FileGetTime.htm">FileGetTime</a>, <a href="FileSetAttrib.htm">FileSetAttrib</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\FileSetTime.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;FileConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPIFiles.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a constant variable in Local scope of the filepath that will be read/written to.</span><span lang="fr" style="display: none">Créezune constante de portée locale avec le chemin du fichier qui sera lu/écrit.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a temporary file to read data from.</span><span lang="fr" style="display: none">Crée un fichier temporaire pour y lire les données.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is an example of using FileSetTime."</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred whilst writing the temporary file."</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set the modified timestamp of the file to 1st Nov 2003 and use the current time.</span><span lang="fr" style="display: none">Régle l'horodatage de modification du fichier de 1 novembre 2003 et utilise l'heure actuelle.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iFileSetTime</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileSetTime.htm"><span class="S4">FileSetTime</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"20031101"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$FT_MODIFIED</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the modified timestamp of the file and return as a string in the format YYYYMMDDHHMMSS.</span><span lang="fr" style="display: none">Affiche l'horodatage de modification du fichier et retourne une chaîne au format AAAAMMJJHHMMSS.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$iFileSetTime</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Timestamp:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileGetTime.htm"><span class="S4">FileGetTime</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$FT_MODIFIED</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred whilst setting the timestamp of the file."</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the temporary file.</span><span lang="fr" style="display: none">Supprimez le fichier temporaire.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

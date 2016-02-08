@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ProgressSet</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ProgressSet</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the position and/or text of a previously created Progress bar window.</span><span lang="fr" style="display: none">Définit la position et/ou le texte d'une fenêtre de barre de progression précédemment créé.</span></span><br></p>
+  <p class="codeheader">ProgressSet ( percent [, "subtext" [, "maintext"]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">percent</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Percentage (value between 0.</span><span lang="fr" style="display: none">Pourcentage (valeur comprise entre 0.</span></span> <span class="segments"><span lang="en">and 100.) to set the progress bar at.</span><span lang="fr" style="display: none">et 100.)pour régler la barre de progression.</span></span></td>
+      </tr>
+      <tr>
+        <td>subtext</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Set the text for the Sub, Normal, Lower label.</span><span lang="fr" style="display: none">Sélectionnez le texte pour le Sub, Normale, Lower label.</span></span></td>
+      </tr>
+      <tr>
+        <td>maintext</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Set the text for the Main, Bold, Upper label.</span><span lang="fr" style="display: none">Sélectionnez le texte pour le Main, Bold, Upper label.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Notice that the subtext argument comes before maintext.</span><span lang="fr" style="display: none">Notez que l'argument de sous-texte vient avant mainText.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ProgressOff.htm">ProgressOff</a>, <a href="ProgressOn.htm">ProgressOn</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ProgressOn.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display a progress bar window.</span><span lang="fr" style="display: none">Affiche une fenêtre de barre de progression.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ProgressOn.htm"><span class="S4">ProgressOn</span></a><span class="S8">(</span><span class="S7">"Progress Meter"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Increments every second"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"0%"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Update the progress value of the progress bar window every second.</span><span lang="fr" style="display: none">Met à jour la valeur de la progression de la fenêtre de la barre de progression à chaque seconde.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">10</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><span class="S3">100</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Step</span></a><span class="S0"> </span><span class="S3">10</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">1000</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/ProgressSet.htm"><span class="S4">ProgressSet</span></a><span class="S8">(</span><span class="S9">$i</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"%"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set the "subtext" and "maintext" of the progress bar window.</span><span lang="fr" style="display: none">Régle le "sous-texte" et "MainText" de la fenêtre de la barre de progression.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ProgressSet.htm"><span class="S4">ProgressSet</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Done"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Complete"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">5000</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the progress window.</span><span lang="fr" style="display: none">Ferme la fenêtre de progression.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ProgressOff.htm"><span class="S4">ProgressOff</span></a><span class="S8">()</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction EnvUpdate</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>EnvUpdate</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Refreshes the OS environment.</span><span lang="fr" style="display: none">Actualise l'environnement de l'OS.</span></span><br></p>
+  <p class="codeheader">EnvUpdate ( )<br></p>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">none.</span><span lang="fr" style="display: none">Aucune valeur de retour.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to 1.</span><span lang="fr" style="display: none">Retourne 0 et @error = 1.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Similar effect as logging off and then on again.</span><span lang="fr" style="display: none">Effet similaire à la déconnexion, puis reconnexion de la session.</span></span> <span class="segments"><span lang="en">For example, changes to the %path% environment might not take effect until you call <a href="EnvUpdate.htm">EnvUpdate()</a> (or you logoff/reboot).</span><span lang="fr" style="display: none">Par exemple, les modifications de la variable d'environnement %PATH% pourraient ne pas prendre effet tant que vous n'appelez <a href="EnvUpdate.htm">EnvUpdate()</a> (ou déconnecter la session/rebooter).</span></span><a href="EnvUpdate.htm"></a><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="EnvGet.htm">EnvGet</a>, <a href="EnvSet.htm">EnvSet</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\EnvUpdate.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Retrieve the system environment variable called %PATH%.</span><span lang="fr" style="display: none">Récupére la variable d'environnement système appelé %PATH%.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sEnvVar</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/EnvGet.htm"><span class="S4">EnvGet</span></a><span class="S8">(</span><span class="S7">"PATH"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign the system environment variable called %PATH% with its current value as well as the script directory.</span><span lang="fr" style="display: none">Assigne la variable d'environnement système appelé %PATH% avec sa valeur actuelle ainsi que le répertoire de script.</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">When you assign an environment variable you do so minus the percentage signs (%).</span><span lang="fr" style="display: none">Lorsque vous affectez une variable d'environnement, vous le faites moins les signes de pourcentage (%).</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/EnvSet.htm"><span class="S4">EnvSet</span></a><span class="S8">(</span><span class="S7">"PATH"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sEnvVar</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">";"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptDir"><span class="S6">@ScriptDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Refresh the OS environment for changes to take affect.</span><span lang="fr" style="display: none">Actualise l'environnement OS pour que les modifications prennent effet.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/EnvUpdate.htm"><span class="S4">EnvUpdate</span></a><span class="S8">()</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Retrieve the system environment variable that was just assigned a value previously.</span><span lang="fr" style="display: none">Récupére la variable d'environnement système dont on vient d'attribuer une valeur auparavant.</span></span></span></span>
+<span class="S0">    </span><span class="S9">$sEnvVar</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/EnvGet.htm"><span class="S4">EnvGet</span></a><span class="S8">(</span><span class="S7">"PATH"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the value of the environment variable $PATH%.</span><span lang="fr" style="display: none">Affiche la valeur de la variable d'environnement %PATH%.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The environment variable %PATH% has the value of: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sEnvVar</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

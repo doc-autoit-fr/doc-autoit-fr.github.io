@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_GetThemeSysSize</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_GetThemeSysSize</h1>
+  <p class="funcdesc">Retrieves the value of a system size metric from theme data<br></p>
+  <p class="codeheader">#include &lt;WinAPITheme.au3&gt;<br>
+  _WinAPI_GetThemeSysSize ( $hTheme, $iSizeID )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hTheme</td>
+        <td style="width:85%">Handle to the theme data.</td>
+      </tr>
+      <tr>
+        <td>$iSizeID</td>
+        <td>The value that specifies the system size metric desired. The following values are valid.<br>
+        $SM_CXBORDER<br>
+        $SM_CXVSCROLL<br>
+        $SM_CXHSCROLL<br>
+        $SM_CXSIZE<br>
+        $SM_CYSIZE<br>
+        $SM_CXSMSIZE<br>
+        $SM_CYSMSIZE<br>
+        $SM_CXMENUSIZE<br>
+        $SM_CYMENUSIZE<br>
+        $SM_CXPADDEDBORDER</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns the size in pixels.<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>If $hTheme is not 0, this function returns the size stored in the current visual style (SysMetrics section<br>
+  of the visual style) scaled to the current screen dpi. If $hTheme is 0, this function returns the global system<br>
+  metric in pixels that is scaled to the current dpi only if the application is marked as dpi-aware; otherwise,<br>
+  the pixels returned are unscaled.<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(GetThemeSysSize);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">GetThemeSysSize</a> in MSDN Library.</p>
+</body>
+</html>

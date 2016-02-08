@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction PixelSearch</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>PixelSearch</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Searches a rectangle of pixels for the pixel color provided.</span><span lang="fr" style="display: none">Recherche dans un rectangle de pixels, un pixel de couleur donnée.</span></span><br></p>
+  <p class="codeheader">PixelSearch ( left, top, right, bottom, color [, shade-variation = 0 [, step = 1 [, hwnd]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">left</td>
+        <td style="width:85%"><span class="segments"><span lang="en">left coordinate of rectangle.</span><span lang="fr" style="display: none">Abscisse du coin NW du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>top</td>
+        <td><span class="segments"><span lang="en">top coordinate of rectangle.</span><span lang="fr" style="display: none">Ordonnée du coin NW du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>right</td>
+        <td><span class="segments"><span lang="en">right coordinate of rectangle.</span><span lang="fr" style="display: none">Abscisse du coin SE du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>bottom</td>
+        <td><span class="segments"><span lang="en">bottom coordinate of rectangle.</span><span lang="fr" style="display: none">Ordonnée du coin SE du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td><span class="segments"><span lang="en">Color value of pixel to find (in decimal or hex).</span><span lang="fr" style="display: none">Valeur de la couleur du pixel à trouver (en décimal ou hexadécimal).</span></span></td>
+      </tr>
+      <tr>
+        <td>shade-variation</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">A number between 0 and 255 to indicate the allowed number of shades of variation of the red, green, and blue components of the color.</span><span lang="fr" style="display: none">Un nombre entre 0 et 255 pour indiquer le nombre de variation de nuances autorisées des composantes rouge, verte et bleue de la couleur.</span></span> <span class="segments"><span lang="en">Default is 0 (exact match).</span><span lang="fr" style="display: none">Par défaut 0 (correspondance exacte).</span></span></td>
+      </tr>
+      <tr>
+        <td>step</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Instead of searching each pixel use a value larger than 1 to skip pixels (for speed).</span><span lang="fr" style="display: none">Au lieu de chercher chaque pixel, utilisez une valeur supérieure à 1 pour passer certains pixels (pour augmenter la vitesse).</span></span> <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
+      </tr>
+      <tr>
+        <td>hwnd</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a two-element array of pixel's coordinates.</span><span lang="fr" style="display: none">Retourne un tableau à deux éléments, des coordonnées du pixel.</span></span> (Array[0] = x, Array[1] = y).</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to 1 if the color is not found.</span><span lang="fr" style="display: none">Retourne @error = 1 si la couleur n'est pas trouvée.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The search direction varies as follows:</span><span lang="fr" style="display: none">La direction de la recherche varie selon ce qui suit :</span></span><br>
+  &nbsp;&nbsp;&nbsp; Left-to-Right - left &lt; right<br>
+  &nbsp;&nbsp;&nbsp; Right-to-Left - right &lt; left<br>
+  &nbsp;&nbsp;&nbsp; Top-to-Bottom - top &lt; bottom<br>
+  &nbsp;&nbsp;&nbsp; Bottom-to-Top - bottom &lt; top<br>
+  <span class="segments"><span lang="en">Changing the search direction can be a useful optimization if the color being searched for frequently appears in in a specific quadrat of the search area since less searching is done if the search starts in the most common quadrant.</span><span lang="fr" style="display: none">Changer la direction de recherche peut être une optimisation utile si la couleur recherchée apparaît fréquemment dans une zone spécifique de la zone de recherche.La recherche sera réduite, si elle débute dans la zone la plus courante.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Remember, a typical display at 1024 x 768 has 786432 pixels.</span><span lang="fr" style="display: none">N'oubliez pas qu'un affichage en 1024 x 768 contient 786 432 pixels.</span></span> <span class="segments"><span lang="en">Although <a href="PixelSearch.htm">PixelSearch()</a> is optimized, narrowing the search area helps speed up the result.</span><span lang="fr" style="display: none">Bien que <a href="PixelSearch.htm">PixelSearch()</a> soit optimisé, la réduction de la zone de recherche permet d'accélérer le résultat.</span></span><a href="PixelSearch.htm"></a><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="PixelChecksum.htm">PixelChecksum</a>, <a href="AutoItSetOption.htm#PixelCoordMode">PixelCoordMode (Option)</a>, <a href="PixelGetColor.htm">PixelGetColor</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\PixelSearch.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Find a pure red pixel in the range 0,0-20,300</span><span lang="fr" style="display: none">Trouve un pixel rouge pur dans la zonz (0,0)-(20,300)</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aCoord</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/PixelSearch.htm"><span class="S4">PixelSearch</span></a><span class="S8">(</span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0xFF0000</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"X and Y are: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aCoord</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">","</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aCoord</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
+<a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Find a pure red pixel or a red pixel within 10 shades variations of pure red</span><span lang="fr" style="display: none">Trouve un pixel rouge pur ou un pixel rouge dans 10 variations de coloris de rouge pur</span></span></span></span>
+<span class="S9">$aCoord</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/PixelSearch.htm"><span class="S4">PixelSearch</span></a><span class="S8">(</span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0xFF0000</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"X and Y are: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aCoord</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">","</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aCoord</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
+<a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

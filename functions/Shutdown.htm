@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction Shutdown</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>Shutdown</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Shuts down the system.</span><span lang="fr" style="display: none">Arrête le système.</span></span><br></p>
+  <p class="codeheader">Shutdown ( code )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">code</td>
+        <td style="width:85%"><span class="segments"><span lang="en">A combination of shutdown codes.</span><span lang="fr" style="display: none">Une combinaison des codes d'arrêt.</span></span> <span class="segments"><span lang="en">See "remarks".</span><span lang="fr" style="display: none">Voir "Remarques".</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to Windows API GetLastError().</span><span lang="fr" style="display: none">Retourne 0 et affecte @error avec l'API Windows GetLastError().</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The shutdown code is a combination of the following values:</span><span lang="fr" style="display: none">Le code d'arrêt est une combinaison des valeurs suivantes.</span></span><br>
+  &nbsp;&nbsp;&nbsp; $SD_LOGOFF (0) = Logoff<br>
+  &nbsp;&nbsp;&nbsp; $SD_SHUTDOWN (1) = Shutdown<br>
+  &nbsp;&nbsp;&nbsp; $SD_REBOOT (2) = Reboot<br>
+  &nbsp;&nbsp;&nbsp; $SD_FORCE (4) = Force<br>
+  &nbsp;&nbsp;&nbsp; $SD_POWERDOWN (8) = Power down<br>
+  &nbsp;&nbsp;&nbsp; $SD_FORCEHUNG (16) = Force if hung<br>
+  &nbsp;&nbsp;&nbsp; $SD_STANDBY (32) = Standby<br>
+  &nbsp;&nbsp;&nbsp; $SD_HIBERNATE (64) = Hibernate<br>
+  <br>
+  Constants are defined in AutoItConstants.au3.<br>
+  <br>
+  <span class="segments"><span lang="en">Required values should be <a href="BitOR.htm">BitOR()</a>'ed together.</span><span lang="fr" style="display: none">Les valeurs requises peuvent être combinées avec <a href="BitOR.htm">BitOR()</a>.</span></span> <span class="segments"><span lang="en">To shutdown and power down, for example, the code would be <a href="BitOR.htm">BitOR</a>($SD_SHUTDOWN, $SD_POWERDOWN).</span><span lang="fr" style="display: none">Pour l'arrêt et la mise hors tension, par exemple, le code serait <a href="BitOR.htm">BitOR</a>($SD_SHUTDOWN, $SD_POWERDOWN).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Standby or Hibernate are ignored if other codes are set.</span><span lang="fr" style="display: none">La Veille ou la Veille prolongée sont ignorées si d'autres codes sont définis.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ProcessClose.htm">ProcessClose</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Shutdown.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S1">; <span><span class="segments"><span lang="en">Force a reboot</span><span lang="fr" style="display: none">Forcer un redémarrage</span></span></span></span>
+
+<a class="codeSnippetLink" href="../functions/Shutdown.htm"><span class="S4">Shutdown</span></a><span class="S8">(</span><span class="S3">6</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ObjCreate</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ObjCreate</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a reference to a COM object from the given classname.</span><span lang="fr" style="display: none">Crée une référence à un objet COM à partir d'un nom de classe donné.</span></span><br></p>
+  <p class="codeheader">ObjCreate ( "classname" [, "servername" [, "username" [, "password"]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">classname</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The class of the object in the following format:</span><span lang="fr" style="display: none">Le nom de la classe de l'objet dans le format suivant :</span></span> "appname.objectype"<br>
+        <span class="segments"><span lang="en">It can also be a string representation of the CLSID.</span><span lang="fr" style="display: none">Il peut également être une représentation de chaîne du CLSID.</span></span></td>
+      </tr>
+      <tr>
+        <td>servername</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">name of a remote computer from which the object must be obtained.</span><span lang="fr" style="display: none">nom d'un ordinateur distant à partir duquel l'objet doit être obtenue.</span></span></td>
+      </tr>
+      <tr>
+        <td>username</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">name of a usercode on the remote computer.</span><span lang="fr" style="display: none">code utilisateur sur l'ordinateur distant.</span></span><br>
+        <span class="segments"><span lang="en">You have to enter this in the format "computer\usercode" or "domain\usercode".</span><span lang="fr" style="display: none">Vous devez entrer ce code dans le format "ordinateur\usercode" ou "domaine\usercode".</span></span></td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">password for the usercode on the remote computer.</span><span lang="fr" style="display: none">mot de passe pour le code utilisateur sur l'ordinateur distant.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">an object.</span><span lang="fr" style="display: none">Retourne un objet.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Use <a href="ObjCreate.htm">ObjCreate()</a> if you want to have a new instance of the referring application.</span><span lang="fr" style="display: none">Utilisez <a href="ObjCreate.htm">ObjCreate()</a> si vous voulez avoir une nouvelle instance de l'application référencé.</span></span><br>
+  <span class="segments"><span lang="en">If you want to connect to an existing process, use <a href="ObjGet.htm">ObjGet()</a> instead.</span><span lang="fr" style="display: none">Si vous souhaitez vous connecter à un processus existant, utilisez à la place <a href="ObjGet.htm">ObjGet()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Keep in mind that not all computers have the same set of Objects.</span><span lang="fr" style="display: none">Gardez à l'esprit que tous les ordinateurs ont le même ensemble d'Objets.</span></span> <span class="segments"><span lang="en">So <strong>always</strong> check for errors after calling <a href="ObjCreate.htm">ObjCreate()</a>.</span><span lang="fr" style="display: none">Donc testez <strong>toujours</strong> les erreurs après un appel de <a href="ObjCreate.htm">ObjCreate()</a>.</span></span> <span class="segments"><span lang="en">To check errors use <a href="ObjEvent.htm">ObjEvent()</a>.</span><span lang="fr" style="display: none">Pour tester les erreurs utilisez <a href="ObjEvent.htm">ObjEvent()</a> .</span></span><a href="ObjCreate.htm"></a><a href="ObjEvent.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">The following requirements apply if you want to access objects on <em>remote</em> computers:</span><span lang="fr" style="display: none">Les exigences suivantes s'appliquent si vous voulez accéder à des objets sur des ordinateurs <em>distants</em> :</span></span><br></p>
+  <ul>
+    <li style="list-style: none"><br></li>
+    <li><span class="segments"><span lang="en">The user running the script must have the appropriate permissions.</span><span lang="fr" style="display: none">L'utilisateur qui exécute le script doit avoir des droits appropriés.</span></span></li>
+    <li style="list-style: none"><br></li>
+    <li><span class="segments"><span lang="en">The Object on the remote computer must support DCOM (Distributed COM)</span><span lang="fr" style="display: none">L'Objet sur l'ordinateur distant doit supporter DCOM (Distributed COM)</span></span></li>
+    <li style="list-style: none"><br></li>
+    <li><span class="segments"><span lang="en">The remote computer must have 'Remote Registry Service' and 'File and Printer sharing' services running.</span><span lang="fr" style="display: none">L'ordinateur distant doit avoir les services 'Remote Registry Service' et 'File and Printer sharing' en cours d'exécution.</span></span></li>
+    <li style="list-style: none"><br></li>
+  </ul><br>
+  <br>
+  <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for more information about Objects.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour plus d'informations sur les objets.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="GUICtrlCreateObj.htm">GUICtrlCreateObj</a>, <a href="IsObj.htm">IsObj</a>, <a href="ObjEvent.htm">ObjEvent</a>, <a href="ObjGet.htm">ObjGet</a>, <a href="ObjName.htm">ObjName</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjCreate.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Counting the number of open shell windows</span><span lang="fr" style="display: none">Compte le nombre de fenêtres shell ouvertes</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oShell</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"shell.application"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Get the Windows Shell Object</span><span lang="fr" style="display: none">Obtient l'objet Shell Windows</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oShellWindows</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$oShell</span><span class="S8">.</span><span class="S14">Windows</span><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Get the collection of open shell Windows</span><span lang="fr" style="display: none">Obtient la collection de Windows shell ouvertes</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/IsObj.htm"><span class="S4">IsObj</span></a><span class="S8">(</span><span class="S9">$oShellWindows</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sString</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">String for displaying purposes</span><span lang="fr" style="display: none">Chaîne à des fins d'affichage</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$oWnd</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ForInNext.htm"><span class="S5">In</span></a><span class="S0"> </span><span class="S9">$oShellWindows</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Count all existing shell windows</span><span lang="fr" style="display: none">Compte toutes les fenêtres shell existantes</span></span></span></span>
+<span class="S0">        </span><span class="S9">$sString</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><span class="S9">$oWnd</span><span class="S8">.</span><span class="S14">LocationName</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Shell Windows:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"You have the following shell windows:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sString</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjCreate[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Open the MediaPlayer on a REMOTE computer</span><span lang="fr" style="display: none">Ouvre MediaPlayer sur un ordinateur distant</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oRemoteMedia</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"MediaPlayer.MediaPlayer.1"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"name-of-remote-computer"</span><span class="S8">)</span>
+
+<a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Remote ObjCreate Test"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ObjCreate() of a remote Mediaplayer Object successful !"</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$oRemoteMedia</span><span class="S8">.</span><span class="S14">Open</span><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@WindowsDir"><span class="S6">@WindowsDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\media\tada.wav"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Play sound if file is present</span><span lang="fr" style="display: none">Joue un son si le fichier est présent</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Remote ObjCreate Test"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Failed to open remote Object. Error code: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">,</span><span class="S0"> </span><span class="S3">8</span><span class="S8">))</span>
+<a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

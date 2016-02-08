@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUIGetMsg</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUIGetMsg</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Polls the GUI to see if any events have occurred.</span><span lang="fr" style="display: none">Sonde la GUI pour voir si des événements ont été déclenchés.</span></span><br></p>
+  <p class="codeheader">GUIGetMsg ( [advanced = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">advanced</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">return extended information in an array.</span><span lang="fr" style="display: none">retour d'informations complémentaires dans un tableau.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $GUI_EVENT_SINGLE (0) = (default) Returns a single event.<br>
+        &nbsp;&nbsp;&nbsp; $GUI_EVENT_ARRAY (1) = returns an array containing the event and extended information.<br>
+        <br>
+        Constants are defined in GUIConstantsEx.au3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns an event, or an array depending on the "advanced" parameter.</span><span lang="fr" style="display: none">Retourne un événement, ou un tableau selon le paramètre "advanced".</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The "event" returned is the control ID of the control sending the message, or it is a special event (like the window is closing, minimizing).</span><span lang="fr" style="display: none">L'événement retourné est l'ID du contrôle qui envoie le message, ou un événement spécial (comme la fermeture de la fenêtre, fenêtre minimisé).</span></span> <span class="segments"><span lang="en">Or if there is no message, the event is 0.</span><span lang="fr" style="display: none">Ou s'il n'y a pas de message, l'événement est égal à 0.</span></span><br>
+  <br>
+  <br>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%"><strong>Event ID</strong>:</td>
+        <td style="width:90%"><span class="segments"><span lang="en"><strong>the ID of the control sending the message</strong></span><span lang="fr" style="display: none"><strong>L'ID du contrôle qui a envoyé le message</strong></span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_NONE (0):</td>
+        <td><span class="segments"><span lang="en">No event</span><span lang="fr" style="display: none">Aucun évènement</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_CLOSE:</td>
+        <td><span class="segments"><span lang="en">dialog box being closed (either by defined button or system menu).</span><span lang="fr" style="display: none">boîte de dialogue fermée (par bouton défini ou par menu système ).</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_MINIMIZE:</td>
+        <td><span class="segments"><span lang="en">dialog box minimized with Windows title bar button.</span><span lang="fr" style="display: none">boîte de dialogue minimisée avec le menu système.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_RESTORE:</td>
+        <td><span class="segments"><span lang="en">dialog box restored by click on task bar icon.</span><span lang="fr" style="display: none">boîte de dialogue restaurée par clic sur l'icône de la barre de tâche.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_MAXIMIZE:</td>
+        <td><span class="segments"><span lang="en">dialog box maximized with Windows title bar button.</span><span lang="fr" style="display: none">boîte de dialogue maximisée avec le menu système.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_MOUSEMOVE:</td>
+        <td><span class="segments"><span lang="en">the mouse cursor has moved.</span><span lang="fr" style="display: none">le curseur de la souris s'est déplacé.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_PRIMARYDOWN:</td>
+        <td><span class="segments"><span lang="en">the primary mouse button was pressed.</span><span lang="fr" style="display: none">le bouton principal de la souris a été enfoncé.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_PRIMARYUP:</td>
+        <td><span class="segments"><span lang="en">the primary mouse button was released.</span><span lang="fr" style="display: none">le bouton principal de la souris a été relâché.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_SECONDARYDOWN:</td>
+        <td><span class="segments"><span lang="en">the secondary mouse button was pressed.</span><span lang="fr" style="display: none">le bouton secondaire de la souris a été enfoncé.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_SECONDARYUP:</td>
+        <td><span class="segments"><span lang="en">the secondary mouse button was released.</span><span lang="fr" style="display: none">le bouton secondaire de la souris a été relâché.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_RESIZED:</td>
+        <td><span class="segments"><span lang="en">dialog box has been resized.</span><span lang="fr" style="display: none">boîte de dialogue redimensionnée.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">$GUI_EVENT_DROPPED:</td>
+        <td><span class="segments"><span lang="en">End of a Drag&amp;Drop action @GUI_DragId, @GUI_DragFile and @GUI_DropId will be used to retrieve the ID's/file corresponding to the involve control.</span><span lang="fr" style="display: none">Fin d'une action glisser-déposer.@GUI_DragId, @GUI_DragFile et @GUI_DropId seront utilisés pour récupérer de l'ID/fichier du contrôle impliqué.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  Constants are defined in GUIConstantsEx.au3.<br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">When using the "advanced" parameter the information is returned in an array with extended information:</span><span lang="fr" style="display: none">Lorsque vous utilisez le paramètre "avancé" les informations sont retournées dans un tableau avec des informations complémentaires:</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">$aArray[0] = 0 or Event ID or Control ID</span><span lang="fr" style="display: none">$aArray[0] = 0 ou l'ID de l'événement ou l'ID du contrôle</span></span><br>
+  <span class="segments"><span lang="en">$aArray[1] = The window handle the event is from</span><span lang="fr" style="display: none">$aArray[1] = Le handle de la fenêtre où l'événement s'est déclenché</span></span><br>
+  <span class="segments"><span lang="en">$aArray[2] = The control handle the event is from (if applicable)</span><span lang="fr" style="display: none">$aArray[2] = Le handle du contrôle où l'événement s'est déclenché (le cas échéant)</span></span><br>
+  <span class="segments"><span lang="en">$aArray[3] = The current X position of the mouse cursor (relative to the GUI window)</span><span lang="fr" style="display: none">$aArray[3] = L'abscisse X du curseur de la souris (relative à la fenêtre GUI)</span></span><br>
+  <span class="segments"><span lang="en">$aArray[4] = The current Y position of the mouse cursor (relative to the GUI window)</span><span lang="fr" style="display: none">$aArray[4] = L'ordonnée Y du curseur de la souris (relative à la fenêtre GUI)</span></span><br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">If the GUIOnEventMode option is set to 1 then the return from GUIGetMsg is always 0 and the @error is set to 1.</span><span lang="fr" style="display: none">Si l'option de GUIOnEventMode est réglé à 1, alors le retour de GUIGetMsg est toujours 0 et @error est mis à 1.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If the option GUIEventOptions is set to 1 the minimize, restore and maximize button will not do any action on the window just a simple notification.</span><span lang="fr" style="display: none">Si l'option GUIEventOptions est à 1, les boutons 'minimize', 'restaure' et 'maximize' n'auront aucun effer sur la fenêtre, juste une simple notification.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">This function automatically idles the CPU when required so that it can be safely used in tight loops without hogging all the CPU.</span><span lang="fr" style="display: none">Cette fonction ralentit automatiquement lorsque le CPU en a besoin, de façon qu'elle puisse être utilisée en toute sécurité dans des boucles courtes sans monopoliser tout le CPU.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Information about the mouse position and the hovering control can be retrieved with <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a>.</span><span lang="fr" style="display: none">Les informations sur la position de la souris et sur le contrôle survolé peuvent être récupérés avec <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a>.</span></span> <span class="segments"><span lang="en">No event is fired when the mouse is over a control so <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a> must be called to retrieve the controlID.</span><span lang="fr" style="display: none">Aucun événement n'est déclenché lorsque la souris est sur un contrôle donc <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a> doit être appelée pour récupérer le controlID.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="GUICreate.htm">GUICreate</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICreate.htm">GUICtrlRead</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlSendMsg</a>, <a href="GUICtrlRead.htm">GUICtrlSetOnEvent</a>, <a href="GUICtrlSendMsg.htm">GUIEventOptions (Option)</a>, <a href="GUICtrlSetOnEvent.htm">GUIGetCursorInfo</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIOnEventMode (Option)</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUIGetMsg.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">-------------------------------------------------------------------------------------</span><span lang="fr" style="display: none">-------------------------------------------------- -----------------------------------</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">Example - Press the button to see the value of the radio boxes</span><span lang="fr" style="display: none">Exemple - Appuyez sur le bouton pour voir la valeur des boutons radio</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">The script also detects state changes (closed/minimized/timeouts, etc).</span><span lang="fr" style="display: none">Le script détecte également les changements d'état (fermé/minimisé/délai d'attente, etc).</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUICoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"Radio Box Demo"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">280</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create the controls</span><span lang="fr" style="display: none">Crée les contrôles</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idButton_1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"B&amp;utton 1"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S3">120</span><span class="S8">,</span><span class="S0"> </span><span class="S3">40</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateGroup.htm"><span class="S4">GUICtrlCreateGroup</span></a><span class="S8">(</span><span class="S7">"Group 1"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">,</span><span class="S0"> </span><span class="S3">90</span><span class="S8">,</span><span class="S0"> </span><span class="S3">165</span><span class="S8">,</span><span class="S0"> </span><span class="S3">160</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIStartGroup.htm"><span class="S4">GUIStartGroup</span></a><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idRadio_1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateRadio.htm"><span class="S4">GUICtrlCreateRadio</span></a><span class="S8">(</span><span class="S7">"Radio &amp;0"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">120</span><span class="S8">,</span><span class="S0"> </span><span class="S3">70</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateRadio.htm"><span class="S4">GUICtrlCreateRadio</span></a><span class="S8">(</span><span class="S7">"Radio &amp;1"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">150</span><span class="S8">,</span><span class="S0"> </span><span class="S3">60</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idRadio_3</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateRadio.htm"><span class="S4">GUICtrlCreateRadio</span></a><span class="S8">(</span><span class="S7">"Radio &amp;2"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">180</span><span class="S8">,</span><span class="S0"> </span><span class="S3">60</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Init our vars that we will use to keep track of GUI events</span><span lang="fr" style="display: none">Initialise les variables que nous allons utiliser pour garder une trace des événements de la GUI</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iRadioVal1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">We will assume 0 = first radio button selected, 2 = last button</span><span lang="fr" style="display: none">Nous supposerons 0 = premier RadioButton sélectionné, 2 = dernier RadioButton</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show the GUI</span><span lang="fr" style="display: none">Affiche la GUI</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">In this message loop we use variables to keep track of changes to the radios, another</span><span lang="fr" style="display: none">Dans cette boucle de message nous utilisons des variables pour garder une trace des changements apportés aux radios, une autre</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">way would be to use GUICtrlRead() at the end to read in the state of each control</span><span lang="fr" style="display: none">façon serait d'utiliser GUICtrlRead() à la fin de la lecture de l'état de chaque contrôle</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Select.htm"><span class="S5">Select</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Dialog was closed"</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_MINIMIZE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Dialog minimized"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_MAXIMIZE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Dialog restored"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idButton_1</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Default button clicked:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Radio "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iRadioVal1</span><span class="S8">)</span>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&gt;=</span></a><span class="S0"> </span><span class="S9">$idRadio_1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">And</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;=</span></a><span class="S0"> </span><span class="S9">$idRadio_3</span>
+<span class="S0">                </span><span class="S9">$iRadioVal1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S9">$idRadio_1</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Select.htm"><span class="S5">EndSelect</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">()</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUIGetMsg[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI.</span><span lang="fr" style="display: none">Crée une interface graphique.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"Example GUI1"</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a button.</span><span lang="fr" style="display: none">Crée un bouton.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idButton1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Button1"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">80</span><span class="S8">,</span><span class="S0"> </span><span class="S3">22</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI</span><span lang="fr" style="display: none">Affiche la GUI</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI1</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI.</span><span lang="fr" style="display: none">Crée une interface graphique.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI2</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"Example GUI2"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a button.</span><span lang="fr" style="display: none">Crée un bouton.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idButton2</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Button2"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">80</span><span class="S8">,</span><span class="S0"> </span><span class="S3">22</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI</span><span lang="fr" style="display: none">Affiche la GUI</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI2</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Initialize a Local variable.</span><span lang="fr" style="display: none">Initialise une variable locale.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">Assign to $aMsg the advanced GUI messages.</span><span lang="fr" style="display: none">Assigne à $aMsg les messages GUI avancés.</span></span></span></span>
+<span class="S0">        </span><span class="S9">$aMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">(</span><span class="S9">$GUI_EVENT_ARRAY</span><span class="S8">)</span>
+
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">Switch from GUIs</span><span lang="fr" style="display: none">Selon la GUI</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><span class="S9">$aMsg</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$hGUI1</span>
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">The event comes from the GUI1</span><span lang="fr" style="display: none">L'événement vient de la GUI1</span></span></span></span>
+
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">Switch from event ID</span><span lang="fr" style="display: none">Selon l'ID de l'événement</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><span class="S9">$aMsg</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span>
+<span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                        </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idButton1</span>
+<span class="S0">                        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Button1 clicked."</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$hGUI2</span>
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">The event comes from the GUI2</span><span lang="fr" style="display: none">L'événement vient de la GUI2</span></span></span></span>
+
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">Switch from event ID</span><span lang="fr" style="display: none">Selon l'ID de l'événement</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><span class="S9">$aMsg</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span>
+<span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                        </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hGUI2</span><span class="S8">)</span>
+<span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idButton2</span>
+<span class="S0">                        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Button2 clicked."</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the previous GUIs and all controls.</span><span lang="fr" style="display: none">Supprime les GUI précédentes et tous les contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hGUI1</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

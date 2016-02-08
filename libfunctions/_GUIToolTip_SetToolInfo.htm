@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _GUIToolTip_SetToolInfo</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_GUIToolTip_SetToolInfo</h1>
+  <p class="funcdesc">Sets the information for a tool<br></p>
+  <p class="codeheader">#include &lt;GuiToolTip.au3&gt;<br>
+  _GUIToolTip_SetToolInfo ( $hWnd, $sText [, $iID = 0 [, $iLeft = 0 [, $iTop = 0 [, $iRight = 0 [, $iBottom = 0 [, $iFlags = Default [, $iParam = 0]]]]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hWnd</td>
+        <td style="width:85%">Handle of the window that contains the tool, or 0</td>
+      </tr>
+      <tr>
+        <td>$sText</td>
+        <td>Text for the ToolTip control</td>
+      </tr>
+      <tr>
+        <td>$iID</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Identifier of the tool, or Window handle of the control the tool is assigned to</td>
+      </tr>
+      <tr>
+        <td>$iLeft</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> X coordinate of the upper left corner of the rectangle</td>
+      </tr>
+      <tr>
+        <td>$iTop</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Y coordinate of the upper left corner of the rectangle</td>
+      </tr>
+      <tr>
+        <td>$iRight</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> X coordinate of the lower right corner of the rectangle</td>
+      </tr>
+      <tr>
+        <td>$iBottom</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Y coordinate of the lower right corner of the rectangle</td>
+      </tr>
+      <tr>
+        <td>$iFlags</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Flags that control the ToolTip display:<br>
+        &nbsp;&nbsp;&nbsp; $TTF_IDISHWND - Indicates that $iID is a window or control handle, instead of the ID of the tool [default]<br>
+        &nbsp;&nbsp;&nbsp; $TTF_CENTERTIP - Centers the tooltip below the control specified by $iID<br>
+        &nbsp;&nbsp;&nbsp; $TTF_RTLREADING - Indicates that text will be displayed in the opposite direction (right to left)<br>
+        &nbsp;&nbsp;&nbsp; $TTF_SUBCLASS - Indicates that the control should subclass the tool's window [default]<br>
+        &nbsp;&nbsp;&nbsp; $TTF_TRACK&nbsp;&nbsp;&nbsp; - Positions the tooltip window next to the tool to which it corresponds<br>
+        &nbsp;&nbsp;&nbsp; $TTF_ABSOLUTE - Positions the window at the same coordinates provided by TTM_TRACKPOSITION. (see Remarks)<br>
+        &nbsp;&nbsp;&nbsp; $TTF_TRANSPARENT- Causes the control to forward mouse messages to the parent window<br>
+        &nbsp;&nbsp;&nbsp; $TTF_PARSELINKS - Indicates that links in the control text should be displayed as links</td>
+      </tr>
+      <tr>
+        <td>$iParam</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Application-defined value that is associated with the tool</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>Some internal properties of a tool are established when the tool is created, and are not recomputed when a $TTM_SETTOOLINFO message is sent.<br>
+  If you simply assign values to a TOOLINFO structure and pass it to the ToolTip control with a $TTM_SETTOOLINFO message, these properties may be lost.<br>
+  Instead your application should first request the tool's current TOOLINFO structure by sending a $TTM_GETTOOLINFO message.<br>
+  Then, modify the members of this structure as needed and pass it back to the ToolTip control with $TTM_SETTOOLINFO.<br>
+  When calling $TTM_SETTOOLINFO, the string pointed to by the Text member of the TOOLINFO structure must not exceed 80 characters in length.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_GUIToolTip_GetToolInfo.htm">_GUIToolTip_GetToolInfo</a></p>
+</body>
+</html>

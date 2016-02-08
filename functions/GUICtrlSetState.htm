@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUICtrlSetState</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUICtrlSetState</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Changes the state of a control.</span><span lang="fr" style="display: none">Modifie l'état d'un contrôle.</span></span><br></p>
+  <p class="codeheader">GUICtrlSetState ( controlID, state )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">controlID</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The control identifier (controlID) as returned by a <a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...()</a> function, or -1 for the last created control.</span><span lang="fr" style="display: none">L'identifiant du contrôle (controlID) tel que renvoyé par une fonction <a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...()</a>, ou -1 pour désigner le dernier contrôle créé.</span></span></td>
+      </tr>
+      <tr>
+        <td>state</td>
+        <td><span class="segments"><span lang="en">See the <a href="#StateTable">State table</a> below.</span><span lang="fr" style="display: none">Consultez le <a href="#StateTable">Tableau des états</a> ci-dessous.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>&nbsp;&nbsp;&nbsp; <a id="StateTable"><strong>State table</strong><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>State</strong></span><span lang="fr" style="display: none"><strong>Etat</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Comments</strong></span><span lang="fr" style="display: none"><strong>Commentaires</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>$GUI_CHECKED (1)</td>
+        <td><span class="segments"><span lang="en">Radio, Checkbox or ListViewItem will be checked.</span><span lang="fr" style="display: none">Les contrôles Radio, Checkbox ou ListViewItem seront cochés.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_INDETERMINATE (2)</td>
+        <td><span class="segments"><span lang="en">Checkbox having the tristate attribute will be greyed.</span><span lang="fr" style="display: none">Les contrôles Checkbox qui ont l'attribut à trois états seront grisés.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_UNCHECKED (4)</td>
+        <td><span class="segments"><span lang="en">Radio, Checkbox or ListViewItem will be unchecked.</span><span lang="fr" style="display: none">Les contrôles Radio, Checkbox ou ListViewItem seront décochés.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DROPACCEPTED (8)</td>
+        <td><span class="segments"><span lang="en">Control will accept drop action : from file or from a drag of another control.</span><span lang="fr" style="display: none">Le contrôle acceptera action Drop : à partir d'un fichier ou d'un Drag d'un autre contrôle.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_SHOW (16)</td>
+        <td><span class="segments"><span lang="en">Control will be visible.</span><span lang="fr" style="display: none">Le contrôle sera visible.</span></span> <span class="segments"><span lang="en">On Tabitem control will select the first tab to be displayed.</span><span lang="fr" style="display: none">Le TabItem sélectionnera le premier onglet à afficher.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_HIDE (32)</td>
+        <td><span class="segments"><span lang="en">Control will not be visible.</span><span lang="fr" style="display: none">Le contrôle ne sera pas visible.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_ENABLE (64)</td>
+        <td><span class="segments"><span lang="en">Control will be enabled.</span><span lang="fr" style="display: none">Le contrôle sera activé.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DISABLE (128)</td>
+        <td><span class="segments"><span lang="en">Control will be greyed out.</span><span lang="fr" style="display: none">Le contrôle sera grisé.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_FOCUS (256)</td>
+        <td><span class="segments"><span lang="en">Control will be given input/selected focus.</span><span lang="fr" style="display: none">Le contrôle recevra le focus pour entrée/sélection.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_DEFBUTTON (512)</td>
+        <td><span class="segments"><span lang="en">Control will be set as the default button on the window.</span><span lang="fr" style="display: none">Le contrôle sera défini comme bouton par défaut de la fenêtre.</span></span> <span class="segments"><span lang="en">See remark about TreeviewItems.</span><span lang="fr" style="display: none">Voir Remarque sur TreeviewItems.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EXPAND (1024)</td>
+        <td><span class="segments"><span lang="en">TreeViewItem will expand its child items.</span><span lang="fr" style="display: none">Le contrôle TreeViewItem développera ses items enfants.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_ONTOP (2048)</td>
+        <td><span class="segments"><span lang="en">Control will be have the ontop attribute for the window (zOrdering).</span><span lang="fr" style="display: none">Le contrôle aura l'attribut Ontop (au dessus des autres fenêtres) (zOrdering).</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_NODROPACCEPTED (4096)</td>
+        <td><span class="segments"><span lang="en">Control will not accept drop action.</span><span lang="fr" style="display: none">Le contrôle n'acceptera pas l'action Drop.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_NOFOCUS (8192)</td>
+        <td><span class="segments"><span lang="en">Listview control will loose focus.</span><span lang="fr" style="display: none">Le contrôle ListView perdra le focus.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_AVISTART (0)</td>
+        <td><span class="segments"><span lang="en">Avi control will start playing.</span><span lang="fr" style="display: none">Le contrôle Avi démarrera la vidéo.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_AVISTOP (1)</td>
+        <td><span class="segments"><span lang="en">Avi control will stop playing.</span><span lang="fr" style="display: none">Le contrôle Avi arrêtera la vidéo.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_AVICLOSE (2)</td>
+        <td><span class="segments"><span lang="en">Avi control will stop playing and release resource.</span><span lang="fr" style="display: none">Le contrôle Avi arrêtera la vidéo et libérera les ressources.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">State values can be summed up as for example $GUI_DISABLE (128) + $GUI_HIDE (32) sets the control in an disabled and hidden state.</span><span lang="fr" style="display: none">Les valeurs d'État peuvent s'additionner comme par exemple $GUI_DISABLE(128)+$GUI_HIDE(32) définit le contrôle dans un état désactivé et caché.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If an AVI control has to be hidden with $GUI_HIDE (32) it should be closed with $GUI_AVICLOSE (1).</span><span lang="fr" style="display: none">Si un contrôle AVI doit être caché avec $GUI_HIDE(32), il doit être fermé avec $GUI_AVICLOSE(1).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">State of a "contextmenu" control <strong>cannot be changed.</strong></span><span lang="fr" style="display: none">L'état d'un contrôle "contextmenu" <strong>ne peut pas être changé</strong>.</span></span><br>
+  <span class="segments"><span lang="en">State of a "listviewitem" control can be changed if the associated "listview" control has been created with an extended style $LVS_EX_CHECKBOXES.</span><span lang="fr" style="display: none">L'état d'un contrôle "ListViewItem" peut être modifié si le contrôle "listview" associé a été créé avec un style étendu $LVS_EX_CHECKBOXES.</span></span> <span class="segments"><span lang="en">$GUI_FOCUS (256) and $GUI_NOFOCUS (8192) can be used on specific listviewitem provided listview control style allows to display it :</span><span lang="fr" style="display: none">$GUI_FOCUS(256) et $GUI_NOFOCUS(8192) peuvent être utilisés sur un ListViewItem spécifique associé à un style de contrôle listview qui permet de l'afficher:</span></span> $LVS_SHOWSELALWAYS.<br>
+  <span class="segments"><span lang="en">State of a "menu or a ""menuitem" control <strong>cannot be hidden.</strong></span><span lang="fr" style="display: none">L'état d'un contrôle "menu" ou "menuitem" <strong>ne peut pas être Hiden (caché).</strong></span></span><br>
+  <br>
+  ! <span class="segments"><span lang="en">Important information for $GUI_EXPAND: this state is only used for TreeViewItems.</span><span lang="fr" style="display: none">Information importante pour $GUI_EXPAND: cet état n'est utilisé que pour TreeViewItems.</span></span> <span class="segments"><span lang="en">If you want to use this 'action' then at least 1 Sub-TreeViewItem has to exist/created under this item !</span><span lang="fr" style="display: none">Si vous souhaitez utiliser cette 'action' alors au moins 1 Sous-TreeViewItem doit exister ou être créé sous cet item!</span></span><br>
+  <span class="segments"><span lang="en">If you want to select another item in a TreeView then you can use $GUI_FOCUS (256) - the parent TreeView gets the window focus and the specified item is marked as selected.</span><span lang="fr" style="display: none">Si vous voulez sélectionner un autre item dans un TreeView, vous pouvez utiliser $GUI_FOCUS(256) - le parent Treeview obtient le focus de la fenêtre et l'item spécifié est marqué comme sélectionné.</span></span><br>
+  <span class="segments"><span lang="en">If you want to set a treeview item as a default item which means painting it bold you can use $GUI_DEFBUTTON (512) - to turn it off just use another value but $GUI_DEFBUTTON (512), for instance 0.</span><span lang="fr" style="display: none">Si vous souhaitez définir un item de Treeview comme item par défaut, ce qui signifie la mise en gras, vous pouvez utiliser $GUI_DEFBUTTON(512) - pour annuler la mise en gras il suffit d'utiliser une autre valeur que $GUI_DEFBUTTON(512), par exemple 0.</span></span> <span class="segments"><span lang="en">This state will not be returned by</span></span> <a href="GUICtrlGetState.htm">GUICtrlGetState()</a>.<span lang="fr" style="display: none">Cet état ne sera pas retourné par</span> <a href="GUICtrlGetState.htm">GUICtrlGetState()</a>.<a href="GUICtrlGetState.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">If $GUI_DROPACCEPTED (8) is set to a visible control a drag & drop can be taken in account.</span><span lang="fr" style="display: none">Si $GUI_DROPACCEPTED(8) est défini sur un contrôle visible un drag & drop peut être pris en compte.</span></span> <span class="segments"><span lang="en">The edit/input control will be set with the filename.</span><span lang="fr" style="display: none">Le contrôle Edit ou Input sera défini avec le nom du fichier.</span></span><br>
+  <span class="segments"><span lang="en">For other controls on reception of $GUI_EVENT_DROPPED, @GUI_DragId will return the controlID from where the drag start (-1 if from a file, @GUI_DragFile contain the filename being dropped) and @GUI_DropId returns the controlID of the dropped control.</span><span lang="fr" style="display: none">Pour d'autres contrôles à la réception de $GUI_EVENT_DROPPED, @GUI_DragId retournera le controlID d'où le drag a démarré (-1 si c'est un fichier, @GUI_DragFile contient le nom du fichier entrain de subir le 'drag') et @GUI_DropId retourne le controlID du contrôle entrain de subir le 'drop'.</span></span><br>
+  <span class="segments"><span lang="en">Only dragging a ListviewItem will start the drag & drop process.</span><span lang="fr" style="display: none">C'est seulement lors du 'drag' d'un ListViewItem que démarrera le processus du drag & drop.</span></span> <span class="segments"><span lang="en">The @GUI_DragId will be the ListView controlID.</span><span lang="fr" style="display: none">@GUI_DragId sera le controlID du ListView .</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlGetState</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICtrlSetState.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StaticConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI with various controls.</span><span lang="fr" style="display: none">Crée une GUI avec différents contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_EX_ACCEPTFILES</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a label and set the state as drop accepted.</span><span lang="fr" style="display: none">Crée un contrôle Label et définit l'état de 'drop' accepté.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idLabel</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateLabel.htm"><span class="S4">GUICtrlCreateLabel</span></a><span class="S8">(</span><span class="S7">"Drop a file on this label."</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">40</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_BORDER</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idLabel</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DROPACCEPTED</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create an input and set the state as drop accepted.</span><span lang="fr" style="display: none">Crée un contrôle Input et définit l'état de 'drop' accepté.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idInput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateInput.htm"><span class="S4">GUICtrlCreateInput</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">60</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">22</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetState.htm"><span class="S4">GUICtrlSetState</span></a><span class="S8">(</span><span class="S9">$idInput</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GUI_DROPACCEPTED</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idOK</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"OK"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">310</span><span class="S8">,</span><span class="S0"> </span><span class="S3">170</span><span class="S8">,</span><span class="S0"> </span><span class="S3">85</span><span class="S8">,</span><span class="S0"> </span><span class="S3">25</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI.</span><span lang="fr" style="display: none">Affiche la GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idOK</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_DROPPED</span>
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">If the value of @GUI_DropId is $idLabel, then set the label of the dragged file.</span><span lang="fr" style="display: none">Si la valeur de GUI_DropId est $idLabel, alors définit le nom du fichier déposé.</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_DropId"><span class="S6">@GUI_DropId</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idLabel</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlSetData.htm"><span class="S4">GUICtrlSetData</span></a><span class="S8">(</span><span class="S9">$idLabel</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_DragFile"><span class="S6">@GUI_DragFile</span></a><span class="S8">)</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the previous GUI and all controls.</span><span lang="fr" style="display: none">Supprime la GUI précédente et tous ses contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+</pre>
+      </div>
+    </div>
+  </div></a></p>
+</body>
+</html>

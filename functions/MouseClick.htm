@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction MouseClick</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>MouseClick</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Perform a mouse click operation.</span><span lang="fr" style="display: none">Effectue une opération de clic de souris.</span></span><br></p>
+  <p class="codeheader">MouseClick ( "button" [, x, y [, clicks = 1 [, speed = 10]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">button</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The button to click:</span><span lang="fr" style="display: none">Le bouton à cliquer :</span></span><br>
+        &nbsp;&nbsp;&nbsp; $MOUSE_CLICK_RIGHT ("right")<br>
+        &nbsp;&nbsp;&nbsp; $MOUSE_CLICK_MIDDLE ("middle")<br>
+        &nbsp;&nbsp;&nbsp; $MOUSE_CLICK_MAIN ("main")<br>
+        &nbsp;&nbsp;&nbsp; $MOUSE_CLICK_MENU ("menu")<br>
+        &nbsp;&nbsp;&nbsp; $MOUSE_CLICK_PRIMARY ("primary")<br>
+        &nbsp;&nbsp;&nbsp; $MOUSE_CLICK_SECONDARY ("secondary")<br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+      <tr>
+        <td>x, y</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The x/y coordinates to move the mouse to.</span><span lang="fr" style="display: none">Les coordonnées x,y où déplacer la souris.</span></span> <span class="segments"><span lang="en">If no x and y coords are given, the current position is used (default).</span><span lang="fr" style="display: none">Si aucune coordonnée n'est donné, la position actuelle est utilisée (par défaut).</span></span></td>
+      </tr>
+      <tr>
+        <td>clicks</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The number of times to click the mouse.</span><span lang="fr" style="display: none">Le nombre de clics de souris.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span></td>
+      </tr>
+      <tr>
+        <td>speed</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">the speed to move the mouse in the range 1 (fastest) to 100 (slowest).</span><span lang="fr" style="display: none">la vitesse de déplacement de la souris dans la plage 1 (le plus rapide) à 100 (le plus lent).</span></span> <span class="segments"><span lang="en">A speed of 0 will move the mouse instantly.</span><span lang="fr" style="display: none">Une vitesse de 0 déplace la souris instantanément.</span></span> <span class="segments"><span lang="en">Default speed is 10.</span><span lang="fr" style="display: none">La vitesse par défaut est 10.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0, the button is not in the list or invalid parameter as x without y.</span><span lang="fr" style="display: none">Retourne 0, le bouton n'est pas dans la liste ou un paramètre est invalide comme x sans y.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><a id="remarks">If the button is an empty string, the left button will be clicked.<br>
+  <span class="segments"><span lang="en">If x or y equal to the</span></span> <a href="../keywords/Default.htm">Default keyword</a> no move occurs in the corresponding coordinate.<span lang="fr" style="display: none">Si x ou y est égal au mot-clé</span> <a href="../keywords/Default.htm">Default</a> aucun mouvement ne se produit dans la coordonnée correspondante.<br>
+  <br>
+  <span class="segments"><span lang="en">If the user has swapped the left and right mouse buttons in the control panel, then the behaviour of the buttons is different.</span><span lang="fr" style="display: none">Si l'utilisateur a permuté les boutons gauche et droite de la souris dans le panneau de configuration, alors le comportement de la fonction est différent.</span></span> <span class="segments"><span lang="en">"Left" and "right" always click those buttons, whether the buttons are swapped or not.</span><span lang="fr" style="display: none">"Left" et "right" cliquent respectivement sur les boutons gauche et droite, qu'ils soient inversés ou non.</span></span> <span class="segments"><span lang="en">The "primary" or "main" button will be the main click, whether or not the buttons are swapped.</span><span lang="fr" style="display: none">Le bouton "primary" ou "main" sera le clic principal, que les boutons soient inversés ou non.</span></span> <span class="segments"><span lang="en">The "secondary" or "menu" buttons will usually bring up the context menu, whether the buttons are swapped or not.</span><span lang="fr" style="display: none">Le bouton "secondary" ou "menu" fera généralement apparaître le menu contextuel, que les boutons soiennt inversés ou non.</span></span><br>
+  <br>
+  <a id="table"><br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>Button</strong></span><span lang="fr" style="display: none"><strong>Bouton</strong></span></span></th>
+        <th><strong>Normal</strong></th>
+        <th><span class="segments"><span lang="en"><strong>Swapped</strong></span><span lang="fr" style="display: none"><strong>Inversés</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>""</td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>"left"</td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>"middle"</td>
+        <td><span class="segments"><span lang="en">Middle</span><span lang="fr" style="display: none">milieu</span></span></td>
+        <td><span class="segments"><span lang="en">Middle</span><span lang="fr" style="display: none">milieu</span></span></td>
+      </tr>
+      <tr>
+        <td>"right"</td>
+        <td><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></td>
+        <td><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></td>
+      </tr>
+      <tr>
+        <td>"primary"</td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+        <td><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></td>
+      </tr>
+      <tr>
+        <td>"main"</td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+        <td><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></td>
+      </tr>
+      <tr>
+        <td>"secondary"</td>
+        <td><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>"menu"</td>
+        <td><span class="segments"><span lang="en">Right</span><span lang="fr" style="display: none">droit</span></span></td>
+        <td><span class="segments"><span lang="en">Left</span><span lang="fr" style="display: none">gauche</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="ControlClick.htm">ControlClick</a>, <a href="AutoItSetOption.htm#MouseClickDelay">MouseClickDelay (Option)</a>, <a href="MouseClickDrag.htm">MouseClickDrag</a>, <a href="AutoItSetOption.htm#MouseCoordMode">MouseCoordMode (Option)</a>, <a href="MouseDown.htm">MouseDown</a>, <a href="MouseGetPos.htm">MouseGetPos</a>, <a href="MouseMove.htm">MouseMove</a>, <a href="MouseUp.htm">MouseUp</a>, <a href="MouseWheel.htm">MouseWheel</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\MouseClick.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;AutoItConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Double click at the current mouse position.</span><span lang="fr" style="display: none">Double-clique sur la position actuelle de la souris.</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/MouseClick.htm"><span class="S4">MouseClick</span></a><span class="S8">(</span><span class="S9">$MOUSE_CLICK_LEFT</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MouseClick.htm"><span class="S4">MouseClick</span></a><span class="S8">(</span><span class="S9">$MOUSE_CLICK_LEFT</span><span class="S8">)</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Double click at the x, y position of 0, 500.</span><span lang="fr" style="display: none">Double-clique sur la position (x, y) = (0, 500).</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/MouseClick.htm"><span class="S4">MouseClick</span></a><span class="S8">(</span><span class="S9">$MOUSE_CLICK_LEFT</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">500</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Double click at the x, y position of 0, 500.</span><span lang="fr" style="display: none">Double-clique sur la position (x, y) = (0, 500).</span></span> <span class="segments"><span lang="en">This is a better approach as it takes into account left/right handed users.</span><span lang="fr" style="display: none">C'est une meilleure approche car elle prend en compte gaucher/droitier.</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/MouseClick.htm"><span class="S4">MouseClick</span></a><span class="S8">(</span><span class="S9">$MOUSE_CLICK_PRIMARY</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">500</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+
+</pre>
+      </div>
+    </div>
+  </div></a></a></p>
+</body>
+</html>

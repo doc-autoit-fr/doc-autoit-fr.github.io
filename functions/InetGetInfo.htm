@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction InetGetInfo</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>InetGetInfo</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns detailed data for a handle returned from InetGet().</span><span lang="fr" style="display: none">Retourne les données détaillées d'un handle retourné par InetGet().</span></span><br></p>
+  <p class="codeheader">InetGetInfo ( [handle [, index = -1]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">handle</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">A handle return from <a href="InetGet.htm">InetGet()</a>.</span><span lang="fr" style="display: none">Un handle retourné par <a href="InetGet.htm">InetGet()</a>.</span></span></td>
+      </tr>
+      <tr>
+        <td>index</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The index for the data to retrieve.</span><span lang="fr" style="display: none">L'index pour les données à récupérer.</span></span> <span class="segments"><span lang="en">If this value is -1 an array containing all of the below data will be returned.</span><span lang="fr" style="display: none">Si cette valeur est -1, un tableau contenant toutes les données ci-dessous sera retourné.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $INET_DOWNLOADREAD (0) - Bytes read so far (this is updated while the download progresses).<br>
+        &nbsp;&nbsp;&nbsp; $INET_DOWNLOADSIZE (1) - The size of the download in bytes (this may not always be present).<br>
+        &nbsp;&nbsp;&nbsp; $INET_DOWNLOADCOMPLETE (2) - Set to True if the download is complete, False if the download is still ongoing.<br>
+        &nbsp;&nbsp;&nbsp; $INET_DOWNLOADSUCCESS (3) - True if the download was successful. <span class="segments"><span lang="en">If this is False then the next data member will be non-zero.</span><span lang="fr" style="display: none">Si celui-ci est à False alors le membre de données suivante sera non-nulle.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $INET_DOWNLOADERROR (4) - The error value for the download. <span class="segments"><span lang="en">The value itself is arbitrary.</span><span lang="fr" style="display: none">La valeur elle-même est arbitraire.</span></span> <span class="segments"><span lang="en">Testing that the value is non-zero is sufficient for determining if an error occurred.</span><span lang="fr" style="display: none">Tester que la valeur est non-nulle est suffisant pour déterminer si une erreur s'est produite.</span></span><br>
+        &nbsp;&nbsp;&nbsp; $INET_DOWNLOADEXTENDED (5) - The extended value for the download. <span class="segments"><span lang="en">The value is arbitrary and is primarily only useful to the AutoIt developers.</span><span lang="fr" style="display: none">La valeur est arbitraire et est principalement utile aux développeurs d'AutoIt.</span></span><br>
+        <br>
+        Constants are defined in InetConstants.au3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the request data.</span><span lang="fr" style="display: none">Retourne les données demandées.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">an empty string and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne une chaîne vide et @error &lt;&gt; 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">If called with no arguments then the total number of active downloads will be returned.</span><span lang="fr" style="display: none">Si la fonction est appelée sans aucun argument alors le nombre total de téléchargements actifs sera retourné.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">This function can be called in a loop to query the number of bytes download or to pause until a download is complete.</span><span lang="fr" style="display: none">Cette fonction peut-être appelée dans une boucle pour récupérer le nombre d'octets téléchargés ou pour faire une pause jusqu'à ce que le téléchargement soit complet.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="InetGet.htm">InetGet</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\InetGetInfo.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;InetConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPIFiles.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Save the downloaded file to the temporary folder.</span><span lang="fr" style="display: none">Enregistre le fichier téléchargé dans le dossier temporaire.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Download the file in the background with the selected option of 'force a reload from the remote site.'</span><span lang="fr" style="display: none">Télécharge le fichier en arrière-plan avec l'option choisie de 'forcer le chargement du site distant'.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hDownload</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/InetGet.htm"><span class="S4">InetGet</span></a><span class="S8">(</span><span class="S7">"http://www.autoitscript.com/autoit3/files/beta/update.dat"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$INET_FORCERELOAD</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$INET_DOWNLOADBACKGROUND</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait for the download to complete by monitoring when the 2nd index value of InetGetInfo returns True.</span><span lang="fr" style="display: none">Attend la fin du téléchargement pour vérifier si la valeur de l'indice de 2e InetGetInfo renvoie True.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">250</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/InetGetInfo.htm"><span class="S4">InetGetInfo</span></a><span class="S8">(</span><span class="S9">$hDownload</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$INET_DOWNLOADCOMPLETE</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Retrieve details about the download file.</span><span lang="fr" style="display: none">Consulte les détails sur le fichier de téléchargement.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aData</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/InetGetInfo.htm"><span class="S4">InetGetInfo</span></a><span class="S8">(</span><span class="S9">$hDownload</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a><span class="S0"> </span><span class="S1">; If an error occurred then return from the function and delete the file.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the handle returned by InetGet.</span><span lang="fr" style="display: none">Ferme le handle renvoyé par InetGet.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/InetClose.htm"><span class="S4">InetClose</span></a><span class="S8">(</span><span class="S9">$hDownload</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display details about the downloaded file.</span><span lang="fr" style="display: none">Affiche les détails sur le fichier téléchargé.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Bytes read: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aData</span><span class="S8">[</span><span class="S9">$INET_DOWNLOADREAD</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"Size: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aData</span><span class="S8">[</span><span class="S9">$INET_DOWNLOADSIZE</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"Complete: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aData</span><span class="S8">[</span><span class="S9">$INET_DOWNLOADCOMPLETE</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"successful: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aData</span><span class="S8">[</span><span class="S9">$INET_DOWNLOADSUCCESS</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"@error: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aData</span><span class="S8">[</span><span class="S9">$INET_DOWNLOADERROR</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"@extended: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aData</span><span class="S8">[</span><span class="S9">$INET_DOWNLOADEXTENDED</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the file.</span><span lang="fr" style="display: none">Supprime le fichier.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

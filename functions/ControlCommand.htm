@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ControlCommand</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ControlCommand</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sends a command to a control.</span><span lang="fr" style="display: none">Envoie une commande à un contrôle.</span></span><br></p>
+  <p class="codeheader">ControlCommand ( "title", "text", controlID, "command" [, "option"] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%">
+          <span class="segments"><span lang="en">The title/hWnd/class of the window to access.</span><span lang="fr" style="display: none">Le titre/handle/class de la fenêtre à atteindre.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsadvanced.htm">Title special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsadvanced.htm">Définiton spéciale de titre</a>.</span></span><a href="../intro/windowsadvanced.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>
+          <span class="segments"><span lang="en">The text of the window to access.</span><span lang="fr" style="display: none">Le texte de la fenêtre à accéder.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span><a href="../intro/windowsbasic.htm#specialtext"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>controlID</td>
+        <td>
+          <span class="segments"><span lang="en">The control to interact with.</span><span lang="fr" style="display: none">Le contrôle avec lequel interagir.</span></span> <span class="segments"><span lang="en">See <a href="../intro/controls.htm">Controls</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/controls.htm">Controls</a>.</span></span><a href="../intro/controls.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>command</td>
+        <td><span class="segments"><span lang="en">The command to send to the control.</span><span lang="fr" style="display: none">La commande à envoyer au contrôle.</span></span></td>
+      </tr>
+      <tr>
+        <td>option</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Additional parameter required by some commands.</span><span lang="fr" style="display: none">Paramètre additionnel requis par certaines commandes.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Return depends on command as table below shows.</span><span lang="fr" style="display: none">Dépend de la commande comme le montre le tableau ci-dessous.</span></span> <span class="segments"><span lang="en">In case of an error (such as an invalid command or window/control), @error=1.</span><span lang="fr" style="display: none">En cas d'erreur (telle qu'une commande ou fenêtre/contrôle invalide) @error=1.</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:40%"><strong>Command, Option</strong></td>
+        <td style="width:60%"><span class="segments"><span lang="en"><strong>Return Value</strong></span><span lang="fr" style="display: none"><strong>Valeur de retour</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>"IsVisible", ""</td>
+        <td><span class="segments"><span lang="en">Returns 1 if Control is visible, 0 otherwise</span><span lang="fr" style="display: none">Retourne 1 si le contrôle est visible, sinon 0</span></span></td>
+      </tr>
+      <tr>
+        <td>"IsEnabled", ""</td>
+        <td><span class="segments"><span lang="en">Returns 1 if Control is enabled, 0 otherwise</span><span lang="fr" style="display: none">Retourne 1 si le contrôle est actif, sinon 0</span></span></td>
+      </tr>
+      <tr>
+        <td>"ShowDropDown", ""</td>
+        <td><span class="segments"><span lang="en">Displays the ComboBox dropdown</span><span lang="fr" style="display: none">Déplie un contrôle type ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"HideDropDown", ""</td>
+        <td><span class="segments"><span lang="en">Hides the ComboBox dropdown</span><span lang="fr" style="display: none">Replie un contrôle type ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"AddString", 'string'</td>
+        <td><span class="segments"><span lang="en">Adds a string to the end in a ListBox or ComboBox</span><span lang="fr" style="display: none">Ajoute la chaîne 'string' à la fin d'un contrôle type ListBox ou ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"DelString", occurrence</td>
+        <td><span class="segments"><span lang="en">Deletes a string according to occurrence in a ListBox or ComboBox</span><span lang="fr" style="display: none">Efface une chaîne en fonction de sont occurrence dans un contrôle type ListBox ou ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"FindString", 'string'</td>
+        <td><span class="segments"><span lang="en">Returns occurrence ref of the exact string in a ListBox or ComboBox</span><span lang="fr" style="display: none">Retourne la position de la chaine 'string' d'un contrôle type ListBox ou ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"SetCurrentSelection", <em>occurrence</em></td>
+        <td><span class="segments"><span lang="en">Sets selection to occurrence ref in a ListBox or ComboBox</span><span lang="fr" style="display: none">Sélectionne une chaine en fonction de sont occurrence dans un contrôle type ListBox ou ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"SelectString", 'string'</td>
+        <td><span class="segments"><span lang="en">Sets selection according to string in a ListBox or ComboBox</span><span lang="fr" style="display: none">Sélectionne la chaine 'string' dans un contrôle type ListBox ou ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"IsChecked", ""</td>
+        <td><span class="segments"><span lang="en">Returns 1 if Button is checked, 0 otherwise</span><span lang="fr" style="display: none">Retourne 1 si le contrôle est coché, sinon 0</span></span></td>
+      </tr>
+      <tr>
+        <td>"Check", ""</td>
+        <td><span class="segments"><span lang="en">Checks radio or check Button</span><span lang="fr" style="display: none">Coche le contrôle type CheckBox ou RadioBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"UnCheck", ""</td>
+        <td><span class="segments"><span lang="en">Unchecks radio or check Button</span><span lang="fr" style="display: none">Décoche le contrôle type CheckBox ou RadioBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetCurrentLine", ""</td>
+        <td><span class="segments"><span lang="en">Returns the line # where the caret is in an Edit</span><span lang="fr" style="display: none">Retourne le numéro de la ligne positionnée sous le curseur, dans un contrôle type Edit</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetCurrentCol", ""</td>
+        <td><span class="segments"><span lang="en">Returns the column # where the caret is in an Edit</span><span lang="fr" style="display: none">Retourne le numéro de la colonne positionnée sous le curseur, dans un contrôle type Edit</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetCurrentSelection", ""</td>
+        <td><span class="segments"><span lang="en">Returns name of the currently selected item in a ListBox or ComboBox</span><span lang="fr" style="display: none">Retourne le nom de l'élément sélectionné dans un contrôle type ListBox ou ComboBox</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetLineCount", ""</td>
+        <td><span class="segments"><span lang="en">Returns # of lines in an Edit</span><span lang="fr" style="display: none">Retourne le nombre de lignes dans un contrôle type Edit</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetLine", <em>line</em>#</td>
+        <td><span class="segments"><span lang="en">Returns text at line # passed of an Edit</span><span lang="fr" style="display: none">Retourne le texte d'une ligne d'un contrôle de type Edit</span></span></td>
+      </tr>
+      <tr>
+        <td>"GetSelected", ""</td>
+        <td><span class="segments"><span lang="en">Returns selected text of an Edit</span><span lang="fr" style="display: none">Retourne le texte sélectionné d'un contrôle de type Edit</span></span></td>
+      </tr>
+      <tr>
+        <td>"EditPaste", 'string'</td>
+        <td><span class="segments"><span lang="en">Pastes the 'string' at the Edit's caret position</span><span lang="fr" style="display: none">Ajoute la chaine 'string' à la position du curseur dans un contrôle de type Edit</span></span></td>
+      </tr>
+      <tr>
+        <td>"CurrentTab", ""</td>
+        <td><span class="segments"><span lang="en">Returns the current Tab shown of a SysTabControl32</span><span lang="fr" style="display: none">Retourne l'onglet sélectionné dans un contrôle type SysTabControl32</span></span></td>
+      </tr>
+      <tr>
+        <td>"TabRight", ""</td>
+        <td><span class="segments"><span lang="en">Moves to the next tab to the right of a SysTabControl32</span><span lang="fr" style="display: none">Passe à l'onglet suivant vers la droite dans un contrôle type SysTabControl32</span></span></td>
+      </tr>
+      <tr>
+        <td>"TabLeft", ""</td>
+        <td><span class="segments"><span lang="en">Moves to the next tab to the left of a SysTabControl32</span><span lang="fr" style="display: none">Passe à l'onglet suivant vers la gauche dans un contrôle type SysTabControl32</span></span></td>
+      </tr>
+      <tr>
+        <td>"SendCommandID", <em>Command ID</em></td>
+        <td><span class="segments"><span lang="en">Simulates the WM_COMMAND message.</span><span lang="fr" style="display: none">Simule l'envoi du message WM_COMMAND.</span></span> <span class="segments"><span lang="en">Usually used for ToolbarWindow32 controls - use the ToolBar tab of Au3Info to get the Command ID.</span><span lang="fr" style="display: none">Habituellement utilisé pour les contrôles type ToolbarWindow32 - Utilisez l'onglet 'ToolBar' de Au3Info pour avoir l'ID d'une commande.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Some controls will resist automation unless they are the active window.</span><span lang="fr" style="display: none">Certains contrôles peuvent résister à l'automation tant qu'ils ne sont pas dans la fenêtre active.</span></span> <span class="segments"><span lang="en">Use the <a href="WinActivate.htm">WinActivate()</a> function to force the control's window to the top before using <a href="ControlCommand.htm">ControlCommand()</a> on these controls.</span><span lang="fr" style="display: none">Utilisez la fonction <a href="WinActivate.htm">WinActivate()</a> pour mettre la fenêtre des contrôles au premier plan avant d'utiliser <a href="ControlCommand.htm">ControlCommand()</a>.</span></span><a href="WinActivate.htm"></a><a href="ControlCommand.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">Certain commands that work on normal Combo and ListBoxes do not work on "ComboLBox" controls.</span><span lang="fr" style="display: none">Certaines commandes fonctionnant pour un contrôle type ComboBox ou ListBox, peuvent ne pas fonctionner pour des contrôles type "ComboLBox".</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ControlClick.htm">ControlClick</a>, <a href="ControlDisable.htm">ControlDisable</a>, <a href="ControlEnable.htm">ControlEnable</a>, <a href="ControlFocus.htm">ControlFocus</a>, <a href="ControlGetFocus.htm">ControlGetFocus</a>, <a href="ControlGetPos.htm">ControlGetPos</a>, <a href="ControlGetText.htm">ControlGetText</a>, <a href="ControlHide.htm">ControlHide</a>, <a href="ControlListView.htm">ControlListView</a>, <a href="ControlMove.htm">ControlMove</a>, <a href="ControlSend.htm">ControlSend</a>, <a href="ControlSetText.htm">ControlSetText</a>, <a href="ControlShow.htm">ControlShow</a>, <a href="ControlTreeView.htm">ControlTreeView</a>, <a href="StatusbarGetText.htm">StatusbarGetText</a>, <a href="WinActivate.htm">WinActivate</a>, <a href="WinGetClassList.htm">WinGetClassList</a>, <a href="WinMenuSelectItem.htm">WinMenuSelectItem</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ControlCommand.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Run Notepad</span><span lang="fr" style="display: none">Exécute le Bloc-notes</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Run.htm"><span class="S4">Run</span></a><span class="S8">(</span><span class="S7">"notepad.exe"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait 10 seconds for the Notepad window to appear.</span><span lang="fr" style="display: none">Attend 10 secondes pour que la fenêtre du bloc-notes fenêtre apparaisse.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hWnd</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinWait.htm"><span class="S4">WinWait</span></a><span class="S8">(</span><span class="S7">"[CLASS:Notepad]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Send a command to the edit control of Notepad to find the number of lines.</span><span lang="fr" style="display: none">Envoie une commande au contrôle d'édition de Bloc-notes pour trouver le nombre de lignes.</span></span> <span class="segments"><span lang="en">The handle returned by WinWait is used for the "title" parameter of ControlCommand.</span><span lang="fr" style="display: none">Le handle renvoyé par WinWait est utilisé pour le paramètre \"titre\" de ControlCommand.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iCount</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ControlCommand.htm"><span class="S4">ControlCommand</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Edit1"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"GetLineCount"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the number of lines.</span><span lang="fr" style="display: none">Affiche le nombre de lignes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The number of lines in Notepad are: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iCount</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the Notepad window using the handle returned by WinWait.</span><span lang="fr" style="display: none">Ferme la fenêtre du Bloc-notes en utilisant le handle renvoyé par WinWait.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinClose.htm"><span class="S4">WinClose</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

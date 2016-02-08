@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction WinMove</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>WinMove</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Moves and/or resizes a window.</span><span lang="fr" style="display: none">Déplace et/ou redimensionne une fenêtre.</span></span><br></p>
+  <p class="codeheader">WinMove ( "title", "text", x, y [, width [, height [, speed]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%">
+          <span class="segments"><span lang="en">The title/hWnd/class of the window to move/resize.</span><span lang="fr" style="display: none">Le titre/hWnd/class de la fenêtre à déplacer/redimensionner.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsadvanced.htm">Title special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsadvanced.htm">Définiton spéciale de titre</a>.</span></span><a href="../intro/windowsadvanced.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>
+          <span class="segments"><span lang="en">The text of the window to move/resize.</span><span lang="fr" style="display: none">Le texte de la fenêtre à déplacer/redimensionner.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span><a href="../intro/windowsbasic.htm#specialtext"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td><span class="segments"><span lang="en">X coordinate to move to.</span><span lang="fr" style="display: none">Coordonnée X pour le déplacement.</span></span></td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td><span class="segments"><span lang="en">Y coordinate to move to.</span><span lang="fr" style="display: none">Coordonnée Y pour le déplacement.</span></span></td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">New width of the window.</span><span lang="fr" style="display: none">Nouvelle largeur de la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">New height of the window.</span><span lang="fr" style="display: none">Nouvelle hauteur de la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td>speed</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">the speed to move the windows in the range 1 (fastest) to 100 (slowest).</span><span lang="fr" style="display: none">La vitesse de déplacement de la fenêtre comprise entre 1 (rapide) et 100 (lent).</span></span> <span class="segments"><span lang="en">If not defined the move is instantaneous.</span><span lang="fr" style="display: none">Si non défini, le déplacement est instantané.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a handle to the window.</span><span lang="fr" style="display: none">Retourne un handle pour la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if the window is not found.</span><span lang="fr" style="display: none">Retourne 0 si la fenêtre n'existe pas.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en"><a href="WinMove.htm">WinMove()</a> has no effect on minimized windows, but <a href="WinMove.htm">WinMove()</a> works on hidden windows.</span><span lang="fr" style="display: none"><a href="WinMove.htm">WinMove()</a> n'a pas d'effet sur les fenêtres minimisées, mais fonctionne sur les fenêtres cachées.</span></span><br>
+  <span class="segments"><span lang="en">If the width and height are small (or negative), the window will go no smaller than 112 x 27 pixels.</span><span lang="fr" style="display: none">Si la largeur et la hauteur sont trop petites (ou négative), la fenêtre n'ira pas en dessous de 112 x 27 pixels.</span></span> <span class="segments"><span lang="en">If width and height are large, the window will go no larger than approximately [12+@DesktopWidth] x [12+@DesktopHeight] pixels.</span><span lang="fr" style="display: none">Si la largeur et la hauteur sont trop grandes, La fenêtre ne sera pas plus grande que [12 + @DesktopWidth] x [12 + @DesktopHeight] pixels.</span></span><br>
+  <span class="segments"><span lang="en">Negative values are allowed for the x and y coordinates.</span><span lang="fr" style="display: none">Des valeurs négatives sont autorisées pour les coordonnées de x et de y.</span></span> <span class="segments"><span lang="en">In fact, you can move a window off screen; and if the window's program is one that remembers its last window position, the window will appear in the corner (but fully on-screen) the next time you launch the program.</span><span lang="fr" style="display: none">En fait, vous pouvez déplacer la fenêtre hors de la zone de l'écran; et si la fenêtre du programme est une fenêtre qui se rappelle de sa dernière position sur l'écran, la fenêtre apparaîtra dans le coin (mais entièrement à l'écran) la prochaine fois que vous lancerez le programme.</span></span><br>
+  <span class="segments"><span lang="en">If multiple windows match the criteria, the most recently active window is used.</span><span lang="fr" style="display: none">Si plusieurs fenêtres correspondent aux critères, la fenêtre active la plus récente sera utilisé.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If x and y equal to the <a href="../keywords/Default.htm">Default keyword</a> no move occurs, just resizing.</span><span lang="fr" style="display: none">Si x et y sont égaux au mot clé <a href="../keywords/Default.htm">Default</a> il n'y aura pas de déplacement, juste un redimensionnement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">When speed is used the move is done with the new size.</span><span lang="fr" style="display: none">Lorsque le paramètre vitesse est utilisé, le déplacement est effectué avec la nouvelle dimension.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="WinActivate.htm">WinActivate</a>, <a href="WinClose.htm">WinClose</a>, <a href="WinGetClientSize.htm">WinGetClientSize</a>, <a href="WinGetPos.htm">WinGetPos</a>, <a href="WinSetState.htm">WinSetState</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\WinMove.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Run Notepad</span><span lang="fr" style="display: none">Exécute le Bloc-notes</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Run.htm"><span class="S4">Run</span></a><span class="S8">(</span><span class="S7">"notepad.exe"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait 10 seconds for the Notepad window to appear.</span><span lang="fr" style="display: none">Attend 10 secondes pour que la fenêtre du bloc-notes fenêtre apparaisse.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hWnd</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinWait.htm"><span class="S4">WinWait</span></a><span class="S8">(</span><span class="S7">"[CLASS:Notepad]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Retrieve the position as well as the height and width of the Notepad window.</span><span lang="fr" style="display: none">Récupère la position ainsi que la hauteur et la largeur de la fenêtre du Bloc-notes.</span></span> <span class="segments"><span lang="en">We will use this when we have to move the window back to the original position.</span><span lang="fr" style="display: none">Nous les utiliserons lorsque nous déplacerons la fenêtre à sa position initiale.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aPos</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinGetPos.htm"><span class="S4">WinGetPos</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Move the Notepad to the x, y position of 0, 0 and set the height and width at 200, 200.</span><span lang="fr" style="display: none">Déplace le bloc-notes à la position x, y de 0, 0 et définit la hauteur et la largeur à 200, 200.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait for 2 seconds to display the new position of the Notepad window.</span><span lang="fr" style="display: none">Attend 2 secondes pour afficher la nouvelle position de la fenêtre du Bloc-notes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">2000</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Move the Notepad window back to the original position by using the array returned by WinGetPos.</span><span lang="fr" style="display: none">Déplace la fenêtre du Bloc-notes de retour à sa position initiale en utilisant le tableau renvoyé par WinGetPos.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinMove.htm"><span class="S4">WinMove</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aPos</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aPos</span><span class="S8">[</span><span class="S3">1</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aPos</span><span class="S8">[</span><span class="S3">2</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aPos</span><span class="S8">[</span><span class="S3">3</span><span class="S8">])</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait for 2 seconds to display the original position of the Notepad window.</span><span lang="fr" style="display: none">Attend 2 secondes pour afficher la position initiale de la fenêtre du Bloc-notes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">2000</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the Notepad window using the handle returned by WinWait.</span><span lang="fr" style="display: none">Ferme la fenêtre du Bloc-notes en utilisant le handle renvoyé par WinWait.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinClose.htm"><span class="S4">WinClose</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

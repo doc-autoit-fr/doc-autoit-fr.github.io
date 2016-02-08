@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_StructToArray</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_StructToArray</h1>
+  <p class="funcdesc">Converts the structure to the array of strings<br></p>
+  <p class="codeheader">#include &lt;WinAPIMisc.au3&gt;<br>
+  _WinAPI_StructToArray ( $tStruct [, $iItems = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$tStruct</td>
+        <td style="width:85%">
+          The structure to convert. This structure should be same as for <a href="_WinAPI_ArrayToStruct.htm">_WinAPI_ArrayToStruct()</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>$iItems</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The number of strings that contains the structure. If this parameter is 0 (Default), the end of the structure<br>
+        <span class="segments"><span lang="en">determined by a double null-terminated character ("... ;{0};{0}").</span><span lang="fr" style="display: none">determined by a double null-terminated character ("...;{0};{0}").</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">The array of strings. The zeroth array element contains the number of strings.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>This function works for Unicode strings only.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_ArrayToStruct.htm">_WinAPI_ArrayToStruct</a></p>
+</body>
+</html>

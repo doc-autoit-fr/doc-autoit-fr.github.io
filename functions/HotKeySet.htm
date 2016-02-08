@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction HotKeySet</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>HotKeySet</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets a hotkey that calls a user function.</span><span lang="fr" style="display: none">Définit un raccourci clavier qui appelle une fonction utilisateur.</span></span><br></p>
+  <p class="codeheader">HotKeySet ( "key" [, "function"] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">key</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The key combination to use as the hotkey.</span><span lang="fr" style="display: none">La combinaison de touches à utiliser comme raccourci clavier.</span></span> <strong>Same format as <a href="Send.htm">Send()</a>.</strong> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span><strong><a href="Send.htm"></a></strong></td>
+      </tr>
+      <tr>
+        <td>function</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The name of the function to call when the key is pressed.</span><span lang="fr" style="display: none">Le nom de la fonction à appeler lorsque la touche est appuyée.</span></span> <span class="segments"><span lang="en">Not specifying this parameter will unset a previous hotkey.</span><span lang="fr" style="display: none">Si cette valeur n'est pas spécifiée, le raccourci précédemment créé est effacé.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>It is recommended to use lower-case keys/characters (e.g. "b" and not "B") when setting hotkeys to avoid errors as with some keyboard layouts upper and lower case keys may be mapped differently.<br>
+  <br>
+  Keyboard with 102 keys as the Hungarian keyboard need to use "{OEM_102}" to capture the "í" key.<br>
+  <br>
+  <span class="segments"><span lang="en">If two AutoIt scripts set the same hotkeys, you should avoid running those scripts simultaneously as the second script cannot capture the hotkey unless the first script terminates or unregisters the key prior to the second script setting the hotkey.</span><span lang="fr" style="display: none">Si deux scripts AutoIt fixent les mêmes raccourcis clavier, vous devriez éviter de faire fonctionner ces scripts ...simultanément, le second script ne peut pas saisir le raccourci clavier à moins que le premier script ...</span></span> <span class="segments"><span lang="en">If the scripts use GUIs, then consider using GUISetAccelerators as these keys are only active when the parent GUI is active.</span><span lang="fr" style="display: none">termine ou annule l'enregistrement du raccourci avant la définition du raccourci du deuxième script.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">A hotkey-press *typically* interrupts the active AutoIt function/statement and runs its user function until it completes or is interrupted.</span><span lang="fr" style="display: none">L'appui sur un raccourci clavier interrompt généralement la fonction ou l'instruction en cours dans le script, et exécute la fonction définie jusqu'à ce que celle-ci se termine ou qu'elle soit interrompue.</span></span> <span class="segments"><span lang="en">Exceptions are as follows:</span><span lang="fr" style="display: none">Les exceptions sont les suivantes :</span></span><br>
+  <span class="segments"><span lang="en">1) If the current function is a "blocking" function, then the key-presses are buffered and execute as soon as the blocking function completes.</span><span lang="fr" style="display: none">1) Si la fonction en cours est une fonction "bloquante", l'appui sur le raccourci clavier est mis en attente puis traité dès que la fonction bloquante se termine.</span></span> <a href="MsgBox.htm">MsgBox()</a> and <a href="FileSelectFolder.htm">FileSelectFolder()</a> are examples of blocking functions. <span class="segments"><span lang="en">Try the behavior of Shift-Alt-d in the Example.</span><span lang="fr" style="display: none">Essayez le comportement de Shift-Alt-d dans l'exemple.</span></span><a href="MsgBox.htm"></a><a href="FileSelectFolder.htm"></a><br>
+  <span class="segments"><span lang="en">2) If you have paused the script by clicking on the AutoIt Tray icon, any hotkeys pressed during this paused state are ignored.</span><span lang="fr" style="display: none">2) Si vous avez mis le script en pause par un clic sur l'icône AutoIt de la zone de notification, tous les raccourcis clavier utilisés pendant cette pause sont ignorés.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>The following hotkeys cannot be set:</strong></span><span lang="fr" style="display: none"><strong>Les combinaisons suivantes ne peuvent pas être attribuées:</strong></span></span><br></p>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">ASC nnnn</td>
+        <td style="width:85%"><strong>Cannot be used as in Send().</strong> It will use "A" first char as Send() does when the "{...}" is invalid.</td>
+      </tr>
+      <tr>
+        <td>Ctrl+Alt+Delete</td>
+        <td><span class="segments"><span lang="en">It is reserved by Windows</span><span lang="fr" style="display: none">Raccourci réservé par Windows.</span></span></td>
+      </tr>
+      <tr>
+        <td>F12</td>
+        <td><span class="segments"><span lang="en">It is also reserved by Windows, according to its API.</span><span lang="fr" style="display: none">Raccourci également réservé à Windows, selon son API.</span></span></td>
+      </tr>
+      <tr>
+        <td>NumPad's Enter Key</td>
+        <td><span class="segments"><span lang="en">Instead, use {Enter} which captures both Enter keys on the keyboard.</span><span lang="fr" style="display: none">A la place, utilisez {Enter} qui capture les deux touches "Entrée" du clavier.</span></span></td>
+      </tr>
+      <tr>
+        <td>Win+B,D,E,F,L,M,R,U; and Win+Shift+M</td>
+        <td><span class="segments"><span lang="en">These are built-in Windows shortcuts.</span><span lang="fr" style="display: none">Ce sont des raccourcis intégrés à Windows.</span></span> <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">Win+B and Win+L might only be reserved on Windows XP and above.</span><span lang="fr" style="display: none">Win+B et Win+L sont probablement réservés sur Windows XP et supérieur.</span></span></td>
+      </tr>
+      <tr>
+        <td>Alt, Ctrl, Shift, Win</td>
+        <td><span class="segments"><span lang="en">These are the modifier keys themselves!</span><span lang="fr" style="display: none">Ce sont les touches de modification elles mêmes !</span></span></td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td><span class="segments"><span lang="en">Any global hotkeys a user has defined using third-party software, any combos of two or more "base keys" such as '{F1}{F2}', and any keys of the form '{LALT}' or '{ALTDOWN}'.</span><span lang="fr" style="display: none">Tout raccourci clavier global qu'un utilisateur a défini par une application tierce, et toute combinaison de deux "touches de base" ou plus telle que '{F1}{F2}' et n'importe qu'elle touche de la forme '{LALT}' ou '{ALTDOWN}'.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">When you set a hotkey, AutoIt captures the key-press and does not pass it on to the active application, with one exception: the Lock keys (NumLock, CapsLock, and ScrollLock) still toggle their respective state!</span><span lang="fr" style="display: none">Lorsque vous définissez un raccourci clavier, AutoIt capture les appuis de touche sans les faire passer à l'application active en cours, avec une exception : les touches de verrouillage (NumLock, CapsLock, et ScrollLock) basculeront toujours leur état respectif!</span></span><br>
+  <span class="segments"><span lang="en">To <a href="Send.htm">Send()</a> a key combination which will trigger a <a href="HotKeySet.htm">HotKeySet()</a> event, either use <a href="ControlSend.htm">ControlSend()</a> or unregister the <a href="HotKeySet.htm">HotKeySet()</a> event, otherwise, the <a href="Send.htm">Send()</a> event may trigger an infinite loop.</span><span lang="fr" style="display: none">Pour <a href="Send.htm">Send()</a> (envoyer) une combinaison de touches qui déclenchera un événement <a href="HotKeySet.htm">HotKeySet()</a>, utilisez <a href="ControlSend.htm">ControlSend()</a>, ou annulez l'enregistrement de l'événement <a href="HotKeySet.htm">HotKeySet()</a>, sinon, l'événement <a href="Send.htm">Send()</a> provoquera une boucle infinie.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">; capture and pass along a keypress</span><span lang="fr" style="display: none">; capture et envoi d'un appui de touche</span></span><br>
+  <em><a href="HotKeySet.htm">HotKeySet</a>("{Esc}", "captureEsc")<br>
+  Func captureEsc()<br>
+  &nbsp;&nbsp;&nbsp; ; ... can do stuff here<br>
+  &nbsp;&nbsp;&nbsp; <a href="HotKeySet.htm">HotKeySet</a>("{Esc}")<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{Esc}")<br>
+  &nbsp;&nbsp;&nbsp; <a href="HotKeySet.htm">HotKeySet</a>("{Esc}", "captureEsc")<br>
+  EndFunc<br></em><br>
+  <br>
+  <span class="segments"><span lang="en">The called function can <strong>not</strong> be given parameters.</span><span lang="fr" style="display: none">La fonction appelée <strong>ne peut pas</strong> recevoir de paramètres.</span></span> <span class="segments"><span lang="en">They will be ignored.</span><span lang="fr" style="display: none">Ils seront ignorés.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">@HotKeyPressed macro can be used inside the function to handle several keys in the same function.</span><span lang="fr" style="display: none">La macro @HotKeyPressed peut être utilisée à l'intérieur de la fonction pour traiter différentes touches dans la même fonction.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="GUISetAccelerators.htm">GUISetAccelerators</a>, <a href="Send.htm">Send</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\HotKeySet.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Press Esc to terminate script, Pause/Break to "pause"</span><span lang="fr" style="display: none">Appuyez sur Echap pour terminer le script, Pause/Break pour "pause"</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Global</span></a><span class="S0"> </span><span class="S9">$g_bPaused</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+
+<a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{PAUSE}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"TogglePause"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Terminate"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"+!d"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ShowMessage"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Shift-Alt-d</span><span lang="fr" style="display: none">Maj -Alt- d</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> TogglePause</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S9">$g_bPaused</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><span class="S9">$g_bPaused</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S9">$g_bPaused</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/ToolTip.htm"><span class="S4">ToolTip</span></a><span class="S8">(</span><span class="S7">'Script is "Paused"'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ToolTip.htm"><span class="S4">ToolTip</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;TogglePause</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Terminate</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Terminate</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> ShowMessage</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is a message."</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;ShowMessage</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\HotKeySet[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Press Esc to terminate script, Pause/Break to "pause"</span><span lang="fr" style="display: none">Appuyez sur Echap pour terminer le script, Pause/Break pour "pause"</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Global</span></a><span class="S0"> </span><span class="S9">$g_bPaused</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+
+<a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{PAUSE}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"HotKeyPressed"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"HotKeyPressed"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/HotKeySet.htm"><span class="S4">HotKeySet</span></a><span class="S8">(</span><span class="S7">"+!d"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"HotKeyPressed"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Shift-Alt-d</span><span lang="fr" style="display: none">Maj -Alt- d</span></span></span></span>
+
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> HotKeyPressed</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@HotKeyPressed"><span class="S6">@HotKeyPressed</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">The last hotkey pressed.</span><span lang="fr" style="display: none">Le dernier raccourci utilisé.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S7">"</span><span class="S10">{PAUSE}</span><span class="S7">"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">String is the {PAUSE} hotkey.</span><span lang="fr" style="display: none">la chaîne est le raccourci {PAUSE}.</span></span></span></span>
+<span class="S0">            </span><span class="S9">$g_bPaused</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><span class="S9">$g_bPaused</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S9">$g_bPaused</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/ToolTip.htm"><span class="S4">ToolTip</span></a><span class="S8">(</span><span class="S7">'Script is "Paused"'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/ToolTip.htm"><span class="S4">ToolTip</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S7">"</span><span class="S10">{ESC}</span><span class="S7">"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">String is the {ESC} hotkey.</span><span lang="fr" style="display: none">La chaîne est le raccourci {ESC}.</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S7">"+!d"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">String is the Shift-Alt-d hotkey.</span><span lang="fr" style="display: none">La chaîne est le raccourci Maj -Alt-d.</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is a message."</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;HotKeyPressed</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

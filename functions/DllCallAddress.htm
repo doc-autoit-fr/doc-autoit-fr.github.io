@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction DllCallAddress</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>DllCallAddress</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Dynamically calls a function at a specific memory address.</span><span lang="fr" style="display: none">Appel dynamique d'une fonction à une adresse mémoire spécifique.</span></span><br></p>
+  <p class="codeheader">DllCallAddress ( "return type", address [, type1, param1 [, type n, param n]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">return type</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The return type of the function (see below).</span><span lang="fr" style="display: none">Le type de retour de la fonction.</span></span></td>
+      </tr>
+      <tr>
+        <td>address</td>
+        <td><span class="segments"><span lang="en">The address of a function.</span><span lang="fr" style="display: none">L'adresse de la fonction.</span></span> <strong>If this value is invalid your script will crash!</strong></td>
+      </tr>
+      <tr>
+        <td>type1</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The type of the parameter (see remarks).</td>
+      </tr>
+      <tr>
+        <td>param1</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The actual parameter (see remarks).</td>
+      </tr>
+      <tr>
+        <td>type n</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The type of the nth parameter (see remarks).</td>
+      </tr>
+      <tr>
+        <td>param n</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The actual nth parameter (see remarks).</td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">Valid Types are:</span><span lang="fr" style="display: none">Les types valides sont:</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>Type</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>Details</strong></span><span lang="fr" style="display: none"><strong>Détails</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>NONE</td>
+        <td><span class="segments"><span lang="en">no value (only valid for return type - equivalent to void in C)</span><span lang="fr" style="display: none">aucune valeur (valide seulement pour le type de retour - équivalent à void en C)</span></span></td>
+      </tr>
+      <tr>
+        <td>BYTE</td>
+        <td><span class="segments"><span lang="en">an unsigned 8 bit integer</span><span lang="fr" style="display: none">un entier 8 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>BOOLEAN</td>
+        <td><span class="segments"><span lang="en">an unsigned 8 bit integer</span><span lang="fr" style="display: none">un entier 8 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>SHORT</td>
+        <td><span class="segments"><span lang="en">a 16 bit integer</span><span lang="fr" style="display: none">un entier 16 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>USHORT</td>
+        <td><span class="segments"><span lang="en">an unsigned 16 bit integer</span><span lang="fr" style="display: none">un entier 16 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>WORD</td>
+        <td><span class="segments"><span lang="en">an unsigned 16 bit integer</span><span lang="fr" style="display: none">un entier 16 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>INT</td>
+        <td><span class="segments"><span lang="en">a 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>LONG</td>
+        <td><span class="segments"><span lang="en">a 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>BOOL</td>
+        <td><span class="segments"><span lang="en">a 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>UINT</td>
+        <td><span class="segments"><span lang="en">an unsigned 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>ULONG</td>
+        <td><span class="segments"><span lang="en">an unsigned 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>DWORD</td>
+        <td><span class="segments"><span lang="en">an unsigned 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>INT64</td>
+        <td><span class="segments"><span lang="en">a 64 bit integer</span><span lang="fr" style="display: none">un entier 64 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>UINT64</td>
+        <td><span class="segments"><span lang="en">an unsigned 64 bit integer</span><span lang="fr" style="display: none">un entier 64 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>PTR</td>
+        <td><span class="segments"><span lang="en">a general pointer (void *)</span><span lang="fr" style="display: none">un pointer en général (void *)</span></span></td>
+      </tr>
+      <tr>
+        <td>HWND</td>
+        <td><span class="segments"><span lang="en">a window handle (pointer)</span><span lang="fr" style="display: none">un handle de fenêtre (pointeur)</span></span></td>
+      </tr>
+      <tr>
+        <td>HANDLE</td>
+        <td><span class="segments"><span lang="en">an handle (pointer)</span><span lang="fr" style="display: none">un handle (pointeur)</span></span></td>
+      </tr>
+      <tr>
+        <td>FLOAT</td>
+        <td><span class="segments"><span lang="en">a single precision floating point number</span><span lang="fr" style="display: none">un nombre simple précision en virgule flottante</span></span></td>
+      </tr>
+      <tr>
+        <td>DOUBLE</td>
+        <td><span class="segments"><span lang="en">a double precision floating point number</span><span lang="fr" style="display: none">un nombre double précision en virgule flottante</span></span></td>
+      </tr>
+      <tr>
+        <td>INT_PTR, LONG_PTR, LRESULT, LPARAM</td>
+        <td><span class="segments"><span lang="en">an integer big enough to hold a pointer when running on x86 or x64 versions of AutoIt.</span><span lang="fr" style="display: none">un entier assez grand pour contenir un pointeur lors de l'exécution des versions x86 ou x64 de AutoIt.</span></span></td>
+      </tr>
+      <tr>
+        <td>UINT_PTR, ULONG_PTR, DWORD_PTR, WPARAM</td>
+        <td><span class="segments"><span lang="en">an unsigned integer big enough to hold a pointer when running on x86 or x64 versions of AutoIt.</span><span lang="fr" style="display: none">un entier non signé assez grand pour contenir un pointeur lors de l'exécution des versions x86 ou x64 de AutoIt.</span></span></td>
+      </tr>
+      <tr>
+        <td>STR</td>
+        <td><span class="segments"><span lang="en">an ANSI string (a minimum of 65536 chars is allocated).</span><span lang="fr" style="display: none">une chaîne ANSI (un minimum de 65536 caractères sont alloués).</span></span></td>
+      </tr>
+      <tr>
+        <td>WSTR</td>
+        <td><span class="segments"><span lang="en">a UNICODE wide character string (a minimum of 65536 chars is allocated).</span><span lang="fr" style="display: none">une chaîne de caractères larges UNICODE (un minimum of 65536 caractères sont alloués).</span></span></td>
+      </tr>
+      <tr>
+        <td>STRUCT</td>
+        <td><span class="segments"><span lang="en">structure created with DllStructCreate()</span><span lang="fr" style="display: none">structure créée avec DllStructCreate()</span></span></td>
+      </tr>
+      <tr>
+        <td>*</td>
+        <td><span class="segments"><span lang="en">Add * to the end of another type to pass it by reference.</span><span lang="fr" style="display: none">Ajouter * à la fin d'un autre type pour le passer en référence.</span></span> <span class="segments"><span lang="en">For example "int*" passes a pointer to an "int" type.</span><span lang="fr" style="display: none">Par exemple "int*" passe un pointeur dans un type "int".</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <span class="segments"><span lang="en">Conversions from Windows API types to AutoIt types:</span><span lang="fr" style="display: none">Conversions des types Windows API vers les types AutoIt:</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>WINDOWS API Type</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>AutoIt Type</strong></span><span lang="fr" style="display: none"><strong>Type AutoIt</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>LPCSTR/LPSTR</td>
+        <td>STR</td>
+      </tr>
+      <tr>
+        <td>LPCWSTR/LPWSTR</td>
+        <td>WSTR</td>
+      </tr>
+      <tr>
+        <td>LPVOID</td>
+        <td>PTR</td>
+      </tr>
+      <tr>
+        <td>LP<em>xyz</em></td>
+        <td><em>xyz</em>*</td>
+      </tr>
+      <tr>
+        <td>HINSTANCE</td>
+        <td>HANDLE</td>
+      </tr>
+      <tr>
+        <td>HRESULT</td>
+        <td>LONG</td>
+      </tr>
+      <tr>
+        <td>LONGLONG/LARGE_INTEGER</td>
+        <td>INT64</td>
+      </tr>
+      <tr>
+        <td>ULONGLONG/ULARGE_INTEGER</td>
+        <td>UINT64</td>
+      </tr>
+      <tr>
+        <td>SIZE_T</td>
+        <td>ULONG_PTR</td>
+      </tr>
+    </tbody>
+  </table><span class="segments"><span lang="en">To use nested structures inside a structure you must re-define the nested structure.</span><span lang="fr" style="display: none">Pour utiliser une structure imbriquée dans une structure, vous devez redéfinir la structure imbriquée.</span></span> <span class="segments"><span lang="en">For example, a structure containing 2 POINT structures ("long;long") would be declared as "long;long;long;long".</span><span lang="fr" style="display: none">Par exemple, une structure contenant deux structures POINT ("long;long") serait déclaré comme "long;long;long;long".</span></span> <span class="segments"><span lang="en">The first two long values correspond to the first POINT structure and the second two values correspond to the second POINT structure.</span><span lang="fr" style="display: none">Les deux premières valeurs long correspondent à la première structure POINT et la seconde de deux valeurs correspondent à la seconde structure POINT.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">For more Windows API types see <a href="http://msdn.microsoft.com/en-us/library/aa383751.aspx">MSDN</a>.</span><span lang="fr" style="display: none">Pour davantage de types de l'API Windows Consultez <a href="http://msdn.microsoft.com/en-us/library/aa383751.aspx">MSDN</a> .</span></span><br>
+  <br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">an array.</span><span lang="fr" style="display: none">Retourne un tableau.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td><span class="segments"><span lang="en">2 = unknown "return type",</span><span lang="fr" style="display: none">2 = type de retour inconnu,</span></span><br>
+        <span class="segments"><span lang="en">4 = bad number of parameters,</span><span lang="fr" style="display: none">4 = erreur sur le nombre de paramètres,</span></span><br>
+        <span class="segments"><span lang="en">5 = bad parameter</span><span lang="fr" style="display: none">5 = erreur sur un paramètre</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">By default, AutoIt uses the 'stdcall' calling method.</span><span lang="fr" style="display: none">Par défaut, AutoIt utilise la méthode d'appel 'stdcall'.</span></span> <span class="segments"><span lang="en">To use the 'cdecl' method place ':cdecl' after the return type.</span><span lang="fr" style="display: none">Pour utiliser la méthode 'cdecl' placer ':cdecl' après le type de retour.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If the function call fails then the @error flag is set to non-zero.</span><span lang="fr" style="display: none">Si l'appel de la fonction échoue alors le flag @error &lt;&gt; 0.</span></span><br>
+  <span class="segments"><span lang="en">Otherwise an array is returned that contains the function return value and a copy of all the parameters (including parameters that the function may have modified when passed by reference).</span><span lang="fr" style="display: none">Sinon un tableau est retourné qui contient la valeur de retour de la fonction et une copie de tous les paramètres (y compris les paramètres que la fonction a modifiés lors d'un passage par référence).</span></span><br>
+  <span class="segments"><span lang="en">$return[0] = function return value</span><span lang="fr" style="display: none">$return[0] = valeur de retour de la fonction</span></span><br>
+  $return[1] = param1<br>
+  $return[2] = param2<br>
+  ...<br>
+  $return[n] = paramn<br>
+  <br></p>
+  <div class="specialnote">
+    <span class="segments"><span lang="en">Special Note:</span><span lang="fr" style="display: none">Note Spéciale:</span></span> <span class="segments"><span lang="en">This is an advanced function.</span><span lang="fr" style="display: none">C'est une fonction avancée.</span></span> <span class="segments"><span lang="en">Incorrect use of this function may cause AutoIt to crash.</span><span lang="fr" style="display: none">Une utilisation incorrecte de cette fonction peut bloquer AutoIt.</span></span> <span class="segments"><span lang="en">Before using this function make sure <a href="DllCall.htm">DllCall()</a> doesn't do what you need.</span><span lang="fr" style="display: none">Avant d'utiliser cette fonction assurez-vous que <a href="DllCall.htm">DllCall()</a> ne fait pas ce que vous avez besoin.</span></span><a href="DllCall.htm"></a>
+  </div><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="DllCall.htm">DllCall</a>, <a href="DllCallbackFree.htm">DllCallbackFree</a>, <a href="DllCallbackGetPtr.htm">DllCallbackGetPtr</a>, <a href="DllCallbackRegister.htm">DllCallbackRegister</a>, <a href="DllClose.htm">DllClose</a>, <a href="DllOpen.htm">DllOpen</a>, <a href="DllStructCreate.htm">DllStructCreate</a>, <a href="DllStructGetPtr.htm">DllStructGetPtr</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\DllCallAddress.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPI.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Enable GUI event mode.</span><span lang="fr" style="display: none">Active le mode événement GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIOnEventMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a simple GUI.</span><span lang="fr" style="display: none">Crée une simple GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hWnd</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"DllCallAddress Example"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Register the close event handler.</span><span lang="fr" style="display: none">Crée le gestionnaire de l'événement close.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetOnEvent.htm"><span class="S4">GUISetOnEvent</span></a><span class="S8">(</span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"OnClose"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show the GUI.</span><span lang="fr" style="display: none">Affiche la GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOWNORMAL"><span class="S6">@SW_SHOWNORMAL</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hWnd</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Get a pointer to the window's WindowProc().</span><span lang="fr" style="display: none">Obtient un pointeur sur la fenêtre de WindowsProc().</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$pWndProc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetWindowLong.htm"><span class="S15">_WinAPI_GetWindowLong</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$GWL_WNDPROC</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Tell the user what is about to happen.</span><span lang="fr" style="display: none">Indique à l'utilisateur ce qui va se passer.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"DllCallAddress Example Msg"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"When you press OK the test window will close."</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Explicitly generate a WM_CLOSE event and pass it directly to the WindowProc().</span><span lang="fr" style="display: none">Explicitement génére un événement WM_CLOSE et le passe directement à WindowProc().</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">This should never be done in a real application (Use _SendMessage() instead) but</span><span lang="fr" style="display: none">Cela ne devrait jamais être fait dans une application réelle (utilisez _SendMessage() à la place), mais</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">it demonstrates how to use the function.</span><span lang="fr" style="display: none">il montre comment utiliser la fonction.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/DllCallAddress.htm"><span class="S4">DllCallAddress</span></a><span class="S8">(</span><span class="S7">"LRESULT"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$pWndProc</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"HWND"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hWnd</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"UINT"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WM_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"WPARAM"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"LPARAM"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnClose</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@GUI_WinHandle"><span class="S6">@GUI_WinHandle</span></a><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"DllCallAddress Example Msg"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Close event received, the test window should now be closed."</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnClose</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

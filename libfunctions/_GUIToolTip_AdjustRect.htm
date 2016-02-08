@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _GUIToolTip_AdjustRect</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_GUIToolTip_AdjustRect</h1>
+  <p class="funcdesc">Calculates the text display rectangle from the window rectangle<br></p>
+  <p class="codeheader">#include &lt;GuiToolTip.au3&gt;<br>
+  _GUIToolTip_AdjustRect ( $hWnd, ByRef $tRECT [, $bLarger = True] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hWnd</td>
+        <td style="width:85%">
+          Handle to the ToolTip control (returned by <a href="_GUIToolTip_Create.htm">_GUIToolTip_Create.</a>)
+        </td>
+      </tr>
+      <tr>
+        <td>$tRECT</td>
+        <td>$tagRECT structure that holds a window or text display rectangle</td>
+      </tr>
+      <tr>
+        <td>$bLarger</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Value that specifies which operation to perform. If True, $tRECT is used to specify a text display rectangle and it receives the corresponding window rectangle. If False, $tRECT is used to specify a window rectangle and it receives the corresponding text display rectangle.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns a $tagRECT structure.<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>The ToolTip's window rectangle is somewhat larger than the text display rectangle that bounds the ToolTip string.<br>
+  The window origin is also offset up and to the left from the origin of the text display rectangle.<br>
+  To position the text display rectangle, you must calculate the corresponding window rectangle and use that rectangle to position the ToolTip.<br>
+  <a href="_GUIToolTip_AdjustRect.htm">_GUIToolTip_AdjustRect()</a> handles this calculation for you.<br>
+  If you set $bLarger to True, <a href="_GUIToolTip_AdjustRect.htm">_GUIToolTip_AdjustRect()</a> takes the size and position of the desired ToolTip text display rectangle, and passes back the size and position of the ToolTip window needed to display the text in the specified position.<br>
+  If you set $bLarger to False you can specify a ToolTip window rectangle and <a href="_GUIToolTip_AdjustRect.htm">_GUIToolTip_AdjustRect()</a> will return the size and position of its text rectangle.<br></p>
+</body>
+</html>

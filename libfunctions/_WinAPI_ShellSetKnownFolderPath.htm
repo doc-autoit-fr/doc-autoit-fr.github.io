@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_ShellSetKnownFolderPath</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_ShellSetKnownFolderPath</h1>
+  <p class="funcdesc">Redirects a known folder to a new location<br></p>
+  <p class="codeheader">#include &lt;WinAPIShellEx.au3&gt;<br>
+  _WinAPI_ShellSetKnownFolderPath ( $sGUID, $sFilePath [, $iFlags = 0 [, $hToken = 0]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sGUID</td>
+        <td style="width:85%">The GUID ($FOLDERID_*) that identifies the known folder.</td>
+      </tr>
+      <tr>
+        <td>$sFilePath</td>
+        <td>The folder's new path.</td>
+      </tr>
+      <tr>
+        <td>$iFlags</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> This parameter can be 0 or the following value.<br>
+        $KF_FLAG_DONT_UNEXPAND</td>
+      </tr>
+      <tr>
+        <td>$hToken</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The access token that represents a particular user. If this parameter is 0, the function requests<br>
+        the known folder for the current user. Assigning the $hToken parameter a value of (-1) indicates the<br>
+        Default User. Note that access to the Default User folders requires administrator privileges.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>To call this function on public known folders, the caller must have Administrator privileges. For per-user known<br>
+  folders the caller only requires User privileges.<br>
+  <br>
+  To call this function on a folder of type $KF_CATEGORY_COMMON, the calling application must be running with<br>
+  elevated privileges.<br>
+  <br>
+  This function cannot be called on folders of type $KF_CATEGORY_FIXED and $KF_CATEGORY_VIRTUAL.<br>
+  <br>
+  This function requires <strong>Windows Vista or later</strong>.<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(SHSetKnownFolderPath);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">SHSetKnownFolderPath</a> in MSDN Library.</p>
+</body>
+</html>

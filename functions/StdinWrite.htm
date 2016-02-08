@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StdinWrite</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StdinWrite</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Writes a number of characters to the STDIN stream of a previously run child process.</span><span lang="fr" style="display: none">Ecrit un nombre de caractères dans le flux STDIN d'un processus enfant lancé au préalable.</span></span><br></p>
+  <p class="codeheader">StdinWrite ( process_id [, data] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">process_id</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The process ID of a child process, as returned by a previous call to Run.</span><span lang="fr" style="display: none">L'ID du processus enfant, tel que retourné par un appel précédent à Run.</span></span></td>
+      </tr>
+      <tr>
+        <td>data</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The data you wish to output.</span><span lang="fr" style="display: none">Les données que vous voulez sortir.</span></span> <span class="segments"><span lang="en">This may either be text or binary.</span><span lang="fr" style="display: none">Cela peut être du texte ou du binaire.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the number of characters written.</span><span lang="fr" style="display: none">Retourne le nombre de caractères écrits.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero if STDIN was not redirected for the process or other error.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0 si STDIN n'a pas été redirigé pour le processus ou autre erreur.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en"><a href="StdinWrite.htm">StdinWrite()</a> writes to the console standard input stream for a child process, which is normally used by console applications to read input from the user i.e. from the keyboard.</span><span lang="fr" style="display: none"><a href="StdinWrite.htm">StdinWrite()</a> écrit dans le flux d'entée standard de la console pour un processus enfant, qui est normalement utilisé par les applications console pour lire des entrées de l'utilisateur, par exemple le clavier.</span></span> <span class="segments"><span lang="en">During the call to <a href="Run.htm">Run()</a> for the child process you wish to write to the STD I/O parameter must have included the value of $STDIN_CHILD (1) for this function to work properly (see the <a href="Run.htm">Run()</a> function).</span><span lang="fr" style="display: none">Pendant l'appel de <a href="Run.htm">Run()</a> pour le processus enfant, pour écrire dans le STD I/O, le paramètre doit avoir inclus la valeur $STDIN_CHILD (1) pour que cette fonction travaille correctement (voir la fonction <a href="Run.htm">Run()</a>).</span></span><a href="Run.htm"></a><a href="Run.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">The optional second parameter is the string that you wish <a href="StdinWrite.htm">StdinWrite()</a> to write to the stream.</span><span lang="fr" style="display: none">Le second paramètre optionnel est la chaîne que vous souhaitez <a href="StdinWrite.htm">StdinWrite()</a>, écrire dans le flux.</span></span> <span class="segments"><span lang="en">If the function is called with no second argument, <a href="StdinWrite.htm">StdinWrite()</a> closes the stream and invalidates it for further writing.</span><span lang="fr" style="display: none">Si la fonction est appelée sans le second paramètre, <a href="StdinWrite.htm">StdinWrite()</a> ferme le flux et l'invalide pour l'écriture.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The stream is a first-in first-out buffer with an arbitrary limited size; if at any time when this function is called (unless it's being called to close the stream) there is no room for more characters to be written to the stream, the <a href="StdinWrite.htm">StdinWrite()</a> function will block (pause) and not return until the child process closes the stream or reads enough characters from the stream to permit the write procedure to complete.</span><span lang="fr" style="display: none">Le flux est un buffer 'first-in/first-out', premier entré premier sorti, avec une taille limitée arbitraire; si, à un moment où cette fonction est appelée (sauf si elle est appelée à fermer le flux) il n'y a pas de place pour plus de caractères à écrire dans le flux, la fonction <a href="StdinWrite.htm">StdinWrite()</a> permet de bloquer (pause) et de ne pas retourner jusqu'à ce que le processus enfant ferme le flux ou lit assez de caractères dans le flux pour permettre à la procédure d'écriture de terminer.</span></span> <span class="segments"><span lang="en">This means that the AutoIt process will be halted, and there will be no processing of hotkeys, GUI messages, etc.</span><span lang="fr" style="display: none">Cela signifie que le processus AutoIt sera arrêté, et il n'y aura pas de traitement de raccourcis clavier, ni des messages de la GUI, etc...</span></span> <span class="segments"><span lang="en">until the child process reads from the STDIN stream.</span><span lang="fr" style="display: none">jusqu'à ce que le processus enfant lise le flux STDIN.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Characters are converted to ANSI before being written.</span><span lang="fr" style="display: none">Les caractères sont convertis à la norme ANSI avant d'être écrits.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Binary data is written as-is.</span><span lang="fr" style="display: none">Les données binaires sont écrites en l'état.</span></span> <span class="segments"><span lang="en">It will not be converted to a string.</span><span lang="fr" style="display: none">Elles ne seront pas converties en une chaîne.</span></span> <span class="segments"><span lang="en">To print the hex representation of binary data, use the <a href="String.htm">String()</a> function to explicitly cast the data to a string.</span><span lang="fr" style="display: none">Pour visualiser la représentation hexadécimale de données binaires, utilisez la fonction <a href="String.htm">String()</a> pour convertir explicitement les données en chaîne.</span></span><a href="String.htm"></a><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="StderrRead.htm">StderrRead</a>, <a href="StdioClose.htm">StdioClose</a>, <a href="StdoutRead.htm">StdoutRead</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StdinWrite.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;AutoItConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iPID</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Run.htm"><span class="S4">Run</span></a><span class="S8">(</span><span class="S7">"sort.exe"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SystemDir"><span class="S6">@SystemDir</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SW_HIDE"><span class="S6">@SW_HIDE</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$STDIN_CHILD</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$STDOUT_CHILD</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Write a string of items to be sorted to child sort.exe's Stdin.</span><span lang="fr" style="display: none">Ecrit une chaîne d'éléments à trier dans Stdin de sort.exe de l'enfant.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/StdinWrite.htm"><span class="S4">StdinWrite</span></a><span class="S8">(</span><span class="S9">$iPID</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Banana"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Elephant"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Apple"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Deer"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Car"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Calling StdinWrite without a second parameter closes the stream.</span><span lang="fr" style="display: none">Appel de StdinWrite sans second paramètre ferme le flux.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/StdinWrite.htm"><span class="S4">StdinWrite</span></a><span class="S8">(</span><span class="S9">$iPID</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sOutput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Store the output of StdoutRead to a variable.</span><span lang="fr" style="display: none">Stocke la sortie de StdoutRead dans une variable.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><span class="S9">$sOutput</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StdoutRead.htm"><span class="S4">StdoutRead</span></a><span class="S8">(</span><span class="S9">$iPID</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Read the Stdout stream of the PID returned by Run.</span><span lang="fr" style="display: none">Lit le flux Stdout du PID renvoyé par Run.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Exit the loop if the process closes or StdoutRead returns an error.</span><span lang="fr" style="display: none">Sort de la boucle si le processus ferme ou StdoutRead renvoie une erreur.</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The sorted string is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

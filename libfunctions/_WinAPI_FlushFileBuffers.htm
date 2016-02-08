@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_FlushFileBuffers</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_FlushFileBuffers</h1>
+  <p class="funcdesc">Flushes the buffers of a specified file and causes all buffered data to be written<br></p>
+  <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
+  _WinAPI_FlushFileBuffers ( $hFile )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hFile</td>
+        <td style="width:85%">Handle to an open file. The file handle must have the $GENERIC_WRITE access right.<br>
+        If $hFile is a handle to a communications device, the function only flushes the transmit buffer.<br>
+        If $hFile is a handle to the server end of a named pipe the function does not return until the client has read all buffered data from the pipe.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">True</span><span lang="fr" style="display: none">Retourne True</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>
+          False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle</a>, <a href="_WinAPI_CreateFile.htm">_WinAPI_CreateFile</a>, <a href="_WinAPI_GetFileSizeEx.htm">_WinAPI_GetFileSizeEx</a>, <a href="_WinAPI_ReadFile.htm">_WinAPI_ReadFile</a>, <a href="_WinAPI_SetEndOfFile.htm">_WinAPI_SetEndOfFile</a>, <a href="_WinAPI_SetFilePointer.htm">_WinAPI_SetFilePointer</a>, <a href="_WinAPI_WriteFile.htm">_WinAPI_WriteFile</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(FlushFileBuffers);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">FlushFileBuffers</a> in MSDN Library.</p>
+</body>
+</html>

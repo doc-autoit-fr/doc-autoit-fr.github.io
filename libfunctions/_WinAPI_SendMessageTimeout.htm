@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_SendMessageTimeout</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_SendMessageTimeout</h1>
+  <p class="funcdesc">Sends the specified message to one of more windows<br></p>
+  <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
+  _WinAPI_SendMessageTimeout ( $hWnd, $iMsg [, $wParam = 0 [, $lParam = 0 [, $iTimeout = 1000 [, $iFlags = 0]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hWnd</td>
+        <td style="width:85%">Handle to the window whose window procedure will receive the message.</td>
+      </tr>
+      <tr>
+        <td>$iMsg</td>
+        <td>The message to be sent.</td>
+      </tr>
+      <tr>
+        <td>$wParam</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The message-specific information.</td>
+      </tr>
+      <tr>
+        <td>$lParam</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The message-specific information.</td>
+      </tr>
+      <tr>
+        <td>$iTimeout</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The duration, in milliseconds, of the time-out period. If the message is a broadcast message, each<br>
+        window can use the full time-out period. Default is 1000.</td>
+      </tr>
+      <tr>
+        <td>$iFlags</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The flags that specifies how to send the message.<br>
+        This parameter can be one or more of the following values.<br>
+        $SMTO_BLOCK<br>
+        $SMTO_NORMAL<br>
+        $SMTO_ABORTIFHUNG<br>
+        $SMTO_NOTIMEOUTIFNOTHUNG<br>
+        $SMTO_ERRORONEXIT</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">The result of the message processing, depends on the message sent.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>
+          Sets the @error flag to non-zero, @extended contains <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a>.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>This function does not provide information about individual windows timing out if $HWND_BROADCAST is used.<br>
+  <br>
+  If times out, function fails. If @extended is $ERROR_TIMEOUT (1460), then the function timed out.<br>
+  This function considers a thread is not responding if it has not responds within five seconds.<br>
+  <br>
+  The system only does marshalling for system messages (those in the range 0 to (WM_USER-1)). To send other messages<br>
+  (those &gt;= WM_USER) to another process, you must do custom marshalling.<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(SendMessageTimeout);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">SendMessageTimeout</a> in MSDN Library.</p>
+</body>
+</html>

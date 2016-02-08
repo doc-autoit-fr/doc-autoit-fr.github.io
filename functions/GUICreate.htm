@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUICreate</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUICreate</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Create a GUI window.</span><span lang="fr" style="display: none">Crée une fenêtre GUI.</span></span><br></p>
+  <p class="codeheader">GUICreate ( "title" [, width [, height [, left = -1 [, top = -1 [, style = -1 [, exStyle = -1 [, parent = 0]]]]]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The title of the dialog box.</span><span lang="fr" style="display: none">Le titre de la boîte de dialogue.</span></span></td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The width of the window.</span><span lang="fr" style="display: none">La largeur de la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The height of the window.</span><span lang="fr" style="display: none">La hauteur de la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td>left</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The left side of the dialog box.</span><span lang="fr" style="display: none">La position du côté gauche de la boîte de dialogue.</span></span> <span class="segments"><span lang="en">By default (-1), the window is centered.</span><span lang="fr" style="display: none">Par défaut (-1), la fenêtre est centrée.</span></span> <span class="segments"><span lang="en">If defined, top must also be defined.</span><span lang="fr" style="display: none">Si défini, la position haute doit également être définie.</span></span></td>
+      </tr>
+      <tr>
+        <td>top</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The top of the dialog box.</span><span lang="fr" style="display: none">La position haute de la boîte de dialogue.</span></span> <span class="segments"><span lang="en">Default (-1) is centered</span><span lang="fr" style="display: none">Par défaut (-1), la fenêtre est centrée.</span></span></td>
+      </tr>
+      <tr>
+        <td>style</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">defines the style of the window.</span><span lang="fr" style="display: none">Définit le style de la fenêtre.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm">Styles des contrôles GUI</a>.</span></span><br>
+        <span class="segments"><span lang="en">Use -1 for the default style which includes a combination of $WS_MINIMIZEBOX, $WS_CAPTION, $WS_POPUP, $WS_SYSMENU styles.</span><span lang="fr" style="display: none">Utilisez -1 pour le style par défaut, qui inclut une combinaison des styles $WS_MINIMIZEBOX, $WS_CAPTION, $WS_POPUP et $WS_SYSMENU.</span></span><br>
+        <span class="segments"><span lang="en">Some styles are always included:</span><span lang="fr" style="display: none">Certains styles sont toujours inclus:</span></span> <span class="segments"><span lang="en">$WS_CLIPSIBLINGS, and $WS_SYSMENU if $WS_MAXIMIZEBOX or $WS_SIZEBOX is specified.</span><span lang="fr" style="display: none">$WS_CLIPSIBLINGS et $WS_SYSMENU si $WS_MAXIMIZEBOX ou $WS_SIZEBOX sont spécifiés.</span></span></td>
+      </tr>
+      <tr>
+        <td>exStyle</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">defines the extended style of the window.</span><span lang="fr" style="display: none">Définit le style étendu de la fenêtre.</span></span> <span class="segments"><span lang="en">See the <a href="GUICreate.htm#Extended%20Style%20Table">Extended Style Table</a> below.</span><span lang="fr" style="display: none">Consultez la <a href="GUICreate.htm#Extended%20Style%20Table">Table des Styles Étendus</a> ci-dessous.</span></span><br>
+        <span class="segments"><span lang="en">Use -1 for the default, which is no extended styles.</span><span lang="fr" style="display: none">Utilisez -1 pour valeur par défaut, ce qui correspond à aucun style étendu.</span></span><br>
+        <span class="segments"><span lang="en">Forced styles:</span><span lang="fr" style="display: none">Styles forcés:</span></span> $WS_EX_WINDOWEDGE</td>
+      </tr>
+      <tr>
+        <td>parent</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The handle of another previously created window - this new window then becomes a child of that window.</span><span lang="fr" style="display: none">Le handle d'une fenêtre précédemment créé - La nouvelle fenêtre devient alors un enfant de cette fenêtre.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a windows handle.</span><span lang="fr" style="display: none">Retourne le handle de la fenêtre.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if the window cannot be created and sets the @error flag to 1.</span><span lang="fr" style="display: none">Retourne 0 si la fenêtre ne peut pas être créé et @error = 1.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">By default the dialog box is non sizable and non maximizable.</span><span lang="fr" style="display: none">Par défaut la taille de la boîte de dialogue ne peut pas être modifiée ni maximisée.</span></span> <span class="segments"><span lang="en">So WS_SIZEBOX or WS_MAXIMIZEBOX can be used in the style parameter.</span><span lang="fr" style="display: none">WS_SIZEBOX ou WS_MAXIMIZEBOX peuvent être utilisés dans le paramètre de style.</span></span><br>
+  <span class="segments"><span lang="en">As defining only one style just set this style don't forget to combine it with default ones, i.e. just defining WS_SIZEBOX will not set $WS_MINIMIZEBOX, $WS_CAPTION, $WS_POPUP, $WS_SYSMENU.</span><span lang="fr" style="display: none">La définition d'un seul style n'applique que le style définit, donc n'oubliez pas de le combiner avec les styles par défaut.Si par exemple vous ne définissez que WS_SIZEBOX, alors WS_MINIMIZEBOX, WS_CAPTION, WS_POPUP et WS_SYSMENU ne seront pas utilisés.</span></span> <span class="segments"><span lang="en">So the best method to define a resizeable window is to use $WS_OVERLAPPEDWINDOW.</span><span lang="fr" style="display: none">Donc, la meilleure méthode pour définir une fenêtre redimensionnable est d'utiliser WS_OVERLAPPEDWINDOW.</span></span><br>
+  <span class="segments"><span lang="en">When using $WS_EX_MDICHILD the position is relative to client area of the parent window.</span><span lang="fr" style="display: none">Lorsque vous utilisez $WS_EX_MDICHILD, la position est relative à la zone client de la fenêtre parent.</span></span> <span class="segments"><span lang="en">With $WS_EX_LAYERED it is possible to have a transparent picture on a background picture defined in the parent window.</span><span lang="fr" style="display: none">Avec $WS_EX_LAYERED il est possible d'avoir une image transparente sur une image de fond défini dans la fenêtre parent.</span></span><br>
+  <span class="segments"><span lang="en">Adding $WS_CLIPCHILDREN style can avoid some flickering when resizing GUI containing Edit control for example.</span><span lang="fr" style="display: none">L'ajout du style $WS_CLIPCHILDREN peut éviter un certain scintillement lors du redimensionnement d'une GUI avec par exemple un contrôle Edit.</span></span><br>
+  <span class="segments"><span lang="en">You can enable window dragging for GUI without $WS_CAPTION by using $WS_EX_CONTROLPARENT in the exStyle parameter.</span><span lang="fr" style="display: none">Vous pouvez activer le déplacement d'une fenêtre sans $WS_CAPTION en utilisant $WS_EX_CONTROLPARENT dans les paramètres étendus (exStyle).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To combine styles with the default style use <a href="BitOR.htm">BitOR</a>($GUI_SS_DEFAULT_GUI, newstyle, ...).</span><span lang="fr" style="display: none">Pour combiner les styles avec les styles par défaut, utilisez <a href="BitOR.htm">BitOR</a>($GUI_SS_DEFAULT_GUI, newstyle, ...).</span></span><br>
+  <span class="segments"><span lang="en">The size specified is the size of the client area of the window.</span><span lang="fr" style="display: none">La taille spécifiée est la taille de la zone cliente de la fenêtre.</span></span> <span class="segments"><span lang="en">The border and title bar will make the window slightly larger than specified.</span><span lang="fr" style="display: none">La bordure et la barre de titre feront que la fenêtre sera légèrement plus grande que la taille spécifiée.</span></span> <span class="segments"><span lang="en">Using menu controls will also change the windows height.</span><span lang="fr" style="display: none">L'utilisation de menu de commandes changera aussi la hauteur des fenêtres.</span></span><br>
+  <br>
+  <a id="Extended Style table"><strong>Extended Style table</strong><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en">Extended Style</span><span lang="fr" style="display: none">style étendu</span></span></th>
+        <th><span class="segments"><span lang="en">result</span><span lang="fr" style="display: none">résultat</span></span></th>
+      </tr>
+      <tr>
+        <td>$WS_EX_ACCEPTFILES</td>
+        <td>
+          <span class="segments"><span lang="en">Allow an edit or input control within the created GUI window to receive filenames via drag and drop.</span><span lang="fr" style="display: none">Autorise un contrôle Edit ou un contrôle Input dans la fenêtre GUI créée, à recevor des noms de fichiers par glisser-déposer.</span></span> <span class="segments"><span lang="en">The control must have also the $GUI_DROPACCEPTED state set by</span></span> <a href="GUICtrlSetState.htm">GUICtrlSetState()</a>.<span lang="fr" style="display: none">Le contrôle doit aussi avoir l'état $GUI_DROPACCEPTED attribué par</span> <a href="GUICtrlSetState.htm">GUICtrlSetState</a>. <span class="segments"><span lang="en">for other controls the drag&amp;drop info can be retrieved with @GUI_DragId, @GUI_DragFile, @GUI_DropId.</span><span lang="fr" style="display: none">Pour d'autres contrôles, l'info glisser-déposer peut être récupérée par @GUI_DRAGID, @GUI_DRAGFILE ou @GUIDROPID.</span></span><a href="GUICtrlSetState.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>$WS_EX_APPWINDOW</td>
+        <td><span class="segments"><span lang="en">Forces a top-level window onto the taskbar when the window is visible.</span><span lang="fr" style="display: none">Met la fenêtre au premier plan sur la barre des tâches lorsque la fenêtre est visible.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_CLIENTEDGE</td>
+        <td><span class="segments"><span lang="en">Specifies that a window has a border with a sunken edge.</span><span lang="fr" style="display: none">Indique que la fenêtre a une bordure avec un bord creux.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_CONTEXTHELP</td>
+        <td><span class="segments"><span lang="en">Includes a question mark in the title bar of the window.</span><span lang="fr" style="display: none">Inclut un point d'interrogation dans la barre de titre de la fenêtre.</span></span> <span class="segments"><span lang="en">Cannot be used with the $WS_MAXIMIZEBOX or $WS_MINIMIZEBOX.</span><span lang="fr" style="display: none">Ne peut être utilisé avec WS_MAXIMIZEBOX ou WS_MINIMIZEBOX.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_DLGMODALFRAME</td>
+        <td><span class="segments"><span lang="en">Creates a window that has a double border; the window can, optionally, be created with a title bar by specifying the WS_CAPTION style in the style parameter.</span><span lang="fr" style="display: none">Crée une fenêtre qui a une double bordure, la fenêtre peut, éventuellement, être créée avec une barre de titre en spécifiant le style WS_CAPTION dans le paramètre de style.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_MDICHILD</td>
+        <td><span class="segments"><span lang="en">Create a child window included in its parent window (simulation not real MDI).</span><span lang="fr" style="display: none">Crée une fenêtre enfant incluse dans sa fenêtre parente (simulation, pas rééllement un MDI).</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_OVERLAPPEDWINDOW</td>
+        <td><span class="segments"><span lang="en">Combines the $WS_EX_CLIENTEDGE and $WS_EX_WINDOWEDGE styles.</span><span lang="fr" style="display: none">Combine les styles WS_EX_CLIENTEDGE et WS_EX_WINDOWEDGE.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_STATICEDGE</td>
+        <td><span class="segments"><span lang="en">Creates a window with a three-dimensional border style intended to be used for items that do not accept user input.</span><span lang="fr" style="display: none">Crée une fenêtre avec un style de bordure en trois dimensions destiné à être utilisé pour des éléments qui n'acceptent pas les entrées utilisateur.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_TOPMOST</td>
+        <td><span class="segments"><span lang="en">Specifies that a window created with this style should be placed above all non-topmost windows and should stay above them, even when the window is deactivated.</span><span lang="fr" style="display: none">Indique que la fenêtre créée avec ce style doit être placée par-dessus toutes les fenêtres qui ne sont pas d'avant-plan et devrait rester par-dessus, même lorsque la fenêtre est désactivée.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_TRANSPARENT</td>
+        <td><span class="segments"><span lang="en">The window appears transparent because the bits of underlying sibling windows have already been painted.</span><span lang="fr" style="display: none">La fenêtre apparaît transparente car les bits des fenêtres enfant sous-jacentes de même parent ont déjà été peints.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_TOOLWINDOW</td>
+        <td><span class="segments"><span lang="en">Creates a tool window; that is, a window intended to be used as a floating toolbar.</span><span lang="fr" style="display: none">Crée une fenêtre outil, qui est une fenêtre destinée à être utilisée comme une barre d'outils flottante.</span></span> <span class="segments"><span lang="en">A tool window has a title bar that is shorter than a normal title bar, and the window title is drawn using a smaller font.</span><span lang="fr" style="display: none">Une fenêtre outil a une barre de titre qui est plus petite que la barre de titre normale, et dont la police du titre est plus petite.</span></span> <span class="segments"><span lang="en">A tool window does not appear in the taskbar or in the dialog box that appears when the user presses ALT+TAB.</span><span lang="fr" style="display: none">Une fenêtre outil n'apparaît pas dans la barre des tâches ou dans la boîte de dialogue qui s'affiche lorsque l'utilisateur appuie sur ALT+TAB.</span></span> <span class="segments"><span lang="en">If a tool window has a system menu, its icon is not displayed on the title bar.</span><span lang="fr" style="display: none">Si une fenêtre outil dispose d'un menu système, son icône n'est pas affichée dans la barre de titre.</span></span> <span class="segments"><span lang="en">However, you can display the system menu by typing ALT+SPACE.</span><span lang="fr" style="display: none">Cependant, vous pouvez afficher le menu système en tapant ALT+ESPACE.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_WINDOWEDGE</td>
+        <td><span class="segments"><span lang="en">Specifies that a window has a border with a raised edge.</span><span lang="fr" style="display: none">Indique que la fenêtre a une bordure en relief.</span></span></td>
+      </tr>
+      <tr>
+        <td>$WS_EX_LAYERED</td>
+        <td><span class="segments"><span lang="en">Creates a layered window.</span><span lang="fr" style="display: none">Crée une fenêtre de superposition (alphablend).</span></span> <span class="segments"><span lang="en">Note that this cannot be used for child windows.</span><span lang="fr" style="display: none">Notez que cela ne peut pas être utilisé pour les fenêtres enfants.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  To use the values specified above you must #include &lt;WindowsConstants.au3&gt; in your script.<br>
+  <br>
+  <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">The handle returned from this function is a real windows handle, which means it can be used in the same way as the result of</span></span> <a href="WinGetHandle.htm">WinGetHandle()</a>.<span lang="fr" style="display: none">Le handle renvoyé par cette fonction est un véritable handle de fenêtres, ce qui signifie qu'il peut être utilisé de la même manière que le résultat de</span> <a href="WinGetHandle.htm">WinGetHandle()</a>.<a href="WinGetHandle.htm"></a><br>
+  <a href="WinMove.htm">WinMove()</a> use before <a href="GuiSetState.htm">GuiSetState()</a> to change GUI window size will not change the position/resizing of defined Controls.<br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlSetDefBkColor</a>, <a href="GUICtrlSetDefBkColor.htm">GUICtrlSetDefColor</a>, <a href="GUICtrlSetDefColor.htm">GUIDelete</a>, <a href="GUIDelete.htm">GUIGetCursorInfo</a>, <a href="GUIGetCursorInfo.htm">GUIGetMsg</a>, <a href="GUIGetMsg.htm">GUIGetStyle</a>, <a href="GUIGetStyle.htm">GUISetParameters...</a>, <a href="GUICtrlCreate%20Management.htm">GUISetState</a>, <a href="GUICtrlSetDefBkColor.htm">GUISwitch</a>, <a href="GUICtrlSetDefColor.htm">WinGetHandle</a>, <a href="GUIDelete.htm">WinMove</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICreate.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI with various controls.</span><span lang="fr" style="display: none">Crée une GUI avec différents contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span>"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idOK</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"OK"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">310</span><span class="S8">,</span><span class="S0"> </span><span class="S3">370</span><span class="S8">,</span><span class="S0"> </span><span class="S3">85</span><span class="S8">,</span><span class="S0"> </span><span class="S3">25</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI.</span><span lang="fr" style="display: none">Affiche la GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idOK</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the previous GUI and all controls.</span><span lang="fr" style="display: none">Supprime la GUI précédente et tous ses contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICreate[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"..\GUI\logo4.gif"</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI with various controls.</span><span lang="fr" style="display: none">Crée une GUI avec différents contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreatePic.htm"><span class="S4">GUICtrlCreatePic</span></a><span class="S8">(</span><span class="S7">"..\GUI\msoobe.jpg"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI.</span><span lang="fr" style="display: none">Affiche la GUI.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hChild</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">169</span><span class="S8">,</span><span class="S0"> </span><span class="S3">68</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S3">20</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_POPUP</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$WS_EX_LAYERED</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_EX_MDICHILD</span><span class="S8">),</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a picture control with a transparent image.</span><span lang="fr" style="display: none">Crée un contrôle d'image avec une image transparente.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreatePic.htm"><span class="S4">GUICtrlCreatePic</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">169</span><span class="S8">,</span><span class="S0"> </span><span class="S3">68</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the child GUI.</span><span lang="fr" style="display: none">Affiche l'interface graphique enfant.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the previous GUIs and all controls.</span><span lang="fr" style="display: none">Supprime les GUI précédentes et tous les contrôles.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">(</span><span class="S9">$hChild</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+</pre>
+      </div>
+    </div>
+  </div></a></p>
+</body>
+</html>

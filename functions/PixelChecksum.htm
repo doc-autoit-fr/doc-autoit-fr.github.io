@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction PixelChecksum</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>PixelChecksum</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Generates a checksum for a region of pixels.</span><span lang="fr" style="display: none">Génère une somme de contrôle dans une région de pixels.</span></span><br></p>
+  <p class="codeheader">PixelChecksum ( left, top, right, bottom [, step = 1 [, hwnd [, mode = 0]]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">left</td>
+        <td style="width:85%"><span class="segments"><span lang="en">left coordinate of rectangle.</span><span lang="fr" style="display: none">Abscisse du coin NW du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>top</td>
+        <td><span class="segments"><span lang="en">top coordinate of rectangle.</span><span lang="fr" style="display: none">Ordonnée du coin NW du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>right</td>
+        <td><span class="segments"><span lang="en">right coordinate of rectangle.</span><span lang="fr" style="display: none">Abscisse du coin SE du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>bottom</td>
+        <td><span class="segments"><span lang="en">bottom coordinate of rectangle.</span><span lang="fr" style="display: none">Ordonnée du coin SE du rectangle.</span></span></td>
+      </tr>
+      <tr>
+        <td>step</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Instead of checksumming each pixel use a value larger than 1 to skip pixels (for speed). <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
+      </tr>
+      <tr>
+        <td>hwnd</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
+      </tr>
+      <tr>
+        <td>mode</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">default 0 ADLER checksum, 1 CRC32 Checksum.</span><span lang="fr" style="display: none">0 = par défaut, somme de contrôle de ADLER, 1 = somme de contrôle CRC32.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the checksum value of the region.</span><span lang="fr" style="display: none">Retourne la valeur de la somme de contrôle de la région.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">A checksum only allows you to see if "something" has changed in a region - it does not tell you exactly what has changed.</span><span lang="fr" style="display: none">Une somme de contrôle vous permet seulement de voir si "quelque chose" a changé dans une région - elle ne vous dit pas exactement ce qui a changé.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">CRC32 checksum is a little slower than ADLDER but detects better pixel variation.</span><span lang="fr" style="display: none">Le contrôle CRC32 est un peu plus lent que ADLDER mais détecte mieux une variation de pixel.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="AutoItSetOption.htm#PixelCoordMode">PixelCoordMode (Option)</a>, <a href="PixelGetColor.htm">PixelGetColor</a>, <a href="PixelSearch.htm">PixelSearch</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\PixelChecksum.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Wait until something changes in the region 0,0 to 50,50</span><span lang="fr" style="display: none">Attend jusqu'à ce que quelque chose change dans la région 0,0 à 50,50</span></span></span></span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Get initial checksum</span><span lang="fr" style="display: none">Obtient une somme de contrôle initiale</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iCheckSum</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/PixelChecksum.htm"><span class="S4">PixelChecksum</span></a><span class="S8">(</span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">)</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Wait for the region to change, the region is checked every 100ms to reduce CPU load</span><span lang="fr" style="display: none">Attend que la région change, la région est contrôlée toutes les 100ms pour réduire la charge du CPU</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S9">$iCheckSum</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/PixelChecksum.htm"><span class="S4">PixelChecksum</span></a><span class="S8">(</span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">100</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Something in the region has changed!"</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ObjCreateInterface</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <div class="experimental">
+    Warning: This feature is experimental. It may not work, may contain bugs or may be changed or removed without notice.<br>
+    <br>
+    DO NOT REPORT BUGS OR REQUEST NEW FEATURES FOR THIS FEATURE.
+  </div><br>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ObjCreateInterface</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a reference to an object from the given classname/object pointer, interface identifier and description string.</span><span lang="fr" style="display: none">Crée une référence à un objet à partir du nom d'une classe ou d'un pointeur sur un objet, de l'identifiant d'une interface et d'une chaîne de description.</span></span><br></p>
+  <p class="codeheader">ObjCreateInterface ( "CLSID" , "IID" [, "interface_description",[flag = True]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">CLSID</td>
+        <td style="width:85%">Class identifier or object pointer. If this is a class identifier it can be in either ProgID or the string representation of the CLSID.</td>
+      </tr>
+      <tr>
+        <td>IID</td>
+        <td>String representation of interface identifier.</td>
+      </tr>
+      <tr>
+        <td>interface_description</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> String describing v-table of the object. Use keyword Default to access IDispatch for dual interfaces.</td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Default value is True meaning the object interface inherits from IUnknown.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">an object.</span><span lang="fr" style="display: none">Retourne un objet.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><a href="ObjCreateInterface.htm">ObjCreateInterface()</a> creates objects with methods that are listed in interface-description string.<br>
+  For COM objects (IUnknown based) first three methods are always QueryInterface, AddRef and Release. Don't specify them inside the description strings.<br>
+  <br>
+  <strong>Methods listed inside description string must be in v-table order of the interface. If you provide an invalid or incorrect description AutoIt may become unstable or crash.</strong><br>
+  <br>
+  Format of the description string is:<br>
+  $sTagInterface = "MethodName1 RetType(ParamType1;ParamType2;...); MethodName2 RetType(..."<br>
+  <br>
+  By default, AutoIt uses the 'stdcall' calling convention for COM. To use the 'cdecl' place ':cdecl' after the return type.<br>
+  <br>
+  <span class="segments"><span lang="en">Valid Types are:</span><span lang="fr" style="display: none">Les types valides sont:</span></span><br></p>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>Type</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>Details</strong></span><span lang="fr" style="display: none"><strong>Détails</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td><span class="segments"><span lang="en">no value (only valid for return type - equivalent to void in C)</span><span lang="fr" style="display: none">aucune valeur (valide seulement pour le type de retour - équivalent à void en C)</span></span></td>
+      </tr>
+      <tr>
+        <td>byte</td>
+        <td><span class="segments"><span lang="en">an unsigned 8 bit integer</span><span lang="fr" style="display: none">un entier 8 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td><span class="segments"><span lang="en">an unsigned 8 bit integer</span><span lang="fr" style="display: none">un entier 8 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>short</td>
+        <td><span class="segments"><span lang="en">a 16 bit integer</span><span lang="fr" style="display: none">un entier 16 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>word, ushort</td>
+        <td><span class="segments"><span lang="en">an unsigned 16 bit integer</span><span lang="fr" style="display: none">un entier 16 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>int, long</td>
+        <td><span class="segments"><span lang="en">a 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>bool</td>
+        <td><span class="segments"><span lang="en">a 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>dword, ulong, uint</td>
+        <td><span class="segments"><span lang="en">an unsigned 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>hresult</td>
+        <td><span class="segments"><span lang="en">a 32 bit integer</span><span lang="fr" style="display: none">un entier 32 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>int64</td>
+        <td><span class="segments"><span lang="en">a 64 bit integer</span><span lang="fr" style="display: none">un entier 64 bits</span></span></td>
+      </tr>
+      <tr>
+        <td>uint64</td>
+        <td><span class="segments"><span lang="en">an unsigned 64 bit integer</span><span lang="fr" style="display: none">un entier 64 bits non signé</span></span></td>
+      </tr>
+      <tr>
+        <td>ptr</td>
+        <td><span class="segments"><span lang="en">a general pointer (void *)</span><span lang="fr" style="display: none">un pointer en général (void *)</span></span></td>
+      </tr>
+      <tr>
+        <td>hwnd</td>
+        <td><span class="segments"><span lang="en">a window handle (pointer)</span><span lang="fr" style="display: none">un handle de fenêtre (pointeur)</span></span></td>
+      </tr>
+      <tr>
+        <td>handle</td>
+        <td><span class="segments"><span lang="en">an handle (pointer)</span><span lang="fr" style="display: none">un handle (pointeur)</span></span></td>
+      </tr>
+      <tr>
+        <td>float</td>
+        <td><span class="segments"><span lang="en">a single precision floating point number</span><span lang="fr" style="display: none">un nombre simple précision en virgule flottante</span></span></td>
+      </tr>
+      <tr>
+        <td>double</td>
+        <td><span class="segments"><span lang="en">a double precision floating point number</span><span lang="fr" style="display: none">un nombre double précision en virgule flottante</span></span></td>
+      </tr>
+      <tr>
+        <td>int_ptr, long_ptr, lresult, lparam</td>
+        <td><span class="segments"><span lang="en">an integer big enough to hold a pointer when running on x86 or x64 versions of AutoIt.</span><span lang="fr" style="display: none">un entier assez grand pour contenir un pointeur lors de l'exécution des versions x86 ou x64 de AutoIt.</span></span></td>
+      </tr>
+      <tr>
+        <td>uint_ptr, ulong_ptr, dword_ptr, wparam</td>
+        <td><span class="segments"><span lang="en">an unsigned integer big enough to hold a pointer when running on x86 or x64 versions of AutoIt.</span><span lang="fr" style="display: none">un entier non signé assez grand pour contenir un pointeur lors de l'exécution des versions x86 ou x64 de AutoIt.</span></span></td>
+      </tr>
+      <tr>
+        <td>str</td>
+        <td><span class="segments"><span lang="en">an ANSI string (a minimum of 65536 chars is allocated).</span><span lang="fr" style="display: none">une chaîne ANSI (un minimum de 65536 caractères sont alloués).</span></span></td>
+      </tr>
+      <tr>
+        <td>wstr</td>
+        <td><span class="segments"><span lang="en">a UNICODE wide character string (a minimum of 65536 chars is allocated).</span><span lang="fr" style="display: none">une chaîne de caractères larges UNICODE (un minimum of 65536 caractères sont alloués).</span></span></td>
+      </tr>
+      <tr>
+        <td>bstr</td>
+        <td>a composite data type that consists of a length prefix, a data string and a terminator</td>
+      </tr>
+      <tr>
+        <td>variant</td>
+        <td>a tagged union that can be used to represent any other data type</td>
+      </tr>
+      <tr>
+        <td>idispatch, object</td>
+        <td>a composite data type that represents object with IDispatch interface</td>
+      </tr>
+      <tr>
+        <td>clsid</td>
+        <td>128-bit integer in form of GUID string</td>
+      </tr>
+      <tr>
+        <td>struct</td>
+        <td>
+          structure created with <a href="DllStructCreate.htm">DllStructCreate()</a>
+        </td>
+      </tr>
+      <tr>
+        <td>*</td>
+        <td><span class="segments"><span lang="en">Add * to the end of another type to pass it by reference.</span><span lang="fr" style="display: none">Ajouter * à la fin d'un autre type pour le passer en référence.</span></span> <span class="segments"><span lang="en">For example "int*" passes a pointer to an "int" type.</span><span lang="fr" style="display: none">Par exemple "int*" passe un pointeur dans un type "int".</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for more information about Objects.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour plus d'informations sur les objets.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ObjCreate.htm">ObjCreate</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ObjCreateInterface.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; Declare the CLSID, IID and interface description for ITaskbarList.</span>
+<span class="S0">    </span><span class="S1">; It is not necessary to describe the members of IUnknown.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sCLSID_TaskbarList</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"{56FDF344-FD6D-11D0-958A-006097C9A090}"</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sIID_ITaskbarList</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"{56FDF342-FD6D-11D0-958A-006097C9A090}"</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sTagITaskbarList</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"HrInit hresult(); AddTab hresult(hwnd); DeleteTab hresult(hwnd); ActivateTab hresult(hwnd); SetActiveAlt hresult(hwnd);"</span>
+
+<span class="S0">    </span><span class="S1">; Create the object.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oTaskbarList</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreateInterface.htm"><span class="S4">ObjCreateInterface</span></a><span class="S8">(</span><span class="S9">$sCLSID_TaskbarList</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sIID_ITaskbarList</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sTagITaskbarList</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; Initialize the iTaskbarList object.</span>
+<span class="S0">    </span><span class="S9">$oTaskbarList</span><span class="S8">.</span><span class="S14">HrInit</span><span class="S8">()</span>
+
+<span class="S0">    </span><span class="S1">; Run Notepad.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Run.htm"><span class="S4">Run</span></a><span class="S8">(</span><span class="S7">"notepad.exe"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; Wait for the Notepad window to appear and get a handle to it.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hNotepad</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinWait.htm"><span class="S4">WinWait</span></a><span class="S8">(</span><span class="S7">"[CLASS:Notepad]"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; Tell the user what to look for.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Look in the Taskbar and you should see an entry for Notepad."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Press OK to continue."</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; Delete the Notepad entry from the Taskbar.</span>
+<span class="S0">    </span><span class="S9">$oTaskbarList</span><span class="S8">.</span><span class="S14">DeleteTab</span><span class="S8">(</span><span class="S9">$hNotepad</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; Tell the user to look again.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Look in the Taskbar. There should no longer be a Notepad entry but Notepad is still running."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Press OK to continue."</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; Close Notepad.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinClose.htm"><span class="S4">WinClose</span></a><span class="S8">(</span><span class="S9">$hNotepad</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

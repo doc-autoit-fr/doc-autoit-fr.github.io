@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StringRegExp</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StringRegExp</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Check if a string fits a given regular expression pattern.</span><span lang="fr" style="display: none">Vérifie si une chaîne de caractères correspond à un modèle d'expression régulière.</span></span><br></p>
+  <p class="codeheader">StringRegExp ( "test", "pattern" [, flag = 0 [, offset = 1]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">test</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The subject string to check</span><span lang="fr" style="display: none">La chaîne à vérifier</span></span></td>
+      </tr>
+      <tr>
+        <td>pattern</td>
+        <td><span class="segments"><span lang="en">The regular expression to match.</span><span lang="fr" style="display: none">L'expression régulière à utiliser.</span></span></td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">A number to indicate how the function behaves.</span><span lang="fr" style="display: none">Valeur qui conditionne le comportement de la fonction.</span></span> <span class="segments"><span lang="en">See below for details.</span><span lang="fr" style="display: none">Voir plus bas pour plus de détails.</span></span> <span class="segments"><span lang="en">The default is 0.</span><span lang="fr" style="display: none">Par défaut c'est 0.</span></span></td>
+      </tr>
+      <tr>
+        <td>offset</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The string position to start the match (starts at 1).</span><span lang="fr" style="display: none">La position dans la chaîne du début de la recherche (commence à 1).</span></span> <span class="segments"><span lang="en">The default is 1.</span><span lang="fr" style="display: none">La valeur par défaut est 1.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>Flag</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>Values</strong></span><span lang="fr" style="display: none"><strong>Valeurs</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPMATCH (0)</td>
+        <td>Returns 1 (match) or 0 (no match). (Default).</td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPARRAYMATCH (1)</td>
+        <td><span class="segments"><span lang="en">Return array of matches.</span><span lang="fr" style="display: none">Retourne le tableau des occurrences.</span></span></td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPARRAYFULLMATCH (2)</td>
+        <td><span class="segments"><span lang="en">Return array of matches including the full match (Perl / PHP style).</span><span lang="fr" style="display: none">Retourne un tableau de résultats incluant le résultat complet (style Perl / PHP).</span></span></td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPARRAYGLOBALMATCH (3)</td>
+        <td><span class="segments"><span lang="en">Return array of global matches.</span><span lang="fr" style="display: none">Retourne un tableau de résultats globaux.</span></span></td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPARRAYGLOBALFULLMATCH (4)</td>
+        <td><span class="segments"><span lang="en">Return an array of arrays containing global matches including the full match (Perl / PHP style).</span><span lang="fr" style="display: none">Retourne un tableau de tableaux contenant les résultats globaux incluant le résultat complet (style Perl / PHP).</span></span></td>
+      </tr>
+    </tbody>
+  </table>Constants are defined in StringConstants.au3.<br>
+  <br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en"><em>Flag = $STR_REGEXPMATCH (0) :</em></span><span lang="fr" style="display: none"><em>Mode = $STR_REGEXPMATCH (0) :</em></span></span><br>
+  <br>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">@error:</td>
+        <td style="width:90%">Meaning</td>
+      </tr>
+      <tr>
+        <td class="valign-top">2:</td>
+        <td>Bad pattern. <span class="segments"><span lang="en">@extended = offset of error in pattern.</span><span lang="fr" style="display: none">@extended = position de l'erreur dans le modèle.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en"><em>Flag = $STR_REGEXPARRAYMATCH (1) or $STR_REGEXPARRAYFULLMATCH (2) :</em></span><span lang="fr" style="display: none"><em>Mode = $STR_REGEXPARRAYMATCH (1) ou $STR_REGEXPARRAYFULLMATCH (2) :</em></span></span><br>
+  <br>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">@error:</td>
+        <td style="width:90%">Meaning</td>
+      </tr>
+      <tr>
+        <td class="valign-top">0:</td>
+        <td>Array is valid. <span class="segments"><span lang="en">Check @extended for next offset</span><span lang="fr" style="display: none">@extended = position suivante dans le sujet</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">1:</td>
+        <td>Array is invalid. No matches.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">2:</td>
+        <td>Bad pattern, array is invalid. <span class="segments"><span lang="en">@extended = offset of error in pattern.</span><span lang="fr" style="display: none">@extended = position de l'erreur dans le modèle.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en"><em>Flag = $STR_REGEXPARRAYGLOBALMATCH (3) or $STR_REGEXPARRAYGLOBALFULLMATCH (4) :</em></span><span lang="fr" style="display: none"><em>Mode = $STR_REGEXPARRAYGLOBALMATCH (3) ou $STR_REGEXPARRAYGLOBALFULLMATCH (4) :</em></span></span><br>
+  <br>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">@error:</td>
+        <td style="width:90%">Meaning</td>
+      </tr>
+      <tr>
+        <td class="valign-top">0:</td>
+        <td>Array is valid.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">1:</td>
+        <td>Array is invalid. No matches.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">2:</td>
+        <td>Bad pattern, array is invalid. <span class="segments"><span lang="en">@extended = offset of error in pattern.</span><span lang="fr" style="display: none">@extended = position de l'erreur dans le modèle.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The flag parameter can have one of 5 values ($STR_REGEXPMATCH (0) through $STR_REGEXPARRAYGLOBALFULLMATCH (4)).</span><span lang="fr" style="display: none">Le paramètre flag peut avoir une des 5 valeurs ($STR_REGEXPMATCH (0) à $STR_REGEXPARRAYGLOBALFULLMATCH (4)).</span></span><br></p>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$STR_REGEXPMATCH (0)</td>
+        <td style="width:85%"><span class="segments"><span lang="en">returns 1 (true) or 0 (false) if the pattern was found or not.</span><span lang="fr" style="display: none">retourne 1 (True) ou 0 (False) selon que le modèle a été trouvé ou pas.</span></span></td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPARRAYMATCH (1)<br>
+        $STR_REGEXPARRAYFULLMATCH (2)</td>
+        <td><span class="segments"><span lang="en">find the first match and return captured groups in an array; when the pattern has no capturing groups, the first match is returned in the array.</span><span lang="fr" style="display: none">trouve la première correspondance et retourne les groupes capturés dans un tableau ; quand le modèle n'a pas capturé de groupe, la première correspondance est retournée dans le tableau.</span></span></td>
+      </tr>
+      <tr>
+        <td>$STR_REGEXPARRAYGLOBALMATCH (3)<br>
+        $STR_REGEXPARRAYGLOBALFULLMATCH (4)</td>
+        <td><span class="segments"><span lang="en">fill the array with all matching instances.</span><span lang="fr" style="display: none">remplit le tableau avec toutes les occurrences des correspondances.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">$STR_REGEXPARRAYFULLMATCH (2) and $STR_REGEXPARRAYGLOBALFULLMATCH (4) include the full matching text as the first element of the return array, not just the captured groups as with flag $STR_REGEXPARRAYMATCH (1) and $STR_REGEXPARRAYGLOBALMATCH (3).</span><span lang="fr" style="display: none">$STR_REGEXPARRAYFULLMATCH (2) et $STR_REGEXPARRAYGLOBALFULLMATCH (4) incluent le texte complet de la correspondance comme le premier élément du tableau retourné, pas seulement les groupes capturés comme avec les flags $STR_REGEXPARRAYMATCH (1) et $STR_REGEXPARRAYGLOBALMATCH (3).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Regular expression notation is a compact way of specifying a pattern for subject strings that can be searched and from which specific parts can be extracted by <a href="StringRegExp.htm">StringRegExp()</a> or replaced when using <a href="StringRegExpReplace.htm">StringRegExpReplace()</a>.</span><span lang="fr" style="display: none">La notation d'expression régulière est une façon compacte de définir un modèle de chaîne à rechercher et à partir duquel des portions spécifiques peuvent être extraites avec <a href="StringRegExp.htm">StringRegExp()</a> ou remplacées par <a href="StringRegExpReplace.htm">StringRegExpReplace()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">More precisely, the regular expression engine tries to match a pattern (a kind of programmatic format) with a subject string, both from left to right.</span><span lang="fr" style="display: none">Plus précisément, le moteur des expressions régulières s'efforce de trouver une ou des correspondances entre le modèle (une sorte de format préprogrammé) et la chaîne sujet, de la gauche vers la droite.</span></span> <span class="segments"><span lang="en">Should a mismatch occur, the engines tries to backtrack (return to successively previous states) as much as needed, expecting that the rest of the pattern will match as well.</span><span lang="fr" style="display: none">Si une différence apparaît, le moteur tente de faire marche arrière (retour à des états précédents successifs) autant que nécessaire, espérant que le reste du modèle correspondra ainsi.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Backtracking is a fundamental feature of regular expression engines and one that every novice programmer already understand and uses daily.</span><span lang="fr" style="display: none">Le retour arrière ('backtracking') est un aspect fondamental des moteurs d'expressions régulères et même le programmeur novice utilise ce mécanisme tous les jours.</span></span> It is like leaving a specific mark on every fork in the road and going back to the last untried path when the choosen path turns out to be a dead end: you backtrack as needed until you find the right point (match success) or explore every path without reaching your goal (match failure). Searching a given filename with optional wildcards inside a directory tree is no different.<br>
+  <br>
+  <span class="segments"><span lang="en">AutoIt uses the PCRE engine.</span><span lang="fr" style="display: none">AutoIt utilise le moteur PCRE.</span></span> <span class="segments"><span lang="en">PCRE means "Perl-Compatible Regular Expressions" and is the most comprehensive open-source engine available.</span><span lang="fr" style="display: none">PCRE signifie "Perl-Compatible Regular Expressions" et c'est le plus complet des moteurs open-source disponibles.</span></span> <span class="segments"><span lang="en">This implementation includes Unicode Category Properties (UCP) support, which allows fine-grain processing of most human languages.</span><span lang="fr" style="display: none">Cette implémentation inclut le support Unicode Category Properties (UCP), qui permet un traitement fin de la plupart des langages humains.</span></span><br>
+  <span class="segments"><span lang="en">However to maintain compatibility with previous versions and keep matching speed at its best, <strong>the UCP support is not enabled by default</strong>.</span><span lang="fr" style="display: none">Cependant, pour maintenir la compatibilité avec les versions précédentes et optimiser la vitesse d'exécution, <strong>le support UCP n'est pas activé par défaut</strong>.</span></span> <span class="segments"><span lang="en">You can enable it by prepending the string <strong>(*UCP)</strong> at the very start of your pattern.</span><span lang="fr" style="display: none">Vous pouvez l'activer en faisant insérant la chaîne <strong>(*UCP)</strong> en tête du modèle.</span></span> <span class="segments"><span lang="en">When enabled, the UCP setting changes the extend of a number of regular expression elements, as documented below where applicable.</span><span lang="fr" style="display: none">Lorsqu'il est activé, le réglage UCP change l'étendue d'un certain nombre d'éléments d'expressions régulières, comme documenté ci-dessous, le cas échéant.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">This page is only a summary for the most used pattern elements.</span><span lang="fr" style="display: none">Cette page est un résumé des éléments de modèle les plus utilisés.</span></span> <span class="segments"><span lang="en">For full in-depth discussion of regular expressions as implemented in AutoIt, refer to the <strong><a href="http://www.autoitscript.com/autoit3/pcrepattern.html" target="_blank">complete description of PCRE patterns</a></strong>.</span><span lang="fr" style="display: none">Pour une documentation complète et approfondie des expressions régulières implémentées dans AutoIt, reportez-vous à la <strong><a href="http://www.autoitscript.com/autoit3/pcrepattern.html" target="_blank">description complète des modèles PCRE</a></strong>.</span></span><strong><a href="http://www.autoitscript.com/autoit3/pcrepattern.html" target="_blank"></a></strong><br>
+  <span class="segments"><span lang="en">Unless you are already familiar with regular expressions you will probably need to read several parts of this summary more than once to grasp how they work and inter-relate.</span><span lang="fr" style="display: none">Sauf si vous êtes déjà familier avec les expressions régulières, vous aurez probablement besoin de lire plusieurs parties de ce résumé plus d'une fois pour comprendre comment elles fonctionnent et sont reliées entre elles.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Caution</strong>: bad regular expressions can produce a quasi-infinite loop hogging the CPU, and can even cause a crash.</span><span lang="fr" style="display: none"><strong>Attention</strong> : des expressions régulières mal conçues peuvent entraîner une boucle quasi-infinie mobilisant le processeur, entraînant même un dépassement de la pile utilisable.</span></span><br>
+  <br>
+  <h3><span class="segments"><span lang="en"><u>Global settings</u></span><span lang="fr" style="display: none"><u>Paramètres globaux</u></span></span></h3><br>
+  <span class="segments"><span lang="en">These settings are only recognized at the start of the pattern and affect it globally.</span><span lang="fr" style="display: none">Ces paramètres ne sont pris en compte qu'au début du modèle et l'affectent globalement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Newline conventions</strong></span><span lang="fr" style="display: none"><strong>Conventions de retour à la ligne</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Newline sequences affect where the <strong>^</strong> and <strong>$</strong> anchors match and what <strong>\N</strong> and <strong>.</strong></span><span lang="fr" style="display: none">Les séquences de saut de ligne affectent la sémantique des ancrages <strong>^</strong> et <strong>$</strong>, ainsi que des éléments <strong>\N</strong> et <strong>.</strong></span></span> <span class="segments"><span lang="en">do not match.</span><span lang="fr" style="display: none">.</span></span> <span class="segments"><span lang="en">By default the newline sequence is @CRLF as an unbreakable sequence or lone @CR or @LF.</span><span lang="fr" style="display: none">Par défaut, les séquences de saut de ligne reconnues sont soit @CRLF, soit @CR ou @LF isolés.</span></span><br>
+  <span class="segments"><span lang="en">The default can be changed by prepending one of the following sequence at the start of a pattern.</span><span lang="fr" style="display: none">La valeur par défaut peut être modifiée en ajoutant l'une des séquences suivantes au début d'un modèle :</span></span>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(*CR)</strong></td>
+        <td style="width:85%">Carriage return (@CR).</td>
+      </tr>
+      <tr>
+        <td><strong>(*LF)</strong></td>
+        <td>Line feed (@LF).</td>
+      </tr>
+      <tr>
+        <td><strong>(*CRLF)</strong></td>
+        <td><span class="segments"><span lang="en">Carriage return immediately followed by linefeed (@CRLF).</span><span lang="fr" style="display: none">Carriage return immédiatement suivi de linefeed (@CRLF).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*ANYCRLF)</strong></td>
+        <td><span class="segments"><span lang="en">Any of @CRLF, @CR or @LF.</span><span lang="fr" style="display: none">Toute séquence @CRLF, @CR ou @LF.</span></span> <span class="segments"><span lang="en">This is the default newline convention.</span><span lang="fr" style="display: none">Ceci est la convention de saut de ligne par défaut.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*ANY)</strong></td>
+        <td><span class="segments"><span lang="en">Any Unicode newline sequence:</span><span lang="fr" style="display: none">Une des séquences de saut de ligne Unicode :</span></span> <span class="segments"><span lang="en">@CRLF, @LF, VT, FF, @CR or \x85.</span><span lang="fr" style="display: none">@CRLF, @LF, VT, FF, @CR ou \x85.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>What \R matches</strong></span><span lang="fr" style="display: none"><strong>Signification de \R</strong></span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(*BSR_ANYCRLF)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">By default <strong>\R</strong> matches @CRLF, @CR or @LF only.</span><span lang="fr" style="display: none">Par défaut <strong>\R</strong> correspond à @CRLF, @CR ou @LF.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*BSR_UNICODE)</strong></td>
+        <td><span class="segments"><span lang="en">Changes <strong>\R</strong> to match any Unicode newline sequence:</span><span lang="fr" style="display: none">Change la signification de <strong>\R</strong> pour correspondre à toute séquence de saut de ligne Unicode :</span></span> <span class="segments"><span lang="en">@CRLF, @LF, VT, FF, @CR or \x85.</span><span lang="fr" style="display: none">@CRLF, @LF, VT, FF, @CR ou \x85.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">PCRE patterns may contain options, which are enclosed in <strong>(?</strong></span><strong><span lang="fr" style="display: none">Les modèles PCRE peuvent contenir des options, qui sont entourées par des séquences <strong>(?</strong></span> <span class="segments"><span lang="en">)</span> sequences.</span><span lang="fr" style="display: none">)</span>.</strong></span> <span class="segments"><span lang="en">Options can be grouped together:</span><span lang="fr" style="display: none">Les options peuvent être regroupés :</span></span> "(?imx)". <span class="segments"><span lang="en">Options following an hyphen are negated:</span><span lang="fr" style="display: none">Les options suivant un tiret sont annulées :</span></span> "(?im-sx)".<br>
+  <span class="segments"><span lang="en">Options appearing outside a group affect the remaining of the pattern from that point onwards.</span><span lang="fr" style="display: none">Les options apparaissant en dehors d'un groupe affectent la suite du modèle.</span></span> Options appearing inside a group affect that group only. Options loose their special meaning inside a character class, where they are treated literally.<br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(?i)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Caseless: matching becomes case-insensitive from that point on.</span><span lang="fr" style="display: none">Insensibilité à la casse : la correspondance devient insensible à la casse à partir de ce point.</span></span> <span class="segments"><span lang="en">By default, matching is case-sensitive.</span><span lang="fr" style="display: none">Par défaut, la correspondance est sensible à la casse.</span></span> <span class="segments"><span lang="en">When UCP is enabled casing applies to the entire Unicode plane 0, else applies by default to ASCII letters A-Z and a-z only.</span><span lang="fr" style="display: none">Quand l'option UCP est activée elle s'applique à l'ensemble du plan Unicode 0, sinon elle s'applique par défaut seulement aux lettres ASCII A-Z et a-z.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?m)</strong></td>
+        <td><span class="segments"><span lang="en">Multiline:</span><span lang="fr" style="display: none">Multiligne :</span></span> <span class="segments"><span lang="en"><strong>^</strong> and <strong>$</strong> match at newline sequences within data.</span><span lang="fr" style="display: none"><strong>^</strong> et <strong>$</strong> correspondent soit au début (resp.à la fin) du sujet, soit à la position précédent (resp.</span></span> <span class="segments"><span lang="en">By default, multiline is off.</span><span lang="fr" style="display: none">suivant) une séquence de saut de ligne.Par défaut, l'option multiligne est désactivée.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?s)</strong></td>
+        <td><span class="segments"><span lang="en">Single-line or <em>DotAll</em>:</span><span lang="fr" style="display: none">Mono-ligne ou <em>DotAll</em>:</span></span> <strong>.</strong> <span class="segments"><span lang="en">matches anything including a newline sequence.</span><span lang="fr" style="display: none">correspond à tout caractère, y compris une séquence de saut de ligne.</span></span> <span class="segments"><span lang="en">By default, DotAll is off hence <strong>.</strong></span><span lang="fr" style="display: none">L'option DotAll est désactivée par défaut, ainsi <strong>.</strong></span></span> <span class="segments"><span lang="en">does not match a newline sequence.</span><span lang="fr" style="display: none">ne correspond pas à une séquence de saut de ligne.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?U)</strong></td>
+        <td><span class="segments"><span lang="en">Ungreedy: quantifiers become lazy (non-greedy) from that point on.</span><span lang="fr" style="display: none">Paresseux : les quantificateurs deviennent paresseux (non gourmands) à partir de ce point.</span></span> <span class="segments"><span lang="en">By default, matching is greedy - see below for further explanation.</span><span lang="fr" style="display: none">Par défaut, la recherche est gourmande - voir ci-dessous pour plus de détails.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?x)</strong></td>
+        <td><span class="segments"><span lang="en">eXtended: whitespaces outside character classes are ignored and <strong>#</strong> starts a comment up to the next solid newline in pattern.</span><span lang="fr" style="display: none">Étendu : les espaces blancs à l'extérieur des classes de caractères sont ignorés et <strong>#</strong> démarre un commentaire jusqu'à la prochaine nouvelle ligne dans le modèle.</span></span> <span class="segments"><span lang="en">Meaningless whitespaces between components make regular expressions much more readable.</span><span lang="fr" style="display: none">L'espacement des éléments rendent les expressions régulières beaucoup plus lisibles.</span></span> <span class="segments"><span lang="en">By default, whitespaces match themselves and <strong>#</strong> is a literal character.</span><span lang="fr" style="display: none">Par défaut, les espaces blancs et <strong>#</strong> sont interprétés littéralement.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>Characters</strong></span><span lang="fr" style="display: none"><strong>Caractères</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Regular expressions patterns consist of literal Unicode text parts which match themselves, intermixed with regular expression specifiers or options.</span><span lang="fr" style="display: none">Les modèles d'expressions régulières se composent de littéraux Unicode (portions de texte qui correspondent à elles-mêmes), entremêlées d'éléments ou d'options d'expression régulière.</span></span> <span class="segments"><span lang="en">Specifiers and options use a few <u>metacharacters</u> which have a special meaning by themselves or introduce special pattern elements described in the tables below.</span><span lang="fr" style="display: none">Les éléments et les options utilisent quelques <u>méta-caractères</u> qui ont eux-même une signification particulière ou qui marquent le début d'éléments plus complexes décrits dans les tableaux ci-dessous.</span></span><br>
+  <span class="segments"><span lang="en">In literal parts, alphanumeric characters always stand for themselves: the pattern "literal part with 中国文字" matches exactly the string "literal part with 中国文字" ("中国文字" means "chinese text".)</span><span lang="fr" style="display: none">Dans les portions littérales, les caractères alphanumériques correspondent eux-mêmes : le modèle "partie littérale avec 中国文字" correspond exactement à la chaîne "partie littérale avec 中国文字" ("中国文字" signifie "texte chinois".)</span></span><br>
+  <span class="segments"><span lang="en">Some non-alphanumeric characters called <u>metacharacters</u> have special behavior, discussed thereafter.</span><span lang="fr" style="display: none">Certains caractères non-alphanumériques appelés <u>métacaractères</u> ont un comportement particulier, discuté par la suite.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Representing some characters literally</strong></span><span lang="fr" style="display: none"><strong>Représentation de quelques caractères littéraux</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The special sequences below are used to represent certain characters literally.</span><span lang="fr" style="display: none">Les séquences spéciales ci-dessous sont utilisés pour représenter certains caractères littéralement.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>\a</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Represents "alarm", the BEL character (Chr(7)).</span><span lang="fr" style="display: none">Représente "alarm", le caractère BEL (Chr(7)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\c</strong><em>X</em></td>
+        <td><span class="segments"><span lang="en">Represents "control-<em>X</em>", where <em>X</em> is any 7-bit ASCII character.</span><span lang="fr" style="display: none">Représente "contrôle-<em>X</em>", où <em>X</em> représente tout caractère ASCII 7 bits.</span></span> <span class="segments"><span lang="en">For example, "\cM" represents ctrl-M, same as \x0D or \r (Chr(13)).</span><span lang="fr" style="display: none">Par exemple, "\cM" représente ctrl-M, aussi représentable par \x0D ou \r (Chr(13)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\e</strong></td>
+        <td><span class="segments"><span lang="en">Represents the "escape" control character (Chr(27)).</span><span lang="fr" style="display: none">Représente le caractère de contrôle "échappement" (Chr(27)).</span></span> <em>Not to be confused with the escaping of a character!</em></td>
+      </tr>
+      <tr>
+        <td><strong>\f</strong></td>
+        <td><span class="segments"><span lang="en">Represents "formfeed" (Chr(12)).</span><span lang="fr" style="display: none">Représente "formfeed" (Chr(12)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\n</strong></td>
+        <td><span class="segments"><span lang="en">Represents "linefeed" (@LF, Chr(10)).</span><span lang="fr" style="display: none">Représente "linefeed" (@LF, Chr(10)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\r</strong></td>
+        <td><span class="segments"><span lang="en">Represents "carriage return" (@CR, Chr(13)).</span><span lang="fr" style="display: none">Représente "carriage return" (@CR, Chr(13)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\t</strong></td>
+        <td><span class="segments"><span lang="en">Represents "tab" (@TAB, Chr(9)).</span><span lang="fr" style="display: none">Représente "tab" (@TAB, Chr(9)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\</strong><em>ddd</em></td>
+        <td><span class="segments"><span lang="en">Represents character with octal code <em>ddd</em>, OR backreference to capturing group number <em>ddd</em> in decimal.</span><span lang="fr" style="display: none">Représente le caractère de code octal <em>ddd</em>, OU une référence arrière au groupe capturant numéro <em>ddd</em> (en décimal).</span></span> <span class="segments"><span lang="en">For example, <strong>([a-z])\1</strong> would match a doubled letter.</span><span lang="fr" style="display: none">Par exemple, <strong>([a-z])\1</strong> correspond à une minuscule doublée.</span></span><br>
+        <span class="segments"><span lang="en"><strong>Best avoided</strong> as it can be ambiguous!</span><span lang="fr" style="display: none"><strong>À éviter soigneusement</strong> à cause de cette ambiguité !</span></span> <span class="segments"><span lang="en">Favor the hex representations below.</span><span lang="fr" style="display: none">Utiliser de préférence les représentations hexadécimales ci-dessous.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\x</strong><em>hh</em></td>
+        <td><span class="segments"><span lang="en">Represents Unicode character with hex codepoint <em>hh</em>:</span><span lang="fr" style="display: none">Représente un caractère Unicode en hexadécimal <em>hh</em> :</span></span> <span class="segments"><span lang="en">"\x7E" represents a tilde, "~".</span><span lang="fr" style="display: none">"\x7E" représente une tilde, "~".</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\x{</strong><em>hhhh</em><strong>}</strong></td>
+        <td><span class="segments"><span lang="en">Represents Unicode character with hex codepoint <em>hhhh</em>:</span><span lang="fr" style="display: none">Représente un caractère Unicode en héxadécimal <em>hhhh</em> :</span></span> <span class="segments"><span lang="en">"\x{20AC}" represents the Euro symbol, "€" (ChrW(0x20AC)).</span><span lang="fr" style="display: none">"\x{20AC}" représente le symbole de l'Euro, "€" (ChrW(0x20AC)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\</strong><em>x</em></td>
+        <td><span class="segments"><span lang="en">where <em>x</em> is non-alphanumeric, stands for a literal <em>x</em>.</span><span lang="fr" style="display: none">où <em>x</em> est non-alphanumérique, représente un caractère <em>x</em> littéral.</span></span> <span class="segments"><span lang="en">Used to represent metacharacters literally:</span><span lang="fr" style="display: none">C'est &lt;s0&gt;l'échappement&lt;/s0&gt; du caractère &lt;e1&gt;x&lt;/e1&gt;.</span></span> <span class="segments"><span lang="en">"\.\[" represents a dot followed by a left square bracket, ".[".</span><span lang="fr" style="display: none">Utilisé pour représenter les méta-caractères littéraux :"\.\[" représente un point suivi d'un crochet ouvrant, ".[".</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\Q</strong> ... <strong>\E</strong></td>
+        <td><span class="segments"><span lang="en">Verbatim sequence: metacharacters loose their special meaning between <strong>\Q</strong> and <strong>\E</strong>:</span><span lang="fr" style="display: none">Séquence verbatim : les méta-caractères perdent leur signification spéciale entre <strong>\Q</strong> et <strong>\E</strong> :</span></span> <span class="segments"><span lang="en">"\Q(.)\E" matches "(.)" and is equivalent to, but more readable than, "\(\.\)".</span><span lang="fr" style="display: none">"\Q(.)\E" recherche la chaîne "(.)" et est bien plus lisible que le modèle équivalent "\(\.\)" .</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>Metacharacters</strong></span><span lang="fr" style="display: none"><strong>Méta-caractères</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">PCRE metacharacters are <strong>\ .</strong></span><strong><span lang="fr" style="display: none">Les méta-caractères PCRE sont <strong>\ .</strong></span> ^ $ | [ ( { * + ? <span class="segments"><span lang="en">#</span> which have one or more special meaning, depending on context.</span><span lang="fr" style="display: none">#</span> ils ont une ou plusieurs significations, selon le contexte.</strong></span><br>
+  To insert a literal metacharacter, precede it by adding a backslash (this is called <strong>escaping (or quoting) a character</strong>): <span class="segments"><span lang="en">"\$" means the dollar character.</span><span lang="fr" style="display: none">"\$" signifie le caractère dollar.</span></span><br>
+  <span class="segments"><span lang="en">Metacharacters will be discussed in separate sections where their behavior or meaning belong.</span><span lang="fr" style="display: none">Les méta-caractères seront abordés dans des sections distinctes qui traitent de leur comportement et de leur signification.</span></span><br>
+  <br>
+  <h3><span class="segments"><span lang="en"><u>Character types</u></span><span lang="fr" style="display: none"><u>Types de caractères</u></span></span></h3>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>.</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Matches any single character except, by default, a newline sequence.</span><span lang="fr" style="display: none">Correspond à tout caractère Unicode excepté une séquence de saut de ligne.</span></span> <span class="segments"><span lang="en">Matches newlines as well when option <strong>(?s)</strong> is active.</span><span lang="fr" style="display: none">Correspond à tout caractère Unicode lorsque l'option <strong>(?s)</strong> est active.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\d</strong></td>
+        <td><span class="segments"><span lang="en">Matches any decimal digit (any Unicode decimal digit in any language when UCP is enabled).</span><span lang="fr" style="display: none">Correspond à tout chiffre décimal (n'importe quel chiffre décimal Unicode de n'importe quel langage quand UCP est activé).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\D</strong></td>
+        <td><span class="segments"><span lang="en">Matches any non-digit.</span><span lang="fr" style="display: none">Correspond à tout caractère qui n'est pas un chiffre.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\h</strong></td>
+        <td><span class="segments"><span lang="en">Matches any horizontal whitespace character (see table below).</span><span lang="fr" style="display: none">Correspond à tout caractère d'espacement horizontal (voir tableau ci-dessous).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\H</strong></td>
+        <td><span class="segments"><span lang="en">Matches any character that is not a horizontal whitespace character.</span><span lang="fr" style="display: none">Correspond à tout caractère hors espacements horizontal.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\N</strong></td>
+        <td><span class="segments"><span lang="en">Matches any character except a newline sequence regardless of option <strong>(?s)</strong>.</span><span lang="fr" style="display: none">Correspond à tout caractère sauf à une séquence de saut de ligne, indépendament de l'option <strong>(?s)</strong>.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\p{</strong><em>ppp</em><strong>}</strong></td>
+        <td><span class="segments"><span lang="en">Only when UCP is enabled: matches any Unicode character having the property <em>ppp</em>.</span><span lang="fr" style="display: none">Seulement quand l'option UCP est activée : correspond à tout caractère Unicode possédant la propriété <em>ppp</em>.</span></span> <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> "\b\p{Cyrillic}+" matches any cyrillic word; "\p{Sc}" matches any currency symbol. <span class="segments"><span lang="en">See reference documentation for details.</span><span lang="fr" style="display: none">Consultez la documentation de référence pour plus de détails.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\P{</strong><em>ppp</em><strong>}</strong></td>
+        <td><span class="segments"><span lang="en">Only when UCP is enabled: matches any Unicode character not having the property <em>ppp</em>.</span><span lang="fr" style="display: none">Seulement quand l'option UCP est activée : correspond à tout caractère Unicode ne possédant pas la propriété <em>ppp</em>.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\R</strong></td>
+        <td><span class="segments"><span lang="en">Matches any Unicode newline sequence by default, or the currently active (*BSR_...) setting.</span><span lang="fr" style="display: none">Correspond à toute séquence 'newline' Unicode par défaut, ou avec le paramètre (*BSR_...)actif.</span></span> <span class="segments"><span lang="en">By default <strong>\R</strong> matches "(?&gt;\r\n|\n|\r)" where "(?&gt;...)" is an atomic group, making the sequence "\r\n" (@CRLF) unbreakable.</span><span lang="fr" style="display: none">Par défaut <strong>\R</strong> correspond à "(?&gt;\r\n|\n|\r)" où "(?&gt;...)" est un groupe atomique, entité qui rend la séquence "\r\n" (@CRLF) indivisible.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\s</strong></td>
+        <td><span class="segments"><span lang="en">Matches any whitespace character (see table below).</span><span lang="fr" style="display: none">Correspond à tout caractère d'espacement (voir tableau ci-dessous).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\S</strong></td>
+        <td><span class="segments"><span lang="en">Matches any non-whitespace character.</span><span lang="fr" style="display: none">Correspond à tout caractère hors espacements.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\v</strong></td>
+        <td><span class="segments"><span lang="en">Matches any vertical whitespace character (see table below).</span><span lang="fr" style="display: none">Correspond à tout caractère d'espacement vertical (voir tableau ci-dessous).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\V</strong></td>
+        <td><span class="segments"><span lang="en">Matches any character that is not a vertical whitespace character.</span><span lang="fr" style="display: none">Correspond à tout caractère hors espacement vertical.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\w</strong></td>
+        <td><span class="segments"><span lang="en">Matches any "word" character: any digit, any letter or underscore "_" (any Unicode digit, any Unicode letter in any language or underscore "_" when UCP is enabled).</span><span lang="fr" style="display: none">Correspond à tout caractère 'mot' : tout chiffre, lettre ou soulignement (underscore "_" ).Tout chiffre, lettre Unicode de tout langage ou soulignement (underscore "_") quand UCP est activé.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\W</strong></td>
+        <td><span class="segments"><span lang="en">Matches any non-word character.</span><span lang="fr" style="display: none">Correspond à tout caractère qui n'est pas 'mot'.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\X</strong></td>
+        <td><span class="segments"><span lang="en">Only when UCP is enabled: matches any Unicode extended grapheme cluster - an unbreakable sequence of codepoints which represent a single character for the user.</span><span lang="fr" style="display: none">Seulement quand UCP est activé : correspond à tout graphème étendu Unicode - une séquence indivisible de codes qui représente un seul caractère pour l'utilisateur.</span></span> <span class="segments"><span lang="en">As a consequence <strong>\X</strong> may match more than one character in the subject string, contrary to all other sequences in this table.</span><span lang="fr" style="display: none">En conséquence, <strong>\X</strong> peut correspond à plus d'un caractère dans la chaîne d'origine, contrairement à tous les autres éléments de ce tableau.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>Horizontal whitespace characters matched by \h</strong></span><span lang="fr" style="display: none"><strong>Caractères d'espacement horizontal correspondant à \h</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>\h</strong> is equivalent to "[\x09 \xA0]" by default (or "[\x09 \xA0\x{1680}\x{180E}\x{2000}-\x{200A}\x{202F}\x{205F}\x{3000}]" when UCP is enabled.)</span><span lang="fr" style="display: none"><strong>\h</strong> est équivalent à "[\x09 \xA0]" par défaut (ou "[\x09 \xA0\x{1680}\x{180E}\x{2000}-\x{200A}\x{202F}\x{205F}\x{3000}]" quand UCP est activé.)</span></span><br>
+  <span class="segments"><span lang="en">This set is:</span><span lang="fr" style="display: none">Cet ensemble se lit aussi :</span></span> Horizontal tab (HT), Space, Non-break space (adding: Ogham space mark, Mongolian vowel separator, En quad, Em quad, En space, Em space, Three-per-em space, Four-per-em space, Six-per-em space, Figure space, Punctuation space, Thin space, Hair space, Narrow no-break space, Medium mathematical space, Ideographic space when UCP is enabled.)<br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Vertical whitespace characters matched by \v</strong></span><span lang="fr" style="display: none"><strong>Caractères d'espacement vertical correspondant à \v</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>\v</strong> is equivalent to "[\x0A-\x0D]" by default (or "[\x0A-\x0D\x{0085}\x{2028}\x{2029}]" when UCP is enabled.)</span><span lang="fr" style="display: none"><strong>\v</strong> est équivalent à "[\x0A-\x0D]" par défaut (ou "[\x0A-\x0D\x{0085}\x{2028}\x{2029}]" quand UCP est activé.)</span></span><br>
+  <span class="segments"><span lang="en">This set is:</span><span lang="fr" style="display: none">Cet ensemble se lit aussi :</span></span> <span class="segments"><span lang="en">Linefeed (LF), Vertical tab (VT), Form feed (FF), Carriage return (CR) (adding:</span><span lang="fr" style="display: none">Linefeed (LF), Vertical tab (VT), Form feed (FF), Carriage return (CR) (en ajoutant :</span></span> <span class="segments"><span lang="en">Next line (NEL), Line separator, Paragraph separator when UCP is enabled.)</span><span lang="fr" style="display: none">Next line (NEL), Line separator, Paragraph separator quand UCP est activé.)</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Whitespace characters matched by \s</strong></span><span lang="fr" style="display: none"><strong>Caractères d'espacement correspondant à \s</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>\s</strong> is equivalent to "[\h\x0A\x0C\x0D]".</span><span lang="fr" style="display: none"><strong>\s</strong> est équivalent à "[\h\x0A\x0C\x0D]".</span></span><br>
+  <span class="segments"><span lang="en">This set is: all characters in <strong>\h</strong> plus Linefeed (LF), Form feed (FF), Carriage return (CR).</span><span lang="fr" style="display: none">Cet ensemble comprend tous les caractères de <strong>\h</strong> plus Linefeed (LF), Form feed (FF), Carriage return (CR).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Whitespace characters matched by [[:space:]]</strong></span><span lang="fr" style="display: none"><strong>Caractères d'espacement correspondant à [[:space:]]</strong>(voir cette classe POSIX ci-dessous)</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>[[:space:]]</strong> is equivalent to "\s".</span><span lang="fr" style="display: none"><strong>[[:space:]]</strong> est équivalent à "\s".</span></span><br>
+  <span class="segments"><span lang="en">This set is: all characters in <strong>\s</strong> plus Vertical tab (VT).</span><span lang="fr" style="display: none">Cet ensemble comprend tous les caractères de <strong>\s</strong> plus Vertical tab (VT).</span></span><br>
+  <h3><span class="segments"><span lang="en"><u>Character classes and POSIX classes</u></span><span lang="fr" style="display: none"><u>Classes de caractère et classes POSIX</u></span></span></h3><br>
+  <span class="segments"><span lang="en"><strong>Character classes</strong></span><span lang="fr" style="display: none"><strong>Classes de caractère</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">A character classes defines a set of allowed (resp. disallowed) characters, which the next character in subject is expected to match (resp. not to match).</span><span lang="fr" style="display: none">Les classes de caractère définissent un ensemble de caractères permis (resp.interdits), auquel le prochain caractère de la chaîne sujet doit appartenir (resp.</span></span><br>
+  <span class="segments"><span lang="en">Inside a character classes, most metacharacters loose their meaning (like $ .</span><span lang="fr" style="display: none">Dans les classes de caractère, la plupart des méta-caractères perdent leur signification spéciale (comme $ .</span></span> <span class="segments"><span lang="en">or *) or mean something else (like ^).</span><span lang="fr" style="display: none">ou *) et sont interprétés littéralement ; certains revêtent une autre signification (comme ^).</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>[</strong> ... <strong>]</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Matches any character in the explicit set:</span><span lang="fr" style="display: none">correspond à tout caractère d'un ensemble explicite :</span></span> <span class="segments"><span lang="en">"[aeiou]" matches any lowercase vowel.</span><span lang="fr" style="display: none">"[aeiouy]" correspond à toute voyelle minuscule.</span></span> <span class="segments"><span lang="en">A contiguous (in Unicode codepoint increasing order) set can be defined by putting an hyphen between the starting and ending characters:</span><span lang="fr" style="display: none">Un ensemble contigu (en Unicode le code définit un ordre) peut être défini en plaçant un trait d'union entre les caractères de départ et de fin :</span></span> <span class="segments"><span lang="en">"[a-z]" matches any lowercase ASCII letter.</span><span lang="fr" style="display: none">"[a-z]" correspond à toute lettre ASCII minuscule.</span></span> <span class="segments"><span lang="en">To include a hyphen (-) in a set, put it as the first or last character of the set or escape it (\-).</span><span lang="fr" style="display: none">Pour inclure un tiret (-) dans l'ensemble, placez-le au début ou à la fin de l'ensemble, ou utilisez l'échappement (\-).</span></span><br>
+        <span class="segments"><span lang="en">Notice that the pattern "[A-z]" is not the same as "[A-Za-z]": the former is equivalent to "[A-Z\[\\\]^_`a-z]".</span><span lang="fr" style="display: none">Notez que le modèle "[A-z]" est distinct de "[A-Za-z]" : ce dernier équivaut à "[A-Z\[\\\]^_`a-z]".</span></span><br>
+        <span class="segments"><span lang="en">To include a closing bracket in a set, use it as the first character of the set or escape it:</span><span lang="fr" style="display: none">Pour inclure un crochet fermant dans l'ensemble, placez-le en première position de l'ensemble ou utilisez l'échappement :</span></span> <span class="segments"><span lang="en">"[][]" and "[\[\]]" will both match either "[" or "]".</span><span lang="fr" style="display: none">"[][]" ou encore "[\[\]]" correspond à "[" ou "]".</span></span><br>
+        <span class="segments"><span lang="en">Note that in a character class, only <strong>\d</strong>, <strong>\D</strong>, <strong>\h</strong>, <strong>\H</strong>, <strong>\p{}</strong>, <strong>\P{}</strong>, <strong>\s</strong>, <strong>\Q</strong>...<strong>\E</strong>, <strong>\S</strong>, <strong>\v</strong>, <strong>\V</strong>, <strong>\w</strong>, <strong>\W</strong>, and <strong>\x</strong> sequences retain their special meaning, while <strong>\b</strong> means the backspace character (Chr(8)).</span><span lang="fr" style="display: none">Notez que dans une classe de caractère, seules les séquences <strong>\d</strong>, <strong>\D</strong>, <strong>\h</strong>, <strong>\H</strong>, <strong>\p{}</strong>, <strong>\P{}</strong>, <strong>\s</strong>, <strong>\Q</strong>...<strong>\E</strong>, <strong>\S</strong>, <strong>\v</strong>, <strong>\V</strong>, <strong>\w</strong>, <strong>\W</strong>, et <strong>\x</strong> conservent leur signification spéciale, tandis que <strong>\b</strong> désigne le caractère retour arrière (Chr(8)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>[^</strong> ... <strong>]</strong></td>
+        <td>Matches any character <strong>not</strong> in the set: "[^0-9]" matches any non-digit. <span class="segments"><span lang="en">To include a caret (^) in a set, put it after the beginning of the set or escape it (\^).</span><span lang="fr" style="display: none">Pour inclure un caret (^) dans un ensemble, placez-le ailleurs qu'en première position de l'ensemble ou utilisez l'échappement (\^).</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>POSIX classes</strong></span><span lang="fr" style="display: none"><strong>Les classes POSIX</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">These are named sets specifications to be used themselves within a character class:</span><span lang="fr" style="display: none">Ce sont des spécifications d'ensembles prédéfinis destinés à être utilisées elles-mêmes dans une classe de caractère :</span></span> <span class="segments"><span lang="en">"[z[:digit:]w-y]" is the same as "[w-z0-9]".</span><span lang="fr" style="display: none">"[z[:digit:]w-y]" est le même modèle que "[w-z0-9]".</span></span> <span class="segments"><span lang="en">To negate a POSIX character class, put a caret (^) after the first colon:</span><span lang="fr" style="display: none">Pour complémenter une classe POSIX, placez un caret (^) devant son nom :</span></span> "[[:^digit:]]".<br>
+  <span class="segments"><span lang="en">When UCP is enabled, several POSIX classes extend to some Unicode character subset, else they are by default restricted to 7-bit ASCII.</span><span lang="fr" style="display: none">Quand UCP est activé, certaines classes POSIX s'étendent à des sous-ensembles de caractère Unicode, sinon elles sont par défaut restreintes à des caractères ASCII 7 bits.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>[:alnum:]</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">ASCII letters and digits (same as [^\W_] or [A-Za-z0-9]).</span><span lang="fr" style="display: none">Lettres et chiffres ASCII 7 bits (équivaut à [^\W_] ou encore [A-Za-z0-9]).</span></span><br>
+        When UCP is enabled: Unicode letters and digits (same as [^\W_] or \p{Xan}).</td>
+      </tr>
+      <tr>
+        <td><strong>[:alpha:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII letters (same as [^\W\d_] or [A-Za-z]).</span><span lang="fr" style="display: none">Lettres ASCII (équivaut à [^\W\d_] ou [A-Za-z]).</span></span><br>
+        When UCP is enabled: Unicode letters (same as [^\W\d_] or \p{L}).</td>
+      </tr>
+      <tr>
+        <td><strong>[:ascii:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII characters (same as [\x00-\x7F]).</span><span lang="fr" style="display: none">Caractères ASCII 7 bits (équivaut à [\x00-\x7F]).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>[:blank:]</strong></td>
+        <td><span class="segments"><span lang="en">Space or Tab (@TAB) (same as \h or [\x09\x20]).</span><span lang="fr" style="display: none">Espacement horizontal (équivaut à \h ou [\x09\x20]).</span></span><br>
+        When UCP is enabled: Unicode horizontal whitespaces (same as \h).</td>
+      </tr>
+      <tr>
+        <td><strong>[:cntrl:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII control characters (same as Chr(0) ...</span><span lang="fr" style="display: none">Caractères de contrôle ASCII (équivaut à Chr(0) ...</span></span> <span class="segments"><span lang="en">Chr(31) and Chr(127)).</span><span lang="fr" style="display: none">Chr(31) et Chr(127)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>[:digit:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII decimal digits (same as \d or [0-9]).</span><span lang="fr" style="display: none">Chiffres décimaux ASCII (équivaut à \d ou [0-9]).</span></span><br>
+        When UCP is enabled: Unicode decimal digits (same as \d or \p{Nd}).</td>
+      </tr>
+      <tr>
+        <td><strong>[:graph:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII printing characters, excluding space (same as Chr(33) ...</span><span lang="fr" style="display: none">Caractères ASCII imprimables hors espacements (équivaut à Chr(33) ...</span></span> Chr(126)).</td>
+      </tr>
+      <tr>
+        <td><strong>[:lower:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII lowercase letters (same as [a-z]).</span><span lang="fr" style="display: none">Lettres minuscules ASCII 7 bits (équivaut à [a-z]).</span></span><br>
+        When UCP is enabled: Unicode lowercase letters (same as \p{Ll}).</td>
+      </tr>
+      <tr>
+        <td><strong>[:print:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII printing characters, including space (same as Chr(32) ...</span><span lang="fr" style="display: none">Caractères ASCII imprimables ASCII 7 bits, y compris espacements (équivaut à Chr(32) ...</span></span> Chr(126)).</td>
+      </tr>
+      <tr>
+        <td><strong>[:punct:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII punctuation characters, [:print:] excluding [:alnum:] and space, (33-47, 58-64, 91-96, 123-126).</span><span lang="fr" style="display: none">Caractères de ponctuation ASCII, [:print:] sauf [:alnum:] et Espace, (33-47, 58-64, 91-96, 123-126).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>[:space:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII white space (same as [\h\x0A-\x0D]).</span><span lang="fr" style="display: none">Espacements ASCII (équivaut à [\h\x0A-\x0D]).</span></span> <strong>[:space:]</strong> is not quite the same as <strong>\s</strong>: it includes VT, Chr(11)).</td>
+      </tr>
+      <tr>
+        <td><strong>[:upper:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII uppercase letters (same as [A-Z]).</span><span lang="fr" style="display: none">Lettres majuscules ASCII 7 bits (équivaut à [A-Z]).</span></span><br>
+        When UCP is enabled: Unicode uppercase letters (same as \p{Lu}).</td>
+      </tr>
+      <tr>
+        <td><strong>[:word:]</strong></td>
+        <td><span class="segments"><span lang="en">ASCII "Word" characters (same as \w or [[:alnum:]_]).</span><span lang="fr" style="display: none">Caractères 'mot' ASCII 7 bits (équivaut à \w or [[:alnum:]_]).</span></span><br>
+        When UCP is enabled: Unicode "word" characters (same as \w or [[:alnum:]_] or \p{Xwd}).</td>
+      </tr>
+      <tr>
+        <td><strong>[:xdigit:]</strong></td>
+        <td><span class="segments"><span lang="en">Hexadecimal digits (same as [0-9A-Fa-f]).</span><span lang="fr" style="display: none">Chiffres hexadécimaux (équivaut à [0-9A-Fa-f]).</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">Groups are used to delimit subpatterns and are the building blocks of powerful expressions.</span><span lang="fr" style="display: none">Les Groupes sont utilisés pour délimiter des sous-modèles et sont les blocs de construction d'expressions puissantes.</span></span> <span class="segments"><span lang="en">Groups can be either capturing or not and may be nested irrespective of their nature, except comments groups.</span><span lang="fr" style="display: none">Les groupes peuvent capturer ou pas et peuvent être imbriqués quelle que soit leur nature, à l'exception des groupes de commentaire.</span></span> <span class="segments"><span lang="en">A regular expression can contain up to 65535 capturing groups.</span><span lang="fr" style="display: none">Une expression régulière peut contenir jusqu'à 65535 groupes de capture.</span></span><br>
+  <span class="segments"><span lang="en">Option letters (discussed above) can be conveniently inserted between the "?" and the ":" of non-capturing groups:</span><span lang="fr" style="display: none">Les lettres d'option (ci-dessus) peuvent être insérés entre "?"et ":" des groupes non-capturants :</span></span> <span class="segments"><span lang="en">"(?-i:[aeiou]{5})" matches 5 lowercase vowels.</span><span lang="fr" style="display: none">"(?-i:[aeiouy]{5})" correspond à 5 voyelles minuscules.</span></span> <span class="segments"><span lang="en">In this case options are local to the group.</span><span lang="fr" style="display: none">Dans ce cas, les options sont locales au groupe.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(</strong> ... <strong>)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Capturing group.</span><span lang="fr" style="display: none">Groupe capturant.</span></span> <span class="segments"><span lang="en">The elements in the group are treated in order and can be repeated as a block.</span><span lang="fr" style="display: none">Les éléments d'un groupe sont traités dans l'ordre et peuvent être répétés comme un bloc.</span></span> <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> "(ab)+c" will match "abc" or "ababc", but not "abac".<br>
+        <span class="segments"><span lang="en">Capturing groups remember the text they matched for use in backreferences and they populate the optionally returned array.</span><span lang="fr" style="display: none">Un groupe capturant enregistre le texte auquel il a correspondu et ce contenu est utilisable par référence arrière.Ce contenu se retrouve dans le tableau renvoyé dans certains modes.</span></span> <span class="segments"><span lang="en">They are numbered starting from 1 in the order of appearance of their opening parenthesis.</span><span lang="fr" style="display: none">Les groupes capturant sont numérotés à partir de 1 dans l'ordre d'apparition de leur parenthèse ouvrante.</span></span><br>
+        <span class="segments"><span lang="en">Capturing groups may also be treated as subroutines elsewhere in the pattern, possibly recursively.</span><span lang="fr" style="display: none">Les groupes capturant peuvent également être considérés comme des sous-routines, référençables ailleurs dans le modèle, éventuellement de manière récursive.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?&lt;</strong><em>name</em><strong>&gt;</strong> ... <strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Named capturing group.</span><span lang="fr" style="display: none">Groupe de capture nommé.</span></span> <span class="segments"><span lang="en">Can be later referenced by name as well as by number.</span><span lang="fr" style="display: none">Peut être appelé plus tard par son nom aussi bien que par son numéro.</span></span> <span class="segments"><span lang="en">Avoid using the name "DEFINE" (see "conditional patterns").</span><span lang="fr" style="display: none">Évitez d'utiliser le nom "DEFINE" (voir "Modèles conditionnels").</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?:</strong> ... <strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Non-capturing group.</span><span lang="fr" style="display: none">Groupe non-capturant.</span></span> <span class="segments"><span lang="en">Does not record the matching characters in the array and cannot be re-used as backreference.</span><span lang="fr" style="display: none">N'enregistre pas le texte auquel il a correspondu et n'est pas numéroté ; ne peut donc pas être réutilisé par référencence arrière.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?|</strong> ... <strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Non-capturing group with reset.</span><span lang="fr" style="display: none">Groupe non-capturant avec réemploi.</span></span> <span class="segments"><span lang="en">Resets capturing group numbers in each top-level alternative it contains:</span><span lang="fr" style="display: none">Affecte le même numéro à tous les groupes capturant de premier niveau figurant dans les alternatives de ce groupe :</span></span> <span class="segments"><span lang="en">"(?|(Mon)|(Tue)s|(Wed)nes|(Thu)rs|(Fri)|(Sat)ur|(Sun))day" matches a weekday name and captures its abbreviation in group number 1.</span><span lang="fr" style="display: none">"(?|(Lu)ndi|(Ma)rdi|(Me)rcredi|(Je)udi|(Ve)ndredi|(Sa)medi|(Di)manche)" correspond à un nom de jour de la semaine et capture son abréviation dans le groupe numéro 1.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?&gt;</strong> ... <strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Atomic non-capturing group: locks and never backtracks into (gives back from) what has been matched (see also Quantifiers and greediness below).</span><span lang="fr" style="display: none">Groupe atomique non-capturant : traite le contenu auquel il correspond comme une entité indivisible (voir aussi Quantificateurs et gourmandise ci-dessous).</span></span> <span class="segments"><span lang="en">Atomic groups, like possessive quantifiers, are always greedy.</span><span lang="fr" style="display: none">Les groupes atomiques, comme les quantifications possessives, sont toujours gourmands.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?#</strong> ... <strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Comment group: always ignored (but may not contain a closing parenthesis, hence comment groups are not nestable).</span><span lang="fr" style="display: none">Groupe commentaire : toujours ignoré (mais ne peut pas contenir une parenthèse fermante donc les commentaires de groupes ne sont pas emboîtables).</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">Quantifiers (or repetition specifiers) specify how many of the preceding character, class, reference or group are expected to match.</span><span lang="fr" style="display: none">Les Quantificateurs (ou spécificateurs de répétition) spécifient combien de ce qui précède, caractère, classe, référence ou groupe devraient correspondre.</span></span> <span class="segments"><span lang="en">Optional greediness qualifiers denote how aggressively the repetition will behave.</span><span lang="fr" style="display: none">Les qualificatifs optionnels de gourmandise indiquent avec quelle agressivité la répétition se comportera.</span></span> <span class="segments"><span lang="en">For instance "\d{3,5}" will match at least 3 and no more than 5 decimal digits.</span><span lang="fr" style="display: none">Par exemple "\d{3,5}" correspond à au moins 3 et au plus de 5 chiffres décimaux.</span></span><br>
+  <span class="segments"><span lang="en">By default, patterns are "<u>greedy</u>", which means that quantifiers <strong>* + ?</strong></span><strong><span lang="fr" style="display: none">Par défaut, les modèles sont "<u>gourmands</u>", ce qui signifie que les quantificateurs <strong>* + ?</strong></span> <span class="segments"><span lang="en">{</span>...<strong>}</strong> will match the longest string which doesn't cause the rest of the pattern to fail.</span><span lang="fr" style="display: none">{</span>...<strong>}</strong>correspondront à la chaîne la plus longue qui ne fera pas échouer le reste du modèle.</strong></span> Greediness can be inverted for the entire pattern by giving option (?U) at the head of the pattern, or locally by placing a question mark following a quantifier.<br>
+  <span class="segments"><span lang="en">Non-greedy (<u>lazy</u>) repetitions will match the smallest string that still allows the rest of the pattern to match.</span><span lang="fr" style="display: none">Les répétitions non-gourmandes (<u>frugales</u>) correspondront à la plus petite chaîne qui permettra au reste du modèle de correspondre.</span></span> E.g. given the subject "aaab", the pattern "(a*)([ab]+)" will capture "aaa" then "b", but "(?U)(a*)([ab]+)" will capture "" then "a": indeed, capturing an empty string is good enough to satisfy the lazy "(a*)" and capturing "a" matches the lazy "([ab]+)" subpattern.<br>
+  <span class="segments"><span lang="en">Possessive quantifiers are atomic and greedy.</span><span lang="fr" style="display: none">Les quantificateurs possessifs sont atomiques et gourmands.</span></span> <span class="segments"><span lang="en">In fact they are a short notation for simple atomic groups.</span><span lang="fr" style="display: none">En fait, ils sont une notation abrégée pour les groupes atomiques simples.</span></span> <span class="segments"><span lang="en">"\d++" is a shorthand notation for "(?&gt;\d+)" and its behavior is "match a complete sequence of one or more digits, but never give back any".</span><span lang="fr" style="display: none">"\d++" est une notation abrégée pour "(?&gt;\d+)" et son comportement est "faire correspondre une séquence indivisible d'un ou plusieurs chiffres décimaux, sans possibilité d'en restituer une partie seulement par retour arrière".</span></span> <span class="segments"><span lang="en">As a consequence "\d++<strong>(\d</strong>)" can never match since the last digit (in bold) is already matched and locked by "\d++".</span><span lang="fr" style="display: none">En conséquence "\d++<strong>(\d</strong>)" est un modèle voué à l'échec du fait que le dernier chiffre (en gras) fait forcément partie du groupe indivisible "\d++" qui le précède.</span></span> <span class="segments"><span lang="en">This is in contrast with simple greediness, where "\d+(\d)" will first match a complete sequence of digits with "\d+", but then backtrack the last one to allow "<strong>(\d)</strong>" to capture it.</span><span lang="fr" style="display: none">Par contraste, la gourmandise simple "\d+(\d)" fera d'abord correspondre une séquence complète de chiffres pour satisfaire l'élément "\d+", mais entraînera un retour arrière et la restitution du dernier chiffre de la séquence pour satisfaire sa capture par "<strong>(\d)</strong>".</span></span><br>
+  <span class="segments"><span lang="en">There are two reasons for using an atomic group or a possessive quantifier: either for matching a sequence of characters that may also appear individually (e.g.</span><span lang="fr" style="display: none">Il y a deux raisons principales qui amènent à employer un groupe atomique ou un quantificateur possessif : pour la correspondance avec une séquence de caractères qui peuvent aussi apparaître individuellement (e.g.</span></span> <span class="segments"><span lang="en">"\r\n" in the definition of <strong>\R</strong>), or for forcing a quick failure in certain situations involving unbounded repetitions, where the engine would normally spend a very long time trying a huge number of grouping combinations before failing.</span><span lang="fr" style="display: none">"\r\n" dans la définition de <strong>\R</strong>), ou pour forcer rapidement l'échec dans certaines situations utilisant des répétitions non bornées qui amèneraient le moteur à tester un nombre gigantesque de combinaisons de groupements avant de finalement échouer.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>?</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">0 or 1, greedy.</span><span lang="fr" style="display: none">0 ou 1, gourmand.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>?+</strong></td>
+        <td><span class="segments"><span lang="en">0 or 1, possessive.</span><span lang="fr" style="display: none">0 ou 1, possessif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>??</strong></td>
+        <td><span class="segments"><span lang="en">0 or 1, lazy.</span><span lang="fr" style="display: none">0 ou 1, frugal.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>*</strong></td>
+        <td><span class="segments"><span lang="en">0 or more, greedy.</span><span lang="fr" style="display: none">0 ou plus, gourmand.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>*+</strong></td>
+        <td><span class="segments"><span lang="en">0 or more, possessive.</span><span lang="fr" style="display: none">0 ou plus, possessif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>*?</strong></td>
+        <td><span class="segments"><span lang="en">0 or more, lazy.</span><span lang="fr" style="display: none">0 ou plus, frugal.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>+</strong></td>
+        <td><span class="segments"><span lang="en">1 or more, greedy.</span><span lang="fr" style="display: none">1 ou plus, gourmand.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>++</strong></td>
+        <td><span class="segments"><span lang="en">1 or more, possessive.</span><span lang="fr" style="display: none">1 ou plus, possessif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>+?</strong></td>
+        <td><span class="segments"><span lang="en">1 or more, lazy.</span><span lang="fr" style="display: none">1 ou plus, frugal.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>}</strong></td>
+        <td><span class="segments"><span lang="en">exactly <em>x</em>.</span><span lang="fr" style="display: none">exactement <em>x</em>.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>,</strong><em>y</em><strong>}</strong></td>
+        <td><span class="segments"><span lang="en">at least <em>x</em> and no more than <em>y</em>, greedy.</span><span lang="fr" style="display: none">au moins <em>x</em> et au plus <em>y</em>, gourmand.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>,</strong><em>y</em><strong>}+</strong></td>
+        <td><span class="segments"><span lang="en">at least <em>x</em> and no more than <em>y</em>, possessive.</span><span lang="fr" style="display: none">au moins <em>x</em> et au plus <em>y</em>, possessif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>,</strong><em>y</em><strong>}?</strong></td>
+        <td><span class="segments"><span lang="en">at least <em>x</em> and no more than <em>y</em>, lazy.</span><span lang="fr" style="display: none">au moins <em>x</em> et au plus <em>y</em>, frugal.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>,}</strong></td>
+        <td><span class="segments"><span lang="en"><em>x</em> or more, greedy.</span><span lang="fr" style="display: none"><em>x</em> ou plus, gourmand.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>,}+</strong></td>
+        <td><span class="segments"><span lang="en"><em>x</em> or more, possessive.</span><span lang="fr" style="display: none"><em>x</em> ou plus, possessif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>{</strong><em>x</em><strong>,}?</strong></td>
+        <td><span class="segments"><span lang="en"><em>x</em> or more, lazy.</span><span lang="fr" style="display: none"><em>x</em> ou plus, frugal.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><em>X</em><strong>|</strong><em>Y</em></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Matches either subpattern <em>X</em> or <em>Y</em>:</span><span lang="fr" style="display: none">Correspond à l'une des alternatives <em>X</em> ou <em>Y</em>:</span></span> <span class="segments"><span lang="en">"ac|dc|ground" matches "ac" or "dc" or "ground".</span><span lang="fr" style="display: none">"ac|dc|ground" correspond à "ac" ou "dc" ou "ground".</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>Backreferences</strong> permit reuse of the content of a previously captured group.</span><span lang="fr" style="display: none">Les <strong>références arrières</strong> permettent la réutilisation du contenu d'un groupe précédemment capturé.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>\</strong><em>n</em></td>
+        <td style="width:85%"><span class="segments"><span lang="en">References a previous capturing group by its absolute number.</span><span lang="fr" style="display: none">Référence au numéro absolu d'un groupe précédemment capturé.</span></span> <span class="segments"><span lang="en">WARNING: if no group number <em>n</em> exists, it evaluates as the character with value <em>n</em> provided <em>n</em> is a valid octal value, else errors out.</span><span lang="fr" style="display: none">ATTENTION: si aucun groupe numéroté <em>n</em> n'existe, cet élément est évalué comme le caractère de valeur <em>n</em> si <em>n</em> est une valeur octale valide, sinon d'autres erreurs apparaissent.</span></span><br>
+        <span class="segments"><span lang="en">Due to this ambiguity, this form is not recommended.</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; En raison de cette ambiguïté, cette formulation est à utiliser avec précaution.</span></span> <span class="segments"><span lang="en">Favor the next forms for a safe semantic.</span><span lang="fr" style="display: none">Favorisez les formes suivantes pour une meilleure sécurité sémantique.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\g</strong><em>n</em></td>
+        <td><span class="segments"><span lang="en">References a previous capturing group by its absolute number.</span><span lang="fr" style="display: none">Référence au numéro absolu d'un groupe précédemment capturé.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\g{</strong><em>n</em><strong>}</strong></td>
+        <td><span class="segments"><span lang="en">References a previous capturing group by its absolute number.</span><span lang="fr" style="display: none">Référence au numéro absolu d'un groupe précédemment capturé.</span></span> <span class="segments"><span lang="en">Similar to above but clearly delimits where <em>n</em> ends: useful when the following character(s) is(are) digits.</span><span lang="fr" style="display: none">Similaire au précédent mais délimite clairement <em>n</em> : impérative lorsque les caractères qui suivent sont des chiffres.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\g-</strong><em>n</em></td>
+        <td><span class="segments"><span lang="en">References a previous capturing group by its relative number.</span><span lang="fr" style="display: none">Référence au numéro relatif d'un groupe précédemment capturé.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\k&lt;</strong><em>name</em><strong>&gt;</strong></td>
+        <td><span class="segments"><span lang="en">References a previous capturing group by its name.</span><span lang="fr" style="display: none">Référence au nom d'un groupe précédemment capturé.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>References to subroutines</strong></span><span lang="fr" style="display: none"><strong>Référence à un sous-programme</strong></span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Capturing groups are subpatterns that can be invoked (possibly recursively) exactly like subroutines in a programming language.</span><span lang="fr" style="display: none">Les groupes capturant peuvent être invoqués (éventuellement de manière récursive) exactement comme des sous-programmes dans un langage de programmation.</span></span> <span class="segments"><span lang="en">The subpattern is simply re-run at the current matching point.</span><span lang="fr" style="display: none">Le sous-modèle est tout simplement ré-exécuté au point courant dans le sujet.</span></span> <span class="segments"><span lang="en">See reference documentation for details and examples.</span><span lang="fr" style="display: none">Voir la documentation de référence pour des détails et des exemples.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(?R)</strong> or <strong>(?0)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Recurses into the entire regular expression.</span><span lang="fr" style="display: none">Récursivité vers l'expression régulière entière.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Calls subpattern by absolute number.</span><span lang="fr" style="display: none">Appelle un sous-modèle par son numéro absolu.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?+</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Calls subpattern by relative number.</span><span lang="fr" style="display: none">Appelle un sous-modèle par son numéro relatif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?-</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Calls subpattern by relative number.</span><span lang="fr" style="display: none">Appelle un sous-modèle par son numéro relatif.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?&</strong><em>name</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Calls subpattern by name.</span><span lang="fr" style="display: none">Appelle un sous-modèle par son nom.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">Anchors and assertions are tests that do not change the matching position and therefore do not consume nor capture anything.</span><span lang="fr" style="display: none">Les ancrages et les assertions sont des contraintes, des tests qui ne changent pas la position dans le sujet et donc ne consomment ni ne capturent quoi que ce soit.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Anchors</strong> test the position of the current matching point.</span><span lang="fr" style="display: none">Un <strong>ancrage</strong> teste la position courante dans le sujet.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>^</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Outside a character class, the caret matches at the start of the subject text, and also just after a non-final newline sequence if option <strong>(?m)</strong> is active.</span><span lang="fr" style="display: none">En dehors d'une classe de caractère, ce test est satisfait si la position courante est le début du sujet, mais également après une séquence de saut de ligne non-finale si l'option <strong>(?m)</strong> est active.</span></span> <span class="segments"><span lang="en">By default the newline sequence is @CRLF.</span><span lang="fr" style="display: none">Par défaut, la séquence de saut de ligne est soit @CRLF, soit @CR ou @LF isolés.</span></span><br>
+        <span class="segments"><span lang="en">Inside a character class, a leading <strong>^</strong> complements the class (excludes the characters listed there).</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dans une classe de caractères, un caret <strong>^</strong> complémente la classe (exclut les caractères qu'elle représente) s'il figure en première position, correspond littéralement s'il se trouve dans une autre position.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>$</strong></td>
+        <td><span class="segments"><span lang="en">Outside a character class, the dollar matches at the end of the subject text, and also just before a newline sequence if option <strong>(?m)</strong> is active.</span><span lang="fr" style="display: none">En dehors d'une classe de caractères, ce test est satisfait si la position courante est à la fin du texte sujet, mais également avant une séquence de saut de ligne si l'option <strong>(?m)</strong> est active.</span></span><br>
+        <span class="segments"><span lang="en">Inside a character class, <strong>$</strong> means itself, a dollar sign.</span><span lang="fr" style="display: none">Dans une classe de caractères, <strong>$</strong> correspond au signe dollar lui-même.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\A</strong></td>
+        <td><span class="segments"><span lang="en">Matches only at the absolute beginning of subject string, irrespective of the multiline option <strong>(?m)</strong>.</span><span lang="fr" style="display: none">Test satisfait si la position courante est le début du sujet, indépendament de l'option multiligne <strong>(?m)</strong>.</span></span> <span class="segments"><span lang="en">Will never match if offset is not 1.</span><span lang="fr" style="display: none">Échoue forcément si l'offset n'est pas 1.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\G</strong></td>
+        <td><span class="segments"><span lang="en">Matches when the current position is the first matching position in subject.</span><span lang="fr" style="display: none">Test satisfait si la position courante est la première correspondance trouvée dans le sujet.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\z</strong></td>
+        <td><span class="segments"><span lang="en">Matches only at end of subject string, irrespective of the multiline option <strong>(?m)</strong>.</span><span lang="fr" style="display: none">Test satisfait si la position courante est à la fin de la chaîne sujet, indépendament de l'option multiligne <strong>(?m)</strong>.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\Z</strong></td>
+        <td><span class="segments"><span lang="en">Matches only at end of subject string, or before a newline sequence at the end, irrespective of the multiline option <strong>(?m)</strong>.</span><span lang="fr" style="display: none">Test satisfait si la position courante est à la fin de la chaîne sujet ou avant une séquence de saut de ligne, indépendament de l'option multiligne <strong>(?m)</strong>.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>Assertions</strong> test the character(s) preceding (look-behind), at (word boundary) or following (look-ahead) the current matching point.</span><span lang="fr" style="display: none">Une <strong>assertions</strong> teste les caractères qui précédent (look-behind), une frontière de mot (\b) ou qui suivent (look-ahead) le point courant dans le sujet.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>\b</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Matches at a "word" boundary, i.e. between characters not both <strong>\w</strong> or <strong>\W</strong>.</span><span lang="fr" style="display: none">Test satisfait si la position courante est à la limite d'un 'mot', soit entre des caractères non tous deux <strong>\w</strong> ou <strong>\W</strong>.</span></span> <span class="segments"><span lang="en">See <strong>\w</strong> for the meaning of "word".</span><span lang="fr" style="display: none">Voir <strong>\w</strong> pour la signification de 'mot'.</span></span> <span class="segments"><span lang="en">Inside a character class, <strong>\b</strong> means "backspace" (Chr(8)).</span><span lang="fr" style="display: none">Dans une classe de caractères, <strong>\b</strong> est le caractère de contrôle retour arrière (Chr(8)).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>\B</strong></td>
+        <td><span class="segments"><span lang="en">Matches when not at a word boundary.</span><span lang="fr" style="display: none">Test satisfait si la position courante n'est pas à la limite d'un 'mot'.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?=</strong><em>X</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Positive look-ahead: matches when the subpattern <em>X</em> matches starting at the current position.</span><span lang="fr" style="display: none">Look-ahead positif : test satisfait si le sous-modèle <em>X</em> correspond à partir de la position courante.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?!</strong><strong>X</strong><em>)</em></td>
+        <td><span class="segments"><span lang="en">Negative look-ahead: matches when the subpattern <em>X</em> does not match starting at the current position.</span><span lang="fr" style="display: none">Look-ahead négatif : test satisfait si le sous-modèle <em>X</em> ne correspond pas à partir de la position courante.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?&lt;=</strong><em>X</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Positive look-behind: matches when the subpattern <em>X</em> matches characters preceding the current position.</span><span lang="fr" style="display: none">Look-behind positif : test satisfait si le sous-modèle <em>X</em> correspond aux caractères qui précèdent la position courante.</span></span> <span class="segments"><span lang="en">Pattern <em>X</em> must match a fixed-length string, i.e. may not use any undefinite quantifier <strong>* + or ?</strong>.</span><span lang="fr" style="display: none">Le modèle <em>X</em> doit correspondre à une chaîne de longueur bornée, c'est-à-dire ne pas utiliser de quantificateurs indéfinis <strong>* + ou ?</strong>ou leurs équivalents.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?&lt;!</strong><strong>X</strong><em>)</em></td>
+        <td><span class="segments"><span lang="en">Negative look-behind: matches when the subpattern <em>X</em> does not match characters preceding the current position.</span><span lang="fr" style="display: none">Look-behind négatif : test satisfait si le sous-modèle <em>X</em> ne correspond pas aux caractères qui précédent la position courante.</span></span> <span class="segments"><span lang="en">Pattern <em>X</em> must match a fixed-length string, i.e. may not use any undefinite quantifier <strong>* + or ?</strong>.</span><span lang="fr" style="display: none">Le modèle <em>X</em> doit correspondre à une chaîne de longueur bornée, c'est-à-dire ne pas utiliser de quantificateurs indéfinis <strong>* + ou ?</strong>ou leurs équivalents.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">There are situations where it is necessary to "forget" that something has matched so far, in order to match more pertinent data later in the subject string.</span><span lang="fr" style="display: none">Il y a des situations où il est nécessaire "d'oublier" qu'une correspondance a été trouvé jusqu'à présent, afin de trouver une correspondance plus pertinente plus loin dans la chaîne sujet.</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>\K</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Resets start of match at the current point in subject string.</span><span lang="fr" style="display: none">Ré-initialise le démarrage de la recherche au point courant du sujet.</span></span> <span class="segments"><span lang="en">Note that groups already captured are left alone and still populate the returned array; it is therefore always possible to backreference to them later on.</span><span lang="fr" style="display: none">Notez que les groupes déjà capturéz sont conservés dans le tableau renvoyé ; il est donc toujours possible d'y faire référence plus tard.</span></span> <span class="segments"><span lang="en">Action of <strong>\K</strong> is similar but not identical to a look-behind, in that <strong>\K</strong> can work on alternations of varying lengths.</span><span lang="fr" style="display: none">L'action de <strong>\K</strong> est similaire mais non identique à un look-behind, en ce que <strong>\K</strong> permet de travailler avec un sous-modèle de longueur non bornée.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  These constructs are similar to <strong><em>If...EndIf</em></strong> and <strong><em>If...Else...EndIf</em></strong> blocks.<br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(?</strong><em>(condition)yes-pattern</em><strong>)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Allows conditional execution of pattern.</span><span lang="fr" style="display: none">Permet une exécution conditionnelle de &lt;e0&gt;modèle_si_vrai&lt;/e0&gt;.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?</strong><em>(condition)yes-pattern</em><strong>|</strong><em>no-pattern</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Chooses between distinct patterns depending on the result of <em>(condition)</em>.</span><span lang="fr" style="display: none">Applique l'un des modèles suivant le résultat de <em>(condition)</em>.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(</strong><em>n</em><strong>)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Tests whether the capturing group with absolute number <em>n</em> matched.</span><span lang="fr" style="display: none">Teste si le groupe de capture de numéro absolu <em>n</em> permet la correspondance.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(+</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Tests whether the capturing group with relative number <em>+n</em> matched.</span><span lang="fr" style="display: none">Teste si le groupe de capture de numéro relatif <em>+n</em> permet la correspondance.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(-</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Tests whether the capturing group with relative number <em>-n</em> matched.</span><span lang="fr" style="display: none">Teste si le groupe de capture de numéro relatif <em>-n</em> permet la correspondance.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(&lt;</strong><em>name</em><strong>&gt;)</strong></td>
+        <td><span class="segments"><span lang="en">Tests whether the capturing group with name <em>name</em> matched.</span><span lang="fr" style="display: none">Teste si le groupe de capture nommé <em>nom</em> permet la correspondance.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(R)</strong></td>
+        <td><span class="segments"><span lang="en">Tests whether any kind of recursion occured.</span><span lang="fr" style="display: none">Teste si une quelconque récurrence s'est produite.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(R</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Tests whether the most recent recursion was for capturing group with absolute number <em>n</em>.</span><span lang="fr" style="display: none">Teste si la plus récente récurrence portait sur la capture par le groupe de numéro absolu <em>n</em>.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(R&</strong><em>name</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Tests whether the most recent recursion was for capturing group with name <em>name</em>.</span><span lang="fr" style="display: none">Teste si la plus récente récurrence portait sur la capture par le groupe de nom <em>name</em>.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(DEFINE)</strong></td>
+        <td><span class="segments"><span lang="en">Used without <em>no-pattern</em>, permits definition of a subroutine useable from elsewhere.</span><span lang="fr" style="display: none">Utilisée sans <em>modèle_si_faux</em> : permet la définition d'un sous-programme nommé utilisable par ailleurs.</span></span> <span class="segments"><span lang="en">"(?x) (?(DEFINE) (?&lt;byte&gt; 2[0-4]\d | 25[0-5] | 1\d\d | [1-9]?\d) )" defines a subroutine named "byte" which matches any component of an IPv4 address.</span><span lang="fr" style="display: none">"(?x) (?(DEFINE) (?&lt;octet&gt; 2[0-4]\d | 25[0-5] | 1\d\d | [1-9]?\d) )" définit un sous-programme nommé "octet" qui permet une correspondance avec un composant numérique d'adresse IPv4.</span></span> <span class="segments"><span lang="en">Then an actual address can be matched by "\b (?&amp;byte) (\.(?&amp;byte)){3} \b".</span><span lang="fr" style="display: none">Ensuite, une adresse réelle peut être recherchée par "\b (?&amp;byte) (\.(?&amp;byte)){3} \b".</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(</strong><em>assertion</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Here <em>assertion</em> is one of positive or negative, look-ahead or look-behind assertion.</span><span lang="fr" style="display: none">Ici <em>assertion</em> est une assertion positive ou negative, look-ahead ou look-behind.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">These options, escapes and constructs are simply mentioned here; see reference documentation for detail on why, when and how to use them, if at all.</span><span lang="fr" style="display: none">Les options, les escapes et les constructions sont simplement mentionnés ici ; voir la documentation de référence pour comprendre pourquoi, quand et comment les utiliser, voire pas du tout.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>Uncommon settings and options</strong></span><span lang="fr" style="display: none"><strong>Paramètres et options peu fréquents</strong></span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(?J)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Enables duplicate group or subroutine names (not discussed further here).</span><span lang="fr" style="display: none">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(?X)</strong></td>
+        <td><span class="segments"><span lang="en">Causes some out-of-context sequences to raise an error, instead of being benign.</span><span lang="fr" style="display: none">Permet d'assigner un même nom à plusieurs groupes ou sous-programme (non détaillé ici).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*J)</strong></td>
+        <td><span class="segments"><span lang="en">Enables Javascript compatibility (not discussed further here).</span><span lang="fr" style="display: none">Les éléments hors contexte provoquent une erreur, au lieu d'être ignorés.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*LIMIT_MATCH=</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Limits number of matches to <em>n</em>.</span><span lang="fr" style="display: none">Autorise une compatibilité partielle avec les expressions régulières Javascript (non détaillé ici).</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*LIMIT_RECURSION=</strong><em>n</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en">Limits recursion to <em>n</em> levels.</span><span lang="fr" style="display: none">Limite à <em>n</em> le nombre de correspondances trouvées.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*NO_START_OPT)</strong></td>
+        <td><span class="segments"><span lang="en">Disables several optimizations (not discussed further here).</span><span lang="fr" style="display: none">Limite la récursion à &lt;e0&gt;n&lt;/e0&gt; niveaux.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en"><strong>Backtracking control</strong></span><span lang="fr" style="display: none">Désactive plusieurs optimisations (non détaillé ici).</span></span><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>(*ACCEPT)</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en">Forces an immediate match success in the current subroutine or top-level pattern.</span><span lang="fr" style="display: none">&lt;s0&gt;Contrôle du retour arrière (backtracking)&lt;/s0&gt;</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*FAIL)</strong> or <strong>(*F)</strong></td>
+        <td><span class="segments"><span lang="en">Forces an immediate match failure.</span><span lang="fr" style="display: none">Force le succès immédiat de la correspondance dans le sous-programme en cours ou dans le modèle de premier niveau.</span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*MARK:</strong><em>name</em><strong>)</strong> or <strong>(*:</strong><em>name</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*COMMIT)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*PRUNE)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*PRUNE:</strong><em>name</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*SKIP)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*SKIP:</strong><em>name</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*THEN)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+      <tr>
+        <td><strong>(*THEN:</strong><em>name</em><strong>)</strong></td>
+        <td><span class="segments"><span lang="en"><em>(See reference documentation.)</em></span><span lang="fr" style="display: none"><em>(Voir la documentation de référence.)</em></span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; 1.</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; Retourne 1 si la fenêtre existe.</span></span> When UCP is active, case sense matching applies to the full Unicode plane 0. There are also a small number of many-to-one mappings in Unicode, like the Greek lowercase letter sigma; these are supported by PCRE with UCP enabled.<br>
+  <br>
+  &nbsp;&nbsp;&nbsp; 2. Alternate forms of several escapes exist for compatibility with Perl, Ruby, Python, JavaScript, .NET and other engines. Do not use constructs not listed here: some will simply not work, some will supply wrong results, some will cause severe issues or merely crash.<br>
+  <br>
+  &nbsp;&nbsp;&nbsp; 3. <span class="segments"><span lang="en">The default newline convention is the unbreakable sequence @CRLF or a separate @CR or @LF.</span><span lang="fr" style="display: none">D'autres syntaxes existent dans d'autres dialectes tels Perl, Ruby, Python, JavaScript, .</span></span> <span class="segments"><span lang="en">Similarly \R matches the same set.</span><span lang="fr" style="display: none">NET et d'autres moteurs.</span></span> Know your data! If you know that your subjects use separate @LF or @CR to mean something else than a newline, you may have to change the newline convention and/or the matching of \R (see "Settings").<br>
+  <br>
+  <span class="segments"><span lang="en">See also the <a href="../tutorials/regexp/regexp.htm">Regular Expression</a> tutorial, in which you can run a script to test your regular expression(s).</span><span lang="fr" style="display: none">Consultez aussi le tutoriel <a href="../tutorials/regexp/regexp.htm">Expressions régulières</a>, dans lequel vous pouvez exécuter un script pour tester votre expression régulière.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="StringInStr.htm">StringInStr</a>, <a href="StringRegExpReplace.htm">StringRegExpReplace</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Option 1, using offset parameter</span><span lang="fr" style="display: none">Example</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringRegExp.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StringConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">        </span><span class="S9">$iOffset</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span>
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">    </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExp.htm"><span class="S4">StringRegExp</span></a><span class="S8">(</span><span class="S7">'&lt;test&gt;a&lt;/test&gt; &lt;test&gt;b&lt;/test&gt; &lt;test&gt;c&lt;/Test&gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'(?i)&lt;test&gt;(.*?)&lt;/test&gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$STR_REGEXPARRAYMATCH</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iOffset</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">    </span><span class="S9">$iOffset</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UBound.htm"><span class="S4">UBound</span></a><span class="S8">(</span><span class="S9">$aArray</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"RegExp Test with Option 1 - "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">])</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+<a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Option 2, single return, php/preg_match() style</span><span lang="fr" style="display: none">Option 1, utilisation du paramètre offset</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringRegExp[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StringConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExp.htm"><span class="S4">StringRegExp</span></a><span class="S8">(</span><span class="S7">'&lt;test&gt;a&lt;/test&gt; &lt;test&gt;b&lt;/test&gt; &lt;test&gt;c&lt;/Test&gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'(?i)&lt;test&gt;(.*?)&lt;/test&gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$STR_REGEXPARRAYFULLMATCH</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UBound.htm"><span class="S4">UBound</span></a><span class="S8">(</span><span class="S9">$aArray</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"RegExp Test with Option 2 - "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">])</span>
+<a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Option 3, global return, old AutoIt style</span><span lang="fr" style="display: none">Option 2, retour simple, style php/preg_match()</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringRegExp[3].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext3">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StringConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExp.htm"><span class="S4">StringRegExp</span></a><span class="S8">(</span><span class="S7">'&lt;test&gt;a&lt;/test&gt; &lt;test&gt;b&lt;/test&gt; &lt;test&gt;c&lt;/Test&gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'(?i)&lt;test&gt;(.*?)&lt;/test&gt;'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$STR_REGEXPARRAYGLOBALMATCH</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UBound.htm"><span class="S4">UBound</span></a><span class="S8">(</span><span class="S9">$aArray</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"RegExp Test with Option 3 - "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">])</span>
+<a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Option 4, global return, php/preg_match_all() style</span><span lang="fr" style="display: none">Option 3, retour global, ancien style AutoIt</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringRegExp[4].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext4">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;StringConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExp.htm"><span class="S4">StringRegExp</span></a><span class="S8">(</span><span class="S7">'F1oF2oF3o'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'(F.o)*?'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$STR_REGEXPARRAYGLOBALFULLMATCH</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aMatch</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+<a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UBound.htm"><span class="S4">UBound</span></a><span class="S8">(</span><span class="S9">$aArray</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">    </span><span class="S9">$aMatch</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S8">[</span><span class="S9">$i</span><span class="S8">]</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$j</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/UBound.htm"><span class="S4">UBound</span></a><span class="S8">(</span><span class="S9">$aMatch</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"RegExp Test with Option 4 - "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">','</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$j</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aMatch</span><span class="S8">[</span><span class="S9">$j</span><span class="S8">])</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+<a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
+
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

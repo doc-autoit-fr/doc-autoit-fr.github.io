@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_GetClassInfoEx</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_GetClassInfoEx</h1>
+  <p class="funcdesc">Retrieves information about a window class<br></p>
+  <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
+  _WinAPI_GetClassInfoEx ( $sClass [, $hInstance = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sClass</td>
+        <td style="width:85%">
+          The class name. The name must be that of a preregistered class or a class registered by a previous call to the <a href="_WinAPI_RegisterClass.htm">_WinAPI_RegisterClass()</a> or <a href="_WinAPI_RegisterClassEx.htm">_WinAPI_RegisterClassEx()</a> function.<br>
+          Alternatively, this parameter can be a class atom.<br>
+          The atom must be in the low-order word of $sClass; the high-order word must be zero.
+        </td>
+      </tr>
+      <tr>
+        <td>$hInstance</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Handle to the instance of the application that created the class.<br>
+        To retrieve information about classes defined by the system (such as buttons or list boxes), set this parameter to 0 (Default).</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">$tagWNDCLASSEX structure that contains the information about the class.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>
+          Sets the @error flag to non-zero, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_RegisterClass.htm">_WinAPI_RegisterClass</a>, <a href="_WinAPI_RegisterClassEx.htm">_WinAPI_RegisterClassEx</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(GetClassInfoEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">GetClassInfoEx</a> in MSDN Library.</p>
+</body>
+</html>

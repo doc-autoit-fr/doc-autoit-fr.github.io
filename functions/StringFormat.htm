@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StringFormat</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StringFormat</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns a formatted string (similar to the C sprintf() function).</span><span lang="fr" style="display: none">Retourne une chaîne formatée (similaire à sprintf() en C).</span></span><br></p>
+  <p class="codeheader">StringFormat ( "format control", var1 [, ... var32] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">format control</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The format and flags to use (see Remarks).</span><span lang="fr" style="display: none">Le format et les drapeaux à utiliser (Voir Remarques).</span></span></td>
+      </tr>
+      <tr>
+        <td>var1...var32</td>
+        <td><span class="segments"><span lang="en">Up to 32 variables that will be output according to the "format control".</span><span lang="fr" style="display: none">Jusqu'à 32 variables qui seront affichées selon le paramètre "format control".</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns the formatted string according to "format control" parameter.</span><span lang="fr" style="display: none">Retourne la chaîne formatée selon le paramètre "format control".</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">To prevent buffer overflow, each "variable" is limited to 65535 characters.</span><span lang="fr" style="display: none">Pour éviter le débordement de la mémoire tampon, chaque "variable" est limitée à 65535 caractères.</span></span><br>
+  <span class="segments"><span lang="en">Escape characters can be contain in the "format control" such as \n (@LF), \r (@CR), \t (@TAB].</span><span lang="fr" style="display: none">Les caractères d'échappement peuvent être utilisés dans la chaîne "format control" comme \n (@LF), \r (@CR ), \t (@TAB).</span></span> <span class="segments"><span lang="en">So if you want to have a "\" you need to use \\, samething for "%" %%.</span><span lang="fr" style="display: none">Donc, si vous voulez avoir un "\" vous devez utiliser \\, même chose pour "%".</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">"variable format" is; %[flags] [width] [.precision] type</span><span lang="fr" style="display: none">La "variable format" est %[flags] [width] [.precision] type</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If a format specification is invalid, the behaviour is undefined.</span><span lang="fr" style="display: none">Si une spécification de format est invalide, le comportement est indéfini.</span></span> <span class="segments"><span lang="en">If you specify invalid input you can in special circumstances create unhandled exception and cause program termination.</span><span lang="fr" style="display: none">Si vous spécifiez une entrée non valide, vous pouvez créer des circonstances spéciales non gérée et provoquer la fin du programme.</span></span><br>
+  <br>
+  &nbsp;&nbsp;&nbsp; <strong>Width Specification</strong><br>
+  <br>
+  <span class="segments"><span lang="en">The second optional field of the format specification is the width specification.</span><span lang="fr" style="display: none">Le deuxième champ optionnel de la spécification du format est la largeur.</span></span> <span class="segments"><span lang="en">The width argument is a nonnegative decimal integer controlling the minimum number of characters printed.</span><span lang="fr" style="display: none">L'argument 'width' est un entier décimal non négatif contrôlant le nombre minimum de caractères affichés.</span></span> <span class="segments"><span lang="en">If the number of characters in the output value is less than the specified width, blanks are added to the left or the right of the values — depending on whether the – flag (for left alignment) is specified — until the minimum width is reached.</span><span lang="fr" style="display: none">Si le nombre de caractères à afficher est inférieur à la largeur spécifiée, des espaces sont ajoutés à gauche ou à droite selon que le drapeau (pour un alignement à gauche) est spécifiée, jusqu'à ce que la largeur minimale soit atteinte.</span></span> <span class="segments"><span lang="en">If width is prefixed with 0, zeros are added until the minimum width is reached (not useful for left-aligned numbers).</span><span lang="fr" style="display: none">Si la largeur est précédé de 0, des zéros sont ajoutés jusqu'à ce que la largeur minimale soit atteinte (inutile pour les nombres alignés à gauche).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The width specification never causes a value to be truncated.</span><span lang="fr" style="display: none">La spécification de largeur ne provoque jamais une valeur à tronquer.</span></span> <span class="segments"><span lang="en">If the number of characters in the output value is greater than the specified width, or if width is not given, all characters of the value are printed (subject to the precision specification).</span><span lang="fr" style="display: none">Si le nombre de caractères de la valeur de sortie est supérieure à la largeur spécifiée, ou si la largeur n'est pas donnée, tous les caractères de la valeur sont affichés (sous réserve de la spécification de précision).</span></span><br>
+  <br>
+  &nbsp;&nbsp;&nbsp; <strong>Type Specification</strong><br>
+  <br></p>
+  <table>
+    <tbody>
+      <tr>
+        <th><strong>Type</strong></th>
+        <th><span class="segments"><span lang="en"><strong>Variable type</strong></span><span lang="fr" style="display: none"><strong>Type de Variable</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Output format</strong></span><span lang="fr" style="display: none"><strong>Format de sortie</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>d, i</td>
+        <td>Integer</td>
+        <td><span class="segments"><span lang="en">Signed decimal integer.</span><span lang="fr" style="display: none">Entier décimal signé.</span></span></td>
+      </tr>
+      <tr>
+        <td>o</td>
+        <td>Integer</td>
+        <td><span class="segments"><span lang="en">Unsigned octal integer.</span><span lang="fr" style="display: none">Entier octal non signé.</span></span></td>
+      </tr>
+      <tr>
+        <td>u</td>
+        <td>Integer</td>
+        <td><span class="segments"><span lang="en">Unsigned decimal integer.</span><span lang="fr" style="display: none">Entier décimal non signé.</span></span></td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td>Integer</td>
+        <td><span class="segments"><span lang="en">Unsigned hexadecimal integer, using "abcdef".</span><span lang="fr" style="display: none">Entier non signé en hexadécimal, qui utilise "abcdef".</span></span></td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>Integer</td>
+        <td><span class="segments"><span lang="en">Unsigned hexadecimal integer, using "ABCDEF".</span><span lang="fr" style="display: none">Entier hexadécimal non signé, qui utilise "ABCDEF".</span></span></td>
+      </tr>
+      <tr>
+        <td>e</td>
+        <td>Float</td>
+        <td>Signed value having the form [ - ]<em>d</em><strong>.</strong><em>dddd</em> <strong>e</strong> [<em>sign</em>]<em>ddd</em> where <em>d</em> is a single decimal digit, <em>dddd</em> is one or more decimal digits, <em>ddd</em> is exactly three decimal digits, and <em>sign</em> is + or -.</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td>Float</td>
+        <td><span class="segments"><span lang="en">Identical to the <strong>e</strong> format except that <strong>E</strong> rather than <strong>e</strong> introduces the exponent.</span><span lang="fr" style="display: none">Identique au format <strong>e</strong> sauf que <strong>E</strong> plutôt que <strong>e</strong> introduit la notation exponentielle.</span></span></td>
+      </tr>
+      <tr>
+        <td>f</td>
+        <td>Float</td>
+        <td><span class="segments"><span lang="en">Signed value having the form [ - ]<em>dddd</em><strong>.</strong><em>dddd</em>, where <em>dddd</em> is one or more decimal digits.</span><span lang="fr" style="display: none">Valeur signé ayant la forme [ - ]<em>dddd</em><strong>.</strong><em>dddd</em>, où <em>dddd</em> est au moins un chiffre décimal.</span></span> <span class="segments"><span lang="en">The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision.</span><span lang="fr" style="display: none">Le nombre de chiffres avant le point décimal dépend de l'importance du nombre, et le nombre de chiffres après le point décimal dépend de la précision demandée.</span></span></td>
+      </tr>
+      <tr>
+        <td>g</td>
+        <td>Float</td>
+        <td><span class="segments"><span lang="en">Signed value printed in <strong>f</strong> or <strong>e</strong> format, whichever is more compact for the given value and precision.</span><span lang="fr" style="display: none">Valeur signée affichée dans le format <strong>f</strong> ou <strong>e</strong>, whichever is more compact for the given value and precision.</span></span> <span class="segments"><span lang="en">The <strong>e</strong> format is used only when the exponent of the value is less than -4 or greater than or equal to the precision argument.</span><span lang="fr" style="display: none">Le format <strong>e</strong> est utilisé uniquement lorsque l'exposant de la valeur est inférieur à -4 ou supérieur ou égal à l'argument de précision.</span></span> <span class="segments"><span lang="en">Trailing zeros are truncated, and the decimal point appears only if one or more digits follow it.</span><span lang="fr" style="display: none">Les zéros à droite sont tronqués, et le point décimal apparaît uniquement si un ou plusieurs chiffres suivent.</span></span></td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>Float</td>
+        <td><span class="segments"><span lang="en">Identical to the <strong>g</strong> format, except that <strong>E</strong>, rather than <strong>e</strong>, introduces the exponent (where appropriate).</span><span lang="fr" style="display: none">Identique au format <strong>g</strong> format, sauf que <strong>E</strong>, plutôt que <strong>e</strong>, introduit la notation exponentielle (le cas échéant).</span></span></td>
+      </tr>
+      <tr>
+        <td>s</td>
+        <td>String</td>
+        <td>String.</td>
+      </tr>
+    </tbody>
+  </table><br>
+  &nbsp;&nbsp;&nbsp; <strong>Flag Specification</strong><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><strong>Flag</strong></th>
+        <th><span class="segments"><span lang="en"><strong>Meaning</strong></span><span lang="fr" style="display: none"><strong>Signification</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Default</strong></span><span lang="fr" style="display: none"><strong>Défaut</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td><span class="segments"><span lang="en">Left align the result within the given field width.</span><span lang="fr" style="display: none">Aligne à gauche le résultat dans la largeur donnée du champ.</span></span></td>
+        <td><span class="segments"><span lang="en">Right align.</span><span lang="fr" style="display: none">Aligne à droite.</span></span></td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><span class="segments"><span lang="en">Prefix the output value with a sign (+ or -) if the output value is of a signed type.</span><span lang="fr" style="display: none">Préfixe la valeur de sortie du signe (+ ou -) si elle est d'un type signé.</span></span></td>
+        <td><span class="segments"><span lang="en">Sign appears only for negative signed values (-).</span><span lang="fr" style="display: none">Le signe ne s'affiche que pour les valeurs négatives signés (-).</span></span></td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td><span class="segments"><span lang="en">If <em>width</em> is prefixed with <strong>0</strong>, zeros are added until the minimum width is reached.</span><span lang="fr" style="display: none">Si <em>width</em> est précédée d'un <strong>0</strong>, des zéros sont ajoutés jusqu'à ce que le minimim 'width' soit atteint.</span></span> <span class="segments"><span lang="en">If 0 and - appear, the <strong>0</strong> is ignored.</span><span lang="fr" style="display: none">Si 0 et - apparaisse, le <strong>0</strong> est ignoré.</span></span> <span class="segments"><span lang="en">If <strong>0</strong> is specified with an integer format (<strong>i</strong>, <strong>u</strong>, <strong>x</strong>, <strong>X</strong>, <strong>o</strong>, <strong>d</strong>) the <strong>0</strong> is ignored.</span><span lang="fr" style="display: none">Si <strong>0</strong> est spécifié avec un format 'integer' (<strong>i</strong>, <strong>u</strong>, <strong>x</strong>, <strong>X</strong>, <strong>o</strong>, <strong>d</strong>) alors le <strong>0</strong> est ignoré.</span></span></td>
+        <td><span class="segments"><span lang="en">No padding.</span><span lang="fr" style="display: none">Pas de rembourrage.</span></span></td>
+      </tr>
+      <tr>
+        <td>Blank</td>
+        <td><span class="segments"><span lang="en">Prefix the output value with a blank if the output value is signed and positive; the blank is ignored if both the blank and + flags appear.</span><span lang="fr" style="display: none">Précède la valeur de sortie avec un espace si elle est signée et positive; l'espace est ignoré si les drapeaux 'blank' et '+' sont levés.</span></span></td>
+        <td><span class="segments"><span lang="en">No blank appears.</span><span lang="fr" style="display: none">Pas de 0 n'est rajouté.</span></span></td>
+      </tr>
+      <tr>
+        <td>#</td>
+        <td><span class="segments"><span lang="en">When used with the <strong>o</strong>, <strong>x</strong>, or <strong>X</strong> format, the # flag prefixes any nonzero output value with 0, 0x, or 0X, respectively.</span><span lang="fr" style="display: none">Lorsqu'il est utilisé avec les formats <strong>o</strong>, <strong>x</strong>, ou <strong>X</strong>, le drapeau # préfixe une valeur de sortie non nulle avec 0, 0x ou 0X, respectivement.</span></span></td>
+        <td><span class="segments"><span lang="en">No blank appears.</span><span lang="fr" style="display: none">Pas de 0 n'est rajouté.</span></span></td>
+      </tr>
+      <tr>
+        <td>#</td>
+        <td><span class="segments"><span lang="en">When used with the <strong>e</strong>, <strong>E</strong>, or <strong>f</strong> format, the <strong>#</strong> flag forces the output value to contain a decimal point in all cases.</span><span lang="fr" style="display: none">Lorsqu'il est utilisé avec les formats <strong>e</strong>, <strong>E</strong>, ou <strong>f</strong>, le drapeau <strong>#</strong> force la valeur de sortie à contenir un point décimal dans tous les cas.</span></span></td>
+        <td><span class="segments"><span lang="en">Decimal point appears only if digits follow it.</span><span lang="fr" style="display: none">Le point décimal n'apparaît que si des chiffres le suivent.</span></span></td>
+      </tr>
+      <tr>
+        <td>#</td>
+        <td><span class="segments"><span lang="en">When used with the <strong>g</strong> or <strong>G</strong> format, the <strong>#</strong> flag forces the output value to contain a decimal point in all cases and prevents the truncation of trailing zeros.</span><span lang="fr" style="display: none">Lorsqu'il est utilisé avec les formats <strong>g</strong> ou <strong>G</strong>, le drapeau <strong>#</strong> force la valeur de sortie à contenir un point décimal dans tous les cas et empêche la troncature des zéros.</span></span><br>
+        <span class="segments"><span lang="en">Ignored when used with <strong>d</strong>, <strong>i</strong>, <strong>u</strong>, or <strong>s</strong>.</span><span lang="fr" style="display: none">Ignoré quand utisé avec <strong>d</strong>, <strong>i</strong>, <strong>u</strong>, or <strong>s</strong> .</span></span></td>
+        <td><span class="segments"><span lang="en">Decimal point appears only if digits follow it.</span><span lang="fr" style="display: none">Le point décimal n'apparaît que si des chiffres le suivent.</span></span> <span class="segments"><span lang="en">Trailing zeros are truncated.</span><span lang="fr" style="display: none">Les zéros à droite sont tronqués.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  &nbsp;&nbsp;&nbsp; <strong>Precision Specification</strong><br>
+  <br>
+  <span class="segments"><span lang="en">The third optional field of the format specification is the precision specification.</span><span lang="fr" style="display: none">Le troisième champ optionnel de la spécification du format est la spécification de la précision.</span></span> <span class="segments"><span lang="en">It specifies a nonnegative decimal integer, preceded by a period (.), which specifies the number of characters to be printed, the number of decimal places, or the number of significant digits (see Table below).</span><span lang="fr" style="display: none">Il spécifie un entier décimal non négatif, précédé par un point (.), qui indique le nombre de caractères à afficher, le nombre de décimales, ou le nombre de chiffres significatifs (voir le tableau ci-dessous).</span></span> <span class="segments"><span lang="en">Unlike the width specification, the precision specification can cause either truncation of the output value or rounding of a floating-point value.</span><span lang="fr" style="display: none">Contrairement à la spécification de largeur, la spécification de précision peut entraîner soit la troncature de la valeur de sortie, soit l'arrondi d'une valeur à virgule flottante.</span></span> <span class="segments"><span lang="en">If precision is specified as 0 and the value to be converted is 0, the result is no characters output, as shown below:</span><span lang="fr" style="display: none">Si la précision est définie à 0 et la valeur à convertir est égale à 0, le résultat n'a aucun caractère en sortie, comme indiqué ci-dessous :</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><a href="StringFormat.htm">StringFormat</a>( "%.0d", 0 ); /* No characters return */</span><span lang="fr" style="display: none"><a href="StringFormat.htm">StringFormat</a>("%.0d ", 0); /* Pas de caractères en retour */</span></span><br>
+  <br>
+  &nbsp;&nbsp;&nbsp; <strong>How Precision Values Affect Type</strong><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><strong>Type</strong></th>
+        <th><span class="segments"><span lang="en"><strong>Meaning</strong></span><span lang="fr" style="display: none"><strong>Signification</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Default</strong></span><span lang="fr" style="display: none"><strong>Défaut</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>d, i, u, o, x, X</td>
+        <td><span class="segments"><span lang="en">The precision specifies the minimum number of digits to be printed.</span><span lang="fr" style="display: none">La précision indique le nombre minimum de chiffres à afficher.</span></span> <span class="segments"><span lang="en">If the number of digits in the argument is less than precision, the output value is padded on the left with zeros.</span><span lang="fr" style="display: none">Si le nombre de chiffres dans l'argument est inférieur à la précision, la valeur de sortie est complétée à gauche par des zéros.</span></span> <span class="segments"><span lang="en">The value is not truncated when the number of digits exceeds precision.</span><span lang="fr" style="display: none">La valeur n'est pas tronquée lorsque le nombre de chiffres dépasse précision.</span></span></td>
+        <td><span class="segments"><span lang="en">Default precision is 1.</span><span lang="fr" style="display: none">La précision par défaut est 1.</span></span></td>
+      </tr>
+      <tr>
+        <td>e, E</td>
+        <td><span class="segments"><span lang="en">The precision specifies the number of digits to be printed after the decimal point.</span><span lang="fr" style="display: none">La précision spécifie le nombre de chiffres à afficher après le point décimal.</span></span> <span class="segments"><span lang="en">The last printed digit is rounded.</span><span lang="fr" style="display: none">Le dernier chiffre affiché est arrondie.</span></span></td>
+        <td><span class="segments"><span lang="en">Default precision is 6; if precision is 0 or the period (.) appears without a number following it, no decimal point is printed.</span><span lang="fr" style="display: none">La précision par défaut est 6; si la précision est 0 ou si le point (.)apparaît non suivi d'un chiffre, le point décimal n'est pas affiché.</span></span></td>
+      </tr>
+      <tr>
+        <td>f The precision value specifies the number of digits after the decimal point. <span class="segments"><span lang="en">If a decimal point appears, at least one digit appears before it.</span><span lang="fr" style="display: none">Si le point décimal est affiché, au moins un chiffre apparait devant.</span></span> <span class="segments"><span lang="en">The value is rounded to the appropriate number of digits.</span><span lang="fr" style="display: none">La valeur est arrondie au nombre de chiffres approprié.</span></span></td>
+        <td><span class="segments"><span lang="en">Default precision is 6; if precision is 0, or if the period (.) appears without a number following it, no decimal point is printed.</span><span lang="fr" style="display: none">La précision par défaut est 6; si la précision est 0, ou si le point (.)apparaît non suivi d'un chiffre, le point décimal n'est pas affiché.</span></span></td>
+      </tr>
+      <tr>
+        <td>g, G</td>
+        <td><span class="segments"><span lang="en">The precision specifies the maximum number of significant digits printed.</span><span lang="fr" style="display: none">La précision spécifie le nombre maximum de chiffres significatifs affichés.</span></span></td>
+        <td><span class="segments"><span lang="en">Six significant digits are printed, with any trailing zeros truncated.</span><span lang="fr" style="display: none">Six chiffres significatifs sont affichés, avec les zéros tronqués.</span></span></td>
+      </tr>
+      <tr>
+        <td>s</td>
+        <td><span class="segments"><span lang="en">The precision specifies the maximum number of characters to be printed.</span><span lang="fr" style="display: none">La précision indique le nombre maximal de caractères à afficher.</span></span> <span class="segments"><span lang="en">Characters in excess of precision are not printed.</span><span lang="fr" style="display: none">Les caractères qui excèdent la précision ne sont pas affichés.</span></span></td>
+        <td><span class="segments"><span lang="en">Characters are printed until a null character is encountered.</span><span lang="fr" style="display: none">Les caractères sont affichés jusqu'à un caractère nul soit rencontré.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StringFormat.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iInt_Unsigned</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">43951789</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iInt_Negative</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">43951789</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Numeric Formats"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%d"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"standard positive integer with no sign"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 43951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Negative</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%d"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"standard negative integer with sign"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; -43951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%i"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"standard integer"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 43951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%09i"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"9 digits with leading zero"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 043951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%e"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"scientific notation"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">4.395179e+007</span><span lang="fr" style="display: none">4.395179e + 007</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%u"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"unsigned integer with positive integer"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 43951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Negative</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%u"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"unsigned integer with negative integer"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 4251015507</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%f"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"floating point"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 43951789.000000</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%.2f"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"floating point with 2 digits after decimal point"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">43951789.00</span><span lang="fr" style="display: none">43.951.789,00</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%o"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"octal"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 247523255</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%s"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"string"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 43951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%x"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"hexadecimal (lower-case)"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 29ea6ad</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%X"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"hexadecimal (upper-case)"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 29EA6AD</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Unsigned</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%+d"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"sign specifier on a positive integer"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; +43951789</span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$iInt_Negative</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"%+d"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"sign specifier on a negative integer"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; -43951789</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sString</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"string"</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sString_Long</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"longstring"</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"String Formats - [ ] used to show beginning/end of string"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$sString</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[%s]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"standard string"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">[string]</span><span lang="fr" style="display: none">[ chaîne ]</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$sString</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[%10s]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"10 chars right justified with added spaces"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">[ string]</span><span lang="fr" style="display: none">[ Chaîne ]</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$sString</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[%-10s]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"10 chars left justified with added spaces"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">[string ]</span><span lang="fr" style="display: none">[ chaîne ]</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$sString_Long</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[%10.8s]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"right justified but precision 8 so truncated"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">[ longer s]</span><span lang="fr" style="display: none">[ Plus de ]</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$sString_Long</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[%-10.8s]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"left justifed but precision 8 so truncated"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">[longer s ]</span><span lang="fr" style="display: none">[ plus de ]</span></span></span></span>
+<span class="S0">    PrintFormat</span><span class="S8">(</span><span class="S9">$sString</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[%010s]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"10 chars with leading zero"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">[0000string]</span><span lang="fr" style="display: none">[ 0000string ]</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Date Format - each % uses a new parameter"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'"%02i\%02i\%04i" 0n (1, 9, 2013) =&gt; '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringFormat.htm"><span class="S4">StringFormat</span></a><span class="S8">(</span><span class="S7">"%02i\%02i\%04i"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2013</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> PrintFormat</span><span class="S8">(</span><span class="S9">$vVar</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sFormat</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sExplan</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iTab</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'"'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sFormat</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'" on '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$vVar</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' =&gt; '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringFormat.htm"><span class="S4">StringFormat</span></a><span class="S8">(</span><span class="S9">$sFormat</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$vVar</span><span class="S8">))</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$iTab</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" ; "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sExplan</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;PrintFormat</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

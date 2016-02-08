@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction StdioClose</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>StdioClose</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Closes all resources associated with a process previously run with STDIO redirection.</span><span lang="fr" style="display: none">Ferme toutes les ressources associées à un processus lancé précédemment avec la redirection STDIO.</span></span><br></p>
+  <p class="codeheader">StdioClose ( process_id )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">process_id</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The process ID of a child process, as returned by a previous call to Run.</span><span lang="fr" style="display: none">L'ID du processus enfant, tel que retourné par un appel précédent à Run.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">Non-zero.</span><span lang="fr" style="display: none">Retourne une valeur différente de zéro.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if the process did not have STDIO redirection or was already closed.</span><span lang="fr" style="display: none">Retourne 0 si le processus n'a pas eu de redirection STDIO ou était déjà fermé.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">This function closes all handles and releases all resources related to STDIO.</span><span lang="fr" style="display: none">Cette fonction ferme toutes les handles et libère toutes les ressources relatives à STDIO.</span></span> <span class="segments"><span lang="en">It will no longer be possible to read the STDIO data from the process.</span><span lang="fr" style="display: none">Il ne sera plus possible de lire les données de STDIO du processus.</span></span> <span class="segments"><span lang="en">Any pending data will be lost.</span><span lang="fr" style="display: none">Toutes les données en attente seront perdues.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="StderrRead.htm">StderrRead</a>, <a href="StdinWrite.htm">StdinWrite</a>, <a href="StdoutRead.htm">StdoutRead</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\StdioClose.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;AutoItConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Array.au3&gt;</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Required for _ArrayDisplay only.</span><span lang="fr" style="display: none">Requis pour _ArrayDisplay seulement.</span></span></span></span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Recursively display a list of files in a directory.</span><span lang="fr" style="display: none">Affiche de manière récursive la liste des fichiers d'un répertoire.</span></span></span></span>
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptDir"><span class="S6">@ScriptDir</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Search the current script directory.</span><span lang="fr" style="display: none">Recherche dans le répertoire du script en cours.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sFilter</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"*.*"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Search for all files in the current directory.</span><span lang="fr" style="display: none">Recherche tous les fichiers dans le répertoire courant.</span></span> <span class="segments"><span lang="en">For a list of valid wildcards, search for 'Wildcards' in the Help file.</span><span lang="fr" style="display: none">Pour une liste des caractères génériques valides, recherchez 'caractères génériques' dans le fichier d'aide.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sOutput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Store the output of StdoutRead to a variable.</span><span lang="fr" style="display: none">Stocke la sortie de StdoutRead dans une variable.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">If the file path isn't a directory then return from the 'Example' function.</span><span lang="fr" style="display: none">Si le chemin du fichier n'est pas un répertoire alors retourne de la fonction 'Exemple'.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringInStr.htm"><span class="S4">StringInStr</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/FileGetAttrib.htm"><span class="S4">FileGetAttrib</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">),</span><span class="S0"> </span><span class="S7">"D"</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/SetError.htm"><span class="S4">SetError</span></a><span class="S8">(</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Remove trailing backslashes and append a single trailing backslash.</span><span lang="fr" style="display: none">Enleve les antislashs arrière et ajoute une simple barre oblique inverse.</span></span></span></span>
+<span class="S0">    </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringRegExpReplace.htm"><span class="S4">StringRegExpReplace</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"[\\/]+\z"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\"</span>
+
+<span class="S0">    </span><span class="S2">#cs</span>
+<span class="S2">        Commandline parameters for DIR:</span>
+<span class="S2">        /B - Simple output.</span>
+<span class="S2">        /A-D - Search for all files, minus folders.</span>
+<span class="S2">        /S - Search within subfolders.</span>
+<span class="S2">    #ce</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iPID</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Run.htm"><span class="S4">Run</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@ComSpec"><span class="S6">@ComSpec</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' /C DIR "'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sFilter</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'" /B /A-D /S'</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SW_HIDE"><span class="S6">@SW_HIDE</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$STDOUT_CHILD</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the Stdio stream of the PID returned by Run.</span><span lang="fr" style="display: none">Ferme le flux Stdio du PID renvoyée par Run.</span></span> <span class="segments"><span lang="en">This will cause the message box to display due to not being able to read the stdout stream.</span><span lang="fr" style="display: none">Cela entraînera que la boîte de message ne sera pas capable de lire le flux de sortie standard.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/StdioClose.htm"><span class="S4">StdioClose</span></a><span class="S8">(</span><span class="S9">$iPID</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><span class="S9">$sOutput</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StdoutRead.htm"><span class="S4">StdoutRead</span></a><span class="S8">(</span><span class="S9">$iPID</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Read the Stdout stream of the PID returned by Run.</span><span lang="fr" style="display: none">Lit le flux Stdout du PID renvoyé par Run.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Exit the loop if the process closes or StdoutRead returns an error.</span><span lang="fr" style="display: none">Sort de la boucle si le processus ferme ou StdoutRead renvoie une erreur.</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Use StringSplit to split the output of StdoutRead to an array.</span><span lang="fr" style="display: none">Utilise StringSplit pour partager la sortie de StdoutRead en un tableau.</span></span> <span class="segments"><span lang="en">All carriage returns (@CRLF) are stripped and @CRLF (line feed) is used as the delimiter.</span><span lang="fr" style="display: none">Tous les retours chariot (@CRLF) sont supprimés et @CRLF (saut de ligne) est utilisé comme séparateur.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aArray</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringSplit.htm"><span class="S4">StringSplit</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/StringTrimRight.htm"><span class="S4">StringTrimRight</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/StringStripCR.htm"><span class="S4">StringStripCR</span></a><span class="S8">(</span><span class="S9">$sOutput</span><span class="S8">),</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringLen.htm"><span class="S4">StringLen</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)),</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"It appears there was an error trying to find all the files in the current script directory."</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
+<span class="S0">        </span><span class="S1">; <span><span class="segments"><span lang="en">Display the results.</span><span lang="fr" style="display: none">Affiche les résultats.</span></span></span></span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../libfunctions/_ArrayDisplay.htm"><span class="S15">_ArrayDisplay</span></a><span class="S8">(</span><span class="S9">$aArray</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

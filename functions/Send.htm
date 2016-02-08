@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction Send</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>Send</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sends simulated keystrokes to the active window.</span><span lang="fr" style="display: none">Simule l'appui sur des touches du clavier et envoie la valeur dans la fenêtre active.</span></span><br></p>
+  <p class="codeheader">Send ( "keys" [, flag = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">keys</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The sequence of keys to send.</span><span lang="fr" style="display: none">La séquence de touches à envoyer.</span></span></td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how "keys" is processed:</span><span lang="fr" style="display: none">Change la manière dont les touches sont envoyées:</span></span><br>
+        &nbsp;&nbsp;&nbsp; $SEND_DEFAULT (0) = Text contains special characters like + and ! <span class="segments"><span lang="en">to indicate SHIFT and ALT key-presses (default).</span><span lang="fr" style="display: none">qui sont utilisés pour indiquer les touches SHIFT et ALT (défaut).</span></span><br>
+        &nbsp;&nbsp;&nbsp; $SEND_RAW (1) = keys are sent raw.<br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">See the <a href="../appendix/SendKeys.htm">Appendix</a> for some tips on using <a href="Send.htm">Send()</a>.</span><span lang="fr" style="display: none">Consultez l'<a href="../appendix/SendKeys.htm">Appendice</a> pour quelques astuces d'utilisation de <a href="Send.htm">Send()</a>.</span></span> AutoIt can send all ASCII and Extended ASCII characters (0-255). To send UNICODE characters you must use the "ASC" option and the code of the character you wish to send (see {ASC} at the bottom of the table below).<br>
+  <br>
+  <span class="segments"><span lang="en">The "<a href="Send.htm">Send()</a>" command syntax is similar to that of ScriptIt and the Visual Basic "SendKeys" command.</span><span lang="fr" style="display: none">La syntaxe de la commande <a href="Send.htm">Send()</a> est similaire à celle de ScriptIt et à celle de la commande "SendKeys" en Visual Basic.</span></span> <span class="segments"><span lang="en">Characters are sent as written with the exception of the following characters:</span><span lang="fr" style="display: none">Les caractères sont envoyés tels qu'ils sont écrits à l'exception des caractères suivants:</span></span><br>
+  <br>
+  '!'<br>
+  <span class="segments"><span lang="en">This tells AutoIt to send an ALT keystroke, therefore <a href="Send.htm">Send</a>("This is text!a") would send the keys "This is text" and then press "ALT+a".</span><span lang="fr" style="display: none">Ce caractère dit à AutoIt de simuler l'appui de la touche ALT.Par exemple, <a href="Send.htm">Send()</a>("Ceci est un texte!a") va envoyer les touches "Ceci est un texte" puis presser "ALT+a".</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">N.B.</span><span lang="fr" style="display: none">Remarque:</span></span> <span class="segments"><span lang="en">Some programs are very choosy about capital letters and ALT keys, i.e.,</span><span lang="fr" style="display: none">Certains programmes sont très difficiles quand à l'utilisation des lettres majuscules combinées avec l'appui sur ALT.</span></span> "!A" is different from "!a". <span class="segments"><span lang="en">The first says ALT+SHIFT+A, the second is ALT+a.</span><span lang="fr" style="display: none">Le premier code dit ALT+SHIFT+A et le deuxième ALT+a.</span></span> <span class="segments"><span lang="en">If in doubt, use lowercase!</span><span lang="fr" style="display: none">Si vous avez un doute, utilisez les minuscules.</span></span><br>
+  <br>
+  '+'<br>
+  <span class="segments"><span lang="en">This tells AutoIt to send a SHIFT keystroke; therefore, <a href="Send.htm">Send</a>("Hell+o") would send the text "HellO".</span><span lang="fr" style="display: none">Ce caractère dit à AutoIt de simuler l'appui de la touche SHIFT.</span></span> <span class="segments"><span lang="en"><a href="Send.htm">Send</a>("!+a") would send "ALT+SHIFT+a".</span><span lang="fr" style="display: none">Par exemple, <a href="Send.htm">Send()</a>("Hell+o") va envoyer le texte "HellO", et &lt;a1&gt;Send()&lt;/a1&gt;("!+a") va envoyer "ALT+SHIFT+a".</span></span><a href="Send.htm"></a><br>
+  <br>
+  '^'<br>
+  <span class="segments"><span lang="en">This tells AutoIt to send a CONTROL keystroke; therefore, <a href="Send.htm">Send</a>("^!a") would send "CTRL+ALT+a".</span><span lang="fr" style="display: none">Ce caractère dit à AutoIt de simuler l'appui de la touche CTRL.Par exemple, <a href="Send.htm">Send()</a>("^!a") va envoyer "CTRL+ALT+a".</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">N.B.</span><span lang="fr" style="display: none">Remarque:</span></span> <span class="segments"><span lang="en">Some programs are very choosy about capital letters and CTRL keys, i.e.,</span><span lang="fr" style="display: none">Certains programmes sont très difficiles quand à l'utilisation des lettres majuscules combinées avec l'appui sur CTRL.</span></span> <span class="segments"><span lang="en">"^A" is different from "^a".</span><span lang="fr" style="display: none">Par exemple, "^A" est différent de "^a".</span></span> <span class="segments"><span lang="en">The first says CTRL+SHIFT+A, the second is CTRL+a.</span><span lang="fr" style="display: none">Le premier code dit CTRL+SHIFT+A et le deuxième CTRL+a.</span></span> <span class="segments"><span lang="en">If in doubt, use lowercase!</span><span lang="fr" style="display: none">Si vous avez un doute, utilisez les minuscules.</span></span><br>
+  <br>
+  '#'<br>
+  <span class="segments"><span lang="en">The hash now sends a Windows keystroke; therefore, <a href="Send.htm">Send</a>("#r") would send Win+r which launches the <a href="Run.htm">Run()</a> dialog box.</span><span lang="fr" style="display: none">Ce caractère dit à AutoIt de simuler l'appui de la touche Windows.Par exemple, <a href="Send.htm">Send</a>("#r") va envoyer Win+r qui va lancer la boîte de dialogue 'Exécuter' de Windows.</span></span><br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">You can set SendCapslockMode to make CAPS LOCK disabled at the start of a <a href="Send.htm">Send()</a> operation and restored upon completion.</span><span lang="fr" style="display: none">Vous pouvez utiliser SendCapslockMode pour désactiver le verrouillage majuscule au début de chaque utilisation de <a href="Send.htm">Send()</a> et le réactiver à la fin.</span></span><br>
+  <span class="segments"><span lang="en">However, if a user is holding down the Shift key when a <a href="Send.htm">Send()</a> function begins, text may be sent in uppercase.</span><span lang="fr" style="display: none">Cependant, si un utilisateur maintient l'appui sur SHIFT au démarrage de la fonction <a href="Send.htm">Send()</a>, le texte peut être envoyé en majuscule.</span></span><br>
+  <span class="segments"><span lang="en">One workaround is to <a href="Send.htm">Send</a>("{SHIFTDOWN}{SHIFTUP}") before the other <a href="Send.htm">Send()</a> operations.</span><span lang="fr" style="display: none">Une manière de contourner est d'utiliser <a href="Send.htm">Send()</a>("{SHIFTDOWN}{SHIFTUP}") avant les autres utilisations de <a href="Send.htm">Send()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Certain keyboards as the Czech keyboard sends different characters when using the Shift Key or with CAPS LOCK enabled while sending a character.</span><span lang="fr" style="display: none">Certains claviers comme le Tchèque envoient des caractères différents lors de l'appui sur la touche Shift ou pendant que le VERROUILLAGE MAJUSCULE est activé.</span></span> <span class="segments"><span lang="en">Due to the send AutoIt implementation the CAPS LOCKed character will be sent as a Shifted character so <strong>it will not work.</strong></span><span lang="fr" style="display: none">En raison du fonctionnement de la fonction Send, (les caractères majuscules sont envoyés comme des minuscules affublées d'un SHIFT) <strong>l'envoi des majuscules ne marchera pas</strong>.</span></span><br>
+  <span class="segments"><span lang="en">Certain special keys can be sent and should be enclosed in braces:</span><span lang="fr" style="display: none">Certains caractères spéciaux peuvent être envoyés mais doivent être encadrés de crochets.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">N.B.</span><span lang="fr" style="display: none">Remarque:</span></span> <span class="segments"><span lang="en">Windows does not allow the simulation of the "CTRL-ALT-DEL" combination!</span><span lang="fr" style="display: none">Windows n'autorise pas la simulation de la combinaison "CTRL-ALT-DEL"!</span></span><br>
+  <br></p>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong><a href="Send.htm">Send()</a> Command (if zero flag)</strong></span><span lang="fr" style="display: none"><strong>Commande <a href="Send.htm">Send()</a> (Si flag = 0)</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Resulting Keypress</strong></span><span lang="fr" style="display: none"><strong>Caractères envoyés</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>{!}</td>
+        <td>!</td>
+      </tr>
+      <tr>
+        <td>{#}</td>
+        <td>#</td>
+      </tr>
+      <tr>
+        <td>{+}</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>{^}</td>
+        <td>^</td>
+      </tr>
+      <tr>
+        <td>{{}</td>
+        <td>{</td>
+      </tr>
+      <tr>
+        <td>{}}</td>
+        <td>}</td>
+      </tr>
+      <tr>
+        <td>{SPACE}</td>
+        <td><span class="segments"><span lang="en">SPACE</span><span lang="fr" style="display: none">Espace</span></span></td>
+      </tr>
+      <tr>
+        <td>{ENTER}</td>
+        <td><span class="segments"><span lang="en">ENTER key on the main keyboard</span><span lang="fr" style="display: none">Touche ENTRÉE du clavier principal</span></span></td>
+      </tr>
+      <tr>
+        <td>{ALT}</td>
+        <td>ALT</td>
+      </tr>
+      <tr>
+        <td>{BACKSPACE} or {BS}</td>
+        <td><span class="segments"><span lang="en">BACKSPACE</span><span lang="fr" style="display: none">RETOUR ARRIÈRE</span></span></td>
+      </tr>
+      <tr>
+        <td>{DELETE} or {DEL}</td>
+        <td><span class="segments"><span lang="en">DELETE</span><span lang="fr" style="display: none">SUPPRIMER</span></span></td>
+      </tr>
+      <tr>
+        <td>{UP}</td>
+        <td><span class="segments"><span lang="en">Up arrow</span><span lang="fr" style="display: none">Flèche haut</span></span></td>
+      </tr>
+      <tr>
+        <td>{DOWN}</td>
+        <td><span class="segments"><span lang="en">Down arrow</span><span lang="fr" style="display: none">Flèche bas</span></span></td>
+      </tr>
+      <tr>
+        <td>{LEFT}</td>
+        <td><span class="segments"><span lang="en">Left arrow</span><span lang="fr" style="display: none">Flèche gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>{RIGHT}</td>
+        <td><span class="segments"><span lang="en">Right arrow</span><span lang="fr" style="display: none">Flèche droite</span></span></td>
+      </tr>
+      <tr>
+        <td>{HOME}</td>
+        <td>HOME</td>
+      </tr>
+      <tr>
+        <td>{END}</td>
+        <td><span class="segments"><span lang="en">END</span><span lang="fr" style="display: none">FIN</span></span></td>
+      </tr>
+      <tr>
+        <td>{ESCAPE} or {ESC}</td>
+        <td><span class="segments"><span lang="en">ESCAPE</span><span lang="fr" style="display: none">ÉCHAP</span></span></td>
+      </tr>
+      <tr>
+        <td>{INSERT} or {INS}</td>
+        <td><span class="segments"><span lang="en">INS</span><span lang="fr" style="display: none">INSÉRER</span></span></td>
+      </tr>
+      <tr>
+        <td>{PGUP}</td>
+        <td>PageUp</td>
+      </tr>
+      <tr>
+        <td>{PGDN}</td>
+        <td>PageDown</td>
+      </tr>
+      <tr>
+        <td>{F1} - {F12}</td>
+        <td><span class="segments"><span lang="en">Function keys</span><span lang="fr" style="display: none">Touches de fonctions</span></span></td>
+      </tr>
+      <tr>
+        <td>{TAB}</td>
+        <td><span class="segments"><span lang="en">TAB</span><span lang="fr" style="display: none">Tabulation</span></span></td>
+      </tr>
+      <tr>
+        <td>{PRINTSCREEN}</td>
+        <td><span class="segments"><span lang="en">Print Screen key</span><span lang="fr" style="display: none">Impr.Écran</span></span></td>
+      </tr>
+      <tr>
+        <td>{LWIN}</td>
+        <td><span class="segments"><span lang="en">Left Windows key</span><span lang="fr" style="display: none">Touche Windows de gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>{RWIN}</td>
+        <td><span class="segments"><span lang="en">Right Windows key</span><span lang="fr" style="display: none">Touche Windows de droite</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMLOCK on}</td>
+        <td><span class="segments"><span lang="en">NUMLOCK (on/off/toggle)</span><span lang="fr" style="display: none">Pavé Numérique (on/off/basculement)</span></span></td>
+      </tr>
+      <tr>
+        <td>{CAPSLOCK off}</td>
+        <td><span class="segments"><span lang="en">CAPSLOCK (on/off/toggle)</span><span lang="fr" style="display: none">Verrouillage Majuscule (on/off/basculement)</span></span></td>
+      </tr>
+      <tr>
+        <td>{SCROLLLOCK toggle}</td>
+        <td><span class="segments"><span lang="en">SCROLLLOCK (on/off/toggle)</span><span lang="fr" style="display: none">SCROLLLOCK (on/off/basculement)</span></span></td>
+      </tr>
+      <tr>
+        <td>{BREAK}</td>
+        <td><span class="segments"><span lang="en">for Ctrl+Break processing</span><span lang="fr" style="display: none">Pour Ctrl+Break du traitement</span></span></td>
+      </tr>
+      <tr>
+        <td>{PAUSE}</td>
+        <td>PAUSE</td>
+      </tr>
+      <tr>
+        <td>{NUMPAD0} - {NUMPAD9}</td>
+        <td><span class="segments"><span lang="en">Numpad digits</span><span lang="fr" style="display: none">Chiffres du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMPADMULT}</td>
+        <td><span class="segments"><span lang="en">Numpad Multiply</span><span lang="fr" style="display: none">Multiplication du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMPADADD}</td>
+        <td><span class="segments"><span lang="en">Numpad Add</span><span lang="fr" style="display: none">Addition du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMPADSUB}</td>
+        <td><span class="segments"><span lang="en">Numpad Subtract</span><span lang="fr" style="display: none">Soustraction du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMPADDIV}</td>
+        <td><span class="segments"><span lang="en">Numpad Divide</span><span lang="fr" style="display: none">Division du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMPADDOT}</td>
+        <td><span class="segments"><span lang="en">Numpad period</span><span lang="fr" style="display: none">Point du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{NUMPADENTER}</td>
+        <td><span class="segments"><span lang="en">Enter key on the numpad</span><span lang="fr" style="display: none">Touche ENTRÉE du pavé numérique</span></span></td>
+      </tr>
+      <tr>
+        <td>{APPSKEY}</td>
+        <td><span class="segments"><span lang="en">Windows App key</span><span lang="fr" style="display: none">Touche des applications Windows</span></span></td>
+      </tr>
+      <tr>
+        <td>{LALT}</td>
+        <td><span class="segments"><span lang="en">Left ALT key</span><span lang="fr" style="display: none">Alt gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>{RALT}</td>
+        <td><span class="segments"><span lang="en">Right ALT key</span><span lang="fr" style="display: none">Alt droit</span></span></td>
+      </tr>
+      <tr>
+        <td>{LCTRL}</td>
+        <td><span class="segments"><span lang="en">Left CTRL key</span><span lang="fr" style="display: none">Ctrl gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>{RCTRL}</td>
+        <td><span class="segments"><span lang="en">Right CTRL key</span><span lang="fr" style="display: none">Ctrl droit</span></span></td>
+      </tr>
+      <tr>
+        <td>{LSHIFT}</td>
+        <td><span class="segments"><span lang="en">Left Shift key</span><span lang="fr" style="display: none">Shift gauche</span></span></td>
+      </tr>
+      <tr>
+        <td>{RSHIFT}</td>
+        <td><span class="segments"><span lang="en">Right Shift key</span><span lang="fr" style="display: none">Shift droit</span></span></td>
+      </tr>
+      <tr>
+        <td>{SLEEP}</td>
+        <td><span class="segments"><span lang="en">Computer SLEEP key</span><span lang="fr" style="display: none">Touche de mise hors tension de l'ordinateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{ALTDOWN}</td>
+        <td><span class="segments"><span lang="en">Holds the ALT key down until {ALTUP} is sent</span><span lang="fr" style="display: none">Maintient appuyé la touche ALT jusqu'à l'envoi de la touche {ALTUP}</span></span></td>
+      </tr>
+      <tr>
+        <td>{SHIFTDOWN}</td>
+        <td><span class="segments"><span lang="en">Holds the SHIFT key down until {SHIFTUP} is sent</span><span lang="fr" style="display: none">Maintient appuyé la touche SHIFT jusqu'à l'envoi de la touche {SHIFTUP}</span></span></td>
+      </tr>
+      <tr>
+        <td>{CTRLDOWN}</td>
+        <td><span class="segments"><span lang="en">Holds the CTRL key down until {CTRLUP} is sent</span><span lang="fr" style="display: none">Maintient appuyé la touche CTRL jusqu'à l'envoi de la touche {CTRLUP}</span></span></td>
+      </tr>
+      <tr>
+        <td>{LWINDOWN}</td>
+        <td><span class="segments"><span lang="en">Holds the left Windows key down until {LWINUP} is sent</span><span lang="fr" style="display: none">Maintient appuyé la touche Windows de gauche jusqu'à l'envoi de la touche {LWINUP}</span></span></td>
+      </tr>
+      <tr>
+        <td>{RWINDOWN}</td>
+        <td><span class="segments"><span lang="en">Holds the right Windows key down until {RWINUP} is sent</span><span lang="fr" style="display: none">Maintient appuyé la touche Windows de droite jusqu'à l'envoi de la touche {RWINUP}</span></span></td>
+      </tr>
+      <tr>
+        <td>{ASC nnnn}</td>
+        <td><span class="segments"><span lang="en">Send the ALT+nnnn key combination</span><span lang="fr" style="display: none">Envoi la combinaison ALT+nnnn</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_BACK}</td>
+        <td><span class="segments"><span lang="en">Select the browser "back" button</span><span lang="fr" style="display: none">Sélectionne le bouton "Arrière" du navigateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_FORWARD}</td>
+        <td><span class="segments"><span lang="en">Select the browser "forward" button</span><span lang="fr" style="display: none">Sélectionne le bouton "Avant" du navigateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_REFRESH}</td>
+        <td><span class="segments"><span lang="en">Select the browser "refresh" button</span><span lang="fr" style="display: none">Sélectionne le bouton "actualiser" du navigateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_STOP}</td>
+        <td><span class="segments"><span lang="en">Select the browser "stop" button</span><span lang="fr" style="display: none">Sélectionne le bouton "stop" du navigateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_SEARCH}</td>
+        <td><span class="segments"><span lang="en">Select the browser "search" button</span><span lang="fr" style="display: none">Sélectionne le bouton "recherche" du navigateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_FAVORITES}</td>
+        <td><span class="segments"><span lang="en">Select the browser "favorites" button</span><span lang="fr" style="display: none">Sélectionne le bouton "favoris" du navigateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{BROWSER_HOME}</td>
+        <td><span class="segments"><span lang="en">Launch the browser and go to the home page</span><span lang="fr" style="display: none">Lance le navigateur internet sur la page d'accueil</span></span></td>
+      </tr>
+      <tr>
+        <td>{VOLUME_MUTE}</td>
+        <td><span class="segments"><span lang="en">Mute the volume</span><span lang="fr" style="display: none">Coupe le son</span></span></td>
+      </tr>
+      <tr>
+        <td>{VOLUME_DOWN}</td>
+        <td><span class="segments"><span lang="en">Reduce the volume</span><span lang="fr" style="display: none">Réduit le volume du son</span></span></td>
+      </tr>
+      <tr>
+        <td>{VOLUME_UP}</td>
+        <td><span class="segments"><span lang="en">Increase the volume</span><span lang="fr" style="display: none">Augmente le volume du son</span></span></td>
+      </tr>
+      <tr>
+        <td>{MEDIA_NEXT}</td>
+        <td><span class="segments"><span lang="en">Select next track in media player</span><span lang="fr" style="display: none">Sélectionne la prochaine piste dans le lecteur Media Player</span></span></td>
+      </tr>
+      <tr>
+        <td>{MEDIA_PREV}</td>
+        <td><span class="segments"><span lang="en">Select previous track in media player</span><span lang="fr" style="display: none">Sélectionne la piste précédente dans le lecteur Media Player</span></span></td>
+      </tr>
+      <tr>
+        <td>{MEDIA_STOP}</td>
+        <td><span class="segments"><span lang="en">Stop media player</span><span lang="fr" style="display: none">Arrête la musique du lecteur Média Player</span></span></td>
+      </tr>
+      <tr>
+        <td>{MEDIA_PLAY_PAUSE}</td>
+        <td><span class="segments"><span lang="en">Play/pause media player</span><span lang="fr" style="display: none">Met en pause/marche le son dans le lecteur Média Player</span></span></td>
+      </tr>
+      <tr>
+        <td>{LAUNCH_MAIL}</td>
+        <td><span class="segments"><span lang="en">Launch the email application</span><span lang="fr" style="display: none">Lance la messagerie Internet</span></span></td>
+      </tr>
+      <tr>
+        <td>{LAUNCH_MEDIA}</td>
+        <td><span class="segments"><span lang="en">Launch media player</span><span lang="fr" style="display: none">Lance le lecteur Média Player</span></span></td>
+      </tr>
+      <tr>
+        <td>{LAUNCH_APP1}</td>
+        <td><span class="segments"><span lang="en">Launch user app1</span><span lang="fr" style="display: none">Lance l'application 1 définie par l'utilisateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{LAUNCH_APP2}</td>
+        <td><span class="segments"><span lang="en">Launch user app2</span><span lang="fr" style="display: none">Lance l'application 2 définie par l'utilisateur</span></span></td>
+      </tr>
+      <tr>
+        <td>{OEM_102}</td>
+        <td>Either the angle bracket key or the backslash key on the RT 102-key keyboard</td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">To send the ASCII value A (same as pressing ALT+065 on the numeric keypad)</span><span lang="fr" style="display: none">Pour envoyer la valeur ASCII de A (identique à l'appui de ALT+065 sur le pavé numérique)</span></span><br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{ASC 065}")<br>
+  <br>
+  <span class="segments"><span lang="en">(When using 2 digit ASCII codes you must use a leading 0, otherwise an obsolete 437 code page is used).</span><span lang="fr" style="display: none">(Quand vous devez utiliser un codes ASCII à deux chiffres, vous devez mettre un 0 devant, sinon le code de page obsolète 437 est utilisé).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To send UNICODE characters enter the character code (decimal or hex), for example this sends a Chinese character</span><span lang="fr" style="display: none">Pour envoyer des caractères UNICODE, entrez le code des caractères (décimal ou hexadécimal), par exemple pour envoyer un caractère chinois.</span></span><br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{ASC 2709}") or <a href="Send.htm">Send</a>("{ASC 0xA95}")<br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">Single keys can also be sent repeated:</span><span lang="fr" style="display: none">Des touches seules peuvent aussi être répétées, comme dans les exemples ci-dessous.</span></span><br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{DEL 4}")&nbsp;&nbsp;&nbsp; ;Presses the DEL key 4 times<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{S 30}") ;Sends 30 'S' characters<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("+{TAB 4}") ;Presses SHIFT+TAB 4 times<br>
+  <br>
+  <span class="segments"><span lang="en">No key is sent if the count is zero allowing the count to be set programatically:</span><span lang="fr" style="display: none">Aucune touche n'est envoyée si le nombre est 0, ce qui permet de définir ce nombre par programme:</span></span><br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{M " & $iCount & "}")&nbsp;&nbsp;&nbsp; ;Presses the M key as many times as set in the $iCount variable<br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">To hold a key down</span><span lang="fr" style="display: none">Pour laisser une touche appuyée (généralement utile pour les jeux)</span></span><br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{a down}") ;Holds the A key down<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{a up}") ;Releases the A key<br>
+  <br>
+  <span class="segments"><span lang="en">To set the state of the capslock, numlock and scrolllock keys</span><span lang="fr" style="display: none">Pour fixer l'état des touches 'Verrouillage Majuscule', 'Verrouillage Pavé numérique' et 'Arrêt défilement' :</span></span><br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{NumLock on}") ;Turns the NumLock key on<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{CapsLock off}") ;Turns the CapsLock key off<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{ScrollLock toggle}") ;Toggles the state of ScrollLock<br>
+  <br>
+  <span class="segments"><span lang="en">If you wish to use a variable for the count, try</span><span lang="fr" style="display: none">Si vous souhaitez utiliser une variable pour le nombre de répétition, essayez</span></span><br>
+  &nbsp;&nbsp;&nbsp; $n = 4<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("+{TAB " & $n & "}")<br>
+  <br>
+  <span class="segments"><span lang="en">If you wish to send the ASCII value A four times, then try</span><span lang="fr" style="display: none">Si vous souhaitez envoyer la valeur ASCII 'A' 4 fois, essayez</span></span><br>
+  &nbsp;&nbsp;&nbsp; $x = <a href="Chr.htm">Chr</a>(65)<br>
+  &nbsp;&nbsp;&nbsp; <a href="Send.htm">Send</a>("{" & $x & " 4}")<br>
+  <br>
+  <span class="segments"><span lang="en">Most laptop computer keyboards have a special Fn key.</span><span lang="fr" style="display: none">La plupart des ordinateurs portable possèdent une touche spéciale Fn.</span></span> <span class="segments"><span lang="en">This key cannot be simulated.</span><span lang="fr" style="display: none">Cette touche ne peut être simulée.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Note, by setting the flag parameter to 1 the above "special" processing will be disabled.</span><span lang="fr" style="display: none">Remarque:En fixant le paramètre à 1 les combinaisons 'spéciales' qui suivent seront désactivés.</span></span> <span class="segments"><span lang="en">This is useful when you want to send some text copied from a variable and you want the text sent exactly as written.</span><span lang="fr" style="display: none">Ce paramètre est très utile quand vous voulez envoyer un texte copié d'une variable et que vous voulez envoyer le texte exactement comme il est écrit.</span></span><br>
+  <br>
+  <br>
+  <span class="segments"><span lang="en">For example, open Folder Options (in the control panel) and try the following:</span><span lang="fr" style="display: none">Par exemple, dans le panneau de configuration, ouvrez 'Options des dossiers' et essayez ce qui suit :</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          <a href="Send.htm">Send</a>("{TAB}")
+        </th>
+        <th><span class="segments"><span lang="en">Navigate to next control (button, checkbox, etc)</span><span lang="fr" style="display: none">Navigue au contrôle suivant (button, checkbox, etc)</span></span></th>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("+{TAB}")
+        </td>
+        <td><span class="segments"><span lang="en">Navigate to previous control.</span><span lang="fr" style="display: none">Navigue au contrôle précédent.</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("^{TAB}")
+        </td>
+        <td><span class="segments"><span lang="en">Navigate to next WindowTab (on a Tabbed dialog window)</span><span lang="fr" style="display: none">Navigue à l'onglet suivant (fenêtre de dialogue à onglet)</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("^+{TAB}")
+        </td>
+        <td><span class="segments"><span lang="en">Navigate to previous WindowTab.</span><span lang="fr" style="display: none">Navigue à l'onglet précédent.</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{SPACE}")
+        </td>
+        <td><span class="segments"><span lang="en">Can be used to toggle a checkbox or click a button.</span><span lang="fr" style="display: none">Peut être utilisé pour commuter un 'checkbox' ou cliquer un 'button'.</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{+}")
+        </td>
+        <td><span class="segments"><span lang="en">Usually checks a checkbox (if it's a "real" checkbox.)</span><span lang="fr" style="display: none">Typiquement, coche un 'checkbox' (si il est un "réel" checkbox.)</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{-}")
+        </td>
+        <td><span class="segments"><span lang="en">Usually unchecks a checkbox.</span><span lang="fr" style="display: none">Typiquement, décoche un 'checkbox'.</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{NumPadMult}")
+        </td>
+        <td><span class="segments"><span lang="en">Recursively expands folders in a SysTreeView32.</span><span lang="fr" style="display: none">Développe récursivement les répertoires d'un 'SysTreeView32'.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">Use Alt-key combos to access menu items.</span><span lang="fr" style="display: none">Utilisez les 'combos' avec Alt-touche pour accéder aux items du menu.</span></span> <span class="segments"><span lang="en">Also, open Notepad and try the following:</span><span lang="fr" style="display: none">Vous pouvez également ouvrir le bloc-notes et tester ceci :</span></span><br>
+  <span class="segments"><span lang="en"><a href="Send.htm">Send</a>("!f") <a href="Send.htm">Send()</a> Alt+f, the access key for Notepad's file menu.</span><span lang="fr" style="display: none"><a href="Send.htm">Send</a>("!f") <a href="Send.htm">Send()</a> Alt+f, la touche d'accès au menu 'Fichier' du Bloc-notes.</span></span> <span class="segments"><span lang="en">Try other letters!</span><span lang="fr" style="display: none">Essayez d'autres lettres!</span></span><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th>
+          <a href="Send.htm">Send</a>("{DOWN}")
+        </th>
+        <th><span class="segments"><span lang="en">Move down a menu.</span><span lang="fr" style="display: none">Descend dans le menu.</span></span></th>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{UP}")
+        </td>
+        <td><span class="segments"><span lang="en">Move up a menu.</span><span lang="fr" style="display: none">Monte dans le menu.</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{LEFT}")
+        </td>
+        <td><span class="segments"><span lang="en">Move leftward to new menu or expand a submenu.</span><span lang="fr" style="display: none">Va vers la gauche vers un nouveau menu ou développe un sous-menu.</span></span></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Send.htm">Send</a>("{RIGHT}")
+        </td>
+        <td><span class="segments"><span lang="en">Move rightward to new menu or collapse a submenu.</span><span lang="fr" style="display: none">Va vers la droite vers un nouveau menu ou réduit un sous-menu.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <span class="segments"><span lang="en">When running a script on a remote computer through a program as psexec (www.sysinternals.com) or beyondexec (www.beyondlogic.org) it is necessary, specially when sending strokes to a program launch by the script with a <a href="Run.htm">Run()</a> function, to use <strong><a href="ControlSend.htm">ControlSend()</a></strong> or other ControlXXX functions to directly communicate with the control.</span><span lang="fr" style="display: none">Quand un script est lancé sur un ordinateur distant à travers un programme tiers comme psexec (www.sysinternals.com) ou beyondexec (www.beyondlogic.org), il est nécessaire, spécialement en envoyant des touches à un programme lancé par le script via la fonction <a href="Run.htm">Run()</a>, d'utiliser <strong><a href="ControlSend.htm">ControlSend()</a></strong> ou d'autres fonctions ControlXXX pour communiquer directement avec le contrôle.</span></span> <a href="Send.htm">Send()</a> even with <a href="AutoItSetOption.htm#SendAttachMode">Opt("SendAttachMode", 1)</a> will not work.<br>
+  <span class="segments"><span lang="en">Using the -s mode when submitting can help to have better rights on the remote computer.</span><span lang="fr" style="display: none">Utilisez le mode -s quand vous envoyez des touches peut vous aider à avoir des meilleurs droits sur l'ordinateur distant.</span></span><br>
+  <br>
+  <a href="AutoItSetOption.htm#SendKeyDelay">Opt("SendKeyDelay",...)</a> alters the the length of the brief pause in between sent keystrokes.<br>
+  <a href="AutoItSetOption.htm#SendKeyDownDelay">Opt("SendKeyDownDelay",...)</a> alters the length of time a key is held down before being released during a keystroke.<br>
+  <span class="segments"><span lang="en">Set both "SendKeyDelay" and "SendKeyDownDelay" to 0 to remove all delays when sending keystrokes.</span><span lang="fr" style="display: none">Définissez "SendKeyDelay" et "SendKeyDownDelay" à 0 pour enlever tous les délais lors de l'envoi de touches.</span></span> <span class="segments"><span lang="en">This may be required under certain circumstances, for example, when locking the system ("#l") it may be necessary to remove the delays in order to prevent the WIN key from being stuck down.</span><span lang="fr" style="display: none">Cela peut être nécessaire dans certaines circonstances, par exemple, lors du verrouillage du ...système ("#L"), il peut être nécessaire d'enlever les délais afin de prévenir que la touche WIN reste enfoncée.</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="BlockInput.htm">BlockInput</a>, <a href="ControlSend.htm">ControlSend</a>, <a href="HotKeySet.htm">HotKeySet</a>, <a href="AutoItSetOption.htm#SendAttachMode">SendAttachMode (Option)</a>, <a href="SendKeepActive.htm">SendKeepActive</a>, <a href="AutoItSetOption.htm#SendKeyDelay">SendKeyDelay (Option)</a>, <a href="AutoItSetOption.htm#SendKeyDownDelay">SendKeyDownDelay (Option)</a>, <a href="WinMenuSelectItem.htm">WinMenuSelectItem</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\Send.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Simulate the key combination Win + R to open the Run dialogue window.</span><span lang="fr" style="display: none">Simuler la combinaison de touches Win + R pour ouvrir la fenêtre de dialogue Exécuter.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Send.htm"><span class="S4">Send</span></a><span class="S8">(</span><span class="S7">"#r"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait 10 seconds for the Run dialogue window to appear.</span><span lang="fr" style="display: none">Attend 10 secondes que la fenêtre de dialogue Exécuter apparaît.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinWait.htm"><span class="S4">WinWait</span></a><span class="S8">(</span><span class="S7">"Run"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Simulate entering notepad.exe and pressing the 'ENTER' key.</span><span lang="fr" style="display: none">Simule une entrée dans notepad.exe et presse la touche 'ENTER'.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Send.htm"><span class="S4">Send</span></a><span class="S8">(</span><span class="S7">"notepad.exe</span><span class="S10">{Enter}</span><span class="S7">"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait 10 seconds for the Notepad window to appear.</span><span lang="fr" style="display: none">Attend 10 secondes pour que la fenêtre du bloc-notes fenêtre apparaisse.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hWnd</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinWait.htm"><span class="S4">WinWait</span></a><span class="S8">(</span><span class="S7">"[CLASS:Notepad]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Simulate entering the following string and pressing the 'F5' key to input the date and time into edit control of Notepad.</span><span lang="fr" style="display: none">Simuler l'entrée de la chaîne suivante et appuie sur la touche "F5" pour entrer la date et l'heure dans le contrôle d'édition du bloc-notes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Send.htm"><span class="S4">Send</span></a><span class="S8">(</span><span class="S7">"Today's time/date is </span><span class="S10">{F5}</span><span class="S7">"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the Notepad window using the handle returned by WinWait.</span><span lang="fr" style="display: none">Ferme la fenêtre du Bloc-notes en utilisant le handle renvoyé par WinWait.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinClose.htm"><span class="S4">WinClose</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Now a screen will pop up and ask to save the changes, the classname of the window is called</span><span lang="fr" style="display: none">Maintenant, une fenêtre s'ouvre et demande d'enregistrer les modifications, le nom de classe de la fenêtre est appelé</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">"#32770" and simulating the "TAB" key to move to the second button in which the "ENTER" is simulated to not "save the file"</span><span lang="fr" style="display: none">"# 32770" et la simulation de la touche "TAB" pour passer au deuxième bouton dans lequel le "ENTER" est simulé pour ne pas enregistrer le fichier</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinWaitActive.htm"><span class="S4">WinWaitActive</span></a><span class="S8">(</span><span class="S7">"[CLASS:#32770]"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">500</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Send.htm"><span class="S4">Send</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{TAB}{ENTER}</span><span class="S7">"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction FileMove</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>FileMove</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Moves one or more files.</span><span lang="fr" style="display: none">Déplace un ou plusieurs fichiers.</span></span><br></p>
+  <p class="codeheader">FileMove ( "source", "dest" [, flag = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">source</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The source path and filename of the file to move.</span><span lang="fr" style="display: none">Chemin du/des fichier(s) à déplacer.</span></span> <span class="segments"><span lang="en">(* wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">(Les Wildcards * sont pris en charge)</span></span></td>
+      </tr>
+      <tr>
+        <td>dest</td>
+        <td><span class="segments"><span lang="en">The destination path and filename of the moved file.</span><span lang="fr" style="display: none">Chemin et nom du répertoire de destination du/des fichier(s) déplacer.</span></span> <span class="segments"><span lang="en">(* wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">(Les Wildcards * sont pris en charge)</span></span></td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">this flag determines whether to overwrite files if they already exist:</span><span lang="fr" style="display: none">ce paramètre détermine s'il faut écraser les fichiers existants.</span></span><br>
+        <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        &nbsp;&nbsp;&nbsp; $FC_NOOVERWRITE (0) = (default) do not overwrite existing files.<br>
+        &nbsp;&nbsp;&nbsp; $FC_OVERWRITE (1) = overwrite existing files.<br>
+        &nbsp;&nbsp;&nbsp; $FC_CREATEPATH (8) = Create destination directory structure if it doesn't exist (See Remarks).<br>
+        <br>
+        Constants are defined in FileConstants.au3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if <em>source</em> cannot be moved or if <em>dest</em> already exists and flag=0.</span><span lang="fr" style="display: none">Retourne 0 si <em>source</em> ne peut pas être déplacé ou si <em>dest</em> existe déjà et flag=0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">See <a href="FileFindFirstFile.htm">FileFindFirstFile()</a> for a discussion about wildcards.</span><span lang="fr" style="display: none">Consultez <a href="FileFindFirstFile.htm">FileFindFirstFile()</a> pour des précisions sur les caractères spéciaux.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If the source and destination paths are on different volumes a copy and delete operation is performed rather than a move.</span><span lang="fr" style="display: none">Si la source et les chemins de destination sont sur des volumes différents une copie puis une suppression est effectuée au lieu d'un déplacement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Because AutoIt lacks a "FileRename" function, use <a href="FileMove.htm">FileMove()</a> to rename a file!</span><span lang="fr" style="display: none">Parce que AutoIt ne possède pas de fonction "FileRename", utiliser <a href="FileMove.htm">FileMove()</a> pour renommer un fichier!</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The destination directory must already exist, except using with flag value $FC_CREATEPATH (8).</span><span lang="fr" style="display: none">Le répertoire de destination doit exister, sauf si le paramètre "8" est utilisé.</span></span><br>
+  <span class="segments"><span lang="en">For instance the combined flag $FC_OVERWRITE (1) + $FC_CREATEPATH (8) overwrites the target file and prechecks for the destination directory structure and if it doesn't exist creates it automatically.</span><span lang="fr" style="display: none">Par exemple le paramètre combiné $FC_OVERWRITE (1) + $FC_CREATEPATH (8), écrase le fichier cible et vérifie la structure du répertoire de destination et si elle n'existe pas, il la crée automatiquement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Some file attributes can make the overwriting impossible, if this is the case look at <a href="FileSetAttrib.htm">FileSetAttrib()</a> to change the attributes of a file.</span><span lang="fr" style="display: none">Certains attributs de fichier peuvent rendre l'écrasement impossible, si c'est le cas consultez <a href="FileSetAttrib.htm">FileSetAttrib()</a> pour changer les attributs d'un fichier.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="DirMove.htm">DirMove</a>, <a href="FileCopy.htm">FileCopy</a>, <a href="FileDelete.htm">FileDelete</a>, <a href="FileRecycle.htm">FileRecycle</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\FileMove.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;FileConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPIFiles.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a constant variable in Local scope of the filepath that will be read/written to.</span><span lang="fr" style="display: none">Créezune constante de portée locale avec le chemin du fichier qui sera lu/écrit.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a temporary file to move.</span><span lang="fr" style="display: none">Crée un fichier temporaire qui sera déplacé.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is an example of using FileMove."</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred whilst writing the temporary file."</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Move Au3 files in the temporary directory to a new folder/directory called Au3Files.</span><span lang="fr" style="display: none">Déplace les fichiers Au3 du répertoire temporaire vers un nouveau dossier/répertoire appelé Au3Files.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileMove.htm"><span class="S4">FileMove</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\*.au3"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"\Au3Files\"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$FC_OVERWRITE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S9">$FC_CREATEPATH</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the temporary directory.</span><span lang="fr" style="display: none">Affiche le répertoire temporaire.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ShellExecute.htm"><span class="S4">ShellExecute</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\FileMove[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;FileConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPIFiles.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a constant variable in Local scope of the filepaths that will be renamed.</span><span lang="fr" style="display: none">Crée une constante de portée locale avec des chemins de fichiers qui seront renommés.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sSource</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">),</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S9">$sDestination</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a temporary file to rename.</span><span lang="fr" style="display: none">Crée un fichier temporaire qui sera renommé.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$sSource</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is an example of using FileMove."</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred whilst writing the temporary file."</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Rename a file using FileMove and overwrite the new file if it exists.</span><span lang="fr" style="display: none">Renomme un fichier en utilisant FileMove et remplace le nouveau fichier s'il existe.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileMove.htm"><span class="S4">FileMove</span></a><span class="S8">(</span><span class="S9">$sSource</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sDestination</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$FC_OVERWRITE</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display results that the destination file was renamed.</span><span lang="fr" style="display: none">Affiche les résultats pour montrer que le fichier de destination a été renommé.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Does the source file exist?: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileExists.htm"><span class="S4">FileExists</span></a><span class="S8">(</span><span class="S9">$sSource</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">FileExists should return 0.</span><span lang="fr" style="display: none">FileExists doivent toujours retourner 0.</span></span></span></span>
+<span class="S0">            </span><span class="S7">"Does destination file exist?: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileExists.htm"><span class="S4">FileExists</span></a><span class="S8">(</span><span class="S9">$sDestination</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">FileExists should return 1.</span><span lang="fr" style="display: none">FileExists devraient revenir 1.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the temporary files.</span><span lang="fr" style="display: none">Supprime les fichiers temporaires.</span></span> <span class="segments"><span lang="en">FileDelete checks if the file exists.</span><span lang="fr" style="display: none">FileDelete vérifie si le fichier existe.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sSource</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sDestination</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

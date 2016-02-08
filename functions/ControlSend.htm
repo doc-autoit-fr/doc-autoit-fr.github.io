@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction ControlSend</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>ControlSend</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sends a string of characters to a control.</span><span lang="fr" style="display: none">Envoie une chaîne de caractère à un contrôle.</span></span><br></p>
+  <p class="codeheader">ControlSend ( "title", "text", controlID, "string" [, flag = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">title</td>
+        <td style="width:85%">
+          <span class="segments"><span lang="en">The title/hWnd/class of the window to access.</span><span lang="fr" style="display: none">Le titre/handle/class de la fenêtre à atteindre.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsadvanced.htm">Title special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsadvanced.htm">Définiton spéciale de titre</a>.</span></span><a href="../intro/windowsadvanced.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td>
+          <span class="segments"><span lang="en">The text of the window to access.</span><span lang="fr" style="display: none">Le texte de la fenêtre à accéder.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span><a href="../intro/windowsbasic.htm#specialtext"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>controlID</td>
+        <td>
+          <span class="segments"><span lang="en">The control to interact with.</span><span lang="fr" style="display: none">Le contrôle avec lequel interagir.</span></span> <span class="segments"><span lang="en">See <a href="../intro/controls.htm">Controls</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/controls.htm">Controls</a>.</span></span><a href="../intro/controls.htm"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>string</td>
+        <td><span class="segments"><span lang="en">String of characters to send to the control.</span><span lang="fr" style="display: none">Chaîne de caractères à envoyer au contrôle.</span></span></td>
+      </tr>
+      <tr>
+        <td>flag</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how "keys" is processed:</span><span lang="fr" style="display: none">Change la manière dont les touches sont envoyées:</span></span><br>
+        &nbsp;&nbsp;&nbsp; $SEND_DEFAULT (0) = Text contains special characters like + and ! <span class="segments"><span lang="en">to indicate SHIFT and ALT key-presses (default).</span><span lang="fr" style="display: none">qui sont utilisés pour indiquer les touches SHIFT et ALT (défaut).</span></span><br>
+        &nbsp;&nbsp;&nbsp; $SEND_RAW (1) = keys are sent raw.<br>
+        <br>
+        Constants are defined in "AutoItConstants.au3".</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if window/control is not found.</span><span lang="fr" style="display: none">Retourne 0 si la fenêtre/le contrôle n'est pas trouvé.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en"><a href="ControlSend.htm">ControlSend()</a> works in a similar way to <a href="Send.htm">Send()</a> but it can send key strokes directly to a window/control, rather than just to the active window.</span><span lang="fr" style="display: none"><a href="ControlSend.htm">ControlSend()</a> fonctionne de manière similaire à <a href="Send.htm">Send</a>, mais il peut envoyer des appuis de touche directement à une fenêtre ou un contrôle, au lieu de la fenêtre active seulement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><a href="ControlSend.htm">ControlSend()</a> is only unreliable for command prompts as that works differently to normal windows (seems to check physical states rather than accepting the keystroke messages).</span><span lang="fr" style="display: none"><a href="ControlSend.htm">ControlSend()</a> est instable pour les fenêtres de commande (DOS) car elles fonctionnent différemment d'une fenêtre normale (Semble vérifier l'état physique plutôt qu'accepter les messages de frappe clavier).</span></span> <span class="segments"><span lang="en">For normal windows <a href="ControlSend.htm">ControlSend()</a> should be way more reliable than a normal <a href="Send.htm">Send()</a> - and yes it does send shift, ctrl, alt etc.</span><span lang="fr" style="display: none">Pour une fenêtre normale, <a href="ControlSend.htm">ControlSend()</a> devrait être plus fiable, qu'un <a href="Send.htm">Send()</a> normal.Et oui, il envoie Shift, Ctrl, Alt etc.</span></span><a href="ControlSend.htm"></a><a href="Send.htm"></a><br>
+  <br>
+  As mention in the <a href="Send.htm">Send()</a> help the keyboard that send different chars when in CAPS LOCK and using the Shift Key cannot be simulated. An example is the Czech Keyboard. <span class="segments"><span lang="en">A good workaround is to use the <a href="Send.htm">ControlSetText()</a>.</span><span lang="fr" style="display: none">Une bonne manière de contourner le problème, est d'utiliser <a href="Send.htm">ControlSetText()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The control might first need to be given focus with the <a href="ControlFocus.htm">ControlFocus()</a> command, specially when referencing an controlID created by the script itself.</span><span lang="fr" style="display: none">Le contrôle peut en premier avoir besoin du focus avec la commande <a href="ControlFocus.htm">ControlFocus()</a>, spécialement lorsqu'il se réfère à un controlID créer par le script lui même.</span></span><br>
+  <br>
+  <a href="AutoItSetOption.htm#SendKeyDelay">Opt("SendKeyDelay",...)</a> alters the length of the brief pause in between sent keystrokes.<br>
+  <a href="AutoItSetOption.htm#SendKeyDownDelay">Opt("SendKeyDownDelay",...)</a> alters the length of time a key is held down before being released during a keystroke.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="ControlCommand.htm">ControlCommand</a>, <a href="ControlFocus.htm">ControlFocus</a>, <a href="ControlSetText.htm">ControlSetText</a>, <a href="Send.htm">Send</a>, <a href="AutoItSetOption.htm#SendKeyDelay">SendKeyDelay (Option)</a>, <a href="AutoItSetOption.htm#SendKeyDownDelay">SendKeyDownDelay (Option)</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\ControlSend.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Run Notepad</span><span lang="fr" style="display: none">Exécute le Bloc-notes</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Run.htm"><span class="S4">Run</span></a><span class="S8">(</span><span class="S7">"notepad.exe"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait 10 seconds for the Notepad window to appear.</span><span lang="fr" style="display: none">Attend 10 secondes pour que la fenêtre du bloc-notes fenêtre apparaisse.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hWnd</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/WinWait.htm"><span class="S4">WinWait</span></a><span class="S8">(</span><span class="S7">"[CLASS:Notepad]"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait for 2 seconds.</span><span lang="fr" style="display: none">Attend 2 secondes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">2000</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Send a string of text to the edit control of Notepad.</span><span lang="fr" style="display: none">Envoie une chaîne de texte au contrôle d'édition du Bloc-notes.</span></span> <span class="segments"><span lang="en">The handle returned by WinWait is used for the "title" parameter of ControlSend.</span><span lang="fr" style="display: none">Le handle renvoyé par WinWait est utilisé pour le \"titre\" paramètre de ControlSend.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/ControlSend.htm"><span class="S4">ControlSend</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Edit1"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is some text"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Wait for 2 seconds.</span><span lang="fr" style="display: none">Attend 2 secondes.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">2000</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the Notepad window using the handle returned by WinWait.</span><span lang="fr" style="display: none">Ferme la fenêtre du Bloc-notes en utilisant le handle renvoyé par WinWait.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinClose.htm"><span class="S4">WinClose</span></a><span class="S8">(</span><span class="S9">$hWnd</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Now a screen will pop up and ask to save the changes, the classname of the window is called</span><span lang="fr" style="display: none">Maintenant, une fenêtre s'ouvre et demande d'enregistrer les modifications, le nom de classe de la fenêtre est appelé</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">"#32770" and simulating the "TAB" key to move to the second button in which the "ENTER" is simulated to not "save the file"</span><span lang="fr" style="display: none">"# 32770" et la simulation de la touche "TAB" pour passer au deuxième bouton dans lequel le "ENTER" est simulé pour ne pas enregistrer le fichier</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/WinWaitActive.htm"><span class="S4">WinWaitActive</span></a><span class="S8">(</span><span class="S7">"[CLASS:#32770]"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">500</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/Send.htm"><span class="S4">Send</span></a><span class="S8">(</span><span class="S7">"</span><span class="S10">{TAB}{ENTER}</span><span class="S7">"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

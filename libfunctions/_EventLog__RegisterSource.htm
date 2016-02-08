@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _EventLog__RegisterSource</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_EventLog__RegisterSource</h1>
+  <p class="funcdesc">Retrieves a registered handle to the specified event log<br></p>
+  <p class="codeheader">#include &lt;EventLog.au3&gt;<br>
+  _EventLog__RegisterSource ( $sServerName, $sSourceName )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sServerName</td>
+        <td style="width:85%">The UNC name of the server on where the event log will be opened. If blank, the operation is performed on the local computer.</td>
+      </tr>
+      <tr>
+        <td>$sSourceName</td>
+        <td>The name of the event source whose handle is to be retrieved. The source name must be a subkey of a log under the Eventlog registry key.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">the handle to an event log.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>If the source name cannot be found, the event logging service uses the Application log; it does not create a new source.<br>
+  Events are reported for the source, however, there are no message and category message files specified for looking up descriptions of the event identifiers for the source.<br>
+  To close the handle to the event log, use the <a href="_EventLog__DeregisterSource.htm">_EventLog__DeregisterSource()</a>.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_EventLog__DeregisterSource.htm">_EventLog__DeregisterSource</a></p>
+</body>
+</html>

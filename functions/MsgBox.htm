@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction MsgBox</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>MsgBox</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Displays a simple message box with optional timeout.</span><span lang="fr" style="display: none">Affiche une simple boîte de message, avec temporisation optionnelle.</span></span><br></p>
+  <p class="codeheader">MsgBox ( flag, "title", "text" [, timeout = 0 [, hwnd]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">flag</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The flag indicates the type of message box and the possible button combinations.</span><span lang="fr" style="display: none">Ce paramètre indique le type de boîte de message et les combinaisons de boutons possibles.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td><span class="segments"><span lang="en">The title of the message box.</span><span lang="fr" style="display: none">Le titre de la boîte de message.</span></span></td>
+      </tr>
+      <tr>
+        <td>text</td>
+        <td><span class="segments"><span lang="en">The text of the message box.</span><span lang="fr" style="display: none">Le texte de la boîte de message.</span></span></td>
+      </tr>
+      <tr>
+        <td>timeout</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
+      </tr>
+      <tr>
+        <td>hwnd</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the ID of the button pressed.</span><span lang="fr" style="display: none">Retourne ID du bouton pressé.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">$IDTIMEOUT (-1) if the message box timed out.</span><span lang="fr" style="display: none">Retourne $IDTIMEOUT (-1) si la temporisation de la boîte de dialogue est dépassée.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>Button Pressed</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>Return Value</strong></span><span lang="fr" style="display: none"><strong>Valeur de retour</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>OK</td>
+        <td>$IDOK (1)</td>
+      </tr>
+      <tr>
+        <td>CANCEL</td>
+        <td>$IDCANCEL (2)</td>
+      </tr>
+      <tr>
+        <td>ABORT</td>
+        <td>$IDABORT (3)</td>
+      </tr>
+      <tr>
+        <td>RETRY</td>
+        <td>$IDRETRY (4)</td>
+      </tr>
+      <tr>
+        <td>IGNORE</td>
+        <td>$IDIGNORE (5)</td>
+      </tr>
+      <tr>
+        <td>YES</td>
+        <td>$IDYES (6)</td>
+      </tr>
+      <tr>
+        <td>NO</td>
+        <td>$IDNO (7)</td>
+      </tr>
+      <tr>
+        <td>TRY AGAIN **</td>
+        <td>$IDTRYAGAIN (10)</td>
+      </tr>
+      <tr>
+        <td>CONTINUE **</td>
+        <td>$IDCONTINUE (11)</td>
+      </tr>
+    </tbody>
+  </table><br>
+  Constants are defined in MsgBoxConstants.au3.<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The flag parameter can be a combination of the following values:</span><span lang="fr" style="display: none">Le paramètre 'flag' peut être une combinaison des valeurs suivantes :</span></span><br>
+  <br></p>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>Constant Name</strong></span><span lang="fr" style="display: none"><strong>Nom de constante</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Decimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Button-related result</strong></span><span lang="fr" style="display: none"><strong>Effet relatif aux boutons</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Hexadecimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag hexadécimal</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>$MB_OK</td>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td><span class="segments"><span lang="en">OK button</span><span lang="fr" style="display: none">Bouton OK</span></span></td>
+        <td>0x0</td>
+      </tr>
+      <tr>
+        <td>$MB_OKCANCEL</td>
+        <td><span class="segments"><span lang="en">1</span><span lang="fr" style="display: none">Retourne 1</span></span></td>
+        <td><span class="segments"><span lang="en">OK and Cancel</span><span lang="fr" style="display: none">OK et Annuler</span></span></td>
+        <td>0x1</td>
+      </tr>
+      <tr>
+        <td>$MB_ABORTRETRYIGNORE</td>
+        <td>2</td>
+        <td><span class="segments"><span lang="en">Abort, Retry, and Ignore</span><span lang="fr" style="display: none">Abandonner, Recommencer, et Ignorer</span></span></td>
+        <td>0x2</td>
+      </tr>
+      <tr>
+        <td>$MB_YESNOCANCEL</td>
+        <td>3</td>
+        <td><span class="segments"><span lang="en">Yes, No, and Cancel</span><span lang="fr" style="display: none">Oui, Non, et Annuler</span></span></td>
+        <td>0x3</td>
+      </tr>
+      <tr>
+        <td>$MB_YESNO</td>
+        <td>4</td>
+        <td><span class="segments"><span lang="en">Yes and No</span><span lang="fr" style="display: none">Oui et Non</span></span></td>
+        <td>0x4</td>
+      </tr>
+      <tr>
+        <td>$MB_RETRYCANCEL</td>
+        <td>5</td>
+        <td><span class="segments"><span lang="en">Retry and Cancel</span><span lang="fr" style="display: none">Recommencer et Annuler</span></span></td>
+        <td>0x5</td>
+      </tr>
+      <tr>
+        <td>$MB_CANCELTRYCONTINUE</td>
+        <td>6</td>
+        <td><span class="segments"><span lang="en">Cancel, Try Again, Continue</span><span lang="fr" style="display: none">Annuler, Réessayer, Continuer</span></span></td>
+        <td>0x6</td>
+      </tr>
+      <tr>
+        <td>$MB_HELP</td>
+        <td>16384</td>
+        <td><span class="segments"><span lang="en">Adds a Help button to the message box.</span><span lang="fr" style="display: none">Ajouter un bouton d'aide à la boîte de message.</span></span> <span class="segments"><span lang="en">When the user clicks the Help button or presses F1, the system sends a WM_HELP message to the owner.</span><span lang="fr" style="display: none">Quand l'utilisateur clique sur le bouton Help ou presse F1, le system envoie un message WM_HELP à la fenêtre.</span></span></td>
+        <td>0x4000</td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en"><strong>Constant Name</strong></span><span lang="fr" style="display: none"><strong>Nom de constante</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>decimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>Icon-related Result</strong></span><span lang="fr" style="display: none"><strong>Effet relatif à l'icône</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>hexadecimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag hexadécimal</strong></span></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td><span class="segments"><span lang="en">(No icon)</span><span lang="fr" style="display: none">pas d'icône</span></span></td>
+        <td>0x0</td>
+      </tr>
+      <tr>
+        <td>$MB_ICONERROR</td>
+        <td>16</td>
+        <td><span class="segments"><span lang="en">Stop-sign icon</span><span lang="fr" style="display: none">Icône Stop</span></span></td>
+        <td>0x10</td>
+      </tr>
+      <tr>
+        <td>$MB_ICONQUESTION</td>
+        <td>32</td>
+        <td><span class="segments"><span lang="en">Question-mark icon</span><span lang="fr" style="display: none">Icône point d'interrogation</span></span></td>
+        <td>0x20</td>
+      </tr>
+      <tr>
+        <td>$MB_ICONWARNING</td>
+        <td>48</td>
+        <td><span class="segments"><span lang="en">Exclamation-point icon</span><span lang="fr" style="display: none">Icône point d'exclamation</span></span></td>
+        <td>0x30</td>
+      </tr>
+      <tr>
+        <td>$MB_ICONINFORMATION</td>
+        <td>64</td>
+        <td><span class="segments"><span lang="en">Information-sign icon consisting of an 'i' in a circle</span><span lang="fr" style="display: none">Icône Information ('i' dans un cercle)</span></span></td>
+        <td>0x40</td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en"><strong>Constant Name</strong></span><span lang="fr" style="display: none"><strong>Nom de constante</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>decimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>Default-related Result</strong></span><span lang="fr" style="display: none"><strong>Effet relatif aux valeurs par défaut</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>hexadecimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag hexadécimal</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>$MB_DEFBUTTON1</td>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td><span class="segments"><span lang="en">First button is default button</span><span lang="fr" style="display: none">Le premier bouton est le bouton par défaut</span></span></td>
+        <td>0x0</td>
+      </tr>
+      <tr>
+        <td>$MB_DEFBUTTON2</td>
+        <td>256</td>
+        <td><span class="segments"><span lang="en">Second button is default button</span><span lang="fr" style="display: none">Le deuxième bouton est le bouton par défaut</span></span></td>
+        <td>0x100</td>
+      </tr>
+      <tr>
+        <td>$MB_DEFBUTTON3</td>
+        <td>512</td>
+        <td><span class="segments"><span lang="en">Third button is default button</span><span lang="fr" style="display: none">Le troisième bouton est le bouton par défaut</span></span></td>
+        <td>0x200</td>
+      </tr>
+      <tr>
+        <td>$MB_DEFBUTTON4</td>
+        <td>768</td>
+        <td><span class="segments"><span lang="en">Fourth button is default button</span><span lang="fr" style="display: none">Le quatrième bouton est le bouton par défaut</span></span></td>
+        <td>0x300</td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en"><strong>Constant Name</strong></span><span lang="fr" style="display: none"><strong>Nom de constante</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>decimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>Modality-related Result</strong></span><span lang="fr" style="display: none"><strong>Effet relatif à la modalité</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>hexadecimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag hexadécimal</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>$MB_APPLMODAL</td>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td>Application 0x0</td>
+      </tr>
+      <tr>
+        <td>$MB_SYSTEMMODAL</td>
+        <td>4096</td>
+        <td><span class="segments"><span lang="en">System modal (dialog has an icon)</span><span lang="fr" style="display: none">Système modal (la boîte de dialogue a une icône)</span></span></td>
+        <td>0x1000</td>
+      </tr>
+      <tr>
+        <td>$MB_TASKMODAL</td>
+        <td>8192</td>
+        <td><span class="segments"><span lang="en">Task modal</span><span lang="fr" style="display: none">Tâche modale</span></span></td>
+        <td>0x2000</td>
+      </tr>
+      <tr>
+        <td><span class="segments"><span lang="en"><strong>Constant Name</strong></span><span lang="fr" style="display: none"><strong>Nom de constante</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>decimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>Miscellaneous-related Result</strong></span><span lang="fr" style="display: none"><strong>Effet divers</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong>hexadecimal flag</strong></span><span lang="fr" style="display: none"><strong>Flag hexadécimal</strong></span></span></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+        <td><span class="segments"><span lang="en">(nothing else special)</span><span lang="fr" style="display: none">(rien de spécial)</span></span></td>
+        <td>0x0</td>
+      </tr>
+      <tr>
+        <td>$MB_DEFAULT_DESKTOP_ONLY</td>
+        <td>131072</td>
+        <td><span class="segments"><span lang="en"><a href="MsgBox.htm">MsgBox()</a> shows on the desktop of the interactive window station.</span><span lang="fr" style="display: none"><a href="MsgBox.htm">MsgBox()</a> s'affiche sur le bureau de la fenêtre interactive.</span></span></td>
+        <td>0x20000</td>
+      </tr>
+      <tr>
+        <td>$MB_RIGHT</td>
+        <td>524288</td>
+        <td><span class="segments"><span lang="en">title and text are right-justified</span><span lang="fr" style="display: none">Le titre et le texte sont justifiés à droite</span></span></td>
+        <td>0x80000</td>
+      </tr>
+      <tr>
+        <td>$MB_RTLREADING</td>
+        <td>1048576</td>
+        <td><span class="segments"><span lang="en">Displays message and caption text using right-to-left reading order on Hebrew and Arabic systems.</span><span lang="fr" style="display: none">Affiche un message et un titre en utilisant l'ordre de lecture 'droite-gauche' sur les systèmes Hebreu et Arabe.</span></span></td>
+        <td>0x100000</td>
+      </tr>
+      <tr>
+        <td>$MB_SETFOREGROUND</td>
+        <td>65536</td>
+        <td><span class="segments"><span lang="en">The message box becomes the foreground window.</span><span lang="fr" style="display: none">La boîte de message s'ouvre en arrière plan de la fenêtre.</span></span></td>
+        <td>0x10000</td>
+      </tr>
+      <tr>
+        <td>$MB_TOPMOST</td>
+        <td>262144</td>
+        <td><span class="segments"><span lang="en"><a href="MsgBox.htm">MsgBox()</a> has top-most attribute set</span><span lang="fr" style="display: none"><a href="MsgBox.htm">MsgBox()</a> possède l'attribut 'top-most' (premier plan)</span></span></td>
+        <td>0x40000</td>
+      </tr>
+      <tr>
+        <td>$MB_SERVICE_NOTIFICATION</td>
+        <td>2097152</td>
+        <td><span class="segments"><span lang="en">The function displays a message box on the current active desktop, even if there is no user logged on to the computer.</span><span lang="fr" style="display: none">La fonction affiche une boîte de message sur le bureau actif en cours, même s'il n'y a pas d'utilisateur connecté à l'ordinateur.</span></span></td>
+        <td>0x200000</td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">For example, to specify a SYSTEMMODAL box with the YES/NO buttons the flag value would be 4096+4 (or 4100) If using hexadecimal flags, that would be 0x1000+0x4 (or 0x1004).</span><span lang="fr" style="display: none">Par exemple, pour spécifier une boîte SYSTEMMODAL avec les boutons YES/NO, la valeur du 'flag' serait 4096+4 (ou 4100).En utilisant les valeurs hexadécimales des flags, ce serait 0x1000+0x4 (ou 0x1004).</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">A message box appears centered on screen and resizes according to the text it contains.</span><span lang="fr" style="display: none">Une boîte de dialogue apparaît centrée sur l'écran et est redimensionnée selon le texte qu'elle contient.</span></span> <span class="segments"><span lang="en">However, the title could get truncated if the SYSTEMMODAL flag (4096) is used..</span><span lang="fr" style="display: none">Cependant, le titre pourrait être tronqué si l'option SYSTEMMODAL (4096) est utilisée.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If "title" is equal to <a href="../keywords/Default.htm">Default keyword</a> @Scriptname is used</span><span lang="fr" style="display: none">Si "title" est égal au mot-clé <a href="../keywords/Default.htm">Default</a>, @Scriptname est utilisé.</span></span><br>
+  <br>
+  Special note; MsgBox does not support the use of the timeout parameter when the $MB_SERVICE_NOTIFICATION flag is used when calling MsgBox from a service. The message box window is not owned by the process calling MsgBox when $MB_SERVICE_NOTIFICATION is specified.<br>
+  <br>
+  <span class="segments"><span lang="en">Constants are defined in MsgBoxConstants.au3</span><span lang="fr" style="display: none">Les constantes sont définies dans MsgBoxConstants.au3</span></span><br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="InputBox.htm">InputBox</a>, <a href="SplashTextOn.htm">SplashTextOn</a>, <a href="ToolTip.htm">ToolTip</a>, <a href="TrayTip.htm">TrayTip</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Example 1</span><span lang="fr" style="display: none">Exemple 1</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\MsgBox.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Title"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This message box will timeout after 10 seconds or select the OK button."</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Example 2</span><span lang="fr" style="display: none">Exemple 2</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\MsgBox[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iTimeout</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">10</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Display a message box with a nested variable in its text.</span><span lang="fr" style="display: none">Affiche une boîte de message avec une variable incluse dans le texte.</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Title"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This message box will timeout after "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iTimeout</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" seconds or select the OK button."</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iTimeout</span><span class="S8">)</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

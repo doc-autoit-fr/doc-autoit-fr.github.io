@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUISetOnEvent</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUISetOnEvent</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Defines a user function to be called when a system button is clicked.</span><span lang="fr" style="display: none">Définit une fonction utilisateur à appeler quand un bouton système est cliqué.</span></span><br></p>
+  <p class="codeheader">GUISetOnEvent ( specialID, "function" [, winhandle] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">specialID</td>
+        <td style="width:85%"><span class="segments"><span lang="en">See the <a href="#SpecialIDTable">Special ID table</a> below.</span><span lang="fr" style="display: none">Voir le tableau des <a href="#SpecialIDTable">IDs Spéciaux</a> ci-dessous.</span></span></td>
+      </tr>
+      <tr>
+        <td>function</td>
+        <td><span class="segments"><span lang="en">The name of the user function to call.</span><span lang="fr" style="display: none">Le nom de la fonction utilisateur à appeler.</span></span></td>
+      </tr>
+      <tr>
+        <td>winhandle</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Windows handle as returned by <a href="GUICreate.htm">GUICreate()</a> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <a href="GUICreate.htm">GUICreate()</a> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>OnEvent functions are only called when <a href="AutoItSetOption.htm#GUIOnEventMode">Opt("GUIOnEventMode", 1)</a> - when in this mode <a href="GUIGetMsg.htm">GUIGetMsg()</a> is NOT used at all.<br>
+  <br>
+  <span class="segments"><span lang="en">You can not call a function using parameters.</span><span lang="fr" style="display: none">Vous ne pouvez pas appeler une fonction avec des paramètres.</span></span><br>
+  <br>
+  If <a href="AutoItSetOption.htm#GUIEventOptions">Opt ("GUIEventOptions", 1)</a> the minimize, restore and maximize button will not do any action on the window just a simple notification.<br>
+  <br>
+  <span class="segments"><span lang="en">If the function is an empty string "" the previous user-defined is disabled.</span><span lang="fr" style="display: none">Si la fonction est une chaîne vide "" la précédente fonction utilisateur est désactivée.</span></span><br>
+  <br>
+  &nbsp;&nbsp;&nbsp; <a id="SpecialIDTable"><strong>Special ID table</strong><br>
+  <br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>Special Id</strong></span><span lang="fr" style="display: none"><strong>ID Spécial</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Comments</strong></span><span lang="fr" style="display: none"><strong>Commentaires</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_CLOSE</td>
+        <td><span class="segments"><span lang="en">dialog box being closed (either by defined button or system menu).</span><span lang="fr" style="display: none">boîte de dialogue fermée (par bouton défini ou par menu système ).</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_MINIMIZE</td>
+        <td><span class="segments"><span lang="en">dialog box minimized with Windows title bar button.</span><span lang="fr" style="display: none">boîte de dialogue minimisée avec le menu système.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_RESTORE</td>
+        <td><span class="segments"><span lang="en">dialog box restored by click on task bar icon.</span><span lang="fr" style="display: none">boîte de dialogue restaurée par clic sur l'icône de la barre de tâche.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_MAXIMIZE</td>
+        <td><span class="segments"><span lang="en">dialog box maximized with Windows title bar button.</span><span lang="fr" style="display: none">boîte de dialogue maximisée avec le menu système.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_MOUSEMOVE</td>
+        <td><span class="segments"><span lang="en">the mouse cursor has moved.</span><span lang="fr" style="display: none">le curseur de la souris s'est déplacé.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_PRIMARYDOWN</td>
+        <td><span class="segments"><span lang="en">the primary mouse button was pressed.</span><span lang="fr" style="display: none">le bouton principal de la souris a été enfoncé.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_PRIMARYUP</td>
+        <td><span class="segments"><span lang="en">the primary mouse button was released.</span><span lang="fr" style="display: none">le bouton principal de la souris a été relâché.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_SECONDARYDOWN</td>
+        <td><span class="segments"><span lang="en">the secondary mouse button was pressed.</span><span lang="fr" style="display: none">le bouton secondaire de la souris a été enfoncé.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_SECONDARYUP</td>
+        <td><span class="segments"><span lang="en">the secondary mouse button was released.</span><span lang="fr" style="display: none">le bouton secondaire de la souris a été relâché.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_RESIZED</td>
+        <td><span class="segments"><span lang="en">dialog box has been resized.</span><span lang="fr" style="display: none">boîte de dialogue redimensionnée.</span></span></td>
+      </tr>
+      <tr>
+        <td>$GUI_EVENT_DROPPED</td>
+        <td><span class="segments"><span lang="en">End of a Drag&amp;Drop action @GUI_DragId, @GUI_DragFile and @GUI_DropId will be used to retrieve the ID's/file corresponding to the involve control.</span><span lang="fr" style="display: none">Fin d'une action glisser-déposer.@GUI_DragId, @GUI_DragFile et @GUI_DropId seront utilisés pour récupérer de l'ID/fichier du contrôle impliqué.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlSetOnEvent.htm">GUICtrlSetOnEvent</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIEventOptions (Option)</a>, <a href="AutoItSetOption.htm#GUIOnEventMode">GUIOnEventMode (Option)</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUISetOnEvent.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUICoordMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIResizeMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"GUIOnEventMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"Parent1"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetOnEvent.htm"><span class="S4">GUISetOnEvent</span></a><span class="S8">(</span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SpecialEvents"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetOnEvent.htm"><span class="S4">GUISetOnEvent</span></a><span class="S8">(</span><span class="S9">$GUI_EVENT_MINIMIZE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SpecialEvents"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetOnEvent.htm"><span class="S4">GUISetOnEvent</span></a><span class="S8">(</span><span class="S9">$GUI_EVENT_RESTORE</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SpecialEvents"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"OK"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">,</span><span class="S0"> </span><span class="S3">50</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetOnEvent.htm"><span class="S4">GUICtrlSetOnEvent</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"OKPressed"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Cancel"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetOnEvent.htm"><span class="S4">GUICtrlSetOnEvent</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"CancelPressed"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Just idle around</span><span lang="fr" style="display: none">boucle sans fin autour de</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/Sleep.htm"><span class="S4">Sleep</span></a><span class="S8">(</span><span class="S3">10</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OKPressed</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"OK Pressed"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ID="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" WinHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_WinHandle"><span class="S6">@GUI_WinHandle</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" CtrlHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlHandle"><span class="S6">@GUI_CtrlHandle</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OKPressed</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> CancelPressed</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Cancel Pressed"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ID="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" WinHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_WinHandle"><span class="S6">@GUI_WinHandle</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" CtrlHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlHandle"><span class="S6">@GUI_CtrlHandle</span></a><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;CancelPressed</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> SpecialEvents</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Select.htm"><span class="S5">Select</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Close Pressed"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ID="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" WinHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_WinHandle"><span class="S6">@GUI_WinHandle</span></a><span class="S8">)</span>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_MINIMIZE</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Window Minimized"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ID="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" WinHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_WinHandle"><span class="S6">@GUI_WinHandle</span></a><span class="S8">)</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_RESTORE</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Window Restored"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"ID="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_CtrlId"><span class="S6">@GUI_CtrlId</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" WinHandle="</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@GUI_WinHandle"><span class="S6">@GUI_WinHandle</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Select.htm"><span class="S5">EndSelect</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;SpecialEvents</span>
+
+</pre>
+      </div>
+    </div>
+  </div></a></p>
+</body>
+</html>

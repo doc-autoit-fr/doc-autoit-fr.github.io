@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Function TCPStartup, UDPStartup</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>TCPStartup, UDPStartup</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Starts TCP or UDP services.</span><span lang="fr" style="display: none">Démarre les services TCP ou UDP.</span></span><br></p>
+  <p class="codeheader">TCPStartup ( )<br>
+  UDPStartup ( )<br></p>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td>
+          Windows API WSAStartup return value (see <a href="http://msdn.microsoft.com/en-us/library/ms742213.aspx">MSDN</a>).
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">There must be a <a href="TCPShutdown.htm">TCPShutdown()</a> call to avoid memory consumption.</span><span lang="fr" style="display: none">Il doit y avoir un appel à <a href="TCPShutdown.htm">TCPShutdown()</a> pour éviter une consommation de mémoire.</span></span><br>
+  <span class="segments"><span lang="en">A script must call one <a href="TCPShutdown.htm">TCPShutdown()</a> call for every successful <a href="TCPStartup.htm">TCPStartup()</a> call.</span><span lang="fr" style="display: none">Un script doit appeler un <a href="TCPShutdown.htm">TCPShutdown()</a> pour chaque appel réussi à un <a href="TCPStartup.htm">TCPStartup()</a>.</span></span><br>
+  <span class="segments"><span lang="en"><a href="TCPStartup.htm">UDPStartup()</a> is just an alias of <a href="TCPStartup.htm">TCPStartup()</a>.</span><span lang="fr" style="display: none"><a href="TCPStartup.htm">UDPStartup()</a> n'est qu'un alias de <a href="TCPStartup.htm">TCPStartup()</a>.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="TCPAccept.htm">TCPAccept</a>, <a href="TCPCloseSocket.htm">TCPCloseSocket</a>, <a href="TCPConnect.htm">TCPConnect</a>, <a href="TCPListen.htm">TCPListen</a>, <a href="TCPNameToIP.htm">TCPNameToIP</a>, <a href="TCPRecv.htm">TCPRecv</a>, <a href="TCPSend.htm">TCPSend</a>, <a href="TCPShutdown.htm">TCPShutdown</a>, <a href="UDPCloseSocket.htm">UDPCloseSocket</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <h3><span class="segments"><span lang="en">Start the TCP service.</span><span lang="fr" style="display: none">Démarre le service TCP.</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\TCPStartup.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TCPStartup.htm"><span class="S4">TCPStartup</span></a><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Start the TCP service.</span><span lang="fr" style="display: none">Démarre le service TCP.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Register OnAutoItExit to be called when the script is closed.</span><span lang="fr" style="display: none">Inscrit OnAutoItExit qui sera appelée lorsque le script se fermera.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/OnAutoItExitRegister.htm"><span class="S4">OnAutoItExitRegister</span></a><span class="S8">(</span><span class="S7">"OnAutoItExit"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnAutoItExit</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TCPShutdown.htm"><span class="S4">TCPShutdown</span></a><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Close the TCP service.</span><span lang="fr" style="display: none">Ferme le service TCP.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnAutoItExit</span>
+
+</pre>
+      </div>
+    </div>
+  </div>
+  <h3><span class="segments"><span lang="en">Start the UDP service</span><span lang="fr" style="display: none">Démarre le service UDP.</span></span></h3>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\TCPStartUp[2].au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext2">
+        <pre><span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPStartup.htm"><span class="S4">UDPStartup</span></a><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Start the UDP service.</span><span lang="fr" style="display: none">Démarre le service UDP.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Register OnAutoItExit to be called when the script is closed.</span><span lang="fr" style="display: none">Inscrit OnAutoItExit qui sera appelée lorsque le script se fermera.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/OnAutoItExitRegister.htm"><span class="S4">OnAutoItExitRegister</span></a><span class="S8">(</span><span class="S7">"OnAutoItExit"</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> OnAutoItExit</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/UDPShutdown.htm"><span class="S4">UDPShutdown</span></a><span class="S8">()</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Close the UDP service.</span><span lang="fr" style="display: none">Ferme le service UDP.</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;OnAutoItExit</span>
+
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

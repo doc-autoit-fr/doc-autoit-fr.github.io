@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _NamedPipes_TransactNamedPipe</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_NamedPipes_TransactNamedPipe</h1>
+  <p class="funcdesc">Reads and writes to a named pipe in one network operation<br></p>
+  <p class="codeheader">#include &lt;NamedPipes.au3&gt;<br>
+  _NamedPipes_TransactNamedPipe ( $hNamedPipe, $pInpBuf, $iInpSize, $pOutBuf, $iOutSize [, $tOverlapped = 0] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hNamedPipe</td>
+        <td style="width:85%">The handle to the named pipe</td>
+      </tr>
+      <tr>
+        <td>$pInpBuf</td>
+        <td>Pointer to the buffer containing the data to be written to the pipe</td>
+      </tr>
+      <tr>
+        <td>$iInpSize</td>
+        <td>Size of the write buffer, in bytes</td>
+      </tr>
+      <tr>
+        <td>$pOutBuf</td>
+        <td>Pointer to the buffer that receives the data read from the pipe</td>
+      </tr>
+      <tr>
+        <td>$iOutSize</td>
+        <td>Size of the read buffer, in bytes</td>
+      </tr>
+      <tr>
+        <td>$tOverlapped</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> a $tagOVERLAPPED structure.<br>
+        &nbsp;&nbsp;&nbsp; This structure is required if $hNamedPipe was opened with $PIPE_FLAG_OVERLAPPED.<br>
+        &nbsp;&nbsp;&nbsp; If $hNamedPipe was opened with $PIPE_FLAG_OVERLAPPED, $tOverlapped must not be 0.<br>
+        &nbsp;&nbsp;&nbsp; If $hNamedPipe was opened with $PIPE_FLAG_OVERLAPPED and $tOverlapped is not 0, TransactNamedPipe is executed as an overlapped operation.<br>
+        &nbsp;&nbsp;&nbsp; The $tagOVERLAPPED structure should contain a manual reset event object.<br>
+        &nbsp;&nbsp;&nbsp; If the operation cannot be completed immediately, TransactNamedPipe returns False and GetLastError will return ERROR_IO_PENDING.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">the number of bytes read from the pipe.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>TransactNamedPipe fails if the server did not create the pipe as a message-type pipe or if the pipe handle is not in message-read mode.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="$tagOVERLAPPED.htm">$tagOVERLAPPED</a>, <a href="_NamedPipes_CallNamedPipe.htm">_NamedPipes_CallNamedPipe</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(TransactNamedPipe);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">TransactNamedPipe</a> in MSDN Library.</p>
+</body>
+</html>

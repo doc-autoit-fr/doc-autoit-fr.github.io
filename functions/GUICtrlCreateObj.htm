@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction GUICtrlCreateObj</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>GUICtrlCreateObj</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates an ActiveX control in the GUI.</span><span lang="fr" style="display: none">Crée un contrôle ActiveX dans la GUI.</span></span><br></p>
+  <p class="codeheader">GUICtrlCreateObj ( ObjectVar, left, top [, width [, height]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">ObjectVar</td>
+        <td style="width:85%"><span class="segments"><span lang="en">A variable pointing to a previously opened object</span><span lang="fr" style="display: none">Une variable qui pointe sur un objet précédemment ouvert</span></span></td>
+      </tr>
+      <tr>
+        <td>left</td>
+        <td>
+          <span class="segments"><span lang="en">The left side of the control.</span><span lang="fr" style="display: none">La distance à gauche à la GUI.</span></span> <span class="segments"><span lang="en">If -1 is used then left will be computed according to <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a>.</span><span lang="fr" style="display: none">Si vous utilisez -1, elle sera calculée en accord avec <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a>.</span></span><a href="AutoItSetOption.htm#GUICoordMode"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>top</td>
+        <td>
+          <span class="segments"><span lang="en">The top of the control.</span><span lang="fr" style="display: none">La distance en haut à la GUI.</span></span> <span class="segments"><span lang="en">If -1 is used then top will be computed according to <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a>.</span><span lang="fr" style="display: none">Si -1 est utilisé, elle sera calculée en accord avec <a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode</a> .</span></span><a href="AutoItSetOption.htm#GUICoordMode"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The width of the control (default is the previously used width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut, la largeur utilisée précédemment).</span></span></td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The height of the control (default is the previously used height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut, la hauteur précédemment utilisé ).</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the identifier (controlID) of the new control.</span><span lang="fr" style="display: none">Retourne l'identifiant ( controlID ) du nouveau contrôle.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">This function attempts to embed an 'ActiveX Control' or a 'Document Object' inside the GUI.</span><span lang="fr" style="display: none">Cette fonction tente d'intégrer un 'contrôle ActiveX' ou un 'Document Object' dans une GUI.</span></span><br>
+  <span class="segments"><span lang="en">Not every control can be embedded.</span><span lang="fr" style="display: none">Pas tous les contrôles peuvent être intégrés.</span></span> <span class="segments"><span lang="en">They must at least support an 'IDispatch' interface.</span><span lang="fr" style="display: none">Ils doivent supporter au moins une interface 'IDispatch'.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for more information about Objects.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour plus d'informations sur les objets.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">'Document Objects' will only be visible if the Windows style $WS_CLIPCHILDREN has been used in <a href="GUICreate.htm">GUICreate()</a>.</span><span lang="fr" style="display: none">'Document Objects' ne sera visible que si le style Windows $WS_CLIPCHILDREN Windows a été utilisé dans <a href="GUICreate.htm">GUICreate()</a>.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The GUI functions <a href="GUICtrlRead.htm">GUICtrlRead()</a> and GUICtrlSet have no effect on this control.</span><span lang="fr" style="display: none">Les fonctions GUI <a href="GUICtrlRead.htm">GUICtrlRead()</a> et GUICtrlSet n'ont aucun effet sur ce contrôle.</span></span> <span class="segments"><span lang="en">The object can only be controlled using 'methods' or 'properties' on the $ObjectVar.</span><span lang="fr" style="display: none">L'objet ne peut être contrôlée qu'en utilisant des 'méthodes' ou 'propriétés' de l'objet $ObjectVar.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="IsObj.htm">IsObj</a>, <a href="ObjCreate.htm">ObjCreate</a>, <a href="ObjEvent.htm">ObjEvent</a>, <a href="ObjGet.htm">ObjGet</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\GUICtrlCreateObj.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;GUIConstantsEx.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<span class="S1">; <span><span class="segments"><span lang="en">Simple example:</span><span lang="fr" style="display: none">Exemple simple:</span></span> <span class="segments"><span lang="en">Embedding an Internet Explorer Object inside an AutoIt GUI</span><span lang="fr" style="display: none">Incorporation d'un objet Internet Explorer dans une GUI AutoIt</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">; See also: http://msdn.microsoft.com/workshop/browser/webbrowser/reference/objects/internetexplorer.asp</span><span lang="fr" style="display: none">Consultez aussi : http://msdn.microsoft.com/workshop/browser/webbrowser/reference/objects/internetexplorer.asp</span></span></span></span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idButton_Back</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idButton_Forward</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idButton_Home</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idButton_Stop</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iMsg</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"Shell.Explorer.2"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a simple GUI for our output</span><span lang="fr" style="display: none">Crée une GUI simple pour notre résultat</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"Embedded Web control Test"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">640</span><span class="S8">,</span><span class="S0"> </span><span class="S3">580</span><span class="S8">,</span><span class="S0"> </span><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@DesktopWidth"><span class="S6">@DesktopWidth</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">640</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">/</span></a><span class="S0"> </span><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@DesktopHeight"><span class="S6">@DesktopHeight</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">580</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">/</span></a><span class="S0"> </span><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$WS_OVERLAPPEDWINDOW</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_CLIPSIBLINGS</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_CLIPCHILDREN</span><span class="S8">))</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateObj.htm"><span class="S4">GUICtrlCreateObj</span></a><span class="S8">(</span><span class="S9">$oIE</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">40</span><span class="S8">,</span><span class="S0"> </span><span class="S3">600</span><span class="S8">,</span><span class="S0"> </span><span class="S3">360</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$idButton_Back</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Back"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$idButton_Forward</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Forward"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">120</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$idButton_Home</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Home"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">230</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$idButton_Stop</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Stop"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">330</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">100</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">;<span><span class="segments"><span lang="en">Show GUI</span><span lang="fr" style="display: none">Affiche l'interface utilisateur</span></span></span></span>
+
+<span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">navigate</span><span class="S8">(</span><span class="S7">"http://www.autoitscript.com"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><span class="S9">$iMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
+
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Select.htm"><span class="S5">Select</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$iMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$iMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idButton_Home</span>
+<span class="S0">                </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">navigate</span><span class="S8">(</span><span class="S7">"http://www.autoitscript.com"</span><span class="S8">)</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$iMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idButton_Back</span>
+<span class="S0">                </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">GoBack</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$iMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idButton_Forward</span>
+<span class="S0">                </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">GoForward</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$iMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idButton_Stop</span>
+<span class="S0">                </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">Stop</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Select.htm"><span class="S5">EndSelect</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">()</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

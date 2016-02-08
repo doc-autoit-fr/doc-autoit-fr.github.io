@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_RegLoadMUIString</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_RegLoadMUIString</h1>
+  <p class="funcdesc">Loads the specified string from the specified key and subkey<br></p>
+  <p class="codeheader">#include &lt;WinAPIReg.au3&gt;<br>
+  _WinAPI_RegLoadMUIString ( $hKey, $sValueName [, $sDirectory = ''] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hKey</td>
+        <td style="width:85%">
+          Handle to an open registry key. The key must have been opened with the $KEY_QUERY_VALUE access right.<br>
+          This handle is returned by the <a href="_WinAPI_RegCreateKey.htm">_WinAPI_RegCreateKey()</a> or <a href="_WinAPI_RegOpenKey.htm">_WinAPI_RegOpenKey()</a> function. It can also<br>
+          be one of the following predefined keys.<br>
+          $HKEY_CLASSES_ROOT<br>
+          $HKEY_CURRENT_CONFIG<br>
+          $HKEY_CURRENT_USER<br>
+          $HKEY_LOCAL_MACHINE<br>
+          $HKEY_USERS
+        </td>
+      </tr>
+      <tr>
+        <td>$sValueName</td>
+        <td>The name of the registry value.</td>
+      </tr>
+      <tr>
+        <td>$sDirectory</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The directory path.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">The loaded string.</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>Sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>The strings of the following form receive special handling:<br>
+  <br>
+  @[path]\dllname,-strID<br>
+  <br>
+  The string with identifier strID is loaded from dllname; the path is optional. If the $sDirectory parameter is<br>
+  empty string, the directory is prepended to the path specified in the registry data. Note that dllname can contain<br>
+  environment variables to be expanded.<br>
+  <br>
+  This function requires <strong>Windows Vista or later</strong>.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_RegCreateKey.htm">_WinAPI_RegCreateKey</a>, <a href="_WinAPI_RegOpenKey.htm">_WinAPI_RegOpenKey</a></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(RegLoadMUIString);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">RegLoadMUIString</a> in MSDN Library.</p>
+</body>
+</html>

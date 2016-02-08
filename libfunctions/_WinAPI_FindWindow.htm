@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_FindWindow</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_FindWindow</h1>
+  <p class="funcdesc">Retrieves the handle to the top-level window whose class name and window name match<br></p>
+  <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
+  _WinAPI_FindWindow ( $sClassName, $sWindowName )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sClassName</td>
+        <td style="width:85%">A string that specifies the class name or is an atom that identifies the class-name string.<br>
+        If this parameter is an atom, it must be a global atom created by a call to the GlobalAddAtom function.<br>
+        The atom, a 16-bit value, must be placed in the low-order word of the $sClassName string and the high-order word must be zero.</td>
+      </tr>
+      <tr>
+        <td>$sWindowName</td>
+        <td>A string that specifies the window name. If this parameter is blank, all window names match.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">The handle to the window</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>
+          0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(FindWindow);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">FindWindow</a> in MSDN Library.</p>
+</body>
+</html>

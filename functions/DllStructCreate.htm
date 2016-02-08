@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction DllStructCreate</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>DllStructCreate</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a C/C++ style structure to be used in DllCall.</span><span lang="fr" style="display: none">Crée une structure style C/C++ à utiliser dans DllCall.</span></span><br></p>
+  <p class="codeheader">DllStructCreate ( Struct [, Pointer] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">Struct</td>
+        <td style="width:85%"><span class="segments"><span lang="en">A string representing the structure to create (See Remarks).</span><span lang="fr" style="display: none">Une chaîne représentant la structure à créer ( Voir Remarques).</span></span></td>
+      </tr>
+      <tr>
+        <td>Pointer</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If supplied the struct will not allocate memory but use the pointer supplied.</span><span lang="fr" style="display: none">Si fourni la structure ne sera pas allouée dans la mémoire, mais utilisera le pointeur fourni.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a variable for use with DllStruct calls.</span><span lang="fr" style="display: none">Retourne une variable à utiliser dans les appels de DllStruct.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">@error:</td>
+        <td><span class="segments"><span lang="en">1 = Variable passed to DllStructCreate was not a string.</span><span lang="fr" style="display: none">1 = La variable passée à DllStructCreate n'était pas une chaîne.</span></span><br>
+        <span class="segments"><span lang="en">2 = There is an unknown Data Type in the string passed.</span><span lang="fr" style="display: none">2 = Il y a un type de données inconnu dans la chaîne passée.</span></span><br>
+        <span class="segments"><span lang="en">3 = Failed to allocate the memory needed for the struct, or Pointer = 0.</span><span lang="fr" style="display: none">3 = Impossible d'allouer la mémoire nécessaire pour la structure, ou pointeur = 0.</span></span><br>
+        <span class="segments"><span lang="en">4 = Error allocating memory for the passed string.</span><span lang="fr" style="display: none">4 = Erreur d'allocation mémoire pour la chaîne passée.</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%"><strong>Type</strong></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong>Details</strong></span><span lang="fr" style="display: none"><strong>Détails</strong></span></span></td>
+      </tr>
+      <tr>
+        <td>BYTE</td>
+        <td><span class="segments"><span lang="en">8bit(1byte) unsigned char</span><span lang="fr" style="display: none">caractère non signé 8bit (1 octet)</span></span></td>
+      </tr>
+      <tr>
+        <td>BOOLEAN</td>
+        <td><span class="segments"><span lang="en">8bit(1byte) unsigned char</span><span lang="fr" style="display: none">caractère non signé 8bit (1 octet)</span></span></td>
+      </tr>
+      <tr>
+        <td>CHAR</td>
+        <td><span class="segments"><span lang="en">8bit(1byte) ASCII char</span><span lang="fr" style="display: none">caractère ASCII 8bit (1 octet)</span></span></td>
+      </tr>
+      <tr>
+        <td>WCHAR</td>
+        <td><span class="segments"><span lang="en">16bit(2byte) UNICODE wide char</span><span lang="fr" style="display: none">caractère large UNICODE 16 bits (2 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>SHORT</td>
+        <td><span class="segments"><span lang="en">16bit(2bytes) signed integer</span><span lang="fr" style="display: none">entier signé 16 bits (2 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>USHORT</td>
+        <td><span class="segments"><span lang="en">16bit(2bytes) unsigned integer</span><span lang="fr" style="display: none">entier non signé 16 bits (2 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>WORD</td>
+        <td><span class="segments"><span lang="en">16bit(2bytes) unsigned integer</span><span lang="fr" style="display: none">entier non signé 16 bits (2 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>INT</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) signed integer</span><span lang="fr" style="display: none">entier signé 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>LONG</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) signed integer</span><span lang="fr" style="display: none">entier signé 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>BOOL</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) signed integer</span><span lang="fr" style="display: none">entier signé 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>UINT</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) unsigned integer</span><span lang="fr" style="display: none">entier non signé 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>ULONG</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) unsigned integer</span><span lang="fr" style="display: none">entier non signé 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>DWORD</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) unsigned integer</span><span lang="fr" style="display: none">entier non signé 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>INT64</td>
+        <td><span class="segments"><span lang="en">64bit(8bytes) signed integer</span><span lang="fr" style="display: none">entier signé 64 bits (8 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>UINT64</td>
+        <td><span class="segments"><span lang="en">64bit(8bytes) unsigned integer</span><span lang="fr" style="display: none">entier non signé 64 bits (8 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>PTR</td>
+        <td><span class="segments"><span lang="en">32 or 64bit pointer (depending on if the x86 or x64 version of AutoIt is used)</span><span lang="fr" style="display: none">pointeur 32 ou 64 bits (selon que la version x86 ou x64 de AutoIt est utilisée)</span></span></td>
+      </tr>
+      <tr>
+        <td>HWND</td>
+        <td><span class="segments"><span lang="en">32 or 64bit pointer (depending on if the x86 or x64 version of AutoIt is used)</span><span lang="fr" style="display: none">pointeur 32 ou 64 bits (selon que la version x86 ou x64 de AutoIt est utilisée)</span></span></td>
+      </tr>
+      <tr>
+        <td>HANDLE</td>
+        <td><span class="segments"><span lang="en">32 or 64bit pointer (depending on if the x86 or x64 version of AutoIt is used)</span><span lang="fr" style="display: none">pointeur 32 ou 64 bits (selon que la version x86 ou x64 de AutoIt est utilisée)</span></span></td>
+      </tr>
+      <tr>
+        <td>FLOAT</td>
+        <td><span class="segments"><span lang="en">32bit(4bytes) floating point</span><span lang="fr" style="display: none">nombre à virgule flottante 32 bits (4 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>DOUBLE</td>
+        <td><span class="segments"><span lang="en">64bit(8bytes) floating point</span><span lang="fr" style="display: none">nombre à virgule flottante 64 bits (8 octets)</span></span></td>
+      </tr>
+      <tr>
+        <td>INT_PTR, LONG_PTR, LRESULT, LPARAM</td>
+        <td><span class="segments"><span lang="en">32 or 64bit signed integer (depending on if the x86 or x64 version of AutoIt is used)</span><span lang="fr" style="display: none">entier signé 32 ou 64 bits (en fonction de la version x86 ou x64 de AutoIt)</span></span></td>
+      </tr>
+      <tr>
+        <td>UINT_PTR, ULONG_PTR, DWORD_PTR, WPARAM</td>
+        <td><span class="segments"><span lang="en">32 or 64bit unsigned integer (depending on if the x86 or x64 version of AutoIt is used)</span><span lang="fr" style="display: none">entier non signé 32 ou 64 bits (en fonction de la version x86 ou x64 de AutoIt)</span></span></td>
+      </tr>
+      <tr>
+        <td>STRUCT</td>
+        <td><span class="segments"><span lang="en">The following datatypes will be align according to C declaration rules.</span><span lang="fr" style="display: none">Les types de données suivants seront alignés selon les règles de déclaration C.</span></span> <span class="segments"><span lang="en">See below.</span><span lang="fr" style="display: none">Voir ci-dessous.</span></span></td>
+      </tr>
+      <tr>
+        <td>ENDSTRUCT</td>
+        <td><span class="segments"><span lang="en">End of the collection datatypes.</span><span lang="fr" style="display: none">Fin de la collection des données.</span></span> <span class="segments"><span lang="en">Padding can occurs see below.</span><span lang="fr" style="display: none">L'alignement peut se voir ci-dessous.</span></span></td>
+      </tr>
+      <tr>
+        <td>ALIGN</td>
+        <td><span class="segments"><span lang="en">n bytes boundary where datatype must be aligned.</span><span lang="fr" style="display: none">limite de n octets pour aligner les données.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">Each data type must be separated by a semi-colon ';'.</span><span lang="fr" style="display: none">Chaque type de données doit être séparé par un point-virgule ';'.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Create arrays by adding '[size]' after the data type:</span><span lang="fr" style="display: none">Créer des tableaux en ajoutant '[size]' après le type de données :</span></span> <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("int;char[128]")</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a> ("int;char[ 128]")</span></span><a href="DllStructCreate.htm"></a><br>
+  <br>
+  <span class="segments"><span lang="en">An elementname can be added similar to a C-style declaration:</span><span lang="fr" style="display: none">Un nom d'élément peut être ajouté comme dans une déclaration de type C:</span></span> <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("int n;char buffer[128]").</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a> ("int n;char buffer[ 128]").</span></span><a href="DllStructCreate.htm"></a><br>
+  <span class="segments"><span lang="en">This dataname can be used in place of the element in other DllStruct... functions.</span><span lang="fr" style="display: none">Ce nom de donnée peut être utilisé à la place de l'élément dans d'autres fonctions DllStruct...</span></span> <span class="segments"><span lang="en">The dataname must be alphanumeric or an underscore.</span><span lang="fr" style="display: none">Le 'dataname' doit être alphanumérique ou trait de soulignement.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If a collection of datatypes is defined as in a "struct{}" in C declaration, the "STRUCT; ...;</span><span lang="fr" style="display: none">Si une collection de types de données est défini comme dans une "struct{ }" d'une déclaration C, "STRUCT;...;</span></span> <span class="segments"><span lang="en">ENDSTRUCT;" must be used.</span><span lang="fr" style="display: none">ENDSTRUCT;" doit être utilisé.</span></span><br>
+  <span class="segments"><span lang="en">This needs to be done to respect alignment inside the entire structure creation.</span><span lang="fr" style="display: none">Ceci doit être fait pour respecter l'alignement à l'intérieur de la création de la structure entière.</span></span> No need if all datatypes are in the defined structure as an implicit structure alignment is done.<br>
+  <br>
+  <a href="DllStructCreate.htm">DllStructCreate</a>("int;STRUCT;ptr;int;ENDSTRUCT;int")&nbsp;&nbsp;&nbsp; ; structure is 32 bytes under a Windows 64-bit and 16 under Windows 32-bit<br>
+  <a href="DllStructCreate.htm">DllStructCreate</a>("int;ptr;int;int")&nbsp;&nbsp;&nbsp; ; structure is 24 bytes under a Windows 64-bit and 16 under Windows 32-bit<br>
+  <br>
+  <span class="segments"><span lang="en">To use a different alignment prefix the structure with the align keyword.</span><span lang="fr" style="display: none">Pour utiliser un préfixe d'alignement différent de la structure avec le mot-clé 'align'.</span></span> <span class="segments"><span lang="en">The default value for n is 8.</span><span lang="fr" style="display: none">La valeur par défaut de n est 8.</span></span> <span class="segments"><span lang="en">Valid values are 1, 2, 4, 8, and 16.</span><span lang="fr" style="display: none">Les valeurs valides sont 1, 2, 4, 8, et 16.</span></span> <span class="segments"><span lang="en">The alignment of a member will be on a boundary that is either a multiple of n or a multiple of the size of the member, <strong>whichever is smaller</strong>.</span><span lang="fr" style="display: none">L'alignement d'un membre aura une limite qui est soit un multiple de n soit un multiple de la taille du membre, <strong>whichever is smaller</strong> .</span></span> <span class="segments"><span lang="en">This is equivalent to the #pragma pack option with the Microsoft Visual C++ compiler.</span><span lang="fr" style="display: none">Ceci est équivalent à l'option #pragma avec le compilateur Visual C++ de Microsoft.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("short;int") ; structure is 8 bytes, the "int" is at offset 4</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a>("short;int"); la structure est de 8 octets, le "int" est à l'offset 4</span></span><br>
+  <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("align 2;short;int") ; structure is 6 bytes, the "int" is at offset 2</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a> ("align 2;short;int"); la structure est de 6 octets, le "int" est à l'offset 2</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("byte;double") ; structure is 16 bytes, the "double" is at offset 8</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a>("byte;double"); la structure est de 16 octets, le «double» est à l'offset 8</span></span><br>
+  <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("align 4;byte;double") ; structure is 12 bytes, the "double" is at offset 4</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a> ("align 4;byte;double" ); la structure est de 12 octets, le «double» est à l'offset 4</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If a change of alignment is needed "align" can be use before the first element which need to be changed.</span><span lang="fr" style="display: none">Si un changement d'alignement est requis, "align" peut être utilisé avant le premier élément qui doit être changée.</span></span><br>
+  <span class="segments"><span lang="en">"align" or "align 8" leads to default alignment.</span><span lang="fr" style="display: none">"align" ou "align 8" conduit à l'alignement par défaut.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To release allocated memory just set the returned variable to 0.</span><span lang="fr" style="display: none">Pour libérer la mémoire allouée juste définir la variable de retour à 0.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en"><strong>The following aggregate alignment rules apply:</strong></span><span lang="fr" style="display: none"><strong>Les règles d'alignement des ensembles s'appliquent:</strong></span></span><br>
+  <span class="segments"><span lang="en">The alignment of an array is the same as the alignment of one of the elements of the array.</span><span lang="fr" style="display: none">L'alignement d'un tableau est le même que l'alignement de l'un des éléments du tableau.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">The alignment of the beginning of a structure is the maximum alignment of any individual member.</span><span lang="fr" style="display: none">L'alignement du début de la structure est l'alignement maximal de tous les membres individuels.</span></span><br>
+  <span class="segments"><span lang="en">Each member within the structure is be placed at its proper alignment as defined in the previous table, which require implicit internal padding, depending on the previous member.</span><span lang="fr" style="display: none">Chaque membre au sein de la structure est placée à son bon alignement tel que défini dans le tableau précédent, ce qui nécessite de combler implicitement, selon le membre précédent.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Structure size is an integral multiple of its alignment, which requires padding after the last member.</span><span lang="fr" style="display: none">La taille de la structure est un multiple entier de l'alignement, ce qui nécessite de combler après le dernier élément.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="DllCall.htm">DllCall</a>, <a href="DllStructGetData.htm">DllStructGetData</a>, <a href="DllStructGetPtr.htm">DllStructGetPtr</a>, <a href="DllStructGetSize.htm">DllStructGetSize</a>, <a href="DllStructSetData.htm">DllStructSetData</a>, <a href="IsDllStruct.htm">IsDllStruct</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\DllStructCreate.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S2">#cs Comments:</span>
+<span class="S2">    Create the following structure (C language):</span>
+<span class="S2">    struct {</span>
+<span class="S2">        int var1;</span>
+<span class="S2">        unsigned char var2;</span>
+<span class="S2">        unsigned int var3;</span>
+<span class="S2">        char var4[128];</span>
+<span class="S2">    };</span>
+
+<span class="S2">    Schema:</span>
+<span class="S2">    ------------------------------------</span>
+<span class="S2">    \ int    \ byte   \ uint   \ char   \</span>
+<span class="S2">     \   var1 \   var2 \   var3 \   var4 \</span>
+<span class="S2">      ------------------------------------</span>
+<span class="S2">    #ce</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign a Local constant variable the definition of a structure (read carefully the DllStructCreate remarks).</span><span lang="fr" style="display: none">Assigne une constante locale avec la définition d'une structure (lire attentivement les remarques DllStructCreate).</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><a class="codeSnippetLink" href="$tagSTRUCT1.htm"><span class="S9">$tagSTRUCT1</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"struct;int var1;byte var2;uint var3;char var4[128];endstruct"</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">The tag variable is declared as Constant because its value will never change for any script execution.</span><span lang="fr" style="display: none">La variable est déclarée comme constante parce que sa valeur ne changera jamais pendant toute l'exécution du script.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Assign a Local variable the structure.</span><span lang="fr" style="display: none">Assigne une variable locale avec la structure.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$tSTRUCT1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructCreate.htm"><span class="S4">DllStructCreate</span></a><span class="S8">(</span><a class="codeSnippetLink" href="$tagSTRUCT1.htm"><span class="S9">$tagSTRUCT1</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">If an error occurred display the error code and return False.</span><span lang="fr" style="display: none">Si une erreur s'est produite, affiche le code d'erreur et retourne.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error in DllStructCreate, Code: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set the data of the element var1 (int) in the $tSTRUCT1.</span><span lang="fr" style="display: none">Définit les données de l'élément de var1 (int) dans $tSTRUCT1.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/DllStructSetData.htm"><span class="S4">DllStructSetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"var1"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or 1 instead of "var1".</span><span lang="fr" style="display: none">Ou 1 à la place de \" var1 \".</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set the data of the element var2 (byte) in the $tSTRUCT1.</span><span lang="fr" style="display: none">Définit les données de l'élément de var2 (octets) dans $tSTRUCT1.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/DllStructSetData.htm"><span class="S4">DllStructSetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><span class="S3">255</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or "var2" instead of 2.</span><span lang="fr" style="display: none">Ou \" var2 \" au lieu de 2.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set the data of the element var3 (uint) in the $tSTRUCT1.</span><span lang="fr" style="display: none">Définit les données de l'élément var3 (uint) dans $tSTRUCT1.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/DllStructSetData.htm"><span class="S4">DllStructSetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"var3"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">The -1 (signed int) will be typecasted to unsigned int.</span><span lang="fr" style="display: none">-1 (Int signé) sera typecasted à unsigned int.</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Or 3 instead of "var3".</span><span lang="fr" style="display: none">Ou 3 au lieu de \" var3 \".</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set the data of the element var4 (char) in the $tSTRUCT1.</span><span lang="fr" style="display: none">Définit les données de l'élément var4 (char) dans $tSTRUCT1.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/DllStructSetData.htm"><span class="S4">DllStructSetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"var4"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Hello"</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or 4 instead of "var4".</span><span lang="fr" style="display: none">Ou 4 au lieu de \" var4 \".</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">This element can contain up to 128 characters.</span><span lang="fr" style="display: none">Cet élément peut contenir jusqu'à 128 caractères.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Change the data of the element var4 (char) in the $tSTRUCT1, at the index 1 of the char array (1 based index).</span><span lang="fr" style="display: none">Modifie les données de l'élément var4 (char) dans $tSTRUCT1, à l'indice 1 du tableau de caractères (1 d'index de base).</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/DllStructSetData.htm"><span class="S4">DllStructSetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"var4"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Asc.htm"><span class="S4">Asc</span></a><span class="S8">(</span><span class="S7">"h"</span><span class="S8">),</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the results.</span><span lang="fr" style="display: none">Affiche les résultats.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Struct Size: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructGetSize.htm"><span class="S4">DllStructGetSize</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"Struct pointer: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructGetPtr.htm"><span class="S4">DllStructGetPtr</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><span class="S7">"Data:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/DllStructGetData.htm"><span class="S4">DllStructGetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or "var1" instead of 1.</span><span lang="fr" style="display: none">Ou \" var1 \" au lieu de 1.</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/DllStructGetData.htm"><span class="S4">DllStructGetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"var2"</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or 2 instead of "var2".</span><span lang="fr" style="display: none">Ou 2 à la place de \" var2 \".</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/DllStructGetData.htm"><span class="S4">DllStructGetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or "var3" instead of 3.</span><span lang="fr" style="display: none">Ou \" var3 \" au lieu de 3.</span></span></span></span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/DllStructGetData.htm"><span class="S4">DllStructGetData</span></a><span class="S8">(</span><span class="S9">$tSTRUCT1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Or "var4" instead of 4.</span><span lang="fr" style="display: none">Ou \" var4 \" au lieu de 4.</span></span></span></span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Release the resources used by the structure.</span><span lang="fr" style="display: none">Libére les ressources utilisées par la structure.</span></span></span></span>
+<span class="S0">    </span><span class="S9">$tSTRUCT1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

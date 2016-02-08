@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_GetSystemDEPPolicy</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_GetSystemDEPPolicy</h1>
+  <p class="funcdesc">Gets the data execution prevention (DEP) policy setting for the system<br></p>
+  <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
+  _WinAPI_GetSystemDEPPolicy ( )<br></p>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns The DEP policy setting, which can be one of the following values.<br>
+  <br>
+  0 - AlwaysOff<br>
+  DEP is disabled for all parts of the system, regardless of hardware support for DEP. The processor<br>
+  runs in PAE mode with 32-bit versions of Windows unless PAE is disabled in the boot configuration data.<br>
+  <br>
+  1 - AlwaysOn<br>
+  DEP is enabled for all parts of the system. All processes always run with DEP enabled. DEP cannot<br>
+  be explicitly disabled for selected applications. System compatibility fixes are ignored.<br>
+  <br>
+  2 - OptIn<br>
+  On systems with processors that are capable of hardware-enforced DEP, DEP is automatically enabled<br>
+  only for operating system components. This is the default setting for client versions of Windows.<br>
+  DEP can be explicitly enabled for selected applications or the current process.<br>
+  <br>
+  3 - OptOut<br>
+  DEP is automatically enabled for operating system components and all processes. This is the default<br>
+  setting for Windows Server versions. DEP can be explicitly disabled for selected applications or<br>
+  the current process. System compatibility fixes for DEP are in effect.<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>This function requires Windows XP with SP3, Windows Vista with SP1 or later.<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(GetSystemDEPPolicy);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">GetSystemDEPPolicy</a> in MSDN Library.</p>
+</body>
+</html>

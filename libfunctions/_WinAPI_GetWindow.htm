@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_GetWindow</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_GetWindow</h1>
+  <p class="funcdesc">Retrieves the handle of a window that has a specified relationship to the specified window<br></p>
+  <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
+  _WinAPI_GetWindow ( $hWnd, $iCmd )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$hWnd</td>
+        <td style="width:85%">Handle of the window</td>
+      </tr>
+      <tr>
+        <td>$iCmd</td>
+        <td>Specifies the relationship between the specified window and the window whose handle is to be retrieved.<br>
+        This parameter can be one of the following values:<br>
+        &nbsp;&nbsp;&nbsp; $GW_CHILD - The retrieved handle identifies the child window at the top of the Z order, if the specified<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; window is a parent window; otherwise, the retrieved handle is 0.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; The function examines only child windows of the specified window. It does not examine descendant windows.<br>
+        &nbsp;&nbsp;&nbsp; $GW_HWNDFIRST - The retrieved handle identifies the window of the same type that is highest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a topmost window, the handle identifies the topmost window that is highest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a top-level window, the handle identifies the top level window that is highest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a child window, the handle identifies the sibling window that is highest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; $GW_HWNDLAST - The retrieved handle identifies the window of the same type that is lowest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a topmost window, the handle identifies the topmost window that is lowest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a top-level window the handle identifies the top-level window that's lowest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a child window, the handle identifies the sibling window that is lowest in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; $GW_HWNDNEXT - The retrieved handle identifies the window below the specified window in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a topmost window, the handle identifies the topmost window below the specified window.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a top-level window, the handle identifies the top-level window below the specified window.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a child window the handle identifies the sibling window below the specified window.<br>
+        &nbsp;&nbsp;&nbsp; $GW_HWNDPREV - The retrieved handle identifies the window above the specified window in the Z order.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a topmost window, the handle identifies the topmost window above the specified window.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a top-level window, the handle identifies the top-level window above the specified window.<br>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the specified window is a child window, the handle identifies the sibling window above the specified window.<br>
+        &nbsp;&nbsp;&nbsp; $GW_OWNER - The retrieved handle identifies the specified window's owner window if any.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%">The window handle</td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>
+          0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>Above constants require #include &lt;WinAPIConstants.au3&gt;<br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(GetWindow);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">GetWindow</a> in MSDN Library.</p>
+</body>
+</html>

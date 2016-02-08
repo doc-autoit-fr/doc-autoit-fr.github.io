@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction _WinAPI_MultiByteToWideCharEx</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>_WinAPI_MultiByteToWideCharEx</h1>
+  <p class="funcdesc">Maps a character string to a wide-character (Unicode) string<br></p>
+  <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
+  _WinAPI_MultiByteToWideCharEx ( $sText, $pText [, $iCodePage = 0 [, $iFlags = 0]] )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">$sText</td>
+        <td style="width:85%">Text to be converted</td>
+      </tr>
+      <tr>
+        <td>$pText</td>
+        <td>Pointer to a byte structure where the converted string will be stored</td>
+      </tr>
+      <tr>
+        <td>$iCodePage</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the code page to be used to perform the conversion:<br>
+        &nbsp;&nbsp;&nbsp; 0 - ANSI code page<br>
+        &nbsp;&nbsp;&nbsp; 1 - OEM code page<br>
+        &nbsp;&nbsp;&nbsp; 2 - Macintosh code page</td>
+      </tr>
+      <tr>
+        <td>$iFlags</td>
+        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Flags that indicate whether to translate to precomposed or composite wide characters:<br>
+        &nbsp;&nbsp;&nbsp; $MB_PRECOMPOSED - Always use precomposed characters<br>
+        &nbsp;&nbsp;&nbsp; $MB_COMPOSITE - Always use composite characters<br>
+        &nbsp;&nbsp;&nbsp; $MB_USEGLYPHCHARS - Use glyph characters instead of control characters</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">True</span><span lang="fr" style="display: none">Retourne True</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td>
+          False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p>The byte structure must be at least twice the length of $sText.<br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="_WinAPI_MultiByteToWideChar.htm">_WinAPI_MultiByteToWideChar</a></p>
+</body>
+</html>

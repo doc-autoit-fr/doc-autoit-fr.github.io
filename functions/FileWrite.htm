@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction FileWrite</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>FileWrite</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Write text/data to the end of a previously opened file.</span><span lang="fr" style="display: none">Ajoute un texte/des données à la fin d'un fichier précédemment ouvert.</span></span><br></p>
+  <p class="codeheader">FileWrite ( "filehandle/filename", "text/data" )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">filehandle/filename</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The handle of a file, as returned by a previous call to <a href="FileOpen.htm">FileOpen()</a>.</span><span lang="fr" style="display: none">Le handle d'un fichier, renvoyé par l'utilisation de la commande <a href="FileOpen.htm">FileOpen()</a>.</span></span> <span class="segments"><span lang="en">Alternatively, you may use a string filename as the first parameter.</span><span lang="fr" style="display: none">Alternativement, vous pouvez utiliser une chaine de caractères contenant le chemin d'accès du fichier comme premier paramètre.</span></span></td>
+      </tr>
+      <tr>
+        <td>text/data</td>
+        <td><span class="segments"><span lang="en">The text/data to write to the file.</span><span lang="fr" style="display: none">Le texte/les données à écrire dans le fichier.</span></span> <span class="segments"><span lang="en">The text is written as is - no @CR or @LF characters are added.</span><span lang="fr" style="display: none">Le texte est écrit tel quel - aucuns @CR ou @LF ne sont ajoutés.</span></span> <span class="segments"><span lang="en">See remark for data type.</span><span lang="fr" style="display: none">Consultez Remarques pour le type de données.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0 if file not opened in writemode, file is read only, or file cannot otherwise be written to.</span><span lang="fr" style="display: none">Retourne 0 si le fichier n'est pas ouvert en writemode, si le fichier est en lecture seule, ou si le fichier ne peut être autrement écrit.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><span class="segments"><span lang="en">The file must be opened in write mode or the <a href="FileWrite.htm">FileWrite()</a> command will fail.</span><span lang="fr" style="display: none">Le fichier doit être ouvert en écriture, sinon la commande <a href="FileWrite.htm">FileWrite()</a> échouera.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">If a filename is given rather than a file handle, the file will be opened and closed during the function call.</span><span lang="fr" style="display: none">Si un chemin d'accès est donné plutôt qu'un handle, le fichier sera ouvert et fermé durant l'appel de fonction.</span></span> <span class="segments"><span lang="en">For parsing large text files this will be much slower than using filehandles.</span><span lang="fr" style="display: none">Pour l'analyse de grands fichiers texte ce sera beaucoup plus lent que d'utiliser un handle.</span></span> <span class="segments"><span lang="en">However, filename will be created if it does not already exist.</span><span lang="fr" style="display: none">Cependant, le fichier sera créé s'il n'existe pas déjà.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">Do not mix filehandles and filenames, i.e., don't <a href="FileOpen.htm">FileOpen()</a> a file and then use a filename in this function.</span><span lang="fr" style="display: none">Ne pas mélanger handles et des chemins d'accès, c'est à dire, ne pas utiliser <a href="FileOpen.htm">FileOpen()</a> pour un fichier et ensuite utiliser un chemin d'accès dans cette fonction.</span></span> <span class="segments"><span lang="en">Either use filehandles or filenames in your routines, not both.</span><span lang="fr" style="display: none">Soit utiliser les chemins d'accès les handles dans votre routine, mais pas les deux.</span></span><a href="FileOpen.htm"></a><br>
+  <br>
+  When writing text AutoIt will write using UTF8 (without BOM) by default. To write in another mode the file must be opened with <a href="FileOpen.htm">FileOpen()</a> and the relevant flags.<br>
+  <br>
+  <span class="segments"><span lang="en">If the data is a binary type variant (and not text) it will be written to the file byte by byte.</span><span lang="fr" style="display: none">Si les données sont une variante de type binaire (et non du texte), il sera écrit dans le fichier octet par octet.</span></span> <span class="segments"><span lang="en">Binary operation can also be forced by using <a href="FileOpen.htm">FileOpen()</a> with the binary flag.</span><span lang="fr" style="display: none">Une opération binaire peut aussi être forcée en utilisant <a href="FileOpen.htm">FileOpen()</a> avec le paramètre binaire.</span></span><a href="FileOpen.htm"></a><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <p><a href="Binary.htm">Binary</a>, <a href="FileFlush.htm">FileFlush</a>, <a href="FileGetPos.htm">FileGetPos</a>, <a href="FileOpen.htm">FileOpen</a>, <a href="FileRead.htm">FileRead</a>, <a href="FileReadLine.htm">FileReadLine</a>, <a href="FileSetPos.htm">FileSetPos</a>, <a href="FileWriteLine.htm">FileWriteLine</a></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\FileWrite.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;FileConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPIFiles.au3&gt;</span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a constant variable in Local scope of the filepath that will be read/written to.</span><span lang="fr" style="display: none">Créezune constante de portée locale avec le chemin du fichier qui sera lu/écrit.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sFilePath</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetTempFileName.htm"><span class="S15">_WinAPI_GetTempFileName</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a temporary file to write data to.</span><span lang="fr" style="display: none">Crée un fichier temporaire pour écrire des données.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Start of the FileWrite example, line 1. "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred whilst writing the temporary file."</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Open the file for writing (append to the end of a file) and store the handle to a variable.</span><span lang="fr" style="display: none">Ouvre le fichier en écriture (ajoute à la fin d'un fichier) et stocke le handle dans une variable.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hFileOpen</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileOpen.htm"><span class="S4">FileOpen</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$FO_APPEND</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$hFileOpen</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"An error occurred whilst writing the temporary file."</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">False</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Write data to the file using the handle returned by FileOpen.</span><span lang="fr" style="display: none">Écrit des données dans le fichier à l'aide du handle retournée par FileOpen.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$hFileOpen</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Line 2"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$hFileOpen</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This is still line 2 as a new line wasn't appended to the last FileWrite call."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$hFileOpen</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Line 3"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileWrite.htm"><span class="S4">FileWrite</span></a><span class="S8">(</span><span class="S9">$hFileOpen</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Line 4"</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the handle returned by FileOpen.</span><span lang="fr" style="display: none">Ferme le handle renvoyé par FileOpen.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileClose.htm"><span class="S4">FileClose</span></a><span class="S8">(</span><span class="S9">$hFileOpen</span><span class="S8">)</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the contents of the file passing the filepath to FileRead instead of a handle returned by FileOpen.</span><span lang="fr" style="display: none">Affiche le contenu du fichier en passant le chemin du fichier à FILEREAD au lieu du handle retournée par FileOpen.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Contents of the file:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/FileRead.htm"><span class="S4">FileRead</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">))</span>
+
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Delete the temporary file.</span><span lang="fr" style="display: none">Supprimez le fichier temporaire.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/FileDelete.htm"><span class="S4">FileDelete</span></a><span class="S8">(</span><span class="S9">$sFilePath</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+</span>
+</pre>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

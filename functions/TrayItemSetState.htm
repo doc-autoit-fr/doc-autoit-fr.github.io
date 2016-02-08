@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
+  <title>Fonction TrayItemSetState</title>
+  <meta charset="UTF-8">
+  <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
+</head>
+<body>
+  <h1 class="small">Référence Fonction</h1>
+  <hr style="height:0px">
+  <h1>TrayItemSetState</h1>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the state of a tray menu/item control.</span><span lang="fr" style="display: none">Définit l'état d'un contrôle menu ou item de la zone de notification.</span></span><br></p>
+  <p class="codeheader">TrayItemSetState ( controlID, state )<br></p>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <table>
+    <tbody>
+      <tr>
+        <td style="width:15%">controlID</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The control identifier (controlID) as returned by a <a href="../functions/TrayCreateItem.htm">TrayCreateItem</a> or <a href="../functions/TrayCreateMenu.htm">TrayCreateMenu</a> function.</span><span lang="fr" style="display: none">L'identifiant du contrôle (controlID) tel que retourné par la fonction <a href="../functions/TrayCreateItem.htm">TrayCreateItem</a> ou <a href="../functions/TrayCreateMenu.htm">TrayCreateMenu</a> fonction.</span></span></td>
+      </tr>
+      <tr>
+        <td>state</td>
+        <td><span class="segments"><span lang="en">See the <a href="#StateTable">State table</a> below.</span><span lang="fr" style="display: none">Consultez le <a href="#StateTable">Tableau des états</a> ci-dessous.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td class="valign-top" style="width:10%">Success:</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+      </tr>
+      <tr>
+        <td class="valign-top">Failure:</td>
+        <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <p><a id="StateTable"><strong>State table</strong><br>
+  <table>
+    <tbody>
+      <tr>
+        <th><span class="segments"><span lang="en"><strong>State</strong></span><span lang="fr" style="display: none"><strong>Etat</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Value</strong></span><span lang="fr" style="display: none"><strong>Valeur</strong></span></span></th>
+        <th><span class="segments"><span lang="en"><strong>Comments</strong></span><span lang="fr" style="display: none"><strong>Commentaires</strong></span></span></th>
+      </tr>
+      <tr>
+        <td>No Change</td>
+        <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
+      </tr>
+      <tr>
+        <td>$TRAY_CHECKED</td>
+        <td><span class="segments"><span lang="en">1</span><span lang="fr" style="display: none">Retourne 1</span></span></td>
+        <td><span class="segments"><span lang="en">Menuitem will be checked</span><span lang="fr" style="display: none">L'item du menu sera coché</span></span></td>
+      </tr>
+      <tr>
+        <td>$TRAY_UNCHECKED</td>
+        <td>4</td>
+        <td><span class="segments"><span lang="en">Menuitem will be unchecked</span><span lang="fr" style="display: none">L'item du menu sera décoché</span></span></td>
+      </tr>
+      <tr>
+        <td>$TRAY_ENABLE</td>
+        <td>64</td>
+        <td><span class="segments"><span lang="en">Menuitem will be enabled</span><span lang="fr" style="display: none">L'item du menu sera activé</span></span></td>
+      </tr>
+      <tr>
+        <td>$TRAY_DISABLE</td>
+        <td>128</td>
+        <td><span class="segments"><span lang="en">Menuitem will be greyed out</span><span lang="fr" style="display: none">L'item du menu sera grisé</span></span></td>
+      </tr>
+      <tr>
+        <td>$TRAY_FOCUS</td>
+        <td>256</td>
+        <td><span class="segments"><span lang="en">Menuitem will be selected</span><span lang="fr" style="display: none">L'item du menu sera sélectionné</span></span></td>
+      </tr>
+      <tr>
+        <td>$TRAY_DEFAULT</td>
+        <td>512</td>
+        <td><span class="segments"><span lang="en">Menuitem will be set as default menuitem</span><span lang="fr" style="display: none">L'item du menu sera défini comme l'item par défaut</span></span></td>
+      </tr>
+    </tbody>
+  </table><br>
+  <span class="segments"><span lang="en">State values can be summed up as for example $TRAY_CHECKED + $TRAY_DEFAULT sets the menuitem in an checked and default state.</span><span lang="fr" style="display: none">Les valeurs de l'État peuvent s'ajouter comme par exemple $TRAY_CHECKED + $TRAY_DEFAULT qui définit l'item du menu dans l'état coché et par défaut.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">To reset/delete the $TRAY_DEFAULT-state for a menuitem just use this function on the item with another state, for instance with $TRAY_ENABLE.</span><span lang="fr" style="display: none">Pour réinitialiser ou effacer l'état $TRAY_DEFAULT pour un item de menu il suffit d'utiliser cette fonction sur l'item avec un autre état, par exemple avec $TRAY_ENABLE.</span></span><br>
+  <br>
+  <span class="segments"><span lang="en">When you set $TRAY_DEFAULT state for a menuitem, the default behavior of primary double click on tray icon is to execute this default menuitem.</span><span lang="fr" style="display: none">Lorsque vous définissez l'état $TRAY_DEFAULT pour un item de menu, le comportement par défaut d'un double-clic gauche sur l'icône de la zone de notification est d'exécuter cet item par défaut.</span></span> To disable this behavior use <a href="../functions/AutoItSetOption.htm#TrayMenuMode">Opt("TrayMenuMode", 4)</a>.<a href="../functions/AutoItSetOption.htm#TrayMenuMode"></a><br>
+  <br>
+  The above constants are defined in #include &lt;TrayConstants.au3&gt;.<br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="TrayCreateItem.htm">TrayCreateItem</a>, <a href="TrayCreateMenu.htm">TrayCreateMenu</a>, <a href="TrayItemGetState.htm">TrayItemGetState</a>, <a href="TraySetState.htm">TraySetState</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <script type="text/javascript">
+  function copyToClipboard(section) {
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
+      if (window.clipboardData && clipboardData.setData) {
+        clipboardData.setData("text", section + "\r\n");
+        alert("Copied to clipboard");
+      }
+    }
+  }
+  </script>
+  <div class="codeSnippetContainer">
+    <div class="codeSnippetContainerTabs">
+      <script type="text/javascript">
+      if (document.URL.match(/^mk:@MSITStore:/i)) {
+      document.write('<div class="codeSnippetContainerTab codeSnippetContainerTabSingle" dir="ltr">');
+      document.write('<object id=hhctrl type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ShortCut"><param name="Font" value="Verdana,10pt"><param name="Text" value="Text:Open this Script"><param name="Item1" value=",Examples\\HelpFile\\TrayItemSetState.au3,"><\/object>');
+      document.write('<\/div>');
+      }
+      </script>
+    </div>
+    <div class="codeSnippetContainerCodeContainer">
+      <div class="codeSnippetToolBar">
+        <div class="codeSnippetToolBarText">
+          <script type="text/javascript">
+          if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          </script>
+        </div>
+      </div>
+      <div class="codeSnippetContainerCode" dir="ltr" id="copytext1">
+        <pre><a class="codeSnippetLink" href="../keywords/NoTrayIcon.htm"><span class="S11">#NoTrayIcon</span></a>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
+<a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;TrayConstants.au3&gt;</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Required for the $TRAY_CHECKED and $TRAY_ICONSTATE_SHOW constants.</span><span lang="fr" style="display: none">Nécessaire pour les constantes $TRAY_CHECKED et $TRAY_ICONSTATE_SHOW.</span></span></span></span>
+
+<a class="codeSnippetLink" href="../functions/AutoItSetOption.htm"><span class="S4">Opt</span></a><span class="S8">(</span><span class="S7">"TrayMenuMode"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">The default tray menu items will not be shown and items are not checked when selected.</span><span lang="fr" style="display: none">Les items de menu, par défaut, ne seront pas affichés et les items ne sont pas cochés lorsqu'ils seront sélectionnés.</span></span> <span class="segments"><span lang="en">These are options 1 and 2 for TrayMenuMode.</span><span lang="fr" style="display: none">Ce sont les options 1 et 2 de TrayMenuMode.</span></span></span></span>
+
+<span class="S0">Example</span><span class="S8">()</span>
+
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idSetState</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">"Set 'About' State"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Create a separator line.</span><span lang="fr" style="display: none">Crée une ligne de séparation.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idAbout</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">"About"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Create a separator line.</span><span lang="fr" style="display: none">Crée une ligne de séparation.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idExit</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayCreateItem.htm"><span class="S4">TrayCreateItem</span></a><span class="S8">(</span><span class="S7">"Exit"</span><span class="S8">)</span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/TraySetState.htm"><span class="S4">TraySetState</span></a><span class="S8">(</span><span class="S9">$TRAY_ICONSTATE_SHOW</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Show the tray menu.</span><span lang="fr" style="display: none">Affiche le menu de la barre.</span></span></span></span>
+
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/TrayGetMsg.htm"><span class="S4">TrayGetMsg</span></a><span class="S8">()</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idAbout</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Display a message box about the AutoIt version and installation path of the AutoIt executable.</span><span lang="fr" style="display: none">Affiche une boîte de message à propos de la version et du chemin d'installation de l'exécutable AutoIt.</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"AutoIt tray menu example."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">                        </span><span class="S7">"Version: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@AutoItVersion"><span class="S6">@AutoItVersion</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">                        </span><span class="S7">"Install Path: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringLeft.htm"><span class="S4">StringLeft</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@AutoItExe"><span class="S6">@AutoItExe</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringInStr.htm"><span class="S4">StringInStr</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@AutoItExe"><span class="S6">@AutoItExe</span></a><span class="S8">,</span><span class="S0"> </span><span class="S7">"\"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Find the folder of a full path.</span><span lang="fr" style="display: none">Trouve le dossier d'un chemin d'accès complet.</span></span></span></span>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idSetState</span>
+<span class="S0">                </span><span class="S1">; <span><span class="segments"><span lang="en">Set the 'About' item state to checked.</span><span lang="fr" style="display: none">Définit l'état de l'item 'About' à coché.</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/TrayItemSetState.htm"><span class="S4">TrayItemSetState</span></a><span class="S8">(</span><span class="S9">$idAbout</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$TRAY_CHECKED</span><span class="S8">)</span>
+
+<span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$idExit</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Exit the loop.</span><span lang="fr" style="display: none">Sort de la boucle.</span></span></span></span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
+<span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">EndSwitch</span></a>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
+<a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
+
+</pre>
+      </div>
+    </div>
+  </div></a></p>
+</body>
+</html>
