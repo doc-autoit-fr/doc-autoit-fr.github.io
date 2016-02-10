@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction HotKeySet</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>HotKeySet</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sets a hotkey that calls a user function.</span><span lang="fr" style="display: none">Définit un raccourci clavier qui appelle une fonction utilisateur.</span></span><br></p>
   <p class="codeheader">HotKeySet ( "key" [, "function"] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,11 +28,11 @@
       </tr>
       <tr>
         <td>function</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The name of the function to call when the key is pressed.</span><span lang="fr" style="display: none">Le nom de la fonction à appeler lorsque la touche est appuyée.</span></span> <span class="segments"><span lang="en">Not specifying this parameter will unset a previous hotkey.</span><span lang="fr" style="display: none">Si cette valeur n'est pas spécifiée, le raccourci précédemment créé est effacé.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The name of the function to call when the key is pressed.</span><span lang="fr" style="display: none">Le nom de la fonction à appeler lorsque la touche est appuyée.</span></span> <span class="segments"><span lang="en">Not specifying this parameter will unset a previous hotkey.</span><span lang="fr" style="display: none">Si cette valeur n'est pas spécifiée, le raccourci précédemment créé est effacé.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,7 +45,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>It is recommended to use lower-case keys/characters (e.g. "b" and not "B") when setting hotkeys to avoid errors as with some keyboard layouts upper and lower case keys may be mapped differently.<br>
   <br>
   Keyboard with 102 keys as the Hungarian keyboard need to use "{OEM_102}" to capture the "í" key.<br>
@@ -105,9 +104,9 @@
   <span class="segments"><span lang="en">The called function can <strong>not</strong> be given parameters.</span><span lang="fr" style="display: none">La fonction appelée <strong>ne peut pas</strong> recevoir de paramètres.</span></span> <span class="segments"><span lang="en">They will be ignored.</span><span lang="fr" style="display: none">Ils seront ignorés.</span></span><br>
   <br>
   <span class="segments"><span lang="en">@HotKeyPressed macro can be used inside the function to handle several keys in the same function.</span><span lang="fr" style="display: none">La macro @HotKeyPressed peut être utilisée à l'intérieur de la fonction pour traiter différentes touches dans la même fonction.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUISetAccelerators.htm">GUISetAccelerators</a>, <a href="Send.htm">Send</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

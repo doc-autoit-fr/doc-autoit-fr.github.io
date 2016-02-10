@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction BinaryToString</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>BinaryToString</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Converts a binary variant into a string.</span><span lang="fr" style="display: none">Convertit une variable de type 'variant' binaire en une chaîne de caractère.</span></span><br></p>
   <p class="codeheader">BinaryToString ( expression [, flag = 1] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how the binary data is converted:</span><span lang="fr" style="display: none">Change la manière dont les données binaires sont converties:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Changes how the binary data is converted:</span><span lang="fr" style="display: none">Change la manière dont les données binaires sont converties:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SB_ANSI (1) = binary data is ANSI (default)<br>
         &nbsp;&nbsp;&nbsp; $SB_UTF16LE (2) = binary data is UTF16 Little Endian<br>
         &nbsp;&nbsp;&nbsp; $SB_UTF16BE (3) = binary data is UTF16 Big Endian<br>
@@ -39,7 +38,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -51,18 +50,18 @@
         <td><span class="segments"><span lang="en">an empty string and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne une chaîne vide et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = Input string had zero length.</span><span lang="fr" style="display: none">1 = La chaîne d'entrée a une longueur nulle.</span></span><br>
         <span class="segments"><span lang="en">2 = Input string had an odd number of bytes but was supposed to be UTF16 (must contain an even number of bytes to be valid UTF16).</span><span lang="fr" style="display: none">2 = La chaîne d'entrée a un nombre impair d'octets, mais devait être en UTF16 (devait contenir un nombre pair d'octets pour être un codage UTF16 valide).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Unlike <a href="String.htm">String()</a> which returns a hexadecimal representation of binary data, this function will assume the binary data is a string value and convert it appropriately.</span><span lang="fr" style="display: none">Contrairement à <a href="String.htm">String()</a> qui retourne une représentation hexadécimale des données binaires, cette fonction supposera qu'une donnée binaire est une valeur chaîne et la convertira de manière appropriée.</span></span><br>
   <span class="segments"><span lang="en">See <a href="../intro/unicode.htm">"Unicode Support"</a> for a detailed description.</span><span lang="fr" style="display: none">Voir <a href="../intro/unicode.htm">"Support Unicode"</a> pour une description détaillée.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="Binary.htm">Binary</a>, <a href="IsBinary.htm">IsBinary</a>, <a href="String.htm">String</a>, <a href="StringToASCIIArray.htm">StringToASCIIArray</a>, <a href="StringToBinary.htm">StringToBinary</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

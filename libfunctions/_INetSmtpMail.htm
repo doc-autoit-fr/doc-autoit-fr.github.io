@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _INetSmtpMail</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Sends an email without using an external email program<br></p>
   <p class="codeheader">#include &lt;Inet.au3&gt;<br>
   _INetSmtpMail ( $sSMTPServer, $sFromName, $sFromAddress, $sToAddress [, $sSubject = "" [, $aBody = "" [, $sEHLO = "" [, $sFirst = "" [, $bTrace = 0]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -46,27 +45,27 @@
       </tr>
       <tr>
         <td>$sSubject</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The subject of the email.</td>
+        <td><strong>[optional]</strong> The subject of the email.</td>
       </tr>
       <tr>
         <td>$aBody</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The body of the email as a single dimensional array of strings. Each value in the array will be terminated with a @CRLF in the email.</td>
+        <td><strong>[optional]</strong> The body of the email as a single dimensional array of strings. Each value in the array will be terminated with a @CRLF in the email.</td>
       </tr>
       <tr>
         <td>$sEHLO</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> identifier for the smtp server connection (by default @ComputerName). If Smtp server require a "EHLO" string just set the string to "EHLO " & @ComputerName.</td>
+        <td><strong>[optional]</strong> identifier for the smtp server connection (by default @ComputerName). If Smtp server require a "EHLO" string just set the string to "EHLO " & @ComputerName.</td>
       </tr>
       <tr>
         <td>$sFirst</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> string sent before helo for the smtp server connection (by default {SPACE}). To not send any character this parameter must equal -1, some SMTP server required it.</td>
+        <td><strong>[optional]</strong> string sent before helo for the smtp server connection (by default {SPACE}). To not send any character this parameter must equal -1, some SMTP server required it.</td>
       </tr>
       <tr>
         <td>$bTrace</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> trace the dialog in a splash window</td>
+        <td><strong>[optional]</strong> trace the dialog in a splash window</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -75,10 +74,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1</span><span lang="fr" style="display: none">Retourne 1</span></span><br>
         2 - Unable to start TCP<br>
         3 - Unable to resolve IP<br>
@@ -89,11 +88,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This function sends an email directly through an SMTP server without the use of a third party email client.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_INetMail.htm">_INetMail</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

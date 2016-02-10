@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction PixelChecksum</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>PixelChecksum</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Generates a checksum for a region of pixels.</span><span lang="fr" style="display: none">Génère une somme de contrôle dans une région de pixels.</span></span><br></p>
   <p class="codeheader">PixelChecksum ( left, top, right, bottom [, step = 1 [, hwnd [, mode = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -41,19 +40,19 @@
       </tr>
       <tr>
         <td>step</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Instead of checksumming each pixel use a value larger than 1 to skip pixels (for speed). <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
+        <td><strong>[optional]</strong> Instead of checksumming each pixel use a value larger than 1 to skip pixels (for speed). <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
       </tr>
       <tr>
         <td>mode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">default 0 ADLER checksum, 1 CRC32 Checksum.</span><span lang="fr" style="display: none">0 = par défaut, somme de contrôle de ADLER, 1 = somme de contrôle CRC32.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">default 0 ADLER checksum, 1 CRC32 Checksum.</span><span lang="fr" style="display: none">0 = par défaut, somme de contrôle de ADLER, 1 = somme de contrôle CRC32.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -66,13 +65,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">A checksum only allows you to see if "something" has changed in a region - it does not tell you exactly what has changed.</span><span lang="fr" style="display: none">Une somme de contrôle vous permet seulement de voir si "quelque chose" a changé dans une région - elle ne vous dit pas exactement ce qui a changé.</span></span><br>
   <br>
   <span class="segments"><span lang="en">CRC32 checksum is a little slower than ADLDER but detects better pixel variation.</span><span lang="fr" style="display: none">Le contrôle CRC32 est un peu plus lent que ADLDER mais détecte mieux une variation de pixel.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="AutoItSetOption.htm#PixelCoordMode">PixelCoordMode (Option)</a>, <a href="PixelGetColor.htm">PixelGetColor</a>, <a href="PixelSearch.htm">PixelSearch</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

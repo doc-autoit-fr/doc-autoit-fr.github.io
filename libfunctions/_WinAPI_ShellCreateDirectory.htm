@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_ShellCreateDirectory</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates a new file system folder<br></p>
   <p class="codeheader">#include &lt;WinAPIShellEx.au3&gt;<br>
   _WinAPI_ShellCreateDirectory ( $sFilePath [, $hParent = 0 [, $tSecurity = 0]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,16 +29,16 @@
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A handle to a parent window.</td>
+        <td><strong>[optional]</strong> A handle to a parent window.</td>
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure with the directory's security attribute. If this parameter is 0 (Default),<br>
+        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure with the directory's security attribute. If this parameter is 0 (Default),<br>
         no security attributes are set.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -52,11 +51,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If one or more of the intermediate folders do not exist, they are created as well. Also, this function verifies that the<br>
   files in the directory will be visible if the path is a network path to deal with network drivers which might have a<br>
   limited but unknown maximum path length.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(SHCreateDirectoryEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">SHCreateDirectoryEx</a> in MSDN Library.</p>
 </body>
 </html>

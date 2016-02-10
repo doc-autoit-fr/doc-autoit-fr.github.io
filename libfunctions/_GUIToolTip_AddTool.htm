@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GUIToolTip_AddTool</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Registers a tool with the ToolTip control<br></p>
   <p class="codeheader">#include &lt;GuiToolTip.au3&gt;<br>
   _GUIToolTip_AddTool ( $hTool, $hWnd, $sText [, $iID = 0 [, $iLeft = 0 [, $iTop = 0 [, $iRight = 0 [, $iBottom = 0 [, $iFlags = Default [, $iParam = 0]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -40,27 +39,27 @@
       </tr>
       <tr>
         <td>$iID</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Identifier of the tool, or Window handle of the control the tool is to be assigned to</td>
+        <td><strong>[optional]</strong> Identifier of the tool, or Window handle of the control the tool is to be assigned to</td>
       </tr>
       <tr>
         <td>$iLeft</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> X coordinate of the upper left corner of the rectangle</td>
+        <td><strong>[optional]</strong> X coordinate of the upper left corner of the rectangle</td>
       </tr>
       <tr>
         <td>$iTop</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Y coordinate of the upper left corner of the rectangle</td>
+        <td><strong>[optional]</strong> Y coordinate of the upper left corner of the rectangle</td>
       </tr>
       <tr>
         <td>$iRight</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> X coordinate of the lower right corner of the rectangle</td>
+        <td><strong>[optional]</strong> X coordinate of the lower right corner of the rectangle</td>
       </tr>
       <tr>
         <td>$iBottom</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Y coordinate of the lower right corner of the rectangle</td>
+        <td><strong>[optional]</strong> Y coordinate of the lower right corner of the rectangle</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Flags that control the ToolTip display:<br>
+        <td><strong>[optional]</strong> Flags that control the ToolTip display:<br>
         $TTF_IDISHWND - Indicates that $iID is a window or control handle, instead of the ID of the tool<br>
         $TTF_CENTERTIP - Centers the tooltip below the control specified by $iID<br>
         $TTF_RTLREADING - Indicates that text will be displayed in the opposite direction of the parent window (see remarks)<br>
@@ -73,16 +72,16 @@
       </tr>
       <tr>
         <td>$iParam</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Application-defined value that is associated with the tool</td>
+        <td><strong>[optional]</strong> Application-defined value that is associated with the tool</td>
       </tr>
     </tbody>
   </table><br>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -90,16 +89,16 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If a notification callback is needed, you have to set $sText = -1 (LPSTR_TEXTCALLBACK).<br>
   <br>
   If you use the flag $TTF_IDISHWND then the coordinates in $iLeft, $iTop, $iRight and $iBottom are ignored.<br>
   <br>
   If you use the flag $TTF_ABSOLUTE it must be used with the $TTF_TRACK flag.<br>
   Normal windows display text left-to-right (LTR). Windows can be mirrored to display languages such as Hebrew or Arabic that read right-to-left (RTL). Normally, tooltip text is displayed in the same direction as the text in its parent window. If $TTF_RTLREADING is set, tooltip text will read in the opposite direction from the text in the parent window.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GUIToolTip_DelTool.htm">_GUIToolTip_DelTool</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

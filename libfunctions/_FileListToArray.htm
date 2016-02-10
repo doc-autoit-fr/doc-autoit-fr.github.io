@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _FileListToArray</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Lists files and\or folders in a specified folder (Similar to using Dir with the /B Switch)<br></p>
   <p class="codeheader">#include &lt;File.au3&gt;<br>
   _FileListToArray ( $sFilePath [, $sFilter = "*" [, $iFlag = $FLTA_FILESFOLDERS [, $bReturnPath = False]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,11 +29,11 @@
       </tr>
       <tr>
         <td>$sFilter</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> the filter to use, default is *. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
+        <td><strong>[optional]</strong> the filter to use, default is *. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> specifies whether to return files folders or both<br>
+        <td><strong>[optional]</strong> specifies whether to return files folders or both<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FILESFOLDERS (0) = (Default) Return both files and folders<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FILES (1) = Return files only<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FOLDERS (2) = Return Folders only<br>
@@ -42,11 +41,11 @@
       </tr>
       <tr>
         <td>$bReturnPath</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If True the full path is appended to the file\folder path, otherwise it is relative to the $sFilePath folder. <span class="segments"><span lang="en">Default is False.</span><span lang="fr" style="display: none">Par défaut, False.</span></span></td>
+        <td><strong>[optional]</strong> If True the full path is appended to the file\folder path, otherwise it is relative to the $sFilePath folder. <span class="segments"><span lang="en">Default is False.</span><span lang="fr" style="display: none">Par défaut, False.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -60,10 +59,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - Folder not found or invalid<br>
         2 - Invalid $sFilter<br>
         3 - Invalid $iFlag<br>
@@ -71,13 +70,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This function uses the Windows OS to return subfolders matching the specified filter. This works perfectly for simple filters, using a complex filter with multiple wildcards may return some unexpected results (for example *test*.* will match both testX and testX.X subfolders). If this occurs, the <a href="_FileListToArrayRec.htm">_FileListToArrayRec()</a> function might be better suited as it compares all subfolders to the specified filter using a RegEx, although the time taken to run the function can be noticeably greater<br>
   <br>
   <span class="segments"><span lang="en">See <a href="../functions/FileFindFirstFile.htm">FileFindFirstFile()</a> for a discussion about wildcards.</span><span lang="fr" style="display: none">Consultez <a href="../functions/FileFindFirstFile.htm">FileFindFirstFile()</a> pour des précisions sur les caractères spéciaux.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_FileListToArrayRec.htm">_FileListToArrayRec</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

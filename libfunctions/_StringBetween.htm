@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _StringBetween</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Find strings between two string delimiters<br></p>
   <p class="codeheader">#include &lt;String.au3&gt;<br>
   _StringBetween ( $sString, $sStart, $sEnd [, $iMode = $STR_ENDISSTART [, $bCase = False]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -38,17 +37,17 @@
       </tr>
       <tr>
         <td>$iMode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Search mode when $sStart = $sEnd<br>
+        <td><strong>[optional]</strong> Search mode when $sStart = $sEnd<br>
         $STR_ENDISSTART (0) the $sEnd string at the end of a match starts the next possible match (default)<br>
         $STR_ENDNOTSTART (1) a further instance of the $sStart starts the next match</td>
       </tr>
       <tr>
         <td>$bCase</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> False (default setting) = case-insensitive. True = case-sensitive.</td>
+        <td><strong>[optional]</strong> False (default setting) = case-insensitive. True = case-sensitive.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -57,15 +56,15 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - No strings found.</td>
       </tr>
     </tbody>
   </table>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

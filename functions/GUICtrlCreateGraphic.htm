@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlCreateGraphic</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlCreateGraphic</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a Graphic control for the GUI.</span><span lang="fr" style="display: none">Crée un contrôle graphique dans une GUI.</span></span><br></p>
   <p class="codeheader">GUICtrlCreateGraphic ( left, top [, width [, height [, style]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -37,20 +36,22 @@
       </tr>
       <tr>
         <td>width</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The width of the control (default is the previously used width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut, la largeur utilisée précédemment).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The width of the control (default is the previously used width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut, la largeur utilisée précédemment).</span></span></td>
       </tr>
       <tr>
         <td>height</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The height of the control (default is the previously used height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut, la hauteur précédemment utilisé ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The height of the control (default is the previously used height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut, la hauteur précédemment utilisé ).</span></span></td>
       </tr>
       <tr>
         <td>style</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Label">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm#Label">Styles des contrôles GUI</a>.</span></span><br>
-        &nbsp;&nbsp;&nbsp; default ( -1) : $SS_NOTIFY.</td>
+        <td>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Label">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm#Label">Styles des contrôles GUI</a>.</span></span><a href="../appendix/GUIStyles.htm#Label"></a><br>
+          &nbsp;&nbsp;&nbsp; default ( -1) : $SS_NOTIFY.
+        </td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -63,7 +64,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">To draw in the control see <a href="GUICtrlSetGraphic.htm">GUICtrlSetGraphic()</a>.</span><span lang="fr" style="display: none">Pour dessiner dans le contrôle, Consultez <a href="GUICtrlSetGraphic.htm">GUICtrlSetGraphic</a>.</span></span><br>
   <br>
   <span class="segments"><span lang="en">The border and background color can be set with <a href="GUICtrlSetBkColor.htm">GUICtrlSetBkColor()</a> and <a href="GUICtrlSetColor.htm">GUICtrlSetColor()</a>.</span><span lang="fr" style="display: none">La couleur du contour et la couleur de fond peuvent être définies avec <a href="GUICtrlSetBkColor.htm">GUICtrlSetBkColor()</a> et <a href="GUICtrlSetColor.htm">GUICtrlSetColor()</a>.</span></span><br>
@@ -71,9 +72,9 @@
   <span class="segments"><span lang="en">Graphic control can be clicked so they should not overlap with other controls.</span><span lang="fr" style="display: none">Le contrôle graphique peut être cliqué donc il ne devrait pas recouvrir d'autres contrôles.</span></span> <span class="segments"><span lang="en">If overlap is needed it is important to disable the graphic control :</span><span lang="fr" style="display: none">Si le recouvrement est nécessaire, il est important de désactiver le contrôle graphique:</span></span> <span class="segments"><span lang="en"><a href="GUICtrlSetState.htm">GUICtrlSetState</a>(-1, $GUI_DISABLE).</span><span lang="fr" style="display: none">Ce n'est pas suffisant pour l'onglet ou le contrôle ListView qui se comportent différemment.Dans ce cas, vous avez besoin de créer l'image avec le style $WS_CLIPSIBLINGS, GuiCtrlSetState(-1, $GUI_ONTOP) est nécessaire pour l'onglet, TreeView ou contrôle ListView.</span></span><a href="GUICtrlSetState.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">This control cannot be resized due to fix graphic relative addressing creation but can be dock with <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing()</a>.</span><span lang="fr" style="display: none">Ce contrôle ne peut pas être redimensionné en raison d'une correction relative à l'adressage lors de sa création, mais il peut être attaché avec <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing()</a>.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode (Option)</a>, <a href="GUICtrlDelete.htm">GUICtrlDelete</a>, <a href="GUICtrlSetBkColor.htm">GUICtrlSetBkColor</a>, <a href="GUICtrlSetColor.htm">GUICtrlSetColor</a>, <a href="GUICtrlSetGraphic.htm">GUICtrlSetGraphic</a>, <a href="GUICtrlSetResizing.htm">GUICtrlSetResizing</a>, <a href="GUICtrlSetStyle.htm">GUICtrlSetStyle</a>, <a href="GUIGetMsg.htm">GUIGetMsg</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -121,7 +122,7 @@
 
 <span class="S0">    </span><span class="S9">$i</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">    </span><span class="S9">$iInc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">1</span>
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">        </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 

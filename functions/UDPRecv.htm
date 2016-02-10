@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction UDPRecv</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>UDPRecv</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Receives data from an opened socket.</span><span lang="fr" style="display: none">Reçoit des données d'un socket ouvert.</span></span><br></p>
   <p class="codeheader">UDPRecv ( socketarray, maxlen [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -35,7 +34,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        <td><strong>[optional]</strong><br>
         &nbsp;&nbsp;&nbsp; UDP_DATA_DEFAULT (0) - will auto detect between binary/string.<br>
         &nbsp;&nbsp;&nbsp; UDP_DATA_BINARY (1) - return binary data<br>
         &nbsp;&nbsp;&nbsp; $UDP_DATA_ARRAY (2) - returned in an Array : <span class="segments"><span lang="en">[0] data, [1] from IP, [2] from Port.</span><span lang="fr" style="display: none">[0] données, [1] de l'IP, [2] du port.</span></span><br>
@@ -45,7 +44,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -57,7 +56,7 @@
         <td><span class="segments"><span lang="en">"" and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne "" et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>-1 invalid socket.<br>
         -2 not connected.<br>
         -3 or -4 invalid socketarray.<br>
@@ -65,12 +64,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">For backwards compatibility reasons this function will try to return strings by default.</span><span lang="fr" style="display: none">Pour des raisons de rétro-compatibilité, cette fonction essayera de retourner des chaînes de caractères par défaut.</span></span> <span class="segments"><span lang="en">If null (0x00) characters are received then the return value will be a binary type.</span><span lang="fr" style="display: none">Si des caractères nul (0x00) sont reçus, alors la valeur retournée sera de type binaire.</span></span><br>
   <span class="segments"><span lang="en">To force the function to always return binary data (the most sensible option) then use the "flag" parameter set to 1.</span><span lang="fr" style="display: none">Pour forcer la fonction à toujours retourner des données binaires (l'option la plus sensible) utilisez le paramètre "flag" à 1.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="BinaryLen.htm">BinaryLen</a>, <a href="BinaryMid.htm">BinaryMid</a>, <a href="UDPBind.htm">UDPBind</a>, <a href="UDPOpen.htm">UDPOpen</a>, <a href="UDPSend.htm">UDPSend</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

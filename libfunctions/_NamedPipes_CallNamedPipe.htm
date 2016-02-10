@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _NamedPipes_CallNamedPipe</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Performs a read/write operation on a named pipe<br></p>
   <p class="codeheader">#include &lt;NamedPipes.au3&gt;<br>
   _NamedPipes_CallNamedPipe ( $sPipeName, $pInpBuf, $iInpSize, $pOutBuf, $iOutSize, ByRef $iRead [, $iTimeOut = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -50,7 +49,7 @@
       </tr>
       <tr>
         <td>$iTimeOut</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Number of milliseconds to wait for the named pipe to be available.<br>
+        <td><strong>[optional]</strong> Number of milliseconds to wait for the named pipe to be available.<br>
         In addition to numeric values, the following special values can be specified:<br>
         &nbsp;&nbsp;&nbsp; -1 - Wait indefinitely<br>
         &nbsp;&nbsp;&nbsp; 0 - Uses the default time-out specified in the call to the CreateNamedPipe<br>
@@ -58,12 +57,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -71,13 +70,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>Calling CallNamedPipe is equivalent to calling the CreateFile (or WaitNamedPipe, if CreateFile cannot open the pipe immediately), TransactNamedPipe, and CloseHandle functions.<br>
   CreateFile is called with an access flag of GENERIC_READ | GENERIC_WRITE, and an inherit handle flag of False.<br>
   CallNamedPipe fails if the pipe is a byte-type pipe.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_NamedPipes_TransactNamedPipe.htm">_NamedPipes_TransactNamedPipe</a>, <a href="_NamedPipes_WaitNamedPipe.htm">_NamedPipes_WaitNamedPipe</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CallNamedPipe);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CallNamedPipe</a> in MSDN Library.</p>
 </body>
 </html>

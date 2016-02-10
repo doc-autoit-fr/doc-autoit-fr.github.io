@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction DriveMapAdd</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>DriveMapAdd</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Maps a network drive.</span><span lang="fr" style="display: none">Mappe un lecteur réseau.</span></span><br></p>
   <p class="codeheader">DriveMapAdd ( "device", "remote share" [, flags = 0 [, "user" [, "password"]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
       <tr>
         <td>flags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">A combination of the following:</span><span lang="fr" style="display: none">Une combinaison des éléments suivants:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">A combination of the following:</span><span lang="fr" style="display: none">Une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $DMA_DEFAULT (0) = default<br>
         &nbsp;&nbsp;&nbsp; $DMA_PERSISTENT (1) = Persistent mapping<br>
         &nbsp;&nbsp;&nbsp; $DMA_AUTHENTICATION (8) = Show authentication dialog if required<br>
@@ -42,15 +41,15 @@
       </tr>
       <tr>
         <td>user</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The username to use to connect.</span><span lang="fr" style="display: none">Le nom de l'utilisateur à utiliser pour la connexion.</span></span> <span class="segments"><span lang="en">In the form "username" or "domain\username".</span><span lang="fr" style="display: none">Sous la forme "username" ou "domain\username".</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The username to use to connect.</span><span lang="fr" style="display: none">Le nom de l'utilisateur à utiliser pour la connexion.</span></span> <span class="segments"><span lang="en">In the form "username" or "domain\username".</span><span lang="fr" style="display: none">Sous la forme "username" ou "domain\username".</span></span></td>
       </tr>
       <tr>
         <td>password</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The password to use to connect.</span><span lang="fr" style="display: none">Le mot de passe à utiliser pour la connexion.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The password to use to connect.</span><span lang="fr" style="display: none">Le mot de passe à utiliser pour la connexion.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -62,7 +61,7 @@
         <td><span class="segments"><span lang="en">0 if a new mapping could not be created and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 si une nouvelle connexion ne peut pas être créée et assigne @error.(Consultez les remarques).</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = Undefined / Other error.</span><span lang="fr" style="display: none">1 = Erreur Indéfinie/Autre.</span></span> <span class="segments"><span lang="en">@extended set with Windows API return</span><span lang="fr" style="display: none">@extended est défini avec le code de retour de l'API Windows</span></span><br>
         <span class="segments"><span lang="en">2 = Access to the remote share was denied</span><span lang="fr" style="display: none">2 = L'accès au partage distant a été refusé</span></span><br>
         <span class="segments"><span lang="en">3 = The device is already assigned</span><span lang="fr" style="display: none">3 = Le périphérique est déjà assigné</span></span><br>
@@ -72,13 +71,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> When using "*" for the device parameter the drive letter selected will be returned instead of 1 or 0, e.g. "U:". <span class="segments"><span lang="en">If there was an error using "*" then an empty string "" will be returned.</span><span lang="fr" style="display: none">S'il y avait une erreur en utilisant "*" alors une chaîne vide "" serait retournée.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If defined the user/password will be presented to the remote computer that will validate the credential.</span><span lang="fr" style="display: none">Si user/password sont définis, ils seront présentés à l'ordinateur distant qui validera le certificat.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="DriveMapDel.htm">DriveMapDel</a>, <a href="DriveMapGet.htm">DriveMapGet</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

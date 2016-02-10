@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlSetCursor</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlSetCursor</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sets the mouse cursor icon for a particular control.</span><span lang="fr" style="display: none">Définit l'icône du curseur de la souris pour un contrôle particulier.</span></span><br></p>
   <p class="codeheader">GUICtrlSetCursor ( controlID, cursorID )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,16 +45,16 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Unlike <a href="GUISetCursor.htm">GUISetCursor()</a> which changes the mouse cursor for an entire window, this function sets the mouse cursor that is used when the mouse is hovering over the specified control.</span><span lang="fr" style="display: none">Contrairement à <a href="GUISetCursor.htm">GUISetCursor()</a> qui modifie le curseur de la souris pour une fenêtre entière, cette fonction définit le curseur de la souris qui est utilisé lorsque la souris survole le contrôle spécifié.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If the cursorID is invalid the standard arrow will be displayed.</span><span lang="fr" style="display: none">Si l'ID du curseur est invalide la flèche standard sera utilisée.</span></span><br>
   <br>
   <span class="segments"><span lang="en">For a list of valid cursor IDs see <a href="MouseGetCursor.htm">MouseGetCursor()</a>.</span><span lang="fr" style="display: none">Pour une liste d'IDs de curseur valides voir <a href="MouseGetCursor.htm">MouseGetCursor()</a>.</span></span><br>
   <span class="segments"><span lang="en">CursorId = 16 will hide the mouse cursor.</span><span lang="fr" style="display: none">CursorID = 16 permet de cacher le curseur souris.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUISetCursor.htm">GUISetCursor</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -96,7 +95,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetCursor.htm"><span class="S4">GUICtrlSetCursor</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">4</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>

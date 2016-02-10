@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction StdinWrite</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>StdinWrite</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Writes a number of characters to the STDIN stream of a previously run child process.</span><span lang="fr" style="display: none">Ecrit un nombre de caractères dans le flux STDIN d'un processus enfant lancé au préalable.</span></span><br></p>
   <p class="codeheader">StdinWrite ( process_id [, data] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,11 +28,11 @@
       </tr>
       <tr>
         <td>data</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The data you wish to output.</span><span lang="fr" style="display: none">Les données que vous voulez sortir.</span></span> <span class="segments"><span lang="en">This may either be text or binary.</span><span lang="fr" style="display: none">Cela peut être du texte ou du binaire.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The data you wish to output.</span><span lang="fr" style="display: none">Les données que vous voulez sortir.</span></span> <span class="segments"><span lang="en">This may either be text or binary.</span><span lang="fr" style="display: none">Cela peut être du texte ou du binaire.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,7 +45,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en"><a href="StdinWrite.htm">StdinWrite()</a> writes to the console standard input stream for a child process, which is normally used by console applications to read input from the user i.e. from the keyboard.</span><span lang="fr" style="display: none"><a href="StdinWrite.htm">StdinWrite()</a> écrit dans le flux d'entée standard de la console pour un processus enfant, qui est normalement utilisé par les applications console pour lire des entrées de l'utilisateur, par exemple le clavier.</span></span> <span class="segments"><span lang="en">During the call to <a href="Run.htm">Run()</a> for the child process you wish to write to the STD I/O parameter must have included the value of $STDIN_CHILD (1) for this function to work properly (see the <a href="Run.htm">Run()</a> function).</span><span lang="fr" style="display: none">Pendant l'appel de <a href="Run.htm">Run()</a> pour le processus enfant, pour écrire dans le STD I/O, le paramètre doit avoir inclus la valeur $STDIN_CHILD (1) pour que cette fonction travaille correctement (voir la fonction <a href="Run.htm">Run()</a>).</span></span><a href="Run.htm"></a><a href="Run.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">The optional second parameter is the string that you wish <a href="StdinWrite.htm">StdinWrite()</a> to write to the stream.</span><span lang="fr" style="display: none">Le second paramètre optionnel est la chaîne que vous souhaitez <a href="StdinWrite.htm">StdinWrite()</a>, écrire dans le flux.</span></span> <span class="segments"><span lang="en">If the function is called with no second argument, <a href="StdinWrite.htm">StdinWrite()</a> closes the stream and invalidates it for further writing.</span><span lang="fr" style="display: none">Si la fonction est appelée sans le second paramètre, <a href="StdinWrite.htm">StdinWrite()</a> ferme le flux et l'invalide pour l'écriture.</span></span><br>
@@ -56,9 +55,9 @@
   <span class="segments"><span lang="en">Characters are converted to ANSI before being written.</span><span lang="fr" style="display: none">Les caractères sont convertis à la norme ANSI avant d'être écrits.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Binary data is written as-is.</span><span lang="fr" style="display: none">Les données binaires sont écrites en l'état.</span></span> <span class="segments"><span lang="en">It will not be converted to a string.</span><span lang="fr" style="display: none">Elles ne seront pas converties en une chaîne.</span></span> <span class="segments"><span lang="en">To print the hex representation of binary data, use the <a href="String.htm">String()</a> function to explicitly cast the data to a string.</span><span lang="fr" style="display: none">Pour visualiser la représentation hexadécimale de données binaires, utilisez la fonction <a href="String.htm">String()</a> pour convertir explicitement les données en chaîne.</span></span><a href="String.htm"></a><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="StderrRead.htm">StderrRead</a>, <a href="StdioClose.htm">StdioClose</a>, <a href="StdoutRead.htm">StdoutRead</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction FileWrite</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>FileWrite</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Write text/data to the end of a previously opened file.</span><span lang="fr" style="display: none">Ajoute un texte/des données à la fin d'un fichier précédemment ouvert.</span></span><br></p>
   <p class="codeheader">FileWrite ( "filehandle/filename", "text/data" )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,7 +45,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The file must be opened in write mode or the <a href="FileWrite.htm">FileWrite()</a> command will fail.</span><span lang="fr" style="display: none">Le fichier doit être ouvert en écriture, sinon la commande <a href="FileWrite.htm">FileWrite()</a> échouera.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If a filename is given rather than a file handle, the file will be opened and closed during the function call.</span><span lang="fr" style="display: none">Si un chemin d'accès est donné plutôt qu'un handle, le fichier sera ouvert et fermé durant l'appel de fonction.</span></span> <span class="segments"><span lang="en">For parsing large text files this will be much slower than using filehandles.</span><span lang="fr" style="display: none">Pour l'analyse de grands fichiers texte ce sera beaucoup plus lent que d'utiliser un handle.</span></span> <span class="segments"><span lang="en">However, filename will be created if it does not already exist.</span><span lang="fr" style="display: none">Cependant, le fichier sera créé s'il n'existe pas déjà.</span></span><br>
@@ -56,9 +55,9 @@
   When writing text AutoIt will write using UTF8 (without BOM) by default. To write in another mode the file must be opened with <a href="FileOpen.htm">FileOpen()</a> and the relevant flags.<br>
   <br>
   <span class="segments"><span lang="en">If the data is a binary type variant (and not text) it will be written to the file byte by byte.</span><span lang="fr" style="display: none">Si les données sont une variante de type binaire (et non du texte), il sera écrit dans le fichier octet par octet.</span></span> <span class="segments"><span lang="en">Binary operation can also be forced by using <a href="FileOpen.htm">FileOpen()</a> with the binary flag.</span><span lang="fr" style="display: none">Une opération binaire peut aussi être forcée en utilisant <a href="FileOpen.htm">FileOpen()</a> avec le paramètre binaire.</span></span><a href="FileOpen.htm"></a><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="Binary.htm">Binary</a>, <a href="FileFlush.htm">FileFlush</a>, <a href="FileGetPos.htm">FileGetPos</a>, <a href="FileOpen.htm">FileOpen</a>, <a href="FileRead.htm">FileRead</a>, <a href="FileReadLine.htm">FileReadLine</a>, <a href="FileSetPos.htm">FileSetPos</a>, <a href="FileWriteLine.htm">FileWriteLine</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

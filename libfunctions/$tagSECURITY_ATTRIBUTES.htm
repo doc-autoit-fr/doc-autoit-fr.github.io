@@ -2,29 +2,39 @@
 <html>
 <head>
   <title>Keyword $tagSECURITY_ATTRIBUTES</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
 </head>
 <body>
   <h1 class="small">Keyword Reference</h1>
   <hr style="height:0px">
   <h1>$tagSECURITY_ATTRIBUTES</h1>
-  <p class="funcdesc">Contains the security descriptor for an object and specifies whether the handle retrieved by specifying this structure is inheritable<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Contains the security descriptor for an object and specifies whether the handle retrieved by specifying this structure is inheritable</span><span lang="fr" style="display: none">Contient le descripteur de sécurité pour un objet et indique si le handle récupéré en spécifiant cette structure peut être hérité</span></span><br></p>
   <p class="codeheader">Global Const $tagSECURITY_ATTRIBUTES = "int Length;ptr Descriptor;int InheritHandle"<br></p>
-  <h2>Parameters</h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
-    <tr>
-      <td style="width:15%">Length</td>
-      <td style="width:85%">The size, in bytes, of this structure</td>
-    </tr>
-    <tr>
-      <td>Descriptor</td>
-      <td>A pointer to a security descriptor for the object that controls the sharing of it</td>
-    </tr>
-    <tr>
-      <td>InheritHandle</td>
-      <td>If True, the new process inherits the handle.</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td style="width:15%">Length</td>
+        <td style="width:85%">The size, in bytes, of this structure</td>
+      </tr>
+      <tr>
+        <td>Descriptor</td>
+        <td>A pointer to a security descriptor for the object that controls the sharing of it</td>
+      </tr>
+      <tr>
+        <td>InheritHandle</td>
+        <td>If True, the new process inherits the handle.</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_DrawIconEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Draws an icon or cursor into the specified device context<br></p>
   <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
   _WinAPI_DrawIconEx ( $hDC, $iX, $iY, $hIcon [, $iWidth = 0 [, $iHeight = 0 [, $iStep = 0 [, $hBrush = 0 [, $iFlags = 3]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -42,30 +41,30 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the logical width of the icon or cursor.<br>
+        <td><strong>[optional]</strong> Specifies the logical width of the icon or cursor.<br>
         If this parameter is zero and the $iFlags parameter is "default size", the function uses the $SM_CXICON or $SM_CXCURSOR system metric value to set the width.<br>
         If this is zero and "default size" is not used, the function uses the actual resource width.</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the logical height of the icon or cursor.<br>
+        <td><strong>[optional]</strong> Specifies the logical height of the icon or cursor.<br>
         If this parameter is zero and the $iFlags parameter is "default size", the function uses the $SM_CYICON or $SM_CYCURSOR system metric value to set the width.<br>
         If this is zero and "default size" is not used, the function uses the actual resource height.</td>
       </tr>
       <tr>
         <td>$iStep</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the index of the frame to draw if $hIcon identifies an animated cursor.<br>
+        <td><strong>[optional]</strong> Specifies the index of the frame to draw if $hIcon identifies an animated cursor.<br>
         This parameter is ignored if $hIcon does not identify an animated cursor.</td>
       </tr>
       <tr>
         <td>$hBrush</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Handle to a brush that the system uses for flicker-free drawing.<br>
+        <td><strong>[optional]</strong> Handle to a brush that the system uses for flicker-free drawing.<br>
         If $hBrush is a valid brush handle, the system creates an offscreen bitmap using the specified brush for the background color, draws the icon or cursor into the bitmap, and then copies the bitmap into the device context identified by $hDC.<br>
         If $hBrush is 0, the system draws the icon or cursor directly into the device context.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the drawing flags. This parameter can be one of the following values:<br>
+        <td><strong>[optional]</strong> Specifies the drawing flags. This parameter can be one of the following values:<br>
         1 - Draws the icon or cursor using the mask<br>
         2 - Draws the icon or cursor using the image<br>
         3 - Draws the icon or cursor using the mask and image<br>
@@ -76,12 +75,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True</span><span lang="fr" style="display: none">Retourne True</span></span></td>
+        <td style="width:90%">True</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -91,9 +90,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_DrawIcon.htm">_WinAPI_DrawIcon</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(DrawIconEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">DrawIconEx</a> in MSDN Library.</p>
 </body>
 </html>

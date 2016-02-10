@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Excel_RangeValidate</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Adds data validation to the specified range<br></p>
   <p class="codeheader">#include &lt;Excel.au3&gt;<br>
   _Excel_RangeValidate ( $oWorkbook, $vWorksheet, $vRange, $iType, $sFormula1 [, $iOperator = Default [, $sFormula2 = Default [, $bIgnoreBlank = True [, $iAlertStyle = $xlValidAlertStop [, $sErrorMessage = Default [, $sInputMessage = Default]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -46,31 +45,31 @@
       </tr>
       <tr>
         <td>$iOperator</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The data validation operator. Can be any of the XlFormatConditionOperator enumeration (default = keyword Default)</td>
+        <td><strong>[optional]</strong> The data validation operator. Can be any of the XlFormatConditionOperator enumeration (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$sFormula2</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The second part of the data validation when $iOperator is $xlBetween or $xlNotBetween. Otherwise it is ignored (default = keyword Default)</td>
+        <td><strong>[optional]</strong> The second part of the data validation when $iOperator is $xlBetween or $xlNotBetween. Otherwise it is ignored (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$bIgnoreBlank</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If set to True, cell data is considered valid if the cell is blank (default = True)</td>
+        <td><strong>[optional]</strong> If set to True, cell data is considered valid if the cell is blank (default = True)</td>
       </tr>
       <tr>
         <td>$iAlertStyle</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The validation alert style. Can be any of the XlDVAlertStyle enumeration (default = $xlValidAlertStop)</td>
+        <td><strong>[optional]</strong> The validation alert style. Can be any of the XlDVAlertStyle enumeration (default = $xlValidAlertStop)</td>
       </tr>
       <tr>
         <td>$sErrorMessage</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Message to be displayed in a MsgBox when invalid data has been entered (default = keyword Default)</td>
+        <td><strong>[optional]</strong> Message to be displayed in a MsgBox when invalid data has been entered (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$sInputMessage</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Message to be displayed in a Tooltip when you begin to enter data (default = keyword Default)</td>
+        <td><strong>[optional]</strong> Message to be displayed in a Tooltip when you begin to enter data (default = keyword Default)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -82,7 +81,7 @@
         <td>0 and sets @error.</td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oWorkbook is not an object or not a workbook object<br>
         2 - $vWorksheet name or index are invalid or $vWorksheet is not a worksheet object. @extended is set to the COM error code<br>
         3 - $vRange is invalid. @extended is set to the COM error code<br>
@@ -90,14 +89,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>Parameter $bDisplayAlerts for function _Excel_Open needs to be set to True to display $sErrorMessage.<br>
   <br>
   If you want to validate against a list of values stored in another cell range ($iType = $xlValidateList) then<br>
   $sFormula1 has to start with a "=" (e.g. "=C:C").<br>
   <br>
   Before adding a new validation rule to a range the function deletes existing validation rules of the range.<br></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

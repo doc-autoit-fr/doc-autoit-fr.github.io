@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUIRegisterMsg</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUIRegisterMsg</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Register a user defined function for a known Windows Message ID (WM_MSG).</span><span lang="fr" style="display: none">Enregistre une fonction utilisateur pour un ID de message Windows connu (WM_MSG).</span></span><br></p>
   <p class="codeheader">GUIRegisterMsg ( msgID, "function" )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -35,7 +34,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -48,7 +47,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>!!! <span class="segments"><span lang="en">To make the user function workable you have to define it with <strong>maximum 4 function parameters</strong> otherwise the function won't be called !!!</span><span lang="fr" style="display: none">Pour réaliser une fonction utilisateur valide, vous devez la définir avec <strong>au plus 4 paramètres</strong> sinon la fonction ne sera pas appelée !!!</span></span><br>
   <span class="segments"><span lang="en">i.e:</span><span lang="fr" style="display: none">Par exemple:</span></span><br>
   Func MyUserFunction($hWndGUI, $MsgID, $WParam, $LParam)<br>
@@ -104,9 +103,9 @@
   <span class="segments"><span lang="en"><strong>Warning:</strong> blocking of running user functions which executes window messages with commands such as "<a href="MsgBox.htm">MsgBox()</a>" can lead to unexpected behavior, the return to the system should be as fast as possible !!!</span><span lang="fr" style="display: none"><strong>Attention:</strong> le blocage de l'exécution des fonctions utilisateur qui exécutent les messages de fenêtre avec des commandes comme "<a href="MsgBox.htm">MsgBox()</a>" peut conduire à un comportement inattendu, le retour au système doit être aussi rapide que possible!!!</span></span><br>
   <br>
   <span class="segments"><span lang="en">Some controls consume internally specific Windows Message ID, so registering them will have no effect, e.g; WM_CHAR, WM_KEYDOWN, WM_KEYUP are consumed by an edit control.</span><span lang="fr" style="display: none">Certains contrôles consomment en interne des IDs de message Windows spécifiques, de sorte que leur enregistrement n'auront aucun effet, par exemple:WM_CHAR, WM_KEYDOWN, WM_KEYUP sont consommés par un contrôle Edit.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlGetHandle.htm">GUICtrlGetHandle</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

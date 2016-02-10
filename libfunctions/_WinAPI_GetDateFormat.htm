@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_GetDateFormat</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,12 +20,12 @@
   <p class="funcdesc">Formats a date as a date string for a locale specified by the locale identifier<br></p>
   <p class="codeheader">#include &lt;WinAPILocale.au3&gt;<br>
   _WinAPI_GetDateFormat ( [$iLCID = 0 [, $tSYSTEMTIME = 0 [, $iFlags = 0 [, $sFormat = '']]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$iLCID</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
+        <td style="width:85%"><strong>[optional]</strong> The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_INVARIANT<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_SYSTEM_DEFAULT<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_USER_DEFAULT (Default)<br>
@@ -37,12 +36,12 @@
       </tr>
       <tr>
         <td>$tSYSTEMTIME</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSYSTEMTIME structure that contains the date information to format.<br>
+        <td><strong>[optional]</strong> $tagSYSTEMTIME structure that contains the date information to format.<br>
         If this parameter is 0 (Default), the function will use the current local system date.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The flags that specifies the date format options.<br>
+        <td><strong>[optional]</strong> The flags that specifies the date format options.<br>
         This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $DATE_LONGDATE<br>
         &nbsp;&nbsp;&nbsp; $DATE_SHORTDATE (Default)<br>
@@ -56,12 +55,12 @@
       </tr>
       <tr>
         <td>$sFormat</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The string that is used to form the date. For example, "dddd MMMM, yyyy".<br>
+        <td><strong>[optional]</strong> The string that is used to form the date. For example, "dddd MMMM, yyyy".<br>
         If this parameter is omitted or an empty string (Default), the function returns the string according to the date format for the specified locale.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -76,9 +75,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(GetDateFormat);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">GetDateFormat</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

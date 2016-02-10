@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GDIPlus_BitmapLockBits</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Locks a portion of a bitmap for reading or writing</span><span lang="fr" style="display: none">Verrouille une partie d'un bitmap pour la lecture ou l'écriture</span></span><br></p>
   <p class="codeheader">#include &lt;GDIPlus.au3&gt;<br>
   _GDIPlus_BitmapLockBits ( $hBitmap, $iLeft, $iTop, $iWidth, $iHeight [, $iFlags = $GDIP_ILMREAD [, $iFormat = $GDIP_PXF32RGB]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -46,14 +45,14 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Set of flags that specify whether the locked portion of the bitmap is available for reading or for writing and whether the caller has already allocated a buffer.</span><span lang="fr" style="display: none">Ensemble de paramètres qui spécifie si la partie verrouillée du bitmap est disponible pour la lecture ou l'écriture et si une mémoire tampon est deja allouée.</span></span> <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Set of flags that specify whether the locked portion of the bitmap is available for reading or for writing and whether the caller has already allocated a buffer.</span><span lang="fr" style="display: none">Ensemble de paramètres qui spécifie si la partie verrouillée du bitmap est disponible pour la lecture ou l'écriture et si une mémoire tampon est deja allouée.</span></span> <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $GDIP_ILMREAD - A portion of the image is locked for reading<br>
         &nbsp;&nbsp;&nbsp; $GDIP_ILMWRITE - A portion of the image is locked for writing<br>
         &nbsp;&nbsp;&nbsp; $GDIP_ILMUSERINPUTBUF - The buffer is allocated by the user</td>
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Specifies the format of the pixel data in the temporary buffer.</span><span lang="fr" style="display: none">Spécifie le format des données de pixel dans la mémoire tampon temporaire.</span></span> <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Specifies the format of the pixel data in the temporary buffer.</span><span lang="fr" style="display: none">Spécifie le format des données de pixel dans la mémoire tampon temporaire.</span></span> <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF01INDEXED - 1 bpp, indexed<br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF04INDEXED - 4 bpp, indexed<br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF08INDEXED - 8 bpp, indexed<br>
@@ -68,7 +67,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -77,17 +76,17 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">When you are done with the locked portion, call <a href="_GDIPlus_BitmapUnlockBits.htm">_GDIPlus_BitmapUnlockBits()</a> to release the locked region.</span><span lang="fr" style="display: none">Lorsque vous en avez terminé avec la partie verrouillée, appelez <a href="_GDIPlus_BitmapUnlockBits.htm">_GDIPlus_BitmapUnlockBits()</a> pour libérer le verrouillage de la partie de l'image.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GDIPlus_ImageGetPixelFormat.htm">_GDIPlus_ImageGetPixelFormat</a>, <a href="_WinAPI_DeleteObject.htm">_WinAPI_DeleteObject</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://search.msdn.microsoft.com/search/Default.aspx?brand=msdn&amp;query=GdipBitmapLockBits">GdipBitmapLockBits</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

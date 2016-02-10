@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _FTP_ListToArrayEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Get names, sizes, attributes and times of files/dir of current remote directory<br></p>
   <p class="codeheader">#include &lt;FTPEx.au3&gt;<br>
   _FTP_ListToArrayEx ( $hFTPSession [, $iReturnType = 0 [, $iFlags = $INTERNET_FLAG_NO_CACHE_WRITE [, $iFmt = 1 [, $iContext = 0]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -32,30 +31,28 @@
       </tr>
       <tr>
         <td>$iReturntype</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> 0 = Both Files and Directories, 1 = Directories, 2 = Files.</td>
+        <td><strong>[optional]</strong> 0 = Both Files and Directories, 1 = Directories, 2 = Files.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> default = $INTERNET_FLAG_NO_CACHE_WRITE. See <a href="_FTP_FindFileFirst.htm">_FTP_FindFileFirst()</a>.
-        </td>
+        <td><strong>[optional]</strong> default = $INTERNET_FLAG_NO_CACHE_WRITE. See <strong>_FTP_FindFileFirst()</strong>.</td>
       </tr>
       <tr>
         <td>$iFmt</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> type on the date strings:<br>
+        <td><strong>[optional]</strong> type on the date strings:<br>
         &nbsp;&nbsp;&nbsp; 1 = yyyy/mm/dd<br>
         &nbsp;&nbsp;&nbsp; 0 = mm/dd/yyyy</td>
       </tr>
       <tr>
         <td>$iContext</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A variable that contains the application-defined value that associates this search with any application data.<br>
+          <strong>[optional]</strong> A variable that contains the application-defined value that associates this search with any application data.<br>
           This is only used if the application has already called <a href="_FTP_SetStatusCallback.htm">_FTP_SetStatusCallback()</a> to set up a status callback function.
         </td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -76,9 +73,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_FTP_Connect.htm">_FTP_Connect</a>, <a href="_FTP_SetStatusCallback.htm">_FTP_SetStatusCallback</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -126,18 +123,18 @@
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
 <span class="S0">            </span><a class="codeSnippetLink" href="../libfunctions/_ArrayDisplay.htm"><span class="S15">_ArrayDisplay</span></a><span class="S8">(</span><span class="S9">$aFile</span><span class="S8">)</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
-<span class="S0">            </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'_FTP_ListToArrayEx($Conn, 0)'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">            </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'_FTP_ListToArrayEx($Conn, 0)'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
 <span class="S0">                    </span><span class="S7">'@error = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' @extended = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S8">)</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iFtpc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_FTP_Close.htm"><span class="S15">_FTP_Close</span></a><span class="S8">(</span><span class="S9">$hConn</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
-<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'_FTP_Connect($Open, '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sServer</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">', '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sUsername</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">', '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sPass</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">')'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'_FTP_Connect($Open, '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sServer</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">', '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sUsername</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">', '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sPass</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">')'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
 <span class="S0">                </span><span class="S7">'@error = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' @extended = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iFtpo</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_FTP_Close.htm"><span class="S15">_FTP_Close</span></a><span class="S8">(</span><span class="S9">$hOpen</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_FTP_Open('MyFTP Control')"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_FTP_Open('MyFTP Control')"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
 <span class="S0">            </span><span class="S7">'@error = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">' @extended = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 </span>

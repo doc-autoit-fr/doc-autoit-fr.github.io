@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _SQLite_QueryFinalize</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Finalizes an _SQLite_Query() based query. The query is interrupted<br></p>
   <p class="codeheader">#include &lt;SQLite.au3&gt;<br>
   _SQLite_QueryFinalize ( $hQuery )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -32,7 +31,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -44,20 +43,20 @@
         <td>a value that can be compared against $SQLITE_* constants.</td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>-1 - SQLite reported an Error (Check Return value)<br>
         1 - Error calling SQLite API 'sqlite3_finalize'<br>
         2 - Call prevented by SafeMode</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The <a href="_SQLite_QueryFinalize.htm">_SQLite_QueryFinalize()</a> function is called to delete a prepared SQL statement obtained by a previous call to <a href="_SQLite_Query.htm">_SQLite_Query()</a>. If the statement was executed successfully, or not executed at all, then $SQLITE_OK is returned. If execution of the statement failed then an error code is returned.<br>
   <br>
   All prepared statements must be finalized before <a href="_SQLite_Close.htm">_SQLite_Close()</a> is called or else the call will fail with a return code of $SQLITE_BUSY.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_SQLite_Query.htm">_SQLite_Query</a>, <a href="_SQLite_QueryReset.htm">_SQLite_QueryReset</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

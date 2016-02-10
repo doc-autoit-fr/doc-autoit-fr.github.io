@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_RegNotifyChangeKeyValue</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Notifies the caller about changes to the attributes or contents of a specified registry key<br></p>
   <p class="codeheader">#include &lt;WinAPIReg.au3&gt;<br>
   _WinAPI_RegNotifyChangeKeyValue ( $hKey, $iFilter [, $bSubtree = False [, $bAsync = False [, $hEvent = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -47,24 +46,24 @@
       </tr>
       <tr>
         <td>$bSubtree</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether report changes in the subkeys of the specified key, valid values:<br>
+        <td><strong>[optional]</strong> Specifies whether report changes in the subkeys of the specified key, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The function reports changes in the specified key and all its subkeys.<br>
         &nbsp;&nbsp;&nbsp; False - The function reports changes only in the specified key (Default).</td>
       </tr>
       <tr>
         <td>$bAsync</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether return immediately, valid values:<br>
+        <td><strong>[optional]</strong> Specifies whether return immediately, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The function returns immediately and reports changes by signaling the specified event.<br>
         &nbsp;&nbsp;&nbsp; False - The function does not return until a change has occurred (Default).</td>
       </tr>
       <tr>
         <td>$hEvent</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Handle to an event. If the $fAsync parameter is True, the function returns immediately and changes are<br>
+        <td><strong>[optional]</strong> Handle to an event. If the $fAsync parameter is True, the function returns immediately and changes are<br>
         reported by signaling this event, otherwise this parameter is ignored (Default).</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -77,14 +76,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If the specified key is closed, the event is signaled. This means that an application should not depend on the<br>
   key being open after returning from a wait operation on the event.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_RegCreateKey.htm">_WinAPI_RegCreateKey</a>, <a href="_WinAPI_RegOpenKey.htm">_WinAPI_RegOpenKey</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(RegNotifyChangeKeyValue);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">RegNotifyChangeKeyValue</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

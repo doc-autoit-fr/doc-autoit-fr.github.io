@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_EnumProcessModules</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,16 +20,16 @@
   <p class="funcdesc">Retrieves a handle and name for each module in the specified process<br></p>
   <p class="codeheader">#include &lt;WinAPIProc.au3&gt;<br>
   _WinAPI_EnumProcessModules ( [$iPID = 0 [, $iFlag = 0]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$iPID</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The PID of the process. Default (0) is the current process.</td>
+        <td style="width:85%"><strong>[optional]</strong> The PID of the process. Default (0) is the current process.</td>
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The filter criteria. This parameter is valid only for <strong>Windows Vista or later</strong>, and can be one of the following values:<br>
+        <td><strong>[optional]</strong> The filter criteria. This parameter is valid only for <strong>Windows Vista or later</strong>, and can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $LIST_MODULES_32BIT<br>
         &nbsp;&nbsp;&nbsp; $LIST_MODULES_64BIT<br>
         &nbsp;&nbsp;&nbsp; $LIST_MODULES_ALL<br>
@@ -38,7 +37,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -55,7 +54,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This function does not retrieve handles for modules that were loaded with the $LOAD_LIBRARY_AS_DATAFILE flag.<br>
   For more information, see <a href="_WinAPI_LoadLibraryEx.htm">_WinAPI_LoadLibraryEx()</a>.<br>
   <br>
@@ -64,9 +63,9 @@
   <br>
   If <a href="_WinAPI_EnumProcessModules.htm">_WinAPI_EnumProcessModules()</a> is called from a 32-bit application running on WOW64, it can only enumerate the modules of a 32-bit process.<br>
   If the process is a 64-bit process, this function fails and the last error code is ERROR_PARTIAL_COPY (299).<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(EnumProcessModulesEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">EnumProcessModulesEx</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -103,7 +102,7 @@
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WinAPISys.au3&gt;</span>
 
 <a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S8">(</span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetVersion.htm"><span class="S15">_WinAPI_GetVersion</span></a><span class="S8">()</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;</span></a><span class="S0"> </span><span class="S7">'6.0'</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">And</span></a><span class="S0"> </span><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@AutoItX64"><span class="S6">@AutoItX64</span></a><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'Error'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'This example works from a 64-bit system only in Windows Vista or later.'</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'This example works from a 64-bit system only in Windows Vista or later.'</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 

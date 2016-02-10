@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlSetState</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlSetState</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Changes the state of a control.</span><span lang="fr" style="display: none">Modifie l'état d'un contrôle.</span></span><br></p>
   <p class="codeheader">GUICtrlSetState ( controlID, state )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,7 +45,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>&nbsp;&nbsp;&nbsp; <a id="StateTable"><strong>State table</strong><br>
   <br>
   <table>
@@ -140,8 +139,8 @@
   <span class="segments"><span lang="en">If $GUI_DROPACCEPTED (8) is set to a visible control a drag & drop can be taken in account.</span><span lang="fr" style="display: none">Si $GUI_DROPACCEPTED(8) est défini sur un contrôle visible un drag & drop peut être pris en compte.</span></span> <span class="segments"><span lang="en">The edit/input control will be set with the filename.</span><span lang="fr" style="display: none">Le contrôle Edit ou Input sera défini avec le nom du fichier.</span></span><br>
   <span class="segments"><span lang="en">For other controls on reception of $GUI_EVENT_DROPPED, @GUI_DragId will return the controlID from where the drag start (-1 if from a file, @GUI_DragFile contain the filename being dropped) and @GUI_DropId returns the controlID of the dropped control.</span><span lang="fr" style="display: none">Pour d'autres contrôles à la réception de $GUI_EVENT_DROPPED, @GUI_DragId retournera le controlID d'où le drag a démarré (-1 si c'est un fichier, @GUI_DragFile contient le nom du fichier entrain de subir le 'drag') et @GUI_DropId retourne le controlID du contrôle entrain de subir le 'drop'.</span></span><br>
   <span class="segments"><span lang="en">Only dragging a ListviewItem will start the drag & drop process.</span><span lang="fr" style="display: none">C'est seulement lors du 'drag' d'un ListViewItem que démarrera le processus du drag & drop.</span></span> <span class="segments"><span lang="en">The @GUI_DragId will be the ListView controlID.</span><span lang="fr" style="display: none">@GUI_DragId sera le controlID du ListView .</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlGetState</a>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlGetState</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -180,7 +179,7 @@
 
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI with various controls.</span><span lang="fr" style="display: none">Crée une GUI avec différents contrôles.</span></span></span></span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_EX_ACCEPTFILES</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">420</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_EX_ACCEPTFILES</span><span class="S8">)</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a label and set the state as drop accepted.</span><span lang="fr" style="display: none">Crée un contrôle Label et définit l'état de 'drop' accepté.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idLabel</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateLabel.htm"><span class="S4">GUICtrlCreateLabel</span></a><span class="S8">(</span><span class="S7">"Drop a file on this label."</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">40</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_BORDER</span><span class="S8">)</span>

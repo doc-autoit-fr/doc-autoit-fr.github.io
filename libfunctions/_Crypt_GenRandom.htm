@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Crypt_GenRandom</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -18,40 +17,40 @@
   <h1 class="small">Référence Fonction</h1>
   <hr style="height:0px">
   <h1>_Crypt_GenRandom</h1>
-  <p class="funcdesc">Fill a buffer with cryptographically random data<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Fill a buffer with cryptographically random data</span><span lang="fr" style="display: none">Remplit une mémoire tampon (buffer) avec des données cryptographiquement aléatoires</span></span><br></p>
   <p class="codeheader">#include &lt;Crypt.au3&gt;<br>
   _Crypt_GenRandom ( $pBuffer, $iSize )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$pBuffer</td>
-        <td style="width:85%">Pointer to buffer to fill with random data.</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Pointer to buffer to fill with random data.</span><span lang="fr" style="display: none">Pointeur vers la mémoire tampon à remplir avec des données aléatoires.</span></span></td>
       </tr>
       <tr>
         <td>$iSize</td>
-        <td>Size of the buffer pointed to by $pBuffer.</td>
+        <td><span class="segments"><span lang="en">Size of the buffer pointed to by $pBuffer.</span><span lang="fr" style="display: none">Taille de la mémoire tampon pointée par $pBuffer.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td>False and sets the @error flag to non-zero.</td>
+        <td><span class="segments"><span lang="en">False and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">False et met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
-  <p>Optionally, the application can fill this buffer with data to use as an auxiliary random seed.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
-  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptGenRandom);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptGenRandom</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
+  <p><span class="segments"><span lang="en">Optionally, the application can fill this buffer with data to use as an auxiliary random seed.</span><span lang="fr" style="display: none">Éventuellement, l'application peut remplir cette mémoire tampon avec des données à utiliser comme une graine (seed) aléatoire auxiliaire.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
+  <p><span class="segments"><span lang="en">Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptGenRandom);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptGenRandom</a> in MSDN Library.</span><span lang="fr" style="display: none">Recherchez <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptGenRandom);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptGenRandom</a> dans la bibliothèque MSDN.</span></span></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -88,10 +87,10 @@
 <span class="S0">Example</span><span class="S8">()</span>
 
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
-<span class="S0">    </span><span class="S1">; Generate 16 bytes of random data</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Generate 16 bytes of random data</span><span lang="fr" style="display: none">Génére 16 octets de données aléatoires</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$tBuff</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructCreate.htm"><span class="S4">DllStructCreate</span></a><span class="S8">(</span><span class="S7">"byte[16]"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_GenRandom.htm"><span class="S15">_Crypt_GenRandom</span></a><span class="S8">(</span><span class="S9">$tBuff</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructGetSize.htm"><span class="S4">DllStructGetSize</span></a><span class="S8">(</span><span class="S9">$tBuff</span><span class="S8">))</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Random data:"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructGetData.htm"><span class="S4">DllStructGetData</span></a><span class="S8">(</span><span class="S9">$tBuff</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Random data:</span><span lang="fr" style="display: none">Données aléatoires :</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/DllStructGetData.htm"><span class="S4">DllStructGetData</span></a><span class="S8">(</span><span class="S9">$tBuff</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
 </span>
 </pre>

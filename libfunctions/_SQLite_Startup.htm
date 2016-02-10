@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _SQLite_Startup</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,31 +20,29 @@
   <p class="funcdesc">Loads SQLite3.dll<br></p>
   <p class="codeheader">#include &lt;SQLite.au3&gt;<br>
   _SQLite_Startup ( [$sDll_Filename = "" [, $bUTF8ErrorMsg = False [, $iForceLocal = 0 [, $hPrintCallback = $__g_hPrintCallback_SQLite]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$sDll_Filename</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> DLL filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.</td>
+        <td style="width:85%"><strong>[optional]</strong> DLL filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.</td>
       </tr>
       <tr>
         <td>$bUTF8ErrorMsg</td>
-        <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> to force <a href="../functions/ConsoleWrite.htm">ConsoleWrite()</a> to display UTF8 chars
-        </td>
+        <td><strong>[optional]</strong> to force <strong>ConsoleWrite()</strong> to display UTF8 chars</td>
       </tr>
       <tr>
         <td>$iForceLocal</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> 1 = use the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.<br>
+        <td><strong>[optional]</strong> 1 = use the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.<br>
         0 = the DLL will be search in @ScriptDir, @SystemDir, @WindowsDir, and @WorkingDir.</td>
       </tr>
       <tr>
         <td>$hPrintCallback</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A variable assigned to the user defined function to display a SQLite diagnostic message. Default = __SQLite_ConsoleWrite(). <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><strong>[optional]</strong> A variable assigned to the user defined function to display a SQLite diagnostic message. Default = __SQLite_ConsoleWrite(). <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -54,11 +51,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If #include &lt;SQLite.dll.au3&gt; is included the SQLite version is checked.<br>
   The SQLite files can be downloaded from <a class="ext" href="https://www.autoitscript.com/autoit3/pkgmgr/sqlite">https://www.autoitscript.com/autoit3/pkgmgr/sqlite</a>/SQLite3_version.zip that can be stored in @ScriptDir, @SystemDir, @WindowsDir, or @WorkingDir.<br>
   <br>
@@ -67,9 +64,9 @@
   This is the case when running SciTE under a non-english version as Vista(fr).<br>
   <br>
   The $hPrintCallback parameter specifies the name of user-defined callback function. This function will be passed a single parameter which is the message to display. The default callback is $__g_hPrintCallback_SQLite. See that function for an example of how to implement your own callback function.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_SQLite_Shutdown.htm">_SQLite_Shutdown</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

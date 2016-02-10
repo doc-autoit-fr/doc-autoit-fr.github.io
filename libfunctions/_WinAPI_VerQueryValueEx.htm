@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_VerQueryValueEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Retrieves the text information from the version-information resource of the specified binary module<br></p>
   <p class="codeheader">#include &lt;WinAPIRes.au3&gt;<br>
   _WinAPI_VerQueryValueEx ( $hModule [, $sValues = '' [, $iLanguage = 0x0400]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -32,7 +31,7 @@
       </tr>
       <tr>
         <td>$sValues</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The string containing the field names for which you want to get values. The names must be separated by a "|".<br>
+        <td><strong>[optional]</strong> The string containing the field names for which you want to get values. The names must be separated by a "|".<br>
         For example, "name1|name2|...|namei". If some fields do not exist, the corresponding array elements is an empty string.<br>
         If this parameter is not specified (empty string), uses the reserved names (12) in the following sequence:<br>
         &nbsp;&nbsp;&nbsp; $FV_COMMENTS ("Comments")<br>
@@ -52,13 +51,13 @@
       </tr>
       <tr>
         <td>$iLanguage</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The language identifier of the version-information resource of interest. To retrieve information for<br>
+        <td><strong>[optional]</strong> The language identifier of the version-information resource of interest. To retrieve information for<br>
         user default language set this parameter to $LOCALE_USER_DEFAULT (Default). To retrieve information for all<br>
         languages that are located in the resource set this parameter to (-1).</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -78,9 +77,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The identifier (ID) of the version-information resource should be equal to 1, otherwise the function fails.<br></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_OpenInputDesktop</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,12 +20,12 @@
   <p class="funcdesc">Opens the desktop that receives user input<br></p>
   <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
   _WinAPI_OpenInputDesktop ( [$iAccess = 0 [, $iFlags = 0 [, $bInherit = False]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$iAccess</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The access to the desktop. This parameter can be one or more of the following values.<br>
+        <td style="width:85%"><strong>[optional]</strong> The access to the desktop. This parameter can be one or more of the following values.<br>
         $DESKTOP_ALL_ACCESS<br>
         $DESKTOP_CREATEMENU<br>
         $DESKTOP_CREATEWINDOW<br>
@@ -40,18 +39,18 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The optional flags. It can be zero or the following value.<br>
+        <td><strong>[optional]</strong> The optional flags. It can be zero or the following value.<br>
         $DF_ALLOWOTHERACCOUNTHOOK</td>
       </tr>
       <tr>
         <td>$bInherit</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether inherites the handle by a processes, valid values:<br>
+        <td><strong>[optional]</strong> Specifies whether inherites the handle by a processes, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The processes created by this process will inherit the handle.<br>
         &nbsp;&nbsp;&nbsp; False - The processes do not inherit this handle (Default).</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -66,11 +65,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When you are finished using the desktop, call the <a href="_WinAPI_CloseDesktop.htm">_WinAPI_CloseDesktop()</a> function to close it.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_CloseDesktop.htm">_WinAPI_CloseDesktop</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(OpenInputDesktop);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">OpenInputDesktop</a> in MSDN Library.</p>
 </body>
 </html>

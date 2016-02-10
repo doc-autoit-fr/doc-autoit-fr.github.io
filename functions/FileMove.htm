@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction FileMove</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>FileMove</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Moves one or more files.</span><span lang="fr" style="display: none">Déplace un ou plusieurs fichiers.</span></span><br></p>
   <p class="codeheader">FileMove ( "source", "dest" [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">this flag determines whether to overwrite files if they already exist:</span><span lang="fr" style="display: none">ce paramètre détermine s'il faut écraser les fichiers existants.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">this flag determines whether to overwrite files if they already exist:</span><span lang="fr" style="display: none">ce paramètre détermine s'il faut écraser les fichiers existants.</span></span><br>
         <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $FC_NOOVERWRITE (0) = (default) do not overwrite existing files.<br>
         &nbsp;&nbsp;&nbsp; $FC_OVERWRITE (1) = overwrite existing files.<br>
@@ -43,7 +42,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -56,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">See <a href="FileFindFirstFile.htm">FileFindFirstFile()</a> for a discussion about wildcards.</span><span lang="fr" style="display: none">Consultez <a href="FileFindFirstFile.htm">FileFindFirstFile()</a> pour des précisions sur les caractères spéciaux.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If the source and destination paths are on different volumes a copy and delete operation is performed rather than a move.</span><span lang="fr" style="display: none">Si la source et les chemins de destination sont sur des volumes différents une copie puis une suppression est effectuée au lieu d'un déplacement.</span></span><br>
@@ -67,9 +66,9 @@
   <span class="segments"><span lang="en">For instance the combined flag $FC_OVERWRITE (1) + $FC_CREATEPATH (8) overwrites the target file and prechecks for the destination directory structure and if it doesn't exist creates it automatically.</span><span lang="fr" style="display: none">Par exemple le paramètre combiné $FC_OVERWRITE (1) + $FC_CREATEPATH (8), écrase le fichier cible et vérifie la structure du répertoire de destination et si elle n'existe pas, il la crée automatiquement.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Some file attributes can make the overwriting impossible, if this is the case look at <a href="FileSetAttrib.htm">FileSetAttrib()</a> to change the attributes of a file.</span><span lang="fr" style="display: none">Certains attributs de fichier peuvent rendre l'écrasement impossible, si c'est le cas consultez <a href="FileSetAttrib.htm">FileSetAttrib()</a> pour changer les attributs d'un fichier.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="DirMove.htm">DirMove</a>, <a href="FileCopy.htm">FileCopy</a>, <a href="FileDelete.htm">FileDelete</a>, <a href="FileRecycle.htm">FileRecycle</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

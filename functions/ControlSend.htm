@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ControlSend</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>ControlSend</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sends a string of characters to a control.</span><span lang="fr" style="display: none">Envoie une chaîne de caractère à un contrôle.</span></span><br></p>
   <p class="codeheader">ControlSend ( "title", "text", controlID, "string" [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -47,7 +46,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how "keys" is processed:</span><span lang="fr" style="display: none">Change la manière dont les touches sont envoyées:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Changes how "keys" is processed:</span><span lang="fr" style="display: none">Change la manière dont les touches sont envoyées:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SEND_DEFAULT (0) = Text contains special characters like + and ! <span class="segments"><span lang="en">to indicate SHIFT and ALT key-presses (default).</span><span lang="fr" style="display: none">qui sont utilisés pour indiquer les touches SHIFT et ALT (défaut).</span></span><br>
         &nbsp;&nbsp;&nbsp; $SEND_RAW (1) = keys are sent raw.<br>
         <br>
@@ -55,7 +54,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -68,7 +67,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en"><a href="ControlSend.htm">ControlSend()</a> works in a similar way to <a href="Send.htm">Send()</a> but it can send key strokes directly to a window/control, rather than just to the active window.</span><span lang="fr" style="display: none"><a href="ControlSend.htm">ControlSend()</a> fonctionne de manière similaire à <a href="Send.htm">Send</a>, mais il peut envoyer des appuis de touche directement à une fenêtre ou un contrôle, au lieu de la fenêtre active seulement.</span></span><br>
   <br>
   <span class="segments"><span lang="en"><a href="ControlSend.htm">ControlSend()</a> is only unreliable for command prompts as that works differently to normal windows (seems to check physical states rather than accepting the keystroke messages).</span><span lang="fr" style="display: none"><a href="ControlSend.htm">ControlSend()</a> est instable pour les fenêtres de commande (DOS) car elles fonctionnent différemment d'une fenêtre normale (Semble vérifier l'état physique plutôt qu'accepter les messages de frappe clavier).</span></span> <span class="segments"><span lang="en">For normal windows <a href="ControlSend.htm">ControlSend()</a> should be way more reliable than a normal <a href="Send.htm">Send()</a> - and yes it does send shift, ctrl, alt etc.</span><span lang="fr" style="display: none">Pour une fenêtre normale, <a href="ControlSend.htm">ControlSend()</a> devrait être plus fiable, qu'un <a href="Send.htm">Send()</a> normal.Et oui, il envoie Shift, Ctrl, Alt etc.</span></span><a href="ControlSend.htm"></a><a href="Send.htm"></a><br>
@@ -79,9 +78,9 @@
   <br>
   <a href="AutoItSetOption.htm#SendKeyDelay">Opt("SendKeyDelay",...)</a> alters the length of the brief pause in between sent keystrokes.<br>
   <a href="AutoItSetOption.htm#SendKeyDownDelay">Opt("SendKeyDownDelay",...)</a> alters the length of time a key is held down before being released during a keystroke.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="ControlCommand.htm">ControlCommand</a>, <a href="ControlFocus.htm">ControlFocus</a>, <a href="ControlSetText.htm">ControlSetText</a>, <a href="Send.htm">Send</a>, <a href="AutoItSetOption.htm#SendKeyDelay">SendKeyDelay (Option)</a>, <a href="AutoItSetOption.htm#SendKeyDownDelay">SendKeyDownDelay (Option)</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

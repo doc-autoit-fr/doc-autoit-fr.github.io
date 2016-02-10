@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GUICtrlTreeView_SetFocused</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Sets whether the item appears to have focus<br></p>
   <p class="codeheader">#include &lt;GuiTreeView.au3&gt;<br>
   _GUICtrlTreeView_SetFocused ( $hWnd, $hItem [, $bFlag = True] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,18 +33,18 @@
       </tr>
       <tr>
         <td>$bFlag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Flag setting:<br>
+        <td><strong>[optional]</strong> Flag setting:<br>
         &nbsp;&nbsp;&nbsp; True - Item appears to have focus<br>
         &nbsp;&nbsp;&nbsp; False - Item does not</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -53,9 +52,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GUICtrlTreeView_GetFocused.htm">_GUICtrlTreeView_GetFocused</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -113,7 +112,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlTreeView_SetFocused.htm"><span class="S15">_GUICtrlTreeView_SetFocused</span></a><span class="S8">(</span><span class="S9">$idTreeView</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aidItem</span><span class="S8">[</span><span class="S9">$hRandomItem</span><span class="S8">])</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Information"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringFormat.htm"><span class="S4">StringFormat</span></a><span class="S8">(</span><span class="S7">"Item %d Focused? %s"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hRandomItem</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlTreeView_GetFocused.htm"><span class="S15">_GUICtrlTreeView_GetFocused</span></a><span class="S8">(</span><span class="S9">$idTreeView</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aidItem</span><span class="S8">[</span><span class="S9">$hRandomItem</span><span class="S8">])))</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">()</span>

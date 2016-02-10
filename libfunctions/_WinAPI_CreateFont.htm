@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CreateFont</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates a logical font with the specified characteristics<br></p>
   <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
   _WinAPI_CreateFont ( $iHeight, $iWidth [, $iEscape = 0 [, $iOrientn = 0 [, $iWeight = $FW_NORMAL [, $bItalic = False [, $bUnderline = False [, $bStrikeout = False [, $iCharset = $DEFAULT_CHARSET [, $iOutputPrec = $OUT_DEFAULT_PRECIS [, $iClipPrec = $CLIP_DEFAULT_PRECIS [, $iQuality = $DEFAULT_QUALITY [, $iPitch = 0 [, $sFace = 'Arial']]]]]]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,15 +33,15 @@
       </tr>
       <tr>
         <td>$iEscape</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> angle of escapement</td>
+        <td><strong>[optional]</strong> angle of escapement</td>
       </tr>
       <tr>
         <td>$iOrientn</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> base-line orientation angle</td>
+        <td><strong>[optional]</strong> base-line orientation angle</td>
       </tr>
       <tr>
         <td>$iWeight</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> font weight, The following values are defined for convenience:<br>
+        <td><strong>[optional]</strong> font weight, The following values are defined for convenience:<br>
         $FW_DONTCARE - 0<br>
         $FW_THIN - 100<br>
         $FW_EXTRALIGHT - 200<br>
@@ -56,19 +55,19 @@
       </tr>
       <tr>
         <td>$bItalic</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> italic attribute option</td>
+        <td><strong>[optional]</strong> italic attribute option</td>
       </tr>
       <tr>
         <td>$bUnderline</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> underline attribute option</td>
+        <td><strong>[optional]</strong> underline attribute option</td>
       </tr>
       <tr>
         <td>$bStrikeout</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> strikeout attribute option</td>
+        <td><strong>[optional]</strong> strikeout attribute option</td>
       </tr>
       <tr>
         <td>$iCharset</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the character set. The following values are predefined:<br>
+        <td><strong>[optional]</strong> Specifies the character set. The following values are predefined:<br>
         $ANSI_CHARSET - 0<br>
         $BALTIC_CHARSET - 186<br>
         $CHINESEBIG5_CHARSET - 136<br>
@@ -87,7 +86,7 @@
       </tr>
       <tr>
         <td>$iOutputPrec</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the output precision, It can be one of the following values:<br>
+        <td><strong>[optional]</strong> Specifies the output precision, It can be one of the following values:<br>
         $OUT_CHARACTER_PRECIS - Not used<br>
         $OUT_DEFAULT_PRECIS - Specifies the default font mapper behavior<br>
         $OUT_DEVICE_PRECIS - Instructs the font mapper to choose a Device font when the system contains multiple fonts with the same name<br>
@@ -102,7 +101,7 @@
       </tr>
       <tr>
         <td>$iClipPrec</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the clipping precision, It can be one or more of the following values:<br>
+        <td><strong>[optional]</strong> Specifies the clipping precision, It can be one or more of the following values:<br>
         $CLIP_CHARACTER_PRECIS - Not used<br>
         $CLIP_DEFAULT_PRECIS - Specifies default clipping behavior<br>
         $CLIP_EMBEDDED - You must specify this flag to use an embedded read-only font<br>
@@ -115,7 +114,7 @@
       </tr>
       <tr>
         <td>$iQuality</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the output quality, It can be one of the following values:<br>
+        <td><strong>[optional]</strong> Specifies the output quality, It can be one of the following values:<br>
         $ANTIALIASED_QUALITY - Font is antialiased, or smoothed, if the font supports it and the size of the font is not too small or too large.<br>
         In addition, you must select a TrueType font into a screen DC prior to using it in a DIBSection, otherwise antialiasing does not happen<br>
         $DEFAULT_QUALITY - Appearance of the font does not matter<br>
@@ -130,7 +129,7 @@
       </tr>
       <tr>
         <td>$iPitch</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the pitch and family of the font. The two low-order bits specify the pitch of the font and can be one of the following values:<br>
+        <td><strong>[optional]</strong> Specifies the pitch and family of the font. The two low-order bits specify the pitch of the font and can be one of the following values:<br>
         $DEFAULT_PITCH, $FIXED_PITCH, $VARIABLE_PITCH<br>
         The four high-order bits specify the font family and can be one of the following values:<br>
         $FF_DECORATIVE - Novelty fonts. Old English is an example<br>
@@ -142,11 +141,11 @@
       </tr>
       <tr>
         <td>$sFace</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> typeface name</td>
+        <td><strong>[optional]</strong> typeface name</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -159,13 +158,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When you no longer need the font, call the <a href="_WinAPI_DeleteObject.htm">_WinAPI_DeleteObject()</a> function to delete it<br>
   <br>
   Above constants require #include &lt;FontConstants.au3&gt;<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CreateFont);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CreateFont</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

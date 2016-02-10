@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_RegOpenKey</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Opens the specified registry key<br></p>
   <p class="codeheader">#include &lt;WinAPIReg.au3&gt;<br>
   _WinAPI_RegOpenKey ( $hKey [, $sSubKey = '' [, $iAccess = 0x000F003F]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -37,17 +36,17 @@
       </tr>
       <tr>
         <td>$sSubKey</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of the registry subkey to be opened (see remarks).</td>
+        <td><strong>[optional]</strong> The name of the registry subkey to be opened (see remarks).</td>
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A mask that specifies the desired access rights to the key. The function fails if the security<br>
+        <td><strong>[optional]</strong> A mask that specifies the desired access rights to the key. The function fails if the security<br>
         descriptor of the key does not permit the requested access for the calling process. This parameter<br>
         can be one or more of the $KEY_* constants. Default is $KEY_ALL_ACCESS.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -60,7 +59,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>Unlike the <a href="_WinAPI_RegCreateKey.htm">_WinAPI_RegCreateKey()</a> function, the <a href="_WinAPI_RegOpenKey.htm">_WinAPI_RegOpenKey()</a> function does not create the specified key<br>
   if the key does not exist in the registry.<br>
   <br>
@@ -76,9 +75,9 @@
   The $sSubKey parameter can be NULL only if $hKey is one of the predefined keys.<br>
   If $sSubKey is NULL and $hKey is HKEY_CLASSES_ROOT, the return is a new handle to the key specified by $hKey.<br>
   Otherwise, the return is the same $hKey handle passed in to the function.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_RegCloseKey.htm">_WinAPI_RegCloseKey</a>, <a href="_WinAPI_RegCreateKey.htm">_WinAPI_RegCreateKey</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(RegOpenKeyEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">RegOpenKeyEx</a> in MSDN Library.</p>
 </body>
 </html>

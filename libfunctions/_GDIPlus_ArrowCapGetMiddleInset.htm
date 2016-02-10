@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GDIPlus_ArrowCapGetMiddleInset</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Gets the value of the inset</span><span lang="fr" style="display: none">Définit la valeur du déport de l'embout de la flèche</span></span><br></p>
   <p class="codeheader">#include &lt;GDIPlus.au3&gt;<br>
   _GDIPlus_ArrowCapGetMiddleInset ( $hArrowCap )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,7 +29,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -43,18 +42,18 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The middle inset is the number of units that the midpoint of the base shifts towards the vertex.</span><span lang="fr" style="display: none">Le déport est le nombre d'unités qui mesure le déplacement du milieu de la base vers la pointe.</span></span><br>
   <span class="segments"><span lang="en">A middle inset of zero results in no shift -- the base is a straight line, giving the arrow a triangular shape.</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span><br>
   <span class="segments"><span lang="en">A positive (greater than zero) middle inset results in a shift the specified number of units toward the vertex -- the base is an arrow shape that points toward the vertex, giving the arrow cap a V-shape.</span><span lang="fr" style="display: none">Un déport de zéro n’entraîne pas de changement, la base est une ligne droite, donnant à l’embout de la flèche une forme triangulaire.</span></span><br>
   <span class="segments"><span lang="en">A negative (less than zero) middle inset results in a shift the specified number of units away from the vertex -- the base becomes an arrow shape that points away from the vertex, giving the arrow either a diamond shape (if the absolute value of the middle inset is equal to the height) or distorted diamond shape.</span><span lang="fr" style="display: none">Un déport positif (supérieur à zéro) entraîne un déplacement, du nombre spécifié d'unités, vers la pointe, la base prend la forme d’une flèche dirigée vers la pointe, donnant à l'embout de flèche une forme en V.</span></span><br>
   <span class="segments"><span lang="en">If the middle inset is equal to or greater than the height of the arrow cap, the cap does not appear at all.</span><span lang="fr" style="display: none">Un déport négatif (inférieur à zéro) entraine un déplacement, du nombre spécifié d'unités, dans la direction opposé à la pointe — la base devient une forme de flèche qui dirigée à l’opposé de la pointe, donnant à la flèche la forme d’un losange (si la valeur absolue du déport est égale à la hauteur) ou d’un losange déformée.</span></span><br>
   <span class="segments"><span lang="en">The value of the middle inset affects the arrow cap only if the arrow cap is filled.</span><span lang="fr" style="display: none">Si le déport est égal ou supérieure à la hauteur de l'embout de flèche, l’embout ne s’affiche pas du tout.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GDIPlus_ArrowCapSetMiddleInset.htm">_GDIPlus_ArrowCapSetMiddleInset</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://search.msdn.microsoft.com/search/Default.aspx?brand=msdn&amp;query=GdipGetAdjustableArrowCapMiddleInset">GdipGetAdjustableArrowCapMiddleInset</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -121,7 +120,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_PenSetCustomEndCap.htm"><span class="S15">_GDIPlus_PenSetCustomEndCap</span></a><span class="S8">(</span><span class="S9">$hPen</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hEndCap</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_GraphicsDrawLine.htm"><span class="S15">_GDIPlus_GraphicsDrawLine</span></a><span class="S8">(</span><span class="S9">$hGraphic</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">180</span><span class="S8">,</span><span class="S0"> </span><span class="S3">390</span><span class="S8">,</span><span class="S0"> </span><span class="S3">180</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hPen</span><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
 

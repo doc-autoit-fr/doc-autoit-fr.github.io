@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _FTP_ProgressDownload</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Downloads a file in Binary Mode and shows a Progress window or by Calling a User defined Function<br></p>
   <p class="codeheader">#include &lt;FTPEx.au3&gt;<br>
   _FTP_ProgressDownload ( $hFTPSession, $sLocalFile, $sRemoteFile [, $hFunctionToCall = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -40,11 +39,11 @@
       </tr>
       <tr>
         <td>$hFunctionToCall</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A variable assigned to the user defined function to update a progress bar or react on user interation, such as aborting or exiting the process. <span class="segments"><span lang="en">Default = none.</span><span lang="fr" style="display: none">Par défaut = Aucun.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><strong>[optional]</strong> A variable assigned to the user defined function to update a progress bar or react on user interation, such as aborting or exiting the process. <span class="segments"><span lang="en">Default = none.</span><span lang="fr" style="display: none">Par défaut = Aucun.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -53,10 +52,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>-1 - Local file couldn't be created<br>
         -2 - Unable to get RemoteFile size<br>
         -3 - Open RemoteFile failed<br>
@@ -67,14 +66,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>Information about $hFunctionToCall:<br>
   &nbsp;&nbsp;&nbsp; Parameter: $iPercentage - The Percentage of Progress<br>
   &nbsp;&nbsp;&nbsp; Return Values:<br>
   &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Continue Download - 1<br>
   &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Abort Download&nbsp;&nbsp;&nbsp; - zero or less than zero e.g. 0 or -1<br>
   &nbsp;&nbsp;&nbsp; These Return Values are returned by <a href="_FTP_ProgressUpload.htm">_FTP_ProgressUpload()</a>, too, so you can react on different Actions like Aborting by User, closing App or TimeOut of the process.<br></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

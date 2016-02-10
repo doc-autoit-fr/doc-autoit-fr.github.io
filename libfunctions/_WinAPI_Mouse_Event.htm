@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_Mouse_Event</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Synthesizes mouse motion and button clicks<br></p>
   <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
   _WinAPI_Mouse_Event ( $iFlags [, $iX = 0 [, $iY = 0 [, $iData = 0 [, $iExtraInfo = 0]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -45,33 +44,33 @@
       </tr>
       <tr>
         <td>$iX</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the mouse's absolute position along the X axis or its amount of motion since the<br>
+        <td><strong>[optional]</strong> Specifies the mouse's absolute position along the X axis or its amount of motion since the<br>
         last mouse event was generated depending on the setting of $MOUSEEVENTF_ABSOLUTE. Absolute data is given as<br>
         the mouse's actual X coordinate relative data is given as the number of mickeys moved.</td>
       </tr>
       <tr>
         <td>$iY</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the mouse's absolute position along the Y axis or its amount of motion since the<br>
+        <td><strong>[optional]</strong> Specifies the mouse's absolute position along the Y axis or its amount of motion since the<br>
         last mouse event was generated depending on the setting of $MOUSEEVENTF_ABSOLUTE. Absolute data is given as<br>
         the mouse's actual Y coordinate relative data is given as the number of mickeys moved.</td>
       </tr>
       <tr>
         <td>$iData</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If $iFlags is $MOUSEEVENTF_WHEEL, then $iData specifies the amount of wheel movement. A positive<br>
+        <td><strong>[optional]</strong> If $iFlags is $MOUSEEVENTF_WHEEL, then $iData specifies the amount of wheel movement. A positive<br>
         value indicates that the wheel was rotated forward away from the user. A negative value indicates that the<br>
         wheel was rotated backward, toward the user. One wheel click is defined as $WHEEL_DELTA, which is 120. If<br>
         $iFlags is not $MOUSEEVENTF_WHEEL, then $iData should be zero.</td>
       </tr>
       <tr>
         <td>$iExtraInfo</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies a 32 bit value associated with the mouse event</td>
+        <td><strong>[optional]</strong> Specifies a 32 bit value associated with the mouse event</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">Aucune.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>Above constants require #include &lt;Constants.au3&gt;<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(mouse_event);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">mouse_event</a> in MSDN Library.</p>
 </body>
 </html>

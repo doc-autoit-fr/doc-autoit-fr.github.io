@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _DebugCOMError</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -18,59 +17,59 @@
   <h1 class="small">Référence Fonction</h1>
   <hr style="height:0px">
   <h1>_DebugCOMError</h1>
-  <p class="funcdesc">Sets, resets or queries the debug level for COM errors<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets, resets or queries the debug level for COM errors</span><span lang="fr" style="display: none">Définit, réinitialise ou interroge le niveau de débogage pour les erreurs COM</span></span><br></p>
   <p class="codeheader">#include &lt;Debug.au3&gt;<br>
   _DebugCOMError ( [$iComDebug = 1 [, $bExit = False]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$iComDebug</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Debug level. Possible values are:<br>
-        -1 - Return the current settings<br>
-        &nbsp;0 - Disable debugging<br>
-        &nbsp;1 - Enable debugging. Output the debug info (default)</td>
+        <td style="width:85%"><strong>[optional]</strong> <span class="segments"><span lang="en">Debug level.</span><span lang="fr" style="display: none">Niveau de débogage.</span></span> <span class="segments"><span lang="en">Possible values are:</span><span lang="fr" style="display: none">Les valeurs possibles sont :</span></span><br>
+        <span class="segments"><span lang="en">-1 - Return the current settings</span><span lang="fr" style="display: none">-1 - Retourne les paramètres actuels</span></span><br>
+        <span class="segments"><span lang="en">&nbsp;0 - Disable debugging</span><span lang="fr" style="display: none">&nbsp;0 - Désactive le débogage</span></span><br>
+        <span class="segments"><span lang="en">&nbsp;1 - Enable debugging.</span><span lang="fr" style="display: none">&nbsp;1 - Active le débogage.</span></span> <span class="segments"><span lang="en">Output the debug info (default)</span><span lang="fr" style="display: none">Affiche les informations de débogage (par défaut)</span></span></td>
       </tr>
       <tr>
         <td>$bExit</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True if the script must be terminated</td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">True if the script must be terminated</span><span lang="fr" style="display: none">True si le script doit être terminé</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%">1 if $iComDebug = 0 or 1 and sets @extended to:<br>
-        0 - The COM error handler is not initialized<br>
-        1 - The COM error handler has been initialized<br>
-        2 - The COM error handler was already active<br>
-        3 - The COM error handler is already disabled<br>
-        1 if $iComDebug = -1 and sets the @error flag and @extented to current setting:<br>
-        @error = current Debug level<br>
-        @extended = current script termination.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">1 if $iComDebug = 0 or 1 and sets @extended to:</span><span lang="fr" style="display: none">1 si $iComDebug = 0 ou 1 et définit @extended à :</span></span><br>
+        <span class="segments"><span lang="en">0 - The COM error handler is not initialized</span><span lang="fr" style="display: none">0 - Le gestionnaire d'erreur COM n'est pas initialisé</span></span><br>
+        <span class="segments"><span lang="en">1 - The COM error handler has been initialized</span><span lang="fr" style="display: none">1 - Le gestionnaire d'erreur COM a été initialisé</span></span><br>
+        <span class="segments"><span lang="en">2 - The COM error handler was already active</span><span lang="fr" style="display: none">2 - Le gestionnaire d'erreur COM était déjà actif</span></span><br>
+        <span class="segments"><span lang="en">3 - The COM error handler is already disabled</span><span lang="fr" style="display: none">3 - Le gestionnaire d'erreur COM est déjà désactivé</span></span><br>
+        <span class="segments"><span lang="en">1 if $iComDebug = -1 and sets the @error flag and @extented to current setting:</span><span lang="fr" style="display: none">1 si $iComDebug = -1 et définit les drapeaux @error et @extented d'après le réglage actuel :</span></span><br>
+        <span class="segments"><span lang="en">@error = current Debug level</span><span lang="fr" style="display: none">@error = niveau de Débogage actuel</span></span><br>
+        <span class="segments"><span lang="en">@extended = current script termination.</span><span lang="fr" style="display: none">@extended = résiliation de script en cours.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>
-          1 - $iComDebug is not an integer or &lt; -1 or &gt; 1<br>
-          2 - The COM error handler is already set to another function (= not set by this function)<br>
-          3 - <a href="_DebugSetup.htm">_DebugSetup()</a> did not run properly. Make sure <a href="_DebugSetup.htm">_DebugSetup()</a> ran properly before calling this function<br>
-          4 - Installation of the custom error handler failed. @extended is set to the error code returned by <a href="../functions/ObjEvent.htm">ObjEvent()</a>
+          <span class="segments"><span lang="en">1 - $iComDebug is not an integer or &lt; -1 or &gt; 1</span><span lang="fr" style="display: none">1 - $iComDebug n'est pas un nombre entier ou &lt; -1 or &gt; 1</span></span><br>
+          <span class="segments"><span lang="en">2 - The COM error handler is already set to another function (= not set by this function)</span><span lang="fr" style="display: none">2 - Le gestionnaire d'erreur COM est déjà défini sur une autre fonction (= pas défini par cette fonction)</span></span><br>
+          <span class="segments"><span lang="en">3 - <a href="_DebugSetup.htm">_DebugSetup()</a> did not run properly.</span><span lang="fr" style="display: none">3 - <a href="_DebugSetup.htm">_DebugSetup()</a> ne fonctionne pas correctement.</span></span> <span class="segments"><span lang="en">Make sure <a href="_DebugSetup.htm">_DebugSetup()</a> ran properly before calling this function</span><span lang="fr" style="display: none">Assurez-vous que <a href="_DebugSetup.htm">_DebugSetup()</a> s'est exécuté correctement avant d'appeler cette fonction</span></span><br>
+          <span class="segments"><span lang="en">4 - Installation of the custom error handler failed.</span><span lang="fr" style="display: none">4 - L'installation du gestionnaire d'erreurs personnalisé a échoué.</span></span> <span class="segments"><span lang="en">@extended is set to the error code returned by <a href="../functions/ObjEvent.htm">ObjEvent()</a></span><span lang="fr" style="display: none">@extended est défini sur le code d'erreur retourné par <a href="../functions/ObjEvent.htm">ObjEvent()</a></span></span><a href="../functions/ObjEvent.htm"></a>
         </td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
-  <p>Before calling this function, <a href="_DebugSetup.htm">_DebugSetup()</a> must be called first to create the debug session.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
+  <p><span class="segments"><span lang="en">Before calling this function, <a href="_DebugSetup.htm">_DebugSetup()</a> must be called first to create the debug session.</span><span lang="fr" style="display: none">Avant d'appeler cette fonction, <a href="_DebugSetup.htm">_DebugSetup()</a> doit être appelée en premier pour créer la session de débogage.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_DebugSetup.htm">_DebugSetup</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -104,26 +103,26 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Debug.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<a class="codeSnippetLink" href="../libfunctions/_DebugSetup.htm"><span class="S15">_DebugSetup</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../keywords/Default.htm"><span class="S5">Default</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">True</span></a><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Default.htm"><span class="S5">Default</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">True</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; 1 = GUI output with timestamping</span>
+<a class="codeSnippetLink" href="../libfunctions/_DebugSetup.htm"><span class="S15">_DebugSetup</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../keywords/Default.htm"><span class="S5">Default</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">True</span></a><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Default.htm"><span class="S5">Default</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Booleans.htm"><span class="S5">True</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">1 = GUI output with timestamping</span><span lang="fr" style="display: none">1 = Sortie GUI avec horodatage</span></span></span></span>
 
 <span class="S0">Example</span><span class="S8">()</span>
 
 <span class="S1">; *****************************************************************************</span>
-<span class="S1">; <span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span></span>
-<span class="S1">; Generate a COM error and let _DebugCOMError display the error</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></span></span>
+<span class="S1">; <span><span class="segments"><span lang="en">Generate a COM error and let _DebugCOMError display the error</span><span lang="fr" style="display: none">Génère une erreur COM et laisse _DebugCOMError afficher l'erreur</span></span></span></span>
 <span class="S1">; *****************************************************************************</span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
-<span class="S0">    </span><span class="S1">; Create application object for the Microsoft Internet Explorer</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create application object for the Microsoft Internet Explorer</span><span lang="fr" style="display: none">Crée un objet application pour Microsoft Internet Explorer</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"InternetExplorer.Application"</span><span class="S8">)</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;&gt;</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_DebugCOMError UDF"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error creating a new IE application object."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;&gt;</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">_DebugCOMError UDF</span><span lang="fr" style="display: none">UDF _DebugCOMError</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error creating a new IE application object.</span><span lang="fr" style="display: none">Erreur lors de la création d'un nouvel objet application IE.</span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"@error = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">", @extended = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S8">)</span>
-<span class="S0">    </span><span class="S1">; Set up the COM error handler to write error messages using a GUI and exit on error</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set up the COM error handler to write error messages using a GUI and exit on error</span><span lang="fr" style="display: none">Met en place le gestionnaire d'erreur COM pour écrire les messages d'erreur via une interface graphique (GUI) et quitte lors d'une erreur</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_DebugCOMError.htm"><span class="S15">_DebugCOMError</span></a><span class="S8">(</span><span class="S3">1</span><span class="S8">)</span>
-<span class="S0">    </span><span class="S1">; Provoke a COM error. Functions is unknown</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Provoke a COM error.</span><span lang="fr" style="display: none">Provoque une erreur COM.</span></span> <span class="segments"><span lang="en">Functions is unknown</span><span lang="fr" style="display: none">Fonction inconnue</span></span></span></span>
 <span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">xyz</span><span class="S8">()</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;&gt;</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_DebugCOMError UDF"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error occurred and handled."</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">&lt;&gt;</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">_DebugCOMError UDF</span><span lang="fr" style="display: none">UDF _DebugCOMError</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error occurred and handled.</span><span lang="fr" style="display: none">Erreur produite et gérée.</span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S8">_</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"@error = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">)</span>
-<span class="S0">    </span><span class="S1">; Close the IE</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Close the IE</span><span lang="fr" style="display: none">Ferme IE</span></span></span></span>
 <span class="S0">    </span><span class="S9">$oIE</span><span class="S8">.</span><span class="S14">Quit</span><span class="S8">()</span>
 <span class="S0">    </span><span class="S9">$oIE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>

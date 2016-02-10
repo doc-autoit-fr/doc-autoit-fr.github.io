@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Excel_Open</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,32 +20,32 @@
   <p class="funcdesc">Connects to an existing Excel instance or creates a new one<br></p>
   <p class="codeheader">#include &lt;Excel.au3&gt;<br>
   _Excel_Open ( [$bVisible = True [, $bDisplayAlerts = False [, $bScreenUpdating = True [, $bInteractive = True [, $bForceNew = False]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$bVisible</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True specifies that the application will be visible (default = True)</td>
+        <td style="width:85%"><strong>[optional]</strong> True specifies that the application will be visible (default = True)</td>
       </tr>
       <tr>
         <td>$bDisplayAlerts</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> False suppresses all prompts and alert messages while opening a workbook (default = False)</td>
+        <td><strong>[optional]</strong> False suppresses all prompts and alert messages while opening a workbook (default = False)</td>
       </tr>
       <tr>
         <td>$bScreenUpdating</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> False suppresses screen updating to speed up your script (default = True)</td>
+        <td><strong>[optional]</strong> False suppresses screen updating to speed up your script (default = True)</td>
       </tr>
       <tr>
         <td>$bInteractive</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If False, Excel blocks all keyboard and mouse input by the user (except input to dialog boxes) (default = True)</td>
+        <td><strong>[optional]</strong> If False, Excel blocks all keyboard and mouse input by the user (except input to dialog boxes) (default = True)</td>
       </tr>
       <tr>
         <td>$bForceNew</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True forces to create a new Excel instance even if there is already a running instance (default = False)</td>
+        <td><strong>[optional]</strong> True forces to create a new Excel instance even if there is already a running instance (default = False)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -61,21 +60,21 @@
         <td>0 and sets @error.</td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - Error returned by ObjCreate. @extended is set to the COM error code.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If $bDisplayAlerts is set to False and a message requires a response, Excel chooses the default response.<br>
   <br>
   To enhance performance set $bScreenUpdating to False. The screen will not be updated until you set it back to true ($oExcel.ScreenUpdating = True).<br>
   <br>
   Blocking user input ($obInteractive = False) will prevent the user from interfering with the AutoIt script.<br>
   If set to False, don't forget to set it back to True ($oExcel.Interactive = True)<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Excel_Close.htm">_Excel_Close</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUIGetMsg</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,12 +19,12 @@
   <h1>GUIGetMsg</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Polls the GUI to see if any events have occurred.</span><span lang="fr" style="display: none">Sonde la GUI pour voir si des événements ont été déclenchés.</span></span><br></p>
   <p class="codeheader">GUIGetMsg ( [advanced = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">advanced</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">return extended information in an array.</span><span lang="fr" style="display: none">retour d'informations complémentaires dans un tableau.</span></span><br>
+        <td style="width:85%"><strong>[optional]</strong> <span class="segments"><span lang="en">return extended information in an array.</span><span lang="fr" style="display: none">retour d'informations complémentaires dans un tableau.</span></span><br>
         &nbsp;&nbsp;&nbsp; $GUI_EVENT_SINGLE (0) = (default) Returns a single event.<br>
         &nbsp;&nbsp;&nbsp; $GUI_EVENT_ARRAY (1) = returns an array containing the event and extended information.<br>
         <br>
@@ -33,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns an event, or an array depending on the "advanced" parameter.</span><span lang="fr" style="display: none">Retourne un événement, ou un tableau selon le paramètre "advanced".</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an event, or an array depending on the "advanced" parameter.</span><span lang="fr" style="display: none">Retourne un événement, ou un tableau selon le paramètre "advanced".</span></span><br>
   <br>
   <span class="segments"><span lang="en">The "event" returned is the control ID of the control sending the message, or it is a special event (like the window is closing, minimizing).</span><span lang="fr" style="display: none">L'événement retourné est l'ID du contrôle qui envoie le message, ou un événement spécial (comme la fermeture de la fenêtre, fenêtre minimisé).</span></span> <span class="segments"><span lang="en">Or if there is no message, the event is 0.</span><span lang="fr" style="display: none">Ou s'il n'y a pas de message, l'événement est égal à 0.</span></span><br>
   <br>
@@ -109,13 +108,13 @@
   <span class="segments"><span lang="en">If the GUIOnEventMode option is set to 1 then the return from GUIGetMsg is always 0 and the @error is set to 1.</span><span lang="fr" style="display: none">Si l'option de GUIOnEventMode est réglé à 1, alors le retour de GUIGetMsg est toujours 0 et @error est mis à 1.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If the option GUIEventOptions is set to 1 the minimize, restore and maximize button will not do any action on the window just a simple notification.</span><span lang="fr" style="display: none">Si l'option GUIEventOptions est à 1, les boutons 'minimize', 'restaure' et 'maximize' n'auront aucun effer sur la fenêtre, juste une simple notification.</span></span><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">This function automatically idles the CPU when required so that it can be safely used in tight loops without hogging all the CPU.</span><span lang="fr" style="display: none">Cette fonction ralentit automatiquement lorsque le CPU en a besoin, de façon qu'elle puisse être utilisée en toute sécurité dans des boucles courtes sans monopoliser tout le CPU.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Information about the mouse position and the hovering control can be retrieved with <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a>.</span><span lang="fr" style="display: none">Les informations sur la position de la souris et sur le contrôle survolé peuvent être récupérés avec <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a>.</span></span> <span class="segments"><span lang="en">No event is fired when the mouse is over a control so <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a> must be called to retrieve the controlID.</span><span lang="fr" style="display: none">Aucun événement n'est déclenché lorsque la souris est sur un contrôle donc <a href="GUIGetCursorInfo.htm">GUIGetCursorInfo()</a> doit être appelée pour récupérer le controlID.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICreate.htm">GUICreate</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICreate.htm">GUICtrlRead</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlSendMsg</a>, <a href="GUICtrlRead.htm">GUICtrlSetOnEvent</a>, <a href="GUICtrlSendMsg.htm">GUIEventOptions (Option)</a>, <a href="GUICtrlSetOnEvent.htm">GUIGetCursorInfo</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIOnEventMode (Option)</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction Ping</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>Ping</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Pings a host and returns the roundtrip-time.</span><span lang="fr" style="display: none">Ping un hôte et retourne le temps de réponse.</span></span><br></p>
   <p class="codeheader">Ping ( "address/hostname" [, timeout = 4000] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,11 +28,11 @@
       </tr>
       <tr>
         <td>timeout</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Is the time to wait for an answer in milliseconds (default is 4000).</span><span lang="fr" style="display: none">Temps d'attente pour une réponse en millisecondes (4000 par défaut).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Is the time to wait for an answer in milliseconds (default is 4000).</span><span lang="fr" style="display: none">Temps d'attente pour une réponse en millisecondes (4000 par défaut).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -45,7 +44,7 @@
         <td><span class="segments"><span lang="en">0 if host is not pingable or other network errors occurred and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 si l'hôte n'est pas joignable ou autres erreurs réseau et définit @error &lt;&gt; 0.(Voir remarques).</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = Host is offline</span><span lang="fr" style="display: none">1 = Hôte déconnecté</span></span><br>
         <span class="segments"><span lang="en">2 = Host is unreachable</span><span lang="fr" style="display: none">2 = Hhôte est inaccessible</span></span><br>
         <span class="segments"><span lang="en">3 = Bad destination</span><span lang="fr" style="display: none">3 = Mauvaise destination</span></span><br>
@@ -53,7 +52,7 @@
       </tr>
     </tbody>
   </table>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ControlCommand</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>ControlCommand</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sends a command to a control.</span><span lang="fr" style="display: none">Envoie une commande à un contrôle.</span></span><br></p>
   <p class="codeheader">ControlCommand ( "title", "text", controlID, "command" [, "option"] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -47,11 +46,11 @@
       </tr>
       <tr>
         <td>option</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Additional parameter required by some commands.</span><span lang="fr" style="display: none">Paramètre additionnel requis par certaines commandes.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Additional parameter required by some commands.</span><span lang="fr" style="display: none">Paramètre additionnel requis par certaines commandes.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Return depends on command as table below shows.</span><span lang="fr" style="display: none">Dépend de la commande comme le montre le tableau ci-dessous.</span></span> <span class="segments"><span lang="en">In case of an error (such as an invalid command or window/control), @error=1.</span><span lang="fr" style="display: none">En cas d'erreur (telle qu'une commande ou fenêtre/contrôle invalide) @error=1.</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Return depends on command as table below shows.</span><span lang="fr" style="display: none">Dépend de la commande comme le montre le tableau ci-dessous.</span></span> <span class="segments"><span lang="en">In case of an error (such as an invalid command or window/control), @error=1.</span><span lang="fr" style="display: none">En cas d'erreur (telle qu'une commande ou fenêtre/contrôle invalide) @error=1.</span></span><br>
   <br>
   <table>
     <tbody>
@@ -153,13 +152,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Some controls will resist automation unless they are the active window.</span><span lang="fr" style="display: none">Certains contrôles peuvent résister à l'automation tant qu'ils ne sont pas dans la fenêtre active.</span></span> <span class="segments"><span lang="en">Use the <a href="WinActivate.htm">WinActivate()</a> function to force the control's window to the top before using <a href="ControlCommand.htm">ControlCommand()</a> on these controls.</span><span lang="fr" style="display: none">Utilisez la fonction <a href="WinActivate.htm">WinActivate()</a> pour mettre la fenêtre des contrôles au premier plan avant d'utiliser <a href="ControlCommand.htm">ControlCommand()</a>.</span></span><a href="WinActivate.htm"></a><a href="ControlCommand.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">Certain commands that work on normal Combo and ListBoxes do not work on "ComboLBox" controls.</span><span lang="fr" style="display: none">Certaines commandes fonctionnant pour un contrôle type ComboBox ou ListBox, peuvent ne pas fonctionner pour des contrôles type "ComboLBox".</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="ControlClick.htm">ControlClick</a>, <a href="ControlDisable.htm">ControlDisable</a>, <a href="ControlEnable.htm">ControlEnable</a>, <a href="ControlFocus.htm">ControlFocus</a>, <a href="ControlGetFocus.htm">ControlGetFocus</a>, <a href="ControlGetPos.htm">ControlGetPos</a>, <a href="ControlGetText.htm">ControlGetText</a>, <a href="ControlHide.htm">ControlHide</a>, <a href="ControlListView.htm">ControlListView</a>, <a href="ControlMove.htm">ControlMove</a>, <a href="ControlSend.htm">ControlSend</a>, <a href="ControlSetText.htm">ControlSetText</a>, <a href="ControlShow.htm">ControlShow</a>, <a href="ControlTreeView.htm">ControlTreeView</a>, <a href="StatusbarGetText.htm">StatusbarGetText</a>, <a href="WinActivate.htm">WinActivate</a>, <a href="WinGetClassList.htm">WinGetClassList</a>, <a href="WinMenuSelectItem.htm">WinMenuSelectItem</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

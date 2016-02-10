@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction DllStructSetData</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>DllStructSetData</h1>
   <p class="funcdesc">Sets the data of an element in the struct.<br></p>
   <p class="codeheader">DllStructSetData ( Struct, Element, value [, index] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -39,11 +38,11 @@
       </tr>
       <tr>
         <td>index</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> For elements that are an array this specifies the 1-based index to set. If omitted or the Default keyword then as much of the value as possible will be set in element starting at index 1 (Useful for quickly setting strings). <strong>Not used for non-array elements.</strong></td>
+        <td><strong>[optional]</strong> For elements that are an array this specifies the 1-based index to set. If omitted or the Default keyword then as much of the value as possible will be set in element starting at index 1 (Useful for quickly setting strings). <strong>Not used for non-array elements.</strong></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -55,7 +54,7 @@
         <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = Struct not a valid struct returned by <a href="DllStructCreate.htm">DllStructCreate()</a>.</span><span lang="fr" style="display: none">1 = La structure n'est pas une structure correcte retournée par <a href="DllStructCreate.htm">DllStructCreate()</a>.</span></span><br>
         <span class="segments"><span lang="en">2 = Element out of range or unknown.</span><span lang="fr" style="display: none">2 = Valeur de l'élément en dehors des limites ou inconnu.</span></span><br>
         <span class="segments"><span lang="en">3 = Index out of range.</span><span lang="fr" style="display: none">3 = L'index est hors des limites.</span></span><br>
@@ -64,12 +63,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When the element is char[n], wchar[n] or byte[n] the data can be a string. byte[n] also accepts binary data. Otherwise the data has to be either an AutoIt type compatible with the element type, or a number which will be converted to the required type.<br>
   Native AutoIt strings are implicitely converted to ANSI prior to copy into a char[n] or byte[n] element. You need to convert native Unicode strings to UTF8 when the element is expecting this encoding (e.g. in DllCall).<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="DllStructCreate.htm">DllStructCreate</a>, <a href="DllStructGetData.htm">DllStructGetData</a>, <a href="DllStructGetSize.htm">DllStructGetSize</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

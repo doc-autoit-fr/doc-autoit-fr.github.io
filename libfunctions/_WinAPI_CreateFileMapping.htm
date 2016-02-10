@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CreateFileMapping</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates or opens a named or unnamed file mapping object for a specified file<br></p>
   <p class="codeheader">#include &lt;WinAPIFiles.au3&gt;<br>
   _WinAPI_CreateFileMapping ( $hFile [, $iSize = 0 [, $sName = '' [, $iProtect = 0x0004 [, $tSecurity = 0]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,16 +33,16 @@
       </tr>
       <tr>
         <td>$iSize</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The maximum size of the file mapping object.<br>
+        <td><strong>[optional]</strong> The maximum size of the file mapping object.<br>
         If this parameter is 0 (Default), the maximum size of the file mapping object is equal to the current size of the file that $hFile identifies.</td>
       </tr>
       <tr>
         <td>$sName</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of the file mapping object.</td>
+        <td><strong>[optional]</strong> The name of the file mapping object.</td>
       </tr>
       <tr>
         <td>$iProtect</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the page protection of the file mapping object and can be one of the following values.<br>
+        <td><strong>[optional]</strong> Specifies the page protection of the file mapping object and can be one of the following values.<br>
         &nbsp;&nbsp;&nbsp; $PAGE_EXECUTE_READ<br>
         &nbsp;&nbsp;&nbsp; $PAGE_EXECUTE_READWRITE<br>
         &nbsp;&nbsp;&nbsp; $PAGE_EXECUTE_WRITECOPY<br>
@@ -61,12 +60,12 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure that determines whether a returned handle can be inherited by child processes.<br>
+        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that determines whether a returned handle can be inherited by child processes.<br>
         If this parameter is 0 (Default), the handle cannot be inherited and the file mapping object gets a default security descriptor.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -82,7 +81,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>After a file mapping object is created, the size of the file must not exceed the size of the file mapping object; if it does, not all of the file contents are available for sharing.<br>
   <br>
   Multiple processes can share a view of the same file by either using a single shared file mapping object or creating separate file mapping objects backed by the same file. A single file mapping object can be shared by multiple processes through inheriting the handle at process creation, duplicating the handle, or opening the file mapping object by name.<br>
@@ -92,11 +91,11 @@
   Mapped views of a file mapping object maintain internal references to the object, and a file mapping object does not close until all references to it are released.<br>
   Therefore, to fully close a file mapping object, an application must unmap all mapped views of the file mapping object by calling <a href="_WinAPI_UnmapViewOfFile.htm">_WinAPI_UnmapViewOfFile()</a> and close the file mapping object handle by calling <a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle()</a>.<br>
   These functions can be called in any order.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle</a>, <a href="_WinAPI_UnmapViewOfFile.htm">_WinAPI_UnmapViewOfFile</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CreateFileMapping);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CreateFileMapping</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -183,7 +182,7 @@
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> _Sender</span><span class="S8">()</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hMapping</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_CreateFileMapping.htm"><span class="S15">_WinAPI_CreateFileMapping</span></a><span class="S8">(-</span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2048</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'MyFileMapping'</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><span class="S9">$hMapping</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Or</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
-<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'Error'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Unable to create file mapping (@extended='</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">).</span><span lang="fr" style="display: none">)..</span></span></span>'</span><span class="S8">)</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Unable to create file mapping (@extended='</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">).</span><span lang="fr" style="display: none">)..</span></span></span>'</span><span class="S8">)</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Return</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 

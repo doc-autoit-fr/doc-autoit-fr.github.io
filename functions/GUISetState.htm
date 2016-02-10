@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUISetState</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,12 +19,12 @@
   <h1>GUISetState</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Changes the state of a GUI window.</span><span lang="fr" style="display: none">Modifie l'état d'une fenêtre GUI.</span></span><br></p>
   <p class="codeheader">GUISetState ( [flag [, winhandle]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">flag</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">@SW_SHOW = Shows a previously hidden window (default)</span><span lang="fr" style="display: none">@SW_SHOW = Affiche une fenêtre précédemment caché (par défaut)</span></span><br>
+        <td style="width:85%"><strong>[optional]</strong> <span class="segments"><span lang="en">@SW_SHOW = Shows a previously hidden window (default)</span><span lang="fr" style="display: none">@SW_SHOW = Affiche une fenêtre précédemment caché (par défaut)</span></span><br>
         &nbsp;&nbsp;&nbsp; @SW_HIDE = Hide window<br>
         &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimize window<br>
         &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximize window<br>
@@ -44,11 +43,11 @@
       </tr>
       <tr>
         <td>winhandle</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Windows handle as returned by <a href="GUICreate.htm">GUICreate()</a> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <a href="GUICreate.htm">GUICreate()</a> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Windows handle as returned by <strong>GUICreate()</strong> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <strong>GUICreate()</strong> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -61,14 +60,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">When windows are created they are initially hidden so you must use this function to display them (@SW_SHOW).</span><span lang="fr" style="display: none">Lorsque les fenêtres sont créées, elles sont d'abord cachées aussi vous devez utiliser cette fonction pour les afficher (SW_SHOW).</span></span><br>
   <br>
   <span class="segments"><span lang="en">Only one window can be locked with @SW_LOCK.</span><span lang="fr" style="display: none">Une seule fenêtre peut être verrouillée avec @SW_LOCK.</span></span> <span class="segments"><span lang="en">Any other @SW_LOCK will lock the requested window.</span><span lang="fr" style="display: none">Tout autre @SW_LOCK verrouille la fenêtre demandée.</span></span><br>
   <span class="segments"><span lang="en">@SW_UNLOCK just ignored the "winhandle" to unlock any locked window.</span><span lang="fr" style="display: none">SW_UNLOCK ignore simplement le "winhandle" pour débloquer une fenêtre verrouillée.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICreate.htm">GUICreate</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -108,7 +107,7 @@
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">will display an empty dialog box</span><span lang="fr" style="display: none">Affiche une boîte de dialogue vide</span></span></span></span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>

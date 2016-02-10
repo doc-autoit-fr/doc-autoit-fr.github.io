@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Word_DocAttach</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Attaches to the first instance of a Word document where the search string matches based on the selected mode<br></p>
   <p class="codeheader">#include &lt;Word.au3&gt;<br>
   _Word_DocAttach ( $oAppl, $sString [, $sMode = "FilePath" [, $iCase = 0]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -36,21 +35,21 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Search mode to use. Valid modes are:<br>
+        <td><strong>[optional]</strong> Search mode to use. Valid modes are:<br>
         &nbsp;&nbsp;&nbsp; "FileName" - Name of the open document<br>
         &nbsp;&nbsp;&nbsp; "FilePath" - Full path to the open document (default)<br>
         &nbsp;&nbsp;&nbsp; "Text" - Text in the body of the document</td>
       </tr>
       <tr>
         <td>$iCase</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies case-sensitivity of function StringInStr() used for search mode "Text":<br>
+        <td><strong>[optional]</strong> Specifies case-sensitivity of function StringInStr() used for search mode "Text":<br>
         &nbsp;&nbsp;&nbsp; 0 - not case-sensitive, using the user's locale (default)<br>
         &nbsp;&nbsp;&nbsp; 1 - case sensitive<br>
         &nbsp;&nbsp;&nbsp; 2 - not case sensitive, using a basic/faster comparison</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -59,10 +58,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oAppl is not an object<br>
         2 - $sString is empty<br>
         3 - $sMode is invalid. Must be "FilePath", "FileName" or "Text"<br>
@@ -70,12 +69,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This function only returns the object of the found document.<br>
   To access the corresponding Word application use: $oAppl = $oDoc.Application.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Word_DocClose.htm">_Word_DocClose</a>, <a href="_Word_DocGet.htm">_Word_DocGet</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

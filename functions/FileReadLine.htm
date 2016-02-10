@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction FileReadLine</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>FileReadLine</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Read in a line of text from a previously opened text file.</span><span lang="fr" style="display: none">Lit une ligne de texte dans un fichier texte précédemment ouvert.</span></span><br></p>
   <p class="codeheader">FileReadLine ( "filehandle/filename" [, line = 1] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,11 +28,11 @@
       </tr>
       <tr>
         <td>line</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The line number to read. <span class="segments"><span lang="en">The first line of a text file is line 1 (not zero), last line is -1.</span><span lang="fr" style="display: none">La première ligne du fichier texte est la ligne 1 (pas zéro), la dernière ligne est -1.</span></span></td>
+        <td><strong>[optional]</strong> The line number to read. <span class="segments"><span lang="en">The first line of a text file is line 1 (not zero), last line is -1.</span><span lang="fr" style="display: none">La première ligne du fichier texte est la ligne 1 (pas zéro), la dernière ligne est -1.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -42,16 +41,16 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = if file not opened in read mode or other error</span><span lang="fr" style="display: none">1 = si le fichier n'est pas ouvert en mode lecture ou si une autre erreur apparait.</span></span><br>
         <span class="segments"><span lang="en">-1 = if end-of-file is reached</span><span lang="fr" style="display: none">-1 = si la fin du fichier est atteinte</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Returns the text of the line read, any newline characters ( <a href="Chr.htm">Chr</a>(10) or @LF ) at the end of a line read in are automatically stripped.</span><span lang="fr" style="display: none">Retourne le texte de la ligne lue, tous les caractères de saut de ligne (<a href="Chr.htm">Chr</a>(10) ou @LF) à la fin d'une ligne lue sont automatiquement supprimés.</span></span><br>
   <span class="segments"><span lang="en">If no line number to read is given, the "next" line will be read.</span><span lang="fr" style="display: none">Si aucun numéro de ligne à lire est donné, la ligne "suivante" sera lue.</span></span> <span class="segments"><span lang="en">("Next" for a newly opened file is initially the first line.)</span><span lang="fr" style="display: none">(La "suivante" pour un fichier nouvellement ouvert est la première ligne.)</span></span><br>
   <span class="segments"><span lang="en">If a filename is given rather than a file handle - the file will be opened and closed during the function call - for parsing large text files this will be much slower than using filehandles.</span><span lang="fr" style="display: none">Si un nom de fichier est donné plutôt qu'un handle de fichier - le fichier sera ouvert et fermé pendant l'appel de fonction - pour traiter des fichiers texte volumineux ce sera beaucoup plus lent que d'utiliser des handles de fichiers.</span></span><br>
@@ -60,9 +59,9 @@
   <span class="segments"><span lang="en">From a performance standpoint it is a bad idea to read line by line specifying "line" parameter whose value is incrementing by one.</span><span lang="fr" style="display: none">Du point de vue performance ce serait une mauvaise idée de lire ligne par ligne en spécifiant le paramètre "line" dont la valeur serait incrémentée de un.</span></span> <span class="segments"><span lang="en">This forces AutoIt to reread the file from the beginning until it reach the specified line.</span><span lang="fr" style="display: none">Ceci forcerait AutoIt à relire le fichier depuis le début jusqu'à atteindre la ligne spécifiée.</span></span><br>
   <br>
   Both ANSI and UTF16/UTF8 text formats can be read - See <a href="FileOpen.htm">FileOpen()</a> for details.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="FileGetPos.htm">FileGetPos</a>, <a href="FileOpen.htm">FileOpen</a>, <a href="FileRead.htm">FileRead</a>, <a href="FileSetPos.htm">FileSetPos</a>, <a href="FileWrite.htm">FileWrite</a>, <a href="FileWriteLine.htm">FileWriteLine</a>, <a href="IniRead.htm">IniRead</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

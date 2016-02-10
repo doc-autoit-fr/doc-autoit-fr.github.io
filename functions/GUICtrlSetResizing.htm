@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlSetResizing</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlSetResizing</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Defines the resizing method used by a control.</span><span lang="fr" style="display: none">Définit la méthode de redimensionnement utilisée par un contrôle.</span></span><br></p>
   <p class="codeheader">GUICtrlSetResizing ( controlID, resizing )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,7 +45,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">When a GUI window is resized the controls within react - how they react is determined by this function.</span><span lang="fr" style="display: none">Quand une fenêtre GUI est redimensionnée, ses contrôles réagissent - la façon dont ils réagissent est déterminée par cette fonction.</span></span> <span class="segments"><span lang="en">To be able to resize a GUI window it needs to have been created with the $WS_SIZEBOX and $WS_SYSMENU styles.</span><span lang="fr" style="display: none">Pour être en mesure de redimensionner une fenêtre GUI, elle doit avoir été créée avec les styles $WS_SIZEBOX et $WS_SYSMENU.</span></span> <span class="segments"><span lang="en">See <a href="GUICreate.htm">GUICreate()</a>.</span><span lang="fr" style="display: none">Consultez <a href="GUICreate.htm">GUICreate()</a>.</span></span><a href="GUICreate.htm"></a><br>
   <br>
   &nbsp;&nbsp;&nbsp; <a id="DockingValues"><strong>Docking Values Table</strong><br>
@@ -138,8 +137,8 @@
   <span class="segments"><span lang="en">A default value for any control can be set with GUIResizeMode (Option).</span><span lang="fr" style="display: none">Une valeur par défaut pour tous les contrôles peut être définie avec GUIResizeMode (Option).</span></span><br>
   <br>
   <span class="segments"><span lang="en">The automatic resizing event can be disabled if GUIEventOptions (Option) is set to 1.</span><span lang="fr" style="display: none">L'événement de redimensionnement automatique peut être désactivée si GUIEventOptions (Option) est mis à 1.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUIEventOptions (Option)</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIResizeMode (Option)</a>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUIEventOptions (Option)</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIResizeMode (Option)</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -197,7 +196,7 @@
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">to display the GUI</span><span lang="fr" style="display: none">pour afficher l'interface graphique</span></span></span></span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>

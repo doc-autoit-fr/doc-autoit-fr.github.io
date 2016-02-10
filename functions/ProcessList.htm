@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ProcessList</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,16 +19,16 @@
   <h1>ProcessList</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Returns an array listing the currently running processes (names and PIDs).</span><span lang="fr" style="display: none">Retourne un tableau listant les processus en cours d'exécution (noms et PIDs).</span></span><br></p>
   <p class="codeheader">ProcessList ( ["name"] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">name</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If a name is given only processes of the same name will be returned.</span><span lang="fr" style="display: none">Si un nom est donné, seul les processus de même nom seront retournés.</span></span></td>
+        <td style="width:85%"><strong>[optional]</strong> <span class="segments"><span lang="en">If a name is given only processes of the same name will be returned.</span><span lang="fr" style="display: none">Si un nom est donné, seul les processus de même nom seront retournés.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -42,7 +41,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The array returned is two-dimensional and is made up as follows:</span><span lang="fr" style="display: none">Le tableau retourné est un tableau à deux dimensions composé comme ceci :</span></span><br>
   &nbsp;&nbsp;&nbsp; $aArray[0][0] = Number of processes<br>
   &nbsp;&nbsp;&nbsp; $aArray[1][0] = 1st Process name<br>
@@ -54,9 +53,9 @@
   &nbsp;&nbsp;&nbsp; $aArray[n][1] = nth Process ID (PID)<br>
   <br>
   <span class="segments"><span lang="en">The list can be empty if $aArray[0][0] = 0.</span><span lang="fr" style="display: none">La liste peut être vide si $array[0][0] = 0.</span></span> <span class="segments"><span lang="en">No @error set in this case.</span><span lang="fr" style="display: none">Dans ce cas aucune @error n'est déterminée.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="ProcessClose.htm">ProcessClose</a>, <a href="ProcessExists.htm">ProcessExists</a>, <a href="ProcessGetStats.htm">ProcessGetStats</a>, <a href="ProcessSetPriority.htm">ProcessSetPriority</a>, <a href="ProcessWait.htm">ProcessWait</a>, <a href="ProcessWaitClose.htm">ProcessWaitClose</a>, <a href="WinGetProcess.htm">WinGetProcess</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

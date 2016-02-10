@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayDisplay</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Displays a 1D or 2D array in a ListView</span><span lang="fr" style="display: none">Affiche un tableau 1D ou 2D dans un contrôle ListView</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayDisplay ( Const ByRef $aArray [, $sTitle = "ArrayDisplay" [, $sArrayRange = "" [, $iFlags = 0 [, $vUser_Separator = Default [, $sHeader = Default [, $iMax_ColWidth = Default [, $iAlt_Color = Default [, $hUser_Function = ""]]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,15 +29,15 @@
       </tr>
       <tr>
         <td>$sTitle</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Title for dialog.</span><span lang="fr" style="display: none">Titre de l'affichage.</span></span> <span class="segments"><span lang="en">Default = "ArrayDisplay".</span><span lang="fr" style="display: none">Par défaut ="ArrayDisplay ".</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Title for dialog.</span><span lang="fr" style="display: none">Titre de l'affichage.</span></span> <span class="segments"><span lang="en">Default = "ArrayDisplay".</span><span lang="fr" style="display: none">Par défaut ="ArrayDisplay ".</span></span></td>
       </tr>
       <tr>
         <td>$sArrayRange</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Range of rows/columns to display.</span><span lang="fr" style="display: none">Plage de lignes/colonnes à afficher.</span></span> Default ("") = entire array. <span class="segments"><span lang="en">(See below for details)</span><span lang="fr" style="display: none">(Voir ci-dessous pour plus de détails)</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Range of rows/columns to display.</span><span lang="fr" style="display: none">Plage de lignes/colonnes à afficher.</span></span> Default ("") = entire array. <span class="segments"><span lang="en">(See below for details)</span><span lang="fr" style="display: none">(Voir ci-dessous pour plus de détails)</span></span></td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Determine UDF options.</span><span lang="fr" style="display: none">Déterminer les options UDF.</span></span> Add required values together<br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Determine UDF options.</span><span lang="fr" style="display: none">Déterminer les options UDF.</span></span> Add required values together<br>
         &nbsp;&nbsp;&nbsp; 0 = (default) Column text alignment - left<br>
         &nbsp;&nbsp;&nbsp; 1 = Transposes the array<br>
         &nbsp;&nbsp;&nbsp; 2 = Column text alignment - right<br>
@@ -50,30 +49,30 @@
       </tr>
       <tr>
         <td>$vUser_Separator</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Sets column display option when copying data to clipboard.</span><span lang="fr" style="display: none">Définit l'option d'affichage des colonnes lors de la copie des données du presse-papiers.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Sets column display option when copying data to clipboard.</span><span lang="fr" style="display: none">Définit l'option d'affichage des colonnes lors de la copie des données du presse-papiers.</span></span><br>
         <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; Character = Delimiter between columns.</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; Caractère = Séparateur entre les colonnes.</span></span><br>
         <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; Number = Fixed column width - longer items will be truncated.</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; Nombre = fixe la largeur des colonnes - les éléments plus longs seront tronqués.</span></span><br>
         <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; Default = Current separator character (usually "|").</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; Par défaut = séparateur courant (généralement "|").</span></span></td>
       </tr>
       <tr>
         <td>$sHeader</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Column names in header (string of names separated by current separator character - usually "|").</span><span lang="fr" style="display: none">Les noms de colonnes d'entête (chaîne de noms séparés par le séparateur courant - en général "|" ).</span></span> <span class="segments"><span lang="en">Default see Remarks.</span><span lang="fr" style="display: none">Par défaut voir Remarques.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Column names in header (string of names separated by current separator character - usually "|").</span><span lang="fr" style="display: none">Les noms de colonnes d'entête (chaîne de noms séparés par le séparateur courant - en général "|" ).</span></span> <span class="segments"><span lang="en">Default see Remarks.</span><span lang="fr" style="display: none">Par défaut voir Remarques.</span></span></td>
       </tr>
       <tr>
         <td>$iMax_Colwidth</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Max width to which a ListView column will expand to show content.</span><span lang="fr" style="display: none">Largeur maximale à laquelle une colonne de ListView s'élargit pour afficher le contenu.</span></span> <span class="segments"><span lang="en">Default = 350 pixels.</span><span lang="fr" style="display: none">Valeur par défaut = 350 pixels.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Max width to which a ListView column will expand to show content.</span><span lang="fr" style="display: none">Largeur maximale à laquelle une colonne de ListView s'élargit pour afficher le contenu.</span></span> <span class="segments"><span lang="en">Default = 350 pixels.</span><span lang="fr" style="display: none">Valeur par défaut = 350 pixels.</span></span></td>
       </tr>
       <tr>
         <td>$iAlt_Color</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">ListView alternate rows set to defined color.</span><span lang="fr" style="display: none">Couleur à utiliser une ligne sur deux sur les lignes de ListView.</span></span> <span class="segments"><span lang="en">Default = all rows ListView background color.</span><span lang="fr" style="display: none">Par défaut = toutes les lignes de ListView ont la couleur de fond.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">ListView alternate rows set to defined color.</span><span lang="fr" style="display: none">Couleur à utiliser une ligne sur deux sur les lignes de ListView.</span></span> <span class="segments"><span lang="en">Default = all rows ListView background color.</span><span lang="fr" style="display: none">Par défaut = toutes les lignes de ListView ont la couleur de fond.</span></span></td>
       </tr>
       <tr>
         <td>$hUser_Function</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">A variable assigned to the user defined function to run.</span><span lang="fr" style="display: none">Une variable affectée avec la fonction utilisateur à exécuter.</span></span> <span class="segments"><span lang="en">Default = none.</span><span lang="fr" style="display: none">Par défaut = Aucun.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">A variable assigned to the user defined function to run.</span><span lang="fr" style="display: none">Une variable affectée avec la fonction utilisateur à exécuter.</span></span> <span class="segments"><span lang="en">Default = none.</span><span lang="fr" style="display: none">Par défaut = Aucun.</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -85,13 +84,13 @@
         <td><span class="segments"><span lang="en">0 and @error flag set as follows:</span><span lang="fr" style="display: none">Retourne 0 et @error non nul:</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - $aArray is not an array</span><span lang="fr" style="display: none">1 - $aArray n'est pas un tableau</span></span><br>
         <span class="segments"><span lang="en">2 - $aArray has too many dimensions (only 1D and 2D supported)</span><span lang="fr" style="display: none">2 - $aArray a trop de dimensions (seulement 1D et 2D est supporté)</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">If the function is passed a non-array variable or an array of more than 2 dimensions the function returns an error and the script continues.</span><span lang="fr" style="display: none">Si le paramètre $aArray n'est pas un tableau ou est un tableau de plus de 2 dimensions, la fonction renvoie une erreur et le script continue.</span></span> <span class="segments"><span lang="en">If the "verbose" parameter is set in $iFlags a MsgBox will be displayed which offers the chance to exit the script immediately or to continue the script with the normal error return.</span><span lang="fr" style="display: none">Si le paramètre "verbose" est installé dans $iFlags un MsgBox s'affiche qui offre la possibilité de quitter immédiatement le script ou de continuer le script avec un retour normal d'erreur.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Only 65525 rows of an array can be displayed - this is an AutoIt limitation on the total number of controls that can be displayed in a GUI - and an abitrary display limit of 250 columns has also been set.</span><span lang="fr" style="display: none">Seuls 65 525 lignes d'un tableau peuvent être affichés - il s'agit d'une limitation de AutoIt sur le nombre total de contrôles qui peuvent être affichés dans une GUI - et une limite d'affichage abitrary de 250 colonnes a également été mis.</span></span> <span class="segments"><span lang="en">If the user tries to display an array larger than these limits an "*" is added to the truncated dimension value which will be displayed in red text.</span><span lang="fr" style="display: none">Si l'utilisateur tente d'afficher un tableau plus grand que ces limites, une "*" est ajoutée à la valeur de la dimension tronquée qui sera affiché en rouge.</span></span> <span class="segments"><span lang="en">Note that using $iArrayRange to determine the elements to be displayed allows arrays larger than the display limits to be displayed in sections.</span><span lang="fr" style="display: none">Notez que l'utilisation de $iArrayRange pour déterminer les éléments à afficher permet des tableaux plus grands que les limites d'affichage le permettraient.</span></span><br>
@@ -173,7 +172,7 @@
   <span class="segments"><span lang="en">If the "verbose" parameter is set in $iFlags a splash dialog is displayed during initial processing when the array to display has more than 10000 elements.</span><span lang="fr" style="display: none">Si le paramètre "verbose" est installé dans $iFlags une boîte de dialogue 'splash' est affichée pendant le traitement initial lorsque le tableau d'affichage a plus de 10000 éléments.</span></span> A similar dialog is displayed when the "Copy Data" buttons are used on a 10000+ element display - if this is likely to occur consideration should be given to using a "User Function" to store the array for later processing.<br>
   <br>
   An array element containing another array is displayed as {Array}.<br>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _IECreateEmbedded</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Create a Webbrowser object suitable for embedding in an AutoIt GUI with GUICtrlCreateObj()<br></p>
   <p class="codeheader">#include &lt;IE.au3&gt;<br>
   _IECreateEmbedded ( )<br></p>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -30,15 +29,15 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 ($_IEStatus_GeneralError) - General Error</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">No actions can be performed on this object until it has been embedded into a parent application (e.g. you cannot perform an <a href="_IENavigate.htm">_IENavigate()</a>.</span><span lang="fr" style="display: none">No actions can be performed on this object until it has been embedded into a parent application (e.g.you cannot perform an <a href="_IENavigate.htm">_IENavigate()</a>.</span></span><br>
   Because of this restriction, the browser is not automatically navigated to 'about:blank' as is a browser created with <a href="_IECreate.htm">_IECreate()</a>.<br>
   You must therefore use <a href="_IENavigate.htm">_IENavigate()</a> to navigate this browser to 'about:blank' after it has been embedded into the parent application and before you attempt any operations that rely on having a document loaded (e.g. <a href="_IENavigate.htm">_IEBodyWriteHTML()</a><br>
@@ -50,9 +49,9 @@
   You may have object visibility issues unless you use the Windows style $WS_CLIPCHILDREN in <a href="../functions/GUICreate.htm">GUICreate()</a>.<br>
   <br>
   <a href="_IEQuit.htm">_IEQuit()</a> cannot be used with this object. The object will be destroyed when its parent GUI is destroyed.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_IEAttach.htm">_IEAttach</a>, <a href="_IECreate.htm">_IECreate</a>, <a href="_IENavigate.htm">_IENavigate</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

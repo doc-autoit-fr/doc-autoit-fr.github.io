@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction Send</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>Send</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sends simulated keystrokes to the active window.</span><span lang="fr" style="display: none">Simule l'appui sur des touches du clavier et envoie la valeur dans la fenêtre active.</span></span><br></p>
   <p class="codeheader">Send ( "keys" [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how "keys" is processed:</span><span lang="fr" style="display: none">Change la manière dont les touches sont envoyées:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Changes how "keys" is processed:</span><span lang="fr" style="display: none">Change la manière dont les touches sont envoyées:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SEND_DEFAULT (0) = Text contains special characters like + and ! <span class="segments"><span lang="en">to indicate SHIFT and ALT key-presses (default).</span><span lang="fr" style="display: none">qui sont utilisés pour indiquer les touches SHIFT et ALT (défaut).</span></span><br>
         &nbsp;&nbsp;&nbsp; $SEND_RAW (1) = keys are sent raw.<br>
         <br>
@@ -37,8 +36,8 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">Aucune.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">See the <a href="../appendix/SendKeys.htm">Appendix</a> for some tips on using <a href="Send.htm">Send()</a>.</span><span lang="fr" style="display: none">Consultez l'<a href="../appendix/SendKeys.htm">Appendice</a> pour quelques astuces d'utilisation de <a href="Send.htm">Send()</a>.</span></span> AutoIt can send all ASCII and Extended ASCII characters (0-255). To send UNICODE characters you must use the "ASC" option and the code of the character you wish to send (see {ASC} at the bottom of the table below).<br>
   <br>
   <span class="segments"><span lang="en">The "<a href="Send.htm">Send()</a>" command syntax is similar to that of ScriptIt and the Visual Basic "SendKeys" command.</span><span lang="fr" style="display: none">La syntaxe de la commande <a href="Send.htm">Send()</a> est similaire à celle de ScriptIt et à celle de la commande "SendKeys" en Visual Basic.</span></span> <span class="segments"><span lang="en">Characters are sent as written with the exception of the following characters:</span><span lang="fr" style="display: none">Les caractères sont envoyés tels qu'ils sont écrits à l'exception des caractères suivants:</span></span><br>
@@ -493,9 +492,9 @@
   <a href="AutoItSetOption.htm#SendKeyDelay">Opt("SendKeyDelay",...)</a> alters the the length of the brief pause in between sent keystrokes.<br>
   <a href="AutoItSetOption.htm#SendKeyDownDelay">Opt("SendKeyDownDelay",...)</a> alters the length of time a key is held down before being released during a keystroke.<br>
   <span class="segments"><span lang="en">Set both "SendKeyDelay" and "SendKeyDownDelay" to 0 to remove all delays when sending keystrokes.</span><span lang="fr" style="display: none">Définissez "SendKeyDelay" et "SendKeyDownDelay" à 0 pour enlever tous les délais lors de l'envoi de touches.</span></span> <span class="segments"><span lang="en">This may be required under certain circumstances, for example, when locking the system ("#l") it may be necessary to remove the delays in order to prevent the WIN key from being stuck down.</span><span lang="fr" style="display: none">Cela peut être nécessaire dans certaines circonstances, par exemple, lors du verrouillage du ...système ("#L"), il peut être nécessaire d'enlever les délais afin de prévenir que la touche WIN reste enfoncée.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="BlockInput.htm">BlockInput</a>, <a href="ControlSend.htm">ControlSend</a>, <a href="HotKeySet.htm">HotKeySet</a>, <a href="AutoItSetOption.htm#SendAttachMode">SendAttachMode (Option)</a>, <a href="SendKeepActive.htm">SendKeepActive</a>, <a href="AutoItSetOption.htm#SendKeyDelay">SendKeyDelay (Option)</a>, <a href="AutoItSetOption.htm#SendKeyDownDelay">SendKeyDownDelay (Option)</a>, <a href="WinMenuSelectItem.htm">WinMenuSelectItem</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

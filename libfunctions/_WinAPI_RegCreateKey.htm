@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_RegCreateKey</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates the specified registry key<br></p>
   <p class="codeheader">#include &lt;WinAPIReg.au3&gt;<br>
   _WinAPI_RegCreateKey ( $hKey [, $sSubKey = '' [, $iAccess = $KEY_ALL_ACCESS [, $iOptions = 0 [, $tSecurity = 0]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -39,13 +38,13 @@
       </tr>
       <tr>
         <td>$sSubKey</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of a subkey that this function opens or creates. The subkey specified must be a subkey of<br>
+        <td><strong>[optional]</strong> The name of a subkey that this function opens or creates. The subkey specified must be a subkey of<br>
         the key identified by the $hKey parameter; it can be up to 32 levels deep in the registry tree.<br>
         If an empty string (Default), the return is a new handle to the key specified by $hKey.</td>
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The mask that specifies the access rights for the key.<br>
+        <td><strong>[optional]</strong> The mask that specifies the access rights for the key.<br>
         This parameter can be one or more of the following values.<br>
         $KEY_ALL_ACCESS<br>
         $KEY_CREATE_LINK<br>
@@ -62,7 +61,7 @@
       </tr>
       <tr>
         <td>$iOptions</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> This parameter can be one of the following values.<br>
+        <td><strong>[optional]</strong> This parameter can be one of the following values.<br>
         $REG_OPTION_BACKUP_RESTORE<br>
         $REG_OPTION_CREATE_LINK<br>
         $REG_OPTION_NON_VOLATILE (Default)<br>
@@ -70,12 +69,12 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by<br>
+        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by<br>
         child processes. If this parameter is 0 (Default), the handle cannot be inherited.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -91,15 +90,15 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>An application cannot create a key that is a direct child of HKEY_USERS or HKEY_LOCAL_MACHINE. An application<br>
   can create subkeys in lower levels of the HKEY_USERS or HKEY_LOCAL_MACHINE trees.<br>
   <br>
   If the key is not one of the predefined registry keys ($HKEY_*) you must call the <a href="_WinAPI_RegCloseKey.htm">_WinAPI_RegCloseKey()</a><br>
   function after finished using the handle.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_RegOpenKey.htm">_WinAPI_RegOpenKey</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(RegCreateKeyEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">RegCreateKeyEx</a> in MSDN Library.</p>
 </body>
 </html>

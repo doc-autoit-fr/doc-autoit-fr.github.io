@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction RunAsWait</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>RunAsWait</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Runs an external program under the context of a different user and pauses script execution until the program finishes.</span><span lang="fr" style="display: none">Exécute un programme externe dans le contexte d'un autre utilisateur et interrompt l'exécution du script jusqu'à ce que le programme se termine.</span></span><br></p>
   <p class="codeheader">RunAsWait ( "username", "domain", "password", logon_flag, "program" [, "workingdir" [, show_flag [, opt_flag]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -50,25 +49,25 @@
       </tr>
       <tr>
         <td>workingdir</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">If not specified, then the value of @SystemDir will be used.</span><span lang="fr" style="display: none">S'il n'est pas spécifié, la valeur de SystemDir sera utilisée.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">If not specified, then the value of @SystemDir will be used.</span><span lang="fr" style="display: none">S'il n'est pas spécifié, la valeur de SystemDir sera utilisée.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
       </tr>
       <tr>
         <td>show_flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
         &nbsp;&nbsp;&nbsp; @SW_HIDE = Hidden window (or Default keyword)<br>
         &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimized window<br>
         &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximized window</td>
       </tr>
       <tr>
         <td>opt_flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
         &nbsp;&nbsp;&nbsp; $RUN_CREATE_NEW_CONSOLE (0x10000) = The child console process should be created with its own window instead of using the parent's window. <span class="segments"><span lang="en">This flag is only useful when the parent is compiled as a Console application.</span><span lang="fr" style="display: none">Ce drapeau n'est utile que lorsque le parent est compilé comme une application console.</span></span><br>
         <br>
         Constant is defined in AutoItConstants.au3</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -77,11 +76,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Paths with spaces need to be enclosed in quotation marks.</span><span lang="fr" style="display: none">Les chemins avec des espaces doivent être placés entre guillemets.</span></span><br>
   <br>
   <span class="segments"><span lang="en">It is important to specify a working directory the user you are running as has access to, otherwise the function will fail.</span><span lang="fr" style="display: none">Il est important de spécifier un répertoire de travail accessible par l'utilisateur sur lequel vous exécutez le programme, sinon la fonction échouera.</span></span><br>
@@ -97,9 +96,9 @@
   <span class="segments"><span lang="en">The "load profile" and "network credentials only" options are incompatible.</span><span lang="fr" style="display: none">Les options "charge un profil" et "informations réseau seules" sont incompatibles.</span></span> <span class="segments"><span lang="en">Using both will produce undefined results.</span><span lang="fr" style="display: none">Les utiliser ensemble provoquera des résultats indéfinis.</span></span><br>
   <br>
   <span class="segments"><span lang="en">There is an issue in the Windows XP generation of Windows which prevents STDIO redirection and the show flag from working.</span><span lang="fr" style="display: none">Il y a un problème avec la génération des Windows XP qui empêche la redirection STDIO et le drapeau "mode d'affichage" de fonctionner.</span></span> <span class="segments"><span lang="en">See Microsoft Knowledge Base article KB818858 for more information about which versions are affected as well as a hotfix for the issue.</span><span lang="fr" style="display: none">Consultez l'article de la Base de connaissances Microsoft KB818858 pour plus d'informations sur les versions concernées ainsi que d'un correctif pour ce problème.</span></span> <span class="segments"><span lang="en">Users running Windows XP SP2 or later, or <strong>Windows Vista or later</strong> are not affected.</span><span lang="fr" style="display: none">Les utilisateurs de Windows XP SP2 ou plus, ou <strong>Windows Vista ou plus</strong> ne sont pas affectés.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="ProcessWait.htm">ProcessWait</a>, <a href="ProcessWaitClose.htm">ProcessWaitClose</a>, <a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="RunWait.htm">RunWait</a>, <a href="ShellExecute.htm">ShellExecute</a>, <a href="ShellExecuteWait.htm">ShellExecuteWait</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

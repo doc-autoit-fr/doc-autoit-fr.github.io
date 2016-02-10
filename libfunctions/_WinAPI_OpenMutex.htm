@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_OpenMutex</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Opens an existing named mutex object<br></p>
   <p class="codeheader">#include &lt;WinAPIProc.au3&gt;<br>
   _WinAPI_OpenMutex ( $sMutex [, $iAccess = $MUTEX_ALL_ACCESS [, $bInherit = False]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,7 +29,7 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The access to the mutex object. The function fails if the security descriptor of the specified object<br>
+        <td><strong>[optional]</strong> The access to the mutex object. The function fails if the security descriptor of the specified object<br>
         does not permit the requested access for the calling process.<br>
         This parameter can be one of the following values.<br>
         $MUTEX_ALL_ACCESS<br>
@@ -38,13 +37,13 @@
       </tr>
       <tr>
         <td>$bInherit</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether inherites the handle by a processes, valid values:<br>
+        <td><strong>[optional]</strong> Specifies whether inherites the handle by a processes, valid values:<br>
         True - The processes created by this process will inherit the handle.<br>
         False - The processes do not inherit this handle (Default).</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -59,13 +58,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The function succeeds only if some process has already created the mutex by using the <a href="_WinAPI_CreateMutex.htm">_WinAPI_CreateMutex()</a><br>
   function. The calling process can use the returned handle in any function that requires a handle to<br>
   a mutex object.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_CreateMutex.htm">_WinAPI_CreateMutex</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(OpenMutex);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">OpenMutex</a> in MSDN Library.</p>
 </body>
 </html>

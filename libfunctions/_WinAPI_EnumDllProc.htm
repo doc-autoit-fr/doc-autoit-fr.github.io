@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_EnumDllProc</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Enumerates an exported functions of the specified dynamic-link library (DLL)<br></p>
   <p class="codeheader">#include &lt;WinAPIDiag.au3&gt;<br>
   _WinAPI_EnumDllProc ( $sFilePath [, $sMask = '' [, $iFlags = 0]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -31,18 +30,18 @@
       </tr>
       <tr>
         <td>$sMask</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A wildcard string that indicates the function names to be enumerated.<br>
+        <td><strong>[optional]</strong> A wildcard string that indicates the function names to be enumerated.<br>
         This string can optionally contain the wildcards, "*" and "?". If this parameter is an empty string or omitted (Default), all the exported functions will be enumerated.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The optional flags. This parameter can be one or more of the following values:<br>
+        <td><strong>[optional]</strong> The optional flags. This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $SYMOPT_CASE_INSENSITIVE<br>
         &nbsp;&nbsp;&nbsp; $SYMOPT_UNDNAME</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -59,7 +58,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This function works with 32- and 64-bit DLLs regardless of the system (32- or 64-bit), although 64-bit executables cannot load 32-bit DLLs and vice-versa.<br>
   <br>
   Call <a href="_WinAPI_GetExtended.htm">_WinAPI_GetExtended()</a> to retrieve a fully qualified path to the found DLL that was loaded for enumerating functions.<br>
@@ -68,11 +67,11 @@
   In addition, this function does not use the file system redirection.<br>
   <br>
   This function requires dbghelp.dll version 5.1 or later.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_GetExtended.htm">_WinAPI_GetExtended</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(SymEnumSymbols);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">SymEnumSymbols</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

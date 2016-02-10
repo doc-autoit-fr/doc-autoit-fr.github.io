@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction SetExtended</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>SetExtended</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Manually set the value of the @extended macro.</span><span lang="fr" style="display: none">Définit manuellement la valeur de la macro @extended.</span></span><br></p>
   <p class="codeheader">SetExtended ( code [, return value] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,20 +28,20 @@
       </tr>
       <tr>
         <td>return value</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The value to be returned by the function - if no parameter used the return value is undefined.</span><span lang="fr" style="display: none">La valeur à retourner par la fonction - si aucun paramètre n'est utilisé la valeur de retour est indéfinie.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The value to be returned by the function - if no parameter used the return value is undefined.</span><span lang="fr" style="display: none">La valeur à retourner par la fonction - si aucun paramètre n'est utilisé la valeur de retour est indéfinie.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns the "return value" parameter (undefined if the parameter is not used).</span><span lang="fr" style="display: none">Retourne le paramètre "return value"( indéfini si le paramètre n'est pas donné).</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns the "return value" parameter (undefined if the parameter is not used).</span><span lang="fr" style="display: none">Retourne le paramètre "return value"( indéfini si le paramètre n'est pas donné).</span></span><br>
   <span class="segments"><span lang="en">@extended will be set to the values set in the function call (default = 0)</span><span lang="fr" style="display: none">@extended sera définie avec les valeurs définies dans l'appel de la fonction (par défaut = 0 )</span></span><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">When entering a function @extended is set to 0.</span><span lang="fr" style="display: none">Lors de l'entrée dans une fonction, @extended est définie à 0.</span></span> <span class="segments"><span lang="en">Unless <a href="SetExtended.htm">SetExtended()</a> is called, then @extended will remain 0 when the function ends.</span><span lang="fr" style="display: none">A moins que <a href="SetExtended.htm">SetExtended()</a> soit appelée, alors @extended restera 0 lorsque la fonction se terminera.</span></span> <span class="segments"><span lang="en">This means that in order for @extended to be set after a function returns, it must be explicitly set in the function.</span><span lang="fr" style="display: none">Cela signifie que, @extended doit être définie après qu'une fonction retourne, elle doit être définie explicitement dans la fonction.</span></span> <span class="segments"><span lang="en">This also means you may need to backup the status of @extended in a variable if you are testing it in a While-WEnd loop.</span><span lang="fr" style="display: none">Cela signifie également que vous pouvez avoir besoin de sauvegarder le statut de @extended dans une variable si vous la testez dans une boucle While- WEnd.</span></span><a href="SetExtended.htm"></a><br>
   The return value parameter is optional. It is provided as a way to use the Return SetExtended(...) syntax to define the value to be returned at the same time as setting @extended. If a specific value is not set then the return value will be undefined and should not be used subsequently by the code.<br>
   <br>
   <span class="segments"><span lang="en">@extended is limited between the values of -2147483648 to 2147483647.</span><span lang="fr" style="display: none">@extended est limitée entre les valeurs de -2147483648 à 2147483647.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="SetError.htm">SetError</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

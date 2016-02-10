@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GUIToolTip_SetTitle</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Adds a standard icon and title string<br></p>
   <p class="codeheader">#include &lt;GuiToolTip.au3&gt;<br>
   _GUIToolTip_SetTitle ( $hWnd, $sTitle [, $iIcon = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -36,7 +35,7 @@
       </tr>
       <tr>
         <td>$iIcon</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Set to one of the values below:.<br>
+        <td><strong>[optional]</strong> Set to one of the values below:.<br>
         &nbsp;&nbsp;&nbsp; $TTI_NONE (0) - No icon [default]<br>
         &nbsp;&nbsp;&nbsp; $TTI_INFO (1) - Information icon<br>
         &nbsp;&nbsp;&nbsp; $TTI_WARNING (2) - Warning icon<br>
@@ -47,12 +46,12 @@
       </tr>
     </tbody>
   </table><br>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -60,14 +59,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>As of Windows XP SP2 and later, $iIcon can contain an HICON value. Any value greater than 3 is assumed to be an HICON.<br>
   The title of a tooltip appears above the text, in a different font. It is not sufficient to have a title; the tooltip must have text as well, or it is not displayed.<br>
   A title with an Icon but no text in the title won't display a title or the icon. You have to set the text of the title, even if it's only one character, if you plan on using an icon.<br>
   The string entered in $sTitle must not exceed 99 characters in length.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GUIToolTip_GetTitleText.htm">_GUIToolTip_GetTitleText</a>, <a href="_GUIToolTip_UpdateTipText.htm">_GUIToolTip_UpdateTipText</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

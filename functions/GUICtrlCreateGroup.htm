@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlCreateGroup</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlCreateGroup</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a Group control for the GUI.</span><span lang="fr" style="display: none">Crée un contrôle de groupe dans une GUI.</span></span><br></p>
   <p class="codeheader">GUICtrlCreateGroup ( "text", left, top [, width [, height [, style = -1 [, exStyle = -1]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -41,25 +40,29 @@
       </tr>
       <tr>
         <td>width</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The width of the control (default is the previously used width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut, la largeur utilisée précédemment).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The width of the control (default is the previously used width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut, la largeur utilisée précédemment).</span></span></td>
       </tr>
       <tr>
         <td>height</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The height of the control (default is the previously used height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut, la hauteur précédemment utilisé ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The height of the control (default is the previously used height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut, la hauteur précédemment utilisé ).</span></span></td>
       </tr>
       <tr>
         <td>style</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm">Styles des contrôles GUI</a>.</span></span><br>
-        &nbsp;&nbsp;&nbsp; default ( -1) : none.<br>
-        &nbsp;&nbsp;&nbsp; forced styles : $WS_GROUP, $BS_GROUPBOX.</td>
+        <td>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm">Styles des contrôles GUI</a>.</span></span><a href="../appendix/GUIStyles.htm"></a><br>
+          &nbsp;&nbsp;&nbsp; default ( -1) : none.<br>
+          &nbsp;&nbsp;&nbsp; forced styles : $WS_GROUP, $BS_GROUPBOX.
+        </td>
       </tr>
       <tr>
         <td>exStyle</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Defines the extended style of the control.</span><span lang="fr" style="display: none">Définit le style étendu de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span></td>
+        <td>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">Defines the extended style of the control.</span><span lang="fr" style="display: none">Définit le style étendu de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span><a href="../appendix/GUIStyles.htm#Extended"></a>
+        </td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -72,16 +75,16 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">A group control is the thin line you see around controls (usually only Radio button) that visually groups them together.</span><span lang="fr" style="display: none">Un groupe de contrôle est la mince ligne que vous voyez autour des contrôles (généralement le bouton radio uniquement) qui les regroupe de manière visuelle.</span></span> <span class="segments"><span lang="en">Only one Radio button within a Group can be selected at once.</span><span lang="fr" style="display: none">Un seul bouton radio dans un groupe peut être sélectionné à la fois.</span></span><br>
   <span class="segments"><span lang="en">If you want to have multiple groups without the visible line then you must use <a href="GUIStartGroup.htm">GUIStartGroup()</a> to group your Radio buttons.</span><span lang="fr" style="display: none">Si vous voulez avoir plusieurs groupes sans la ligne visible, alors vous devez utiliser <a href="GUIStartGroup.htm">GUIStartGroup()</a> pour regrouper vos boutons radio.</span></span><br>
   <br>
   To use the values specified above you must #include &lt;ButtonConstants.au3&gt; in your script.<br>
   <br>
   <span class="segments"><span lang="en">Default resizing is $GUI_DOCKAUTO size and position will occur.</span><span lang="fr" style="display: none">Pour redimensionner par défaut, utiliez $GUI_DOCKAUTO.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="AutoItSetOption.htm#GUICoordMode">GUICoordMode (Option)</a>, <a href="GUIStartGroup.htm">GUIStartGroup</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -126,7 +129,7 @@
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">will display an empty dialog box</span><span lang="fr" style="display: none">Affiche une boîte de dialogue vide</span></span></span></span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>

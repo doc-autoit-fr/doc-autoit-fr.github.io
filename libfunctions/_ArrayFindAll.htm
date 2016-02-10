@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayFindAll</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Find the indices of all ocurrences of a search query between two points in a 1D or 2D array using _ArraySearch()</span><span lang="fr" style="display: none">Trouve les index de toutes les occurrences d'une requête de recherche entre deux points d'un tableau 1D ou 2D en utilisant _ArraySearch()</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayFindAll ( Const ByRef $aArray, $vValue [, $iStart = 0 [, $iEnd = 0 [, $iCase = 0 [, $iCompare = 0 [, $iSubItem = 0 [, $bRow = False]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,19 +33,19 @@
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Index of array to start search</span><span lang="fr" style="display: none">Index du tableau où commence la recherche</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to start search</span><span lang="fr" style="display: none">Index du tableau où commence la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Index of array to end search</span><span lang="fr" style="display: none">Index de tableau où finir la recherche</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to end search</span><span lang="fr" style="display: none">Index de tableau où finir la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iCase</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
       </tr>
       <tr>
         <td>$iCompare</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        <td><strong>[optional]</strong><br>
         &nbsp;&nbsp;&nbsp; 0 Casting of variables to the same type (default), "string" = 0, "" = 0 or "0" = 0 match (If $iCase = 0)<br>
         &nbsp;&nbsp;&nbsp; 1 executes a partial search<br>
         &nbsp;&nbsp;&nbsp; 2 comparison match if variables have same type and same value<br>
@@ -54,15 +53,15 @@
       </tr>
       <tr>
         <td>$iSubItem</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
       </tr>
       <tr>
         <td>$bRow</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -75,11 +74,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The values of $iCompare can not be combined together.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ArrayBinarySearch.htm">_ArrayBinarySearch</a>, <a href="_ArraySearch.htm">_ArraySearch</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArraySort</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Sort a 1D or 2D array on a specific index using the dualpivotsort/quicksort/insertionsort algorithms</span><span lang="fr" style="display: none">Trie un tableau 1D ou 2D sur une colonne spécifique en utilisant les algorithmes DualPivotSort/QuickSort/InsertionSort</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArraySort ( ByRef $aArray [, $iDescending = 0 [, $iStart = 0 [, $iEnd = 0 [, $iSubItem = 0 [, $iPivot = 0]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,27 +29,27 @@
       </tr>
       <tr>
         <td>$iDescending</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If set to 1, sort in descending order</td>
+        <td><strong>[optional]</strong> If set to 1, sort in descending order</td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Index of array to start sorting (default 0 = first element or row)</td>
+        <td><strong>[optional]</strong> Index of array to start sorting (default 0 = first element or row)</td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Index of array to stop sorting (default 0 = last element or row)</td>
+        <td><strong>[optional]</strong> Index of array to stop sorting (default 0 = last element or row)</td>
       </tr>
       <tr>
         <td>$iSubItem</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Sub-index to sort on in 2D arrays (default 0 = first column)</td>
+        <td><strong>[optional]</strong> Sub-index to sort on in 2D arrays (default 0 = first column)</td>
       </tr>
       <tr>
         <td>$iPivot</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Use pivot sort algorithm (default = quicksort)</td>
+        <td><strong>[optional]</strong> Use pivot sort algorithm (default = quicksort)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -59,10 +58,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - $aArray is not an array</span><span lang="fr" style="display: none">1 - $aArray n'est pas un tableau</span></span><br>
         <span class="segments"><span lang="en">2 - $iStart is greater than $iEnd</span><span lang="fr" style="display: none">2 - $iStart est supérieure à $iEnd</span></span><br>
         <span class="segments"><span lang="en">3 - $iSubItem is greater than subitem count</span><span lang="fr" style="display: none">3 - $iSubItem est plus grand que le nombre de sous-items</span></span><br>
@@ -72,11 +71,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">By default the UDF uses a QuickSort algorithm to sort the array.</span><span lang="fr" style="display: none">Par défaut, la fonction utilise l'algorithme QuickSort pour trier le tableau.</span></span> <span class="segments"><span lang="en">Setting the $iPivot parameter uses a DualPivotSort algorithm on 1D arrays - this can be significantly faster for large arrays (&gt; 50 elements) - but sorting 2D arrays with this algorithm is very much slower and the UDF will return an error in this case.</span><span lang="fr" style="display: none">Définissez le paramètre $iPivot pour utiliser l'algorithme du DualPivotSort sur un tableau 1D - cela peut être beaucoup plus rapide pour des grands tableaux (&gt; 50 éléments) - mais le tri des tableaux 2D avec cet algorithme est très lent et la fonction retournera une erreur dans ce cas.</span></span><br>
   <span class="segments"><span lang="en">In both algorithms, relatively short arrays will be sorted using an insertion sort (&lt; 15 elements with QuickSort; &lt; 45 elements with Dual PivotSort).</span><span lang="fr" style="display: none">Dans les deux algorithmes, des tableaux relativement courts seront triés à l'aide d'un tri par insertion (&lt; 15 éléments avec QuickSort; &lt; 45 éléments avec Dual PivotSort).</span></span><br>
   <span class="segments"><span lang="en">Note that there is no guarantee that a specific algorithm will be faster in a given case.</span><span lang="fr" style="display: none">Notez qu'il n'y a aucune garantie qu'un algorithme spécifique soit plus rapide dans un cas donné.</span></span><br></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

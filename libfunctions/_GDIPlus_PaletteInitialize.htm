@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GDIPlus_PaletteInitialize</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Initializes a standard, optimal, or custom color palette</span><span lang="fr" style="display: none">Initialise palette de couleur standard, optimale, ou personnalisée</span></span><br></p>
   <p class="codeheader">#include &lt;GDIPlus.au3&gt;<br>
   _GDIPlus_PaletteInitialize ( $iEntries [, $iPaletteType = $GDIP_PaletteTypeOptimal [, $iOptimalColors = 0 [, $bUseTransparentColor = True [, $hBitmap = Null]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,25 +29,25 @@
       </tr>
       <tr>
         <td>$iPaletteType</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">PaletteType constant that specifies the palette type ($GDIP_PaletteType*).</span><span lang="fr" style="display: none">Constante PaletteType qui spécifie le type de palette ($GDIP_PaletteType*).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">PaletteType constant that specifies the palette type ($GDIP_PaletteType*).</span><span lang="fr" style="display: none">Constante PaletteType qui spécifie le type de palette ($GDIP_PaletteType*).</span></span></td>
       </tr>
       <tr>
         <td>$iOptimalColors</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Integer that specifies the number of colors you want to have in an optimal palette based on a specified bitmap.</span><span lang="fr" style="display: none">Entier qui spécifie le nombre de couleurs que vous voulez avoir dans une palette optimale basée sur un bitmap spécifié.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Integer that specifies the number of colors you want to have in an optimal palette based on a specified bitmap.</span><span lang="fr" style="display: none">Entier qui spécifie le nombre de couleurs que vous voulez avoir dans une palette optimale basée sur un bitmap spécifié.</span></span><br>
         <span class="segments"><span lang="en">If this parameter is greater than 0, the palettetype parameter must be set to PaletteTypeOptimal and the bitmap parameter must point to a Bitmap object.</span><span lang="fr" style="display: none">Si ce paramètre est supérieur à 0, le paramètre palettetype doit être réglé sur PaletteTypeOptimal et le paramètre bitmap doit pointer sur un objet Bitmap.</span></span></td>
       </tr>
       <tr>
         <td>$bUseTransparentColor</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Boolean value that specifies whether to include the transparent color in the palette.</span><span lang="fr" style="display: none">Valeur booléenne qui spécifie s'il faut inclure la couleur transparente dans la palette.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Boolean value that specifies whether to include the transparent color in the palette.</span><span lang="fr" style="display: none">Valeur booléenne qui spécifie s'il faut inclure la couleur transparente dans la palette.</span></span><br>
         <span class="segments"><span lang="en">Set to TRUE to include the transparent color; otherwise FALSE.</span><span lang="fr" style="display: none">Réglez à TRUE pour inclure la couleur transparente; FALSE sinon.</span></span></td>
       </tr>
       <tr>
         <td>$hBitmap</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Handle of a Bitmap object for which an optimal palette will be created.</span><span lang="fr" style="display: none">Handle de l'objet Bitmap pour lequel une palette optimale sera créée.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Handle of a Bitmap object for which an optimal palette will be created.</span><span lang="fr" style="display: none">Handle de l'objet Bitmap pour lequel une palette optimale sera créée.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -63,17 +62,17 @@
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0, @extended contient le code erreur GPSTATUS ($GPID_ERR*).</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">-1 - GDIPlus.dll does not support this function.</span><span lang="fr" style="display: none">-1 - GDIPlus.dll ne supporte pas cette fonction.</span></span><br>
         <span class="segments"><span lang="en">10 - Invalid parameters.</span><span lang="fr" style="display: none">10 - Paramètres invalides.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GDIPlus_BitmapConvertFormat.htm">_GDIPlus_BitmapConvertFormat</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://search.msdn.microsoft.com/search/Default.aspx?brand=msdn&amp;query=GdipInitializePalette">GdipInitializePalette</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

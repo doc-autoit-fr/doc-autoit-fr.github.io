@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction PixelSearch</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>PixelSearch</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Searches a rectangle of pixels for the pixel color provided.</span><span lang="fr" style="display: none">Recherche dans un rectangle de pixels, un pixel de couleur donnée.</span></span><br></p>
   <p class="codeheader">PixelSearch ( left, top, right, bottom, color [, shade-variation = 0 [, step = 1 [, hwnd]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -45,19 +44,19 @@
       </tr>
       <tr>
         <td>shade-variation</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">A number between 0 and 255 to indicate the allowed number of shades of variation of the red, green, and blue components of the color.</span><span lang="fr" style="display: none">Un nombre entre 0 et 255 pour indiquer le nombre de variation de nuances autorisées des composantes rouge, verte et bleue de la couleur.</span></span> <span class="segments"><span lang="en">Default is 0 (exact match).</span><span lang="fr" style="display: none">Par défaut 0 (correspondance exacte).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">A number between 0 and 255 to indicate the allowed number of shades of variation of the red, green, and blue components of the color.</span><span lang="fr" style="display: none">Un nombre entre 0 et 255 pour indiquer le nombre de variation de nuances autorisées des composantes rouge, verte et bleue de la couleur.</span></span> <span class="segments"><span lang="en">Default is 0 (exact match).</span><span lang="fr" style="display: none">Par défaut 0 (correspondance exacte).</span></span></td>
       </tr>
       <tr>
         <td>step</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Instead of searching each pixel use a value larger than 1 to skip pixels (for speed).</span><span lang="fr" style="display: none">Au lieu de chercher chaque pixel, utilisez une valeur supérieure à 1 pour passer certains pixels (pour augmenter la vitesse).</span></span> <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Instead of searching each pixel use a value larger than 1 to skip pixels (for speed).</span><span lang="fr" style="display: none">Au lieu de chercher chaque pixel, utilisez une valeur supérieure à 1 pour passer certains pixels (pour augmenter la vitesse).</span></span> <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -70,7 +69,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The search direction varies as follows:</span><span lang="fr" style="display: none">La direction de la recherche varie selon ce qui suit :</span></span><br>
   &nbsp;&nbsp;&nbsp; Left-to-Right - left &lt; right<br>
   &nbsp;&nbsp;&nbsp; Right-to-Left - right &lt; left<br>
@@ -79,9 +78,9 @@
   <span class="segments"><span lang="en">Changing the search direction can be a useful optimization if the color being searched for frequently appears in in a specific quadrat of the search area since less searching is done if the search starts in the most common quadrant.</span><span lang="fr" style="display: none">Changer la direction de recherche peut être une optimisation utile si la couleur recherchée apparaît fréquemment dans une zone spécifique de la zone de recherche.La recherche sera réduite, si elle débute dans la zone la plus courante.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Remember, a typical display at 1024 x 768 has 786432 pixels.</span><span lang="fr" style="display: none">N'oubliez pas qu'un affichage en 1024 x 768 contient 786 432 pixels.</span></span> <span class="segments"><span lang="en">Although <a href="PixelSearch.htm">PixelSearch()</a> is optimized, narrowing the search area helps speed up the result.</span><span lang="fr" style="display: none">Bien que <a href="PixelSearch.htm">PixelSearch()</a> soit optimisé, la réduction de la zone de recherche permet d'accélérer le résultat.</span></span><a href="PixelSearch.htm"></a><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="PixelChecksum.htm">PixelChecksum</a>, <a href="AutoItSetOption.htm#PixelCoordMode">PixelCoordMode (Option)</a>, <a href="PixelGetColor.htm">PixelGetColor</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

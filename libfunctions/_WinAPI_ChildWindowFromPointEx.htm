@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_ChildWindowFromPointEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Determines which, if any, of the child windows belonging to the specified parent window contains the specified point<br></p>
   <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
   _WinAPI_ChildWindowFromPointEx ( $hWnd, $tPOINT [, $iFlags = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,7 +33,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The flags that specify which child windows to skip. This parameter can be one or more of the following values:<br>
+        <td><strong>[optional]</strong> The flags that specify which child windows to skip. This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $CWP_ALL (Default)<br>
         &nbsp;&nbsp;&nbsp; $CWP_SKIPINVISIBLE<br>
         &nbsp;&nbsp;&nbsp; $CWP_SKIPDISABLED<br>
@@ -42,7 +41,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -55,11 +54,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The system maintains an internal list that contains the handles of the child windows associated with a parent window.<br>
   The order of the handles in the list depends on the Z order of the child windows.<br>
   If more than one child window contains the specified point, the system returns a handle to the first window in the list that contains the point and meets the criteria specified by $iFlags.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(ChildWindowFromPointEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">ChildWindowFromPointEx</a> in MSDN Library.</p>
 </body>
 </html>

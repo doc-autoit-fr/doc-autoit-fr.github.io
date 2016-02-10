@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayExtract</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Extracts an array from the specified element(s) of a 1D or 2D array</span><span lang="fr" style="display: none">Extrait un tableau à partir des éléments spécifiés d'un tableau 1D ou 2D</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayExtract ( Const ByRef $aArray [, $iStart_Row = -1 [, $iEnd_Row = -1 [, $iStart_Col = -1 [, $iEnd_Col = -1]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,23 +29,23 @@
       </tr>
       <tr>
         <td>$iStart_Row</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">First row of the extracted array</span><span lang="fr" style="display: none">Première ligne du tableau extrait</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">First row of the extracted array</span><span lang="fr" style="display: none">Première ligne du tableau extrait</span></span></td>
       </tr>
       <tr>
         <td>$iEnd_Row</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Last row of the extracted array</span><span lang="fr" style="display: none">Dernière ligne du tableau extrait</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Last row of the extracted array</span><span lang="fr" style="display: none">Dernière ligne du tableau extrait</span></span></td>
       </tr>
       <tr>
         <td>$iStart_Col</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">First column of the extracted array (2D only)</span><span lang="fr" style="display: none">La première colonne du tableau extrait (2D uniquement )</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">First column of the extracted array (2D only)</span><span lang="fr" style="display: none">La première colonne du tableau extrait (2D uniquement )</span></span></td>
       </tr>
       <tr>
         <td>$iEnd_Col</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Last column of the extracted array (2D only)</td>
+        <td><strong>[optional]</strong> Last column of the extracted array (2D only)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -55,10 +54,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne -1 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - $aArray is not an array</span><span lang="fr" style="display: none">1 - $aArray n'est pas un tableau</span></span><br>
         <span class="segments"><span lang="en">2 - $aArray is not a 1D or 2D array</span><span lang="fr" style="display: none">2 - $aArray n'est pas un tableau 1D ou 2D</span></span><br>
         <span class="segments"><span lang="en">3 - $iStart_Row or $iEnd_Row outside array bounds</span><span lang="fr" style="display: none">3 - $iStart_Row ou $iEnd_Row en dehors des limites du tableau</span></span><br>
@@ -68,9 +67,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ArrayAdd.htm">_ArrayAdd</a>, <a href="_ArrayInsert.htm">_ArrayInsert</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

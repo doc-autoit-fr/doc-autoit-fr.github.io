@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GUICtrlRichEdit_GetText</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Get all of the text in the control<br></p>
   <p class="codeheader">#include &lt;GuiRichEdit.au3&gt;<br>
   _GUICtrlRichEdit_GetText ( $hWnd [, $bCrToCrLf = False [, $iCodePage = 0 [, $sReplChar = ""]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,23 +29,23 @@
       </tr>
       <tr>
         <td>$bCrToCrLf</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Convert each CR to a CrLf<br>
+        <td><strong>[optional]</strong> Convert each CR to a CrLf<br>
         &nbsp;&nbsp;&nbsp; True - do it<br>
         &nbsp;&nbsp;&nbsp; False - don't (Default)</td>
       </tr>
       <tr>
         <td>$iCodePage</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> code page used in translation<br>
+        <td><strong>[optional]</strong> code page used in translation<br>
         Default: use system default<br>
         CP_ACP for ANSI, 1200 for Unicode</td>
       </tr>
       <tr>
         <td>$sReplChar</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Character used if $iCodePage is not 1200 and a wide character cannot be represented in specified code page</td>
+        <td><strong>[optional]</strong> Character used if $iCodePage is not 1200 and a wide character cannot be represented in specified code page</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -58,7 +57,7 @@
         <td><span class="segments"><span lang="en">"" and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne "" et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>101 - $hWnd is not a handle<br>
         102 - $bCrToCrLf must be True or False<br>
         103 - $iCodePage is not a number<br>
@@ -66,15 +65,15 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>On success, if $sReplChar set, @extended contains whether this character was used.<br>
   <br>
   Call <a href="_GUICtrlRichEdit_IsModified.htm">_GUICtrlRichEdit_IsModified()</a> to determine whether the text has changed.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GUICtrlRichEdit_AppendText.htm">_GUICtrlRichEdit_AppendText</a>, <a href="_GUICtrlRichEdit_InsertText.htm">_GUICtrlRichEdit_InsertText</a>, <a href="_GUICtrlRichEdit_IsModified.htm">_GUICtrlRichEdit_IsModified</a>, <a href="_GUICtrlRichEdit_SetText.htm">_GUICtrlRichEdit_SetText</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(EM_GETTEXTEX);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">EM_GETTEXTEX</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

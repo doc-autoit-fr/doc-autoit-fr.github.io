@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CompressBitmapBits</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates a compressed data block from the specified bitmap<br></p>
   <p class="codeheader">#include &lt;WinAPIGdi.au3&gt;<br>
   _WinAPI_CompressBitmapBits ( $hBitmap, ByRef $pBuffer [, $iCompression = 0 [, $iQuality = 100]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -37,17 +36,17 @@
       </tr>
       <tr>
         <td>$iCompression</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The compression method. This parameter can be one of the following values.<br>
+        <td><strong>[optional]</strong> The compression method. This parameter can be one of the following values.<br>
         &nbsp;&nbsp;&nbsp; $COMPRESSION_BITMAP_PNG (Default)<br>
         &nbsp;&nbsp;&nbsp; $COMPRESSION_BITMAP_JPEG</td>
       </tr>
       <tr>
         <td>$iQuality</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The quality of JPEG image, in percent. This value is ignored for non JPEG compression. Default is 100.</td>
+        <td><strong>[optional]</strong> The quality of JPEG image, in percent. This value is ignored for non JPEG compression. Default is 100.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -56,11 +55,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>In fact, the data that returns this function represent .jpeg or .png image file in binary form. You can use the <a href="_WinAPI_WriteFile.htm">_WinAPI_WriteFile()</a> function to create the appropriate image file directly from this data.<br>
   <br>
   The returned data always represent a 24-bit color depth .jpeg image, or 32-bit color depth (with or without alpha chanel) .png image independent on the color depth of the source bitmap.<br>
@@ -68,9 +67,9 @@
   When you no longer need the buffer allocated by this function, you must call the <a href="_WinAPI_FreeMemory.htm">_WinAPI_FreeMemory()</a> function (do not use any other memory routines) to release occupied memory.<br>
   <br>
   This function internally uses the GDI+ DLL library.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_FreeMemory.htm">_WinAPI_FreeMemory</a>, <a href="_WinAPI_WriteFile.htm">_WinAPI_WriteFile</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -138,7 +137,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_CloseHandle.htm"><span class="S15">_WinAPI_CloseHandle</span></a><span class="S8">(</span><span class="S9">$hFile</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/ShellExecute.htm"><span class="S4">ShellExecute</span></a><span class="S8">(</span><span class="S7">"MsPaint"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'"'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TempDir"><span class="S6">@TempDir</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'\MyIcon.ico'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'"'</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_WinAPI_CompressBitmapBits() failed (@error = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">")"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_WinAPI_CompressBitmapBits() failed (@error = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">")"</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 
 <span class="S1">; Delete unnecessary bitmaps</span>

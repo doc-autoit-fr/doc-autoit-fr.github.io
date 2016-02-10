@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction AdlibRegister</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>AdlibRegister</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Registers an Adlib function.</span><span lang="fr" style="display: none">Enregistre une fonction AdLib.</span></span><br></p>
   <p class="codeheader">AdlibRegister ( "function" [, time = 250] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,11 +28,11 @@
       </tr>
       <tr>
         <td>time</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">how often in milliseconds to call the function.</span><span lang="fr" style="display: none">Nombre de millisecondes entre chaque appel de la fonction.</span></span> <span class="segments"><span lang="en">Default is 250 ms.</span><span lang="fr" style="display: none">Valeur par défaut :250 ms.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">how often in milliseconds to call the function.</span><span lang="fr" style="display: none">Nombre de millisecondes entre chaque appel de la fonction.</span></span> <span class="segments"><span lang="en">Default is 250 ms.</span><span lang="fr" style="display: none">Valeur par défaut :250 ms.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,15 +45,15 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Every 250 ms (or <em>time</em> ms) the specified "function" is called--typically to check for unforeseen errors.</span><span lang="fr" style="display: none">La fonction spécifiée est appelée toutes les 250 ms (ou <em>time</em> ms), typiquement pour vérifier la présence d'erreurs.</span></span> <span class="segments"><span lang="en">For example, you could use adlib in a script which causes an error window to pop up unpredictably.</span><span lang="fr" style="display: none">Par exemple, vous pouvez utiliser adlib dans un script faisant apparaitre un pop-up d'erreur aléatoire.</span></span><br>
   <span class="segments"><span lang="en">The adlib function should be kept simple as it is executed often and during this time the main script is paused.</span><span lang="fr" style="display: none">La fonction adlib doit être le plus simple possible car elle est exécutée souvent et que pendant son temps d’exécution le script principal est mis en pause.</span></span> <span class="segments"><span lang="en">Also, the time parameter should be used carefully to avoid CPU load.</span><span lang="fr" style="display: none">De plus, le paramètre 'time' doit être utilisé prudemment pour éviter une surcharge du processeur.</span></span><br>
   <span class="segments"><span lang="en">You can not register a function using parameters.</span><span lang="fr" style="display: none">Vous ne pouvez pas enregistrer une fonction qui a es paramètres.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Several Adlib functions can be registered.</span><span lang="fr" style="display: none">Plusieurs fonctions adlib peuvent être enregistrées.</span></span> <span class="segments"><span lang="en">Re-registering an already existing Adlib function will update it with a new time.</span><span lang="fr" style="display: none">Le ré-enregistrement d'une fonction adlib la mettra à jour avec son nouveau paramètre 'time'.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="AdlibUnRegister.htm">AdlibUnRegister</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

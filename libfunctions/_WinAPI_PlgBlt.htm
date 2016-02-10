@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_PlgBlt</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Performs a bit-block transfer of color data from the specified rectangle in the source DC to the specified parallelogram in the DC context<br></p>
   <p class="codeheader">#include &lt;WinAPIGdi.au3&gt;<br>
   _WinAPI_PlgBlt ( $hDestDC, Const ByRef $aPoint, $hSrcDC, $iXSrc, $iYSrc, $iWidth, $iHeight [, $hMask = 0 [, $iXMask = 0 [, $iYMask = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -57,24 +56,24 @@
       </tr>
       <tr>
         <td>$hMask</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Handle to the monochrome bitmap that is used to mask the colors of the source rectangle.</td>
+        <td><strong>[optional]</strong> Handle to the monochrome bitmap that is used to mask the colors of the source rectangle.</td>
       </tr>
       <tr>
         <td>$iXMask</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The x-coordinate, in logical units, of the upper-left corner of the monochrome bitmap. Default is 0.</td>
+        <td><strong>[optional]</strong> The x-coordinate, in logical units, of the upper-left corner of the monochrome bitmap. Default is 0.</td>
       </tr>
       <tr>
         <td>$iYMask</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The y-coordinate, in logical units, of the upper-left corner of the monochrome bitmap. Default is 0.</td>
+        <td><strong>[optional]</strong> The y-coordinate, in logical units, of the upper-left corner of the monochrome bitmap. Default is 0.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True</span><span lang="fr" style="display: none">Retourne True</span></span></td>
+        <td style="width:90%">True</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -82,7 +81,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The <a href="_WinAPI_PlgBlt.htm">_WinAPI_PlgBlt()</a> works with device-dependent bitmaps. If the source and destination device contexts represent<br>
   incompatible devices, the function returns an error.<br>
   <br>
@@ -97,9 +96,9 @@
   and shear transformations are not. If the mask bitmap is not a monochrome bitmap, an error occurs. The stretching<br>
   mode for the destination device context is used to determine how to stretch or compress the pixels, if that is<br>
   necessary.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(PlgBlt);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">PlgBlt</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

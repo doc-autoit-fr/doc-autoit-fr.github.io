@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GUICtrlStatusBar_SetParts</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Sets the number of parts and the part edges<br></p>
   <p class="codeheader">#include &lt;GuiStatusBar.au3&gt;<br>
   _GUICtrlStatusBar_SetParts ( $hWnd [, $aParts = -1 [, $aPartWidth = 25]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,26 +29,26 @@
       </tr>
       <tr>
         <td>$aParts</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Number of parts, can be an 0-based array of ints in the following format:<br>
+        <td><strong>[optional]</strong> Number of parts, can be an 0-based array of ints in the following format:<br>
         &nbsp;&nbsp;&nbsp; $aParts[0] - Right edge of part #1<br>
         &nbsp;&nbsp;&nbsp; $aParts[1] - Right edge of part #2<br>
         &nbsp;&nbsp;&nbsp; $aParts[n] - Right edge of part n</td>
       </tr>
       <tr>
         <td>$aPartWidth</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Size of parts, can be an 0-based array of ints in the following format:<br>
+        <td><strong>[optional]</strong> Size of parts, can be an 0-based array of ints in the following format:<br>
         &nbsp;&nbsp;&nbsp; $aPartWidth[0] - width part #1<br>
         &nbsp;&nbsp;&nbsp; $aPartWidth[1] - width of part #2<br>
         &nbsp;&nbsp;&nbsp; $aPartWidth[n] - width of part n</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -57,11 +56,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If an element is -1, the right edge of the corresponding part extends to the border of the window.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GUICtrlStatusBar_GetParts.htm">_GUICtrlStatusBar_GetParts</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -120,7 +119,7 @@
 <span class="S0">        MemoWrite</span><span class="S8">(</span><span class="S7">"Part "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iI</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" width .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aParts</span><span class="S8">[</span><span class="S9">$iI</span><span class="S8">])</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUIDelete.htm"><span class="S4">GUIDelete</span></a><span class="S8">()</span>

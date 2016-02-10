@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _viOpen</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Opens a VISA connection to an Instrument/Device<br></p>
   <p class="codeheader">#include &lt;Visa.au3&gt;<br>
   _viOpen ( $sVisa_Address [, $sVisa_Secondary_Address = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,13 +32,13 @@
       </tr>
       <tr>
         <td>$sVisa_Secondary_Address</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The "secondary GPIB address". Only used if the primary address is passed as an integer.<br>
+        <td><strong>[optional]</strong> The "secondary GPIB address". Only used if the primary address is passed as an integer.<br>
         Only some GPIB instruments have secondary addresses. In those cases this optional parameter can be used to specify it.<br>
         This parameter is ZERO by default, which means NO SECONDARY ADDRESS.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -48,17 +47,17 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne -1 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>As for all the VISA functions the VISA libraries must be installed (you can check whether visa32.dll is in {WINDOWS}\system32) and a GPIB card (such as a National Instruments NI PCI-GPIB card or an Agilent 82350B PCI High-Performance GPIB card) must be installed<br>
   <br>
   * For a detailed description of the most common VISA DESCRIPTORS look at the Remarks of the help on the <a href="_viExecCommand.htm">_viExecCommand()</a> function<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_viClose.htm">_viClose</a>, <a href="_viExecCommand.htm">_viExecCommand</a>, <a href="_viFindGpib.htm">_viFindGpib</a>, <a href="_viGpibBusReset.htm">_viGpibBusReset</a>, <a href="_viGTL.htm">_viGTL</a>, <a href="_viSetAttribute.htm">_viSetAttribute</a>, <a href="_viSetTimeout.htm">_viSetTimeout</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

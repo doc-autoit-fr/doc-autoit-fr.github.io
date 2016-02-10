@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Word_DocExport</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Exports the document or a range as PDF or XPS<br></p>
   <p class="codeheader">#include &lt;Word.au3&gt;<br>
   _Word_DocExport ( $oDoc, $sFileName [, $iFormat = $WdExportFormatPDF [, $iRange = $WdExportAllDocument [, $iFrom = Default [, $iTo = Default [, $bOpenAfterExport = False [, $bIncludeProperties = True [, $iCreateBookmarks = Default [, $bUseISO19005 = False]]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,42 +33,42 @@
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Format to use for the export. Can be any of the WdExportFormat enumeration<br>
+        <td><strong>[optional]</strong> Format to use for the export. Can be any of the WdExportFormat enumeration<br>
         (default = $WdExportFormatPDF)</td>
       </tr>
       <tr>
         <td>$iRange</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies what to export. Can be any of the WdExportRange enumeration<br>
+        <td><strong>[optional]</strong> Specifies what to export. Can be any of the WdExportRange enumeration<br>
         (default = $WdExportAllDocument)</td>
       </tr>
       <tr>
         <td>$iFrom</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The page number at which to start publishing (default = start at the beginning)</td>
+        <td><strong>[optional]</strong> The page number at which to start publishing (default = start at the beginning)</td>
       </tr>
       <tr>
         <td>$iTo</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The page number at which to end publishing (default = end at the last page)</td>
+        <td><strong>[optional]</strong> The page number at which to end publishing (default = end at the last page)</td>
       </tr>
       <tr>
         <td>$bOpenAfterExport</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True displays the file in a viewer after it is published (default = False)</td>
+        <td><strong>[optional]</strong> True displays the file in a viewer after it is published (default = False)</td>
       </tr>
       <tr>
         <td>$bIncludeProperties</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True indicates that document properties should be included (default = True)</td>
+        <td><strong>[optional]</strong> True indicates that document properties should be included (default = True)</td>
       </tr>
       <tr>
         <td>$iCreateBookmarks</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether to export bookmarks and the type of bookmarks to export.<br>
+        <td><strong>[optional]</strong> Specifies whether to export bookmarks and the type of bookmarks to export.<br>
         Can be any of the WdExportCreateBookmarks enumeration (default)</td>
       </tr>
       <tr>
         <td>$bUseISO19005</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether the export should be created as PDF/A (self-contained PDF) (default = False)</td>
+        <td><strong>[optional]</strong> Specifies whether the export should be created as PDF/A (self-contained PDF) (default = False)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -78,19 +77,19 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oDoc is not an object<br>
         2 - $sFileName is empty<br>
         3 - Error returned when exporting the object. @extended is set to the COM error code</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Word_DocPrint.htm">_Word_DocPrint</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

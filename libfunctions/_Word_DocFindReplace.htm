@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Word_DocFindReplace</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Runs the specified find and replace operation<br></p>
   <p class="codeheader">#include &lt;Word.au3&gt;<br>
   _Word_DocFindReplace ( $oDoc [, $sFindText = "" [, $sReplaceWith = "" [, $iReplace = $WdReplaceAll [, $vSearchRange = 0 [, $bMatchCase = False [, $bMatchWholeWord = False [, $bMatchWildcards = False [, $bMatchSoundsLike = False [, $bMatchAllWordForms = False [, $bForward = True [, $iWrap = $WdFindContinue [, $bFormat = False]]]]]]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,64 +29,64 @@
       </tr>
       <tr>
         <td>$sFindText</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The text to be searched for. Use an empty string ("") to search for formatting only.<br>
+        <td><strong>[optional]</strong> The text to be searched for. Use an empty string ("") to search for formatting only.<br>
         You can search for special characters by specifying appropriate character codes.<br>
         For example, "^p" corresponds to a paragraph mark and "^t" corresponds to a tab character (default = "")</td>
       </tr>
       <tr>
         <td>$sReplaceWith</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The replacement text. To delete found text use an empty string ("").<br>
+        <td><strong>[optional]</strong> The replacement text. To delete found text use an empty string ("").<br>
         You specify special characters and advanced search criteria just as you do for the Find argument (default = "")</td>
       </tr>
       <tr>
         <td>$iReplace</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> How many replacements are to be made: one, all, or none.<br>
+        <td><strong>[optional]</strong> How many replacements are to be made: one, all, or none.<br>
         Can be anyWdReplace constant (default = $WdReplaceAll)</td>
       </tr>
       <tr>
         <td>$vSearchRange</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the selection or range to search. Can be:<br>
+        <td><strong>[optional]</strong> Specifies the selection or range to search. Can be:<br>
         &nbsp;&nbsp;&nbsp; -1 - Specifies the current selection<br>
         &nbsp;&nbsp;&nbsp; 0 - Specifies the entire document (default)<br>
         Any Word range object.</td>
       </tr>
       <tr>
         <td>$bMatchCase</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If True the find is case sensitive (default = False)</td>
+        <td><strong>[optional]</strong> If True the find is case sensitive (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchWholeWord</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If True only find entire words (default = False)</td>
+        <td><strong>[optional]</strong> If True only find entire words (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchWildcards</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If True the find text has special search operators (default = False)</td>
+        <td><strong>[optional]</strong> If True the find text has special search operators (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchSoundsLike</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If True finds words that sound similar to the find text (default = False)</td>
+        <td><strong>[optional]</strong> If True finds words that sound similar to the find text (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchAllWordForms</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> If True finds all forms of the find text<br>
+        <td><strong>[optional]</strong> If True finds all forms of the find text<br>
         (e.g. "sit" locates "sitting" and "sat") (default = False)</td>
       </tr>
       <tr>
         <td>$bForward</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True to search forward (toward the end of the document) (default = True)</td>
+        <td><strong>[optional]</strong> True to search forward (toward the end of the document) (default = True)</td>
       </tr>
       <tr>
         <td>$iWrap</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True wraps when the bottom or top of the document, selection or range is reached.<br>
+        <td><strong>[optional]</strong> True wraps when the bottom or top of the document, selection or range is reached.<br>
         Can be one of the WdFindWrap constants (default = $WdFindContinue)</td>
       </tr>
       <tr>
         <td>$bFormat</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True to have the find operation locate formatting in addition to or instead of the find text (default = False)</td>
+        <td><strong>[optional]</strong> True to have the find operation locate formatting in addition to or instead of the find text (default = False)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -96,19 +95,19 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oDoc is not an object<br>
         2 - $vSearchRange is not an object<br>
         3 - An error occurred when the replace operation was executed. @extended is set to the COM error code</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Word_DocFind.htm">_Word_DocFind</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

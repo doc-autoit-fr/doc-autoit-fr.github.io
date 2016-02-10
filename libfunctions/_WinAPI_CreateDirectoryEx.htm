@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CreateDirectoryEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates a new directory with the attributes of a specified template directory<br></p>
   <p class="codeheader">#include &lt;WinAPIFiles.au3&gt;<br>
   _WinAPI_CreateDirectoryEx ( $sNewDir, $sTemplateDir [, $tSecurity = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,18 +33,18 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure that specifies a security descriptor for the new directory.<br>
+        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that specifies a security descriptor for the new directory.<br>
         If this parameter is 0 (Default), the directory gets a default security descriptor.<br>
         The ACL in the default security descriptor for a directory are inherited from its parent directory.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -55,10 +54,10 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The <a href="_WinAPI_CreateDirectoryEx.htm">_WinAPI_CreateDirectoryEx()</a> function allows you to create directories that inherit stream information from other directories.<br>
   This function is useful, for example, when you are using Macintosh directories, which have a resource stream that is needed to properly identify directory contents as an attribute.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CreateDirectoryEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CreateDirectoryEx</a> in MSDN Library.</p>
 </body>
 </html>

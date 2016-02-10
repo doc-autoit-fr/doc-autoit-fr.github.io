@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _SendMessageA</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Send a Message to a Window/Control (Force Ansi Call)<br></p>
   <p class="codeheader">#include &lt;SendMessage.au3&gt;<br>
   _SendMessageA ( $hWnd, $iMsg [, $wParam = 0 [, $lParam = 0 [, $iReturn = 0 [, $wParamType = "wparam" [, $lParamType = "lparam" [, $sReturnType = "lresult"]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,16 +33,16 @@
       </tr>
       <tr>
         <td>$wParam</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies additional message-specific information</td>
+        <td><strong>[optional]</strong> Specifies additional message-specific information</td>
       </tr>
       <tr>
         <td>$lParam</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies additional message-specific information</td>
+        <td><strong>[optional]</strong> Specifies additional message-specific information</td>
       </tr>
       <tr>
         <td>$iReturn</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> What to return:<br>
+          <strong>[optional]</strong> What to return:<br>
           &nbsp;&nbsp;&nbsp; 0 - Return value from DLL call<br>
           &nbsp;&nbsp;&nbsp; 1 - $ihWnd<br>
           &nbsp;&nbsp;&nbsp; 2 - $iMsg<br>
@@ -54,25 +53,19 @@
       </tr>
       <tr>
         <td>$wParamType</td>
-        <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> See <a href="../functions/DllCall.htm">DllCall</a> in Related
-        </td>
+        <td><strong>[optional]</strong> See <strong>DllCall</strong> in Related</td>
       </tr>
       <tr>
         <td>$lParamType</td>
-        <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> See <a href="../functions/DllCall.htm">DllCall</a> in Related
-        </td>
+        <td><strong>[optional]</strong> See <strong>DllCall</strong> in Related</td>
       </tr>
       <tr>
         <td>$sReturnType</td>
-        <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> See <a href="../functions/DllCall.htm">DllCall</a> in Related
-        </td>
+        <td><strong>[optional]</strong> See <strong>DllCall</strong> in Related</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -83,13 +76,13 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When a message is blocked by UIPI the last error, retrieved with <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a>, is set to 5 (access denied).<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="../functions/DllCall.htm">DllCall()</a>, <a href="_SendMessage.htm">_SendMessage</a>, <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError</a></p>
 </body>
 </html>

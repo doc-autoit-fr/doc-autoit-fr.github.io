@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GDIPlus_ImageAttributesSetColorKeys</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Sets or clears the color key (transparency range) for a specified category</span><span lang="fr" style="display: none">Définit ou efface la couleur clé (plage de transparence) pour une catégorie déterminée</span></span><br></p>
   <p class="codeheader">#include &lt;GDIPlus.au3&gt;<br>
   _GDIPlus_ImageAttributesSetColorKeys ( $hImageAttributes [, $iColorAdjustType = 0 [, $bEnable = False [, $iARGBLow = 0 [, $iARGBHigh = 0]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,7 +29,7 @@
       </tr>
       <tr>
         <td>$iColorAdjustType</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The category for which the color key is set or cleared:</span><span lang="fr" style="display: none">La catégorie pour laquelle la couleur clé doit être définie ou effacée:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The category for which the color key is set or cleared:</span><span lang="fr" style="display: none">La catégorie pour laquelle la couleur clé doit être définie ou effacée:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - Color adjustment applies to all categories that do not have adjustment settings of their own<br>
         &nbsp;&nbsp;&nbsp; 1 - Color adjustment applies to bitmapped images<br>
         &nbsp;&nbsp;&nbsp; 2 - Color adjustment applies to brush operations in metafiles<br>
@@ -39,24 +38,24 @@
       </tr>
       <tr>
         <td>$bEnable</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If True, transparency range for the specified category is applied; otherwise, transparency</span><span lang="fr" style="display: none">Si Vrai, la plage de transparence pour la catégorie spécifiée est appliquée; autrement, transparence</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If True, transparency range for the specified category is applied; otherwise, transparency</span><span lang="fr" style="display: none">Si Vrai, la plage de transparence pour la catégorie spécifiée est appliquée; autrement, transparence</span></span></td>
       </tr>
       <tr>
         <td>$iARGBLow</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the low color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus faible.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the low color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus faible.</span></span></td>
       </tr>
       <tr>
         <td>$iARGBHigh</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the high color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus haute</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the high color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus haute</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -64,11 +63,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Any color that has each of its three components (red, green, blue) between the corresponding components of the high and low color keys is made transparent.</span><span lang="fr" style="display: none">Toute couleur qui a chacune de ses trois composantes (rouge, vert, bleu) entre les composantes correspondantes des couleurs clés haute et basse est transparente.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://search.msdn.microsoft.com/search/Default.aspx?brand=msdn&amp;query=GdipSetImageAttributesColorKeys">GdipSetImageAttributesColorKeys</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

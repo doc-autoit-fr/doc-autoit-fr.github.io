@@ -2,36 +2,46 @@
 <html>
 <head>
   <title>Keyword $tagNMDATETIMEFORMATQUERY</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
 </head>
 <body>
   <h1 class="small">Keyword Reference</h1>
   <hr style="height:0px">
   <h1>$tagNMDATETIMEFORMATQUERY</h1>
-  <p class="funcdesc">Contains information about the control callback field<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Contains information about the control callback field</span><span lang="fr" style="display: none">Contient des informations sur le champ de rappel du contrôle</span></span><br></p>
   <p class="codeheader">Global Const $tagNMDATETIMEFORMATQUERY = $tagNMHDR & ";ptr Format;struct ;long SizeX;long SizeY; endstruct"<br></p>
-  <h2>Parameters</h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
-    <tr>
-      <td style="width:15%">$tagNMHDR</td>
-      <td style="width:85%">Contains information about a notification message</td>
-    </tr>
-    <tr>
-      <td>Format</td>
-      <td>Pointer to a null terminated string that defines the control callback field.<br>
-      The string comprises one or more "X" characters.</td>
-    </tr>
-    <tr>
-      <td>SizeX</td>
-      <td>Must be filled with the maximum width of the text that will be displayed in the callback field</td>
-    </tr>
-    <tr>
-      <td>SizeY</td>
-      <td>Must be filled with the maximum height of the text that will be displayed in the callback field</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td style="width:15%">$tagNMHDR</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Contains information about a notification message</span><span lang="fr" style="display: none">Contient des informations sur un message de notification</span></span></td>
+      </tr>
+      <tr>
+        <td>Format</td>
+        <td>Pointer to a null terminated string that defines the control callback field.<br>
+        The string comprises one or more "X" characters.</td>
+      </tr>
+      <tr>
+        <td>SizeX</td>
+        <td>Must be filled with the maximum width of the text that will be displayed in the callback field</td>
+      </tr>
+      <tr>
+        <td>SizeY</td>
+        <td>Must be filled with the maximum height of the text that will be displayed in the callback field</td>
+      </tr>
+    </tbody>
   </table>
-  <h2>Remarks</h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>It contains a string (taken from the control's format string) that defines a callback field.<br>
   The structure receives the maximum allowable size of the text that will be displayed in the callback field.<br>
   This structure is used with the $DTN_FORMATQUERY notification message.<br></p>

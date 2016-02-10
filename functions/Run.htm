@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction Run</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>Run</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Runs an external program.</span><span lang="fr" style="display: none">Exécute un programme externe.</span></span><br></p>
   <p class="codeheader">Run ( "program" [, "workingdir" [, show_flag [, opt_flag]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,18 +28,18 @@
       </tr>
       <tr>
         <td>workingdir</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
       </tr>
       <tr>
         <td>show_flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
         &nbsp;&nbsp;&nbsp; @SW_HIDE = Hidden window (or Default keyword)<br>
         &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimized window<br>
         &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximized window</td>
       </tr>
       <tr>
         <td>opt_flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
         &nbsp;&nbsp;&nbsp; $STDIN_CHILD (0x1) = Provide a handle to the child's STDIN stream<br>
         &nbsp;&nbsp;&nbsp; $STDOUT_CHILD (0x2) = Provide a handle to the child's STDOUT stream<br>
         &nbsp;&nbsp;&nbsp; $STDERR_CHILD (0x4) = Provide a handle to the child's STDERR stream<br>
@@ -52,7 +51,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -61,11 +60,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Paths with spaces need to be enclosed in quotation marks.</span><span lang="fr" style="display: none">Les chemins avec des espaces doivent être placés entre guillemets.</span></span><br>
   <br>
   To run DOS (console) commands, try <em><a href="Run.htm">Run</a>(@ComSpec & " /c " & 'commandName', "", @SW_HIDE)&nbsp;&nbsp;&nbsp; ; don't forget " " before "/c"</em><br>
@@ -80,9 +79,9 @@
   <span class="segments"><span lang="en">3) If STDIN is provided for the child, <a href="StdinWrite.htm">StdinWrite()</a> must be called to close the stream.</span><span lang="fr" style="display: none">3) Si STDIN est fourni pour l'enfant, <a href="StdinWrite.htm">StdinWrite()</a> doit être appelée pour fermer le flux.</span></span> <span class="segments"><span lang="en">Once all streams are detected as no longer needed, all internal resources will automatically be freed.</span><span lang="fr" style="display: none">Une fois que tous les flux sont détectés comme n'étant plus nécessaires, toutes les ressources internes seront automatiquement libérés.</span></span><br>
   <br>
   <span class="segments"><span lang="en"><a href="StdioClose.htm">StdioClose()</a> can be used to force the STDIO streams closed.</span><span lang="fr" style="display: none"><a href="StdioClose.htm">StdioClose()</a> peut être utilisé pour forcer le flux STDIO à se fermer.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="ConsoleRead.htm">ConsoleRead</a>, <a href="ProcessClose.htm">ProcessClose</a>, <a href="RunAs.htm">RunAs</a>, <a href="RunAsWait.htm">RunAsWait</a>, <a href="RunWait.htm">RunWait</a>, <a href="ShellExecute.htm">ShellExecute</a>, <a href="ShellExecuteWait.htm">ShellExecuteWait</a>, <a href="StderrRead.htm">StderrRead</a>, <a href="StdinWrite.htm">StdinWrite</a>, <a href="StdioClose.htm">StdioClose</a>, <a href="StdoutRead.htm">StdoutRead</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

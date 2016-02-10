@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _SQLite_Open</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,24 +20,24 @@
   <p class="funcdesc">Opens/creates a SQLite database<br></p>
   <p class="codeheader">#include &lt;SQLite.au3&gt;<br>
   _SQLite_Open ( [$sDatabase_Filename = ":memory:" [, $iAccessMode = Default [, $iEncoding = $SQLITE_ENCODING_UTF8]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$sDatabase_Filename</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Database filename, by default will open a memory database.</td>
+        <td style="width:85%"><strong>[optional]</strong> Database filename, by default will open a memory database.</td>
       </tr>
       <tr>
         <td>$iAccessMode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> access mode flags. Defaults to $SQLITE_OPEN_READWRITE + $SQLITE_OPEN_CREATE</td>
+        <td><strong>[optional]</strong> access mode flags. Defaults to $SQLITE_OPEN_READWRITE + $SQLITE_OPEN_CREATE</td>
       </tr>
       <tr>
         <td>$iEncoding</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> encoding mode flag, only used at creation time. Defaults to $SQLITE_ENCODING_UTF8</td>
+        <td><strong>[optional]</strong> encoding mode flag, only used at creation time. Defaults to $SQLITE_ENCODING_UTF8</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -50,7 +49,7 @@
         <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>
           -1 - SQLite Reported an Error (Check @extended Value)<br>
           1 - Error Calling SQLite API 'sqlite3_open_v2'<br>
@@ -64,7 +63,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>There is no need to store the database handle, except if you use more than one database in the same session.<br>
   Functions that use the handle are using the last opened by default.<br>
   <br>
@@ -83,9 +82,9 @@
   &nbsp;&nbsp;&nbsp; $hDb = <a href="_SQLite_Open.htm">_SQLite_Open</a>('./:memory:', ...) ; opens or creates a permanent shareable on-disk DB named ':memory:'<br>
   <br>
   Contrary to permanent disk-based DBs, memory and temporary DBs can't be shared nor be used for IPC (Inter Process Communication) and are destroyed at the end of the connection.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_SQLite_Close.htm">_SQLite_Close</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

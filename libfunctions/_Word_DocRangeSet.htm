@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Word_DocRangeSet</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Sets or modifies a range in a document<br></p>
   <p class="codeheader">#include &lt;Word.au3&gt;<br>
   _Word_DocRangeSet ( $oDoc, $vRange [, $iStartUnit = Default [, $iStartCount = Default [, $iEndUnit = Default [, $iEndCount = Default]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -37,33 +36,33 @@
       </tr>
       <tr>
         <td>$iStartUnit</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Unit by/to which the start position of the range is to be moved/set.<br>
+        <td><strong>[optional]</strong> Unit by/to which the start position of the range is to be moved/set.<br>
         Can be any of the WdUnit enumeration (default = $WdWord).<br>
         When set to -1 the range is collapsed to the start of the range</td>
       </tr>
       <tr>
         <td>$iStartCount</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Number of units by/to which the start of range is moved/set.<br>
+        <td><strong>[optional]</strong> Number of units by/to which the start of range is moved/set.<br>
         Positive numbers move the range forward in the document.<br>
         If the position is moved forward to a position beyond the end position of the range, the range is collapsed<br>
         and both the start and end positions are moved together(default = don't move the start position)</td>
       </tr>
       <tr>
         <td>$iEndUnit</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Unit by/to which the end position of the range is to be moved/set.<br>
+        <td><strong>[optional]</strong> Unit by/to which the end position of the range is to be moved/set.<br>
         Can be any of the WdUnit enumeration (default = $WdWord).<br>
         When set to -1 the range is collapsed to the end of the range</td>
       </tr>
       <tr>
         <td>$iEndCount</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Number of units by/to which the end of the range is moved/set.<br>
+        <td><strong>[optional]</strong> Number of units by/to which the end of the range is moved/set.<br>
         If this number is negative, the end is moved backward.<br>
         If the ending position overtakes the starting position, the range<br>
         collapses and both positions move together (default = don't move the end position)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -72,10 +71,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oDoc is not an object<br>
         2 - $vRange has to be a range object, 0 or -1<br>
         3 - Error occurred when setting the start of the range. @extended is set to the COM error code<br>
@@ -83,7 +82,7 @@
       </tr>
     </tbody>
   </table>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

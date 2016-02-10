@@ -2,43 +2,53 @@
 <html>
 <head>
   <title>Keyword $tagNMCBEENDEDIT</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
 </head>
 <body>
   <h1 class="small">Keyword Reference</h1>
   <hr style="height:0px">
   <h1>$tagNMCBEENDEDIT</h1>
-  <p class="funcdesc">Contains information about the conclusion of an edit operation within a ComboBoxEx control<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Contains information about the conclusion of an edit operation within a ComboBoxEx control</span><span lang="fr" style="display: none">Contient des informations sur la conclusion d'une opération d'édition dans un contrôle ComboBoxEx</span></span><br></p>
   <p class="codeheader">Global Const $tagNMCBEENDEDIT = $tagNMHDR & ";bool fChanged;int NewSelection;wchar szText[260];int Why"<br></p>
-  <h2>Parameters</h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
-    <tr>
-      <td style="width:15%">$tagNMHDR</td>
-      <td style="width:85%">Contains information about a notification message</td>
-    </tr>
-    <tr>
-      <td>fChanged</td>
-      <td>Indicating whether the contents of the control's edit box have changed</td>
-    </tr>
-    <tr>
-      <td>NewSelection</td>
-      <td>The 0-based index of the item that will be selected after completing the edit operation<br>
-      This value can be $CB_ERR if no item will be selected</td>
-    </tr>
-    <tr>
-      <td>szText</td>
-      <td>A zero-terminated string that contains the text from within the control's edit box</td>
-    </tr>
-    <tr>
-      <td>Why</td>
-      <td>The action that generated the $CBEN_ENDEDIT notification message<br>
-      This value can be one of the following:<br>
-      &nbsp;&nbsp;&nbsp; $CBENF_DROPDOWN - The user activated the drop-down list<br>
-      &nbsp;&nbsp;&nbsp; $CBENF_ESCAPE - The user pressed ESC<br>
-      &nbsp;&nbsp;&nbsp; $CBENF_KILLFOCUS - The edit box lost the keyboard focus<br>
-      &nbsp;&nbsp;&nbsp; $CBENF_RETURN - The user completed the edit operation by pressing ENTER</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td style="width:15%">$tagNMHDR</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Contains information about a notification message</span><span lang="fr" style="display: none">Contient des informations sur un message de notification</span></span></td>
+      </tr>
+      <tr>
+        <td>fChanged</td>
+        <td>Indicating whether the contents of the control's edit box have changed</td>
+      </tr>
+      <tr>
+        <td>NewSelection</td>
+        <td>The 0-based index of the item that will be selected after completing the edit operation<br>
+        This value can be $CB_ERR if no item will be selected</td>
+      </tr>
+      <tr>
+        <td>szText</td>
+        <td>A zero-terminated string that contains the text from within the control's edit box</td>
+      </tr>
+      <tr>
+        <td>Why</td>
+        <td>The action that generated the $CBEN_ENDEDIT notification message<br>
+        This value can be one of the following:<br>
+        &nbsp;&nbsp;&nbsp; $CBENF_DROPDOWN - The user activated the drop-down list<br>
+        &nbsp;&nbsp;&nbsp; $CBENF_ESCAPE - The user pressed ESC<br>
+        &nbsp;&nbsp;&nbsp; $CBENF_KILLFOCUS - The edit box lost the keyboard focus<br>
+        &nbsp;&nbsp;&nbsp; $CBENF_RETURN - The user completed the edit operation by pressing ENTER</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 </html>

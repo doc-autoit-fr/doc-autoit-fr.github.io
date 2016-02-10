@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUISetCursor</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,16 +19,16 @@
   <h1>GUISetCursor</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sets the mouse cursor icon for a GUI window.</span><span lang="fr" style="display: none">Définit l'icône du curseur de la souris pour une fenêtre GUI.</span></span><br></p>
   <p class="codeheader">GUISetCursor ( [cursorID [, override = 0 [, winhandle]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">cursorID</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Cursor Id (See Remarks).</span><span lang="fr" style="display: none">Id du curseur (Voir Remarques).</span></span></td>
+        <td style="width:85%"><strong>[optional]</strong> <span class="segments"><span lang="en">Cursor Id (See Remarks).</span><span lang="fr" style="display: none">Id du curseur (Voir Remarques).</span></span></td>
       </tr>
       <tr>
         <td>override</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Force the requested mouse cursor even when over controls (see below).</span><span lang="fr" style="display: none">Force le curseur souris requis, même lorsqu'il se trouve sur d'autres contrôles (voir ci-dessous ).</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Force the requested mouse cursor even when over controls (see below).</span><span lang="fr" style="display: none">Force le curseur souris requis, même lorsqu'il se trouve sur d'autres contrôles (voir ci-dessous ).</span></span><br>
         &nbsp;&nbsp;&nbsp; $GUI_CURSOR_NOOVERRIDE (0) = (default) Don't override a control's default mouse cursor.<br>
         &nbsp;&nbsp;&nbsp; $GUI_CURSOR_OVERRIDE (1) = override control's default mouse cursor.<br>
         <br>
@@ -37,21 +36,21 @@
       </tr>
       <tr>
         <td>winhandle</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Windows handle as returned by <a href="GUICreate.htm">GUICreate()</a> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <a href="GUICreate.htm">GUICreate()</a> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Windows handle as returned by <strong>GUICreate()</strong> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <strong>GUICreate()</strong> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">La fonction permet de définir un tableau de plages de caractère qui représentent les plages mesurées par un appel à la fonction MeasureCharacterRanges.</span></span><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">None.</span><span lang="fr" style="display: none">Aucune.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">If the cursorID is invalid the standard arrow will be displayed.</span><span lang="fr" style="display: none">Si l'ID du curseur est invalide la flèche standard sera utilisée.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Usually when you move the mouse cursor over an edit control or other control the mouse cursor changes shape.</span><span lang="fr" style="display: none">Habituellement, lorsque vous déplacez le curseur souris sur un contrôle Edit ou un autre contrôle le curseur souris change de forme.</span></span> <span class="segments"><span lang="en">The "override" option allows you to force the requested mouse cursor to be shown at all times.</span><span lang="fr" style="display: none">L'option "override" vous permet de forcer le curseur souris demandé à être utilisé tout le temps.</span></span> <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">If you have changed a controls mouse cursor with <a href="GUICtrlSetCursor.htm">GUICtrlSetCursor()</a> then this control mouse cursor will always be shown.</span><span lang="fr" style="display: none">Si vous avez modifié le curseur souris d'un contrôle avec <a href="GUICtrlSetCursor.htm">GUICtrlSetCursor()</a>, ce curseur sera toujours affichée.</span></span><a href="GUICtrlSetCursor.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">For a list of valid cursor IDs see <a href="MouseGetCursor.htm">MouseGetCursor()</a>.</span><span lang="fr" style="display: none">Pour une liste d'IDs de curseur valides voir <a href="MouseGetCursor.htm">MouseGetCursor()</a>.</span></span><br>
   <span class="segments"><span lang="en">CursorId = 16 will hide the mouse cursor.</span><span lang="fr" style="display: none">CursorID = 16 permet de cacher le curseur souris.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlSetCursor.htm">GUICtrlSetCursor</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

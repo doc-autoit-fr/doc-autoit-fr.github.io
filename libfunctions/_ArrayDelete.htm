@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayDelete</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Deletes the specified element(s) from the specified 1D or 2D array</span><span lang="fr" style="display: none">Supprime les éléments spécifiés dans un tableau 1D ou 2D</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayDelete ( ByRef $aArray, $vRange )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,7 +33,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -43,10 +42,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne -1 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - $aArray is not an array</span><span lang="fr" style="display: none">1 - $aArray n'est pas un tableau</span></span><br>
         <span class="segments"><span lang="en">2 - $aArray is not a 1D or 2D array</span><span lang="fr" style="display: none">2 - $aArray n'est pas un tableau 1D ou 2D</span></span><br>
         <span class="segments"><span lang="en">3 - $vRange is not a valid range string</span><span lang="fr" style="display: none">3 - $vRange n'est pas une chaîne de plage valide</span></span><br>
@@ -55,15 +54,15 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">$vRange can be a string containing the rows which are to be deleted.</span><span lang="fr" style="display: none">$vRange peut être une chaîne contenant les lignes qui doivent être supprimés.</span></span> <span class="segments"><span lang="en">It can be a single number or a range denoted by the first and last lines separated by a hyphen (-) - multiple items are separated by a semi-colon (;).</span><span lang="fr" style="display: none">Il peut être un nombre unique ou une plage désignée par les première et dernière lignes séparées par un tiret (-) - plusieurs éléments sont séparés par un point-virgule (;).</span></span><br>
   <br>
   <span class="segments"><span lang="en">$vRange can also be a 1D array listing all rows to be deleted with the count in the [0] element].</span><span lang="fr" style="display: none">$vRange peut aussi être un tableau 1D représentant toutes les lignes à supprimer avec le nombre d'éléments en position [0].</span></span><br>
   <br>
   <span class="segments"><span lang="en">In either case, the rows need not be in ascending order and can be duplicated.</span><span lang="fr" style="display: none">Dans les deux cas, les lignes ne sont pas nécessairement dans l'ordre croissant et peuvent être dupliqués.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ArrayAdd.htm">_ArrayAdd</a>, <a href="_ArrayInsert.htm">_ArrayInsert</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

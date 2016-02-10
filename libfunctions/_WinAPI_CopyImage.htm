@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CopyImage</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates a new image (icon, cursor, or bitmap) and copies the attributes of the specified image to the new one<br></p>
   <p class="codeheader">#include &lt;WinAPIGdi.au3&gt;<br>
   _WinAPI_CopyImage ( $hImage [, $iType = 0 [, $iXDesiredPixels = 0 [, $iYDesiredPixels = 0 [, $iFlags = 0]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,22 +29,22 @@
       </tr>
       <tr>
         <td>$iType</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the type of image to be copied. This parameter can be one of the following values:<br>
+        <td><strong>[optional]</strong> Specifies the type of image to be copied. This parameter can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $IMAGE_BITMAP 'Default)<br>
         &nbsp;&nbsp;&nbsp; $IMAGE_CURSOR<br>
         &nbsp;&nbsp;&nbsp; $IMAGE_ICON</td>
       </tr>
       <tr>
         <td>$iXDesiredPixels</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the desired width, in pixels, of the image. If this is zero (Default), then the returned image will have the same width as the original $hImage.</td>
+        <td><strong>[optional]</strong> Specifies the desired width, in pixels, of the image. If this is zero (Default), then the returned image will have the same width as the original $hImage.</td>
       </tr>
       <tr>
         <td>$iYDesiredPixels</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the desired height, in pixels, of the image. If this is zero (Default), then the returned image will have the same height as the original $hImage.</td>
+        <td><strong>[optional]</strong> Specifies the desired height, in pixels, of the image. If this is zero (Default), then the returned image will have the same height as the original $hImage.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> This parameter can be one or more of the following values.<br>
+        <td><strong>[optional]</strong> This parameter can be one or more of the following values.<br>
         $LR_DEFAULTCOLOR (Default)<br>
         $LR_COPYDELETEORG<br>
         $LR_COPYFROMRESOURCE<br>
@@ -56,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -71,10 +70,10 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When you are finished using the resource, you can release its associated memory by calling <a href="_WinAPI_DeleteObject.htm">_WinAPI_DeleteObject()</a> function respectively for bitmaps, cursors, or icons.<br>
   The system automatically deletes the resource when its process terminates, however, calling the appropriate function saves memory and decreases the size of the process's working set.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CopyImage);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CopyImage</a> in MSDN Library.</p>
 </body>
 </html>

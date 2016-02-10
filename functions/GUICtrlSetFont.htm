@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlSetFont</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlSetFont</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sets the font for a control.</span><span lang="fr" style="display: none">Définit la police d'un contrôle.</span></span><br></p>
   <p class="codeheader">GUICtrlSetFont ( controlID, size [, weight [, attribute [, fontname [, quality]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
       <tr>
         <td>weight</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The weight of the font in the range 0 through 1000.</span><span lang="fr" style="display: none">La graisse de la police de 0 à 1000.</span></span> <span class="segments"><span lang="en">For example, 400 is normal and 700 is bold.</span><span lang="fr" style="display: none">Par exemple, 400 est normal et 700 est gras.</span></span> <span class="segments"><span lang="en">If this value is zero, a default weight is used.</span><span lang="fr" style="display: none">Si cette valeur est 0, une graisse par défaut est utilisée.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The weight of the font in the range 0 through 1000.</span><span lang="fr" style="display: none">La graisse de la police de 0 à 1000.</span></span> <span class="segments"><span lang="en">For example, 400 is normal and 700 is bold.</span><span lang="fr" style="display: none">Par exemple, 400 est normal et 700 est gras.</span></span> <span class="segments"><span lang="en">If this value is zero, a default weight is used.</span><span lang="fr" style="display: none">Si cette valeur est 0, une graisse par défaut est utilisée.</span></span><br>
         <span class="segments"><span lang="en">The following values are defined for convenience.</span><span lang="fr" style="display: none">Les valeurs suivantes sont définies pour en faciliter l'utilisation.</span></span><br>
         &nbsp;&nbsp;&nbsp; $FW_DONTCARE = 0 (Use the default font weight)<br>
         &nbsp;&nbsp;&nbsp; $FW_THIN = 100<br>
@@ -50,7 +49,7 @@
       </tr>
       <tr>
         <td>attribute</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Font attributes, which can be a combination of the following added together:</span><span lang="fr" style="display: none">Attributs de police, qui peut être une combinaison des éléments suivants additionnés :</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Font attributes, which can be a combination of the following added together:</span><span lang="fr" style="display: none">Attributs de police, qui peut être une combinaison des éléments suivants additionnés :</span></span><br>
         &nbsp;&nbsp;&nbsp; $GUI_FONTITALIC (2) = Italic<br>
         &nbsp;&nbsp;&nbsp; $GUI_FONTUNDER (4) = Underlined<br>
         &nbsp;&nbsp;&nbsp; $GUI_FONTSTRIKE (8) = Strike<br>
@@ -59,11 +58,11 @@
       </tr>
       <tr>
         <td>fontname</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Name of the font to use.</span><span lang="fr" style="display: none">Nom de la police à utiliser.</span></span> <span class="segments"><span lang="en">(OS default GUI font is used if the font is "" or is not found).</span><span lang="fr" style="display: none">(police par défaut de l'OS utilisée si la police est "" ou introuvable).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Name of the font to use.</span><span lang="fr" style="display: none">Nom de la police à utiliser.</span></span> <span class="segments"><span lang="en">(OS default GUI font is used if the font is "" or is not found).</span><span lang="fr" style="display: none">(police par défaut de l'OS utilisée si la police est "" ou introuvable).</span></span></td>
       </tr>
       <tr>
         <td>quality</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Font quality to select.</span><span lang="fr" style="display: none">Qualité de la police à sélectionner.</span></span> <span class="segments"><span lang="en">The following qualities are accepted:</span><span lang="fr" style="display: none">Les qualités suivantes sont acceptées:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Font quality to select.</span><span lang="fr" style="display: none">Qualité de la police à sélectionner.</span></span> <span class="segments"><span lang="en">The following qualities are accepted:</span><span lang="fr" style="display: none">Les qualités suivantes sont acceptées:</span></span><br>
         &nbsp;&nbsp;&nbsp; $DEFAULT_QUALITY (0) = Appearance of the font does not matter.<br>
         &nbsp;&nbsp;&nbsp; $DRAFT_QUALITY (1) = Appearance of the font is less important than when $PROOF_QUALITY is used. For GDI raster fonts, scaling is enabled, which means that more font sizes are available, but the quality may be lower. <span class="segments"><span lang="en">Bold, italic, underline, and strikeout fonts are synthesized if necessary.</span><span lang="fr" style="display: none">Les polices gras, italique, souligné, et barré sont synthétisés si nécessaire.</span></span><br>
         &nbsp;&nbsp;&nbsp; $PROOF_QUALITY (2) = (default) Character quality of the font is more important than exact matching of the logical-font attributes. <span class="segments"><span lang="en">For GDI raster fonts, scaling is disabled and the font closest in size is chosen.</span><span lang="fr" style="display: none">Pour les polices raster GDI, la mise à l'échelle est désactivée et la police la plus proche en taille est choisie.</span></span> <span class="segments"><span lang="en">Although the chosen font size may not be mapped exactly when $PROOF_QUALITY is used, the quality of the font is high and there is no distortion of appearance.</span><span lang="fr" style="display: none">Bien que la taille de la police choisie ne peut pas être mappé exactement quand $PROOF_QUALITY est utilisé, la qualité de la police est élevé et il n'y a pas de distorsion de l'apparence.</span></span> <span class="segments"><span lang="en">Bold, italic, underline, and strikeout fonts are synthesized if necessary.</span><span lang="fr" style="display: none">Les polices gras, italique, souligné, et barré sont synthétisés si nécessaire.</span></span><br>
@@ -75,7 +74,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -88,7 +87,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">By default, controls use the font set by <a href="GUISetFont.htm">GUISetFont()</a>.</span><span lang="fr" style="display: none">Par défaut, les contrôles utilisent la police définit par <a href="GUISetFont.htm">GUISetFont()</a>.</span></span><br>
   <span class="segments"><span lang="en">See the <a href="../appendix/fonts.htm">Appendix</a> for a complete list of Windows fonts and the Windows versions under which they are supported.</span><span lang="fr" style="display: none">Consultez l'<a href="../appendix/fonts.htm">Appendice</a> pour une liste complète des polices Windows et les versions de Windows sous lesquelles elles sont supportées.</span></span><br>
   <br>
@@ -97,9 +96,9 @@
   <span class="segments"><span lang="en">For some controls such as labels, the default size can be 8.5 instead of 9 according to Windows Theme Values.</span><span lang="fr" style="display: none">Pour certains contrôles tels que les Label, la taille par défaut peut être de 8,5 au lieu de 9 en accord avec les valeurs du thème de Windows.</span></span><br>
   <br>
   <span class="segments"><span lang="en">For Quality parameter check MSDN, some Windows XP installation need CLEARTYPE_QUALITY=5</span><span lang="fr" style="display: none">Pour le paramètre Quality consultez MSDN, certaines installations de Windows XP nécessite CLEARTYPE_QUALITY = 5</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUISetFont</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -140,7 +139,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sFont</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"Comic Sans Ms"</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI with various controls.</span><span lang="fr" style="display: none">Crée une GUI avec différents contrôles.</span></span></span></span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><span class="S3">200</span><span class="S8">)</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create label controls.</span><span lang="fr" style="display: none">Crée des contrôles Label.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateLabel.htm"><span class="S4">GUICtrlCreateLabel</span></a><span class="S8">(</span><span class="S7">"A string of text underlined"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">185</span><span class="S8">,</span><span class="S0"> </span><span class="S3">17</span><span class="S8">)</span>
@@ -157,7 +156,7 @@
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Display the GUI.</span><span lang="fr" style="display: none">Affiche la GUI.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">,</span><span class="S0"> </span><span class="S9">$hGUI</span><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$idClose</span>

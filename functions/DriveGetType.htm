@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction DriveGetType</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>DriveGetType</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Returns drive type.</span><span lang="fr" style="display: none">Retourne le type de lecteur.</span></span><br></p>
   <p class="codeheader">DriveGetType ( "path" [, operation = 1] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>operation</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The drive type operation to perform.<br>
+        <td><strong>[optional]</strong> The drive type operation to perform.<br>
         &nbsp;&nbsp;&nbsp; $DT_DRIVETYPE (1) = the type of drive (default)<br>
         &nbsp;&nbsp;&nbsp; $DT_SSDSTATUS (2) = SSD status of the drive<br>
         &nbsp;&nbsp;&nbsp; $DT_BUSTYPE (3) = the bus type of drive<br>
@@ -38,7 +37,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -51,7 +50,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">If the mode parameter is $DT_DRIVETYPE (1), returns the type of drive.</span><span lang="fr" style="display: none">Si le paramètre du mode est $DT_DRIVETYPE (1), la fonction retourne le type de lecteur.</span></span> <span class="segments"><span lang="en">The path must be a string volume name, such as "C:\".</span><span lang="fr" style="display: none">Le chemin doit être une string qui contient le nom du volume, comme "C:\".</span></span> <span class="segments"><span lang="en">Return values are:</span><span lang="fr" style="display: none">Les valeurs retournées sont:</span></span><br>
   "Unknown", "Removable", "Fixed", "Network", "CDROM", "RAMDisk"<br>
   <br>
@@ -60,9 +59,9 @@
   <br>
   <span class="segments"><span lang="en">If the mode parameter is $DT_BUSTYPE (3), returns the bus type of the drive.</span><span lang="fr" style="display: none">Si le paramètre du mode est $DT_BUSTYPE (3), la fonction retourne le type de bus du lecteur.</span></span> <span class="segments"><span lang="en">The path can be a string volume name, or an integer drive index.</span><span lang="fr" style="display: none">Le chemin peut être une chaîne qui contient le nom du volume, ou un entier, index du lecteur.</span></span> <span class="segments"><span lang="en">Return values are:</span><span lang="fr" style="display: none">Les valeurs retournées sont:</span></span><br>
   "Unknown", "SCSI", "ATAPI", "ATA", "1394", "SSA", "Fibre", "USB", "RAID", "iSCSI", "SAS", "SATA", "SD", "MMC", "Virtual", "FileBackedVirtual"<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="CDTray.htm">CDTray</a>, <a href="DriveGetDrive.htm">DriveGetDrive</a>, <a href="DriveGetFileSystem.htm">DriveGetFileSystem</a>, <a href="DriveGetLabel.htm">DriveGetLabel</a>, <a href="DriveGetSerial.htm">DriveGetSerial</a>, <a href="DriveSetLabel.htm">DriveSetLabel</a>, <a href="DriveSpaceFree.htm">DriveSpaceFree</a>, <a href="DriveSpaceTotal.htm">DriveSpaceTotal</a>, <a href="DriveStatus.htm">DriveStatus</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

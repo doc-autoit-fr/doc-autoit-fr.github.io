@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Excel_BookAttach</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Attaches to the first instance of a workbook where the search string matches based on the selected mode<br></p>
   <p class="codeheader">#include &lt;Excel.au3&gt;<br>
   _Excel_BookAttach ( $sString [, $sMode = "FilePath" [, $oInstance = Default]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,18 +29,18 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> specifies search mode:<br>
+        <td><strong>[optional]</strong> specifies search mode:<br>
         &nbsp;&nbsp;&nbsp; FileName - Name of the open workbook<br>
         &nbsp;&nbsp;&nbsp; FilePath - Full path to the open workbook (default)<br>
         &nbsp;&nbsp;&nbsp; Title - Title of the Excel window</td>
       </tr>
       <tr>
         <td>$oInstance</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Object of the Excel instance to be searched (default = keyword Default = all instances)</td>
+        <td><strong>[optional]</strong> Object of the Excel instance to be searched (default = keyword Default = all instances)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -53,15 +52,15 @@
         <td>0 and sets @error.</td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - An error occurred or $sString can't be found in any of the open workbooks. @extended is set to the COM error code<br>
         2 - $sMode is invalid</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Excel_BookClose.htm">_Excel_BookClose</a>, <a href="_Excel_BookNew.htm">_Excel_BookNew</a>, <a href="_Excel_BookOpen.htm">_Excel_BookOpen</a>, <a href="_Excel_BookOpenText.htm">_Excel_BookOpenText</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

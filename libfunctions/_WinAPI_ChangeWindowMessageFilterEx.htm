@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_ChangeWindowMessageFilterEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Modifies the User Interface Privilege Isolation (UIPI) message filter for a specified window<br></p>
   <p class="codeheader">#include &lt;WinAPISys.au3&gt;<br>
   _WinAPI_ChangeWindowMessageFilterEx ( $hWnd, $iMsg, $iAction )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -45,7 +44,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -65,14 +64,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>UIPI is a security feature that prevents messages from being received from a lower-integrity-level sender.<br>
   You can use this function to allow specific messages to be delivered to a window even if the message originates from a process at a lower integrity level.<br>
   <br>
   Certain messages whose value is smaller than WM_USER are required to be passed through the filter, regardless of the filter setting. There will be no effect when you attempt to use this function to allow or block such messages.<br>
   <br>
   This function requires <strong>Windows Vista or later</strong>.<br></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(ChangeWindowMessageFilterEx);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">ChangeWindowMessageFilterEx</a> in MSDN Library.</p>
 </body>
 </html>

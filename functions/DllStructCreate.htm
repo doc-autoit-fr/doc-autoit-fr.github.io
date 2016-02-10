@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction DllStructCreate</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>DllStructCreate</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a C/C++ style structure to be used in DllCall.</span><span lang="fr" style="display: none">Crée une structure style C/C++ à utiliser dans DllCall.</span></span><br></p>
   <p class="codeheader">DllStructCreate ( Struct [, Pointer] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,11 +28,11 @@
       </tr>
       <tr>
         <td>Pointer</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If supplied the struct will not allocate memory but use the pointer supplied.</span><span lang="fr" style="display: none">Si fourni la structure ne sera pas allouée dans la mémoire, mais utilisera le pointeur fourni.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If supplied the struct will not allocate memory but use the pointer supplied.</span><span lang="fr" style="display: none">Si fourni la structure ne sera pas allouée dans la mémoire, mais utilisera le pointeur fourni.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -42,10 +41,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = Variable passed to DllStructCreate was not a string.</span><span lang="fr" style="display: none">1 = La variable passée à DllStructCreate n'était pas une chaîne.</span></span><br>
         <span class="segments"><span lang="en">2 = There is an unknown Data Type in the string passed.</span><span lang="fr" style="display: none">2 = Il y a un type de données inconnu dans la chaîne passée.</span></span><br>
         <span class="segments"><span lang="en">3 = Failed to allocate the memory needed for the struct, or Pointer = 0.</span><span lang="fr" style="display: none">3 = Impossible d'allouer la mémoire nécessaire pour la structure, ou pointeur = 0.</span></span><br>
@@ -161,7 +160,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Each data type must be separated by a semi-colon ';'.</span><span lang="fr" style="display: none">Chaque type de données doit être séparé par un point-virgule ';'.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Create arrays by adding '[size]' after the data type:</span><span lang="fr" style="display: none">Créer des tableaux en ajoutant '[size]' après le type de données :</span></span> <span class="segments"><span lang="en"><a href="DllStructCreate.htm">DllStructCreate</a>("int;char[128]")</span><span lang="fr" style="display: none"><a href="DllStructCreate.htm">DllStructCreate</a> ("int;char[ 128]")</span></span><a href="DllStructCreate.htm"></a><br>
@@ -195,9 +194,9 @@
   <span class="segments"><span lang="en">Each member within the structure is be placed at its proper alignment as defined in the previous table, which require implicit internal padding, depending on the previous member.</span><span lang="fr" style="display: none">Chaque membre au sein de la structure est placée à son bon alignement tel que défini dans le tableau précédent, ce qui nécessite de combler implicitement, selon le membre précédent.</span></span><br>
   <br>
   <span class="segments"><span lang="en">Structure size is an integral multiple of its alignment, which requires padding after the last member.</span><span lang="fr" style="display: none">La taille de la structure est un multiple entier de l'alignement, ce qui nécessite de combler après le dernier élément.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="DllCall.htm">DllCall</a>, <a href="DllStructGetData.htm">DllStructGetData</a>, <a href="DllStructGetPtr.htm">DllStructGetPtr</a>, <a href="DllStructGetSize.htm">DllStructGetSize</a>, <a href="DllStructSetData.htm">DllStructSetData</a>, <a href="IsDllStruct.htm">IsDllStruct</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

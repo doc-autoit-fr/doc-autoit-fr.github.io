@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CreateMutex</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates or opens a named or unnamed mutex object<br></p>
   <p class="codeheader">#include &lt;WinAPIProc.au3&gt;<br>
   _WinAPI_CreateMutex ( $sMutex [, $bInitial = True [, $tSecurity = 0]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,18 +29,18 @@
       </tr>
       <tr>
         <td>$bInitial</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether the calling process obtains the initial ownership of the mutex object, valid values:<br>
+        <td><strong>[optional]</strong> Specifies whether the calling process obtains the initial ownership of the mutex object, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The calling thread obtains initial ownership of the mutex object (Default).<br>
         &nbsp;&nbsp;&nbsp; False - The calling thread does not obtain ownership of the mutex object.</td>
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure that specifies a security descriptor for the new mutex.<br>
+        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that specifies a security descriptor for the new mutex.<br>
         If this parameter is 0 (Default), the mutex gets a default security descriptor.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -56,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>If the mutex is a named mutex and the object existed before this function call, the return value is a handle to the existing object, <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> returns ERROR_ALREADY_EXISTS (183), $bInitial is ignored, and the calling thread is not granted ownership.<br>
   However, if the caller has limited access rights, the function will fail with ERROR_ACCESS_DENIED (5) and the caller should use the <a href="_WinAPI_OpenMutex.htm">_WinAPI_OpenMutex()</a> function.<br>
   <br>
@@ -73,9 +72,9 @@
   Use the <a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle()</a> function to close the handle.<br>
   The system closes the handle automatically when the process terminates.<br>
   The mutex object is destroyed when its last handle has been closed.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle</a>, <a href="_WinAPI_OpenMutex.htm">_WinAPI_OpenMutex</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CreateMutex);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CreateMutex</a> in MSDN Library.</p>
 </body>
 </html>

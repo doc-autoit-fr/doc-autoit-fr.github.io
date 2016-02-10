@@ -1,56 +1,44 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+<html><head>
 <title>Keyword $tagNMLVCUSTOMDRAW</title>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="../js/custom.js"></script>
 </head>
 
 <body>
 <h1 class="small">Keyword Reference</h1>
 <hr style="height:0px">
 <h1>$tagNMLVCUSTOMDRAW</h1>
-<p class="funcdesc">Contains information specific to an NM_CUSTOMDRAW (list view) notification message sent by a list-view control<br /></p>
+<p class="funcdesc"><span class="segments"><span lang="en">Contains information specific to an NM_CUSTOMDRAW (list view) notification message sent by a list-view control</span><span lang="fr" style="display: none">Contient des informations spécifiques sur un message de notification NM_CUSTOMDRAW ( list-view) envoyé par un contrôle list-view</span></span><br></p>
 <p class="codeheader">
-Global Const $tagNMLVCUSTOMDRAW = "struct;" & $tagNMHDR & ";dword dwDrawStage;handle hdc;" & $tagRECT & _<br />
-	";dword_ptr dwItemSpec;uint uItemState;lparam lItemlParam;endstruct" & _<br />
-	";dword clrText;dword clrTextBk;int iSubItem;dword dwItemType;dword clrFace;int iIconEffect;" & _<br />
-	"int iIconPhase;int iPartId;int iStateId;struct;long TextLeft;long TextTop;long TextRight;long TextBottom;endstruct;uint uAlign"<br />
+Global Const $tagNMLVCUSTOMDRAW = "struct;" &amp; $tagNMHDR &amp; ";dword dwDrawStage;handle hdc;" &amp; $tagRECT &amp; _<br>
+	";dword_ptr dwItemSpec;uint uItemState;lparam lItemlParam;endstruct" &amp; _<br>
+	";dword clrText;dword clrTextBk;int iSubItem;dword dwItemType;dword clrFace;int iIconEffect;" &amp; _<br>
+	"int iIconPhase;int iPartId;int iStateId;struct;long TextLeft;long TextTop;long TextRight;long TextBottom;endstruct;uint uAlign"<br>
 </p>
 
-<h2>Parameters</h2>
+<h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
 <table>
-<tr>
+<tbody><tr>
 <td style="width:15%">$tagNMHDR</td>
-<td style="width:85%">Contains information about a notification message</td>
+<td style="width:85%"><span class="segments"><span lang="en">Contains information about a notification message</span><span lang="fr" style="display: none">Contient des informations sur un message de notification</span></span></td>
 </tr>
 <tr>
 <td>dwDrawStage</td>
-<td>The current drawing stage. This is one of the following values:<br />
-Global Values:<br />
-&nbsp;&nbsp;&nbsp; $CDDS_POSTERASE - After the erasing cycle is complete.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_POSTPAINT - After the painting cycle is complete.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_PREERASE - Before the erasing cycle begins.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_PREPAINT - Before the painting cycle begins.<br />
-Item-specific Values:<br />
-&nbsp;&nbsp;&nbsp; $CDDS_ITEM - Indicates that the dwItemSpec, uItemState, and lItemlParam members are valid.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_ITEMPOSTERASE - After an item has been erased.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_ITEMPOSTPAINT - After an item has been drawn.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_ITEMPREERASE - Before an item is erased.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_ITEMPREPAINT - Before an item is drawn.<br />
-&nbsp;&nbsp;&nbsp; $CDDS_SUBITEM - Flag combined with $CDDS_ITEMPREPAINT or $CDDS_ITEMPOSTPAINT if a subitem is being drawn.<br />
-This will only be set if $CDRF_NOTIFYITEMDRAW is returned from $CDDS_PREPAINT.</td>
+<td>The current drawing stage. This is one of the following values:<br>Global Values:<br>    $CDDS_POSTERASE - After the erasing cycle is complete.<br>    $CDDS_POSTPAINT - After the painting cycle is complete.<br>    $CDDS_PREERASE - Before the erasing cycle begins.<br>    $CDDS_PREPAINT - Before the painting cycle begins.<br>Item-specific Values:<br>    $CDDS_ITEM - Indicates that the dwItemSpec, uItemState, and lItemlParam members are valid.<br>    $CDDS_ITEMPOSTERASE - After an item has been erased.<br>    $CDDS_ITEMPOSTPAINT - After an item has been drawn.<br>    $CDDS_ITEMPREERASE - Before an item is erased.<br>    $CDDS_ITEMPREPAINT - Before an item is drawn.<br>    $CDDS_SUBITEM - Flag combined with $CDDS_ITEMPREPAINT or $CDDS_ITEMPOSTPAINT if a subitem is being drawn.<br>This will only be set if $CDRF_NOTIFYITEMDRAW is returned from $CDDS_PREPAINT.</td>
 </tr>
 <tr>
 <td>hdc</td>
-<td>A handle to the control's device context.<br />
-Use this handle to a device context (HDC) to perform any Microsoft Windows Graphics Device Interface (GDI) functions.</td>
+<td>A handle to the control&#39;s device context.<br>Use this handle to a device context (HDC) to perform any Microsoft Windows Graphics Device Interface (GDI) functions.</td>
 </tr>
 <tr>
 <td>$tagRECT</td>
-<td>Left,Top coordinate of the upper left corner of the rectangle of the area being drawn.<br />
-This member is initialized only by the $CDDS_ITEMPREPAINT notification Right,Bottom coordinate of the lower right corner of the rectangle of the area being drawn.<br />
-This member is initialized only by the $CDDS_ITEMPREPAINT notification.</td>
+<td>Left,Top coordinate of the upper left corner of the rectangle of the area being drawn.<br>This member is initialized only by the $CDDS_ITEMPREPAINT notification Right,Bottom coordinate of the lower right corner of the rectangle of the area being drawn.<br>This member is initialized only by the $CDDS_ITEMPREPAINT notification.</td>
 </tr>
 <tr>
 <td>dwItemSpec</td>
@@ -58,22 +46,7 @@ This member is initialized only by the $CDDS_ITEMPREPAINT notification.</td>
 </tr>
 <tr>
 <td>uItemState</td>
-<td>The current item state. This value is a combination of the following flags:<br />
-&nbsp;&nbsp;&nbsp; $CDIS_CHECKED - The item is checked.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_DEFAULT - The item is in its default state.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_DISABLED - The item is disabled.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_FOCUS - The item is in focus.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_GRAYED - The item is grayed.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_HOT - The item is currently under the pointer ("hot").<br />
-&nbsp;&nbsp;&nbsp; $CDIS_INDETERMINATE - The item is in an indeterminate state.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_MARKED - The item is marked. The meaning of this is determined by the implementation.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_SELECTED - The item is selected.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_SHOWKEYBOARDCUES - Version 6.0 Comctl32. The item is a keyboard cue.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_NEARHOT - The item is part of a control that is currently under the mouse pointer ("hot"), but the item is not "hot" itself.<br />
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; The meaning of this is determined by the implementation.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_OTHERSIDEHOT - The item is part of a splitbutton that is currently under the mouse pointer ("hot"), but the item is not "hot" itself.<br />
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; The meaning of this is determined by the implementation.<br />
-&nbsp;&nbsp;&nbsp; $CDIS_DROPHILITED - The item is currently the drop target of a drag-and-drop operation.</td>
+<td>The current item state. This value is a combination of the following flags:<br>    $CDIS_CHECKED - The item is checked.<br>    $CDIS_DEFAULT - The item is in its default state.<br>    $CDIS_DISABLED - The item is disabled.<br>    $CDIS_FOCUS - The item is in focus.<br>    $CDIS_GRAYED - The item is grayed.<br>    $CDIS_HOT - The item is currently under the pointer (&quot;hot&quot;).<br>    $CDIS_INDETERMINATE - The item is in an indeterminate state.<br>    $CDIS_MARKED - The item is marked. The meaning of this is determined by the implementation.<br>    $CDIS_SELECTED - The item is selected.<br>    $CDIS_SHOWKEYBOARDCUES - Version 6.0 Comctl32. The item is a keyboard cue.<br>    $CDIS_NEARHOT - The item is part of a control that is currently under the mouse pointer (&quot;hot&quot;), but the item is not &quot;hot&quot; itself.<br>        The meaning of this is determined by the implementation.<br>    $CDIS_OTHERSIDEHOT - The item is part of a splitbutton that is currently under the mouse pointer (&quot;hot&quot;), but the item is not &quot;hot&quot; itself.<br>        The meaning of this is determined by the implementation.<br>    $CDIS_DROPHILITED - The item is currently the drop target of a drag-and-drop operation.</td>
 </tr>
 <tr>
 <td>lItemlParam</td>
@@ -93,9 +66,7 @@ This member is initialized only by the $CDDS_ITEMPREPAINT notification.</td>
 </tr>
 <tr>
 <td>dwItemType</td>
-<td>Version 6.0. DWORD that contains the type of the item to draw. This member can be one of the following values:<br />
-&nbsp;&nbsp;&nbsp; $LVCDI_ITEM - An item is to be drawn.<br />
-&nbsp;&nbsp;&nbsp; $LVCDI_GROUP - A group is to be drawn.</td>
+<td>Version 6.0. DWORD that contains the type of the item to draw. This member can be one of the following values:<br>    $LVCDI_ITEM - An item is to be drawn.<br>    $LVCDI_GROUP - A group is to be drawn.</td>
 </tr>
 <tr>
 <td>clrFace</td>
@@ -135,16 +106,14 @@ This member is initialized only by the $CDDS_ITEMPREPAINT notification.</td>
 </tr>
 <tr>
 <td>uAlign</td>
-<td>Version 6.0. UINT that specifies how a group should be aligned. This member can be one of the following values:<br />
-&nbsp;&nbsp;&nbsp; $LVGA_HEADER_CENTER - Center the group.<br />
-&nbsp;&nbsp;&nbsp; $LVGA_HEADER_LEFT - Align the group on the left.<br />
-&nbsp;&nbsp;&nbsp; $LVGA_HEADER_RIGHT - Align the group on the right.</td>
+<td>Version 6.0. UINT that specifies how a group should be aligned. This member can be one of the following values:<br>    $LVGA_HEADER_CENTER - Center the group.<br>    $LVGA_HEADER_LEFT - Align the group on the left.<br>    $LVGA_HEADER_RIGHT - Align the group on the right.</td>
 </tr>
-</table>
+</tbody></table>
 
-<h2>Remarks</h2>
-<p>$LVxxx_ constants require #include &lt;ListViewConstants.au3&gt;, $CDxx_ constants require #include <WindowsConstants.au3><br />
-</p>
+<h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
+<p>$LVxxx_ constants require #include &lt;ListViewConstants.au3>, $CDxx_ constants require #include<windowsconstants.au3><br>
+</windowsconstants.au3></p>
 
-</body>
-</html>
+
+
+</body></html>

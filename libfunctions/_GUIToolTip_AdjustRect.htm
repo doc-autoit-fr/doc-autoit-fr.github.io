@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GUIToolTip_AdjustRect</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Calculates the text display rectangle from the window rectangle<br></p>
   <p class="codeheader">#include &lt;GuiToolTip.au3&gt;<br>
   _GUIToolTip_AdjustRect ( $hWnd, ByRef $tRECT [, $bLarger = True] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -36,12 +35,12 @@
       </tr>
       <tr>
         <td>$bLarger</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Value that specifies which operation to perform. If True, $tRECT is used to specify a text display rectangle and it receives the corresponding window rectangle. If False, $tRECT is used to specify a window rectangle and it receives the corresponding text display rectangle.</td>
+        <td><strong>[optional]</strong> Value that specifies which operation to perform. If True, $tRECT is used to specify a text display rectangle and it receives the corresponding window rectangle. If False, $tRECT is used to specify a window rectangle and it receives the corresponding text display rectangle.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns a $tagRECT structure.<br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a $tagRECT structure.<br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>The ToolTip's window rectangle is somewhat larger than the text display rectangle that bounds the ToolTip string.<br>
   The window origin is also offset up and to the left from the origin of the text display rectangle.<br>
   To position the text display rectangle, you must calculate the corresponding window rectangle and use that rectangle to position the ToolTip.<br>

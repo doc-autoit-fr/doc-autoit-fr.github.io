@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _DebugReportEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Writes to a debugging session a formatted message<br></p>
   <p class="codeheader">#include &lt;Debug.au3&gt;<br>
   _DebugReportEx ( $sData [, $bLastError = False [, $bExit = False]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,17 +29,15 @@
       </tr>
       <tr>
         <td>$bLastError</td>
-        <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True if <a href="_WinAPI_GetLastErrorMessage.htm">_WinAPI_GetLastErrorMessage()</a> must be append to the data being reported
-        </td>
+        <td><strong>[optional]</strong> True if <strong>_WinAPI_GetLastErrorMessage()</strong> must be append to the data being reported</td>
       </tr>
       <tr>
         <td>$bExit</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> True if the script must be terminated</td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">True if the script must be terminated</span><span lang="fr" style="display: none">True si le script doit être terminé</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -53,7 +50,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>According to the @error flag value the message will be formatted as follow:<br>
   0 - report "Bad return from FUNCTION in DLL".<br>
   1 - report "unable to open a DLL"<br>
@@ -64,9 +61,9 @@
   @error of the caller is preserved.<br>
   @extended can be set to Windows API <a href="_WinNet_GetLastError.htm">_WinNet_GetLastError()</a> if $bLastError = True.<br>
   Otherwise it is preserved.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_DebugSetup.htm">_DebugSetup</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

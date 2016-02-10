@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction StringSplit</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>StringSplit</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Splits up a string into substrings depending on the given delimiters.</span><span lang="fr" style="display: none">Découpe une chaîne en tableau de sous-chaînes selon des délimiteurs donnés.</span></span><br></p>
   <p class="codeheader">StringSplit ( "string", "delimiters" [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,7 +33,7 @@
       <tr>
         <td>flag</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Changes how the string split works, add multiple flag values together if required:</span><span lang="fr" style="display: none">Modifie le fonctionnement de la fonction, ajoutez plusieurs valeurs de flag ensemble si besoin:</span></span><br>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">Changes how the string split works, add multiple flag values together if required:</span><span lang="fr" style="display: none">Modifie le fonctionnement de la fonction, ajoutez plusieurs valeurs de flag ensemble si besoin:</span></span><br>
           &nbsp;&nbsp;&nbsp; $STR_CHRSPLIT (0) = each character in the delimiter string will mark where to split the string (default)<br>
           &nbsp;&nbsp;&nbsp; $STR_ENTIRESPLIT (1) = entire delimiter string is needed to mark the split<br>
           &nbsp;&nbsp;&nbsp; $STR_NOCOUNT (2) = disable the return count in the first element - effectively makes the array 0-based (must use <a href="UBound.htm">UBound()</a> to get the size of the array in this case).<br>
@@ -44,12 +43,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns an array, by default the first element ($aArray[0]) contains the number of strings returned, the remaining elements ($aArray[1], $aArray[2], etc.) contain the delimited strings.</span><span lang="fr" style="display: none">Retourne un tableau, par défaut le premier élément $array[0] contient le nombre de chaînes retournées, les éléments qui restent $array[1], $array[2], etc.contiennent les chaînes découpées.</span></span> <span class="segments"><span lang="en">If the flag parameter is set to $STR_NOCOUNT (2) then the count is not returned in the first element.</span><span lang="fr" style="display: none">Si le paramètre 'flag' est défini à $STR_NOCOUNT (2), alors le comptage n'est pas retourné dans le premier élément.</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array, by default the first element ($aArray[0]) contains the number of strings returned, the remaining elements ($aArray[1], $aArray[2], etc.) contain the delimited strings.</span><span lang="fr" style="display: none">Retourne un tableau, par défaut le premier élément $array[0] contient le nombre de chaînes retournées, les éléments qui restent $array[1], $array[2], etc.contiennent les chaînes découpées.</span></span> <span class="segments"><span lang="en">If the flag parameter is set to $STR_NOCOUNT (2) then the count is not returned in the first element.</span><span lang="fr" style="display: none">Si le paramètre 'flag' est défini à $STR_NOCOUNT (2), alors le comptage n'est pas retourné dans le premier élément.</span></span><br>
   <br>
   If no delimiters were found then the @error flag is set to 1:<br>
   If flag is not equal to $STR_NOCOUNT, $aArray[0] is set to 1 and the full string is returned in $aArray[1].<br>
   If flag is equal to $STR_NOCOUNT, the full string is returned in $aArray[0].<br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">If you use an empty string "" for the delimiters, each character will be returned as an element.</span><span lang="fr" style="display: none">Si vous utilisez une chaîne vide "" comme délimiteur, chaque caractère sera retourné comme un élément.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If the delimiter string contains several characters function behaviour depends on the flag setting.</span><span lang="fr" style="display: none">Si la chaîne des délimiteurs contient plusieurs caractères, le comportement de la fonction dépend du paramètre flag.</span></span> <span class="segments"><span lang="en">If set to $STR_CHRSPLIT the string will be split at every instance of each of the individual characters in the delimiter - if set to $STR_ENTIRESPLIT then the string will only be split when the entire delimiter string is encountered.</span><span lang="fr" style="display: none">S'il est défini à $STR_CHRSPLIT la chaîne sera coupée à chaque instance de chaque caractère delimiteur - s'il est défini à $STR_ENTIRESPLIT alors la chaîne sera coupée seulement quand la chaîne entière des délimiteurs est rencontrée.</span></span> <span class="segments"><span lang="en">See second example below.</span><span lang="fr" style="display: none">Voir le second exemple ci-dessous.</span></span><br>
@@ -57,9 +56,9 @@
   <span class="segments"><span lang="en">Note that the macro @CRLF is actually a 2 character string, so unless the flag parameter to $STR_ENTIRESPLIT extra blank lines will be generated as the string is split on both @CR and @LF.</span><span lang="fr" style="display: none">Remarquez que la macro @CRLF est actuellement une chaîne de 2 caractères, aussi si le paramètre flag est défini à $STR_ENTIRESPLIT des lignes vides seront générées puisque la chaîne sera coupée à la fois par @CR et @LF.</span></span><br>
   <br>
   <span class="segments"><span lang="en"><a href="StringSplit.htm">StringSplit()</a> is very useful as an alternative to <a href="StringInStr.htm">StringInStr()</a> as well as a means to populate an array.</span><span lang="fr" style="display: none"><a href="StringSplit.htm">StringSplit()</a> est une très bonne alternative à <a href="StringInStr.htm">StringInStr()</a> et comme moyen de remplissage d'un tableau.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="StringInStr.htm">StringInStr</a>, <a href="StringLeft.htm">StringLeft</a>, <a href="StringLen.htm">StringLen</a>, <a href="StringLower.htm">StringLower</a>, <a href="StringMid.htm">StringMid</a>, <a href="StringRight.htm">StringRight</a>, <a href="StringTrimLeft.htm">StringTrimLeft</a>, <a href="StringTrimRight.htm">StringTrimRight</a>, <a href="StringUpper.htm">StringUpper</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

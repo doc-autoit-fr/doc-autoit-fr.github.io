@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ObjEvent</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Handles incoming events from the given Object.</span><span lang="fr" style="display: none">Gère les événements entrants de l'objet donné.</span></span><br></p>
   <p class="codeheader">ObjEvent ( $ObjectVar, "functionprefix" [, "interface name"] )<br>
   ObjEvent ( "AutoIt.Error" [, "function"] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -35,12 +34,12 @@
       </tr>
       <tr>
         <td>"interface name"</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">name of an Event interface to use.</span><span lang="fr" style="display: none">nom d'une interface d'événement à utiliser.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">name of an Event interface to use.</span><span lang="fr" style="display: none">nom d'une interface d'événement à utiliser.</span></span><br>
         <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> It must be a supported as outgoing for the Object AND it must be of type DISPATCH.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -49,11 +48,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The first format is used to receive Events from the given Object.</span><span lang="fr" style="display: none">Le premier format est utilisé pour recevoir des événements de l'objet donné.</span></span><br>
   <span class="segments"><span lang="en">To receive a specific event, create an AutoIt function name using the given prefix appended with the event name.</span><span lang="fr" style="display: none">Pour recevoir un événement particulier, créez un nom de fonction AutoIt en utilisant le préfixe donné en annexe avec le nom de l'événement.</span></span><br>
   <br>
@@ -101,9 +100,9 @@
   </table><br>
   <br>
   <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for a detailed explanation.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour une explication détaillée.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlCreateObj.htm">GUICtrlCreateObj</a>, <a href="IsObj.htm">IsObj</a>, <a href="ObjCreate.htm">ObjCreate</a>, <a href="ObjGet.htm">ObjGet</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -142,7 +141,7 @@
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Error monitoring.</span><span lang="fr" style="display: none">Suivi d'erreur.</span></span> <span class="segments"><span lang="en">This will trap all COM errors while alive.</span><span lang="fr" style="display: none">Ce code piège toutes les erreurs COM pendant l'exécution.</span></span></span></span>
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">This particular object is declared as local, meaning after the function returns it will not exist.</span><span lang="fr" style="display: none">Cet objet particulier est déclarée en local, ce qui signifie qu'après le retour de la fonction, il n'existera plus.</span></span></span></span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S7">"AutoIt.Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_ErrFunc"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S7">"<span>AutoIt.<span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"_ErrFunc"</span><span class="S8">)</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create Internet Explorer object</span><span lang="fr" style="display: none">Crée un objet Internet Explorer</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjCreate.htm"><span class="S4">ObjCreate</span></a><span class="S8">(</span><span class="S7">"InternetExplorer.Application"</span><span class="S8">)</span>
@@ -253,7 +252,7 @@
 <a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S3">4096</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"COM Error Detected"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S8">)</span>
 
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Template_COMErrorRegister</span><span class="S8">()</span>
-<span class="S0">    </span><span class="S9">$__g_oTemplateCOMErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S7">"AutoIt.Error"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Template_COMErrFunc"</span><span class="S8">)</span>
+<span class="S0">    </span><span class="S9">$__g_oTemplateCOMErrorHandler</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/ObjEvent.htm"><span class="S4">ObjEvent</span></a><span class="S8">(</span><span class="S7">"<span>AutoIt.<span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Template_COMErrFunc"</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Template_COMErrorRegister</span>
 
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Template_COMErrorUnregister</span><span class="S8">()</span>

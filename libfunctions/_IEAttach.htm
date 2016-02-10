@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _IEAttach</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Attach to the specified instance of Internet Explorer where the search string sub-string matches (based on the selected mode)<br></p>
   <p class="codeheader">#include &lt;IE.au3&gt;<br>
   _IEAttach ( $sString [, $sMode = "title" [, $iInstance = 1]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,7 +29,7 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> specifies search mode<br>
+        <td><strong>[optional]</strong> specifies search mode<br>
         &nbsp;&nbsp;&nbsp; "title" = (Default) sub-string of main document title<br>
         &nbsp;&nbsp;&nbsp; "windowtitle" = sub-string of full window title (instead of document title)<br>
         &nbsp;&nbsp;&nbsp; "url" = sub-string or url of the current page<br>
@@ -43,11 +42,11 @@
       </tr>
       <tr>
         <td>$iInstance</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> 1-based index into group of browsers or embedded browsers matching $sString and $sMode. <span class="segments"><span lang="en">See Remarks.</span><span lang="fr" style="display: none">Voir Remarque.</span></span></td>
+        <td><strong>[optional]</strong> 1-based index into group of browsers or embedded browsers matching $sString and $sMode. <span class="segments"><span lang="en">See Remarks.</span><span lang="fr" style="display: none">Voir Remarque.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -56,10 +55,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>5 ($_IEStatus_InvalidValue) - Invalid Value<br>
         7 ($_IEStatus_NoMatch) - No Match</td>
       </tr>
@@ -69,7 +68,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><a href="_IEAttach.htm">_IEAttach()</a> provides the "dialogbox" parameter to attach to modal and modeless dialogs created by the browser.<br>
   It is important to note that not all dialogs created through browser interaction can be attached to and controlled in this way.<br>
   Many of these dialogs are actually standard windows and can be controlled through the traditional AutoIt window functions. A reliable way to tell the difference between these types of windows is to use the "AutoIt Window Info" tool to examine it -- if the window contains a control called "Internet Explorer_Server" then you can attach to it with this function, if it does not it is a standard window and traditional AutoIt windows functions must be used to control it.<br>
@@ -92,9 +91,9 @@
   <span class="segments"><span lang="en">Window objects do not offer access to all of the attributes of the InternetExplorer object (e.g. status text, address bar etc.).</span><span lang="fr" style="display: none">Window objects do not offer access to all of the attributes of the InternetExplorer object (e.g.status text, address bar etc.).</span></span><br>
   As well, if you attempt to use a function like <a href="_IENavigate.htm">_IENavigate()</a> on such an object you may receive COM errors due to the way that IE7 has implemented Tabs.<br>
   It may be useful to find browser instances in this way, but it is recommended that you immediately use <a href="_IEAttach.htm">_IEAttach()</a> using one of the other modes and using information that you may have obtained from the Window object in order to get a reference to the associated InternetExplorer object.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_IECreate.htm">_IECreate</a>, <a href="_IECreateEmbedded.htm">_IECreateEmbedded</a>, <a href="_IEQuit.htm">_IEQuit</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

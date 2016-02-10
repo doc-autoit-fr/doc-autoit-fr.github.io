@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUISetOnEvent</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUISetOnEvent</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Defines a user function to be called when a system button is clicked.</span><span lang="fr" style="display: none">Définit une fonction utilisateur à appeler quand un bouton système est cliqué.</span></span><br></p>
   <p class="codeheader">GUISetOnEvent ( specialID, "function" [, winhandle] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,11 +32,11 @@
       </tr>
       <tr>
         <td>winhandle</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Windows handle as returned by <a href="GUICreate.htm">GUICreate()</a> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <a href="GUICreate.htm">GUICreate()</a> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Windows handle as returned by <strong>GUICreate()</strong> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <strong>GUICreate()</strong> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -50,7 +49,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>OnEvent functions are only called when <a href="AutoItSetOption.htm#GUIOnEventMode">Opt("GUIOnEventMode", 1)</a> - when in this mode <a href="GUIGetMsg.htm">GUIGetMsg()</a> is NOT used at all.<br>
   <br>
   <span class="segments"><span lang="en">You can not call a function using parameters.</span><span lang="fr" style="display: none">Vous ne pouvez pas appeler une fonction avec des paramètres.</span></span><br>
@@ -113,8 +112,8 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2><a href="GUICtrlSetOnEvent.htm">GUICtrlSetOnEvent</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIEventOptions (Option)</a>, <a href="AutoItSetOption.htm#GUIOnEventMode">GUIOnEventMode (Option)</a>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2><a href="GUICtrlSetOnEvent.htm">GUICtrlSetOnEvent</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIEventOptions (Option)</a>, <a href="AutoItSetOption.htm#GUIOnEventMode">GUIOnEventMode (Option)</a>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

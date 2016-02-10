@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction InetRead</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>InetRead</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Downloads a file from the internet using the HTTP, HTTPS or FTP protocol.</span><span lang="fr" style="display: none">Télécharge un fichier depuis internet en utilisant le protocole HTTP, HTTPS ou FTP.</span></span><br></p>
   <p class="codeheader">InetRead ( "URL" [, options = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>options</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        <td><strong>[optional]</strong><br>
         &nbsp;&nbsp;&nbsp; $INET_LOCALCACHE (0) = Get the file from local cache if available (default).<br>
         &nbsp;&nbsp;&nbsp; $INET_FORCERELOAD (1) = Forces a reload from the remote site.<br>
         &nbsp;&nbsp;&nbsp; $INET_IGNORESSL (2) = Ignore all SSL errors (with HTTPS connections).<br>
@@ -41,7 +40,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -54,7 +53,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Internet Explorer 3 or greater must be installed for this function to work.</span><span lang="fr" style="display: none">Internet Explorer 3 ou plus récent doit être installé pour faire fonctionner la fonction.</span></span><br>
   <br>
   <span class="segments"><span lang="en">The URL parameter should be in the form "http://www.somesite.com/path/file.html" - just like an address you would type into your web browser.</span><span lang="fr" style="display: none">Le paramètre URL devrait être de la forme "http://www.lesite.com/chemin/fichier.html" - tout comme une adresse que vous tapez dans votre navigateur web.</span></span><br>
@@ -65,9 +64,9 @@
   <span class="segments"><span lang="en">The returned data is in binary format.</span><span lang="fr" style="display: none">Les données retournées sont au format binaire.</span></span> <span class="segments"><span lang="en">The <a href="BinaryToString.htm">BinaryToString()</a> function can be used to convert the data to a string.</span><span lang="fr" style="display: none">La fonction <a href="BinaryToString.htm">BinaryToString()</a> peut-être utilisée pour convertir les données en chaîne.</span></span><a href="BinaryToString.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">By default AutoIt forces a connection before starting a download.</span><span lang="fr" style="display: none">Par défaut, AutoIt force une connexion avant de démarrer un téléchargement.</span></span> <span class="segments"><span lang="en">For dial-up users this will prompt to go online or dial the modem (depending on how the system is configured).</span><span lang="fr" style="display: none">Les utilisateurs de modems analogique seront invités à passer en ligne ou le numéro sera composé (selon la configuration du système).</span></span> <span class="segments"><span lang="en">The options value $INET_FORCEBYPASS (16) disables this behavior.</span><span lang="fr" style="display: none">L'option $INET_FORCEBYPASS (16) désactive ce comportement.</span></span> <span class="segments"><span lang="en">Disabling the behavior can be useful for persistent connects (Broadband, LAN).</span><span lang="fr" style="display: none">Désactiver ce comportement peut-être utile pour les connexions continues (Large bande , LAN).</span></span> <span class="segments"><span lang="en">However, it is also required to work around certain issues in Windows Vista and Windows 7.</span><span lang="fr" style="display: none">Cependant, il est aussi nécessaire de travailler autour de certains problèmes dans Windows Vista et Windows 7.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="FtpSetProxy.htm">FtpSetProxy</a>, <a href="HttpSetProxy.htm">HttpSetProxy</a>, <a href="HttpSetUserAgent.htm">HttpSetUserAgent</a>, <a href="InetGet.htm">InetGet</a>, <a href="InetGetSize.htm">InetGetSize</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

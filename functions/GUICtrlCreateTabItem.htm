@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlCreateTabItem</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlCreateTabItem</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a TabItem control within an existing tab control in the GUI.</span><span lang="fr" style="display: none">Crée un contrôle TabItem dans un contrôle Tab existant dans une GUI.</span></span><br></p>
   <p class="codeheader">GUICtrlCreateTabItem ( "text" )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -42,7 +41,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">To select a specific tabitem to be shown when the GUI opens use <a href="GUICtrlSetState.htm">GUICtrlSetState</a>(-1, $GUI_SHOW) as shown in the example.</span><span lang="fr" style="display: none">Pour sélectionner un TabItem spécifique à afficher lorsque la GUI s'ouvre, utilisez <a href="GUICtrlSetState.htm">GUICtrlSetState</a>( -1, $ GUI_SHOW ), comme illustré dans l'exemple.</span></span><br>
   <br>
   <span class="segments"><span lang="en">It is important to close the tab structure by creating a final tabitem control with a null text - <a href="GUICtrlCreateTabItem.htm">GUICtrlCreateTabItem</a>("").</span><span lang="fr" style="display: none">Il est important de fermer la structure Tab en créant un contrôle TabItem finale avec un texte null - <a href="GUICtrlCreateTabItem.htm">GUICtrlCreateTabItem</a>("").</span></span><br>
@@ -54,9 +53,9 @@
   <span class="segments"><span lang="en"><a href="GUICtrlRead.htm">GUICtrlRead()</a> will return the index of the clicked tab item, or the controlID when advanced mode is used.</span><span lang="fr" style="display: none"><a href="GUICtrlRead.htm">GUICtrlRead()</a> retournera l'index du TabItem cliqué, ou le controlID lorsque le mode avancé est utilisé.</span></span><br>
   <br>
   <span class="segments"><span lang="en">To set or change information in the control see <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...()</a> functions.</span><span lang="fr" style="display: none">Pour définir ou modifier des informations dans le contrôle, consultez les fonctions <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...()</a>.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlCreateTab.htm">GUICtrlCreateTab</a>, <a href="GUICtrlRead.htm">GUICtrlRead</a>, <a href="GUICtrlSetState.htm">GUICtrlSetState</a>, <a href="AutoItSetOption.htm#GUIEventOptions">GUIEventOptions (Option)</a>, <a href="GUIGetMsg.htm">GUIGetMsg</a>, <a href="GUISwitch.htm">GUISwitch</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -122,7 +121,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idMsg</span>
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 

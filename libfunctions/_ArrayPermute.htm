@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayPermute</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Returns an array of the Permutations of all Elements in a 1D array</span><span lang="fr" style="display: none">Retourne un tableau des permutations de tous les éléments d'un tableau 1D</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayPermute ( ByRef $aArray [, $sDelimiter = ""] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,11 +29,11 @@
       </tr>
       <tr>
         <td>$sDelimiter</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">String result separator, default is "" for none</span><span lang="fr" style="display: none">Séparateur à utiliser dans les chaînes résultats , par défaut est "" pour aucun séparateur.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">String result separator, default is "" for none</span><span lang="fr" style="display: none">Séparateur à utiliser dans les chaînes résultats , par défaut est "" pour aucun séparateur.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -45,21 +44,21 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - The Input Must be an Array</span><span lang="fr" style="display: none">1 - L'entrée doit être un tableau</span></span><br>
         <span class="segments"><span lang="en">2 - $aArray is not a 1 dimensional array</span><span lang="fr" style="display: none">2 - $aArray n'est pas un tableau 1D</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The input array must be 0-based, i.e. no counter in $aArray[0].</span><span lang="fr" style="display: none">Le tableau d'entrée doit être de base 0, c'est à dire qu'il ne doit pas y avoir le nombre d'éléments dans $aArray[0].</span></span><br>
   <span class="segments"><span lang="en">Based on the algorithm by Alexander Bogomolny (<a href="http://www.bearcave.com/random_hacks/permute.html">http://www.bearcave.com/random_hacks/permute.html</a>).</span><span lang="fr" style="display: none">Sur la base de l'algorithme de Alexander Bogomolny ( <a href="http://www.bearcave.com/random_hacks/permute.html">http://www.bearcave.com/random_hacks/permute.html</a> ).</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ArrayCombinations.htm">_ArrayCombinations</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

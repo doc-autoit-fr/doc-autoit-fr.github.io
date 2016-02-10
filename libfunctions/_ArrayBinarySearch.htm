@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayBinarySearch</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Uses the binary search algorithm to search through a 1D or 2D array</span><span lang="fr" style="display: none">Utilise l'algorithme de recherche binaire dans un tableau trié 1D ou 2D</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayBinarySearch ( Const ByRef $aArray, $vValue [, $iStart = 0 [, $iEnd = 0 [, $iColumn = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,19 +33,19 @@
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Index of array to start searching at</span><span lang="fr" style="display: none">Index du tableau où commencer la recherche</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to start searching at</span><span lang="fr" style="display: none">Index du tableau où commencer la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Index of array to stop searching at</span><span lang="fr" style="display: none">Index du tableau où arrêter la recherche</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to stop searching at</span><span lang="fr" style="display: none">Index du tableau où arrêter la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iColumn</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Column of array to search</span><span lang="fr" style="display: none">Colonne du tableau où effectuer la recherche</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Column of array to search</span><span lang="fr" style="display: none">Colonne du tableau où effectuer la recherche</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -55,10 +54,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne -1 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - $aArray is not an array</span><span lang="fr" style="display: none">1 - $aArray n'est pas un tableau</span></span><br>
         2 - $vValue outside of array min/max values<br>
         3 - $vValue was not found in array<br>
@@ -69,11 +68,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When performing a binary search on an array of items, the array (specified column if 2D) MUST be sorted before the search is done. Otherwise undefined results will be returned.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ArrayFindAll.htm">_ArrayFindAll</a>, <a href="_ArraySearch.htm">_ArraySearch</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

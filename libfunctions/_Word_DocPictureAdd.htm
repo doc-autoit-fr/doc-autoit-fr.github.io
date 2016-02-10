@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Word_DocPictureAdd</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Adds a picture to the document<br></p>
   <p class="codeheader">#include &lt;Word.au3&gt;<br>
   _Word_DocPictureAdd ( $oDoc, $sFilePath [, $bLinkToFile = False [, $bSaveWithDocument = False [, $oRange = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,24 +33,24 @@
       </tr>
       <tr>
         <td>$bLinkToFile</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether to link the picture to the file from which it was created.<br>
+        <td><strong>[optional]</strong> Specifies whether to link the picture to the file from which it was created.<br>
         &nbsp;&nbsp;&nbsp; True - Link the picture to the file from which it was created<br>
         &nbsp;&nbsp;&nbsp; False - Make the picture an independent copy of the file (default)</td>
       </tr>
       <tr>
         <td>$bSaveWithDocument</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether to save the linked picture with the document.<br>
+        <td><strong>[optional]</strong> Specifies whether to save the linked picture with the document.<br>
         &nbsp;&nbsp;&nbsp; True - Save the linked picture with the document<br>
         &nbsp;&nbsp;&nbsp; False - Do not save the linked picture with the document (default)</td>
       </tr>
       <tr>
         <td>$oRange</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The location where the picture will be placed in the text.<br>
+        <td><strong>[optional]</strong> The location where the picture will be placed in the text.<br>
         Can be 0 (the picture is placed automatically) or any range object (default = 0)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -60,10 +59,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oDoc is not an object<br>
         2 - The specified picture does not exist<br>
         3 - Error occurred when adding the specified picture. @extended is set to the COM error code<br>
@@ -71,7 +70,7 @@
       </tr>
     </tbody>
   </table>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

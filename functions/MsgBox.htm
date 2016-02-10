@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction MsgBox</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>MsgBox</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Displays a simple message box with optional timeout.</span><span lang="fr" style="display: none">Affiche une simple boîte de message, avec temporisation optionnelle.</span></span><br></p>
   <p class="codeheader">MsgBox ( flag, "title", "text" [, timeout = 0 [, hwnd]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -37,15 +36,15 @@
       </tr>
       <tr>
         <td>timeout</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -105,7 +104,7 @@
     </tbody>
   </table><br>
   Constants are defined in MsgBoxConstants.au3.<br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The flag parameter can be a combination of the following values:</span><span lang="fr" style="display: none">Le paramètre 'flag' peut être une combinaison des valeurs suivantes :</span></span><br>
   <br></p>
   <table>
@@ -312,9 +311,9 @@
   Special note; MsgBox does not support the use of the timeout parameter when the $MB_SERVICE_NOTIFICATION flag is used when calling MsgBox from a service. The message box window is not owned by the process calling MsgBox when $MB_SERVICE_NOTIFICATION is specified.<br>
   <br>
   <span class="segments"><span lang="en">Constants are defined in MsgBoxConstants.au3</span><span lang="fr" style="display: none">Les constantes sont définies dans MsgBoxConstants.au3</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="InputBox.htm">InputBox</a>, <a href="SplashTextOn.htm">SplashTextOn</a>, <a href="ToolTip.htm">ToolTip</a>, <a href="TrayTip.htm">TrayTip</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction Int</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>Int</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Returns the integer (whole number) representation of an expression.</span><span lang="fr" style="display: none">Retourne la partie entière d'une expression (l'entier immédiatement inférieur).</span></span><br></p>
   <p class="codeheader">Int ( expression [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Defines behavior.</span><span lang="fr" style="display: none">Définit le comportement.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Defines behavior.</span><span lang="fr" style="display: none">Définit le comportement.</span></span><br>
         <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $NUMBER_AUTO (0) = (default) the result is auto-sized integer. <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span><br>
         &nbsp;&nbsp;&nbsp; $NUMBER_32BIT (1) = string is interpreted as a 32bit integer<br>
@@ -39,15 +38,15 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2><span class="segments"><span lang="en">Returns an integer.</span><span lang="fr" style="display: none">Retourne un entier.</span></span><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an integer.</span><span lang="fr" style="display: none">Retourne un entier.</span></span><br>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Default behavior is that if the result is within range of 32bit integer then 32bit integer is returned.</span><span lang="fr" style="display: none">Le comportement par défaut est que si le résultat est dans la plage des entiers 32 bits, alors un entier 32 bits est retourné.</span></span> <span class="segments"><span lang="en">If not, 64bit integer is returned.</span><span lang="fr" style="display: none">Si non, un entier 64 bits est retourné.</span></span> Both are signed.<br>
   <span class="segments"><span lang="en">Fractional portions are truncated, so <a href="Int.htm">Int</a>(1.999999) returns 1</span><span lang="fr" style="display: none">La partie fractionnaire est tronqué, de sorte que <a href="Int.htm">Int</a>(1.999999) renvoie 1</span></span><br>
   <span class="segments"><span lang="en"><a href="Int.htm">Int</a>(0/0) returns -9223372036854775807, if you were wondering.</span><span lang="fr" style="display: none"><a href="Int.htm">Int</a>(0/0 ) retourne -9223372036854775807, si vous vous posiez la question.</span></span><br>
   This function makes minor corrections to floating point numbers to account for the imprecise nature of floating point numbers. <span class="segments"><span lang="en">For example, the floating point expression 0.7 + 0.2 + 0.1 produces a floating point number that is not quite 1.0.</span><span lang="fr" style="display: none">Par exemple, l'expression en virgule flottante 0,7 + 0,2 + 0,1 produit un nombre à virgule flottante qui n'est pas tout à fait 1.0.</span></span> <a href="Int.htm">Int()</a> corrects for this anomaly, however, certain extremely rare circumstances may lead to <a href="Int.htm">Int()</a> returning an unexpected value (the odds of getting an unexpected value are less than if <a href="Int.htm">Int()</a> did not attempt any correction at all).<a href="Int.htm"></a><a href="Int.htm"></a><a href="Int.htm"></a><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="Binary.htm">Binary</a>, <a href="Ceiling.htm">Ceiling</a>, <a href="Floor.htm">Floor</a>, <a href="HWnd.htm">HWnd</a>, <a href="Mod.htm">Mod</a>, <a href="Number.htm">Number</a>, <a href="Ptr.htm">Ptr</a>, <a href="Round.htm">Round</a>, <a href="String.htm">String</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

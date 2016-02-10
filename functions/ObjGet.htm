@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ObjGet</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>ObjGet</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Retrieves a reference to a COM object from an existing process or filename.</span><span lang="fr" style="display: none">Récupère une référence sur un objet COM à partir d'un processus ou d'un fichier existant.</span></span><br></p>
   <p class="codeheader">ObjGet ( "filename" [, "classname" [, instance]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,15 +28,15 @@
       </tr>
       <tr>
         <td>classname</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Class identifier.</span><span lang="fr" style="display: none">Identifiant de classe.</span></span> <span class="segments"><span lang="en">Can be in either ProgID or the string representation of the CLSID.</span><span lang="fr" style="display: none">Peut être ProgID ou la représentation chaîne du CLSID.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Class identifier.</span><span lang="fr" style="display: none">Identifiant de classe.</span></span> <span class="segments"><span lang="en">Can be in either ProgID or the string representation of the CLSID.</span><span lang="fr" style="display: none">Peut être ProgID ou la représentation chaîne du CLSID.</span></span></td>
       </tr>
       <tr>
         <td>instance</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Instance of the object for ROT objects of the same (co)class.</span><span lang="fr" style="display: none">Instance de l'objet pour les objets ROT da la même classe.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Instance of the object for ROT objects of the same (co)class.</span><span lang="fr" style="display: none">Instance de l'objet pour les objets ROT da la même classe.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -46,11 +45,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The filename is optional if you want to use only the class identifier, but the parameter can't be omitted.</span><span lang="fr" style="display: none">Le nom du fichier est facultatif si vous souhaitez utiliser uniquement l'identifiant de classe, mais le paramètre ne peut pas être omis.</span></span><br>
   <span class="segments"><span lang="en">Use an empty string if you want to access objects from running objects table (ROT).</span><span lang="fr" style="display: none">Utilisez une chaîne vide si vous voulez accéder à des objets de la Table des Objets en cours d'Exécution (Running Object Table).</span></span> <span class="segments"><span lang="en">You can use third parameter to specify wanted instance in that case.</span><span lang="fr" style="display: none">Vous pouvez utiliser la troisième paramètre pour spécifier l'instance désirée dans ce cas.</span></span><br>
   <span class="segments"><span lang="en">In all other cases third parameter is ignored.</span><span lang="fr" style="display: none">Dans tous les autres cas, la troisième paramètre est ignoré.</span></span><br>
@@ -59,9 +58,9 @@
   <span class="segments"><span lang="en">Classname parameter <strong>does not</strong> have default value.</span><span lang="fr" style="display: none">Le paramètre Classname <strong>ne peut pas</strong> avoir une valeur par défaut.</span></span> <span class="segments"><span lang="en">If it's specified then it's processed.</span><span lang="fr" style="display: none">Si il est spécifié, alors il est traité.</span></span><br>
   <br>
   <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for more information about Objects.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour plus d'informations sur les objets.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlCreateObj.htm">GUICtrlCreateObj</a>, <a href="IsObj.htm">IsObj</a>, <a href="ObjCreate.htm">ObjCreate</a>, <a href="ObjEvent.htm">ObjEvent</a>, <a href="ObjName.htm">ObjName</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

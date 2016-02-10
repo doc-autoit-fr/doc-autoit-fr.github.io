@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ObjCreate</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>ObjCreate</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a reference to a COM object from the given classname.</span><span lang="fr" style="display: none">Crée une référence à un objet COM à partir d'un nom de classe donné.</span></span><br></p>
   <p class="codeheader">ObjCreate ( "classname" [, "servername" [, "username" [, "password"]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,20 +29,20 @@
       </tr>
       <tr>
         <td>servername</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">name of a remote computer from which the object must be obtained.</span><span lang="fr" style="display: none">nom d'un ordinateur distant à partir duquel l'objet doit être obtenue.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">name of a remote computer from which the object must be obtained.</span><span lang="fr" style="display: none">nom d'un ordinateur distant à partir duquel l'objet doit être obtenue.</span></span></td>
       </tr>
       <tr>
         <td>username</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">name of a usercode on the remote computer.</span><span lang="fr" style="display: none">code utilisateur sur l'ordinateur distant.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">name of a usercode on the remote computer.</span><span lang="fr" style="display: none">code utilisateur sur l'ordinateur distant.</span></span><br>
         <span class="segments"><span lang="en">You have to enter this in the format "computer\usercode" or "domain\usercode".</span><span lang="fr" style="display: none">Vous devez entrer ce code dans le format "ordinateur\usercode" ou "domaine\usercode".</span></span></td>
       </tr>
       <tr>
         <td>password</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">password for the usercode on the remote computer.</span><span lang="fr" style="display: none">mot de passe pour le code utilisateur sur l'ordinateur distant.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">password for the usercode on the remote computer.</span><span lang="fr" style="display: none">mot de passe pour le code utilisateur sur l'ordinateur distant.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -52,11 +51,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Use <a href="ObjCreate.htm">ObjCreate()</a> if you want to have a new instance of the referring application.</span><span lang="fr" style="display: none">Utilisez <a href="ObjCreate.htm">ObjCreate()</a> si vous voulez avoir une nouvelle instance de l'application référencé.</span></span><br>
   <span class="segments"><span lang="en">If you want to connect to an existing process, use <a href="ObjGet.htm">ObjGet()</a> instead.</span><span lang="fr" style="display: none">Si vous souhaitez vous connecter à un processus existant, utilisez à la place <a href="ObjGet.htm">ObjGet()</a>.</span></span><br>
   <br>
@@ -74,9 +73,9 @@
   </ul><br>
   <br>
   <span class="segments"><span lang="en">See the <a href="../intro/ComRef.htm">Obj/COM Reference</a> for more information about Objects.</span><span lang="fr" style="display: none">Consultez <a href="../intro/ComRef.htm">Référence Obj/COM</a> pour plus d'informations sur les objets.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlCreateObj.htm">GUICtrlCreateObj</a>, <a href="IsObj.htm">IsObj</a>, <a href="ObjEvent.htm">ObjEvent</a>, <a href="ObjGet.htm">ObjGet</a>, <a href="ObjName.htm">ObjName</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

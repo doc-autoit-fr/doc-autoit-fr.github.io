@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction StringToASCIIArray</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>StringToASCIIArray</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Converts a string to an array containing the ASCII code of each character.</span><span lang="fr" style="display: none">Convertit une chaîne en un tableau contenant le code ASCII de chaque caractère.</span></span><br></p>
   <p class="codeheader">StringToASCIIArray ( "string",[start = 0 [, end [, encoding = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,15 +28,17 @@
       </tr>
       <tr>
         <td>start</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The 0-based position to start processing from (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit commencer ( par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based position to start processing from (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit commencer ( par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
       </tr>
       <tr>
         <td>end</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The 0-based position to end processing at (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit s'arrêter ( par défaut :</span></span> <span class="segments"><span lang="en"><a href="StringLen.htm">StringLen</a>("string")).</span><span lang="fr" style="display: none"><a href="StringLen.htm">StringLen</a>("chaîne")).</span></span></td>
+        <td>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based position to end processing at (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit s'arrêter ( par défaut :</span></span> <span class="segments"><span lang="en"><a href="StringLen.htm">StringLen</a>("string")).</span><span lang="fr" style="display: none"><a href="StringLen.htm">StringLen</a>("chaîne")).</span></span><a href="StringLen.htm"></a>
+        </td>
       </tr>
       <tr>
         <td>encoding</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The returned array will contain values in the specified character set:</span><span lang="fr" style="display: none">Le tableau retourné contiendra les valeurs dans le jeu de caractères spécifié :</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The returned array will contain values in the specified character set:</span><span lang="fr" style="display: none">Le tableau retourné contiendra les valeurs dans le jeu de caractères spécifié :</span></span><br>
         &nbsp;&nbsp;&nbsp; $SE_UTF16 (0) = UTF-16 (Default)<br>
         &nbsp;&nbsp;&nbsp; $SE_ANSI (1) = ANSI<br>
         &nbsp;&nbsp;&nbsp; $SE_UTF8 (2) = UTF-8<br>
@@ -46,7 +47,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -59,13 +60,13 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The string may contain embedded <a href="Chr.htm">Chr</a>(0).</span><span lang="fr" style="display: none">La chaîne peut embarquer des caractères <a href="Chr.htm">Chr</a>(0).</span></span> <span class="segments"><span lang="en">These will appear in the returned array as well as any data past them.</span><span lang="fr" style="display: none">Ceux-ci apparaissent dans le tableau retourné ainsi que les données passées avec eux.</span></span> <span class="segments"><span lang="en">Processing only stops when the end of the string is reached or the user specified end.</span><span lang="fr" style="display: none">Traitement ne s'arrête que lorsque la fin de la chaîne est atteinte ou que l'utilisateur ait spécifié la fin.</span></span><br>
   <br>
   <span class="segments"><span lang="en">In order to convert binary data to an array using this function it must first be converted to a string with the <a href="BinaryToString.htm">BinaryToString()</a> function.</span><span lang="fr" style="display: none">Afin de convertir les données binaires en un tableau en utilisant cette fonction, il doit d'abord être converti en une chaîne avec la fonction <a href="BinaryToString.htm">BinaryToString()</a>.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="BinaryToString.htm">BinaryToString</a>, <a href="StringFromASCIIArray.htm">StringFromASCIIArray</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

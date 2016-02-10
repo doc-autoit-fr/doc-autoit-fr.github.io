@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CreateFileEx</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Creates or opens a file or I/O device<br></p>
   <p class="codeheader">#include &lt;WinAPIFiles.au3&gt;<br>
   _WinAPI_CreateFileEx ( $sFilePath, $iCreation [, $iAccess = 0 [, $iShare = 0 [, $iFlagsAndAttributes = 0 [, $tSecurity = 0 [, $hTemplate = 0]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -39,7 +38,7 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The requested access to the file or device, which can be summarized as read, write, both or neither (zero) (Default).<br>
+        <td><strong>[optional]</strong> The requested access to the file or device, which can be summarized as read, write, both or neither (zero) (Default).<br>
         &nbsp;&nbsp;&nbsp; $GENERIC_READ<br>
         &nbsp;&nbsp;&nbsp; $GENERIC_WRITE<br>
         &nbsp;&nbsp;&nbsp; (See MSDN for more information)</td>
@@ -47,7 +46,7 @@
       <tr>
         <td>$iShare</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The requested sharing mode of the file or device, which can be read, write, both, delete, all of these, or none.<br>
+          <strong>[optional]</strong> The requested sharing mode of the file or device, which can be read, write, both, delete, all of these, or none.<br>
           If this parameter is 0 (Default) and <a href="_WinAPI_CreateFileEx.htm">_WinAPI_CreateFileEx()</a> succeeds, the file or device cannot be shared and cannot be opened again until the handle to the file or device is closed.<br>
           &nbsp;&nbsp;&nbsp; $FILE_SHARE_DELETE<br>
           &nbsp;&nbsp;&nbsp; $FILE_SHARE_READ<br>
@@ -56,7 +55,7 @@
       </tr>
       <tr>
         <td>$iFlagsAndAttributes</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The file or device attributes and flags. This parameter can be one or more of the following values:<br>
+        <td><strong>[optional]</strong> The file or device attributes and flags. This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $FILE_ATTRIBUTE_READONLY<br>
         &nbsp;&nbsp;&nbsp; $FILE_ATTRIBUTE_HIDDEN<br>
         &nbsp;&nbsp;&nbsp; $FILE_ATTRIBUTE_SYSTEM<br>
@@ -92,16 +91,16 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> $tagSECURITY_ATTRIBUTES structure that contains two separate but related data members: an optional security descriptor, and a Boolean value that determines whether the returned handle can be inherited by child processes.<br>
+        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that contains two separate but related data members: an optional security descriptor, and a Boolean value that determines whether the returned handle can be inherited by child processes.<br>
         If this parameter is 0 (Default), the handle cannot be inherited by any child processes the application may create and the file or device associated with the returned handle gets a default security descriptor.</td>
       </tr>
       <tr>
         <td>$hTemplate</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Handle to a template file with the $GENERIC_READ access right. The template file supplies file attributes and extended attributes for the file that is being created.</td>
+        <td><strong>[optional]</strong> Handle to a template file with the $GENERIC_READ access right. The template file supplies file attributes and extended attributes for the file that is being created.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -116,12 +115,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>When an application is finished using the object handle returned by this function, use the <a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle()</a> function to close the handle.<br>
   This not only frees up system resources, but can have wider influence on things like sharing the file or device and committing data to disk.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_CloseHandle.htm">_WinAPI_CloseHandle</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CreateFile);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CreateFile</a> in MSDN Library.</p>
 </body>
 </html>

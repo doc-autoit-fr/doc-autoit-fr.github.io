@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_Create32BitHICON</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Converts an icon to a 32 bits-per-pixel format and copies to the new icon<br></p>
   <p class="codeheader">#include &lt;WinAPIGdi.au3&gt;<br>
   _WinAPI_Create32BitHICON ( $hIcon [, $bDelete = False] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,13 +29,13 @@
       </tr>
       <tr>
         <td>$bDelete</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies whether to delete the icon after the function is successful, valid values:<br>
+        <td><strong>[optional]</strong> Specifies whether to delete the icon after the function is successful, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Icon will be deleted if the function succeeds.<br>
         &nbsp;&nbsp;&nbsp; False - Do not delete, you must release the icon themselves when you are finished using it (Default).</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -45,11 +44,11 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This function converts an icon with any color depth into an icon with 32 bits-per-pixel (RGB + Alpha) format.<br>
   If the source icon already is a 32 bits-per-pixel icon, and has an alpha chanel, the function generates the new AND bitmask bitmap, and copies it to a new icon.<br>
   If the source icon has a 32 bits-per-pixel color depth, and do not have an alpha chanel, the function creates an alpha chanel from its AND bitmask.<br>
@@ -60,7 +59,7 @@
   Therefore, its XOR and AND bitmasks will remain unchanged.<br>
   <br>
   When you are finished using the icon, destroy it using the <a href="_WinAPI_DestroyIcon.htm">_WinAPI_DestroyIcon()</a> function.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_DestroyIcon.htm">_WinAPI_DestroyIcon</a></p>
 </body>
 </html>

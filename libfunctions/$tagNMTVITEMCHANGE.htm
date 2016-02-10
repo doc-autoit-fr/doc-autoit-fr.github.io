@@ -2,44 +2,54 @@
 <html>
 <head>
   <title>Keyword $tagNMTVITEMCHANGE</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  </script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  </script>
+  <script src="../js/custom.js">
+  </script>
 </head>
 <body>
   <h1 class="small">Keyword Reference</h1>
   <hr style="height:0px">
   <h1>$tagNMTVITEMCHANGE</h1>
-  <p class="funcdesc">Contains information on a treeview item change, sent with $TVN_ITEMCHANGED and $TVN_ITEMCHANGING notifications<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Contains information on a treeview item change, sent with $TVN_ITEMCHANGED and $TVN_ITEMCHANGING notifications</span><span lang="fr" style="display: none">Contient des informations sur le changement d'un élément de treeview, envoyées avec les notifications $TVN_ITEMCHANGED et $TVN_ITEMCHANGING</span></span><br></p>
   <p class="codeheader">Global Const $tagNMTVITEMCHANGE = $tagNMHDR & ";uint Changed;handle hItem;uint StateNew;uint StateOld;lparam lParam;"<br></p>
-  <h2>Parameters</h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
-    <tr>
-      <td style="width:15%">$tagNMHDR</td>
-      <td style="width:85%">Contains information about a notification message</td>
-    </tr>
-    <tr>
-      <td>Changed</td>
-      <td>Specifies the attribute. Changed must always have the following value:<br>
-      &nbsp;&nbsp;&nbsp; TVIF_STATE - The change is the state attribute.</td>
-    </tr>
-    <tr>
-      <td>hItem</td>
-      <td>Handle to the changed tree-view item.</td>
-    </tr>
-    <tr>
-      <td>StateNew</td>
-      <td>Flag that specifies the new item state.</td>
-    </tr>
-    <tr>
-      <td>StateOld</td>
-      <td>Flag that specifies the item's previous state.</td>
-    </tr>
-    <tr>
-      <td>lParam</td>
-      <td>Reserved for application specific data. For example, a value to associate with the item.</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td style="width:15%">$tagNMHDR</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Contains information about a notification message</span><span lang="fr" style="display: none">Contient des informations sur un message de notification</span></span></td>
+      </tr>
+      <tr>
+        <td>Changed</td>
+        <td>Specifies the attribute. Changed must always have the following value:<br>
+        &nbsp;&nbsp;&nbsp; TVIF_STATE - The change is the state attribute.</td>
+      </tr>
+      <tr>
+        <td>hItem</td>
+        <td>Handle to the changed tree-view item.</td>
+      </tr>
+      <tr>
+        <td>StateNew</td>
+        <td>Flag that specifies the new item state.</td>
+      </tr>
+      <tr>
+        <td>StateOld</td>
+        <td>Flag that specifies the item's previous state.</td>
+      </tr>
+      <tr>
+        <td>lParam</td>
+        <td>Reserved for application specific data. For example, a value to associate with the item.</td>
+      </tr>
+    </tbody>
   </table>
-  <h2>Remarks</h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>This notification is only present on Windows Vista and later.<br></p>
 </body>
 </html>

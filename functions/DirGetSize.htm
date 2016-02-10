@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction DirGetSize</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>DirGetSize</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Returns the size in bytes of a given directory.</span><span lang="fr" style="display: none">Retourne la taille en octets d'un répertoire donné.</span></span><br></p>
   <p class="codeheader">DirGetSize ( "path" [, flag = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">this flag determines the behaviour and result of the function, and can be a combination of the following:</span><span lang="fr" style="display: none">Ce paramètre détermine le comportement et le résultat de la fonction et peut être une combinaison de ce qui suit :</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">this flag determines the behaviour and result of the function, and can be a combination of the following:</span><span lang="fr" style="display: none">Ce paramètre détermine le comportement et le résultat de la fonction et peut être une combinaison de ce qui suit :</span></span><br>
         &nbsp;&nbsp;&nbsp; $DIR_DEFAULT (0) = (default)<br>
         &nbsp;&nbsp;&nbsp; $DIR_EXTENDED (1) = Extended mode is On -&gt; returns an array that contains extended information (see Remarks).<br>
         &nbsp;&nbsp;&nbsp; $DIR_NORECURSE (2) = Don't get the size of files in subdirectories (recursive mode is Off)<br>
@@ -38,7 +37,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -51,14 +50,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">If the script is paused then this function is paused too and will only continue when the script continues!</span><span lang="fr" style="display: none">Si le script est mis en pause alors cette fonction est mise en pause également et elle continuera quand le script sera reprit.</span></span><br>
   <br>
   <span class="segments"><span lang="en">If you use the extended mode then the array returned from this function is a single dimension array containing the following elements:</span><span lang="fr" style="display: none">Si vous utilisez le mode étendu, alors le tableau retourné par cette fonction est un tableau à 1 dimension contenant les éléments suivants :</span></span><br>
   <span class="segments"><span lang="en">$aArray[0] = Size</span><span lang="fr" style="display: none">$array[0] = Taille</span></span><br>
   <span class="segments"><span lang="en">$aArray[1] = Files count</span><span lang="fr" style="display: none">$array[1] = Nombre de fichiers</span></span><br>
   <span class="segments"><span lang="en">$aArray[2] = Dirs Count</span><span lang="fr" style="display: none">$array[2] = Nombre de répertoires</span></span><br></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

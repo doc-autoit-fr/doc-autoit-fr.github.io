@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ControlClick</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>ControlClick</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sends a mouse click command to a given control.</span><span lang="fr" style="display: none">Envoie un clic de souris sur un contrôle spécifié.</span></span><br></p>
   <p class="codeheader">ControlClick ( "title", "text", controlID [, button = "left" [, clicks = 1 [, x [, y]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -43,23 +42,23 @@
       </tr>
       <tr>
         <td>button</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The button to click, "left", "right", "middle", "main", "menu", "primary", "secondary".</span><span lang="fr" style="display: none">Le bouton à cliquer :"left", "right", "middle", "main", "menu", "primary", "secondary".</span></span> <span class="segments"><span lang="en">Default is the left button.</span><span lang="fr" style="display: none">Bouton gauche ("left") par défaut.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The button to click, "left", "right", "middle", "main", "menu", "primary", "secondary".</span><span lang="fr" style="display: none">Le bouton à cliquer :"left", "right", "middle", "main", "menu", "primary", "secondary".</span></span> <span class="segments"><span lang="en">Default is the left button.</span><span lang="fr" style="display: none">Bouton gauche ("left") par défaut.</span></span></td>
       </tr>
       <tr>
         <td>clicks</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The number of times to click the mouse.</span><span lang="fr" style="display: none">Le nombre de clics de souris.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The number of times to click the mouse.</span><span lang="fr" style="display: none">Le nombre de clics de souris.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span></td>
       </tr>
       <tr>
         <td>x</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The x position to click within the control.</span><span lang="fr" style="display: none">La position x du clic sur le contrôle.</span></span> <span class="segments"><span lang="en">Default is center.</span><span lang="fr" style="display: none">Centré par défaut.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The x position to click within the control.</span><span lang="fr" style="display: none">La position x du clic sur le contrôle.</span></span> <span class="segments"><span lang="en">Default is center.</span><span lang="fr" style="display: none">Centré par défaut.</span></span></td>
       </tr>
       <tr>
         <td>y</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The y position to click within the control.</span><span lang="fr" style="display: none">La position y du clic sur le contrôle.</span></span> <span class="segments"><span lang="en">Default is center.</span><span lang="fr" style="display: none">Centré par défaut.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The y position to click within the control.</span><span lang="fr" style="display: none">La position y du clic sur le contrôle.</span></span> <span class="segments"><span lang="en">Default is center.</span><span lang="fr" style="display: none">Centré par défaut.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -72,7 +71,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Some controls will resist clicking unless they are the active window.</span><span lang="fr" style="display: none">Certains contrôles peuvent résister aux clics tant qu'ils ne sont pas dans la fenêtre active.</span></span> <span class="segments"><span lang="en">Use the <a href="WinActivate.htm">WinActivate()</a> function to force the control's window to the top before using <a href="ControlClick.htm">ControlClick()</a>.</span><span lang="fr" style="display: none">Utilisez la fonction <a href="WinActivate.htm">WinActivate()</a> pour mettre la fenêtre des contrôles au premier plan avant d'utiliser <a href="ControlClick.htm">ControlClick()</a>.</span></span><a href="WinActivate.htm"></a><a href="ControlClick.htm"></a><br>
   <span class="segments"><span lang="en">Using 2 for the number of clicks will send a double-click message to the control - this can even be used to launch programs from an explorer control!</span><span lang="fr" style="display: none">La valeur 2 pour le nombre de clics permettra d'effectuer un double-clic sur le contrôle - Cela peut également servir à lancer des programmes depuis une fenêtre de l'explorateur !</span></span><br>
   <br>
@@ -127,9 +126,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="ControlCommand.htm">ControlCommand</a>, <a href="MouseClick.htm">MouseClick</a>, <a href="WinActivate.htm">WinActivate</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

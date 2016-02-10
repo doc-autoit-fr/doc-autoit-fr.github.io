@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction FileSelectFolder</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>FileSelectFolder</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Initiates a Browse For Folder dialog.</span><span lang="fr" style="display: none">Lance une boîte de dialogue pour choisir un dossier.</span></span><br></p>
   <p class="codeheader">FileSelectFolder ( "dialog text", "root dir" [, flag = 0 [, "initial dir" [, hwnd]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,7 +32,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span><br>
+        <td><strong>[optional]</strong><br>
         &nbsp;&nbsp;&nbsp; $FSF_CREATEBUTTON (1) = Show Create Folder Button (XP only)<br>
         &nbsp;&nbsp;&nbsp; $FSF_NEWDIALOG (2) = Use New Dialog Style (XP only)<br>
         &nbsp;&nbsp;&nbsp; $FSF_EDITCONTROL (4) = Show Edit Control (XP only)<br>
@@ -42,15 +41,15 @@
       </tr>
       <tr>
         <td>initial dir</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The full path of the folder you selected/highlighted when displaying dialogue (if it exists in the root folder). <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
+        <td><strong>[optional]</strong> The full path of the folder you selected/highlighted when displaying dialogue (if it exists in the root folder). <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -63,16 +62,16 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The root dir will be chosen if the initial dir (if given) does not exist.</span><span lang="fr" style="display: none">Le répertoire racine sera choisi si le dossier initial (si donnée) n'existe pas.</span></span><br>
   <span class="segments"><span lang="en">A nonexistent root dir will also cause the Desktop folder to be root.</span><span lang="fr" style="display: none">Un répertoire racine inexistant entraînera également que le dossier Bureau soit le répertoire racine.</span></span><br>
   <span class="segments"><span lang="en">Special Windows folders (such as "My Documents") can be set as root by using the right CLSID detailed in the <a href="../appendix/clsid.htm">Appendix</a>.</span><span lang="fr" style="display: none">Les dossiers Windows spéciaux (tels que "Mes Documents") peuvent être définis en tant que root en utilisant le bon CLSID détaillée dans l'<a href="../appendix/clsid.htm">Appendix</a>.</span></span><br>
   <span class="segments"><span lang="en">UNC paths are not supported.</span><span lang="fr" style="display: none">Les chemins UNC ne sont pas pris en charge.</span></span> <span class="segments"><span lang="en">If you think that user's may choose files on a UNC path then the path needs to be mapped as a drive first.</span><span lang="fr" style="display: none">Si vous pensez que l'utilisateur peut avoir besoin de choisir les fichiers sur un chemin UNC, le chemin doit être mappé comme un premier disque.</span></span><br>
   <br>
   <span class="segments"><span lang="en">The new vista+ dialog style is used if possible, regardless of the Use New Dialog Style flag.</span><span lang="fr" style="display: none">Le nouveau style de dialogue de Vista+ est utilisé si possible, suivant le flag Use New Dialog Style.</span></span> <span class="segments"><span lang="en">With the vista dialog style the edit control and create folder buttons are always shown, ignoring the flags parameter, and the dialog text parameter sets the title of the window.</span><span lang="fr" style="display: none">Avec le style de dialogue de Vista le contrôle edit et les boutons de création de dossier sont toujours affichés, ignorant les paramètres flag, et le paramètre texte du dialogue définit le titre de la fenêtre.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="FileOpenDialog.htm">FileOpenDialog</a>, <a href="FileSaveDialog.htm">FileSaveDialog</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

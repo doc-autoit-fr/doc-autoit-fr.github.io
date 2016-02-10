@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlRead</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlRead</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Read state or data of a control.</span><span lang="fr" style="display: none">Lit l'état ou les données d'un contrôle.</span></span><br></p>
   <p class="codeheader">GUICtrlRead ( controlID [, advanced = 0] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,7 +28,7 @@
       </tr>
       <tr>
         <td>advanced</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">returns extended information of a control.</span><span lang="fr" style="display: none">Retourne des informations étendus d'un contrôle.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">returns extended information of a control.</span><span lang="fr" style="display: none">Retourne des informations étendus d'un contrôle.</span></span><br>
         &nbsp;&nbsp;&nbsp; $GUI_READ_DEFAULT (0) = (Default) Returns a value with state or data of a control.<br>
         &nbsp;&nbsp;&nbsp; $GUI_READ_EXTENDED (1) = Returns extended information of a control (see Remarks).<br>
         <br>
@@ -37,7 +36,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -119,7 +118,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">In 'advanced' mode the return value contains additional data of the control (see below).</span><span lang="fr" style="display: none">En mode 'avancé' la valeur de retour contient des données supplémentaires sur le contrôle (Voir ci-dessous).</span></span><br>
   <br>
   <span class="segments"><span lang="en">Note: not all controls return additional data!</span><span lang="fr" style="display: none">Remarque: pas tous les contrôles renvoient des données supplémentaires!</span></span><br>
@@ -163,9 +162,9 @@
   For Listview items several states can be returned as $GUI_CHECKED and $GUI_UNCHECKED (only for listview controls with LVS_EX_CHECKBOXES-exstyle and on 'advanced' return) . So use i.e. <span class="segments"><span lang="en"><a href="BitAND.htm">BitAND</a>(<a href="GUICtrlRead.htm">GUICtrlRead</a>($Item),$GUI_CHECKED) to test if the item is checked.</span><span lang="fr" style="display: none">Donc utilisez <a href="BitAND.htm">BitAND</a>(<a href="GUICtrlRead.htm">GUICtrlRead</a>($item),$GUI_CHECKED) pour tester si l'item est cochée.</span></span><br>
   <br>
   For Treeview items several states can be returned as $GUI_FOCUS, $GUI_EXPAND and $GUI_CHECKED, $GUI_UNCHECKED (only for treeview controls with TVS_CHECKBOXES-style . So use i.e. <span class="segments"><span lang="en"><a href="BitAND.htm">BitAND</a>(<a href="GUICtrlRead.htm">GUICtrlRead</a>($Item),$GUI_CHECKED) to test if the item is checked.</span><span lang="fr" style="display: none">Donc utilisez <a href="BitAND.htm">BitAND</a>(<a href="GUICtrlRead.htm">GUICtrlRead</a>($item),$GUI_CHECKED) pour tester si l'item est cochée.</span></span><br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlCreate%20Management.htm">GUICtrlCreate...</a>, <a href="GUICtrlCreate%20Management.htm">GUICtrlGetState</a>, <a href="GUICtrlGetState.htm">GUICtrlSendMsg</a>, <a href="GUICtrlSendMsg.htm">GUICtrlSendToDummy</a>, <a href="GUICtrlSendToDummy.htm">GUICtrlSetData</a>, <a href="GUICtrlSetData.htm">GUICtrlUpdate...</a>, <a href="GUICtrlCreate%20Management.htm">GUIEventOptions (Option)</a>, <a href="GUICtrlGetState.htm">GUIGetMsg</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -215,7 +214,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">will display an empty dialog box</span><span lang="fr" style="display: none">Affiche une boîte de dialogue vide</span></span></span></span>
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iMenustate</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sMenutext</span>
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">        </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$idMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$idButton</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>

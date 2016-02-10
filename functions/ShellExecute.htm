@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction ShellExecute</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>ShellExecute</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Runs an external program using the ShellExecute API.</span><span lang="fr" style="display: none">Exécute un programme externe en utilisant l'API ShellExecute.</span></span><br></p>
   <p class="codeheader">ShellExecute ( "filename" [, "parameters" [, "workingdir" [, "verb" [, showflag]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,15 +28,15 @@
       </tr>
       <tr>
         <td>parameters</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Any parameters for the program.</span><span lang="fr" style="display: none">Les paramètres du programme.</span></span> <span class="segments"><span lang="en">Blank ("") uses none.</span><span lang="fr" style="display: none">Vide ("") si aucun.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Any parameters for the program.</span><span lang="fr" style="display: none">Les paramètres du programme.</span></span> <span class="segments"><span lang="en">Blank ("") uses none.</span><span lang="fr" style="display: none">Vide ("") si aucun.</span></span></td>
       </tr>
       <tr>
         <td>workingdir</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span></td>
       </tr>
       <tr>
         <td>verb</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The "verb" to use, common verbs include:</span><span lang="fr" style="display: none">Le "verbe" à utiliser, les verbes courants comprennent :</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "verb" to use, common verbs include:</span><span lang="fr" style="display: none">Le "verbe" à utiliser, les verbes courants comprennent :</span></span><br>
         &nbsp;&nbsp;&nbsp; $SHEX_OPEN ("open") = Opens the file specified. <span class="segments"><span lang="en">The file can be an executable file, a document file, or a folder</span><span lang="fr" style="display: none">Le fichier peut être un fichier exécutable, un fichier de document ou un dossier</span></span><br>
         &nbsp;&nbsp;&nbsp; $SHEX_EDIT ("edit") = Launches an editor and opens the document for editing. <span class="segments"><span lang="en">If "filename" is not a document file, the function will fail</span><span lang="fr" style="display: none">Si "filename" n'est pas un fichier document, la fonction échouera</span></span><br>
         &nbsp;&nbsp;&nbsp; $SHEX_PRINT ("print") = Prints the document file specified. <span class="segments"><span lang="en">If "filename" is not a document file, the function will fail</span><span lang="fr" style="display: none">Si "filename" n'est pas un fichier document, la fonction échouera</span></span><br>
@@ -48,14 +47,14 @@
       </tr>
       <tr>
         <td>showflag</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
         &nbsp;&nbsp;&nbsp; @SW_HIDE = Hidden window<br>
         &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimized window<br>
         &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximized window</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -64,17 +63,17 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">After running the requested program the script continues.</span><span lang="fr" style="display: none">Après avoir exécuté le programme demandé, le script continue.</span></span> <span class="segments"><span lang="en">To pause execution of the script until the spawned program has finished use the <a href="ShellExecuteWait.htm">ShellExecuteWait()</a> function instead.</span><span lang="fr" style="display: none">Pour mettre en pause l'exécution du script jusqu'à ce que le programme soit terminé, utilisez la fonction <a href="ShellExecuteWait.htm">ShellExecuteWait()</a> à la place.</span></span><a href="ShellExecuteWait.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">When no verb is specified the default verb is used.</span><span lang="fr" style="display: none">Lorsque aucun verbe n'est spécifié, un verbe est utilisé par défaut.</span></span> <span class="segments"><span lang="en">The default verb is the verb configured in the registry.</span><span lang="fr" style="display: none">Le verbe par défaut est le verbe configuré dans le Registre.</span></span> <span class="segments"><span lang="en">If no verb is set as default in the registry then the "open" verb is used.</span><span lang="fr" style="display: none">Si aucun verbe est défini par défaut dans le Registre, alors le verbe "open" est utilisé.</span></span> <span class="segments"><span lang="en">If the "open" verb is not present then the first verb listed in the registry is used.</span><span lang="fr" style="display: none">Si le verbe "open" n'est pas présent, alors le premier verbe inscrit au registre est utilisé.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="RunAsWait.htm">RunAsWait</a>, <a href="RunWait.htm">RunWait</a>, <a href="ShellExecuteWait.htm">ShellExecuteWait</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

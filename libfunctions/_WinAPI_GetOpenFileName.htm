@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_GetOpenFileName</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,16 +20,16 @@
   <p class="funcdesc">Creates an Open dialog box that lets the user specify the drive, directory, and the name of a file or set of files to open<br></p>
   <p class="codeheader">#include &lt;WinAPI.au3&gt;<br>
   _WinAPI_GetOpenFileName ( [$sTitle = "" [, $sFilter = "All files (*.*)" [, $sInitalDir = "." [, $sDefaultFile = "" [, $sDefaultExt = "" [, $iFilterIndex = 1 [, $iFlags = 0 [, $iFlagsEx = 0 [, $hWndOwner = 0]]]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$sTitle</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> string to be placed in the title bar of the dialog box</td>
+        <td style="width:85%"><strong>[optional]</strong> string to be placed in the title bar of the dialog box</td>
       </tr>
       <tr>
         <td>$sFilter</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Pairs of filter strings (for example "Text Files (*.txt)|All Files (*.*)")<br>
+        <td><strong>[optional]</strong> Pairs of filter strings (for example "Text Files (*.txt)|All Files (*.*)")<br>
         The first string in each pair is a display string that describes the filter (for example, "Text Files")<br>
         The second string specifies the filter pattern (for example, "*.TXT")<br>
         To specify multiple filter patterns for a single display string, use a semicolon to separate the patterns (for example, "*.TXT;*.DOC;*.BAK")<br>
@@ -39,35 +38,35 @@
       </tr>
       <tr>
         <td>$sInitalDir</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> String that can specify the initial directory</td>
+        <td><strong>[optional]</strong> String that can specify the initial directory</td>
       </tr>
       <tr>
         <td>$sDefaultFile</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> A file name used to initialize the File Name edit control</td>
+        <td><strong>[optional]</strong> A file name used to initialize the File Name edit control</td>
       </tr>
       <tr>
         <td>$sDefaultExt</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> String that contains the default extension</td>
+        <td><strong>[optional]</strong> String that contains the default extension</td>
       </tr>
       <tr>
         <td>$iFilterIndex</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Specifies the index of the currently selected filter in the File Types control</td>
+        <td><strong>[optional]</strong> Specifies the index of the currently selected filter in the File Types control</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> See Flags in $tagOPENFILENAME information</td>
+        <td><strong>[optional]</strong> See Flags in $tagOPENFILENAME information</td>
       </tr>
       <tr>
         <td>$iFlagsEx</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> See FlagEx in $tagOPENFILENAME information</td>
+        <td><strong>[optional]</strong> See FlagEx in $tagOPENFILENAME information</td>
       </tr>
       <tr>
         <td>$hWndOwner</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Handle to the window that owns the dialog box. This member can be any valid window handle, or it can be 0 if the dialog box has no owner</td>
+        <td><strong>[optional]</strong> Handle to the window that owns the dialog box. This member can be any valid window handle, or it can be 0 if the dialog box has no owner</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -86,11 +85,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagOPENFILENAME.htm">$tagOPENFILENAME</a>, <a href="_WinAPI_CommDlgExtendedError.htm">_WinAPI_CommDlgExtendedError</a>, <a href="_WinAPI_GetSaveFileName.htm">_WinAPI_GetSaveFileName</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
   <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(GetOpenFileName);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">GetOpenFileName</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

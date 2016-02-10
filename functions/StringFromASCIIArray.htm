@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction StringFromASCIIArray</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>StringFromASCIIArray</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Converts an array of ASCII codes to a string.</span><span lang="fr" style="display: none">Convertit un tableau de codes ASCII en une chaîne de caractères.</span></span><br></p>
   <p class="codeheader">StringFromASCIIArray ( array,[start = 0 [, end = -1 [, encoding = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,17 +28,17 @@
       </tr>
       <tr>
         <td>start</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The 0-based index to start processing from (Default:</span><span lang="fr" style="display: none">L'index de base 0 où commencer le traitement (par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based index to start processing from (Default:</span><span lang="fr" style="display: none">L'index de base 0 où commencer le traitement (par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
       </tr>
       <tr>
         <td>end</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The 0-based index to end processing at (Default:</span><span lang="fr" style="display: none">L'index de base 0 où terminer le traitement (par défaut :</span></span> <a href="UBound.htm">UBound</a>($aArray)). <span class="segments"><span lang="en">Note that the character at this index is NOT included in the output.</span><span lang="fr" style="display: none">Notez que le caractère à cet index n'est PAS inclus dans la sortie.</span></span>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based index to end processing at (Default:</span><span lang="fr" style="display: none">L'index de base 0 où terminer le traitement (par défaut :</span></span> <a href="UBound.htm">UBound</a>($aArray)). <span class="segments"><span lang="en">Note that the character at this index is NOT included in the output.</span><span lang="fr" style="display: none">Notez que le caractère à cet index n'est PAS inclus dans la sortie.</span></span><a href="UBound.htm"></a>
         </td>
       </tr>
       <tr>
         <td>encoding</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The array contains values in the specified character set:</span><span lang="fr" style="display: none">Le tableau contient des valeurs dans un jeu de caractères spécifié:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The array contains values in the specified character set:</span><span lang="fr" style="display: none">Le tableau contient des valeurs dans un jeu de caractères spécifié:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SE_UTF16 (0) = UTF-16 (Default)<br>
         &nbsp;&nbsp;&nbsp; $SE_ANSI (1) = ANSI<br>
         &nbsp;&nbsp;&nbsp; $SE_UTF8 (2) = UTF-8<br>
@@ -48,7 +47,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -60,19 +59,19 @@
         <td><span class="segments"><span lang="en">an empty string and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne une chaîne vide et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = Input is not an array.</span><span lang="fr" style="display: none">1 = l'entrée n'est pas un tableau.</span></span><br>
         <span class="segments"><span lang="en">2 = Invalid start index.</span><span lang="fr" style="display: none">2 = l'index de début n'est pas valide.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">The returned string may contain embedded <a href="Chr.htm">Chr</a>(0) but will still be a string type.</span><span lang="fr" style="display: none">La chaîne retournée peut contenir <a href="Chr.htm">Chr</a>(0) mais sera encore de type chaîne.</span></span> <span class="segments"><span lang="en">Most string functions will stop at the first <a href="Chr.htm">Chr</a>(0) found, however, if access to the entire contents of the string is required then the <a href="StringToBinary.htm">StringToBinary()</a> function can convert it into a BinaryString preserving all the data.</span><span lang="fr" style="display: none">La plupart des fonctions chaînes stopperont au premier <a href="Chr.htm">Chr</a>(0) rencontré, cependant, si l'accès au contenu entier de la chaîne est nécessaire alors la fonction <a href="StringToBinary.htm">StringToBinary()</a> peut la convertir en un BinaryString pour préserver toutes les données.</span></span><a href="Chr.htm"></a><a href="StringToBinary.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">If you attempt to create an array manually (As opposed to using an array returned from <a href="StringToASCIIArray.htm">StringToASCIIArray()</a>) then the codes in the array must be specified in UNICODE.</span><span lang="fr" style="display: none">Si vous essayez de créer un tableau manuellement (par opposition à l'utilisation d'un tableau retourné par <a href="StringToASCIIArray.htm">StringToASCIIArray()</a>), alors les codes du tableau doivent être spécifiés en UNICODE.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="StringToASCIIArray.htm">StringToASCIIArray</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

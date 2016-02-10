@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _WinAPI_CreateColorAdjustment</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,18 +20,18 @@
   <p class="funcdesc">Creates $tagCOLORADJUSTMENT structure specifies the color adjustment<br></p>
   <p class="codeheader">#include &lt;WinAPIGdi.au3&gt;<br>
   _WinAPI_CreateColorAdjustment ( [$iFlags = 0 [, $iIlluminant = 0 [, $iGammaR = 10000 [, $iGammaG = 10000 [, $iGammaB = 10000 [, $iBlack = 0 [, $iWhite = 10000 [, $iContrast = 0 [, $iBrightness = 0 [, $iColorfulness = 0 [, $iTint = 0]]]]]]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$iFlags</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The flags that specify how the output image should be prepared. This parameter can be 0 or any combination of the following values:<br>
+        <td style="width:85%"><strong>[optional]</strong> The flags that specify how the output image should be prepared. This parameter can be 0 or any combination of the following values:<br>
         &nbsp;&nbsp;&nbsp; $CA_NEGATIVE<br>
         &nbsp;&nbsp;&nbsp; $CA_LOG_FILTER</td>
       </tr>
       <tr>
         <td>$iIlluminant</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The type of standard light source under which the image is viewed. This parameter can be only one of the following values:<br>
+        <td><strong>[optional]</strong> The type of standard light source under which the image is viewed. This parameter can be only one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $ILLUMINANT_DEVICE_DEFAULT (Default)<br>
         &nbsp;&nbsp;&nbsp; $ILLUMINANT_A<br>
         &nbsp;&nbsp;&nbsp; $ILLUMINANT_B<br>
@@ -49,63 +48,63 @@
       </tr>
       <tr>
         <td>$iGammaR</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The n(th) power gamma-correction value for the red primary of the source colors.<br>
+        <td><strong>[optional]</strong> The n(th) power gamma-correction value for the red primary of the source colors.<br>
         The value must be in the range from 2500 to 65,000.<br>
         A value of 10,000 (Default) means no gamma correction.</td>
       </tr>
       <tr>
         <td>$iGammaG</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The n(th) power gamma-correction value for the green primary of the source colors.<br>
+        <td><strong>[optional]</strong> The n(th) power gamma-correction value for the green primary of the source colors.<br>
         The value must be in the range from 2500 to 65,000.<br>
         A value of 10,000 (Default) means no gamma correction.</td>
       </tr>
       <tr>
         <td>$iGammaB</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The n(th) power gamma-correction value for the blue primary of the source colors.<br>
+        <td><strong>[optional]</strong> The n(th) power gamma-correction value for the blue primary of the source colors.<br>
         The value must be in the range from 2500 to 65,000.<br>
         A value of 10,000 (Default) means no gamma correction.</td>
       </tr>
       <tr>
         <td>$iBlack</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The black reference for the source colors. Any colors that are darker than this are treated as black.<br>
+        <td><strong>[optional]</strong> The black reference for the source colors. Any colors that are darker than this are treated as black.<br>
         The value must be in the range from 0 to 4000.<br>
         Default is 0.</td>
       </tr>
       <tr>
         <td>$iWhite</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The white reference for the source colors. Any colors that are lighter than this are treated as white.<br>
+        <td><strong>[optional]</strong> The white reference for the source colors. Any colors that are lighter than this are treated as white.<br>
         The value must be in the range from 6000 to 10,000.<br>
         Default is 10,000</td>
       </tr>
       <tr>
         <td>$iContrast</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The amount of contrast to be applied to the source object.<br>
+        <td><strong>[optional]</strong> The amount of contrast to be applied to the source object.<br>
         The value must be in the range from -100 to 100.<br>
         A value of 0 (Default) means no contrast adjustment.</td>
       </tr>
       <tr>
         <td>$iBrightness</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The amount of brightness to be applied to the source object.<br>
+        <td><strong>[optional]</strong> The amount of brightness to be applied to the source object.<br>
         The value must be in the range from -100 to 100.<br>
         A value of 0 (Default) means no brightness adjustment.</td>
       </tr>
       <tr>
         <td>$iColorfulness</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The amount of colorfulness to be applied to the source object.<br>
+        <td><strong>[optional]</strong> The amount of colorfulness to be applied to the source object.<br>
         The value must be in the range from -100 to 100.<br>
         A value of 0 (Default) means no colorfulness adjustment).</td>
       </tr>
       <tr>
         <td>$iTint</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The amount of red or green tint adjustment to be applied to the source object.<br>
+        <td><strong>[optional]</strong> The amount of red or green tint adjustment to be applied to the source object.<br>
         The value must be in the range from -100 to 100.<br>
         Positive numbers adjust toward red and negative numbers adjust toward green.<br>
         A value of 0 (Default) means no tint adjustment.</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns $tagCOLORADJUSTMENT structure containing the color adjustment values.<br>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns $tagCOLORADJUSTMENT structure containing the color adjustment values.<br>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -172,7 +171,7 @@
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/ExitLoop.htm"><span class="S5">ExitLoop</span></a>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'Error'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Unable to load image.'</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Unable to load image.'</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">WEnd</span></a>
 
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hForm</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_PathStripPath.htm"><span class="S15">_WinAPI_PathStripPath</span></a><span class="S8">(</span><span class="S9">$sData</span><span class="S8">),</span><span class="S0"> </span><span class="S9">$W</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$H</span><span class="S8">)</span>
@@ -248,7 +247,7 @@
 <span class="S0">                </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_ImageDispose.htm"><span class="S15">_GDIPlus_ImageDispose</span></a><span class="S8">(</span><span class="S9">$hObj</span><span class="S8">)</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$sData</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
-<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'Error'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Unable to save image.'</span><span class="S8">)</span>
+<span class="S0">                </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../functions/BitOR.htm"><span class="S4">BitOR</span></a><span class="S8">(</span><span class="S9">$MB_ICONERROR</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">),</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'Unable to save image.'</span><span class="S8">)</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$g_aidCheck</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlRead.htm"><span class="S4">GUICtrlRead</span></a><span class="S8">(</span><span class="S9">$g_aidCheck</span><span class="S8">[</span><span class="S3">0</span><span class="S8">])</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_CHECKED</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>

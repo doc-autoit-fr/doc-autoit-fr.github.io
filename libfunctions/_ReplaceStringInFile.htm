@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ReplaceStringInFile</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Replaces substrings in a file<br></p>
   <p class="codeheader">#include &lt;File.au3&gt;<br>
   _ReplaceStringInFile ( $sFilePath, $sSearchString, $sReplaceString [, $iCaseSensitive = 0 [, $iOccurance = 1]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -38,7 +37,7 @@
       </tr>
       <tr>
         <td>$iCaseSensitive</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSE (0) = not case sensitive, using the user's locale (default)<br>
         &nbsp;&nbsp;&nbsp; $STR_CASESENSE (1) = case sensitive<br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSEBASIC (2) = not case sensitive, using a basic/faster comparison<br>
@@ -46,11 +45,11 @@
       </tr>
       <tr>
         <td>$iOccurance</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> 0 - Only the first occurrence is replaced or 1 - all occurrences are replaced (default)</td>
+        <td><strong>[optional]</strong> 0 - Only the first occurrence is replaced or 1 - all occurrences are replaced (default)</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -59,17 +58,17 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne -1 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - File is read-only<br>
         2 - Unable to open the file<br>
         3 - Unable to write to the file</td>
       </tr>
     </tbody>
   </table>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

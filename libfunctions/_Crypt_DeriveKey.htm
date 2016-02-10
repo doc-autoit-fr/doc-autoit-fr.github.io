@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Crypt_DeriveKey</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -18,52 +17,52 @@
   <h1 class="small">Référence Fonction</h1>
   <hr style="height:0px">
   <h1>_Crypt_DeriveKey</h1>
-  <p class="funcdesc">Creates a key from algorithm and password<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a key from algorithm and password</span><span lang="fr" style="display: none">Crée une clé d'après l'algorithme et le mot de passe</span></span><br></p>
   <p class="codeheader">#include &lt;Crypt.au3&gt;<br>
   _Crypt_DeriveKey ( $vPassword, $iAlgID [, $iHashAlgID = $CALG_MD5] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$vPassword</td>
-        <td style="width:85%">Password to use</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Password to use</span><span lang="fr" style="display: none">Mot de passe à utiliser</span></span></td>
       </tr>
       <tr>
         <td>$iAlgID</td>
-        <td>Encryption ID of algorithm to be used with the key</td>
+        <td><span class="segments"><span lang="en">Encryption ID of algorithm to be used with the key</span><span lang="fr" style="display: none">ID de chiffrement de l'algorithme à utiliser avec la clé</span></span></td>
       </tr>
       <tr>
         <td>$iHashAlgID</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Id of the algo to hash the password with</td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Id of the algo to hash the password with</span><span lang="fr" style="display: none">ID de l'algorithme de hachage du mot de passe</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%">a handle to a cryptographic key.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a handle to a cryptographic key.</span><span lang="fr" style="display: none">un handle vers une clé de chiffrement.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne -1 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
-        <td>10 - Failed to create hash object<br>
-        20 - Failed to hash password<br>
-        30 - Failed to generate key</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
+        <td><span class="segments"><span lang="en">10 - Failed to create hash object</span><span lang="fr" style="display: none">10 - Impossible de créer l'objet de hachage</span></span><br>
+        <span class="segments"><span lang="en">20 - Failed to hash password</span><span lang="fr" style="display: none">20 - Impossible de hacher le mot de passe</span></span><br>
+        <span class="segments"><span lang="en">30 - Failed to generate key</span><span lang="fr" style="display: none">30 - Impossible de générer la clé</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
-  <p>The key needs to be destroyed with <a href="_Crypt_DestroyKey.htm">_Crypt_DestroyKey()</a>.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
+  <p><span class="segments"><span lang="en">The key needs to be destroyed with <a href="_Crypt_DestroyKey.htm">_Crypt_DestroyKey()</a>.</span><span lang="fr" style="display: none">La clé doit être détruite avec <a href="_Crypt_DestroyKey.htm">_Crypt_DestroyKey()</a>.</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Crypt_DecryptData.htm">_Crypt_DecryptData</a>, <a href="_Crypt_DecryptFile.htm">_Crypt_DecryptFile</a>, <a href="_Crypt_DestroyKey.htm">_Crypt_DestroyKey</a>, <a href="_Crypt_EncryptData.htm">_Crypt_EncryptData</a>, <a href="_Crypt_EncryptFile.htm">_Crypt_EncryptFile</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
-  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptDeriveKey);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptDeriveKey</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
+  <p><span class="segments"><span lang="en">Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptDeriveKey);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptDeriveKey</a> in MSDN Library.</span><span lang="fr" style="display: none">Recherchez <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptDeriveKey);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptDeriveKey</a> dans la bibliothèque MSDN.</span></span></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -103,15 +102,15 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aStringsToEncrypt</span><span class="S8">[</span><span class="S3">6</span><span class="S8">]</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S8">[</span><span class="S7">"AutoIt"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"SciTE"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Crypt"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">".au3"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">42</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"42"</span><span class="S8">]</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sOutput</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">""</span>
 
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hKey</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_DeriveKey.htm"><span class="S15">_Crypt_DeriveKey</span></a><span class="S8">(</span><span class="S7">"CryptPassword"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_RC4</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; Declare a password string and algorithm to create a cryptographic key.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hKey</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_DeriveKey.htm"><span class="S15">_Crypt_DeriveKey</span></a><span class="S8">(</span><span class="S7">"CryptPassword"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_RC4</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Declare a password string and algorithm to create a cryptographic key.</span><span lang="fr" style="display: none">Déclare un mot de passe sous forme de châine et l'algorithme pour créer une clé de chiffrement.</span></span></span></span>
 
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$iWord</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/ForInNext.htm"><span class="S5">In</span></a><span class="S0"> </span><span class="S9">$aStringsToEncrypt</span>
-<span class="S0">        </span><span class="S9">$sOutput</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><span class="S9">$iWord</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_EncryptData.htm"><span class="S15">_Crypt_EncryptData</span></a><span class="S8">(</span><span class="S9">$iWord</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hKey</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_USERKEY</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S1">; Encrypt the text with the cryptographic key.</span>
+<span class="S0">        </span><span class="S9">$sOutput</span><span class="S0"> </span><span class="S8">&amp;=</span><span class="S0"> </span><span class="S9">$iWord</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@TAB"><span class="S6">@TAB</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" = "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_EncryptData.htm"><span class="S15">_Crypt_EncryptData</span></a><span class="S8">(</span><span class="S9">$iWord</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$hKey</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_USERKEY</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Encrypt the text with the cryptographic key.</span><span lang="fr" style="display: none">Chiffre le texte avec la clé de chiffrement.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
 
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Encrypted data"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Encrypted data</span><span lang="fr" style="display: none">Données chiffrées</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sOutput</span><span class="S8">)</span>
 
-<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_DestroyKey.htm"><span class="S15">_Crypt_DestroyKey</span></a><span class="S8">(</span><span class="S9">$hKey</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; Destroy the cryptographic key.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_DestroyKey.htm"><span class="S15">_Crypt_DestroyKey</span></a><span class="S8">(</span><span class="S9">$hKey</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Destroy the cryptographic key.</span><span lang="fr" style="display: none">Détruit la clé de chiffrement.</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
 </span>
 </pre>

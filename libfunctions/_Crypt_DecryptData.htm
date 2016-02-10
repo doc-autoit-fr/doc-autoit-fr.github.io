@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Crypt_DecryptData</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -18,55 +17,55 @@
   <h1 class="small">Référence Fonction</h1>
   <hr style="height:0px">
   <h1>_Crypt_DecryptData</h1>
-  <p class="funcdesc">Decrypts data using the supplied key<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Decrypts data using the supplied key</span><span lang="fr" style="display: none">Déchiffre les données à l'aide de la clé fournie</span></span><br></p>
   <p class="codeheader">#include &lt;Crypt.au3&gt;<br>
   _Crypt_DecryptData ( $vData, $vCryptKey, $iAlgID [, $bFinal = True] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$vData</td>
-        <td style="width:85%">Data to decrypt</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Data to decrypt</span><span lang="fr" style="display: none">Données à déchiffrer</span></span></td>
       </tr>
       <tr>
         <td>$vCryptKey</td>
-        <td>Password or handle to a key if the CALG_USERKEY flag is specified</td>
+        <td><span class="segments"><span lang="en">Password or handle to a key if the CALG_USERKEY flag is specified</span><span lang="fr" style="display: none">Mot de passe ou descripteur (handle)'d'une clé si l'indicateur CALG_USERKEY est spécifié</span></span></td>
       </tr>
       <tr>
         <td>$iAlgID</td>
-        <td>The algorithm to use</td>
+        <td><span class="segments"><span lang="en">The algorithm to use</span><span lang="fr" style="display: none">L'algorithme à utiliser</span></span></td>
       </tr>
       <tr>
         <td>$bFinal</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> False if this is only a segment of the full data</td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">False if this is only a segment of the full data</span><span lang="fr" style="display: none">False si c'est seulement un segment de données complet</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%">a binary string containing decrypted data.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a binary string containing decrypted data.</span><span lang="fr" style="display: none">une chaîne binaire contenant les données déchiffrées.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
-        <td>100+ - Cannot create key<br>
-        20 - Failed to decrypt data</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
+        <td><span class="segments"><span lang="en">100+ - Cannot create key</span><span lang="fr" style="display: none">100+ - Ne peut créer la clé</span></span><br>
+        <span class="segments"><span lang="en">20 - Failed to decrypt data</span><span lang="fr" style="display: none">20 - Échec lors du déchiffrement des données</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
-  <p>The decrypted data is always returned as a binary string even if the encrypted data is in fact a string (cast with <a href="../functions/BinaryToString.htm">BinaryToString()</a>).<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
+  <p><span class="segments"><span lang="en">The decrypted data is always returned as a binary string even if the encrypted data is in fact a string (cast with <a href="../functions/BinaryToString.htm">BinaryToString()</a>).</span><span lang="fr" style="display: none">La donnée déchiffrée est toujours retournée comme une chaîne binaire même si la donnée chiffrée est en fait une chaîne (transtypage avec <a href="../functions/BinaryToString.htm">BinaryToString()</a>).</span></span><br></p>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Crypt_DeriveKey.htm">_Crypt_DeriveKey</a>, <a href="_Crypt_EncryptData.htm">_Crypt_EncryptData</a></p>
-  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">&lt;a0&gt;_GDIPlus_PenSetMiterLimit()&lt;/a0&gt;</span></span></h2>
-  <p>Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptDecrypt);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptDecrypt</a> in MSDN Library.</p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
+  <p><span class="segments"><span lang="en">Search <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptDecrypt);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptDecrypt</a> in MSDN Library.</span><span lang="fr" style="display: none">Recherchez <a href="http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&amp;l=EN-US&amp;k=k(CryptDecrypt);k(DevLang-C);k(TargetOS-WINDOWS)&amp;rd=true">CryptDecrypt</a> dans la bibliothèque MSDN.</span></span></p>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -103,13 +102,13 @@
 <span class="S0">Example</span><span class="S8">()</span>
 
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sUserKey</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"CryptPassword"</span><span class="S0"> </span><span class="S1">; Declare a password string to decrypt/encrypt the data.</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sData</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"..upon a time there was a language without any standardized cryptographic functions. That language is no more."</span><span class="S0"> </span><span class="S1">; Data that will be encrypted.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Const</span></a><span class="S0"> </span><span class="S9">$sUserKey</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"CryptPassword"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Declare a password string to decrypt/encrypt the data.</span><span lang="fr" style="display: none">Déclare un de mot de passe sous forme de chaîne pour déchiffrer/chiffrer les données.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sData</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">..upon a time there was a language without any standardized cryptographic functions.</span><span lang="fr" style="display: none">... il était une fois un langage sans aucune fonction cryptographique normalisée.</span></span> <span class="segments"><span lang="en">That language is no more.</span><span lang="fr" style="display: none">Ce langage n'est plus.</span></span></span>"</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Data that will be encrypted.</span><span lang="fr" style="display: none">Données qui seront chiffrées.</span></span></span></span>
 
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$bEncrypted</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_EncryptData.htm"><span class="S15">_Crypt_EncryptData</span></a><span class="S8">(</span><span class="S9">$sData</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sUserKey</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_RC4</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; Encrypt the data using the generic password string.</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$bEncrypted</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_EncryptData.htm"><span class="S15">_Crypt_EncryptData</span></a><span class="S8">(</span><span class="S9">$sData</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sUserKey</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_RC4</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Encrypt the data using the generic password string.</span><span lang="fr" style="display: none">Chiffre les données à l'aide du mot de passe générique.</span></span></span></span>
 
-<span class="S0">    </span><span class="S9">$bEncrypted</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_DecryptData.htm"><span class="S15">_Crypt_DecryptData</span></a><span class="S8">(</span><span class="S9">$bEncrypted</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sUserKey</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_RC4</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; Decrypt the data using the generic password string. The return value is a binary string.</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Decrypted data"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/BinaryToString.htm"><span class="S4">BinaryToString</span></a><span class="S8">(</span><span class="S9">$bEncrypted</span><span class="S8">))</span><span class="S0"> </span><span class="S1">; Convert the binary string using BinaryToString to display the initial data we encrypted.</span>
+<span class="S0">    </span><span class="S9">$bEncrypted</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Crypt_DecryptData.htm"><span class="S15">_Crypt_DecryptData</span></a><span class="S8">(</span><span class="S9">$bEncrypted</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$sUserKey</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$CALG_RC4</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Decrypt the data using the generic password string.</span><span lang="fr" style="display: none">Déchiffre les données à l'aide du mot de passe générique.</span></span> <span class="segments"><span lang="en">The return value is a binary string.</span><span lang="fr" style="display: none">La valeur de retour est une chaîne binaire.</span></span></span></span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Decrypted data</span><span lang="fr" style="display: none">Données déchiffrées</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/BinaryToString.htm"><span class="S4">BinaryToString</span></a><span class="S8">(</span><span class="S9">$bEncrypted</span><span class="S8">))</span><span class="S0"> </span><span class="S1">; <span><span class="segments"><span lang="en">Convert the binary string using BinaryToString to display the initial data we encrypted.</span><span lang="fr" style="display: none">Convertit la chaîne binaire à l'aide de BinaryToString pour afficher les données initiales que nous avions chiffrées.</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>
 </span>
 </pre>

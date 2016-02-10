@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction FileGetEncoding</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>FileGetEncoding</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Determines the text encoding used in a file.</span><span lang="fr" style="display: none">Détermine l'encodage du texte utilisé dans un fichier.</span></span><br></p>
   <p class="codeheader">FileGetEncoding ( "filehandle/filename" [, mode = 1] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,7 +29,7 @@
       <tr>
         <td>mode</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The UTF8 detection mode to use.</span><span lang="fr" style="display: none">Le mode de détection UTF8 à utiliser.</span></span><br>
+          <strong>[optional]</strong> <span class="segments"><span lang="en">The UTF8 detection mode to use.</span><span lang="fr" style="display: none">Le mode de détection UTF8 à utiliser.</span></span><br>
           &nbsp;&nbsp;&nbsp; $FE_ENTIRE_UTF8 (1) = Check entire file for UTF8 sequences (default)<br>
           &nbsp;&nbsp;&nbsp; $FE_PARTIALFIRST_UTF8 (2) = Check first part of file for UTF8 sequences (the same as <a href="FileOpen.htm">FileOpen()</a> uses by default)<br>
           <br>
@@ -39,7 +38,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -58,14 +57,14 @@
     </tbody>
   </table><br>
   Constants are defined in FileConstants.au3.<br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">If a filename is given rather than a file handle - the file will be opened and closed during the function call.</span><span lang="fr" style="display: none">Si un fichier est donné plutôt qu'un handle, le fichier sera ouvert puis fermé durant l'appel de fonction.</span></span><br>
   <span class="segments"><span lang="en">Note:</span><span lang="fr" style="display: none">Note :</span></span> <span class="segments"><span lang="en">Do not mix filehandles and filenames, i.e., don't <a href="FileOpen.htm">FileOpen()</a> a file and then use a filename in this function.</span><span lang="fr" style="display: none">Ne pas mélanger handles et des chemins d'accès, c'est à dire, ne pas utiliser <a href="FileOpen.htm">FileOpen()</a> pour un fichier et ensuite utiliser un chemin d'accès dans cette fonction.</span></span> <span class="segments"><span lang="en">Use either filehandles or filenames in your routines, not both!</span><span lang="fr" style="display: none">Utilisez des handles de fichiers ou des noms de fichiers dans vos routines, mais pas les deux!</span></span><a href="FileOpen.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">If a file handle is used then the "mode" parameter has no effect - the mode used for <a href="FileOpen.htm">FileOpen()</a> takes precedence.</span><span lang="fr" style="display: none">Si un handle de fichier est utilisé alors le paramètre "mode" n'a aucun effet - Le mode utilisé pour <a href="FileOpen.htm">FileOpen()</a> a la priorité.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="FileOpen.htm">FileOpen</a>, <a href="FileRead.htm">FileRead</a>, <a href="FileReadLine.htm">FileReadLine</a>, <a href="FileWrite.htm">FileWrite</a>, <a href="FileWriteLine.htm">FileWriteLine</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

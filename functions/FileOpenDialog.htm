@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction FileOpenDialog</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>FileOpenDialog</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Initiates a Open File Dialog.</span><span lang="fr" style="display: none">Ouvre un dialogue permettant à l'utilisateur de choisir un fichier.</span></span><br></p>
   <p class="codeheader">FileOpenDialog ( "title", "init dir", "filter" [, options = 0 [, "default name" [, hwnd]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -37,7 +36,7 @@
       </tr>
       <tr>
         <td>options</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Dialog Options:</span><span lang="fr" style="display: none">Options de dialogue:</span></span> <span class="segments"><span lang="en">To use more than one option, BitOR the required values together.</span><span lang="fr" style="display: none">Pour utiliser plusieurs options, rassemblez-les avec BitOr.</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Dialog Options:</span><span lang="fr" style="display: none">Options de dialogue:</span></span> <span class="segments"><span lang="en">To use more than one option, BitOR the required values together.</span><span lang="fr" style="display: none">Pour utiliser plusieurs options, rassemblez-les avec BitOr.</span></span><br>
         &nbsp;&nbsp;&nbsp; $FD_FILEMUSTEXIST (1) = File Must Exist (if user types a filename)<br>
         &nbsp;&nbsp;&nbsp; $FD_PATHMUSTEXIST (2) = Path Must Exist (if user types a path, ending with a backslash)<br>
         &nbsp;&nbsp;&nbsp; $FD_MULTISELECT (4) = Allow MultiSelect<br>
@@ -47,15 +46,15 @@
       </tr>
       <tr>
         <td>default name</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Suggested file name for the user to open.</span><span lang="fr" style="display: none">Nom de fichier suggéré à l'ouverture.</span></span> <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Suggested file name for the user to open.</span><span lang="fr" style="display: none">Nom de fichier suggéré à l'ouverture.</span></span> <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -64,16 +63,16 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error</span></span></td>
+        <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 = File selection failed.</span><span lang="fr" style="display: none">1 - La sélection de fichier a échoué.</span></span><br>
         <span class="segments"><span lang="en">2 = Bad file filter</span><span lang="fr" style="display: none">2 - Filtre de fichier incorrect.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">Separate the file filters with a semicolon as shown in the example.</span><span lang="fr" style="display: none">Séparez les filtres de fichiers avec un point-virgule comme le montre l'exemple.</span></span><br>
   <span class="segments"><span lang="en">Multiple groups of filters are separated by a pipe "|".</span><span lang="fr" style="display: none">Plusieurs groupes de filtres sont séparés par une barre verticale "|".</span></span><br>
   <br>
@@ -82,9 +81,9 @@
   <span class="segments"><span lang="en">Special Windows folders (such as "My Documents") can be set as root by using the right CLSID detailed in the <a href="../appendix/clsid.htm">Appendix</a>.</span><span lang="fr" style="display: none">Les dossiers Windows spéciaux (tels que "Mes Documents") peuvent être définis en tant que root en utilisant le bon CLSID détaillée dans l'<a href="../appendix/clsid.htm">Appendix</a>.</span></span><br>
   <br>
   <a href="../macros/AutoItRelated.htm">@WorkingDir</a> is changed on successful return.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="FileSaveDialog.htm">FileSaveDialog</a>, <a href="FileSelectFolder.htm">FileSelectFolder</a>, <a href="StringSplit.htm">StringSplit</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _GDIPlus_GraphicsDrawString</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Draw a string</span><span lang="fr" style="display: none">Dessine une chaîne</span></span><br></p>
   <p class="codeheader">#include &lt;GDIPlus.au3&gt;<br>
   _GDIPlus_GraphicsDrawString ( $hGraphics, $sString, $nX, $nY [, $sFont = "Arial" [, $fSize = 10 [, $iFormat = 0]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -42,15 +41,15 @@
       </tr>
       <tr>
         <td>$sFont</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Name of the font to use for drawing</span><span lang="fr" style="display: none">Nom de la police à utiliser pour le dessin</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Name of the font to use for drawing</span><span lang="fr" style="display: none">Nom de la police à utiliser pour le dessin</span></span></td>
       </tr>
       <tr>
         <td>$fSize</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Font size to use for drawing</span><span lang="fr" style="display: none">Taille de police à utiliser pour le dessin</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Font size to use for drawing</span><span lang="fr" style="display: none">Taille de police à utiliser pour le dessin</span></span></td>
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Format flags.</span><span lang="fr" style="display: none">Indicateurs de formatage.</span></span> <span class="segments"><span lang="en">Can be one or more of the following:</span><span lang="fr" style="display: none">Un ou plusieurs des éléments suivants:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Format flags.</span><span lang="fr" style="display: none">Indicateurs de formatage.</span></span> <span class="segments"><span lang="en">Can be one or more of the following:</span><span lang="fr" style="display: none">Un ou plusieurs des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0x0001 - Specifies that reading order is right to left<br>
         &nbsp;&nbsp;&nbsp; 0x0002 - Specifies that individual lines of text are drawn vertically on the display device<br>
         &nbsp;&nbsp;&nbsp; 0x0004 - Specifies that parts of characters are allowed to overhang the string's layout rectangle<br>
@@ -63,12 +62,12 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%">Success:</td>
-        <td style="width:90%"><span class="segments"><span lang="en">True.</span><span lang="fr" style="display: none">Vrai.</span></span></td>
+        <td style="width:90%">True.</td>
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
@@ -76,9 +75,9 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_GDIPlus_GraphicsDrawStringEx.htm">_GDIPlus_GraphicsDrawStringEx</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -126,7 +125,7 @@
 <span class="S0">    </span><span class="S9">$hGraphic</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_GraphicsCreateFromHWND.htm"><span class="S15">_GDIPlus_GraphicsCreateFromHWND</span></a><span class="S8">(</span><span class="S9">$hGUI</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_GDIPlus_GraphicsDrawString.htm"><span class="S15">_GDIPlus_GraphicsDrawString</span></a><span class="S8">(</span><span class="S9">$hGraphic</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Hello world"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">140</span><span class="S8">,</span><span class="S0"> </span><span class="S3">110</span><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _viExecCommand</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Send a Command/Query to an Instrument/Device through the VISA interface (GPIB / TCP)<br></p>
   <p class="codeheader">#include &lt;Visa.au3&gt;<br>
   _viExecCommand ( $hSession, $sCommand [, $iTimeoutMS = -1 [, $sMode = @LF]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -48,7 +47,7 @@
       <tr>
         <td>$iTimeoutMS</td>
         <td>
-          <span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The operation timeout in MILISECONDS.<br>
+          <strong>[optional]</strong> The operation timeout in MILISECONDS.<br>
           This is mostly important for QUERIES only.<br>
           If it is not specified the last set timeout will be used. If it was never set before the default timeout (which depends on the VISA implementation) will be used.<br>
           Timeouts can also be set separatelly with the <a href="_viSetTimeout.htm">_viSetTimeout()</a> function.<br>
@@ -57,7 +56,7 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Control the mode in which the VISA viPrintf is called when $sCommand is not a query.<br>
+        <td><strong>[optional]</strong> Control the mode in which the VISA viPrintf is called when $sCommand is not a query.<br>
         Default is @LF, which means "attach @LF mode".<br>
         Some instruments and in particular many GPIB cards do not honor the terminator character attribute in those cases an @LF terminator needs to be added.<br>
         As this is the most common case, by default the mode is set to @LF, which appends @LF to the SCPI command you can also set this mode to @CR and @CRLF if your card uses those terminators.<br>
@@ -68,7 +67,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns a value which depends on whether the command is a QUERY or not and in whether the operation was successful or not.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a value which depends on whether the command is a QUERY or not and in whether the operation was successful or not.<br>
   <br>
   * Command, NON QUERY:<br>
   <table class="noborder">
@@ -98,7 +97,7 @@
       </tr>
     </tbody>
   </table><br>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p>* The VISA queries only return the 1st line of the device answer.<br>
   This is not a problem in most cases, as most devices will always answer with a single line.<br>
   <br>
@@ -158,9 +157,9 @@
   <br>
   GPIB-VXI::9::INSTR&nbsp;&nbsp;&nbsp; A VXI device at logical address 9 in a<br>
   &nbsp;&nbsp;&nbsp; GPIB-VXI controlled system.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_viClose.htm">_viClose</a>, <a href="_viFindGpib.htm">_viFindGpib</a>, <a href="_viGpibBusReset.htm">_viGpibBusReset</a>, <a href="_viGTL.htm">_viGTL</a>, <a href="_viOpen.htm">_viOpen</a>, <a href="_viSetAttribute.htm">_viSetAttribute</a>, <a href="_viSetTimeout.htm">_viSetTimeout</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

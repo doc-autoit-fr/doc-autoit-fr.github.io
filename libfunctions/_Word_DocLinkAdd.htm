@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Word_DocLinkAdd</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc">Adds a hyperlink to the document<br></p>
   <p class="codeheader">#include &lt;Word.au3&gt;<br>
   _Word_DocLinkAdd ( $oDoc [, $oAnchor = Default [, $sAddress = Default [, $sSubAddress = Default [, $sScreenTip = Default [, $sTextToDisplay = Default [, $sTarget = Default]]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -30,36 +29,36 @@
       </tr>
       <tr>
         <td>$oAnchor</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Range object for the text or graphic to be turned into a hyperlink<br>
+        <td><strong>[optional]</strong> Range object for the text or graphic to be turned into a hyperlink<br>
         (default = Use entire document as range)</td>
       </tr>
       <tr>
         <td>$sAddress</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The address for the specified link.<br>
+        <td><strong>[optional]</strong> The address for the specified link.<br>
         The address can be an E-mail address, an Internet address or a file name (default = link to the specified document is used)</td>
       </tr>
       <tr>
         <td>$sSubAddress</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of a location within the destination file, such as a bookmark, named range<br>
+        <td><strong>[optional]</strong> The name of a location within the destination file, such as a bookmark, named range<br>
         or slide number (default = None)</td>
       </tr>
       <tr>
         <td>$sScreenTip</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The text that appears as a ScreenTip when the mouse pointer is positioned over the<br>
+        <td><strong>[optional]</strong> The text that appears as a ScreenTip when the mouse pointer is positioned over the<br>
         specified hyperlink (default = Uses value of $sAddress)</td>
       </tr>
       <tr>
         <td>$sTextToDisplay</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The display text of the specified hyperlink.<br>
+        <td><strong>[optional]</strong> The display text of the specified hyperlink.<br>
         The value of this argument replaces the text or graphic specified by $oAnchor (default = Uses value of $sAddress)</td>
       </tr>
       <tr>
         <td>$sTarget</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> The name of the frame or window in which you want to load the specified hyperlink</td>
+        <td><strong>[optional]</strong> The name of the frame or window in which you want to load the specified hyperlink</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -68,19 +67,19 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td>1 - $oDoc is not an object<br>
         2 - Error occurred when adding the link. @extended is set to the COM error code<br>
         3 - $oAnchor is not 0 but is not a range object</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Word_DocLinkGet.htm">_Word_DocLinkGet</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

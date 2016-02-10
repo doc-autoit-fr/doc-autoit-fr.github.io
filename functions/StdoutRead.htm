@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction StdoutRead</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>StdoutRead</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Reads from the STDOUT stream of a previously run child process.</span><span lang="fr" style="display: none">Lit dans le flux STDOUT d'un processus enfant lancé au préalable.</span></span><br></p>
   <p class="codeheader">StdoutRead ( process_id [, peek = False [, binary = False]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -29,15 +28,15 @@
       </tr>
       <tr>
         <td>peek</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If True the function does not remove the read characters from the stream.</span><span lang="fr" style="display: none">Si vrai, la fonction ne supprime pas les caractères lus à partir du flux.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If True the function does not remove the read characters from the stream.</span><span lang="fr" style="display: none">Si vrai, la fonction ne supprime pas les caractères lus à partir du flux.</span></span></td>
       </tr>
       <tr>
         <td>binary</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">If True the function reads the data as binary instead of text (default is text).</span><span lang="fr" style="display: none">Si vrai, la fonction lit les données de manière binaire au lieu de texte (par défaut c'est texte).</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If True the function reads the data as binary instead of text (default is text).</span><span lang="fr" style="display: none">Si vrai, la fonction lit les données de manière binaire au lieu de texte (par défaut c'est texte).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -50,14 +49,14 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en"><a href="StdoutRead.htm">StdoutRead()</a> reads from the console standard output stream of a child process, which is normally used by console applications to write to the screen.</span><span lang="fr" style="display: none"><a href="StdoutRead.htm">StdoutRead()</a> lit à partir du flux de sortie standard de la console du processus enfant, qui est normalement utilisé par les applications console pour écrire sur l'écran.</span></span> <span class="segments"><span lang="en">During the call to <a href="Run.htm">Run()</a> for the child process you wish to read from the STD I/O parameter must have included the value of $STDOUT_CHILD (2) for this function to work properly (see the <a href="Run.htm">Run()</a> function).</span><span lang="fr" style="display: none">Pendant l'appel de <a href="Run.htm">Run()</a> pour le processus enfant, pour lire à partir de STD I/O, le paramètre doit avoir inclus la valeur $STDOUT_CHILD (2) pour que cette fonction travaille correctement (voir la fonction <a href="Run.htm">Run()</a>).</span></span><a href="Run.htm"></a><a href="Run.htm"></a><br>
   <span class="segments"><span lang="en"><a href="StdoutRead.htm">StdoutRead()</a> does not block, it will return immediately.</span><span lang="fr" style="display: none">La fonction <a href="StdoutRead.htm">StdoutRead()</a> ne bloque pas, elle retournera immédiatement.</span></span> <span class="segments"><span lang="en">In order to get all data, it must be called in a loop.</span><span lang="fr" style="display: none">Afin d'obtenir toutes les données, elle doit être appelée dans une boucle.</span></span><br>
   <span class="segments"><span lang="en">Peeking on the stream does not remove the data from the buffer, however, it does return the available data as normal.</span><span lang="fr" style="display: none">Une lecture sur le flux ne supprime pas les données de la mémoire tampon, cependant, elle renvoie les données disponibles comme d'habitude.</span></span><br>
   <span class="segments"><span lang="en">By default, data is returned in text format.</span><span lang="fr" style="display: none">Par défaut, les données sont retournées au format texte.</span></span> <span class="segments"><span lang="en">By using the binary option, the data will be returned in binary format.</span><span lang="fr" style="display: none">En utilisant l'option binaire, les données seront renvoyées au format binaire.</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="Run.htm">Run</a>, <a href="RunAs.htm">RunAs</a>, <a href="StderrRead.htm">StderrRead</a>, <a href="StdinWrite.htm">StdinWrite</a>, <a href="StdioClose.htm">StdioClose</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

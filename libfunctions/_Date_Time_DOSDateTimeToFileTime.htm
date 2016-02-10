@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _Date_Time_DOSDateTimeToFileTime</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,29 +20,29 @@
   <p class="funcdesc">Converts MS-DOS date and time values to a file time<br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_DOSDateTimeToFileTime ( $iFatDate, $iFatTime )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$iFatDate</td>
         <td style="width:85%">The MS-DOS date, packed as follows:<br>
-        Bits 0- 4 Day of the month (1–31)<br>
-        Bits 5- 8 Month (1 = January, 2 = February, and so on)<br>
-        Bits 9-15 Year offset from 1980 (add 1980 to get actual year)</td>
+        <span class="segments"><span lang="en">Bits 0- 4 Day of the month (1–31)</span><span lang="fr" style="display: none">Bits 0- 4 Jour du mois (1–31)</span></span><br>
+        <span class="segments"><span lang="en">Bits 5- 8 Month (1 = January, 2 = February, and so on)</span><span lang="fr" style="display: none">Bits 5- 8 Mois (1 = janvier, 2 = février, et ainsi de suite)</span></span><br>
+        <span class="segments"><span lang="en">Bits 9-15 Year offset from 1980 (add 1980 to get actual year)</span><span lang="fr" style="display: none">Bits 9-15 Décalage de l'année par rapport à 1980 (ajoutez 1980 pour obtenir l'année actuel)</span></span></td>
       </tr>
       <tr>
         <td>$iFatTime</td>
         <td>Ths MS-DOS time, packed as follows:<br>
-        Bits 0- 4 Second divided by 2<br>
+        <span class="segments"><span lang="en">Bits 0- 4 Second divided by 2</span><span lang="fr" style="display: none">Bits 0- 4 Seconde divisée par 2</span></span><br>
         Bits 5-10 Minute (0–59)<br>
-        Bits 11-15 Hour (0–23 on a 24-hour clock)</td>
+        <span class="segments"><span lang="en">Bits 11-15 Hour (0–23 on a 24-hour clock)</span><span lang="fr" style="display: none">Bits 11-15 Heure (0–23 sur une horloge de 24 heures)</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns a $tagFILETIME structure that receives the converted file time.<br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a $tagFILETIME structure that receives the converted file time.<br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagFILETIME.htm">$tagFILETIME</a>, <a href="_Date_Time_FileTimeToDOSDateTime.htm">_Date_Time_FileTimeToDOSDateTime</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -86,20 +85,20 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$tFileTime1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime2</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create GUI</span><span lang="fr" style="display: none">Crée la GUI</span></span></span></span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"Time"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Time</span><span lang="fr" style="display: none">Temps</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">)</span>
 <span class="S0">    </span><span class="S9">$g_idMemo</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateEdit.htm"><span class="S4">GUICtrlCreateEdit</span></a><span class="S8">(</span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><span class="S3">396</span><span class="S8">,</span><span class="S0"> </span><span class="S3">296</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$WS_VSCROLL</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Compare FAT Dates/Times</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Compare FAT Dates/Times</span><span lang="fr" style="display: none">Compare les Dates/Heures FAT</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tFileTime1</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_DOSDateTimeToFileTime.htm"><span class="S15">_Date_Time_DOSDateTimeToFileTime</span></a><span class="S8">(</span><span class="S3">0x3621</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0x11EF</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 01/01/2007 02:15:30</span>
 <span class="S0">    </span><span class="S9">$tFileTime2</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_DOSDateTimeToFileTime.htm"><span class="S15">_Date_Time_DOSDateTimeToFileTime</span></a><span class="S8">(</span><span class="S3">0x379F</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0x944A</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 12/31/2007 18:34:20</span>
 
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Result 1: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_CompareFileTime.htm"><span class="S15">_Date_Time_CompareFileTime</span></a><span class="S8">(</span><span class="S9">$tFileTime1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime2</span><span class="S8">))</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Result 2: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_CompareFileTime.htm"><span class="S15">_Date_Time_CompareFileTime</span></a><span class="S8">(</span><span class="S9">$tFileTime1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime1</span><span class="S8">))</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Result 3: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_CompareFileTime.htm"><span class="S15">_Date_Time_CompareFileTime</span></a><span class="S8">(</span><span class="S9">$tFileTime2</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime1</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Result 1:</span><span lang="fr" style="display: none">Résultat 1 :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_CompareFileTime.htm"><span class="S15">_Date_Time_CompareFileTime</span></a><span class="S8">(</span><span class="S9">$tFileTime1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime2</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Result 2:</span><span lang="fr" style="display: none">Résultat 2 :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_CompareFileTime.htm"><span class="S15">_Date_Time_CompareFileTime</span></a><span class="S8">(</span><span class="S9">$tFileTime1</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime1</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Result 3:</span><span lang="fr" style="display: none">Résultat 3 :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_CompareFileTime.htm"><span class="S15">_Date_Time_CompareFileTime</span></a><span class="S8">(</span><span class="S9">$tFileTime2</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFileTime1</span><span class="S8">))</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Until</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">EndFunc</span></a><span class="S0">   </span><span class="S1">;==&gt;Example</span>

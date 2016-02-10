@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ClipBoard_SetData</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Places data on the clipboard in a specified clipboard format</span><span lang="fr" style="display: none">Place des données dans le presse-papiers dans un format spécifié de presse-papiers</span></span><br></p>
   <p class="codeheader">#include &lt;Clipboard.au3&gt;<br>
   _ClipBoard_SetData ( $vData [, $iFormat = 1] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -39,7 +38,7 @@
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Specifies a clipboard format:</span><span lang="fr" style="display: none">Spécifie un format de presse-papiers:</span></span><br>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Specifies a clipboard format:</span><span lang="fr" style="display: none">Spécifie un format de presse-papiers:</span></span><br>
         <span class="segments"><span lang="en">$CF_TEXT - Text format</span><span lang="fr" style="display: none">$CF_TEXT - Format texte</span></span><br>
         <span class="segments"><span lang="en">$CF_BITMAP - Handle to a bitmap (HBITMAP)</span><span lang="fr" style="display: none">$CF_BITMAP - Handle d'une image bitmap (HBITMAP)</span></span><br>
         <span class="segments"><span lang="en">$CF_METAFILEPICT - Handle to a metafile picture (METAFILEPICT)</span><span lang="fr" style="display: none">$CF_METAFILEPICT - Handle d'un métafichier d'image (METAFILEPICT)</span></span><br>
@@ -65,7 +64,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -78,11 +77,11 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">This function performs all of the steps neccesary to put data on the clipboard.</span><span lang="fr" style="display: none">Cette fonction effectue toutes les étapes nécessaires pour placer les données dans le presse-papiers.</span></span> <span class="segments"><span lang="en">It will allocate the global memory object, open the clipboard, place the data on the clipboard and close the clipboard.</span><span lang="fr" style="display: none">Elle va allouer un objet de mémoire globale, ouvrir le presse-papiers, placer les données dans le presse-papiers et fermer le presse-papiers.</span></span> <span class="segments"><span lang="en">If you need more control over putting data on the clipboard, you may want to use the <a href="_ClipBoard_SetDataEx.htm">_ClipBoard_SetDataEx()</a> function.</span><span lang="fr" style="display: none">Si vous avez besoin de plus de contrôle sur la mise en place des données dans le presse-papiers, vous pouvez utiliser la fonction <a href="_ClipBoard_SetDataEx.htm">_ClipBoard_SetDataEx()</a>.</span></span><a href="_ClipBoard_SetDataEx.htm"></a><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ClipBoard_Empty.htm">_ClipBoard_Empty</a>, <a href="_ClipBoard_GetData.htm">_ClipBoard_GetData</a>, <a href="_ClipBoard_GetDataEx.htm">_ClipBoard_GetDataEx</a>, <a href="_ClipBoard_SetDataEx.htm">_ClipBoard_SetDataEx</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -132,7 +131,7 @@
 <span class="S0">    </span><span class="S9">$id_GetData</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"Get ClipBoard Data"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">300</span><span class="S8">,</span><span class="S0"> </span><span class="S3">410</span><span class="S8">,</span><span class="S0"> </span><span class="S3">120</span><span class="S8">,</span><span class="S0"> </span><span class="S3">30</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>

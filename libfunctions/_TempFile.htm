@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _TempFile</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,31 +20,31 @@
   <p class="funcdesc">Generate a name for a temporary file. The file is guaranteed not to exist yet<br></p>
   <p class="codeheader">#include &lt;File.au3&gt;<br>
   _TempFile ( [$sDirectoryName = @TempDir [, $sFilePrefix = "~" [, $sFileExtension = ".tmp" [, $iRandomLength = 7]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
         <td style="width:15%">$sDirectoryName</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Name of directory for filename, defaults to the users %TEMP% directory</td>
+        <td style="width:85%"><strong>[optional]</strong> Name of directory for filename, defaults to the users %TEMP% directory</td>
       </tr>
       <tr>
         <td>$sFilePrefix</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Filename prefix, defaults to "~"</td>
+        <td><strong>[optional]</strong> Filename prefix, defaults to "~"</td>
       </tr>
       <tr>
         <td>$sFileExtension</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> File extenstion, defaults to ".tmp"</td>
+        <td><strong>[optional]</strong> File extenstion, defaults to ".tmp"</td>
       </tr>
       <tr>
         <td>$iRandomLength</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Number of characters to use to generate a unique name, defaults to 7</td>
+        <td><strong>[optional]</strong> Number of characters to use to generate a unique name, defaults to 7</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>Returns a Filename of a temporary file which does not exist<br>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a Filename of a temporary file which does not exist<br>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_WinAPI_GetTempFileName.htm">_WinAPI_GetTempFileName</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

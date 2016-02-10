@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction _ArrayInsert</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -21,7 +20,7 @@
   <p class="funcdesc"><span class="segments"><span lang="en">Insert a new value at the specified position of a 1D or 2D array</span><span lang="fr" style="display: none">Insére une nouvelle valeur à la position spécifiée d'un tableau 1D ou 2D</span></span><br></p>
   <p class="codeheader">#include &lt;Array.au3&gt;<br>
   _ArrayInsert ( ByRef $aArray, $vRange [, $vValue = "" [, $iStart = 0 [, $sDelim_Item = "|" [, $sDelim_Row = @CRLF [, $iForce = $ARRAYFILL_FORCE_DEFAULT]]]]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -34,23 +33,23 @@
       </tr>
       <tr>
         <td>$vValue</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Value(s) to add - can be a single variable, a delimited string or a 1D array</span><span lang="fr" style="display: none">Valeur(s) à ajouter - peut être une variable unique, une chaîne morcellée (par le séparateur $sDelim_Item) ou un tableau 1D</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Value(s) to add - can be a single variable, a delimited string or a 1D array</span><span lang="fr" style="display: none">Valeur(s) à ajouter - peut être une variable unique, une chaîne morcellée (par le séparateur $sDelim_Item) ou un tableau 1D</span></span></td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Column in which insert is to begin (2D array only)</span><span lang="fr" style="display: none">Colonne dans laquelle l'insertion doit commencer (tableau 2D uniquement)</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Column in which insert is to begin (2D array only)</span><span lang="fr" style="display: none">Colonne dans laquelle l'insertion doit commencer (tableau 2D uniquement)</span></span></td>
       </tr>
       <tr>
         <td>$sDelim_Item</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Delimiter used if a string is to be split into items</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en éléments</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into items</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en éléments</span></span></td>
       </tr>
       <tr>
         <td>$sDelim_Row</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Delimiter used if a string is to be split into rows (2D only)</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en lignes (2D uniquement)</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into rows (2D only)</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en lignes (2D uniquement)</span></span></td>
       </tr>
       <tr>
         <td>$iForce</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> Maintains default behaviour,<br>
+        <td><strong>[optional]</strong> Maintains default behaviour,<br>
         &nbsp;&nbsp;&nbsp; $ARRAYFILL_FORCE_DEFAULT (0)<br>
         Forces $vValue addition as a single item,<br>
         &nbsp;&nbsp;&nbsp; $ARRAYFILL_FORCE_SINGLEITEM (1)<br>
@@ -64,7 +63,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -73,10 +72,10 @@
       </tr>
       <tr>
         <td class="valign-top">Failure:</td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 :</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">@error:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error :</span></span></td>
         <td><span class="segments"><span lang="en">1 - $aArray is not an array</span><span lang="fr" style="display: none">1 - $aArray n'est pas un tableau</span></span><br>
         <span class="segments"><span lang="en">2 - $aArray is not a 1D or 2D array</span><span lang="fr" style="display: none">2 - $aArray n'est pas un tableau 1D ou 2D</span></span><br>
         <span class="segments"><span lang="en">3 - $vRange incorrectly formatted (incorrect character or unordered)</span><span lang="fr" style="display: none">3 - $vRange a un format incorrect (caractère incorrect ou non ordonnée)</span></span><br>
@@ -88,7 +87,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">$vRange can be a string containing the rows above which a row is to to be inserted.</span><span lang="fr" style="display: none">$vRange peut être une chaîne contenant les lignes avant lesquelles une ligne doit être insérée.</span></span> <span class="segments"><span lang="en">It can be a single number or a range denoted by the first and last lines separated by a hyphen (-) - multiple items are separated by a semi-colon (;).</span><span lang="fr" style="display: none">Il peut être un nombre unique ou une plage désignée par les première et dernière lignes séparées par un tiret (-) - plusieurs éléments sont séparés par un point-virgule (;).</span></span><br>
   <br>
   <span class="segments"><span lang="en">$vRange can also be a 1D array containing the rows above which a row is to to be inserted with the count in the [0] element].</span><span lang="fr" style="display: none">$vRange peut aussi être un tableau 1D contenant les lignes avant lesquelles une ligne doit être insérée avec le nombre d'éléments dans l'élément [0].</span></span><br>
@@ -126,9 +125,9 @@
   - If $vValue is an array, the parameter is ignored and the array elements are inserted retaining their existing datatypes.<br>
   <br>
   If $iForce is set to any other value it is ignored.<br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_ArrayAdd.htm">_ArrayAdd</a>, <a href="_ArrayDelete.htm">_ArrayDelete</a>, <a href="_ArrayPop.htm">_ArrayPop</a>, <a href="_ArrayPush.htm">_ArrayPush</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only

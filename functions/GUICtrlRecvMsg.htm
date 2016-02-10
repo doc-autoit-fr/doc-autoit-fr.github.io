@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="HTML Tidy for HTML5 for Windows version 5.1.14" name="generator">
   <title>Fonction GUICtrlRecvMsg</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
@@ -20,7 +19,7 @@
   <h1>GUICtrlRecvMsg</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Send a message to a control and retrieve information in lParam.</span><span lang="fr" style="display: none">Envoie un message à un contrôle et retourne des informations dans lParam.</span></span><br></p>
   <p class="codeheader">GUICtrlRecvMsg ( controlID , msg [, wParam [, lParamType]] )<br></p>
-  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètre</span></span></h2>
+  <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
   <table>
     <tbody>
       <tr>
@@ -33,15 +32,15 @@
       </tr>
       <tr>
         <td>wParam</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">An integer first param to be send to the control.</span><span lang="fr" style="display: none">Un premier paramètre 'integer' à envoyer au contrôle.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">An integer first param to be send to the control.</span><span lang="fr" style="display: none">Un premier paramètre 'integer' à envoyer au contrôle.</span></span></td>
       </tr>
       <tr>
         <td>lParamType</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong></span><span lang="fr" style="display: none"><strong>[optional]</strong> False - i, v, x ...</span></span> <span class="segments"><span lang="en">Define the type of lParam that will be returned:</span><span lang="fr" style="display: none">Définit le type de lParam qui sera retourné :</span></span> <span class="segments"><span lang="en">0 (default) for wParam and lParam, 1 for lParam String, 2 for lParam RECT struct.</span><span lang="fr" style="display: none">0 (par défaut) pour wParam et lParam, 1 pour lParam-String, 2 pour lParam RECT-structure.</span></span></td>
+        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Define the type of lParam that will be returned:</span><span lang="fr" style="display: none">Définit le type de lParam qui sera retourné :</span></span> <span class="segments"><span lang="en">0 (default) for wParam and lParam, 1 for lParam String, 2 for lParam RECT struct.</span><span lang="fr" style="display: none">0 (par défaut) pour wParam et lParam, 1 pour lParam-String, 2 pour lParam RECT-structure.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Remarque</span></span></h2>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
   <table class="noborder">
     <tbody>
       <tr>
@@ -54,15 +53,15 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">&lt;i0&gt;</span></span></h2>
+  <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
   <p><span class="segments"><span lang="en">This function allows the sending of special Windows messages directly to the control using the SendMessage API.</span><span lang="fr" style="display: none">Cette fonction permet d'envoyer des messages spéciaux de Windows directement au contrôle en utilisant l'API SendMessage.</span></span> <span class="segments"><span lang="en">It is used to enable special control features not available with the simple <a href="GUICtrlRead.htm">GUICtrlRead()</a> and <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...</a> range of functions.</span><span lang="fr" style="display: none">Elle est utilisée pour activer des fonctions spéciales de contrôle non disponibles avec le simple éventail de fonctions <a href="GUICtrlRead.htm">GUICtrlRead()</a> and <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...</a>.</span></span><a href="GUICtrlRead.htm"></a><a href="GUICtrlUpdate%20Management.htm"></a><br>
   <br>
   <span class="segments"><span lang="en">If the wParam and lParamType parameters are not specified then an array of two elements is returned (LPwParam, LPlParam).</span><span lang="fr" style="display: none">Si les paramètres wParam et lParamType ne sont pas spécifiés, alors un tableau de deux éléments est retourné (LPwParam, LPlParam).</span></span><br>
   <br>
   <span class="segments"><span lang="en">The RECT is returned in an array of 4 elements (Left, Top, Right, Bottom).</span><span lang="fr" style="display: none">Le RECT est retourné dans un tableau de 4 éléments ((Left, Top, Right, Bottom).</span></span><br></p>
-  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Voir aussi le tutoriel &lt;a0&gt;Expression Régulière&lt;/a0&gt;, dans lequel vous pouvez exécuter un script pour tester vos expressions régulières.</span></span></h2>
+  <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="GUICtrlSendMsg.htm">GUICtrlSendMsg</a>, <a href="GUICtrlUpdate%20Management.htm">GUICtrlUpdate...</a></p>
-  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></h2>
+  <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
@@ -101,7 +100,7 @@
 
 <a class="codeSnippetLink" href="../keywords/Func.htm"><span class="S5">Func</span></a><span class="S0"> Example</span><span class="S8">()</span>
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create a GUI with an edit control.</span><span lang="fr" style="display: none">Crée une interface graphique avec un contrôle d'édition.</span></span></span></span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">&lt;a0&gt;StringInStr()&lt;/a0&gt;, &lt;a1&gt;StringRegExpReplace()&lt;/a1&gt;</span></span></span>"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$hGUI</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICreate.htm"><span class="S4">GUICreate</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></span>"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idEdit</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateEdit.htm"><span class="S4">GUICtrlCreateEdit</span></a><span class="S8">(</span><span class="S7">"Line 0"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">350</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$idOK</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUICtrlCreateButton.htm"><span class="S4">GUICtrlCreateButton</span></a><span class="S8">(</span><span class="S7">"OK"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">310</span><span class="S8">,</span><span class="S0"> </span><span class="S3">370</span><span class="S8">,</span><span class="S0"> </span><span class="S3">85</span><span class="S8">,</span><span class="S0"> </span><span class="S3">25</span><span class="S8">)</span>
 
@@ -119,7 +118,7 @@
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Initialize the variable $aCtrlRecvMsg for storing the value returned by GUICtrlRecvMsg.</span><span lang="fr" style="display: none">Initialise la variable $aCtrlRecvMsg pour stocker la valeur retournée par GUICtrlRecvMsg.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$aCtrlRecvMsg</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span>
 
-<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Création d'un objet chemin</span></span></span></span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/While.htm"><span class="S5">While</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../functions/GUIGetMsg.htm"><span class="S4">GUIGetMsg</span></a><span class="S8">()</span>
 <span class="S0">            </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$GUI_EVENT_CLOSE</span>
