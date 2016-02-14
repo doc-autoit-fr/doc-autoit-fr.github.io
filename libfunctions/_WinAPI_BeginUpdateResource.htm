@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_BeginUpdateResource</h1>
   <p class="funcdesc">Retrieves a handle that can be used to add, delete, or replace resources in a binary module<br></p>
@@ -31,7 +31,7 @@
       <tr>
         <td>$bDelete</td>
         <td>
-          <strong>[optional]</strong> Specifies whether to delete existing resources, valid values:<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to delete existing resources, valid values:<br>
           True - The resources are deleted and the updated file includes only resources added with the <a href="_WinAPI_UpdateResource.htm">_WinAPI_UpdateResource()</a>.<br>
           False - The updated file includes existing resources (Default).
         </td>
@@ -42,13 +42,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">
           Handle that can be used by the <a href="_WinAPI_UpdateResource.htm">_WinAPI_UpdateResource()</a> and _WinAPI_EndUpdateResource() functions.
         </td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

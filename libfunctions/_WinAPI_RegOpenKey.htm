@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RegOpenKey</h1>
   <p class="funcdesc">Opens the specified registry key<br></p>
@@ -36,11 +36,11 @@
       </tr>
       <tr>
         <td>$sSubKey</td>
-        <td><strong>[optional]</strong> The name of the registry subkey to be opened (see remarks).</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of the registry subkey to be opened (see remarks).</td>
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong>[optional]</strong> A mask that specifies the desired access rights to the key. The function fails if the security<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A mask that specifies the desired access rights to the key. The function fails if the security<br>
         descriptor of the key does not permit the requested access for the calling process. This parameter<br>
         can be one or more of the $KEY_* constants. Default is $KEY_ALL_ACCESS.</td>
       </tr>
@@ -50,11 +50,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the opened key.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
       </tr>
     </tbody>

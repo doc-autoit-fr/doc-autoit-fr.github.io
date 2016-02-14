@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_BackupWrite</h1>
   <p class="funcdesc">Restore a file or directory that was backed up using _WinAPI_BackupRead()<br></p>
@@ -55,7 +55,7 @@
       </tr>
       <tr>
         <td>$bSecurity</td>
-        <td><strong>[optional]</strong> Specifies whether the function will restore the access-control list (ACL) data, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the function will restore the access-control list (ACL) data, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The ACL data will be restored.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Furthermore, you need to specify $WRITE_OWNER and $WRITE_DAC access when opening the file or directory handle.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the handle does not have those access rights, the operating system denies access to the ACL data, and ACL data restoration will not occur.<br>
@@ -67,11 +67,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

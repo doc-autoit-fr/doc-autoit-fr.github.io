@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_FileListToArrayRec</h1>
   <p class="funcdesc">Lists files and\or folders in specified path with optional recursion to defined level and result sorting<br></p>
@@ -31,7 +31,7 @@
       </tr>
       <tr>
         <td>$sMask</td>
-        <td><strong>[optional]</strong> Filter for result. Multiple filters must be separated by ";"<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Filter for result. Multiple filters must be separated by ";"<br>
         Use "|" to separate 3 possible sets of filters: "Include|Exclude|Exclude_Folders"<br>
         &nbsp;&nbsp;&nbsp; Include = Files/Folders to include (default = "*" [all])<br>
         &nbsp;&nbsp;&nbsp; Exclude = Files/Folders to exclude (default = "" [none])<br>
@@ -39,7 +39,7 @@
       </tr>
       <tr>
         <td>$iReturn</td>
-        <td><strong>[optional]</strong> Specifies whether to return files, folders or both and omit those with certain attributes<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to return files, folders or both and omit those with certain attributes<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FILESFOLDERS (0) - (Default) Return both files and folders<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FILES (1) - Return files only<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FOLDERS (2) - Return Folders only<br>
@@ -50,21 +50,21 @@
       </tr>
       <tr>
         <td>$iRecur</td>
-        <td><strong>[optional]</strong> Specifies whether to search recursively in subfolders and to what level<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to search recursively in subfolders and to what level<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_NORECUR (0) - Do not search in subfolders (Default)<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_RECUR (1) - Search in all subfolders (unlimited recursion)<br>
         Negative integer - Search in subfolders to specified depth</td>
       </tr>
       <tr>
         <td>$iSort</td>
-        <td><strong>[optional]</strong> Sort results in alphabetical and depth order<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Sort results in alphabetical and depth order<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_NOSORT (0) - Not sorted (Default)<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_SORT (1) - Sorted<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FASTSORT (2) - Sorted with faster algorithm (assumes files in folder returned sorted - requires NTFS and not guaranteed)</td>
       </tr>
       <tr>
         <td>$iReturnPath</td>
-        <td><strong>[optional]</strong> Specifies displayed path of results<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies displayed path of results<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_NOPATH (0) - File/folder name only<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_RELPATH (1) - Relative to initial path (Default)<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FULLPATH (2) - Full path included</td>
@@ -75,7 +75,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">a one-dimensional array made up as follows:<br>
         &nbsp;&nbsp;&nbsp; [0] = Number of Files/Folders returned<br>
         &nbsp;&nbsp;&nbsp; [1] = 1st File/Folder<br>
@@ -84,7 +84,7 @@
         &nbsp;&nbsp;&nbsp; [n] = nth File\Folder</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>an empty string and sets the @error flag to 1 with @extended set as follows:<br>
         &nbsp;&nbsp;&nbsp; 1 - Path not found or invalid<br>
         &nbsp;&nbsp;&nbsp; 2 - Invalid Include parameter<br>

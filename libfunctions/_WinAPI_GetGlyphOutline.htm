@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetGlyphOutline</h1>
   <p class="funcdesc">Retrieves the outline or bitmap for a character in the TrueType font<br></p>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td>$tMAT2</td>
-        <td><strong>[optional]</strong> $tagMAT2 structure specifying a transformation matrix for the character.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagMAT2 structure specifying a transformation matrix for the character.<br>
         If this parameter is 0 (Default), the transformation will not be used (it is identity matrix).</td>
       </tr>
     </tbody>
@@ -65,12 +65,12 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">$tagGLYPHMETRICS structure containing information about the placement and orientation of a glyph,<br>
         @extended flag returns a number of bytes copied to the buffer (if used), in bytes.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span></td>
       </tr>
     </tbody>

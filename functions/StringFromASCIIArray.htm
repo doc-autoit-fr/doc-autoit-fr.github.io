@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>StringFromASCIIArray</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Converts an array of ASCII codes to a string.</span><span lang="fr" style="display: none">Convertit un tableau de codes ASCII en une chaîne de caractères.</span></span><br></p>
@@ -28,17 +28,17 @@
       </tr>
       <tr>
         <td>start</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based index to start processing from (Default:</span><span lang="fr" style="display: none">L'index de base 0 où commencer le traitement (par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The 0-based index to start processing from (Default:</span><span lang="fr" style="display: none">L'index de base 0 où commencer le traitement (par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
       </tr>
       <tr>
         <td>end</td>
         <td>
-          <strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based index to end processing at (Default:</span><span lang="fr" style="display: none">L'index de base 0 où terminer le traitement (par défaut :</span></span> <a href="UBound.htm">UBound</a>($aArray)). <span class="segments"><span lang="en">Note that the character at this index is NOT included in the output.</span><span lang="fr" style="display: none">Notez que le caractère à cet index n'est PAS inclus dans la sortie.</span></span><a href="UBound.htm"></a>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The 0-based index to end processing at (Default:</span><span lang="fr" style="display: none">L'index de base 0 où terminer le traitement (par défaut :</span></span> <a href="UBound.htm">UBound</a>($aArray)). <span class="segments"><span lang="en">Note that the character at this index is NOT included in the output.</span><span lang="fr" style="display: none">Notez que le caractère à cet index n'est PAS inclus dans la sortie.</span></span><a href="UBound.htm"></a>
         </td>
       </tr>
       <tr>
         <td>encoding</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The array contains values in the specified character set:</span><span lang="fr" style="display: none">Le tableau contient des valeurs dans un jeu de caractères spécifié:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The array contains values in the specified character set:</span><span lang="fr" style="display: none">Le tableau contient des valeurs dans un jeu de caractères spécifié:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SE_UTF16 (0) = UTF-16 (Default)<br>
         &nbsp;&nbsp;&nbsp; $SE_ANSI (1) = ANSI<br>
         &nbsp;&nbsp;&nbsp; $SE_UTF8 (2) = UTF-8<br>
@@ -51,11 +51,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">a string with character representations of the ASCII codes.</span><span lang="fr" style="display: none">Retourne une chaîne avec des caractères représentants les codes ASCII.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">an empty string and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne une chaîne vide et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

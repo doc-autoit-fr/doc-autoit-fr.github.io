@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_WaitForSingleObject</h1>
   <p class="funcdesc">Waits until the specified object is in the signaled state<br></p>
@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iTimeout</td>
-        <td><strong>[optional]</strong> The time-out interval, in milliseconds. The function returns if the interval elapses, even if<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The time-out interval, in milliseconds. The function returns if the interval elapses, even if<br>
         the conditions specified by the fWaitAll parameter are not met. If 0, the function tests the states of the<br>
         specified objects and returns immediately. If -1, the function's time-out interval never elapses.</td>
       </tr>
@@ -39,11 +39,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Indicates the event that caused the function to return</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           (-1) WAIT_FAILED, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

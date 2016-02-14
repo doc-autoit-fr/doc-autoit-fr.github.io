@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CreateDesktop</h1>
   <p class="funcdesc">Creates a new desktop, associates it with the current window station of the calling process<br></p>
@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong>[optional]</strong> The requested access to the desktop. This parameter can be one or more of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The requested access to the desktop. This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $DESKTOP_ALL_ACCESS<br>
         &nbsp;&nbsp;&nbsp; $DESKTOP_CREATEMENU<br>
         &nbsp;&nbsp;&nbsp; $DESKTOP_CREATEWINDOW (Default)<br>
@@ -43,16 +43,16 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The optional flags. It can be zero or the following value:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The optional flags. It can be zero or the following value:<br>
         &nbsp;&nbsp;&nbsp; $DF_ALLOWOTHERACCOUNTHOOK</td>
       </tr>
       <tr>
         <td>$iHeap</td>
-        <td><strong>[optional]</strong> The size of the desktop heap, in kilobytes. Default is 0.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The size of the desktop heap, in kilobytes. Default is 0.</td>
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes.<br>
         If this parameter is 0 (Default), the handle cannot be inherited .</td>
       </tr>
     </tbody>
@@ -61,11 +61,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the newly created desktop. If the specified desktop already exists, the function succeeds and returns a handle to the existing desktop.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

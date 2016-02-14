@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_MoveWindow</h1>
   <p class="funcdesc">Changes the position and dimensions of the specified window<br></p>
@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td>$bRepaint</td>
-        <td><strong>[optional]</strong> Specifies whether the window is to be repainted. If True, the window receives a $WM_PAINT<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the window is to be repainted. If True, the window receives a $WM_PAINT<br>
         message. If False, no repainting of any kind occurs. This applies to the client area, the nonclient area, and<br>
         any part of the parent window uncovered as a result of moving a child window. If False, the application must<br>
         explicitly invalidate or redraw any parts of the window and parent window that need redrawing.</td>
@@ -56,11 +56,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

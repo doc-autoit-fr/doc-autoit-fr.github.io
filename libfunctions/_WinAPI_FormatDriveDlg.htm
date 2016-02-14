@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_FormatDriveDlg</h1>
   <p class="funcdesc">Opens the Shell's Format dialog<br></p>
@@ -29,14 +29,14 @@
       </tr>
       <tr>
         <td>$iOption</td>
-        <td><strong>[optional]</strong> This parameter must be 0 or one of the following values that alter the default format options in the dialog.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This parameter must be 0 or one of the following values that alter the default format options in the dialog.<br>
         &nbsp;&nbsp;&nbsp; $SHFMT_OPT_FULL (Default)<br>
         &nbsp;&nbsp;&nbsp; $SHFMT_OPT_QUICKFORMAT<br>
         &nbsp;&nbsp;&nbsp; $SHFMT_OPT_SYSONLY</td>
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><strong>[optional]</strong> Handle of the parent window of the dialog.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle of the parent window of the dialog.</td>
       </tr>
     </tbody>
   </table>
@@ -44,11 +44,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The format ID of the last successful format. The LOWORD of this value can be passed on subsequent calls as the fmtID parameter to repeat the last format.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to one of the following constant.<br>
         &nbsp;&nbsp;&nbsp; $SHFMT_ERROR<br>
         &nbsp;&nbsp;&nbsp; $SHFMT_CANCEL<br>

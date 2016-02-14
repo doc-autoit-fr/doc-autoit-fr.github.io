@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_ShellEmptyRecycleBin</h1>
   <p class="funcdesc">Empties the Recycle Bin on the specified drive<br></p>
@@ -25,13 +25,13 @@
     <tbody>
       <tr>
         <td style="width:15%">$sRoot</td>
-        <td style="width:85%"><strong>[optional]</strong> The string that contains the path of the root drive on which the Recycle Bin is located. This string<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The string that contains the path of the root drive on which the Recycle Bin is located. This string<br>
         can be formatted with the drive, folder, and subfolder names, for example "c:\windows\system\".<br>
         If this parameter is empty string (Default), all Recycle Bins on all drives will be emptied.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> This parameter can be one or more of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This parameter can be one or more of the following values.<br>
         $SHERB_NOCONFIRMATION<br>
         $SHERB_NOPROGRESSUI<br>
         $SHERB_NOSOUND<br>
@@ -39,7 +39,7 @@
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><strong>[optional]</strong> Handle to the parent window of any dialog boxes that might be displayed during the operation.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to the parent window of any dialog boxes that might be displayed during the operation.</td>
       </tr>
     </tbody>
   </table>
@@ -47,11 +47,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

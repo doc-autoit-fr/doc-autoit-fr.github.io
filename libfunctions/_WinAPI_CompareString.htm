@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CompareString</h1>
   <p class="funcdesc">Compares two character strings for a specified locale<br></p>
@@ -44,7 +44,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The flags that indicate how the function compares the two strings. This parameter can be 0 or combination of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that indicate how the function compares the two strings. This parameter can be 0 or combination of the following values:<br>
         &nbsp;&nbsp;&nbsp; $LINGUISTIC_IGNORECASE<br>
         &nbsp;&nbsp;&nbsp; $LINGUISTIC_IGNOREDIACRITIC<br>
         <br>
@@ -66,14 +66,14 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The one of the following values that indicates a result of the comparison strings.<br>
         &nbsp;&nbsp;&nbsp; $CSTR_LESS_THAN<br>
         &nbsp;&nbsp;&nbsp; $CSTR_EQUAL<br>
         &nbsp;&nbsp;&nbsp; $CSTR_GREATER_THAN</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

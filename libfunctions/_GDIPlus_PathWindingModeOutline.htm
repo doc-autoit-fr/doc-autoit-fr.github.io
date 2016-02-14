@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_GDIPlus_PathWindingModeOutline</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Transforms and flattens a path, and then converts the path's data points so that they represent only the outline of the path</span><span lang="fr" style="display: none">Transforme et aplatit un tracé (GraphicsPath), puis convertit les points de données du tracé de sorte qu'ils ne représentent que le contour du tracé</span></span><br></p>
@@ -29,11 +29,11 @@
       </tr>
       <tr>
         <td>$hMatrix</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Pointer to a Matrix object that specifies the transformation.</span><span lang="fr" style="display: none">Handle de l'objet Matrix qui spécifie la transformation.</span></span> <span class="segments"><span lang="en">If 0, no transformation is applied</span><span lang="fr" style="display: none">Si 0, aucune transformation n'est appliquée</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pointer to a Matrix object that specifies the transformation.</span><span lang="fr" style="display: none">Handle de l'objet Matrix qui spécifie la transformation.</span></span> <span class="segments"><span lang="en">If 0, no transformation is applied</span><span lang="fr" style="display: none">Si 0, aucune transformation n'est appliquée</span></span></td>
       </tr>
       <tr>
         <td>$fFlatness</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Real number that specifies the maximum error between the path and its flattened approximation.</span><span lang="fr" style="display: none">Nombre décimal qui spécifie l'erreur maximale entre le tracé et son approximation aplatie.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Real number that specifies the maximum error between the path and its flattened approximation.</span><span lang="fr" style="display: none">Nombre décimal qui spécifie l'erreur maximale entre le tracé et son approximation aplatie.</span></span><br>
         <span class="segments"><span lang="en">Reducing the flatness increases the number of line segments in the approximation.</span><span lang="fr" style="display: none">Une planéité faible augmente le nombre de segments de droite dans l'approximation.</span></span></td>
       </tr>
     </tbody>
@@ -42,11 +42,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">False and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).</span><span lang="fr" style="display: none">Retourne False et @error &lt;&gt; 0, @extended contient le code erreur GPSTATUS($GPID_ERR*).</span></span></td>
       </tr>
     </tbody>

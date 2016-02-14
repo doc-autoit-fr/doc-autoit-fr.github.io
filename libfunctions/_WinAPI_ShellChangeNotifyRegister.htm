@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_ShellChangeNotifyRegister</h1>
   <p class="funcdesc">Registers a window to receive notifications from the file system or Shell<br></p>
@@ -52,7 +52,7 @@
       </tr>
       <tr>
         <td>$bRecursive</td>
-        <td><strong>[optional]</strong> Specifies whether to post notifications for children paths in $aPaths parameter, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to post notifications for children paths in $aPaths parameter, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Notifications would come from the folder's children.<br>
         &nbsp;&nbsp;&nbsp; False - Notifications would come from the specified folder's only (Default).</td>
       </tr>
@@ -62,11 +62,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The registration ID.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

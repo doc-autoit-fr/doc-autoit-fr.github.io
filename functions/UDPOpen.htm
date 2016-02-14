@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>UDPOpen</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Open a socket connected to an existing server .</span><span lang="fr" style="display: none">Ouvre un socket connecté à un serveur existant.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; $UDP_OPEN_DEFAULT (0) - (Default) - No additional options are set.<br>
         &nbsp;&nbsp;&nbsp; $UDP_OPEN_BROADCAST (1) - Allow the broadcasting on the address "255.255.255.255".<br>
         <br>
@@ -44,13 +44,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">
           <span class="segments"><span lang="en">an array :</span><span lang="fr" style="display: none">Retourne un tableau :</span></span> <span class="segments"><span lang="en">$aArray[1] contains the real socket, $aArray[2] contains the specified IP address and $aArray[3] contains the port.</span><span lang="fr" style="display: none">$array[1] contient le socket réel, $array[2] contient l'adresse IP spécifiée et $array[3] contient le port.</span></span> <span class="segments"><span lang="en">We need this information in subsequent calls to <a href="UDPSend.htm">UDPSend()</a>, where we pass this socket structure/array.</span><span lang="fr" style="display: none">Nous avons besoin de ces informations pour des appels ultérieurs à <a href="UDPSend.htm">UDPSend()</a>, où nous passons cette structure/tableau de socket.</span></span><a href="UDPSend.htm"></a>
         </td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">$aArray[0]=0 and set the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne $array[0]=0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

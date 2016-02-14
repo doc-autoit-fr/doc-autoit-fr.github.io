@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_AddIconTransparency</h1>
   <p class="funcdesc">Adds a transparency to the specified 32 bits-per-pixel icon<br></p>
@@ -29,11 +29,11 @@
       </tr>
       <tr>
         <td>$iPercent</td>
-        <td><strong>[optional]</strong> A value (in percent) that specifies how much to decrease the values of the alpha channel for the specified icon. If this parameter is 0, the function returns a fully transparent icon. Default is 80.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A value (in percent) that specifies how much to decrease the values of the alpha channel for the specified icon. If this parameter is 0, the function returns a fully transparent icon. Default is 80.</td>
       </tr>
       <tr>
         <td>$bDelete</td>
-        <td><strong>[optional]</strong> Specifies whether to delete the icon after the function is successful, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to delete the icon after the function is successful, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Icon will be deleted if the function succeeds.<br>
         &nbsp;&nbsp;&nbsp; False - Do not delete, you must release the icon when you are finished using it (Default).</td>
       </tr>
@@ -43,11 +43,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the newly created icon.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

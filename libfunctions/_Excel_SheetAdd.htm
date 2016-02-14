@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Excel_SheetAdd</h1>
   <p class="funcdesc">Adds new sheet(s) to a workbook and sets their names<br></p>
@@ -29,20 +29,20 @@
       </tr>
       <tr>
         <td>$vSheet</td>
-        <td><strong>[optional]</strong> Object, index or name of the sheet before/after which the new sheet is inserted.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Object, index or name of the sheet before/after which the new sheet is inserted.<br>
         &nbsp;&nbsp;&nbsp; -1 = insert before/after the last worksheet (default = keyword Default = active worksheet)</td>
       </tr>
       <tr>
         <td>$bBefore</td>
-        <td><strong>[optional]</strong> The new sheet will be inserted before $vSheet if True, after $vSheet if False (default = True)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The new sheet will be inserted before $vSheet if True, after $vSheet if False (default = True)</td>
       </tr>
       <tr>
         <td>$iCount</td>
-        <td><strong>[optional]</strong> Number of worksheets to be inserted (default = 1). Maximum is 255</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Number of worksheets to be inserted (default = 1). Maximum is 255</td>
       </tr>
       <tr>
         <td>$sName</td>
-        <td><strong>[optional]</strong> Name(s) of the sheet(s) to create (default = "" = follows standard Excel new sheet convention).<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Name(s) of the sheet(s) to create (default = "" = follows standard Excel new sheet convention).<br>
         &nbsp;&nbsp;&nbsp; When $iCount &gt; 1 multiple names can be provided separated by | (pipe character). Sheets are named from left to right</td>
       </tr>
     </tbody>
@@ -51,11 +51,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">an object of the (first) added worksheet.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets @error.</td>
       </tr>
       <tr>

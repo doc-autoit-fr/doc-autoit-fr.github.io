@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_ArraySearch</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Finds an entry within a 1D or 2D array.</span><span lang="fr" style="display: none">Cherche une valeur dans un tableau 1D ou 2D.</span></span> <span class="segments"><span lang="en">Similar to _ArrayBinarySearch(), except that the array does not need to be sorted</span><span lang="fr" style="display: none">Similaire à _ArrayBinarySearch(), sauf que le tableau n'a pas besoin d'être trié</span></span><br></p>
@@ -33,19 +33,19 @@
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to start searching at</span><span lang="fr" style="display: none">Index du tableau où commencer la recherche</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Index of array to start searching at</span><span lang="fr" style="display: none">Index du tableau où commencer la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to stop searching at</span><span lang="fr" style="display: none">Index du tableau où arrêter la recherche</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Index of array to stop searching at</span><span lang="fr" style="display: none">Index du tableau où arrêter la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iCase</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
       </tr>
       <tr>
         <td>$iCompare</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; 0 Casting of variables to the same type (default), "string" = 0, "" = 0 or "0" = 0 match (If $iCase = 0)<br>
         &nbsp;&nbsp;&nbsp; 1 executes a partial search<br>
         &nbsp;&nbsp;&nbsp; 2 comparison match if variables have same type and same value<br>
@@ -53,15 +53,15 @@
       </tr>
       <tr>
         <td>$iForward</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If set to 0, searches the array from end to beginning (instead of beginning to end)</span><span lang="fr" style="display: none">Si défini à 0, la recherche dans le tableau se fait de la fin au début (au lieu du début à la fin)</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If set to 0, searches the array from end to beginning (instead of beginning to end)</span><span lang="fr" style="display: none">Si défini à 0, la recherche dans le tableau se fait de la fin au début (au lieu du début à la fin)</span></span></td>
       </tr>
       <tr>
         <td>$iSubItem</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
       </tr>
       <tr>
         <td>$bRow</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -69,11 +69,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the index that $vValue was found at.</span><span lang="fr" style="display: none">Retourne l'index où $vValeur a été trouvé.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">-1 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">-1 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

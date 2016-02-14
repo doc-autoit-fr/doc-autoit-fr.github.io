@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>MsgBox</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Displays a simple message box with optional timeout.</span><span lang="fr" style="display: none">Affiche une simple boîte de message, avec temporisation optionnelle.</span></span><br></p>
@@ -36,11 +36,11 @@
       </tr>
       <tr>
         <td>timeout</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -48,11 +48,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the ID of the button pressed.</span><span lang="fr" style="display: none">Retourne ID du bouton pressé.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">$IDTIMEOUT (-1) if the message box timed out.</span><span lang="fr" style="display: none">Retourne $IDTIMEOUT (-1) si la temporisation de la boîte de dialogue est dépassée.</span></span></td>
       </tr>
     </tbody>

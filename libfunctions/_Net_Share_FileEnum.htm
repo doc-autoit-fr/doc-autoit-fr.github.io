@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Net_Share_FileEnum</h1>
   <p class="funcdesc">Returns information about open files on a server<br></p>
@@ -25,18 +25,18 @@
     <tbody>
       <tr>
         <td style="width:15%">$sServer</td>
-        <td style="width:85%"><strong>[optional]</strong> String that contains the name of the server on which the function is to execute.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> String that contains the name of the server on which the function is to execute.<br>
         A blank specifies the local computer.</td>
       </tr>
       <tr>
         <td>$sBaseName</td>
-        <td><strong>[optional]</strong> String containing a qualifier for the returned information.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> String containing a qualifier for the returned information.<br>
         If blank all open resources are enumerated.<br>
         If not blank, the function enumerates only resources that have $sBaseName as a prefix.</td>
       </tr>
       <tr>
         <td>$sUserName</td>
-        <td><strong>[optional]</strong> String that specifies the name of the user.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> String that specifies the name of the user.<br>
         If not blank $sUserName serves as a qualifier to the enumeration.</td>
       </tr>
     </tbody>
@@ -45,7 +45,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau au format suivant :</span></span><br>
         &nbsp;&nbsp;&nbsp; [0][0] - Number of entries in the array (n)<br>
         &nbsp;&nbsp;&nbsp; [1][0] - ID number assigned to the resource when it is opened<br>
@@ -62,7 +62,7 @@
         &nbsp;&nbsp;&nbsp; [1][4] - Specifies which user or which computer opened the resource</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

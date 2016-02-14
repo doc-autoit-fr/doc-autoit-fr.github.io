@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>StringInStr</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Checks if a string contains a given substring.</span><span lang="fr" style="display: none">Vérifie si une chaîne contient une sous-chaîne donnée.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>casesense</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSE (0) = not case sensitive, using the user's locale (default)<br>
         &nbsp;&nbsp;&nbsp; $STR_CASESENSE (1) = case sensitive<br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSEBASIC (2) = not case sensitive, using a basic/faster comparison<br>
@@ -41,15 +41,15 @@
       </tr>
       <tr>
         <td>occurrence</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Which occurrence of the substring to find in the string.</span><span lang="fr" style="display: none">Quelle occurrence de la sous-chaîne à trouver dans la chaîne.</span></span> <span class="segments"><span lang="en">Use a negative occurrence to search from the right side.</span><span lang="fr" style="display: none">Utiliser une occurrence négative pour rechercher à partir de la droite de la chaîne.</span></span> <span class="segments"><span lang="en">The default value is 1 (finds first occurrence).</span><span lang="fr" style="display: none">La valeur par défaut est 1 (trouve la première occurrence).</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Which occurrence of the substring to find in the string.</span><span lang="fr" style="display: none">Quelle occurrence de la sous-chaîne à trouver dans la chaîne.</span></span> <span class="segments"><span lang="en">Use a negative occurrence to search from the right side.</span><span lang="fr" style="display: none">Utiliser une occurrence négative pour rechercher à partir de la droite de la chaîne.</span></span> <span class="segments"><span lang="en">The default value is 1 (finds first occurrence).</span><span lang="fr" style="display: none">La valeur par défaut est 1 (trouve la première occurrence).</span></span></td>
       </tr>
       <tr>
         <td>start</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The starting position of the search.</span><span lang="fr" style="display: none">La position de départ de la recherche.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The starting position of the search.</span><span lang="fr" style="display: none">La position de départ de la recherche.</span></span></td>
       </tr>
       <tr>
         <td>count</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The number of characters to search.</span><span lang="fr" style="display: none">Le nombre de caractères à traiter.</span></span> <span class="segments"><span lang="en">This effectively limits the search to a portion of the full string.</span><span lang="fr" style="display: none">Ceci limite la recherche à une partie de la chaîne complète .</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The number of characters to search.</span><span lang="fr" style="display: none">Le nombre de caractères à traiter.</span></span> <span class="segments"><span lang="en">This effectively limits the search to a portion of the full string.</span><span lang="fr" style="display: none">Ceci limite la recherche à une partie de la chaîne complète .</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -57,11 +57,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the position of the substring.</span><span lang="fr" style="display: none">Retourne la position de la sous-chaîne.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 if substring not found.</span><span lang="fr" style="display: none">Retourne 0 si la sous-chaîne n'est pas trouvée.</span></span></td>
       </tr>
       <tr>

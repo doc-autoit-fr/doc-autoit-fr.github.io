@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_LookupIconIdFromDirectoryEx</h1>
   <p class="funcdesc">Searches through icon or cursor data for the icon or cursor that best fits the current display device<br></p>
@@ -30,23 +30,23 @@
       </tr>
       <tr>
         <td>$bIcon</td>
-        <td><strong>[optional]</strong> Specifies whether an icon or a cursor is sought, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether an icon or a cursor is sought, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The function is searching for an icon (Default).<br>
         &nbsp;&nbsp;&nbsp; False - The function is searching for a cursor.</td>
       </tr>
       <tr>
         <td>$iXDesiredPixels</td>
-        <td><strong>[optional]</strong> The desired width, in pixels, of the icon or cursor.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The desired width, in pixels, of the icon or cursor.<br>
         If this parameter is zero (Default), the function uses the system metric value.</td>
       </tr>
       <tr>
         <td>$iYDesiredPixels</td>
-        <td><strong>[optional]</strong> The desired height, in pixels, of the icon or cursor.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The desired height, in pixels, of the icon or cursor.<br>
         If this parameter is zero (Default), the function uses the system metric value.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> This parameter can be one or more of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This parameter can be one or more of the following values.<br>
         &nbsp;&nbsp;&nbsp; $LR_DEFAULTCOLOR (Default)<br>
         &nbsp;&nbsp;&nbsp; $LR_MONOCHROME</td>
       </tr>
@@ -56,11 +56,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">An integer resource identifier for the icon or cursor that best fits the current display device.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

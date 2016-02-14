@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RemoveFontResourceEx</h1>
   <p class="funcdesc">Removes the fonts in the specified file from the system font table<br></p>
@@ -31,13 +31,13 @@
       <tr>
         <td>$iFlag</td>
         <td>
-          <strong>[optional]</strong> The characteristics of the font to be removed from the system. In order for the font to be removed, the flags<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The characteristics of the font to be removed from the system. In order for the font to be removed, the flags<br>
           used must be the same as when the font was added with the <a href="_WinAPI_AddFontResourceEx.htm">_WinAPI_AddFontResourceEx()</a> function.
         </td>
       </tr>
       <tr>
         <td>$bNotify</td>
-        <td><strong>[optional]</strong> Specifies whether sends a WM_FONTCHANGE message, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether sends a WM_FONTCHANGE message, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Send the WM_FONTCHANGE message to all top-level windows after changing the pool of font resources.<br>
         &nbsp;&nbsp;&nbsp; False - Don't send (Default).</td>
       </tr>
@@ -47,11 +47,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">False</span><span lang="fr" style="display: none">Retourne False</span></span></td>
       </tr>
     </tbody>

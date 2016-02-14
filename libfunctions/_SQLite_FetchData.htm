@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_SQLite_FetchData</h1>
   <p class="funcdesc">Fetches 1 row of data from a _SQLite_Query() based query<br></p>
@@ -35,18 +35,18 @@
       </tr>
       <tr>
         <td>$bBinary</td>
-        <td><strong>[optional]</strong> Switch for binary mode ($aRow will be an array of binary strings)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Switch for binary mode ($aRow will be an array of binary strings)</td>
       </tr>
       <tr>
         <td>$bDoNotFinalize</td>
         <td>
-          <strong>[optional]</strong> Switch can be set to True if you need to keep the query unfinalized for further use.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Switch can be set to True if you need to keep the query unfinalized for further use.<br>
           (It is then the caller's responsability to invoke <a href="_SQLite_QueryFinalize.htm">_SQLite_QueryFinalize()</a> before closing database.)
         </td>
       </tr>
       <tr>
         <td>$iColumns</td>
-        <td><strong>[optional]</strong> Number of columns to be returned ((Default = all)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Number of columns to be returned ((Default = all)</td>
       </tr>
     </tbody>
   </table>
@@ -54,11 +54,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">$SQLITE_OK.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>a value that can be compared against $SQLITE_* constants.</td>
       </tr>
       <tr>

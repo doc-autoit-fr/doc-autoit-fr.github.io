@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_EnumProcessModules</h1>
   <p class="funcdesc">Retrieves a handle and name for each module in the specified process<br></p>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$iPID</td>
-        <td style="width:85%"><strong>[optional]</strong> The PID of the process. Default (0) is the current process.</td>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The PID of the process. Default (0) is the current process.</td>
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><strong>[optional]</strong> The filter criteria. This parameter is valid only for <strong>Windows Vista or later</strong>, and can be one of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The filter criteria. This parameter is valid only for <strong>Windows Vista or later</strong>, and can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $LIST_MODULES_32BIT<br>
         &nbsp;&nbsp;&nbsp; $LIST_MODULES_64BIT<br>
         &nbsp;&nbsp;&nbsp; $LIST_MODULES_ALL<br>
@@ -41,7 +41,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The 2D array containing the following information:<br>
         &nbsp;&nbsp;&nbsp; [0][0] - Number of rows in array (n)<br>
         &nbsp;&nbsp;&nbsp; [0][1] - Unused<br>
@@ -49,7 +49,7 @@
         &nbsp;&nbsp;&nbsp; [n][1] - The path to the file that contains the module.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span></td>
       </tr>
     </tbody>

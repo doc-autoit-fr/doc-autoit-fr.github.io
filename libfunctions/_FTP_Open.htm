@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_FTP_Open</h1>
   <p class="funcdesc">Opens an FTP session<br></p>
@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iAccessType</td>
-        <td><strong>[optional]</strong> Set if proxy is used:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Set if proxy is used:<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_OPEN_TYPE_DIRECT -&gt; no proxy (Default)<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_OPEN_TYPE_PRECONFIG -&gt; Retrieves the proxy or direct configuration from the registry.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_OPEN_TYPE_PRECONFIG_WITH_NO_AUTOPROXY -&gt; Retrieves the proxy or direct configuration from the registry and prevents the use of a startup Microsoft JScript or Internet Setup (INS) file.<br>
@@ -37,15 +37,15 @@
       </tr>
       <tr>
         <td>$sProxyName</td>
-        <td><strong>[optional]</strong> ProxyName.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> ProxyName.</td>
       </tr>
       <tr>
         <td>$sProxyBypass</td>
-        <td><strong>[optional]</strong> ProxyByPasses's.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> ProxyByPasses's.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_ASYNC -&gt; Makes only asynchronous requests on handles descended from the handle returned from this function.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_FROM_CACHE -&gt; Does not make network requests. All entities are returned from the cache. If the requested item is not in the cache, a suitable error, such as ERROR_FILE_NOT_FOUND, is returned.</td>
       </tr>
@@ -55,13 +55,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">
           a handle to internet session to be used in <a href="_FTP_Connect.htm">_FTP_Connect()</a>.
         </td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

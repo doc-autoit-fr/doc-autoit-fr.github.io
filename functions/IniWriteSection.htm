@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>IniWriteSection</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Writes a section to a standard format .ini file.</span><span lang="fr" style="display: none">Écrit une section dans un fichier ini de format standard.</span></span><br></p>
@@ -37,7 +37,7 @@
       <tr>
         <td>index</td>
         <td>
-          <strong>[optional]</strong> <span class="segments"><span lang="en">If an array is passed as data, this specifies the index to start writing from.</span><span lang="fr" style="display: none">Si un tableau est transmis en données, ce paramètre indique l'indice à partir duquel l'écriture doit commencer.</span></span> <span class="segments"><span lang="en">By default, this is 1 so that the return value of <a href="IniReadSection.htm">IniReadSection()</a> can be used immediately.</span><span lang="fr" style="display: none">Par défaut, c'est 1 de telle façon que la valeur de retour de <a href="IniReadSection.htm">IniReadSection()</a> peut être utilisée immédiatement.</span></span> <span class="segments"><span lang="en">For manually created arrays, this value may need to be different depending on how the array was created.</span><span lang="fr" style="display: none">Pour les tableaux créés à la main, cette valeur peut être différente en fonction de la façon dont le réseau a été créé.</span></span> <span class="segments"><span lang="en">This parameter is ignored if a string is passed as data.</span><span lang="fr" style="display: none">Ce paramètre est ignoré si une chaîne est passée comme donnée.</span></span><a href="IniReadSection.htm"></a>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If an array is passed as data, this specifies the index to start writing from.</span><span lang="fr" style="display: none">Si un tableau est transmis en données, ce paramètre indique l'indice à partir duquel l'écriture doit commencer.</span></span> <span class="segments"><span lang="en">By default, this is 1 so that the return value of <a href="IniReadSection.htm">IniReadSection()</a> can be used immediately.</span><span lang="fr" style="display: none">Par défaut, c'est 1 de telle façon que la valeur de retour de <a href="IniReadSection.htm">IniReadSection()</a> peut être utilisée immédiatement.</span></span> <span class="segments"><span lang="en">For manually created arrays, this value may need to be different depending on how the array was created.</span><span lang="fr" style="display: none">Pour les tableaux créés à la main, cette valeur peut être différente en fonction de la façon dont le réseau a été créé.</span></span> <span class="segments"><span lang="en">This parameter is ignored if a string is passed as data.</span><span lang="fr" style="display: none">Ce paramètre est ignoré si une chaîne est passée comme donnée.</span></span><a href="IniReadSection.htm"></a>
         </td>
       </tr>
     </tbody>
@@ -46,11 +46,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span> The function will sets the @error flag to 1 if the data format is invalid.</td>
       </tr>
     </tbody>

@@ -14,10 +14,10 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_FileTimeToDOSDateTime</h1>
-  <p class="funcdesc">Converts MS-DOS date and time values to a file time<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Converts MS-DOS date and time values to a file time</span><span lang="fr" style="display: none">Convertit les valeurs de date et l'heure MS-DOS à une heure du fichier</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_FileTimeToDOSDateTime ( $tFileTime )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -31,11 +31,11 @@
   </table>
   <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) avec le format suivant :</span></span><br>
   [0] - MS-DOS date, packed as follows:<br>
-  <span class="segments"><span lang="en">Bits 0- 4 Day of the month (1–31)</span><span lang="fr" style="display: none">Bits 0- 4 Jour du mois (1–31)</span></span><br>
-  <span class="segments"><span lang="en">Bits 5- 8 Month (1 = January, 2 = February, and so on)</span><span lang="fr" style="display: none">Bits 5- 8 Mois (1 = janvier, 2 = février, et ainsi de suite)</span></span><br>
-  <span class="segments"><span lang="en">Bits 9-15 Year offset from 1980 (add 1980 to get actual year)</span><span lang="fr" style="display: none">Bits 9-15 Décalage de l'année par rapport à 1980 (ajoutez 1980 pour obtenir l'année actuel)</span></span><br>
+  <span class="segments"><span lang="en">Bits 0- 4 Day of the month (1–31)</span><span lang="fr" style="display: none">Bits 0-4 Jour du mois (1–31)</span></span><br>
+  <span class="segments"><span lang="en">Bits 5- 8 Month (1 = January, 2 = February, and so on)</span><span lang="fr" style="display: none">Bits 5-8 Mois (1 = janvier, 2 = février, et ainsi de suite)</span></span><br>
+  <span class="segments"><span lang="en">Bits 9-15 Year offset from 1980 (add 1980 to get actual year)</span><span lang="fr" style="display: none">Bits 9-15 Décalage de l'année par rapport à 1980 (ajoutez 1980 pour obtenir l'année actuelle)</span></span><br>
   [1] - MS-DOS time, packed as follows:<br>
-  <span class="segments"><span lang="en">Bits 0- 4 Second divided by 2</span><span lang="fr" style="display: none">Bits 0- 4 Seconde divisée par 2</span></span><br>
+  <span class="segments"><span lang="en">Bits 0- 4 Second divided by 2</span><span lang="fr" style="display: none">Bits 0-4 Seconde divisée par 2</span></span><br>
   Bits 5-10 Minute (0–59)<br>
   <span class="segments"><span lang="en">Bits 11-15 Hour (0–23 on a 24-hour clock)</span><span lang="fr" style="display: none">Bits 11-15 Heure (0–23 sur une horloge de 24 heures)</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>RunAs</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Runs an external program under the context of a different user.</span><span lang="fr" style="display: none">Exécute un programme externe dans le contexte d'un autre utilisateur.</span></span><br></p>
@@ -49,18 +49,18 @@
       </tr>
       <tr>
         <td>workingdir</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">If not specified, then the value of @SystemDir will be used.</span><span lang="fr" style="display: none">S'il n'est pas spécifié, la valeur de SystemDir sera utilisée.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">If not specified, then the value of @SystemDir will be used.</span><span lang="fr" style="display: none">S'il n'est pas spécifié, la valeur de SystemDir sera utilisée.</span></span> <span class="segments"><span lang="en">This is not the path to the program.</span><span lang="fr" style="display: none">Ce n'est pas le chemin du programme.</span></span></td>
       </tr>
       <tr>
         <td>show_flag</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
         &nbsp;&nbsp;&nbsp; @SW_HIDE = Hidden window (or Default keyword)<br>
         &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimized window<br>
         &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximized window</td>
       </tr>
       <tr>
         <td>opt_flag</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Controls various options related to how the parent and child process interact.</span><span lang="fr" style="display: none">Options diverses liées à la façon dont les processus parent-enfant inter-agissent.</span></span><br>
         &nbsp;&nbsp;&nbsp; $STDIN_CHILD (0x1) = Provide a handle to the child's STDIN stream<br>
         &nbsp;&nbsp;&nbsp; $STDOUT_CHILD (0x2) = Provide a handle to the child's STDOUT stream<br>
         &nbsp;&nbsp;&nbsp; $STDERR_CHILD (0x4) = Provide a handle to the child's STDERR stream<br>
@@ -76,11 +76,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the PID of the process that was launched.</span><span lang="fr" style="display: none">Retourne le PID du processus qui a été lancé.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

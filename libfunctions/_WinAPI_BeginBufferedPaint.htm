@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_BeginBufferedPaint</h1>
   <p class="funcdesc">Begins a buffered paint operation<br></p>
@@ -37,7 +37,7 @@
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><strong>[optional]</strong> The format of the buffer. This parameter can be one of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The format of the buffer. This parameter can be one of the following values.<br>
         $BPBF_COMPATIBLEBITMAP (Default)<br>
         $BPBF_DIB<br>
         $BPBF_TOPDOWNDIB<br>
@@ -45,18 +45,18 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The additional flags, one or more of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The additional flags, one or more of the following values.<br>
         $BPPF_ERASE<br>
         $BPPF_NOCLIP<br>
         $BPPF_NONCLIENT</td>
       </tr>
       <tr>
         <td>$tExclude</td>
-        <td><strong>[optional]</strong> $tagRECT structure that specifies the area which is excluded from the clipping region.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure that specifies the area which is excluded from the clipping region.</td>
       </tr>
       <tr>
         <td>$iAlpha</td>
-        <td><strong>[optional]</strong> The alpha transparency value to be used on the entire source bitmap.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The alpha transparency value to be used on the entire source bitmap.<br>
         If this parameter is not specified or (-1) (Default), the source buffer is copied to the destination with no blending.</td>
       </tr>
     </tbody>
@@ -65,11 +65,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The handle to the buffered paint context.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

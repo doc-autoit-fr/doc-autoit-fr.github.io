@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinNet_GetResourceInformation</h1>
   <p class="funcdesc">Identifies the network provider that owns the resource<br></p>
@@ -29,12 +29,12 @@
       </tr>
       <tr>
         <td>$sProvider</td>
-        <td><strong>[optional]</strong> The name of the provider that owns the resource.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of the provider that owns the resource.<br>
         This member can be blank if the provider name is unknown.</td>
       </tr>
       <tr>
         <td>$iType</td>
-        <td><strong>[optional]</strong> Type of resource.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Type of resource.<br>
         This member can be 0 if it is not known.</td>
       </tr>
     </tbody>
@@ -43,7 +43,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau au format suivant :</span></span><br>
         &nbsp;&nbsp;&nbsp; $aResource[0] - Scope of enumeration:<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 0 - Connected<br>
@@ -78,7 +78,7 @@
         &nbsp;&nbsp;&nbsp; $aResource[8] - The part of the resource that is accessed through system functions</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_MessageBoxCheck</h1>
   <p class="funcdesc">Displays a message box that gives the user the option of suppressing further occurrences<br></p>
@@ -52,13 +52,13 @@
       </tr>
       <tr>
         <td>$iDefault</td>
-        <td><strong>[optional]</strong> The value that the function returns when the user has opted not to have the message box displayed<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The value that the function returns when the user has opted not to have the message box displayed<br>
         again. If the user has not opted to suppress the message box, the message box is displayed and<br>
         the function ignores $iDefault.</td>
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><strong>[optional]</strong> The window handle to the message box's owner.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The window handle to the message box's owner.</td>
       </tr>
     </tbody>
   </table>
@@ -66,12 +66,12 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">If the user has already chosen to suppress the message box, the function immediately returns the<br>
         value assigned to $iDefault, otherwise, returns one of the $ID_* constants.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>(-1).</td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_SetWinEventHook</h1>
   <p class="funcdesc">Sets an event hook function for a range of events<br></p>
@@ -38,17 +38,17 @@
       </tr>
       <tr>
         <td>$iPID</td>
-        <td><strong>[optional]</strong> The ID of the process from which the hook function receives events. If this parameter is 0 (Default),<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The ID of the process from which the hook function receives events. If this parameter is 0 (Default),<br>
         the hook function is associated with all existing processes on the current desktop.</td>
       </tr>
       <tr>
         <td>$iThreadId</td>
-        <td><strong>[optional]</strong> The ID of the thread from which the hook function receives events. If this parameter is 0 (Default),<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The ID of the thread from which the hook function receives events. If this parameter is 0 (Default),<br>
         the hook function is associated with all existing threads on the current desktop.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The flags that specify the location of the hook function and of the events to be skipped.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that specify the location of the hook function and of the events to be skipped.<br>
         The following flags are valid:<br>
         &nbsp;&nbsp;&nbsp; $WINEVENT_INCONTEXT<br>
         &nbsp;&nbsp;&nbsp; $WINEVENT_OUTOFCONTEXT (Default)<br>
@@ -69,11 +69,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">A value that identifies this event hook instance.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
       </tr>
     </tbody>

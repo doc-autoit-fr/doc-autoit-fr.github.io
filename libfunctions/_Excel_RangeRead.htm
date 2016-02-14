@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Excel_RangeRead</h1>
   <p class="funcdesc">Reads the value, formula or displayed text from a cell or range of cells of the specified workbook and worksheet<br></p>
@@ -29,15 +29,15 @@
       </tr>
       <tr>
         <td>$vWorksheet</td>
-        <td><strong>[optional]</strong> Name, index or worksheet object to be read. If set to keyword Default the active sheet will be used (default = keyword Default)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Name, index or worksheet object to be read. If set to keyword Default the active sheet will be used (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$vRange</td>
-        <td><strong>[optional]</strong> Either a range object or an A1 range. If set to Default all used cells will be processed (default = keyword Default)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Either a range object or an A1 range. If set to Default all used cells will be processed (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$iReturn</td>
-        <td><strong>[optional]</strong> What to return from the specified cell:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> What to return from the specified cell:<br>
         &nbsp;&nbsp;&nbsp; 1 - Value (default)<br>
         &nbsp;&nbsp;&nbsp; 2 - Formula<br>
         &nbsp;&nbsp;&nbsp; 3 - The displayed text<br>
@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td>$bForceFunc</td>
-        <td><strong>[optional]</strong> True forces to use the _ArrayTranspose function instead of the Excel transpose method (default = False).<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True forces to use the _ArrayTranspose function instead of the Excel transpose method (default = False).<br>
         &nbsp;&nbsp;&nbsp; See the Remarks section for details.</td>
       </tr>
     </tbody>
@@ -54,11 +54,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">the data from the specified cell(s). A string for a cell, a zero-based array for a range of cells.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets @error.</td>
       </tr>
       <tr>

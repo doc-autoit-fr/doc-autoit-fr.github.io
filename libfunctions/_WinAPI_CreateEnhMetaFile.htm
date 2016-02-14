@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CreateEnhMetaFile</h1>
   <p class="funcdesc">Creates a device context for an enhanced-format metafile<br></p>
@@ -25,30 +25,30 @@
     <tbody>
       <tr>
         <td style="width:15%">$hDC</td>
-        <td style="width:85%"><strong>[optional]</strong> Handle to a reference device for the enhanced metafile. The system uses this device context to record the resolution and units of the device on which a picture originally appeared.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to a reference device for the enhanced metafile. The system uses this device context to record the resolution and units of the device on which a picture originally appeared.<br>
         If this parameter is 0 (Default), it uses the current display device for reference.</td>
       </tr>
       <tr>
         <td>$tRECT</td>
-        <td><strong>[optional]</strong> $tagRECT structure that specifies the dimensions of the picture to be stored in the enhanced metafile.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure that specifies the dimensions of the picture to be stored in the enhanced metafile.<br>
         If this parameter is 0 (Default), the graphics device interface computes the dimensions of the smallest rectangle that surrounds the picture drawn by the application.</td>
       </tr>
       <tr>
         <td>$bPixels</td>
-        <td><strong>[optional]</strong> Specifies whether the $tRECT structure defined in pixels, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the $tRECT structure defined in pixels, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - In logical units (pixels).<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - In .01-millimeter units (Default).</td>
       </tr>
       <tr>
         <td>$sFilePath</td>
         <td>
-          <strong>[optional]</strong> The file name for the enhanced metafile to be created.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file name for the enhanced metafile to be created.<br>
           If this parameter is '' (Default), the enhanced metafile is memory based and its contents are lost when it is deleted by using the <a href="_WinAPI_DeleteEnhMetaFile.htm">_WinAPI_DeleteEnhMetaFile()</a> function.
         </td>
       </tr>
       <tr>
         <td>$sDescription</td>
-        <td><strong>[optional]</strong> The string that specifies the name of the application that created the picture, as well as the picture's title. This string must be an empty string or represented as follows:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The string that specifies the name of the application that created the picture, as well as the picture's title. This string must be an empty string or represented as follows:<br>
         &nbsp;&nbsp;&nbsp; "application name|picture name"</td>
       </tr>
     </tbody>
@@ -57,11 +57,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the device context for the enhanced metafile.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
       </tr>
     </tbody>

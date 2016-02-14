@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RegNotifyChangeKeyValue</h1>
   <p class="funcdesc">Notifies the caller about changes to the attributes or contents of a specified registry key<br></p>
@@ -46,19 +46,19 @@
       </tr>
       <tr>
         <td>$bSubtree</td>
-        <td><strong>[optional]</strong> Specifies whether report changes in the subkeys of the specified key, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether report changes in the subkeys of the specified key, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The function reports changes in the specified key and all its subkeys.<br>
         &nbsp;&nbsp;&nbsp; False - The function reports changes only in the specified key (Default).</td>
       </tr>
       <tr>
         <td>$bAsync</td>
-        <td><strong>[optional]</strong> Specifies whether return immediately, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether return immediately, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The function returns immediately and reports changes by signaling the specified event.<br>
         &nbsp;&nbsp;&nbsp; False - The function does not return until a change has occurred (Default).</td>
       </tr>
       <tr>
         <td>$hEvent</td>
-        <td><strong>[optional]</strong> Handle to an event. If the $fAsync parameter is True, the function returns immediately and changes are<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to an event. If the $fAsync parameter is True, the function returns immediately and changes are<br>
         reported by signaling this event, otherwise this parameter is ignored (Default).</td>
       </tr>
     </tbody>
@@ -67,11 +67,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
       </tr>
     </tbody>

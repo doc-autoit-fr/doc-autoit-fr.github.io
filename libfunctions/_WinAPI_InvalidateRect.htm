@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_InvalidateRect</h1>
   <p class="funcdesc">Adds a rectangle to the specified window's update region<br></p>
@@ -29,12 +29,12 @@
       </tr>
       <tr>
         <td>$tRECT</td>
-        <td><strong>[optional]</strong> $tagRECT structure that contains the client coordinates of the rectangle to be added to the<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure that contains the client coordinates of the rectangle to be added to the<br>
         update region. If this parameter is 0 the entire client area is added to the update region.</td>
       </tr>
       <tr>
         <td>$bErase</td>
-        <td><strong>[optional]</strong> Specifies whether the background within the update region is to be erased when the update<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the background within the update region is to be erased when the update<br>
         region is processed. If this parameter is True the background is erased when the BeginPaint function is<br>
         called. If this parameter is False, the background remains unchanged.</td>
       </tr>
@@ -44,11 +44,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

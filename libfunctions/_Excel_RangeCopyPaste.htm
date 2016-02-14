@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Excel_RangeCopyPaste</h1>
   <p class="funcdesc">Cuts or copies one or multiple cells, rows or columns to a range or from/to the clipboard<br></p>
@@ -34,31 +34,31 @@
       </tr>
       <tr>
         <td>$vTargetRange</td>
-        <td><strong>[optional]</strong> Target range to copy/cut to. Can be a range object or an A1 range.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Target range to copy/cut to. Can be a range object or an A1 range.<br>
         &nbsp;&nbsp;&nbsp; If set to keyword Default then the range will be copied to the clipboard (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$bCut</td>
-        <td><strong>[optional]</strong> If set to True the source range isn't copied but cut out (default = False)<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If set to True the source range isn't copied but cut out (default = False)<br>
         &nbsp;&nbsp;&nbsp; This parameter is ignored when $vSourceRange is set to keyword Default.</td>
       </tr>
       <tr>
         <td>$iPaste</td>
-        <td><strong>[optional]</strong> The part of the range to be pasted from the clipboard (formulas, formats ...). Must be a value of the XlPasteType enumeration<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The part of the range to be pasted from the clipboard (formulas, formats ...). Must be a value of the XlPasteType enumeration<br>
         &nbsp;&nbsp;&nbsp; (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$iOperation</td>
-        <td><strong>[optional]</strong> The paste operation (add, divide, multiply ...). Must be a value of the XlPasteSpecialOperation enunmeration<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The paste operation (add, divide, multiply ...). Must be a value of the XlPasteSpecialOperation enunmeration<br>
         &nbsp;&nbsp;&nbsp; (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$bSkipBlanks</td>
-        <td><strong>[optional]</strong> If set to True blank cells from the clipboard will not be pasted into the target range (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If set to True blank cells from the clipboard will not be pasted into the target range (default = False)</td>
       </tr>
       <tr>
         <td>$bTranspose</td>
-        <td><strong>[optional]</strong> Set to True to transpose rows and columns when the range is pasted (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Set to True to transpose rows and columns when the range is pasted (default = False)</td>
       </tr>
     </tbody>
   </table>
@@ -66,11 +66,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">the object of the target range if $vTargetRange &lt;&gt; Default, else 1.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets @error.</td>
       </tr>
       <tr>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_ReleaseSemaphore</h1>
   <p class="funcdesc">Increases the count of the specified semaphore object by a specified amount<br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>$iIncrease</td>
-        <td><strong>[optional]</strong> The amount by which the semaphore object's current count is to be increased. The value must be greater<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The amount by which the semaphore object's current count is to be increased. The value must be greater<br>
         than zero. If the specified amount would cause the semaphore's count to exceed the maximum count that<br>
         was specified when the semaphore was created, the count is not changed and the function returns 0. <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span></td>
       </tr>
@@ -42,11 +42,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The previous count for the semaphore.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           Sets the @error flag to non-zero, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to et extendd error information.
         </td>

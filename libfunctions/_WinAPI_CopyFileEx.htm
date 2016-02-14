@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CopyFileEx</h1>
   <p class="funcdesc">Copies an existing file to a new file, notifying the application of its progress through a callback function<br></p>
@@ -33,7 +33,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The flags that specify how the file is to be copied. This parameter can be a combination of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that specify how the file is to be copied. This parameter can be a combination of the following values:<br>
         &nbsp;&nbsp;&nbsp; $COPY_FILE_ALLOW_DECRYPTED_DESTINATION (0x0008)<br>
         &nbsp;&nbsp;&nbsp; $COPY_FILE_COPY_SYMLINK (0x0800)<br>
         &nbsp;&nbsp;&nbsp; $COPY_FILE_FAIL_IF_EXISTS (0x0001)<br>
@@ -43,12 +43,12 @@
       </tr>
       <tr>
         <td>$pProgressProc</td>
-        <td><strong>[optional]</strong> The address of a callback function that is called each time another portion of the file has been copied.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The address of a callback function that is called each time another portion of the file has been copied.<br>
         (See MSDN for more information)</td>
       </tr>
       <tr>
         <td>$pData</td>
-        <td><strong>[optional]</strong> pointer to an argument to be passed to the callback function. Can be NULL.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> pointer to an argument to be passed to the callback function. Can be NULL.</td>
       </tr>
     </tbody>
   </table>
@@ -56,11 +56,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

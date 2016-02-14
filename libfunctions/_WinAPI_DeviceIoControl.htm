@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DeviceIoControl</h1>
   <p class="funcdesc">Sends a control code directly to a specified device driver<br></p>
@@ -39,19 +39,19 @@
       </tr>
       <tr>
         <td>$pInBuffer</td>
-        <td><strong>[optional]</strong> A pointer to the input buffer that contains the data required to perform the operation.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A pointer to the input buffer that contains the data required to perform the operation.</td>
       </tr>
       <tr>
         <td>$iInBufferSize</td>
-        <td><strong>[optional]</strong> The size of the input buffer, in bytes. Default is 0.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The size of the input buffer, in bytes. Default is 0.</td>
       </tr>
       <tr>
         <td>$pOutBuffer</td>
-        <td><strong>[optional]</strong> A pointer to the output buffer that is to receive the data returned by the operation.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A pointer to the output buffer that is to receive the data returned by the operation.</td>
       </tr>
       <tr>
         <td>$iOutBufferSize</td>
-        <td><strong>[optional]</strong> The size of the output buffer, in bytes. Default is 0.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The size of the output buffer, in bytes. Default is 0.</td>
       </tr>
     </tbody>
   </table>
@@ -59,11 +59,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True and @extended flag contains the size of the data stored in the output buffer, in bytes.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

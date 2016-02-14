@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>FileSelectFolder</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Initiates a Browse For Folder dialog.</span><span lang="fr" style="display: none">Lance une boîte de dialogue pour choisir un dossier.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; $FSF_CREATEBUTTON (1) = Show Create Folder Button (XP only)<br>
         &nbsp;&nbsp;&nbsp; $FSF_NEWDIALOG (2) = Use New Dialog Style (XP only)<br>
         &nbsp;&nbsp;&nbsp; $FSF_EDITCONTROL (4) = Show Edit Control (XP only)<br>
@@ -41,11 +41,11 @@
       </tr>
       <tr>
         <td>initial dir</td>
-        <td><strong>[optional]</strong> The full path of the folder you selected/highlighted when displaying dialogue (if it exists in the root folder). <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The full path of the folder you selected/highlighted when displaying dialogue (if it exists in the root folder). <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -53,11 +53,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the full path of the folder chosen.</span><span lang="fr" style="display: none">Retourne le chemin complet du dossier choisi.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">"" (empty string) and sets the @error flag to 1 if user cancels/closes the window.</span><span lang="fr" style="display: none">Renvoie "" (chaîne vide) et @error = 1 si l'utilisateur annule/ferme la fenêtre.</span></span></td>
       </tr>
     </tbody>

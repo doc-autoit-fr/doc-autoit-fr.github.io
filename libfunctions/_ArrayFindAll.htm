@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_ArrayFindAll</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Find the indices of all ocurrences of a search query between two points in a 1D or 2D array using _ArraySearch()</span><span lang="fr" style="display: none">Trouve les index de toutes les occurrences d'une requête de recherche entre deux points d'un tableau 1D ou 2D en utilisant _ArraySearch()</span></span><br></p>
@@ -33,19 +33,19 @@
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to start search</span><span lang="fr" style="display: none">Index du tableau où commence la recherche</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Index of array to start search</span><span lang="fr" style="display: none">Index du tableau où commence la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Index of array to end search</span><span lang="fr" style="display: none">Index de tableau où finir la recherche</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Index of array to end search</span><span lang="fr" style="display: none">Index de tableau où finir la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iCase</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
       </tr>
       <tr>
         <td>$iCompare</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; 0 Casting of variables to the same type (default), "string" = 0, "" = 0 or "0" = 0 match (If $iCase = 0)<br>
         &nbsp;&nbsp;&nbsp; 1 executes a partial search<br>
         &nbsp;&nbsp;&nbsp; 2 comparison match if variables have same type and same value<br>
@@ -53,11 +53,11 @@
       </tr>
       <tr>
         <td>$iSubItem</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
       </tr>
       <tr>
         <td>$bRow</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -65,11 +65,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">an array of all index numbers in array containing $vValue.</span><span lang="fr" style="display: none">Retourne le tableau de tous les index du tableau initial contenant $vValeur.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero (see <a href="_ArraySearch.htm">_ArraySearch()</a> description for @error).</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0 (consultez <a href="_ArraySearch.htm">_ArraySearch()</a> pour une description de @error ).</span></span></td>
       </tr>
     </tbody>

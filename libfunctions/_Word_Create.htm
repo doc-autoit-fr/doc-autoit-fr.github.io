@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Word_Create</h1>
   <p class="funcdesc">Connects to an existing Word instance or creates a new Word application object<br></p>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$bVisible</td>
-        <td style="width:85%"><strong>[optional]</strong> True specifies that the window will be visible (default)</td>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True specifies that the window will be visible (default)</td>
       </tr>
       <tr>
         <td>$bForceNew</td>
-        <td><strong>[optional]</strong> True forces to create a new Word instance even if there is already a running instance (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True forces to create a new Word instance even if there is already a running instance (default = False)</td>
       </tr>
     </tbody>
   </table>
@@ -37,13 +37,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">a variable pointing to a Word.Application object. Sets @extended to:<br>
         0 - Word was already running<br>
         1 - Word was not running or $bForceNew was set to True. Word has been started by this function</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

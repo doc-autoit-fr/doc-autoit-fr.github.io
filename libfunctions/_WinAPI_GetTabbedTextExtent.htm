@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetTabbedTextExtent</h1>
   <p class="funcdesc">Computes the width and height of a character string which may contain one or more tab characters<br></p>
@@ -33,18 +33,18 @@
       </tr>
       <tr>
         <td>$aTab</td>
-        <td><strong>[optional]</strong> The array containing the tab-stop positions, in device units. The tab stops must be sorted in increasing<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The array containing the tab-stop positions, in device units. The tab stops must be sorted in increasing<br>
         order; the smallest x-value should be the first item in the array. Also, it can be an integer value that is<br>
         one tab-stop position. In this case, the tab stops are separated by the distance specified by this value.<br>
         If this parameter is 0 (Default), tabs are expanded to eight times the average character width.</td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong>[optional]</strong> The index of array element that contains the first tab-stop position.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array element that contains the first tab-stop position.</td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong>[optional]</strong> The index of array element that contains the last tab-stop position.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array element that contains the last tab-stop position.</td>
       </tr>
     </tbody>
   </table>
@@ -52,11 +52,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">$tagSIZE structure that contains the dimensions of the string in logical units.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span></td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_FileListToArray</h1>
   <p class="funcdesc">Lists files and\or folders in a specified folder (Similar to using Dir with the /B Switch)<br></p>
@@ -29,11 +29,11 @@
       </tr>
       <tr>
         <td>$sFilter</td>
-        <td><strong>[optional]</strong> the filter to use, default is *. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> the filter to use, default is *. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><strong>[optional]</strong> specifies whether to return files folders or both<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> specifies whether to return files folders or both<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FILESFOLDERS (0) = (Default) Return both files and folders<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FILES (1) = Return files only<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FOLDERS (2) = Return Folders only<br>
@@ -41,7 +41,7 @@
       </tr>
       <tr>
         <td>$bReturnPath</td>
-        <td><strong>[optional]</strong> If True the full path is appended to the file\folder path, otherwise it is relative to the $sFilePath folder. <span class="segments"><span lang="en">Default is False.</span><span lang="fr" style="display: none">Par défaut, False.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True the full path is appended to the file\folder path, otherwise it is relative to the $sFilePath folder. <span class="segments"><span lang="en">Default is False.</span><span lang="fr" style="display: none">Par défaut, False.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -49,7 +49,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">A one-dimensional array.<br>
         &nbsp;&nbsp;&nbsp; $aArray[0] = Number of Files\Folders returned<br>
         &nbsp;&nbsp;&nbsp; $aArray[1] = 1st File\Folder<br>
@@ -58,7 +58,7 @@
         &nbsp;&nbsp;&nbsp; $aArray[n] = nth File\Folder</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

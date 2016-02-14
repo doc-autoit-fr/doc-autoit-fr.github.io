@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>RegWrite</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a key or value in the registry.</span><span lang="fr" style="display: none">Crée une clé ou une valeur dans le registre.</span></span><br></p>
@@ -28,15 +28,15 @@
       </tr>
       <tr>
         <td>valuename</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The valuename to write to.</span><span lang="fr" style="display: none">Le nom de la valeur à écrire.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The valuename to write to.</span><span lang="fr" style="display: none">Le nom de la valeur à écrire.</span></span></td>
       </tr>
       <tr>
         <td>type</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Type of key to write:</span><span lang="fr" style="display: none">Type de clé à écrire:</span></span> <span class="segments"><span lang="en">"REG_SZ", "REG_MULTI_SZ", "REG_EXPAND_SZ", "REG_DWORD", "REG_QWORD", or "REG_BINARY".</span><span lang="fr" style="display: none">"REG_SZ", "REG_MULTI_SZ", "REG_EXPAND_SZ", "REG_DWORD", "REG_QWORD", ou "REG_BINARY".</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Type of key to write:</span><span lang="fr" style="display: none">Type de clé à écrire:</span></span> <span class="segments"><span lang="en">"REG_SZ", "REG_MULTI_SZ", "REG_EXPAND_SZ", "REG_DWORD", "REG_QWORD", or "REG_BINARY".</span><span lang="fr" style="display: none">"REG_SZ", "REG_MULTI_SZ", "REG_EXPAND_SZ", "REG_DWORD", "REG_QWORD", ou "REG_BINARY".</span></span></td>
       </tr>
       <tr>
         <td>value</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The value to write.</span><span lang="fr" style="display: none">La valeur à écrire.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The value to write.</span><span lang="fr" style="display: none">La valeur à écrire.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -44,11 +44,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero if error writing registry key or value.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0 s'il y a une erreur d'écriture dans la clé de registres ou dans la valeur.</span></span></td>
       </tr>
       <tr>

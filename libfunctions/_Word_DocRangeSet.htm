@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Word_DocRangeSet</h1>
   <p class="funcdesc">Sets or modifies a range in a document<br></p>
@@ -36,26 +36,26 @@
       </tr>
       <tr>
         <td>$iStartUnit</td>
-        <td><strong>[optional]</strong> Unit by/to which the start position of the range is to be moved/set.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Unit by/to which the start position of the range is to be moved/set.<br>
         Can be any of the WdUnit enumeration (default = $WdWord).<br>
         When set to -1 the range is collapsed to the start of the range</td>
       </tr>
       <tr>
         <td>$iStartCount</td>
-        <td><strong>[optional]</strong> Number of units by/to which the start of range is moved/set.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Number of units by/to which the start of range is moved/set.<br>
         Positive numbers move the range forward in the document.<br>
         If the position is moved forward to a position beyond the end position of the range, the range is collapsed<br>
         and both the start and end positions are moved together(default = don't move the start position)</td>
       </tr>
       <tr>
         <td>$iEndUnit</td>
-        <td><strong>[optional]</strong> Unit by/to which the end position of the range is to be moved/set.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Unit by/to which the end position of the range is to be moved/set.<br>
         Can be any of the WdUnit enumeration (default = $WdWord).<br>
         When set to -1 the range is collapsed to the end of the range</td>
       </tr>
       <tr>
         <td>$iEndCount</td>
-        <td><strong>[optional]</strong> Number of units by/to which the end of the range is moved/set.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Number of units by/to which the end of the range is moved/set.<br>
         If this number is negative, the end is moved backward.<br>
         If the ending position overtakes the starting position, the range<br>
         collapses and both positions move together (default = don't move the end position)</td>
@@ -66,11 +66,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">the modified range object.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

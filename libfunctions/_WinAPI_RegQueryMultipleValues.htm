@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RegQueryMultipleValues</h1>
   <p class="funcdesc">Retrieves the type and data for a list of value names associated with an open registry key<br></p>
@@ -49,11 +49,11 @@
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong>[optional]</strong> The index of array to start querying at.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array to start querying at.</td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong>[optional]</strong> The index of array to stop querying at.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array to stop querying at.</td>
       </tr>
     </tbody>
   </table>
@@ -61,7 +61,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The number of bytes copied to the buffer. The $aValent array will contain the following data:<br>
         [n][0] - The name of the value (remain unchanged).<br>
         [n][1] - The size of the data, in bytes.<br>
@@ -69,7 +69,7 @@
         [n][3] - The type of data ($REG_*).</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>Sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DwmUpdateThumbnailProperties</h1>
   <p class="funcdesc">Specifies Desktop Window Manager (DWM) thumbnail properties<br></p>
@@ -29,30 +29,30 @@
       </tr>
       <tr>
         <td>$bVisible</td>
-        <td><strong>[optional]</strong> Specifies whether make the thumbnail visible or invisible, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether make the thumbnail visible or invisible, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - Visible (Default).<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - Invisible.</td>
       </tr>
       <tr>
         <td>$bClientAreaOnly</td>
-        <td><strong>[optional]</strong> Specifies whether use only the thumbnail source's client area or entire window, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether use only the thumbnail source's client area or entire window, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - Use only source's client area.<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - Use entire window (Default).</td>
       </tr>
       <tr>
         <td>$iOpacity</td>
-        <td><strong>[optional]</strong> The opacity with which to render the thumbnail. 0 is fully transparent while 255 (Default) is fully opaque.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The opacity with which to render the thumbnail. 0 is fully transparent while 255 (Default) is fully opaque.</td>
       </tr>
       <tr>
         <td>$tRectDest</td>
         <td>
-          <strong>[optional]</strong> $tagRECT structure containing the rectangle in the destination window the thumbnail will be rendered.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure containing the rectangle in the destination window the thumbnail will be rendered.<br>
           By default, the size of this rectangle equal to the source size of the DWM thumbnail which returns the <a href="_WinAPI_DwmQueryThumbnailSourceSize.htm">_WinAPI_DwmQueryThumbnailSourceSize()</a> function.
         </td>
       </tr>
       <tr>
         <td>$tRectSrc</td>
-        <td><strong>[optional]</strong> $tagRECT structure containing the rectangle that specifies the region of the source window to use as the thumbnail.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure containing the rectangle that specifies the region of the source window to use as the thumbnail.<br>
         By default, the entire window is used as the thumbnail.</td>
       </tr>
     </tbody>
@@ -61,11 +61,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

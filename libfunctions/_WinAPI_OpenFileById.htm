@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_OpenFileById</h1>
   <p class="funcdesc">Opens the file that matches the specified object identifier<br></p>
@@ -34,7 +34,7 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong>[optional]</strong> The access to the object. Access can be read, write, or both. If this parameter is 0 (Default), the<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The access to the object. Access can be read, write, or both. If this parameter is 0 (Default), the<br>
         application can query file and device attributes without accessing a device.<br>
         $GENERIC_READ<br>
         $GENERIC_WRITE<br>
@@ -42,7 +42,7 @@
       </tr>
       <tr>
         <td>$iShare</td>
-        <td><strong>[optional]</strong> The sharing mode of an object, which can be read, write, both, or none. If this parameter is 0 (Default) and<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The sharing mode of an object, which can be read, write, both, or none. If this parameter is 0 (Default) and<br>
         function succeeds, the object cannot be shared and cannot be opened again until the handle is closed.<br>
         $FILE_SHARE_DELETE<br>
         $FILE_SHARE_READ<br>
@@ -50,7 +50,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The file flags. When <strong>_WinAPI_OpenFileById()</strong> opens a file, it combines the file flags with existing<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file flags. When <strong>_WinAPI_OpenFileById()</strong> opens a file, it combines the file flags with existing<br>
         file attributes, and ignores any supplied file attributes. This parameter can include any<br>
         combination of the following values.<br>
         $FILE_FLAG_BACKUP_SEMANTICS<br>
@@ -68,11 +68,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to a specified file.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0 and sets the @error flag to non-zero, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_EnumFiles</h1>
   <p class="funcdesc">Enumerates the files and subdirectories for the specified directory with a name that matches the template<br></p>
@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><strong>[optional]</strong> The flag that specifies whether to enumerate files, subdirectories, or both.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flag that specifies whether to enumerate files, subdirectories, or both.<br>
         This parameter can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; 0 - Enumerate both files and subdirectories (Default).<br>
         &nbsp;&nbsp;&nbsp; 1 - Enumerate files only.<br>
@@ -37,11 +37,11 @@
       </tr>
       <tr>
         <td>$sTemplate</td>
-        <td><strong>[optional]</strong> A template that using to enumerating files and directories. For example, "*.jpe;*.jpeg;*.jpg".</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A template that using to enumerating files and directories. For example, "*.jpe;*.jpeg;*.jpg".</td>
       </tr>
       <tr>
         <td>$bExclude</td>
-        <td><strong>[optional]</strong> Specifies whether the specified template is used to exclude files, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the specified template is used to exclude files, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The files matching the template will not be enumerated.<br>
         &nbsp;&nbsp;&nbsp; False - The only those files that match the template will be enumerated (Default).</td>
       </tr>
@@ -51,7 +51,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">a 2D array containing the following information:<br>
         &nbsp;&nbsp;&nbsp; [0][0] - Number of rows in array (n)<br>
         &nbsp;&nbsp;&nbsp; [0][i] - Unused<br>
@@ -64,7 +64,7 @@
         &nbsp;&nbsp;&nbsp; [n][6] - The file attributes ($FILE_ATTRIBUTE_*).</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>Sets the @error flag to non-zero, @extended flag may contain the NTSTATUS error code.</td>
       </tr>
     </tbody>

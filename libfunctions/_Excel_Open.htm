@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Excel_Open</h1>
   <p class="funcdesc">Connects to an existing Excel instance or creates a new one<br></p>
@@ -25,23 +25,23 @@
     <tbody>
       <tr>
         <td style="width:15%">$bVisible</td>
-        <td style="width:85%"><strong>[optional]</strong> True specifies that the application will be visible (default = True)</td>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True specifies that the application will be visible (default = True)</td>
       </tr>
       <tr>
         <td>$bDisplayAlerts</td>
-        <td><strong>[optional]</strong> False suppresses all prompts and alert messages while opening a workbook (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> False suppresses all prompts and alert messages while opening a workbook (default = False)</td>
       </tr>
       <tr>
         <td>$bScreenUpdating</td>
-        <td><strong>[optional]</strong> False suppresses screen updating to speed up your script (default = True)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> False suppresses screen updating to speed up your script (default = True)</td>
       </tr>
       <tr>
         <td>$bInteractive</td>
-        <td><strong>[optional]</strong> If False, Excel blocks all keyboard and mouse input by the user (except input to dialog boxes) (default = True)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If False, Excel blocks all keyboard and mouse input by the user (except input to dialog boxes) (default = True)</td>
       </tr>
       <tr>
         <td>$bForceNew</td>
-        <td><strong>[optional]</strong> True forces to create a new Excel instance even if there is already a running instance (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True forces to create a new Excel instance even if there is already a running instance (default = False)</td>
       </tr>
     </tbody>
   </table>
@@ -49,14 +49,14 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">the Excel application object.<br>
         Sets @extended to:<br>
         &nbsp;&nbsp;&nbsp; 0 - Excel was already running<br>
         &nbsp;&nbsp;&nbsp; 1 - Excel was not running or $bForceNew was set to True. A new Excel instance has been created</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets @error.</td>
       </tr>
       <tr>

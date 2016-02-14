@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetAsyncKeyState</h1>
   <p class="funcdesc">Determines whether a key is up or down at the time the function is called<br></p>
@@ -33,13 +33,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">
           If the most significant bit is set the key is down, and if the least significant bit is set, the key was pressed after the previous call to <a href="_WinAPI_GetAsyncKeyState.htm">_WinAPI_GetAsyncKeyState()</a>. However, you should not rely on this last behavior; for more information, see the Remarks.
         </td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>The return value is zero if the key isn't down, or for the following cases:<br>
         The current desktop is not the active desktop<br>
         The foreground thread belongs to another process and the desktop does not allow the hook or the journal record.</td>

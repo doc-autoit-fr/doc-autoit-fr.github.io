@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CreateFileMapping</h1>
   <p class="funcdesc">Creates or opens a named or unnamed file mapping object for a specified file<br></p>
@@ -33,16 +33,16 @@
       </tr>
       <tr>
         <td>$iSize</td>
-        <td><strong>[optional]</strong> The maximum size of the file mapping object.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The maximum size of the file mapping object.<br>
         If this parameter is 0 (Default), the maximum size of the file mapping object is equal to the current size of the file that $hFile identifies.</td>
       </tr>
       <tr>
         <td>$sName</td>
-        <td><strong>[optional]</strong> The name of the file mapping object.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of the file mapping object.</td>
       </tr>
       <tr>
         <td>$iProtect</td>
-        <td><strong>[optional]</strong> Specifies the page protection of the file mapping object and can be one of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the page protection of the file mapping object and can be one of the following values.<br>
         &nbsp;&nbsp;&nbsp; $PAGE_EXECUTE_READ<br>
         &nbsp;&nbsp;&nbsp; $PAGE_EXECUTE_READWRITE<br>
         &nbsp;&nbsp;&nbsp; $PAGE_EXECUTE_WRITECOPY<br>
@@ -60,7 +60,7 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that determines whether a returned handle can be inherited by child processes.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSECURITY_ATTRIBUTES structure that determines whether a returned handle can be inherited by child processes.<br>
         If this parameter is 0 (Default), the handle cannot be inherited and the file mapping object gets a default security descriptor.</td>
       </tr>
     </tbody>
@@ -69,12 +69,12 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the newly created file mapping object.<br>
         If the object exists before the function call, the function returns a handle to the existing object (with its current size, not the specified size), and sets the @extended flag to $ERROR_ALREADY_EXISTS (183).</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, @extended flag is set to <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a>.
         </td>

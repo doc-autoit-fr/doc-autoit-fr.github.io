@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_FTP_Connect</h1>
   <p class="funcdesc">Connects to an FTP server<br></p>
@@ -43,22 +43,22 @@
       </tr>
       <tr>
         <td>$iPassive</td>
-        <td><strong>[optional]</strong> Passive mode.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Passive mode.</td>
       </tr>
       <tr>
         <td>$iServerPort</td>
-        <td><strong>[optional]</strong> Server port ( 0 is default (21) )</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Server port ( 0 is default (21) )</td>
       </tr>
       <tr>
         <td>$iService</td>
-        <td><strong>[optional]</strong> This can be one of the following constant values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This can be one of the following constant values:<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_SERVICE_FTP - FTP service.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_SERVICE_GOPHER - Gopher service. Available only on Windows XP, Windows Server 2003 R2 or earlier.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_SERVICE_HTTP - HTTP service.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> Special flags.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Special flags.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_PASSIVE<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_TRANSFER_ASCII<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_TRANSFER_BINARY</td>
@@ -66,7 +66,7 @@
       <tr>
         <td>$fuContext</td>
         <td>
-          <strong>[optional]</strong> A variable that contains the application-defined value that associates this search with any application data.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A variable that contains the application-defined value that associates this search with any application data.<br>
           This is only used if the application has already called <a href="_FTP_SetStatusCallback.htm">_FTP_SetStatusCallback()</a> to set up a status callback function.
         </td>
       </tr>
@@ -76,11 +76,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">an handle to connected session.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

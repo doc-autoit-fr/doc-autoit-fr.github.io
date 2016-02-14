@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_EnumFontFamilies</h1>
   <p class="funcdesc">Enumerates all uniquely-named fonts in the system that match the specified font characteristics<br></p>
@@ -25,18 +25,18 @@
     <tbody>
       <tr>
         <td style="width:15%">$hDC</td>
-        <td style="width:85%"><strong>[optional]</strong> A handle to the device context from which to enumerate the fonts.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A handle to the device context from which to enumerate the fonts.<br>
         If this parameter is 0, the function uses a DC for the application's current screen.</td>
       </tr>
       <tr>
         <td>$sFaceName</td>
-        <td><strong>[optional]</strong> The typeface name of the font.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The typeface name of the font.<br>
         If this parameter is an empty string (Default), the function enumerates one font is each available typeface name.<br>
         If this parameter is a valid typeface name, the function enumerates all fonts with the specified name.</td>
       </tr>
       <tr>
         <td>$iCharSet</td>
-        <td><strong>[optional]</strong> The character set. It can be one of the following predefined values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The character set. It can be one of the following predefined values.<br>
         If this parameter is set to $DEFAULT_CHARSET (Default), the function enumerates all uniquely-named fonts in all character sets.<br>
         If there are two fonts with the same name, only one is enumerated.<br>
         If this parameter is set to a valid character set value, the function enumerates only fonts in the specified character set.<br>
@@ -65,20 +65,20 @@
       </tr>
       <tr>
         <td>$iFontType</td>
-        <td><strong>[optional]</strong> The type of the fonts to enumerating. This parameter can be 0 (vector fonts), (-1) (all fonts), or any combination of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The type of the fonts to enumerating. This parameter can be 0 (vector fonts), (-1) (all fonts), or any combination of the following values.<br>
         &nbsp;&nbsp;&nbsp; $DEVICE_FONTTYPE (Default)<br>
         &nbsp;&nbsp;&nbsp; $RASTER_FONTTYPE (Default)<br>
         &nbsp;&nbsp;&nbsp; $TRUETYPE_FONTTYPE (Default)</td>
       </tr>
       <tr>
         <td>$sPattern</td>
-        <td><strong>[optional]</strong> The pattern string to include (exclude) the fonts in (from) the enumerating.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The pattern string to include (exclude) the fonts in (from) the enumerating.<br>
         This makes sense only if the typeface name is not specified. This string can contain wildcard characters.<br>
         The pattern will be ignored if this parameter is omitted or an empty string.</td>
       </tr>
       <tr>
         <td>$bExclude</td>
-        <td><strong>[optional]</strong> Specifies whether to use the pattern to exclude the fonts, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to use the pattern to exclude the fonts, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Exclude the matching fonts.<br>
         &nbsp;&nbsp;&nbsp; False - Include the matching fonts (Default).</td>
       </tr>
@@ -88,7 +88,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The 2D array containing the following information:<br>
         &nbsp;&nbsp;&nbsp; [0][0] - Number of rows in array (n)<br>
         &nbsp;&nbsp;&nbsp; [0][1] - Unused<br>
@@ -102,7 +102,7 @@
         &nbsp;&nbsp;&nbsp; [n][7] - The font flags ($NTM_*).</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span></td>
       </tr>
     </tbody>

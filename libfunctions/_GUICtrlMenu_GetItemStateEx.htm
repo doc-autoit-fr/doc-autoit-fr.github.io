@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_GUICtrlMenu_GetItemStateEx</h1>
   <p class="funcdesc">Retrieves the menu flags associated with the specified menu item<br></p>
@@ -33,7 +33,7 @@
       </tr>
       <tr>
         <td>$bByPos</td>
-        <td><strong>[optional]</strong> Menu identifier flag:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Menu identifier flag:<br>
         &nbsp;&nbsp;&nbsp; True - $iItem is a 0-based item position<br>
         &nbsp;&nbsp;&nbsp; False - $iItem is a menu item identifier</td>
       </tr>
@@ -43,11 +43,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">If the menu item opens a submenu the low-order byte of the return value contains the menu flags associated with the item, and the high-order byte contains the number of items in the submenu opened by the item. Otherwise, the return value is a mask of the menu flags.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">-1</span><span lang="fr" style="display: none">Retourne -1</span></span></td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_LoadLibraryEx</h1>
   <p class="funcdesc">Maps a specified executable module into the address space of the calling process<br></p>
@@ -30,7 +30,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> Specifies the action to take when loading the module. This parameter can be one of the<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the action to take when loading the module. This parameter can be one of the<br>
         following values:<br>
         $DONT_RESOLVE_DLL_REFERENCES - If this value is used and the executable module is a DLL the system does not call DllMain for process and thread initialization and termination. Also, the system does not load additional executable modules that are referenced by the specified module.<br>
         $LOAD_LIBRARY_AS_DATAFILE - If this value is used, the system maps the file into the calling process's address space as if it were a data file. Nothing is done to execute or prepare to execute the mapped file.<br>
@@ -42,11 +42,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">A handle to the executable module</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

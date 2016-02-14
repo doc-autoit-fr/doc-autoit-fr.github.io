@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetDateFormat</h1>
   <p class="funcdesc">Formats a date as a date string for a locale specified by the locale identifier<br></p>
@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$iLCID</td>
-        <td style="width:85%"><strong>[optional]</strong> The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_INVARIANT<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_SYSTEM_DEFAULT<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_USER_DEFAULT (Default)<br>
@@ -36,12 +36,12 @@
       </tr>
       <tr>
         <td>$tSYSTEMTIME</td>
-        <td><strong>[optional]</strong> $tagSYSTEMTIME structure that contains the date information to format.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSYSTEMTIME structure that contains the date information to format.<br>
         If this parameter is 0 (Default), the function will use the current local system date.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The flags that specifies the date format options.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that specifies the date format options.<br>
         This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $DATE_LONGDATE<br>
         &nbsp;&nbsp;&nbsp; $DATE_SHORTDATE (Default)<br>
@@ -55,7 +55,7 @@
       </tr>
       <tr>
         <td>$sFormat</td>
-        <td><strong>[optional]</strong> The string that is used to form the date. For example, "dddd MMMM, yyyy".<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The string that is used to form the date. For example, "dddd MMMM, yyyy".<br>
         If this parameter is omitted or an empty string (Default), the function returns the string according to the date format for the specified locale.</td>
       </tr>
     </tbody>
@@ -64,11 +64,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The formatted date string.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           Empty string, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

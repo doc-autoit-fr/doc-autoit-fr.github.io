@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Word_DocExport</h1>
   <p class="funcdesc">Exports the document or a range as PDF or XPS<br></p>
@@ -33,38 +33,38 @@
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><strong>[optional]</strong> Format to use for the export. Can be any of the WdExportFormat enumeration<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Format to use for the export. Can be any of the WdExportFormat enumeration<br>
         (default = $WdExportFormatPDF)</td>
       </tr>
       <tr>
         <td>$iRange</td>
-        <td><strong>[optional]</strong> Specifies what to export. Can be any of the WdExportRange enumeration<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies what to export. Can be any of the WdExportRange enumeration<br>
         (default = $WdExportAllDocument)</td>
       </tr>
       <tr>
         <td>$iFrom</td>
-        <td><strong>[optional]</strong> The page number at which to start publishing (default = start at the beginning)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The page number at which to start publishing (default = start at the beginning)</td>
       </tr>
       <tr>
         <td>$iTo</td>
-        <td><strong>[optional]</strong> The page number at which to end publishing (default = end at the last page)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The page number at which to end publishing (default = end at the last page)</td>
       </tr>
       <tr>
         <td>$bOpenAfterExport</td>
-        <td><strong>[optional]</strong> True displays the file in a viewer after it is published (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True displays the file in a viewer after it is published (default = False)</td>
       </tr>
       <tr>
         <td>$bIncludeProperties</td>
-        <td><strong>[optional]</strong> True indicates that document properties should be included (default = True)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True indicates that document properties should be included (default = True)</td>
       </tr>
       <tr>
         <td>$iCreateBookmarks</td>
-        <td><strong>[optional]</strong> Specifies whether to export bookmarks and the type of bookmarks to export.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to export bookmarks and the type of bookmarks to export.<br>
         Can be any of the WdExportCreateBookmarks enumeration (default)</td>
       </tr>
       <tr>
         <td>$bUseISO19005</td>
-        <td><strong>[optional]</strong> Specifies whether the export should be created as PDF/A (self-contained PDF) (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the export should be created as PDF/A (self-contained PDF) (default = False)</td>
       </tr>
     </tbody>
   </table>
@@ -72,11 +72,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

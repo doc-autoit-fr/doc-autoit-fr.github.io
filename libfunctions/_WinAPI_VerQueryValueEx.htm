@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_VerQueryValueEx</h1>
   <p class="funcdesc">Retrieves the text information from the version-information resource of the specified binary module<br></p>
@@ -31,7 +31,7 @@
       </tr>
       <tr>
         <td>$sValues</td>
-        <td><strong>[optional]</strong> The string containing the field names for which you want to get values. The names must be separated by a "|".<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The string containing the field names for which you want to get values. The names must be separated by a "|".<br>
         For example, "name1|name2|...|namei". If some fields do not exist, the corresponding array elements is an empty string.<br>
         If this parameter is not specified (empty string), uses the reserved names (12) in the following sequence:<br>
         &nbsp;&nbsp;&nbsp; $FV_COMMENTS ("Comments")<br>
@@ -51,7 +51,7 @@
       </tr>
       <tr>
         <td>$iLanguage</td>
-        <td><strong>[optional]</strong> The language identifier of the version-information resource of interest. To retrieve information for<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The language identifier of the version-information resource of interest. To retrieve information for<br>
         user default language set this parameter to $LOCALE_USER_DEFAULT (Default). To retrieve information for all<br>
         languages that are located in the resource set this parameter to (-1).</td>
       </tr>
@@ -61,7 +61,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The 2D array of the string values that specified by $sValues parameter for each language. The zeroth<br>
         array element [0][0] contains the number of languages of the resource. The array dimension (i) equal<br>
         to the number specified parameters + 1. The zeroth array element [n][0] contains the language<br>
@@ -72,7 +72,7 @@
         [n][i] - Value</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span></td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_ShellUserAuthenticationDlg</h1>
   <p class="funcdesc">Creates and displays a configurable dialog box that accepts credentials information from a user<br></p>
@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The flags that specifies behavior for this function. It can be a bitwise-OR combination of zero<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that specifies behavior for this function. It can be a bitwise-OR combination of zero<br>
         or more of the following values.<br>
         $CREDUI_FLAGS_ALWAYS_SHOW_UI<br>
         $CREDUI_FLAGS_COMPLETE_USERNAME<br>
@@ -71,23 +71,23 @@
       </tr>
       <tr>
         <td>$iError</td>
-        <td><strong>[optional]</strong> The system error code that specifies why the credential dialog box is needed.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The system error code that specifies why the credential dialog box is needed.</td>
       </tr>
       <tr>
         <td>$bSave</td>
-        <td><strong>[optional]</strong> Specifies whether the "Save" check box is selected in the dialog box (it makes sense only if the<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the "Save" check box is selected in the dialog box (it makes sense only if the<br>
         $CREDUI_FLAGS_SHOW_SAVE_CHECK_BOX flag is used), valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Selected.<br>
         &nbsp;&nbsp;&nbsp; False - Deselected (Default).</td>
       </tr>
       <tr>
         <td>$hBitmap</td>
-        <td><strong>[optional]</strong> A bitmap handle to display in the dialog box. If this parameter is 0, the default bitmap is used.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A bitmap handle to display in the dialog box. If this parameter is 0, the default bitmap is used.<br>
         The bitmap size is limited to 320x60 pixels.</td>
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><strong>[optional]</strong> The dialog box is modal with respect to the parent window. If this parameter is 0, the desktop<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The dialog box is modal with respect to the parent window. If this parameter is 0, the desktop<br>
         is the parent window of the dialog box.</td>
       </tr>
     </tbody>
@@ -96,14 +96,14 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The array containing the following information:<br>
         [0] - The user name, including domain name (if necessary).<br>
         [1] - The password.<br>
         [2] - The state of the "Save" check box.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0</span></span> If the function is cancelled by the user, @extended flag will<br>
         contain the ERROR_CANCELLED (1223) system error code. Any other value indicates that the function<br>
         failed to load.</td>

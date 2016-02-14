@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_SQLite_Startup</h1>
   <p class="funcdesc">Loads SQLite3.dll<br></p>
@@ -25,20 +25,20 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDll_Filename</td>
-        <td style="width:85%"><strong>[optional]</strong> DLL filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.</td>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> DLL filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.</td>
       </tr>
       <tr>
         <td>$bUTF8ErrorMsg</td>
-        <td><strong>[optional]</strong> to force <strong>ConsoleWrite()</strong> to display UTF8 chars</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> to force <strong>ConsoleWrite()</strong> to display UTF8 chars</td>
       </tr>
       <tr>
         <td>$iForceLocal</td>
-        <td><strong>[optional]</strong> 1 = use the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 1 = use the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.<br>
         0 = the DLL will be search in @ScriptDir, @SystemDir, @WindowsDir, and @WorkingDir.</td>
       </tr>
       <tr>
         <td>$hPrintCallback</td>
-        <td><strong>[optional]</strong> A variable assigned to the user defined function to display a SQLite diagnostic message. Default = __SQLite_ConsoleWrite(). <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A variable assigned to the user defined function to display a SQLite diagnostic message. Default = __SQLite_ConsoleWrite(). <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -46,11 +46,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">the path to the opened DLL file.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

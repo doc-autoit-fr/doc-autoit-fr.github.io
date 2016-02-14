@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Excel_BookOpenText</h1>
   <p class="funcdesc">Opens a text file and parses the content to a new workbook with a single sheet<br></p>
@@ -33,28 +33,28 @@
       </tr>
       <tr>
         <td>$iStartRow</td>
-        <td><strong>[optional]</strong> The row at which to start parsing the file (default = 1)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The row at which to start parsing the file (default = 1)</td>
       </tr>
       <tr>
         <td>$iDataType</td>
-        <td><strong>[optional]</strong> Specifies the column format of the data in the file. Can be any of the XlTextParsingType enumeration.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the column format of the data in the file. Can be any of the XlTextParsingType enumeration.<br>
         &nbsp;&nbsp;&nbsp; If set to keyword Default Excel attempts to determine the column format (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$sTextQualifier</td>
-        <td><strong>[optional]</strong> Specifies the text qualifier (default = $xlTextQualifierDoubleQuote)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the text qualifier (default = $xlTextQualifierDoubleQuote)</td>
       </tr>
       <tr>
         <td>$bConsecutiveDelimiter</td>
-        <td><strong>[optional]</strong> True will consider consecutive delimiters as one delimiter (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True will consider consecutive delimiters as one delimiter (default = False)</td>
       </tr>
       <tr>
         <td>$sDelimiter</td>
-        <td><strong>[optional]</strong> One or multiple characters to be used as delimiter (default = ",")</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> One or multiple characters to be used as delimiter (default = ",")</td>
       </tr>
       <tr>
         <td>$aFieldInfo</td>
-        <td><strong>[optional]</strong> An array containing parse information for individual columns of data.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> An array containing parse information for individual columns of data.<br>
         &nbsp;&nbsp;&nbsp; The interpretation depends on the value of DataType.<br>
         &nbsp;&nbsp;&nbsp; When the data is delimited, this argument is an array of two-element arrays, with each two-element array<br>
         &nbsp;&nbsp;&nbsp; specifying the conversion options for a particular column.<br>
@@ -63,22 +63,22 @@
       </tr>
       <tr>
         <td>$sDecimalSeparator</td>
-        <td><strong>[optional]</strong> Decimal separator that Excel uses when recognizing numbers.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Decimal separator that Excel uses when recognizing numbers.<br>
         &nbsp;&nbsp;&nbsp; Default setting is the system setting (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$sThousandsSeparator</td>
-        <td><strong>[optional]</strong> Thousands separator that Excel uses when recognizing numbers.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Thousands separator that Excel uses when recognizing numbers.<br>
         &nbsp;&nbsp;&nbsp; Default setting is the system setting (default = keyword Default)</td>
       </tr>
       <tr>
         <td>$bTrailingMinusNumbers</td>
-        <td><strong>[optional]</strong> True treats numbers with a minus character at the end as negative numbers.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True treats numbers with a minus character at the end as negative numbers.<br>
         &nbsp;&nbsp;&nbsp; False treats such numbers as text (default = True)</td>
       </tr>
       <tr>
         <td>$iOrigin</td>
-        <td><strong>[optional]</strong> Origin of the text file. Can be one of the XlPlatform constants.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Origin of the text file. Can be one of the XlPlatform constants.<br>
         &nbsp;&nbsp;&nbsp; Additionally, this could be an integer representing the code page number of the desired code page.<br>
         &nbsp;&nbsp;&nbsp; For example, "1256" would specify that the encoding is Arabic (Windows).<br>
         &nbsp;&nbsp;&nbsp; If this argument is omitted, the method uses the current setting of the File Origin option in the Text Import Wizard.</td>
@@ -89,11 +89,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">an workbook object.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets @error.</td>
       </tr>
       <tr>

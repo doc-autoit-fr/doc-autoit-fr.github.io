@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DwmSetIconicLivePreviewBitmap</h1>
   <p class="funcdesc">Sets a static, iconic bitmap to display a live preview (also known as a Peek preview) of a window or tab<br></p>
@@ -33,13 +33,13 @@
       </tr>
       <tr>
         <td>$bFrame</td>
-        <td><strong>[optional]</strong> Specifies whether display a frame around the provided bitmap, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether display a frame around the provided bitmap, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Display frame.<br>
         &nbsp;&nbsp;&nbsp; False - Do not display frame (Default).</td>
       </tr>
       <tr>
         <td>$tClient</td>
-        <td><strong>[optional]</strong> $tagPOINT structure that contains The offset of a tab window's client region from the host window's frame.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagPOINT structure that contains The offset of a tab window's client region from the host window's frame.<br>
         This offset enables the tab window's contents to be drawn correctly in a live preview when it is drawn without its frame.</td>
       </tr>
     </tbody>
@@ -48,11 +48,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

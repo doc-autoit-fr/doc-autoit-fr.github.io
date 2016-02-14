@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_FTP_ListToArrayEx</h1>
   <p class="funcdesc">Get names, sizes, attributes and times of files/dir of current remote directory<br></p>
@@ -31,22 +31,22 @@
       </tr>
       <tr>
         <td>$iReturntype</td>
-        <td><strong>[optional]</strong> 0 = Both Files and Directories, 1 = Directories, 2 = Files.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 0 = Both Files and Directories, 1 = Directories, 2 = Files.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> default = $INTERNET_FLAG_NO_CACHE_WRITE. See <strong>_FTP_FindFileFirst()</strong>.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> default = $INTERNET_FLAG_NO_CACHE_WRITE. See <strong>_FTP_FindFileFirst()</strong>.</td>
       </tr>
       <tr>
         <td>$iFmt</td>
-        <td><strong>[optional]</strong> type on the date strings:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> type on the date strings:<br>
         &nbsp;&nbsp;&nbsp; 1 = yyyy/mm/dd<br>
         &nbsp;&nbsp;&nbsp; 0 = mm/dd/yyyy</td>
       </tr>
       <tr>
         <td>$iContext</td>
         <td>
-          <strong>[optional]</strong> A variable that contains the application-defined value that associates this search with any application data.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A variable that contains the application-defined value that associates this search with any application data.<br>
           This is only used if the application has already called <a href="_FTP_SetStatusCallback.htm">_FTP_SetStatusCallback()</a> to set up a status callback function.
         </td>
       </tr>
@@ -56,7 +56,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">a 2D Array:<br>
         &nbsp;&nbsp;&nbsp; $Array[0][0] = number of found entries<br>
         &nbsp;&nbsp;&nbsp; ...<br>
@@ -68,7 +68,7 @@
         &nbsp;&nbsp;&nbsp; $Array[n][5] File Access datetime</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>$Array[0][0] = 0.</td>
       </tr>
     </tbody>

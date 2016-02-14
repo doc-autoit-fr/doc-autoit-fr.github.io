@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DwmEnableBlurBehindWindow</h1>
   <p class="funcdesc">Enables the blur effect on a specified window<br></p>
@@ -29,19 +29,19 @@
       </tr>
       <tr>
         <td>$bEnable</td>
-        <td><strong>[optional]</strong> Specifies whether register or unregister the window handle to DWM blur behind, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether register or unregister the window handle to DWM blur behind, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - Register (Default).<br>
         &nbsp;&nbsp;&nbsp; False - Unregister.</td>
       </tr>
       <tr>
         <td>$bTransition</td>
-        <td><strong>[optional]</strong> Specifies whether colorize transition to match the maximized windows, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether colorize transition to match the maximized windows, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - The window's should be colorized.<br>
         &nbsp;&nbsp;&nbsp; False - Otherwise (Default).</td>
       </tr>
       <tr>
         <td>$hRgn</td>
-        <td><strong>[optional]</strong> The region within the client area to apply the blur behind.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The region within the client area to apply the blur behind.<br>
         A value of zero (Default) will apply the blur behind the entire client area.</td>
       </tr>
     </tbody>
@@ -50,11 +50,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

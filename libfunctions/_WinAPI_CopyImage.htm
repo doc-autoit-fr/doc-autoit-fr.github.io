@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CopyImage</h1>
   <p class="funcdesc">Creates a new image (icon, cursor, or bitmap) and copies the attributes of the specified image to the new one<br></p>
@@ -29,22 +29,22 @@
       </tr>
       <tr>
         <td>$iType</td>
-        <td><strong>[optional]</strong> Specifies the type of image to be copied. This parameter can be one of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the type of image to be copied. This parameter can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $IMAGE_BITMAP 'Default)<br>
         &nbsp;&nbsp;&nbsp; $IMAGE_CURSOR<br>
         &nbsp;&nbsp;&nbsp; $IMAGE_ICON</td>
       </tr>
       <tr>
         <td>$iXDesiredPixels</td>
-        <td><strong>[optional]</strong> Specifies the desired width, in pixels, of the image. If this is zero (Default), then the returned image will have the same width as the original $hImage.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the desired width, in pixels, of the image. If this is zero (Default), then the returned image will have the same width as the original $hImage.</td>
       </tr>
       <tr>
         <td>$iYDesiredPixels</td>
-        <td><strong>[optional]</strong> Specifies the desired height, in pixels, of the image. If this is zero (Default), then the returned image will have the same height as the original $hImage.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the desired height, in pixels, of the image. If this is zero (Default), then the returned image will have the same height as the original $hImage.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> This parameter can be one or more of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This parameter can be one or more of the following values.<br>
         $LR_DEFAULTCOLOR (Default)<br>
         $LR_COPYDELETEORG<br>
         $LR_COPYFROMRESOURCE<br>
@@ -59,11 +59,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the newly created image.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

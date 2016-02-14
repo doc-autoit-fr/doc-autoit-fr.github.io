@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_FindTextDlg</h1>
   <p class="funcdesc">Creates a system-defined modeless Find dialog box to search for text in a document<br></p>
@@ -29,11 +29,11 @@
       </tr>
       <tr>
         <td>$sFindWhat</td>
-        <td><strong>[optional]</strong> The search string that is displayed when you initialize the dialog box.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The search string that is displayed when you initialize the dialog box.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> A set of bit flags that used to initialize the dialog box.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A set of bit flags that used to initialize the dialog box.<br>
         The dialog box sets these flags when it sends the FINDMSGSTRING registered message to indicate the user's input.<br>
         This parameter can be one or more of the following values.<br>
         &nbsp;&nbsp;&nbsp; $FR_DIALOGTERM<br>
@@ -56,13 +56,13 @@
       </tr>
       <tr>
         <td>$pFindProc</td>
-        <td><strong>[optional]</strong> Pointer to an hook procedure that can process messages intended for the dialog box.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Pointer to an hook procedure that can process messages intended for the dialog box.<br>
         This parameter is ignored unless the $FR_ENABLEHOOK flag is not set.<br>
         (See MSDN for more information)</td>
       </tr>
       <tr>
         <td>$lParam</td>
-        <td><strong>[optional]</strong> Application-defined data that the system passes to the hook procedure.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Application-defined data that the system passes to the hook procedure.</td>
       </tr>
     </tbody>
   </table>
@@ -70,11 +70,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The window handle to the dialog box.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the dialog box error code.</td>
       </tr>
     </tbody>

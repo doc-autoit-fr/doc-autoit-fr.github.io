@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>FileSetTime</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Sets the timestamp of one of more files.</span><span lang="fr" style="display: none">Attribue le timestamp (l'horodatage) d'un ou plusieurs fichiers/dossiers.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>type</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The timestamp to change:</span><span lang="fr" style="display: none">Horodatage à modifier:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The timestamp to change:</span><span lang="fr" style="display: none">Horodatage à modifier:</span></span><br>
         &nbsp;&nbsp;&nbsp; $FT_MODIFIED (0) = Last modified (default)<br>
         &nbsp;&nbsp;&nbsp; $FT_CREATED (1) = Created<br>
         &nbsp;&nbsp;&nbsp; $FT_ACCESSED (2) = Last accessed<br>
@@ -41,7 +41,7 @@
       </tr>
       <tr>
         <td>recurse</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; $FT_NONRECURSIVE (0) - no recursion (Default).<br>
         &nbsp;&nbsp;&nbsp; $FT_RECURSIVE (1) - directories are recursed into.<br>
         <br>
@@ -53,11 +53,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 if error changing timestamp(s).</span><span lang="fr" style="display: none">Retourne 0 en cas d'erreur lors du changement du timestamp.</span></span></td>
       </tr>
     </tbody>

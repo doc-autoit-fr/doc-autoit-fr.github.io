@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>InetGet</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Downloads a file from the internet using the HTTP, HTTPS or FTP protocol.</span><span lang="fr" style="display: none">Télécharge un fichier depuis internet en utilisant le protocole HTTP, HTTPS ou FTP.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>options</td>
-        <td><span class="segments"><span lang="en"><strong>[optional]</strong>$INET_LOCALCACHE (0) = Get the file from local cache if available (default).</span><span lang="fr" style="display: none"><strong>[optionnel]</strong>$INET_LOCALCACHE (0) = Récupère le fichier depuis le cache local si disponible (défaut).</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong>$INET_LOCALCACHE (0) = Get the file from local cache if available (default).</span><span lang="fr" style="display: none"><strong>[optionnel]</strong>$INET_LOCALCACHE (0) = Récupère le fichier depuis le cache local si disponible (défaut).</span></span><br>
         &nbsp;&nbsp;&nbsp; $INET_FORCERELOAD (1) = Forces a reload from the remote site.<br>
         &nbsp;&nbsp;&nbsp; $INET_IGNORESSL (2) = Ignore all SSL errors (with HTTPS connections).<br>
         &nbsp;&nbsp;&nbsp; $INET_ASCIITRANSFER (4) = Use ASCII when transferring files with the FTP protocol (Can not be combined with flag $INET_BINARYTRANSFER (8)).<br>
@@ -43,7 +43,7 @@
       </tr>
       <tr>
         <td>background</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; $INET_DOWNLOADWAIT (0) = Wait until the download is complete before continuing (default).<br>
         &nbsp;&nbsp;&nbsp; $INET_DOWNLOADBACKGROUND (1) = return immediately and download in the background (see remarks).<br>
         <span class="segments"><span lang="en">Constants are defined in InetConstants.au3</span><span lang="fr" style="display: none">Les constantes sont définies dans InetConstants.au3</span></span></td>
@@ -54,13 +54,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the return value changes depending on if the download is in the background:</span><span lang="fr" style="display: none">La valeur de retour change si le téléchargement est en arrière-plan ou pas:</span></span><br>
         <span class="segments"><span lang="en">Background: a handle is returned.</span><span lang="fr" style="display: none">Arrière-plan:Retourne un handle.</span></span><br>
         <span class="segments"><span lang="en">Wait: the number of bytes downloaded.</span><span lang="fr" style="display: none">Attente:Retourne le nombre d'octets téléchargés.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">Background: a handle is returned.</span><span lang="fr" style="display: none">Arrière-plan:Retourne un handle.</span></span><br>
         <span class="segments"><span lang="en">Wait:</span><span lang="fr" style="display: none">Attente:</span></span> <span class="segments"><span lang="en">0 and sets the flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&amp;lg; 0.</span></span></td>
       </tr>

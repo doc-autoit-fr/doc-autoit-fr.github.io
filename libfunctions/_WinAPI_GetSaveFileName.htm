@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetSaveFileName</h1>
   <p class="funcdesc">Creates a Save dialog box that lets the user specify the drive, directory, and name of a file to save<br></p>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$sTitle</td>
-        <td style="width:85%"><strong>[optional]</strong> string to be placed in the title bar of the dialog box</td>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> string to be placed in the title bar of the dialog box</td>
       </tr>
       <tr>
         <td>$sFilter</td>
-        <td><strong>[optional]</strong> Pairs of filter strings (for example "Text Files (*.txt)|All Files (*.*)")<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Pairs of filter strings (for example "Text Files (*.txt)|All Files (*.*)")<br>
         The first string in each pair is a display string that describes the filter (for example, "Text Files")<br>
         The second string specifies the filter pattern (for example, "*.TXT")<br>
         To specify multiple filter patterns for a single display string, use a semicolon to separate the patterns (for example, "*.TXT;*.DOC;*.BAK")<br>
@@ -38,31 +38,31 @@
       </tr>
       <tr>
         <td>$sInitalDir</td>
-        <td><strong>[optional]</strong> String that can specify the initial directory</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> String that can specify the initial directory</td>
       </tr>
       <tr>
         <td>$sDefaultFile</td>
-        <td><strong>[optional]</strong> A file name used to initialize the File Name edit control</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A file name used to initialize the File Name edit control</td>
       </tr>
       <tr>
         <td>$sDefaultExt</td>
-        <td><strong>[optional]</strong> String that contains the default extension</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> String that contains the default extension</td>
       </tr>
       <tr>
         <td>$iFilterIndex</td>
-        <td><strong>[optional]</strong> Specifies the index of the currently selected filter in the File Types control</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the index of the currently selected filter in the File Types control</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> See Flags in $tagOPENFILENAME information</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> See Flags in $tagOPENFILENAME information</td>
       </tr>
       <tr>
         <td>$iFlagsEx</td>
-        <td><strong>[optional]</strong> See FlagEx in $tagOPENFILENAME information</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> See FlagEx in $tagOPENFILENAME information</td>
       </tr>
       <tr>
         <td>$hWndOwner</td>
-        <td><strong>[optional]</strong> Handle to the window that owns the dialog box. This member can be any valid window handle, or it can be 0 if the dialog box has no owner</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to the window that owns the dialog box. This member can be any valid window handle, or it can be 0 if the dialog box has no owner</td>
       </tr>
     </tbody>
   </table>
@@ -70,14 +70,14 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">an array in the following format:</span><span lang="fr" style="display: none">Retourne un tableau dans le format suivant:</span></span><br>
         &nbsp;&nbsp;&nbsp; [0] - Contains the number of strings (2)<br>
         &nbsp;&nbsp;&nbsp; [1] - Contains the path selected<br>
         &nbsp;&nbsp;&nbsp; [2] - Contains file selected</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           sets the @error flag to non-zero, call <a href="_WinAPI_CommDlgExtendedError.htm">_WinAPI_CommDlgExtendedError()</a> to get extended error information.
         </td>

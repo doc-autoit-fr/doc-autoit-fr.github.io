@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>DriveMapAdd</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Maps a network drive.</span><span lang="fr" style="display: none">Mappe un lecteur réseau.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>flags</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">A combination of the following:</span><span lang="fr" style="display: none">Une combinaison des éléments suivants:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">A combination of the following:</span><span lang="fr" style="display: none">Une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $DMA_DEFAULT (0) = default<br>
         &nbsp;&nbsp;&nbsp; $DMA_PERSISTENT (1) = Persistent mapping<br>
         &nbsp;&nbsp;&nbsp; $DMA_AUTHENTICATION (8) = Show authentication dialog if required<br>
@@ -41,11 +41,11 @@
       </tr>
       <tr>
         <td>user</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The username to use to connect.</span><span lang="fr" style="display: none">Le nom de l'utilisateur à utiliser pour la connexion.</span></span> <span class="segments"><span lang="en">In the form "username" or "domain\username".</span><span lang="fr" style="display: none">Sous la forme "username" ou "domain\username".</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The username to use to connect.</span><span lang="fr" style="display: none">Le nom de l'utilisateur à utiliser pour la connexion.</span></span> <span class="segments"><span lang="en">In the form "username" or "domain\username".</span><span lang="fr" style="display: none">Sous la forme "username" ou "domain\username".</span></span></td>
       </tr>
       <tr>
         <td>password</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The password to use to connect.</span><span lang="fr" style="display: none">Le mot de passe à utiliser pour la connexion.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The password to use to connect.</span><span lang="fr" style="display: none">Le mot de passe à utiliser pour la connexion.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -53,11 +53,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> <span class="segments"><span lang="en">(See Remarks)</span><span lang="fr" style="display: none">(Consultez les remarques)</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 if a new mapping could not be created and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 si une nouvelle connexion ne peut pas être créée et assigne @error.(Consultez les remarques).</span></span></td>
       </tr>
       <tr>

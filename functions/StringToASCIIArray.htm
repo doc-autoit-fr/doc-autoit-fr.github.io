@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>StringToASCIIArray</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Converts a string to an array containing the ASCII code of each character.</span><span lang="fr" style="display: none">Convertit une chaîne en un tableau contenant le code ASCII de chaque caractère.</span></span><br></p>
@@ -28,17 +28,17 @@
       </tr>
       <tr>
         <td>start</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based position to start processing from (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit commencer ( par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The 0-based position to start processing from (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit commencer ( par défaut :</span></span> <span class="segments"><span lang="en">0).</span><span lang="fr" style="display: none">0 ).</span></span></td>
       </tr>
       <tr>
         <td>end</td>
         <td>
-          <strong>[optional]</strong> <span class="segments"><span lang="en">The 0-based position to end processing at (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit s'arrêter ( par défaut :</span></span> <span class="segments"><span lang="en"><a href="StringLen.htm">StringLen</a>("string")).</span><span lang="fr" style="display: none"><a href="StringLen.htm">StringLen</a>("chaîne")).</span></span><a href="StringLen.htm"></a>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The 0-based position to end processing at (Default:</span><span lang="fr" style="display: none">La position de base 0 à partir de laquelle le traitement doit s'arrêter ( par défaut :</span></span> <span class="segments"><span lang="en"><a href="StringLen.htm">StringLen</a>("string")).</span><span lang="fr" style="display: none"><a href="StringLen.htm">StringLen</a>("chaîne")).</span></span><a href="StringLen.htm"></a>
         </td>
       </tr>
       <tr>
         <td>encoding</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The returned array will contain values in the specified character set:</span><span lang="fr" style="display: none">Le tableau retourné contiendra les valeurs dans le jeu de caractères spécifié :</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The returned array will contain values in the specified character set:</span><span lang="fr" style="display: none">Le tableau retourné contiendra les valeurs dans le jeu de caractères spécifié :</span></span><br>
         &nbsp;&nbsp;&nbsp; $SE_UTF16 (0) = UTF-16 (Default)<br>
         &nbsp;&nbsp;&nbsp; $SE_ANSI (1) = ANSI<br>
         &nbsp;&nbsp;&nbsp; $SE_UTF8 (2) = UTF-8<br>
@@ -51,11 +51,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">an array where each element is the UNICODE code of the character at the corresponding position.</span><span lang="fr" style="display: none">Retourne un tableau où chaque élément est le code Unicode du caractère à la position correspondante.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">an empty string.</span><span lang="fr" style="display: none">Retourne une chaîne vide.</span></span></td>
       </tr>
     </tbody>

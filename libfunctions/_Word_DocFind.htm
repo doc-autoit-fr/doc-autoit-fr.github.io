@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Word_DocFind</h1>
   <p class="funcdesc">Runs or repeats the specified find operation<br></p>
@@ -29,51 +29,51 @@
       </tr>
       <tr>
         <td>$sFindText</td>
-        <td><strong>[optional]</strong> The text to be searched for. Use an empty string ("") to search for formatting only.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The text to be searched for. Use an empty string ("") to search for formatting only.<br>
         You can search for special characters by specifying appropriate character codes.<br>
         For example, "^p" corresponds to a paragraph mark and "^t" corresponds to a tab character (default = "")</td>
       </tr>
       <tr>
         <td>$vSearchRange</td>
-        <td><strong>[optional]</strong> Specifies the selection or range to search. Can be:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the selection or range to search. Can be:<br>
         &nbsp;&nbsp;&nbsp; -1 - Specifies the current selection<br>
         &nbsp; 0 - Specifies the entire document (default)<br>
         Any Word range object</td>
       </tr>
       <tr>
         <td>$oFindRange</td>
-        <td><strong>[optional]</strong> Specifies the range returned by the last call to <strong>_Word_DocFind()</strong>.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the range returned by the last call to <strong>_Word_DocFind()</strong>.<br>
         This is required if you want to search for the next or previous occurrence of $sFindText.<br>
         If set to Default then the search starts at the start of the $vSearchRange (default)</td>
       </tr>
       <tr>
         <td>$bForward</td>
-        <td><strong>[optional]</strong> True to search forward (toward the end of the document) (default = True)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True to search forward (toward the end of the document) (default = True)</td>
       </tr>
       <tr>
         <td>$bMatchCase</td>
-        <td><strong>[optional]</strong> If True the find is case sensitive (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True the find is case sensitive (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchWholeWord</td>
-        <td><strong>[optional]</strong> If True only find entire words (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True only find entire words (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchWildcards</td>
-        <td><strong>[optional]</strong> If True the find text has special search operators (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True the find text has special search operators (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchSoundsLike</td>
-        <td><strong>[optional]</strong> If True finds words that sound similar to the find text (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True finds words that sound similar to the find text (default = False)</td>
       </tr>
       <tr>
         <td>$bMatchAllWordForms</td>
-        <td><strong>[optional]</strong> If True finds all forms of the find text<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True finds all forms of the find text<br>
         (e.g. "sit" locates "sitting" and "sat") (default = False)</td>
       </tr>
       <tr>
         <td>$bFormat</td>
-        <td><strong>[optional]</strong> True to have the find operation locate formatting in addition to or instead of the find text (default = False)</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True to have the find operation locate formatting in addition to or instead of the find text (default = False)</td>
       </tr>
     </tbody>
   </table>
@@ -81,11 +81,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">a range object for the found text.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

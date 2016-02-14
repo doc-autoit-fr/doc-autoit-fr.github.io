@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>ToolTip</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a tooltip anywhere on the screen.</span><span lang="fr" style="display: none">Crée une info-bulle n'importe où sur l'écran.</span></span><br></p>
@@ -28,19 +28,19 @@
       </tr>
       <tr>
         <td>x</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The x position of the tooltip.</span><span lang="fr" style="display: none">La position x de l'info-bulle.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The x position of the tooltip.</span><span lang="fr" style="display: none">La position x de l'info-bulle.</span></span></td>
       </tr>
       <tr>
         <td>y</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The y position of the tooltip.</span><span lang="fr" style="display: none">La position y de l'info-bulle.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The y position of the tooltip.</span><span lang="fr" style="display: none">La position y de l'info-bulle.</span></span></td>
       </tr>
       <tr>
         <td>title</td>
-        <td><strong>[optional]</strong> The title for the tooltip.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The title for the tooltip.</td>
       </tr>
       <tr>
         <td>icon</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Pre-defined icon to show next to the title:</span><span lang="fr" style="display: none">Icône pré-définie pour l'afficher à côté du titre:</span></span> <span class="segments"><span lang="en">Requires a title.</span><span lang="fr" style="display: none">Nécessite un titre.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pre-defined icon to show next to the title:</span><span lang="fr" style="display: none">Icône pré-définie pour l'afficher à côté du titre:</span></span> <span class="segments"><span lang="en">Requires a title.</span><span lang="fr" style="display: none">Nécessite un titre.</span></span><br>
         &nbsp;&nbsp;&nbsp; $TIP_NOICON (0) = No icon<br>
         &nbsp;&nbsp;&nbsp; $TIP_INFOICON (1) = Info icon<br>
         &nbsp;&nbsp;&nbsp; $TIP_WARNINGICON (2) = Warning icon<br>
@@ -50,7 +50,7 @@
       </tr>
       <tr>
         <td>options</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Sets different options for how the tooltip will be displayed (Can be added together):</span><span lang="fr" style="display: none">Définit différentes options déterminant la façon avec laquelle l'info-bulle sera affichée (Peuvent être additionnées ensemble):</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Sets different options for how the tooltip will be displayed (Can be added together):</span><span lang="fr" style="display: none">Définit différentes options déterminant la façon avec laquelle l'info-bulle sera affichée (Peuvent être additionnées ensemble):</span></span><br>
         &nbsp;&nbsp;&nbsp; $TIP_BALLOON (1) = Display as Balloon Tip<br>
         &nbsp;&nbsp;&nbsp; $TIP_CENTER (2) = Center the tip at the x,y coordinates instead of using them for the upper left corner.<br>
         &nbsp;&nbsp;&nbsp; $TIP_FORCEVISIBLE (4) = Force the tooltip to always be visible confining it to monitor borders if necessary. <span class="segments"><span lang="en">If multiple monitors are used, then the tooltip will "snap-to" the nearest monitor.</span><span lang="fr" style="display: none">Si plusieurs moniteurs sont utilisés, alors l'info-bulle sera "snap-to" le moniteur le plus proche.</span></span><br>
@@ -63,11 +63,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 when title length is greater than 99.</span><span lang="fr" style="display: none">Retourne 0 lorsque la longueur du titre est supérieur à 99.</span></span></td>
       </tr>
     </tbody>

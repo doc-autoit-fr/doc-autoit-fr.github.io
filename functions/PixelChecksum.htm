@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>PixelChecksum</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Generates a checksum for a region of pixels.</span><span lang="fr" style="display: none">Génère une somme de contrôle dans une région de pixels.</span></span><br></p>
@@ -40,15 +40,15 @@
       </tr>
       <tr>
         <td>step</td>
-        <td><strong>[optional]</strong> Instead of checksumming each pixel use a value larger than 1 to skip pixels (for speed). <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Instead of checksumming each pixel use a value larger than 1 to skip pixels (for speed). <span class="segments"><span lang="en">E.g.</span><span lang="fr" style="display: none">Par exemple :</span></span> <span class="segments"><span lang="en">A value of 2 will only check every other pixel.</span><span lang="fr" style="display: none">Une valeur de 2 va seulement vérifier un pixel sur deux.</span></span> <span class="segments"><span lang="en">Default is 1.</span><span lang="fr" style="display: none">Par défaut c'est 1.</span></span> <strong>It is not recommended to use a step value greater than 1.</strong></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Window handle to be used.</span><span lang="fr" style="display: none">Handle de fenêtre à utiliser.</span></span> <span class="segments"><span lang="en">Default is the desktop window.</span><span lang="fr" style="display: none">Par défaut c'est la fenêtre du bureau.</span></span></td>
       </tr>
       <tr>
         <td>mode</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">default 0 ADLER checksum, 1 CRC32 Checksum.</span><span lang="fr" style="display: none">0 = par défaut, somme de contrôle de ADLER, 1 = somme de contrôle CRC32.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">default 0 ADLER checksum, 1 CRC32 Checksum.</span><span lang="fr" style="display: none">0 = par défaut, somme de contrôle de ADLER, 1 = somme de contrôle CRC32.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -56,11 +56,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the checksum value of the region.</span><span lang="fr" style="display: none">Retourne la valeur de la somme de contrôle de la région.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
       </tr>
     </tbody>

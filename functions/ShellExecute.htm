@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>ShellExecute</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Runs an external program using the ShellExecute API.</span><span lang="fr" style="display: none">Exécute un programme externe en utilisant l'API ShellExecute.</span></span><br></p>
@@ -28,15 +28,15 @@
       </tr>
       <tr>
         <td>parameters</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Any parameters for the program.</span><span lang="fr" style="display: none">Les paramètres du programme.</span></span> <span class="segments"><span lang="en">Blank ("") uses none.</span><span lang="fr" style="display: none">Vide ("") si aucun.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Any parameters for the program.</span><span lang="fr" style="display: none">Les paramètres du programme.</span></span> <span class="segments"><span lang="en">Blank ("") uses none.</span><span lang="fr" style="display: none">Vide ("") si aucun.</span></span></td>
       </tr>
       <tr>
         <td>workingdir</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The working directory.</span><span lang="fr" style="display: none">Le répertoire de travail.</span></span> <span class="segments"><span lang="en">Blank ("") uses the current working directory.</span><span lang="fr" style="display: none">Si vide ("") utilise le répertoire de travail courant.</span></span></td>
       </tr>
       <tr>
         <td>verb</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "verb" to use, common verbs include:</span><span lang="fr" style="display: none">Le "verbe" à utiliser, les verbes courants comprennent :</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The "verb" to use, common verbs include:</span><span lang="fr" style="display: none">Le "verbe" à utiliser, les verbes courants comprennent :</span></span><br>
         &nbsp;&nbsp;&nbsp; $SHEX_OPEN ("open") = Opens the file specified. <span class="segments"><span lang="en">The file can be an executable file, a document file, or a folder</span><span lang="fr" style="display: none">Le fichier peut être un fichier exécutable, un fichier de document ou un dossier</span></span><br>
         &nbsp;&nbsp;&nbsp; $SHEX_EDIT ("edit") = Launches an editor and opens the document for editing. <span class="segments"><span lang="en">If "filename" is not a document file, the function will fail</span><span lang="fr" style="display: none">Si "filename" n'est pas un fichier document, la fonction échouera</span></span><br>
         &nbsp;&nbsp;&nbsp; $SHEX_PRINT ("print") = Prints the document file specified. <span class="segments"><span lang="en">If "filename" is not a document file, the function will fail</span><span lang="fr" style="display: none">Si "filename" n'est pas un fichier document, la fonction échouera</span></span><br>
@@ -47,7 +47,7 @@
       </tr>
       <tr>
         <td>showflag</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The "show" flag of the executed program:</span><span lang="fr" style="display: none">L'option de visualisation du programme exécuté:</span></span><br>
         &nbsp;&nbsp;&nbsp; @SW_HIDE = Hidden window<br>
         &nbsp;&nbsp;&nbsp; @SW_MINIMIZE = Minimized window<br>
         &nbsp;&nbsp;&nbsp; @SW_MAXIMIZE = Maximized window</td>
@@ -58,11 +58,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the PID of the process that was launched.</span><span lang="fr" style="display: none">Retourne le PID du processus qui a été lancé.</span></span> <span class="segments"><span lang="en">Or -1 if there was no PID available.</span><span lang="fr" style="display: none">Ou -1 si il n'y avait pas de PID disponible.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
     </tbody>

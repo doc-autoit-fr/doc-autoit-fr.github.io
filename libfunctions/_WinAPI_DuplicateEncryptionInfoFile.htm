@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DuplicateEncryptionInfoFile</h1>
   <p class="funcdesc">Copies the EFS metadata from one file or directory to another<br></p>
@@ -36,19 +36,19 @@
       </tr>
       <tr>
         <td>$iCreation</td>
-        <td><strong>[optional]</strong> Specifies how the destination file or directory is to be opened.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies how the destination file or directory is to be opened.<br>
         The following are the valid values of this parameter:<br>
         &nbsp;&nbsp;&nbsp; $CREATE_NEW<br>
         &nbsp;&nbsp;&nbsp; $CREATE_ALWAYS (Default)</td>
       </tr>
       <tr>
         <td>$iAttributes</td>
-        <td><strong>[optional]</strong> The file attributes of the destination file or directory.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file attributes of the destination file or directory.<br>
         The $FILE_READ_ONLY attribute is currently not processed by this function.</td>
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that specifies the security attributes of the destination file or directory, if it does not already exist.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSECURITY_ATTRIBUTES structure that specifies the security attributes of the destination file or directory, if it does not already exist.<br>
         If this parameter is 0 (Default), the file or directory gets a default security descriptor.<br>
         The access-control lists (ACL) in the default security descriptor for a file or directory are inherited from its parent directory.</td>
       </tr>
@@ -58,11 +58,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>AutoItSetOption</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Changes the operation of various AutoIt functions/parameters.</span><span lang="fr" style="display: none">Change le mode de fonctionnement de divers fonctions/paramètres d'AutoIt.</span></span><br></p>
@@ -29,7 +29,7 @@
       <tr>
         <td>param</td>
         <td>
-          <strong>[optional]</strong> <span class="segments"><span lang="en">The value to assign to the option.</span><span lang="fr" style="display: none">La valeur à assigner à l'option.</span></span> <span class="segments"><span lang="en">The type and meaning vary by option.</span><span lang="fr" style="display: none">Le type et la signification varient selon l'option.</span></span> <span class="segments"><span lang="en">See remarks below.</span><span lang="fr" style="display: none">Voir remarques ci-dessous.</span></span> <span class="segments"><span lang="en">If the param is not provided, then the function just returns the value already assigned to the option.</span><span lang="fr" style="display: none">Si le paramètre n'est pas indiqué, alors la fonction retourne la valeur qui lui est assignée.</span></span> <span class="segments"><span lang="en">The keyword <a href="../keywords/Default.htm">Default</a> can be used for the parameter to reset the option to its default value.</span><span lang="fr" style="display: none">Le mot clé <a href="../keywords/Default.htm">Default</a> peut être utilisé en paramètre pour réinitialiser la valeur par défaut de l'option.</span></span><a href="../keywords/Default.htm"></a>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The value to assign to the option.</span><span lang="fr" style="display: none">La valeur à assigner à l'option.</span></span> <span class="segments"><span lang="en">The type and meaning vary by option.</span><span lang="fr" style="display: none">Le type et la signification varient selon l'option.</span></span> <span class="segments"><span lang="en">See remarks below.</span><span lang="fr" style="display: none">Voir remarques ci-dessous.</span></span> <span class="segments"><span lang="en">If the param is not provided, then the function just returns the value already assigned to the option.</span><span lang="fr" style="display: none">Si le paramètre n'est pas indiqué, alors la fonction retourne la valeur qui lui est assignée.</span></span> <span class="segments"><span lang="en">The keyword <a href="../keywords/Default.htm">Default</a> can be used for the parameter to reset the option to its default value.</span><span lang="fr" style="display: none">Le mot clé <a href="../keywords/Default.htm">Default</a> peut être utilisé en paramètre pour réinitialiser la valeur par défaut de l'option.</span></span><a href="../keywords/Default.htm"></a>
         </td>
       </tr>
     </tbody>
@@ -38,11 +38,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the value of the previous setting for the option.</span><span lang="fr" style="display: none">Retourne la valeur du paramètre précédent pour l'option.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span> <span class="segments"><span lang="en">Failure will occur if the parameters are invalid (such as an option that does not exist).</span><span lang="fr" style="display: none">L'échec peut se produire si les paramètres sont invalides (tel qu'un paramètre qui n'existe pas).</span></span></td>
       </tr>
     </tbody>
@@ -80,7 +80,7 @@
         <td>
           <a id="ExpandVarStrings">Changes how literal strings and variable/macro ($ and @) symbols are interpreted. <span class="segments"><span lang="en">By default strings are treated literally, this option allows you to use variables and macros inside strings, e.g.,</span><span lang="fr" style="display: none">Par défaut les chaînes sont traitées littéralement.Ce paramètre vous permet d'utiliser les variables et le macros à l'intérieur des chaînes.</span></span> <span class="segments"><span lang="en">"The value of var1 is $var1$".</span><span lang="fr" style="display: none">Exemple :"La valeur de var1 est $var1$".</span></span><br>
           <span class="segments"><span lang="en">0 = (default) do not expand variables</span><span lang="fr" style="display: none">1 = Étend les variables (Lorsque vous êtes dans ce mode et que vous voulez utiliser les symboles $ ou @ alors doublez les :"Ceci est le symbole dollar $$".</span></span><br>
-          1 = expand variables (when in this mode and you want to use a literal $ or @ then double it up: "This is a single dollar $$ sign".</a>
+          1 = expand variables (when in this mode and you want to use a literal $ or @ then double it up: "This is a single dollar $ sign".</a>
         </td>
       </tr>
       <tr>

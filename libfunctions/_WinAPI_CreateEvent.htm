@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CreateEvent</h1>
   <p class="funcdesc">Creates or opens a named or unnamed event object<br></p>
@@ -25,23 +25,23 @@
     <tbody>
       <tr>
         <td style="width:15%">$tAttributes</td>
-        <td style="width:85%"><strong>[optional]</strong> a $tagSECURITY_ATTRIBUTES structure or a pointer to it. If 0, the handle cannot be inherited by child processes.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> a $tagSECURITY_ATTRIBUTES structure or a pointer to it. If 0, the handle cannot be inherited by child processes.<br>
         The Descriptor member of the structure specifies a security descriptor for the new event.<br>
         If $tAttributes is 0, the event gets a default security descriptor.<br>
         The ACLs in the default security descriptor for an event come from the primary or impersonation token of the creator.</td>
       </tr>
       <tr>
         <td>$bManualReset</td>
-        <td><strong>[optional]</strong> If True, the function creates a manual-reset event object, which requires the use of the ResetEvent function to set the event state to nonsignaled.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, the function creates a manual-reset event object, which requires the use of the ResetEvent function to set the event state to nonsignaled.<br>
         If False, the function creates an auto-reset event object and system automatically resets the event state to nonsignaled after a single waiting thread has been released.</td>
       </tr>
       <tr>
         <td>$bInitialState</td>
-        <td><strong>[optional]</strong> If True, the initial state of the event object is signaled; otherwise, it is nonsignaled</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, the initial state of the event object is signaled; otherwise, it is nonsignaled</td>
       </tr>
       <tr>
         <td>$sName</td>
-        <td><strong>[optional]</strong> The name of the event object. Name comparison is case sensitive.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of the event object. Name comparison is case sensitive.<br>
         If $sName matches the name of an existing named event object, this function requests the EVENT_ALL_ACCESS access right.<br>
         In this case the $bManualReset and $bInitialState parameters are ignored because they have already been set by the creating process.<br>
         If the $tAttributes parameter is not 0, it determines whether the handle can be inherited, but its security-descriptor member is ignored.<br>
@@ -53,12 +53,12 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The handle to the event object.<br>
         If the named event object existed before the function call the function returns a handle to the existing object and GetLastError returns ERROR_ALREADY_EXISTS.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

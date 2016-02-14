@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_GUICtrlRichEdit_StreamToFile</h1>
   <p class="funcdesc">Writes contents of a control to a file<br></p>
@@ -33,20 +33,20 @@
       </tr>
       <tr>
         <td>$bIncludeCOM</td>
-        <td><strong>[optional]</strong> True (default):<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True (default):<br>
         &nbsp;&nbsp;&nbsp; If writing to a .rtf file, includes any COM objects (space consuming)<br>
         &nbsp;&nbsp;&nbsp; If writing to any other file, writes a text represntation of COM objects<br>
         False: Writes spaces instead of COM objects</td>
       </tr>
       <tr>
         <td>$iOpts</td>
-        <td><strong>[optional]</strong> additional options: (default: 0)<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> additional options: (default: 0)<br>
         &nbsp;&nbsp;&nbsp; $SFF_PLAINRTF - write only rich text keywords common to all languages<br>
         &nbsp;&nbsp;&nbsp; $SF_UNICODE - write Unicode</td>
       </tr>
       <tr>
         <td>$iCodePage</td>
-        <td><strong>[optional]</strong> Generate UTF-8 and text using this code page<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Generate UTF-8 and text using this code page<br>
         Default: do not</td>
       </tr>
     </tbody>
@@ -55,11 +55,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">False and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">False et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

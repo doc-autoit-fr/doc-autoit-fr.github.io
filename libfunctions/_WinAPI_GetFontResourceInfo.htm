@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetFontResourceInfo</h1>
   <p class="funcdesc">Retrieves the fontname from the specified font resource file<br></p>
@@ -31,14 +31,14 @@
       </tr>
       <tr>
         <td>$bForce</td>
-        <td><strong>[optional]</strong> Specifies whether adds a file to the font table, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether adds a file to the font table, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Forced add the specified file to the system font table and remove it after retrieving the fontname.<br>
         &nbsp;&nbsp;&nbsp; False - Don't add and remove (Default).</td>
       </tr>
       <tr>
         <td>$iFlag</td>
         <td>
-          <strong>[optional]</strong> <span class="segments"><span lang="en">An integer value.</span><span lang="fr" style="display: none">Une valeur entière: mode d'interpolation.</span></span> See <a href="_WinAPI_GetFontMemoryResourceInfo.htm">_WinAPI_GetFontMemoryResourceInfo()</a> for value definition.<a href="_WinAPI_GetFontMemoryResourceInfo.htm"></a>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">An integer value.</span><span lang="fr" style="display: none">Une valeur entière: mode d'interpolation.</span></span> See <a href="_WinAPI_GetFontMemoryResourceInfo.htm">_WinAPI_GetFontMemoryResourceInfo()</a> for value definition.<a href="_WinAPI_GetFontMemoryResourceInfo.htm"></a>
         </td>
       </tr>
     </tbody>
@@ -47,11 +47,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The name of the font or Font information according to $iFlag.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           Empty string and sets the @error flag to non-zero, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

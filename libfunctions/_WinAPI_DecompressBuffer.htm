@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DecompressBuffer</h1>
   <p class="funcdesc">Decompresses an entire compressed buffer<br></p>
@@ -41,7 +41,7 @@
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><strong>[optional]</strong> The compression format of the data in compressed buffer. This parameter must be one of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The compression format of the data in compressed buffer. This parameter must be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $COMPRESSION_FORMAT_LZNT1 (Default)<br>
         &nbsp;&nbsp;&nbsp; $COMPRESSION_FORMAT_XPRESS<br>
         &nbsp;&nbsp;&nbsp; $COMPRESSION_FORMAT_XPRESS_HUFF</td>
@@ -52,11 +52,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The size of the decompressed data stored in uncompressed buffer, in bytes.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the NTSTATUS error code.</td>
       </tr>
     </tbody>

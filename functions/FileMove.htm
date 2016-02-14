@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>FileMove</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Moves one or more files.</span><span lang="fr" style="display: none">Déplace un ou plusieurs fichiers.</span></span><br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">this flag determines whether to overwrite files if they already exist:</span><span lang="fr" style="display: none">ce paramètre détermine s'il faut écraser les fichiers existants.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">this flag determines whether to overwrite files if they already exist:</span><span lang="fr" style="display: none">ce paramètre détermine s'il faut écraser les fichiers existants.</span></span><br>
         <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $FC_NOOVERWRITE (0) = (default) do not overwrite existing files.<br>
         &nbsp;&nbsp;&nbsp; $FC_OVERWRITE (1) = overwrite existing files.<br>
@@ -46,11 +46,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 if <em>source</em> cannot be moved or if <em>dest</em> already exists and flag=0.</span><span lang="fr" style="display: none">Retourne 0 si <em>source</em> ne peut pas être déplacé ou si <em>dest</em> existe déjà et flag=0.</span></span></td>
       </tr>
     </tbody>

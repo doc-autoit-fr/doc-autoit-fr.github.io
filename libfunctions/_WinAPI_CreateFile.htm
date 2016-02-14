@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CreateFile</h1>
   <p class="funcdesc">Creates or opens a file or other device<br></p>
@@ -38,21 +38,21 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong>[optional]</strong> Access to the object:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Access to the object:<br>
         &nbsp;&nbsp;&nbsp; 1 - Execute<br>
         &nbsp;&nbsp;&nbsp; 2 - Read<br>
         &nbsp;&nbsp;&nbsp; 4 - Write</td>
       </tr>
       <tr>
         <td>$iShare</td>
-        <td><strong>[optional]</strong> Sharing mode of an object:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Sharing mode of an object:<br>
         &nbsp;&nbsp;&nbsp; 1 - Delete<br>
         &nbsp;&nbsp;&nbsp; 2 - Read<br>
         &nbsp;&nbsp;&nbsp; 4 - Write</td>
       </tr>
       <tr>
         <td>$iAttributes</td>
-        <td><strong>[optional]</strong> The file attributes:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file attributes:<br>
         &nbsp;&nbsp;&nbsp; 1 - File should be archived<br>
         &nbsp;&nbsp;&nbsp; 2 - File is hidden<br>
         &nbsp;&nbsp;&nbsp; 4 - File is read only<br>
@@ -60,7 +60,7 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong>[optional]</strong> a $tagSECURITY_ATTRIBUTES structure or a pointer to it that determines if the returned handle can be inherited by child processes.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> a $tagSECURITY_ATTRIBUTES structure or a pointer to it that determines if the returned handle can be inherited by child processes.<br>
         If $tSecurity is 0, the handle cannot be inherited.</td>
       </tr>
     </tbody>
@@ -69,11 +69,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The open handle to a specified file</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

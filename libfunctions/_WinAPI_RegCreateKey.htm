@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RegCreateKey</h1>
   <p class="funcdesc">Creates the specified registry key<br></p>
@@ -38,13 +38,13 @@
       </tr>
       <tr>
         <td>$sSubKey</td>
-        <td><strong>[optional]</strong> The name of a subkey that this function opens or creates. The subkey specified must be a subkey of<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of a subkey that this function opens or creates. The subkey specified must be a subkey of<br>
         the key identified by the $hKey parameter; it can be up to 32 levels deep in the registry tree.<br>
         If an empty string (Default), the return is a new handle to the key specified by $hKey.</td>
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong>[optional]</strong> The mask that specifies the access rights for the key.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The mask that specifies the access rights for the key.<br>
         This parameter can be one or more of the following values.<br>
         $KEY_ALL_ACCESS<br>
         $KEY_CREATE_LINK<br>
@@ -61,7 +61,7 @@
       </tr>
       <tr>
         <td>$iOptions</td>
-        <td><strong>[optional]</strong> This parameter can be one of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This parameter can be one of the following values.<br>
         $REG_OPTION_BACKUP_RESTORE<br>
         $REG_OPTION_CREATE_LINK<br>
         $REG_OPTION_NON_VOLATILE (Default)<br>
@@ -69,7 +69,7 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by<br>
         child processes. If this parameter is 0 (Default), the handle cannot be inherited.</td>
       </tr>
     </tbody>
@@ -78,14 +78,14 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the opened or created key, @extended flag will contain one of the following<br>
         disposition values:<br>
         0 (False) - The key existed and was simply opened without being changed.<br>
         1 (True) - The key did not exist and was created.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>Sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
       </tr>
     </tbody>

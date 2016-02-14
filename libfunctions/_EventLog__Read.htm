@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_EventLog__Read</h1>
   <p class="funcdesc">Reads an entry from the event log<br></p>
@@ -29,16 +29,16 @@
       </tr>
       <tr>
         <td>$bRead</td>
-        <td><strong>[optional]</strong> If True, operation proceeds sequentially from the last call to this function using this handle.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, operation proceeds sequentially from the last call to this function using this handle.<br>
         If False, the read will operation proceeds from the record specified by the $iOffset parameter.</td>
       </tr>
       <tr>
         <td>$bForward</td>
-        <td><strong>[optional]</strong> If True, the log is read in date order. If False, the log is read in reverse date order.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, the log is read in date order. If False, the log is read in reverse date order.</td>
       </tr>
       <tr>
         <td>$iOffset</td>
-        <td><strong>[optional]</strong> The number of the event record at which the read operation should start.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The number of the event record at which the read operation should start.<br>
         This parameter is ignored if $bRead is True.</td>
       </tr>
     </tbody>
@@ -47,7 +47,7 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau au format suivant :</span></span><br>
         &nbsp;&nbsp;&nbsp; [ 0] - True<br>
         &nbsp;&nbsp;&nbsp; [ 1] - Number of the record<br>
@@ -71,7 +71,7 @@
         &nbsp;&nbsp;&nbsp; [14] - Event data array</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>$Array[0] = False</td>
       </tr>
     </tbody>

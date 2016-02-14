@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_DrawIconEx</h1>
   <p class="funcdesc">Draws an icon or cursor into the specified device context<br></p>
@@ -41,30 +41,30 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td><strong>[optional]</strong> Specifies the logical width of the icon or cursor.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the logical width of the icon or cursor.<br>
         If this parameter is zero and the $iFlags parameter is "default size", the function uses the $SM_CXICON or $SM_CXCURSOR system metric value to set the width.<br>
         If this is zero and "default size" is not used, the function uses the actual resource width.</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td><strong>[optional]</strong> Specifies the logical height of the icon or cursor.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the logical height of the icon or cursor.<br>
         If this parameter is zero and the $iFlags parameter is "default size", the function uses the $SM_CYICON or $SM_CYCURSOR system metric value to set the width.<br>
         If this is zero and "default size" is not used, the function uses the actual resource height.</td>
       </tr>
       <tr>
         <td>$iStep</td>
-        <td><strong>[optional]</strong> Specifies the index of the frame to draw if $hIcon identifies an animated cursor.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the index of the frame to draw if $hIcon identifies an animated cursor.<br>
         This parameter is ignored if $hIcon does not identify an animated cursor.</td>
       </tr>
       <tr>
         <td>$hBrush</td>
-        <td><strong>[optional]</strong> Handle to a brush that the system uses for flicker-free drawing.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to a brush that the system uses for flicker-free drawing.<br>
         If $hBrush is a valid brush handle, the system creates an offscreen bitmap using the specified brush for the background color, draws the icon or cursor into the bitmap, and then copies the bitmap into the device context identified by $hDC.<br>
         If $hBrush is 0, the system draws the icon or cursor directly into the device context.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> Specifies the drawing flags. This parameter can be one of the following values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the drawing flags. This parameter can be one of the following values:<br>
         1 - Draws the icon or cursor using the mask<br>
         2 - Draws the icon or cursor using the image<br>
         3 - Draws the icon or cursor using the mask and image<br>
@@ -79,11 +79,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information
         </td>

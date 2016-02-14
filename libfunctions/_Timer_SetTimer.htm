@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Timer_SetTimer</h1>
   <p class="funcdesc">Creates a timer with the specified time-out value<br></p>
@@ -30,15 +30,15 @@
       </tr>
       <tr>
         <td>$iElapse</td>
-        <td><strong>[optional]</strong> Specifies the time-out value, in milliseconds</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the time-out value, in milliseconds</td>
       </tr>
       <tr>
         <td>$sTimerFunc</td>
-        <td><strong>[optional]</strong> Function name to be notified when the time-out value elapses</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Function name to be notified when the time-out value elapses</td>
       </tr>
       <tr>
         <td>$iTimerID</td>
-        <td><strong>[optional]</strong> Specifies a timer identifier.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies a timer identifier.<br>
         If $iTimerID = -1 then a new timer is created<br>
         If $iTimerID matches an existing timer then the timer is replaced<br>
         If $iTimerID = -1 and $sTimerFunc = "" then timer will use WM_TIMER events</td>
@@ -49,11 +49,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Integer identifying the new timer</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0</span><span lang="fr" style="display: none">Retourne 0</span></span></td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>FileFindNextFile</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Returns the next filename defined by the search handle.</span><span lang="fr" style="display: none">Retourne un nom de fichier en fonction d'un précédent appel à FileFindFirstFile.</span></span><br></p>
@@ -31,7 +31,7 @@
       <tr>
         <td>flag</td>
         <td>
-          <strong>[optional]</strong> this flag determines whether to return detailed file attribute information in @extended.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> this flag determines whether to return detailed file attribute information in @extended.<br>
           &nbsp;&nbsp;&nbsp; 0 = (default) use @extended to return 1 or 0 if search item is a directory.<br>
           &nbsp;&nbsp;&nbsp; 1 = Return a string in @extended in the same format as <a href="FileGetAttrib.htm">FileGetAttrib()</a>.
         </td>
@@ -42,13 +42,13 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">
           a filename according to a previous call to <a href="FileFindFirstFile.htm">FileFindFirstFile()</a>, @extended set as per the flag option.
         </td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>sets the @error flag to 1 if no more files/directories match the search.</td>
       </tr>
     </tbody>

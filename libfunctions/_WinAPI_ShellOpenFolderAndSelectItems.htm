@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_ShellOpenFolderAndSelectItems</h1>
   <p class="funcdesc">Opens a Windows Explorer window with specified items in a particular folder selected<br></p>
@@ -30,20 +30,20 @@
       </tr>
       <tr>
         <td>$aNames</td>
-        <td><strong>[optional]</strong> The array of the folder or file names to be selected. It should be just names in the specified<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The array of the folder or file names to be selected. It should be just names in the specified<br>
         folder, without its path.</td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong>[optional]</strong> The index of array to start selecting at.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array to start selecting at.</td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong>[optional]</strong> The index of array to stop selecting at.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array to stop selecting at.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The optional flags. This parameter can be one or more of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The optional flags. This parameter can be one or more of the following values.<br>
         <br>
         <strong>Windows Vista or later</strong><br>
         $OFASI_EDIT<br>
@@ -55,11 +55,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_OpenInputDesktop</h1>
   <p class="funcdesc">Opens the desktop that receives user input<br></p>
@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$iAccess</td>
-        <td style="width:85%"><strong>[optional]</strong> The access to the desktop. This parameter can be one or more of the following values.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The access to the desktop. This parameter can be one or more of the following values.<br>
         $DESKTOP_ALL_ACCESS<br>
         $DESKTOP_CREATEMENU<br>
         $DESKTOP_CREATEWINDOW<br>
@@ -39,12 +39,12 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> The optional flags. It can be zero or the following value.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The optional flags. It can be zero or the following value.<br>
         $DF_ALLOWOTHERACCOUNTHOOK</td>
       </tr>
       <tr>
         <td>$bInherit</td>
-        <td><strong>[optional]</strong> Specifies whether inherites the handle by a processes, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether inherites the handle by a processes, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The processes created by this process will inherit the handle.<br>
         &nbsp;&nbsp;&nbsp; False - The processes do not inherit this handle (Default).</td>
       </tr>
@@ -54,11 +54,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to the opened desktop.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           0, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

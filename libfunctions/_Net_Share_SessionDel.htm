@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Net_Share_SessionDel</h1>
   <p class="funcdesc">Ends a network session between a server and a workstation<br></p>
@@ -25,17 +25,17 @@
     <tbody>
       <tr>
         <td style="width:15%">$sServer</td>
-        <td style="width:85%"><strong>[optional]</strong> Specifies the DNS or NetBIOS name of the remote server on which the function is to execute.<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the DNS or NetBIOS name of the remote server on which the function is to execute.<br>
         If this parameter is blank, the local computer is used.</td>
       </tr>
       <tr>
         <td>$sClientName</td>
-        <td><strong>[optional]</strong> Specifies the computer name of the client to disconnect.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the computer name of the client to disconnect.<br>
         If blank, then all the sessions of the user identified by the username parameter will be deleted on the server specified by $sServer.</td>
       </tr>
       <tr>
         <td>$sUserName</td>
-        <td><strong>[optional]</strong> Specifies the name of the user whose session is to be terminated.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the name of the user whose session is to be terminated.<br>
         If this parameter is blank, all user sessions from the client specified by the $sClientName parameter are to be terminated.</td>
       </tr>
     </tbody>
@@ -44,11 +44,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">False.</span><span lang="fr" style="display: none">Retourne False.</span></span></td>
       </tr>
     </tbody>

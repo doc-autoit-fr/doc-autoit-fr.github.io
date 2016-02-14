@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_IEAttach</h1>
   <p class="funcdesc">Attach to the specified instance of Internet Explorer where the search string sub-string matches (based on the selected mode)<br></p>
@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><strong>[optional]</strong> specifies search mode<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> specifies search mode<br>
         &nbsp;&nbsp;&nbsp; "title" = (Default) sub-string of main document title<br>
         &nbsp;&nbsp;&nbsp; "windowtitle" = sub-string of full window title (instead of document title)<br>
         &nbsp;&nbsp;&nbsp; "url" = sub-string or url of the current page<br>
@@ -42,7 +42,7 @@
       </tr>
       <tr>
         <td>$iInstance</td>
-        <td><strong>[optional]</strong> 1-based index into group of browsers or embedded browsers matching $sString and $sMode. <span class="segments"><span lang="en">See Remarks.</span><span lang="fr" style="display: none">Voir Remarque.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 1-based index into group of browsers or embedded browsers matching $sString and $sMode. <span class="segments"><span lang="en">See Remarks.</span><span lang="fr" style="display: none">Voir Remarque.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -50,11 +50,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">an object variable pointing to the InternetExplorer Object for all but Embedded and DislogBox modes which return a Window Object.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero.</span><span lang="fr" style="display: none">met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
@@ -172,7 +172,7 @@
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIE_basic</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_IE_Example.htm"><span class="S15">_IE_Example</span></a><span class="S8">(</span><span class="S7">"basic"</span><span class="S8">)</span>
 
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_IEAttach.htm"><span class="S15">_IEAttach</span></a><span class="S8">(</span><span class="S7">"simple HTML page"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"text"</span><span class="S8">)</span>
-<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'@@ Debug('</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptLineNumber"><span class="S6">@ScriptLineNumber</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">') : $oIE = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'&gt;Error code: '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'    Extended code: 0x'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">;### Debug Console</span>
+<a class="codeSnippetLink" href="../functions/ConsoleWrite.htm"><span class="S4">ConsoleWrite</span></a><span class="S8">(</span><span class="S7">'@ Debug('</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@ScriptLineNumber"><span class="S6">@ScriptLineNumber</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">') : $oIE = '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$oIE</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'&gt;Error code: '</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@error"><span class="S6">@error</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">'    Extended code: 0x'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@extended"><span class="S6">@extended</span></a><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S8">)</span><span class="S0"> </span><span class="S1">;### Debug Console</span>
 </span>
 </pre>
       </div>

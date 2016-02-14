@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_viExecCommand</h1>
   <p class="funcdesc">Send a Command/Query to an Instrument/Device through the VISA interface (GPIB / TCP)<br></p>
@@ -47,7 +47,7 @@
       <tr>
         <td>$iTimeoutMS</td>
         <td>
-          <strong>[optional]</strong> The operation timeout in MILISECONDS.<br>
+          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The operation timeout in MILISECONDS.<br>
           This is mostly important for QUERIES only.<br>
           If it is not specified the last set timeout will be used. If it was never set before the default timeout (which depends on the VISA implementation) will be used.<br>
           Timeouts can also be set separatelly with the <a href="_viSetTimeout.htm">_viSetTimeout()</a> function.<br>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><strong>[optional]</strong> Control the mode in which the VISA viPrintf is called when $sCommand is not a query.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control the mode in which the VISA viPrintf is called when $sCommand is not a query.<br>
         Default is @LF, which means "attach @LF mode".<br>
         Some instruments and in particular many GPIB cards do not honor the terminator character attribute in those cases an @LF terminator needs to be added.<br>
         As this is the most common case, by default the mode is set to @LF, which appends @LF to the SCPI command you can also set this mode to @CR and @CRLF if your card uses those terminators.<br>
@@ -73,11 +73,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">0.</span><span lang="fr" style="display: none">Retourne 0.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>-1 if the VISA DLL could not be open<br>
         or a NON ZERO value representing the VISA error code (see the VISA programmer's guide)</td>
       </tr>
@@ -86,11 +86,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">the answer of the instrument to the QUERY</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>-1 if the VISA DLL could not be open<br>
         -3 if the VISA DLL returned an unexpected number of results<br>
         or a NON ZERO value representing the VISA error code (see the VISA programmer's guide)</td>

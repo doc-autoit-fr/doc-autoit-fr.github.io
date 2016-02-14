@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>UDPRecv</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Receives data from an opened socket.</span><span lang="fr" style="display: none">Reçoit des données d'un socket ouvert.</span></span><br></p>
@@ -34,7 +34,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong>[optional]</strong><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
         &nbsp;&nbsp;&nbsp; UDP_DATA_DEFAULT (0) - will auto detect between binary/string.<br>
         &nbsp;&nbsp;&nbsp; UDP_DATA_BINARY (1) - return binary data<br>
         &nbsp;&nbsp;&nbsp; $UDP_DATA_ARRAY (2) - returned in an Array : <span class="segments"><span lang="en">[0] data, [1] from IP, [2] from Port.</span><span lang="fr" style="display: none">[0] données, [1] de l'IP, [2] du port.</span></span><br>
@@ -48,11 +48,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">a binary/string sent by the opened socket or an array if flag = 2 or 3.</span><span lang="fr" style="display: none">Retourne le binaire ou la chaîne envoyée par le socket ouvert ou un tableau si le paramètre flag est à 2 ou 3.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">"" and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne "" et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_ArrayInsert</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Insert a new value at the specified position of a 1D or 2D array</span><span lang="fr" style="display: none">Insére une nouvelle valeur à la position spécifiée d'un tableau 1D ou 2D</span></span><br></p>
@@ -33,23 +33,23 @@
       </tr>
       <tr>
         <td>$vValue</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Value(s) to add - can be a single variable, a delimited string or a 1D array</span><span lang="fr" style="display: none">Valeur(s) à ajouter - peut être une variable unique, une chaîne morcellée (par le séparateur $sDelim_Item) ou un tableau 1D</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Value(s) to add - can be a single variable, a delimited string or a 1D array</span><span lang="fr" style="display: none">Valeur(s) à ajouter - peut être une variable unique, une chaîne morcellée (par le séparateur $sDelim_Item) ou un tableau 1D</span></span></td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Column in which insert is to begin (2D array only)</span><span lang="fr" style="display: none">Colonne dans laquelle l'insertion doit commencer (tableau 2D uniquement)</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Column in which insert is to begin (2D array only)</span><span lang="fr" style="display: none">Colonne dans laquelle l'insertion doit commencer (tableau 2D uniquement)</span></span></td>
       </tr>
       <tr>
         <td>$sDelim_Item</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into items</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en éléments</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into items</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en éléments</span></span></td>
       </tr>
       <tr>
         <td>$sDelim_Row</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into rows (2D only)</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en lignes (2D uniquement)</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into rows (2D only)</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en lignes (2D uniquement)</span></span></td>
       </tr>
       <tr>
         <td>$iForce</td>
-        <td><strong>[optional]</strong> Maintains default behaviour,<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Maintains default behaviour,<br>
         &nbsp;&nbsp;&nbsp; $ARRAYFILL_FORCE_DEFAULT (0)<br>
         Forces $vValue addition as a single item,<br>
         &nbsp;&nbsp;&nbsp; $ARRAYFILL_FORCE_SINGLEITEM (1)<br>
@@ -67,11 +67,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the new size of the array.</span><span lang="fr" style="display: none">Retourne la nouvelle taille du tableau.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

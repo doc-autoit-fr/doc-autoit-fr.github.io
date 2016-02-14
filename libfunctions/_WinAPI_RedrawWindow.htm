@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RedrawWindow</h1>
   <p class="funcdesc">Updates the specified rectangle or region in a window's client area<br></p>
@@ -29,17 +29,17 @@
       </tr>
       <tr>
         <td>$tRECT</td>
-        <td><strong>[optional]</strong> $tagRECT structure containing the coordinates of the update rectangle. This parameter is<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure containing the coordinates of the update rectangle. This parameter is<br>
         ignored if the $hRegion parameter identifies a region.</td>
       </tr>
       <tr>
         <td>$hRegion</td>
-        <td><strong>[optional]</strong> Identifies the update region. If the $hRegion and $tRECT parameters are 0, the entire client<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Identifies the update region. If the $hRegion and $tRECT parameters are 0, the entire client<br>
         area is added to the update region.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> Specifies the redraw flags. This parameter can be a combination of flags that invalidate or validate a window, control repainting, and control which windows are affected:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the redraw flags. This parameter can be a combination of flags that invalidate or validate a window, control repainting, and control which windows are affected:<br>
         &nbsp;&nbsp;&nbsp; $RDW_ERASE - Causes the window to receive a WM_ERASEBKGND message when the window is repainted<br>
         &nbsp;&nbsp;&nbsp; $RDW_FRAME - Causes any part of the nonclient area of the window that intersects the update region to receive a WM_NCPAINT message.<br>
         &nbsp;&nbsp;&nbsp; $RDW_INTERNALPAINT - Causes a WM_PAINT message to be posted to the window regardless of whether any portion of the window is invalid.<br>
@@ -59,11 +59,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">False</span><span lang="fr" style="display: none">Retourne False</span></span></td>
       </tr>
     </tbody>

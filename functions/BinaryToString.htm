@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>BinaryToString</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Converts a binary variant into a string.</span><span lang="fr" style="display: none">Convertit une variable de type 'variant' binaire en une chaîne de caractère.</span></span><br></p>
@@ -28,7 +28,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Changes how the binary data is converted:</span><span lang="fr" style="display: none">Change la manière dont les données binaires sont converties:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Changes how the binary data is converted:</span><span lang="fr" style="display: none">Change la manière dont les données binaires sont converties:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SB_ANSI (1) = binary data is ANSI (default)<br>
         &nbsp;&nbsp;&nbsp; $SB_UTF16LE (2) = binary data is UTF16 Little Endian<br>
         &nbsp;&nbsp;&nbsp; $SB_UTF16BE (3) = binary data is UTF16 Big Endian<br>
@@ -42,11 +42,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">the string representation of the binary data.</span><span lang="fr" style="display: none">Retourne la représentation de la chaîne en données binaires.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">an empty string and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne une chaîne vide et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

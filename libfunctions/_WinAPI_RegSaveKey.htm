@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_RegSaveKey</h1>
   <p class="funcdesc">Saves the specified key and all of its subkeys and values to a new file, in the standard format<br></p>
@@ -33,13 +33,13 @@
       </tr>
       <tr>
         <td>$bReplace</td>
-        <td><strong>[optional]</strong> Specifies whether to replace the file if it already exists, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to replace the file if it already exists, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The function attempts to replace the existing file.<br>
         &nbsp;&nbsp;&nbsp; False - The function fails if the file already exists (Default).</td>
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong>[optional]</strong> $tagSECURITY_ATTRIBUTES structure that specifies a security descriptor for the new file. If this<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSECURITY_ATTRIBUTES structure that specifies a security descriptor for the new file. If this<br>
         parameter is 0 (Default), the file gets a default security descriptor.</td>
       </tr>
     </tbody>
@@ -48,11 +48,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the system error code.</td>
       </tr>
     </tbody>

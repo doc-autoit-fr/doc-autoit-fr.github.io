@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_GDIPlus_PaletteInitialize</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Initializes a standard, optimal, or custom color palette</span><span lang="fr" style="display: none">Initialise palette de couleur standard, optimale, ou personnalisée</span></span><br></p>
@@ -29,21 +29,21 @@
       </tr>
       <tr>
         <td>$iPaletteType</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">PaletteType constant that specifies the palette type ($GDIP_PaletteType*).</span><span lang="fr" style="display: none">Constante PaletteType qui spécifie le type de palette ($GDIP_PaletteType*).</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">PaletteType constant that specifies the palette type ($GDIP_PaletteType*).</span><span lang="fr" style="display: none">Constante PaletteType qui spécifie le type de palette ($GDIP_PaletteType*).</span></span></td>
       </tr>
       <tr>
         <td>$iOptimalColors</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Integer that specifies the number of colors you want to have in an optimal palette based on a specified bitmap.</span><span lang="fr" style="display: none">Entier qui spécifie le nombre de couleurs que vous voulez avoir dans une palette optimale basée sur un bitmap spécifié.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Integer that specifies the number of colors you want to have in an optimal palette based on a specified bitmap.</span><span lang="fr" style="display: none">Entier qui spécifie le nombre de couleurs que vous voulez avoir dans une palette optimale basée sur un bitmap spécifié.</span></span><br>
         <span class="segments"><span lang="en">If this parameter is greater than 0, the palettetype parameter must be set to PaletteTypeOptimal and the bitmap parameter must point to a Bitmap object.</span><span lang="fr" style="display: none">Si ce paramètre est supérieur à 0, le paramètre palettetype doit être réglé sur PaletteTypeOptimal et le paramètre bitmap doit pointer sur un objet Bitmap.</span></span></td>
       </tr>
       <tr>
         <td>$bUseTransparentColor</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Boolean value that specifies whether to include the transparent color in the palette.</span><span lang="fr" style="display: none">Valeur booléenne qui spécifie s'il faut inclure la couleur transparente dans la palette.</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Boolean value that specifies whether to include the transparent color in the palette.</span><span lang="fr" style="display: none">Valeur booléenne qui spécifie s'il faut inclure la couleur transparente dans la palette.</span></span><br>
         <span class="segments"><span lang="en">Set to TRUE to include the transparent color; otherwise FALSE.</span><span lang="fr" style="display: none">Réglez à TRUE pour inclure la couleur transparente; FALSE sinon.</span></span></td>
       </tr>
       <tr>
         <td>$hBitmap</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Handle of a Bitmap object for which an optimal palette will be created.</span><span lang="fr" style="display: none">Handle de l'objet Bitmap pour lequel une palette optimale sera créée.</span></span></td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Handle of a Bitmap object for which an optimal palette will be created.</span><span lang="fr" style="display: none">Handle de l'objet Bitmap pour lequel une palette optimale sera créée.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -51,14 +51,14 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">a DllStruct Palette:</span><span lang="fr" style="display: none">Retourne une palette DllStruct:</span></span><br>
         Flags - $iPaletteFlags<br>
         Count - $iEntries<br>
         ARGB - UINT Array of ARGB colors</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).</span><span lang="fr" style="display: none">Retourne @error &lt;&gt; 0, @extended contient le code erreur GPSTATUS ($GPID_ERR*).</span></span></td>
       </tr>
       <tr>

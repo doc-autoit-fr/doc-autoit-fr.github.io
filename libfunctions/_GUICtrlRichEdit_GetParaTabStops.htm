@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<h1 class="small">Référence Fonction</h1>
+<h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
 <hr style="height:0px">
 <h1>_GUICtrlRichEdit_GetParaTabStops</h1>
 <p class="funcdesc">Gets the tabstops of (first) selected paragraph or (if no selection) of the current paragraph<br></p>
@@ -31,11 +31,11 @@ _GUICtrlRichEdit_GetParaTabStops ( $hWnd )<br>
 <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>
 <table class="noborder">
 <tbody><tr>
-<td class="valign-top" style="width:10%">Success:</td>
+<td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
 <td style="width:90%">A string consisting of values separated by ; (semicolons).<br>    value 1 - number of tabstops<br>    values 2 to<value U000031="">+ 1 - description of a tabstop:<br>    absolute position of a tab stop (in space units)<br>    kind of tab<br>        l - left tab<br>        c - center tab<br>        r - decimal tab<br>        b - bar tab (a vertical bar, as in Word)<br>    kind of dot leader<br>        . - dotted leader<br>        - - dashed leader<br>        _ - underline leader<br>        = - double line leader<br>        t - thick-line leader<br>        a space - no leader<br>    Value<value U000031="">+ 2 - scope:<br>        a - all (or only) selected paragraphs have these settings<br>        f - the first selected paragraph has these settings, but other(s) don&#39;t<br>        c - the current paragraph has these settings</value></value></td>
 </tr>
 <tr>
-<td class="valign-top">Failure:</td>
+<td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
 <td><span class="segments"><span lang="en">&quot;&quot; and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne &quot;&quot; et @error &lt;> 0.</span></span></td>
 </tr>
 <tr>

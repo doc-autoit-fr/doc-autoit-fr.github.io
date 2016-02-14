@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_GDIPlus_LineBrushCreateFromRect</h1>
   <p class="funcdesc"><span class="segments"><span lang="en">Creates a LinearGradientBrush object from a rectangle and boundary colors</span><span lang="fr" style="display: none">Crée un pinceau à dégradé linéaire sur la base d'un rectangle, des couleurs de début et de fin, et de l'orientation</span></span><br></p>
@@ -37,7 +37,7 @@
       </tr>
       <tr>
         <td>$iGradientMode</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">The direction of the gradient:</span><span lang="fr" style="display: none">La direction du dégradé:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The direction of the gradient:</span><span lang="fr" style="display: none">La direction du dégradé:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - Horizontal direction from the left of the display to the right of the display<br>
         &nbsp;&nbsp;&nbsp; 1 - Vertical direction from the top of the display to the bottom of the display<br>
         &nbsp;&nbsp;&nbsp; 2 - Forward diagonal direction from the upper-left corner to the lower-right corner of the display<br>
@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td>$iWrapMode</td>
-        <td><strong>[optional]</strong> <span class="segments"><span lang="en">Specifies how areas filled with the brush are tiled:</span><span lang="fr" style="display: none">Indique comment un dégradé est disposé en mosaïque lorsqu'il est plus petit que la zone à remplir:</span></span><br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Specifies how areas filled with the brush are tiled:</span><span lang="fr" style="display: none">Indique comment un dégradé est disposé en mosaïque lorsqu'il est plus petit que la zone à remplir:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - Tiling without flipping<br>
         &nbsp;&nbsp;&nbsp; 1 - Tiles are flipped horizontally as you move from one tile to the next in a row<br>
         &nbsp;&nbsp;&nbsp; 2 - Tiles are flipped vertically as you move from one tile to the next in a column<br>
@@ -58,11 +58,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">a pointer to a new LinearGradientBrush object.</span><span lang="fr" style="display: none">Retourne le handle du nouvel objet LinearGradientBrush.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).</span><span lang="fr" style="display: none">Retourne 0 et définit @error &lt;&gt; 0, @extended contient le code erreur GPSTATUS ($GPID_ERR*).</span></span></td>
       </tr>
     </tbody>

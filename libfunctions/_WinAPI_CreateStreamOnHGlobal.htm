@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_CreateStreamOnHGlobal</h1>
   <p class="funcdesc">Creates a stream object that uses a memory handle to store the stream contents<br></p>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$hGlobal</td>
-        <td style="width:85%"><strong>[optional]</strong> The memory handle, or if 0 (Default) a new handle is to be allocated instead. The handle must be allocated as moveable and nondiscardable.</td>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The memory handle, or if 0 (Default) a new handle is to be allocated instead. The handle must be allocated as moveable and nondiscardable.</td>
       </tr>
       <tr>
         <td>$bDeleteOnRelease</td>
-        <td><strong>[optional]</strong> Specifies whether the underlying handle for this stream object should be automatically freed when the stream object is released, valid values:<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the underlying handle for this stream object should be automatically freed when the stream object is released, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - The final release will automatically free the $hGlobal parameter (Default).<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - The user must free the $hGlobal after the final release.</td>
       </tr>
@@ -39,11 +39,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">The pointer to the new stream object.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

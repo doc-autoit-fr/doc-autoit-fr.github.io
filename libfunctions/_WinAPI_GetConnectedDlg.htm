@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_GetConnectedDlg</h1>
   <p class="funcdesc">Launches the Get Connected wizard within the calling application to enable network connectivity<br></p>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong>[optional]</strong> Specifies an additional options. This parameter can be one or more of the following values.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies an additional options. This parameter can be one or more of the following values.<br>
         0 - Default.<br>
         1 - Do not display the Get Connected wizard page that shows whether or not the user has a working or active Internet connection.<br>
         2 - Do not display the Get Connected wizard page that shows a list of existing internet connections.<br>
@@ -40,7 +40,7 @@
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><strong>[optional]</strong> Handle to the parent window that called this API.</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to the parent window that called this API.</td>
       </tr>
     </tbody>
   </table>
@@ -48,12 +48,12 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">1 - The Internet is connected.<br>
         0 - Otherwise.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>0 and sets the @error flag to non-zero, @extended flag may contain the HRESULT error code.</td>
       </tr>
     </tbody>

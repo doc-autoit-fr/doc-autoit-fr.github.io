@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_WinAPI_SetDllDirectory</h1>
   <p class="funcdesc">Adds a directory to the search path used to locate DLLs for the application<br></p>
@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDirPath</td>
-        <td style="width:85%"><strong>[optional]</strong> The directory to be added to the search path. If this parameter is an empty string (""), the call<br>
+        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The directory to be added to the search path. If this parameter is an empty string (""), the call<br>
         removes the current directory from the default DLL search order. If this parameter is not specified,<br>
         the function restores the default search order (Default).</td>
       </tr>
@@ -35,11 +35,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">True.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td>
           False, call <a href="_WinAPI_GetLastError.htm">_WinAPI_GetLastError()</a> to get extended error information.
         </td>

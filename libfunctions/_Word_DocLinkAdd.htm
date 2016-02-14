@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_Word_DocLinkAdd</h1>
   <p class="funcdesc">Adds a hyperlink to the document<br></p>
@@ -29,32 +29,32 @@
       </tr>
       <tr>
         <td>$oAnchor</td>
-        <td><strong>[optional]</strong> Range object for the text or graphic to be turned into a hyperlink<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Range object for the text or graphic to be turned into a hyperlink<br>
         (default = Use entire document as range)</td>
       </tr>
       <tr>
         <td>$sAddress</td>
-        <td><strong>[optional]</strong> The address for the specified link.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The address for the specified link.<br>
         The address can be an E-mail address, an Internet address or a file name (default = link to the specified document is used)</td>
       </tr>
       <tr>
         <td>$sSubAddress</td>
-        <td><strong>[optional]</strong> The name of a location within the destination file, such as a bookmark, named range<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of a location within the destination file, such as a bookmark, named range<br>
         or slide number (default = None)</td>
       </tr>
       <tr>
         <td>$sScreenTip</td>
-        <td><strong>[optional]</strong> The text that appears as a ScreenTip when the mouse pointer is positioned over the<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The text that appears as a ScreenTip when the mouse pointer is positioned over the<br>
         specified hyperlink (default = Uses value of $sAddress)</td>
       </tr>
       <tr>
         <td>$sTextToDisplay</td>
-        <td><strong>[optional]</strong> The display text of the specified hyperlink.<br>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The display text of the specified hyperlink.<br>
         The value of this argument replaces the text or graphic specified by $oAnchor (default = Uses value of $sAddress)</td>
       </tr>
       <tr>
         <td>$sTarget</td>
-        <td><strong>[optional]</strong> The name of the frame or window in which you want to load the specified hyperlink</td>
+        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of the frame or window in which you want to load the specified hyperlink</td>
       </tr>
     </tbody>
   </table>
@@ -62,11 +62,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>

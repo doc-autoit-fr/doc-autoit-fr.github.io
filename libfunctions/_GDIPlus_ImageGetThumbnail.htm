@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <h1 class="small">Référence Fonction</h1>
+  <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence de fonction</span></span></h1>
   <hr style="height:0px">
   <h1>_GDIPlus_ImageGetThumbnail</h1>
   <p class="funcdesc">Gets a thumbnail image from this Image object<br></p>
@@ -29,23 +29,23 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td>&nbsp;<strong>[optional]</strong> Width, in pixels, of the requested thumbnail image. Default is 0.</td>
+        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Width, in pixels, of the requested thumbnail image. Default is 0.</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td>&nbsp;<strong>[optional]</strong> Height, in pixels, of the requested thumbnail image. Default is 0.</td>
+        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Height, in pixels, of the requested thumbnail image. Default is 0.</td>
       </tr>
       <tr>
         <td>$bKeepRatio</td>
-        <td>&nbsp;<strong>[optional]</strong> If true destination width and height of the image will be recalculated to keep image aspect ratio. Default is True.</td>
+        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If true destination width and height of the image will be recalculated to keep image aspect ratio. Default is True.</td>
       </tr>
       <tr>
         <td>$hCallback</td>
-        <td>&nbsp;<strong>[optional]</strong> Callback function that you provide. During the process of creating or retrieving the thumbnail image, Microsoft Windows GDI+ calls this function to give you the opportunity to abort the process. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
+        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Callback function that you provide. During the process of creating or retrieving the thumbnail image, Microsoft Windows GDI+ calls this function to give you the opportunity to abort the process. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
       </tr>
       <tr>
         <td>$hCallbackData</td>
-        <td>&nbsp;<strong>[optional]</strong> Pointer to a block of memory that contains data to be used by the callback function. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
+        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Pointer to a block of memory that contains data to be used by the callback function. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -53,11 +53,11 @@
   <table class="noborder">
     <tbody>
       <tr>
-        <td class="valign-top" style="width:10%">Success:</td>
+        <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès :</span></span></td>
         <td style="width:90%">Handle to an Image object that contains the thumbnail image.</td>
       </tr>
       <tr>
-        <td class="valign-top">Failure:</td>
+        <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec :</span></span></td>
         <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero, @extended may contain GPSTATUS error code ($GPID_ERR*).</span><span lang="fr" style="display: none">Retourne 0 et définit @error &lt;&gt; 0, @extended contient le code erreur GPSTATUS ($GPID_ERR*).</span></span></td>
       </tr>
     </tbody>
