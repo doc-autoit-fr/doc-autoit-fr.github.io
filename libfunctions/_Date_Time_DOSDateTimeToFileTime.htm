@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_DOSDateTimeToFileTime</h1>
-  <p class="funcdesc"><span class="segments"><span lang="en">Converts MS-DOS date and time values to a file time</span><span lang="fr" style="display: none">Convertit les valeurs de date et l'heure MS-DOS à une heure du fichier</span></span><br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Converts MS-DOS date and time values to a file time</span><span lang="fr" style="display: none">Convertit les valeurs de date et d'heure MS-DOS à une heure du fichier</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_DOSDateTimeToFileTime ( $iFatDate, $iFatTime )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,21 +25,21 @@
     <tbody>
       <tr>
         <td style="width:15%">$iFatDate</td>
-        <td style="width:85%">The MS-DOS date, packed as follows:<br>
+        <td style="width:85%"><span class="segments"><span lang="en">The MS-DOS date, packed as follows:</span><span lang="fr" style="display: none">La date de MS-DOS, compressée comme ceci :</span></span><br>
         <span class="segments"><span lang="en">Bits 0- 4 Day of the month (1–31)</span><span lang="fr" style="display: none">Bits 0-4 Jour du mois (1–31)</span></span><br>
         <span class="segments"><span lang="en">Bits 5- 8 Month (1 = January, 2 = February, and so on)</span><span lang="fr" style="display: none">Bits 5-8 Mois (1 = janvier, 2 = février, et ainsi de suite)</span></span><br>
         <span class="segments"><span lang="en">Bits 9-15 Year offset from 1980 (add 1980 to get actual year)</span><span lang="fr" style="display: none">Bits 9-15 Décalage de l'année par rapport à 1980 (ajoutez 1980 pour obtenir l'année actuelle)</span></span></td>
       </tr>
       <tr>
         <td>$iFatTime</td>
-        <td>Ths MS-DOS time, packed as follows:<br>
+        <td><span class="segments"><span lang="en">Ths MS-DOS time, packed as follows:</span><span lang="fr" style="display: none">L'heure MS-DOS, compressée comme ceci :</span></span><br>
         <span class="segments"><span lang="en">Bits 0- 4 Second divided by 2</span><span lang="fr" style="display: none">Bits 0-4 Seconde divisée par 2</span></span><br>
         Bits 5-10 Minute (0–59)<br>
         <span class="segments"><span lang="en">Bits 11-15 Hour (0–23 on a 24-hour clock)</span><span lang="fr" style="display: none">Bits 11-15 Heure (0–23 sur une horloge de 24 heures)</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a $tagFILETIME structure that receives the converted file time.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a $tagFILETIME structure that receives the converted file time.</span><span lang="fr" style="display: none">Retourne une structure $tagFILETIME qui reçoit l'heure conventie du fichier.</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagFILETIME.htm">$tagFILETIME</a>, <a href="_Date_Time_FileTimeToDOSDateTime.htm">_Date_Time_FileTimeToDOSDateTime</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
