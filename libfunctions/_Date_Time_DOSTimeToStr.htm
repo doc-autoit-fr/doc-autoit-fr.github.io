@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_DOSTimeToStr</h1>
-  <p class="funcdesc">Decode a DOS time to a string<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Decode a DOS time to a string</span><span lang="fr" style="display: none">Décode une heure DOS en une chaîne</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_DOSTimeToStr ( $iDosTime )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -32,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a time string formatted as hh:mm:ss.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a time string formatted as hh:mm:ss.</span><span lang="fr" style="display: none">Retourne une heure sous forme d'une chaîne au format hh:mm:ss</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Date_Time_DOSDateTimeToStr.htm">_Date_Time_DOSDateTimeToStr</a>, <a href="_Date_Time_DOSDateToStr.htm">_Date_Time_DOSDateToStr</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -83,7 +83,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Show FAT time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show FAT time</span><span lang="fr" style="display: none">Afficher l'heure FAT</span></span></span></span>
 <span class="S0">    </span><span class="S9">$sDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_DOSTimeToStr.htm"><span class="S15">_Date_Time_DOSTimeToStr</span></a><span class="S8">(</span><span class="S3">0x944a</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 18:34:20</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">FAT time .:</span><span lang="fr" style="display: none">time FAT . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sDate</span><span class="S8">)</span>
 

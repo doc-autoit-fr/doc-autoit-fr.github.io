@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_FileTimeToDOSDateTime</h1>
-  <p class="funcdesc"><span class="segments"><span lang="en">Converts MS-DOS date and time values to a file time</span><span lang="fr" style="display: none">Convertit les valeurs de date et d'heure MS-DOS à une heure du fichier</span></span><br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Converts MS-DOS date and time values to a file time</span><span lang="fr" style="display: none">Convertit les valeurs de date et d'heure MS-DOS en une heure du fichier</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_FileTimeToDOSDateTime ( $tFileTime )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -29,7 +29,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) avec le format suivant :</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant :</span></span><br>
   [0] - MS-DOS date, packed as follows:<br>
   <span class="segments"><span lang="en">Bits 0- 4 Day of the month (1–31)</span><span lang="fr" style="display: none">Bits 0-4 Jour du mois (1–31)</span></span><br>
   <span class="segments"><span lang="en">Bits 5- 8 Month (1 = January, 2 = February, and so on)</span><span lang="fr" style="display: none">Bits 5-8 Mois (1 = janvier, 2 = février, et ainsi de suite)</span></span><br>
@@ -88,7 +88,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Encode a file time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Encode a file time</span><span lang="fr" style="display: none">Encode une heure de fichier</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_EncodeFileTime.htm"><span class="S15">_Date_Time_EncodeFileTime</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@HOUR"><span class="S6">@HOUR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MIN"><span class="S6">@MIN</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SEC"><span class="S6">@SEC</span></a><span class="S8">)</span>
 <span class="S0">    </span><span class="S9">$aDOS</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToDOSDateTime.htm"><span class="S15">_Date_Time_FileTimeToDOSDateTime</span></a><span class="S8">(</span><span class="S9">$tFile</span><span class="S8">)</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"DOS date .: 0x"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$aDOS</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span>

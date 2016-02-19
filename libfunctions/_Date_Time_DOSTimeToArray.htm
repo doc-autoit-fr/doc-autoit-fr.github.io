@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_DOSTimeToArray</h1>
-  <p class="funcdesc">Decode a DOS time to an array<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Decode a DOS time to an array</span><span lang="fr" style="display: none">Décode une date DOS en un tableau</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_DOSTimeToArray ( $iDosTime )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -32,10 +32,10 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) avec le format suivant :</span></span><br>
-  [0] - Hour<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant :</span></span><br>
+  <span class="segments"><span lang="en">[0] - Hour</span><span lang="fr" style="display: none">[0] - Heure</span></span><br>
   [1] - Minute<br>
-  [2] - Second<br>
+  <span class="segments"><span lang="en">[2] - Second</span><span lang="fr" style="display: none">[2] - Seconde</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Date_Time_DOSDateTimeToArray.htm">_Date_Time_DOSDateTimeToArray</a>, <a href="_Date_Time_DOSDateToArray.htm">_Date_Time_DOSDateToArray</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -86,7 +86,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Show FAT time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show FAT time</span><span lang="fr" style="display: none">Afficher l'heure FAT</span></span></span></span>
 <span class="S0">    </span><span class="S9">$aDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_DOSTimeToArray.htm"><span class="S15">_Date_Time_DOSTimeToArray</span></a><span class="S8">(</span><span class="S3">0x944a</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 18:34:20</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">FAT time .:</span><span lang="fr" style="display: none">time FAT . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringFormat.htm"><span class="S4">StringFormat</span></a><span class="S8">(</span><span class="S7">"%02d:%02d:%02d"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aDate</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aDate</span><span class="S8">[</span><span class="S3">1</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aDate</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]))</span>
 

@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_DOSDateToArray</h1>
-  <p class="funcdesc">Decode a DOS date to an array<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Decode a DOS date to an array</span><span lang="fr" style="display: none">Décode une date de DOS en un tableau</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_DOSDateToArray ( $iDosDate )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -32,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) avec le format suivant :</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant :</span></span><br>
   <span class="segments"><span lang="en">[0] - Month</span><span lang="fr" style="display: none">[0] - Mois</span></span><br>
   <span class="segments"><span lang="en">[1] - Day</span><span lang="fr" style="display: none">[1] - Jour</span></span><br>
   <span class="segments"><span lang="en">[2] - Year</span><span lang="fr" style="display: none">[2] - Année</span></span><br>
@@ -86,7 +86,7 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Show FAT date</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show FAT date</span><span lang="fr" style="display: none">Affiche la date FAT</span></span></span></span>
 <span class="S0">    </span><span class="S9">$aDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_DOSDateToArray.htm"><span class="S15">_Date_Time_DOSDateToArray</span></a><span class="S8">(</span><span class="S3">0x3621</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 01/01/2007</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">FAT date .:</span><span lang="fr" style="display: none">date FAT . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/StringFormat.htm"><span class="S4">StringFormat</span></a><span class="S8">(</span><span class="S7">"%02d/%02d/%04d"</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$aDate</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aDate</span><span class="S8">[</span><span class="S3">1</span><span class="S8">],</span><span class="S0"> </span><span class="S9">$aDate</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]))</span>
 

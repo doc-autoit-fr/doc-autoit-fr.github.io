@@ -39,7 +39,7 @@
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a date/time string formatted as mm/dd/yyyy hh:mm:ss.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a date/time string formatted as mm/dd/yyyy hh:mm:ss.</span><span lang="fr" style="display: none">Retourne la date/heure sous forme d'une chaîne au format mm/jj/aaaa hh:mm.ss.</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Date_Time_DOSDateToStr.htm">_Date_Time_DOSDateToStr</a>, <a href="_Date_Time_DOSTimeToStr.htm">_Date_Time_DOSTimeToStr</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -92,7 +92,7 @@
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show FAT date/time</span><span lang="fr" style="display: none">Affiche la date/heure FAT</span></span></span></span>
 <span class="S0">    </span><span class="S9">$sDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_DOSDateTimeToStr.htm"><span class="S15">_Date_Time_DOSDateTimeToStr</span></a><span class="S8">(</span><span class="S3">0x3621</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0x944a</span><span class="S8">)</span><span class="S0"> </span><span class="S1">; 01/01/2007 18:34:20</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"FAT date/time .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sDate</span><span class="S8">)</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">FAT date/time .:</span><span lang="fr" style="display: none">date/heure FAT . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sDate</span><span class="S8">)</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

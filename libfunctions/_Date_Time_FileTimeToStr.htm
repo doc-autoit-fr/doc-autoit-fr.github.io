@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$tFileTime</td>
-        <td style="width:85%">$tagFILETIME structure</td>
+        <td style="width:85%"><span class="segments"><span lang="en">$tagFILETIME structure</span><span lang="fr" style="display: none">structure $tagFILETIME</span></span></td>
       </tr>
       <tr>
         <td>$iFmt</td>
@@ -85,9 +85,9 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Encode a file time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Encode a file time</span><span lang="fr" style="display: none">Encode une heure de fichier</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_EncodeFileTime.htm"><span class="S15">_Date_Time_EncodeFileTime</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@HOUR"><span class="S6">@HOUR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MIN"><span class="S6">@MIN</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SEC"><span class="S6">@SEC</span></a><span class="S8">)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Current date/time .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$tFile</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current date/time .:</span><span lang="fr" style="display: none">Date/heure actuelle . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$tFile</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>
