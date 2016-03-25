@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_SetLocalTime</h1>
-  <p class="funcdesc">Sets the current local date and time<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the current local date and time</span><span lang="fr" style="display: none">Définit les date et heure locales actuelles</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_SetLocalTime ( $tSYSTEMTIME )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$tSYSTEMTIME</td>
-        <td style="width:85%">a $tagSYSTEMTIME structure that contains the new local date and time or a pointer to it</td>
+        <td style="width:85%"><span class="segments"><span lang="en">a $tagSYSTEMTIME structure that contains the new local date and time or a pointer to it</span><span lang="fr" style="display: none">une structure $tagSYSTEMTIME qui contient les nouvelles date et heure locales ou un pointeur vers elle.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -43,7 +43,7 @@
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>The <a href="_Date_Time_SetLocalTime.htm">_Date_Time_SetLocalTime()</a> function enables the SE_SYSTEMTIME_NAME privilege before changing the local time.<br></p>
+  <p><span class="segments"><span lang="en">The <a href="_Date_Time_SetLocalTime.htm">_Date_Time_SetLocalTime()</a> function enables the SE_SYSTEMTIME_NAME privilege before changing the local time.</span><span lang="fr" style="display: none">La fonction <a href="_Date_Time_SetLocalTime.htm">_Date_Time_SetLocalTime()</a> active le privilège SE_SYSTEMTIME_NAME avant de changer l'heure locale.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagSYSTEMTIME.htm">$tagSYSTEMTIME</a>, <a href="_Date_Time_GetLocalTime.htm">_Date_Time_GetLocalTime</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -52,7 +52,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -72,7 +72,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -82,7 +82,7 @@
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;WindowsConstants.au3&gt;</span>
 
-<span class="S1">; Under Vista the Windows API "SetLocalTime" may be rejected due to system security</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Under Vista the Windows API "SetLocalTime" may be rejected due to system security</span><span lang="fr" style="display: none">Sous Vista, l'API Windows « SetLocalTime » peut être rejetée en raison de la sécurité du système</span></span></span></span>
 
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Global</span></a><span class="S0"> </span><span class="S9">$g_idMemo</span>
 
@@ -97,25 +97,25 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Show current local time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show current local time</span><span lang="fr" style="display: none">Affiche l'heure locale actuelle</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tCur</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetLocalTime.htm"><span class="S15">_Date_Time_GetLocalTime</span></a><span class="S8">()</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current date/time .:</span><span lang="fr" style="display: none">Date/heure actuelle . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tCur</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current date/time .:</span><span lang="fr" style="display: none">Date/heure actuelles . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tCur</span><span class="S8">))</span>
 
-<span class="S0">    </span><span class="S1">; Set new local time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Set new local time</span><span lang="fr" style="display: none">Définit la nouvelle heure locale</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tNew</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_EncodeSystemTime.htm"><span class="S15">_Date_Time_EncodeSystemTime</span></a><span class="S8">(</span><span class="S3">8</span><span class="S8">,</span><span class="S0"> </span><span class="S3">19</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><span class="S3">45</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S5">Not</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SetLocalTime.htm"><span class="S15">_Date_Time_SetLocalTime</span></a><span class="S8">(</span><span class="S9">$tNew</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
-<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"System clock cannot be SET"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetLastErrorMessage.htm"><span class="S15">_WinAPI_GetLastErrorMessage</span></a><span class="S8">())</span>
+<span class="S0">        </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Error</span><span lang="fr" style="display: none">Erreur</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">System clock cannot be SET</span><span lang="fr" style="display: none">L'horloge système ne peut pas être définie</span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_GetLastErrorMessage.htm"><span class="S15">_WinAPI_GetLastErrorMessage</span></a><span class="S8">())</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Exit.htm"><span class="S5">Exit</span></a>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 <span class="S0">    </span><span class="S9">$tNew</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetLocalTime.htm"><span class="S15">_Date_Time_GetLocalTime</span></a><span class="S8">()</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"New date/time .....: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tNew</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">New date/time .....:</span><span lang="fr" style="display: none">Nouvelle date/heure... :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tNew</span><span class="S8">))</span>
 
-<span class="S0">    </span><span class="S1">; Reset local time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Reset local time</span><span lang="fr" style="display: none">Réinitialise l'heure locale</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SetLocalTime.htm"><span class="S15">_Date_Time_SetLocalTime</span></a><span class="S8">(</span><span class="S9">$tCur</span><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Show current local time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Show current local time</span><span lang="fr" style="display: none">Affiche l'heure locale actuelle</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tCur</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetLocalTime.htm"><span class="S15">_Date_Time_GetLocalTime</span></a><span class="S8">()</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current date/time .:</span><span lang="fr" style="display: none">Date/heure actuelle . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tCur</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current date/time .:</span><span lang="fr" style="display: none">Date/heure actuelles . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tCur</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

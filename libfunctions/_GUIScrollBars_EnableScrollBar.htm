@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iSBflags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the scroll bar type. This parameter can be one of the following values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies the scroll bar type. This parameter can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $SB_BOTH - Enables or disables the arrows on the horizontal and vertical scroll bars associated with the specified window.<br>
         &nbsp;&nbsp;&nbsp; $SB_CTL - Indicates that the scroll bar is a scroll bar control. The $hWnd must be the handle to the scroll bar control.<br>
         &nbsp;&nbsp;&nbsp; $SB_HORZ - Enables or disables the arrows on the horizontal scroll bar associated with the specified window.<br>
@@ -37,7 +37,7 @@
       </tr>
       <tr>
         <td>$iArrows</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the scroll bar arrows are enabled or disabled and indicates which arrows are enabled or disabled.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether the scroll bar arrows are enabled or disabled and indicates which arrows are enabled or disabled.<br>
         This parameter can be one of the following values<br>
         &nbsp;&nbsp;&nbsp; $ESB_DISABLE_BOTH - Disables both arrows on a scroll bar.<br>
         &nbsp;&nbsp;&nbsp; $ESB_DISABLE_DOWN - Disables the down arrow on a vertical scroll bar.<br>
@@ -73,7 +73,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -93,7 +93,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

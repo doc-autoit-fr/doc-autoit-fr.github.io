@@ -37,7 +37,7 @@
       </tr>
       <tr>
         <td>$iCaseSensitive</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSE (0) = not case sensitive, using the user's locale (default)<br>
         &nbsp;&nbsp;&nbsp; $STR_CASESENSE (1) = case sensitive<br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSEBASIC (2) = not case sensitive, using a basic/faster comparison<br>
@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td>$iOccurance</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 0 - Only the first occurrence is replaced or 1 - all occurrences are replaced (default)</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> 0 - Only the first occurrence is replaced or 1 - all occurrences are replaced (default)</td>
       </tr>
     </tbody>
   </table>
@@ -74,7 +74,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -94,7 +94,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -25,12 +25,12 @@
     <tbody>
       <tr>
         <td style="width:15%">$fRadius</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Real number that specifies the blur radius (the radius of the Gaussian convolution kernel) in pixels.</span><span lang="fr" style="display: none">Nombre réel qui spécifie le rayon de flou (le rayon du noyau de convolution gaussien) en pixels.</span></span><br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Real number that specifies the blur radius (the radius of the Gaussian convolution kernel) in pixels.</span><span lang="fr" style="display: none">Nombre réel qui spécifie le rayon de flou (le rayon du noyau de convolution gaussien) en pixels.</span></span><br>
         <span class="segments"><span lang="en">The radius must be in the range 0.0 through 255.0.</span><span lang="fr" style="display: none">Le rayon doit être compris entre 0,0 et 255,0.</span></span></td>
       </tr>
       <tr>
         <td>$bExpandEdge</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Boolean value that specifies whether the bitmap expands by an amount equal to the blur radius.</span><span lang="fr" style="display: none">Valeur booléenne pour indiquer si la taille du bitmap augmente d'un montant égal au rayon de flou.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Boolean value that specifies whether the bitmap expands by an amount equal to the blur radius.</span><span lang="fr" style="display: none">Valeur booléenne pour indiquer si la taille du bitmap augmente d'un montant égal au rayon de flou.</span></span><br>
         <span class="segments"><span lang="en">If TRUE, the bitmap expands by an amount equal to the radius so that it can have soft edges.</span><span lang="fr" style="display: none">Si TRUE, l'image bitmap se dilate d'un montant égal au rayon de sorte qu'il peut y avoir des bords flous.</span></span><br>
         <span class="segments"><span lang="en">If FALSE, the bitmap remains the same size and the soft edges are clipped.</span><span lang="fr" style="display: none">Si FALSE, le bitmap reste à la même taille et les contours flous sont tronquées.</span></span></td>
       </tr>
@@ -64,7 +64,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -84,7 +84,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

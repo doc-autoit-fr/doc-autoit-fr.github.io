@@ -25,15 +25,15 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDatabase_Filename</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Database filename, by default will open a memory database.</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Database filename, by default will open a memory database.</td>
       </tr>
       <tr>
         <td>$iAccessMode</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> access mode flags. Defaults to $SQLITE_OPEN_READWRITE + $SQLITE_OPEN_CREATE</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> access mode flags. Defaults to $SQLITE_OPEN_READWRITE + $SQLITE_OPEN_CREATE</td>
       </tr>
       <tr>
         <td>$iEncoding</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> encoding mode flag, only used at creation time. Defaults to $SQLITE_ENCODING_UTF8</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> encoding mode flag, only used at creation time. Defaults to $SQLITE_ENCODING_UTF8</td>
       </tr>
     </tbody>
   </table>
@@ -90,7 +90,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -110,7 +110,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

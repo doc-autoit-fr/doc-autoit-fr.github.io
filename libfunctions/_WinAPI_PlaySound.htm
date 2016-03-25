@@ -31,7 +31,7 @@
       <tr>
         <td>$iFlags</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags for sound playing. This parameter can be one or more of the following values.<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The flags for sound playing. This parameter can be one or more of the following values.<br>
           $SND_APPLICATION<br>
           $SND_ALIAS<br>
           $SND_ALIAS_ID<br>
@@ -63,7 +63,7 @@
       </tr>
       <tr>
         <td>$hInstance</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to the executable file that contains the resource to be loaded. If $iFlags does not<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Handle to the executable file that contains the resource to be loaded. If $iFlags does not<br>
         contain the $SND_RESOURCE, this parameter will be ignored.</td>
       </tr>
     </tbody>
@@ -89,7 +89,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -109,7 +109,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

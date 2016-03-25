@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$hGlobal</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The memory handle, or if 0 (Default) a new handle is to be allocated instead. The handle must be allocated as moveable and nondiscardable.</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The memory handle, or if 0 (Default) a new handle is to be allocated instead. The handle must be allocated as moveable and nondiscardable.</td>
       </tr>
       <tr>
         <td>$bDeleteOnRelease</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the underlying handle for this stream object should be automatically freed when the stream object is released, valid values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether the underlying handle for this stream object should be automatically freed when the stream object is released, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - The final release will automatically free the $hGlobal parameter (Default).<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - The user must free the $hGlobal after the final release.</td>
       </tr>
@@ -65,7 +65,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -85,7 +85,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

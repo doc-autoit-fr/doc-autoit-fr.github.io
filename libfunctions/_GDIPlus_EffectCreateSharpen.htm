@@ -25,12 +25,12 @@
     <tbody>
       <tr>
         <td style="width:15%">$fRadius</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Real number that specifies the sharpening radius (the radius of the convolution kernel) in pixels.</span><span lang="fr" style="display: none">Nombre réel qui indique le rayon de netteté (le rayon du noyau de convolution) en pixels.</span></span><br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Real number that specifies the sharpening radius (the radius of the convolution kernel) in pixels.</span><span lang="fr" style="display: none">Nombre réel qui indique le rayon de netteté (le rayon du noyau de convolution) en pixels.</span></span><br>
         <span class="segments"><span lang="en">The radius must be in the range 0.0 through 255.0</span><span lang="fr" style="display: none">Le rayon doit être compris entre 0,0 et 255,0</span></span></td>
       </tr>
       <tr>
         <td>$fAmount</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Real number in the range 0.0 through 100.0 that specifies the amount of sharpening to be applied</span><span lang="fr" style="display: none">Nombre réel compris entre 0,0 et 100,0 qui indique le degré de netteté à appliquer</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Real number in the range 0.0 through 100.0 that specifies the amount of sharpening to be applied</span><span lang="fr" style="display: none">Nombre réel compris entre 0,0 et 100,0 qui indique le degré de netteté à appliquer</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -62,7 +62,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -82,7 +82,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

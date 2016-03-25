@@ -28,7 +28,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Changes how the binary data is converted:</span><span lang="fr" style="display: none">Change la manière dont les données binaires sont converties:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Changes how the binary data is converted:</span><span lang="fr" style="display: none">Change la manière dont les données binaires sont converties:</span></span><br>
         &nbsp;&nbsp;&nbsp; $SB_ANSI (1) = binary data is ANSI (default)<br>
         &nbsp;&nbsp;&nbsp; $SB_UTF16LE (2) = binary data is UTF16 Little Endian<br>
         &nbsp;&nbsp;&nbsp; $SB_UTF16BE (3) = binary data is UTF16 Big Endian<br>
@@ -67,7 +67,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -87,7 +87,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

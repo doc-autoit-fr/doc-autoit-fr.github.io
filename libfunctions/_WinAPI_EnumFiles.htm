@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flag that specifies whether to enumerate files, subdirectories, or both.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The flag that specifies whether to enumerate files, subdirectories, or both.<br>
         This parameter can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; 0 - Enumerate both files and subdirectories (Default).<br>
         &nbsp;&nbsp;&nbsp; 1 - Enumerate files only.<br>
@@ -37,11 +37,11 @@
       </tr>
       <tr>
         <td>$sTemplate</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A template that using to enumerating files and directories. For example, "*.jpe;*.jpeg;*.jpg".</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A template that using to enumerating files and directories. For example, "*.jpe;*.jpeg;*.jpg".</td>
       </tr>
       <tr>
         <td>$bExclude</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the specified template is used to exclude files, valid values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether the specified template is used to exclude files, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The files matching the template will not be enumerated.<br>
         &nbsp;&nbsp;&nbsp; False - The only those files that match the template will be enumerated (Default).</td>
       </tr>
@@ -79,7 +79,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -99,7 +99,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

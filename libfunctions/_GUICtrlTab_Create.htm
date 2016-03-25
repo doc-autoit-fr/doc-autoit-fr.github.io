@@ -37,15 +37,15 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control width</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control width</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control height</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control height</td>
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control styles:<br>
         &nbsp;&nbsp;&nbsp; $TCS_BOTTOM - Tabs appear at the bottom of the control<br>
         &nbsp;&nbsp;&nbsp; $TCS_BUTTONS - Tabs appear as buttons, and no border is drawn around the display area<br>
         &nbsp;&nbsp;&nbsp; $TCS_FIXEDWIDTH - All tabs are the same width<br>
@@ -86,7 +86,7 @@
       </tr>
       <tr>
         <td>$iExStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control extended styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control extended styles:<br>
         &nbsp;&nbsp;&nbsp; $TCS_EX_FLATSEPARATORS - The control will draw separators between the tab items<br>
         &nbsp;&nbsp;&nbsp; $TCS_EX_REGISTERDROP - The control generates $TCN_GETOBJECT notification messages to request a drop target object when an object is dragged over the tab items.</td>
       </tr>
@@ -115,7 +115,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -135,7 +135,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

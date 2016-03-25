@@ -34,7 +34,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">the smoothing mode. <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants:</span></span><br>
+        <td style="width:90%">the smoothing mode. <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants&nbsp;:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - Smoothing is not applied<br>
         &nbsp;&nbsp;&nbsp; 1 - Smoothing is applied using an 8 X 4 box filter<br>
         &nbsp;&nbsp;&nbsp; 2 - Smoothing is applied using an 8 X 8 box filter</td>
@@ -55,7 +55,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -75,7 +75,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -25,15 +25,15 @@
     <tbody>
       <tr>
         <td style="width:15%">$iARGB</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of pen color</span><span lang="fr" style="display: none">Composantes de couleur du crayon:Alpha, Rouge, Vert et Bleu</span></span></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of pen color</span><span lang="fr" style="display: none">Composantes de couleur du crayon:Alpha, Rouge, Vert et Bleu</span></span></td>
       </tr>
       <tr>
         <td>$nWidth</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The width of the pen measured in the units specified in the $iUnit parameter</span><span lang="fr" style="display: none">La largeur du crayon mesurée dans l'unité spécifiée dans le paramètre $iUnit</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The width of the pen measured in the units specified in the $iUnit parameter</span><span lang="fr" style="display: none">La largeur du crayon mesurée dans l'unité spécifiée dans le paramètre $iUnit</span></span></td>
       </tr>
       <tr>
         <td>$iUnit</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Unit of measurement for the pen size:</span><span lang="fr" style="display: none">Unité de mesure de la largeur du crayon:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Unit of measurement for the pen size:</span><span lang="fr" style="display: none">Unité de mesure de la largeur du crayon:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - World coordinates, a nonphysical unit<br>
         &nbsp;&nbsp;&nbsp; 1 - Display units<br>
         &nbsp;&nbsp;&nbsp; 2 - A unit is 1 pixel<br>
@@ -69,7 +69,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -90,7 +90,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -143,7 +143,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

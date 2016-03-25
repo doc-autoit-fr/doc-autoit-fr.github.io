@@ -37,15 +37,15 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control width</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control width</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control height</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control height</td>
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control styles:<br>
         &nbsp;&nbsp;&nbsp; $DTS_APPCANPARSE - Allows the owner to parse user input and take action<br>
         &nbsp;&nbsp;&nbsp; $DTS_LONGDATEFORMAT - Displays the date in long format<br>
         &nbsp;&nbsp;&nbsp; $DTS_RIGHTALIGN - The calendar will be right-aligned<br>
@@ -59,7 +59,7 @@
       </tr>
       <tr>
         <td>$iExStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control extended style. These correspond to the standard $WS_EX_* constants. <span class="segments"><span lang="en">See <strong>Extended Style Table</strong>.</span><span lang="fr" style="display: none">Consultez en Appendice le <strong>Tableau des Styles Etendus</strong> .</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control extended style. These correspond to the standard $WS_EX_* constants. <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -86,7 +86,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -106,7 +106,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

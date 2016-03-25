@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateAdd</h1>
-  <p class="funcdesc">Calculates a new date/time by adding/subtracting a specified number of time intervals from an initial date/time<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Calculates a new date/time by adding/subtracting a specified number of time intervals from an initial date/time</span><span lang="fr" style="display: none">Calcule une nouvelle date/heure en ajoutant/soustrayant un intervalle de temps spécifié depuis une date/heure initiale</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateAdd ( $sType, $iNumber, $sDate )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,22 +25,22 @@
     <tbody>
       <tr>
         <td style="width:15%">$sType</td>
-        <td style="width:85%">Time interval to be used:<br>
-        D - Add/subtract days to/from the specified date<br>
-        M - Add/subtract months to/from the specified date<br>
-        Y - Add/subtract years to/from the specified date<br>
-        w - Add/subtract Weeks to/from the specified date<br>
-        h - Add/subtract hours to/from the specified date<br>
-        n - Add/subtract minutes to/from the specified en date<br>
-        s - Add/subtract seconds to/from the specified date</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Time interval to be used:</span><span lang="fr" style="display: none">Intervalle de temps à utiliser&nbsp;:</span></span><br>
+        <span class="segments"><span lang="en">D - Add/subtract days to/from the specified date</span><span lang="fr" style="display: none">D - Ajoute/soustrait des jours à la date spécifiée</span></span><br>
+        <span class="segments"><span lang="en">M - Add/subtract months to/from the specified date</span><span lang="fr" style="display: none">M - Ajoute/soustrait des mois à la date spécifiée</span></span><br>
+        <span class="segments"><span lang="en">Y - Add/subtract years to/from the specified date</span><span lang="fr" style="display: none">Y - Ajoute/soustrait des années à la date spécifiée</span></span><br>
+        <span class="segments"><span lang="en">w - Add/subtract Weeks to/from the specified date</span><span lang="fr" style="display: none">w - Ajoute/soustrait des semaines à la date spécifiée</span></span><br>
+        <span class="segments"><span lang="en">h - Add/subtract hours to/from the specified date</span><span lang="fr" style="display: none">h - Ajoute/soustrait des heures à la date spécifiée</span></span><br>
+        <span class="segments"><span lang="en">n - Add/subtract minutes to/from the specified en date</span><span lang="fr" style="display: none">n - Ajoute/soustrait des minutes à la date spécifiée</span></span><br>
+        <span class="segments"><span lang="en">s - Add/subtract seconds to/from the specified date</span><span lang="fr" style="display: none">s - Ajoute/soustrait des secondes à la date spécifiée</span></span></td>
       </tr>
       <tr>
         <td>$iNumber</td>
-        <td>Number of intervals to be added/subtracted (use unary minus for subtraction)</td>
+        <td><span class="segments"><span lang="en">Number of intervals to be added/subtracted (use unary minus for subtraction)</span><span lang="fr" style="display: none">Nombre d'intervalles à être ajoutés/soustraits (utilisez le moins unaire pour la soustraction)</span></span></td>
       </tr>
       <tr>
         <td>$sDate</td>
-        <td>Initial date in the format YYYY/MM/DD[ HH:MM:SS]</td>
+        <td><span class="segments"><span lang="en">Initial date in the format YYYY/MM/DD[ HH:MM:SS]</span><span lang="fr" style="display: none">Date initiale au format AAAA/MM/JJ[ HH:MM:SS]</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -49,7 +49,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">Calculated date.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">Calculated date.</span><span lang="fr" style="display: none">Date calculée.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -57,18 +57,18 @@
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - Invalid $sType<br>
-        2 - Invalid $iNumber<br>
-        3 - Invalid $sDate</td>
+        <td><span class="segments"><span lang="en">1 - Invalid $sType</span><span lang="fr" style="display: none">1 - $sType non valide</span></span><br>
+        <span class="segments"><span lang="en">2 - Invalid $iNumber</span><span lang="fr" style="display: none">2 - $iNumber non valide</span></span><br>
+        <span class="segments"><span lang="en">3 - Invalid $sDate</span><span lang="fr" style="display: none">3 - $sDate non valide</span></span></td>
       </tr>
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>Valid initial date must be between "2000/01/01 00:00:00". and "3000/12/31 23:59:59".<br>
+  <p><span class="segments"><span lang="en">Valid initial date must be between "2000/01/01 00:00:00".</span><span lang="fr" style="display: none">La date initiale valide doit être comprise entre «&nbsp;2000/01/01 00:00:00&nbsp;»</span></span> <span class="segments"><span lang="en">and "3000/12/31 23:59:59".</span><span lang="fr" style="display: none">et «&nbsp;3000/12/31 23:59:59&nbsp;».</span></span><br>
   <br>
-  The function will not return an invalid date. For example, if 3 months are added to '2004/1/31' then the result will be '2004/04/30'.<br>
+  <span class="segments"><span lang="en">The function will not return an invalid date.</span><span lang="fr" style="display: none">La fonction ne retournera pas une date invalide.</span></span> <span class="segments"><span lang="en">For example, if 3 months are added to '2004/1/31' then the result will be '2004/04/30'.</span><span lang="fr" style="display: none">Par exemple, si 3 mois sont ajoutés à «&nbsp;2004/1/31&nbsp;» alors le résultat sera «&nbsp;2004/04/30&nbsp;».</span></span><br>
   <br>
-  See <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> for other possible variations of the input date format.<br></p>
+  <span class="segments"><span lang="en">See <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> for other possible variations of the input date format.</span><span lang="fr" style="display: none">Voir <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> pour d'autres variations possibles du format de la date d'entrée.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_DateDiff.htm">_DateDiff</a>, <a href="_DateTimeSplit.htm">_DateTimeSplit</a>, <a href="_DateToDayOfWeek.htm">_DateToDayOfWeek</a>, <a href="_DateToDayOfWeekISO.htm">_DateToDayOfWeekISO</a>, <a href="_DateToDayValue.htm">_DateToDayValue</a>, <a href="_DayValueToDate.htm">_DayValueToDate</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -77,7 +77,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -97,7 +97,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -105,21 +105,21 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<span class="S1">; Add 5 days to today</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Add 5 days to today</span><span lang="fr" style="display: none">Ajoute 5 jours à aujourd'hui</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateAdd.htm"><span class="S15">_DateAdd</span></a><span class="S8">(</span><span class="S7">'d'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">5</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalcDate.htm"><span class="S15">_NowCalcDate</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Today + 5 days:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Today + 5 days:</span><span lang="fr" style="display: none">Aujourd'hui + 5 jours :</span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
 
-<span class="S1">; Subtract 2 weeks from today</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Subtract 2 weeks from today</span><span lang="fr" style="display: none">Soustrait 2 semaines à partir d'aujourd'hui</span></span></span></span>
 <span class="S9">$sNewDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateAdd.htm"><span class="S15">_DateAdd</span></a><span class="S8">(</span><span class="S7">'w'</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">2</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalcDate.htm"><span class="S15">_NowCalcDate</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Today minus 2 weeks: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Today minus 2 weeks:</span><span lang="fr" style="display: none">Aujourd'hui moins 2 semaines :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
 
-<span class="S1">; Add 15 minutes to current time</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Add 15 minutes to current time</span><span lang="fr" style="display: none">Ajoute 15 minutes à l'heure actuelle</span></span></span></span>
 <span class="S9">$sNewDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateAdd.htm"><span class="S15">_DateAdd</span></a><span class="S8">(</span><span class="S7">'n'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">15</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Current time +15 minutes: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Current time +15 minutes:</span><span lang="fr" style="display: none">Heure actuelle + 15 minutes :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
 
-<span class="S1">; Calculated eventlogdate which returns second since 1970/01/01 00:00:00</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Calculated eventlogdate which returns second since 1970/01/01 00:00:00</span><span lang="fr" style="display: none">Date calculée d'un journal d'évènements qui retourne les secondes depuis 1970/01/01 00:00:00</span></span></span></span>
 <span class="S9">$sNewDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateAdd.htm"><span class="S15">_DateAdd</span></a><span class="S8">(</span><span class="S7">'s'</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1087497645</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"1970/01/01 00:00:00"</span><span class="S8">)</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Date: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Date:</span><span lang="fr" style="display: none">Date :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sNewDate</span><span class="S8">)</span>
 </span>
 </pre>
       </div>

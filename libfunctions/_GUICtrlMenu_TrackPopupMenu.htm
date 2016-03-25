@@ -33,37 +33,37 @@
       </tr>
       <tr>
         <td>$iX</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the horizontal location of the shortcut menu, in screen coordinates.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies the horizontal location of the shortcut menu, in screen coordinates.<br>
         If this is -1, the current mouse position is used.</td>
       </tr>
       <tr>
         <td>$iY</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the vertical location of the shortcut menu, in screen coordinates.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies the vertical location of the shortcut menu, in screen coordinates.<br>
         If this is -1, the current mouse position is used.</td>
       </tr>
       <tr>
         <td>$iAlignX</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies how to position the menu horizontally:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies how to position the menu horizontally:<br>
         &nbsp;&nbsp;&nbsp; 0 - Center the menu horizontally relative to $iX<br>
         &nbsp;&nbsp;&nbsp; 1 - Position the menu so that its left side is aligned with $iX<br>
         &nbsp;&nbsp;&nbsp; 2 - Position the menu so that its right side is aligned with $iX</td>
       </tr>
       <tr>
         <td>$iAlignY</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies how to position the menu vertically:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies how to position the menu vertically:<br>
         &nbsp;&nbsp;&nbsp; 0 - Position the menu so that its bottom side is aligned with $iY<br>
         &nbsp;&nbsp;&nbsp; 1 - Position the menu so that its top side is aligned with $iY<br>
         &nbsp;&nbsp;&nbsp; 2 - Center the menu vertically relative to $iY</td>
       </tr>
       <tr>
         <td>$iNotify</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Use to determine the selection withouta parent window:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Use to determine the selection withouta parent window:<br>
         &nbsp;&nbsp;&nbsp; 1 - Do not send notification messages<br>
         &nbsp;&nbsp;&nbsp; 2 - Return the menu item identifier of the user's selection</td>
       </tr>
       <tr>
         <td>$iButtons</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Mouse button the shortcut menu tracks:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Mouse button the shortcut menu tracks:<br>
         &nbsp;&nbsp;&nbsp; 0 - The user can select items with only the left mouse button<br>
         &nbsp;&nbsp;&nbsp; 1 - The user can select items with both left and right buttons</td>
       </tr>
@@ -90,7 +90,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -110,7 +110,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

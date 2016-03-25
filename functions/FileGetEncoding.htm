@@ -29,7 +29,7 @@
       <tr>
         <td>mode</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The UTF8 detection mode to use.</span><span lang="fr" style="display: none">Le mode de détection UTF8 à utiliser.</span></span><br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The UTF8 detection mode to use.</span><span lang="fr" style="display: none">Le mode de détection UTF8 à utiliser.</span></span><br>
           &nbsp;&nbsp;&nbsp; $FE_ENTIRE_UTF8 (1) = Check entire file for UTF8 sequences (default)<br>
           &nbsp;&nbsp;&nbsp; $FE_PARTIALFIRST_UTF8 (2) = Check first part of file for UTF8 sequences (the same as <a href="FileOpen.htm">FileOpen()</a> uses by default)<br>
           <br>
@@ -70,7 +70,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -90,7 +90,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

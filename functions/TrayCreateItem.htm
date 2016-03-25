@@ -28,15 +28,15 @@
       </tr>
       <tr>
         <td>menuID</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Allows you to create a submenu in the referenced menu.</span><span lang="fr" style="display: none">Vous permet de créer un sous-menu dans le menu référencé.</span></span> <span class="segments"><span lang="en">If equal -1 it will be added 'behind' the last created item (default setting).</span><span lang="fr" style="display: none">Si égal à -1, il sera ajouté 'derrière' le dernier item créé (réglage par défaut).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Allows you to create a submenu in the referenced menu.</span><span lang="fr" style="display: none">Vous permet de créer un sous-menu dans le menu référencé.</span></span> <span class="segments"><span lang="en">If equal -1 it will be added 'behind' the last created item (default setting).</span><span lang="fr" style="display: none">Si égal à -1, il sera ajouté 'derrière' le dernier item créé (réglage par défaut).</span></span></td>
       </tr>
       <tr>
         <td>menuentry</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Allows you to define the entry number to be created.</span><span lang="fr" style="display: none">Vous permet de définir le nombre d'entrées à créer.</span></span> <span class="segments"><span lang="en">The entries are numbered starting at 0.</span><span lang="fr" style="display: none">Les entrées sont numérotées à partir de 0.</span></span> <span class="segments"><span lang="en">If equal -1 it will be added 'behind' the last created entry (default setting).</span><span lang="fr" style="display: none">Si égal à -1, il sera ajouté 'derrière' la dernière entrée créée ( réglage par défaut).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Allows you to define the entry number to be created.</span><span lang="fr" style="display: none">Vous permet de définir le nombre d'entrées à créer.</span></span> <span class="segments"><span lang="en">The entries are numbered starting at 0.</span><span lang="fr" style="display: none">Les entrées sont numérotées à partir de 0.</span></span> <span class="segments"><span lang="en">If equal -1 it will be added 'behind' the last created entry (default setting).</span><span lang="fr" style="display: none">Si égal à -1, il sera ajouté 'derrière' la dernière entrée créée ( réglage par défaut).</span></span></td>
       </tr>
       <tr>
         <td>menuradioitem</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span><br>
         &nbsp;&nbsp;&nbsp; $TRAY_ITEM_NORMAL (0) = (default) create a normal menuitem.<br>
         &nbsp;&nbsp;&nbsp; $TRAY_ITEM_RADIO (1) = create a menuradioitem.<br>
         <br>
@@ -74,7 +74,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -94,7 +94,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

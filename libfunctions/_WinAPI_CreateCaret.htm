@@ -36,7 +36,7 @@
       <tr>
         <td>$iWidth</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The width of the caret in logical units.<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The width of the caret in logical units.<br>
           If this parameter is 0 (Default), the width is set to the system-defined window border width.<br>
           If $hBitmap is a bitmap handle, <a href="_WinAPI_CreateCaret.htm">_WinAPI_CreateCaret()</a> ignores this parameter.
         </td>
@@ -44,7 +44,7 @@
       <tr>
         <td>$iHeight</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The height of the caret in logical units.<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The height of the caret in logical units.<br>
           If this parameter is 0 (Default), the height is set to the system-defined window border height.<br>
           If $hBitmap is a bitmap handle, <a href="_WinAPI_CreateCaret.htm">_WinAPI_CreateCaret()</a> ignores this parameter.
         </td>
@@ -84,7 +84,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -104,7 +104,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

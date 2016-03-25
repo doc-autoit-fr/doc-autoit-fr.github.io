@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_SystemTimeToArray</h1>
-  <p class="funcdesc">Decode a system time to an array<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Decode a system time to an array</span><span lang="fr" style="display: none">Décode une heure système en un tableau</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_SystemTimeToArray ( ByRef $tSYSTEMTIME )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$tSYSTEMTIME</td>
-        <td style="width:85%">$tagSYSTEMTIME structure</td>
+        <td style="width:85%"><span class="segments"><span lang="en">$tagSYSTEMTIME structure</span><span lang="fr" style="display: none">Structure $tagSYSTEMTIME</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant :</span></span><br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant&nbsp;:</span></span><br>
   <span class="segments"><span lang="en">[0] - Month</span><span lang="fr" style="display: none">[0] - Mois</span></span><br>
   <span class="segments"><span lang="en">[1] - Day</span><span lang="fr" style="display: none">[1] - Jour</span></span><br>
   <span class="segments"><span lang="en">[2] - Year</span><span lang="fr" style="display: none">[2] - Année</span></span><br>
@@ -46,7 +46,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -66,7 +66,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -88,17 +88,17 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Get current system time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Get current system time</span><span lang="fr" style="display: none">Obtient l'heure actuelle du système</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tTime</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetSystemTime.htm"><span class="S15">_Date_Time_GetSystemTime</span></a><span class="S8">()</span>
 <span class="S0">    </span><span class="S9">$aTime</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToArray.htm"><span class="S15">_Date_Time_SystemTimeToArray</span></a><span class="S8">(</span><span class="S9">$tTime</span><span class="S8">)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Month ........: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">0</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Day ..........: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Year .........: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">2</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Hour .........: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">3</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Minute .......: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">4</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Second .......: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">5</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Milliseconds .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">6</span><span class="S8">])</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Day of week ..: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">7</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Month ........:</span><span lang="fr" style="display: none">Mois ............... :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">0</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Day ..........:</span><span lang="fr" style="display: none">Jour ............... :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Year .........:</span><span lang="fr" style="display: none">Année .............. :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">2</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Hour .........:</span><span lang="fr" style="display: none">Heure .............. :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">3</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Minute .......:</span><span lang="fr" style="display: none">Minute ............. :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">4</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Second .......:</span><span lang="fr" style="display: none">Seconde ............ :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">5</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Milliseconds .:</span><span lang="fr" style="display: none">Millisecondes ...... :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">6</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Day of week ..:</span><span lang="fr" style="display: none">Jour de la semaine . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">7</span><span class="S8">])</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

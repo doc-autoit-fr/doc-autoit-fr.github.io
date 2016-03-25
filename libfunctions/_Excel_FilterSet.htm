@@ -43,17 +43,17 @@
       </tr>
       <tr>
         <td>$sCriteria1</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The criteria (a string or an array of strings). Use "=" to find blank fields, or use "&lt;&gt;" to find nonblank fields.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The criteria (a string or an array of strings). Use "=" to find blank fields, or use "&lt;&gt;" to find nonblank fields.<br>
         &nbsp;&nbsp;&nbsp; If this argument is omitted, the criteria is All.<br>
         &nbsp;&nbsp;&nbsp; If Operator is xlTop10Items, Criteria1 specifies the number of items (for example, "10")</td>
       </tr>
       <tr>
         <td>$iOperator</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> One of the constants of the XlAutoFilterOperator enumeration specifying the type of filter</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> One of the constants of the XlAutoFilterOperator enumeration specifying the type of filter</td>
       </tr>
       <tr>
         <td>$sCriteria2</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The second criteria (a string). Used with Criteria1 and Operator to construct compound criteria</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The second criteria (a string). Used with Criteria1 and Operator to construct compound criteria</td>
       </tr>
     </tbody>
   </table>
@@ -62,7 +62,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+        <td style="width:90%">1.</td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -89,7 +89,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -110,7 +110,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -187,7 +187,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

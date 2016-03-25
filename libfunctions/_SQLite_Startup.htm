@@ -25,20 +25,22 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDll_Filename</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> DLL filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> DLL filename. Default is "sqlite3.dll" or "sqlite3_x64.dll" in X64 mode.</td>
       </tr>
       <tr>
         <td>$bUTF8ErrorMsg</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> to force <strong>ConsoleWrite()</strong> to display UTF8 chars</td>
+        <td>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> to force <a href="../functions/ConsoleWrite.htm">ConsoleWrite()</a> to display UTF8 chars
+        </td>
       </tr>
       <tr>
         <td>$iForceLocal</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 1 = use the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> 1 = use the defined DLL file. No version checking. Automatic "_x64.dll" in X64 mode.<br>
         0 = the DLL will be search in @ScriptDir, @SystemDir, @WindowsDir, and @WorkingDir.</td>
       </tr>
       <tr>
         <td>$hPrintCallback</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A variable assigned to the user defined function to display a SQLite diagnostic message. Default = __SQLite_ConsoleWrite(). <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A variable assigned to the user defined function to display a SQLite diagnostic message. Default = __SQLite_ConsoleWrite(). <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -72,7 +74,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -93,7 +95,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -136,7 +138,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -178,7 +180,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -220,7 +222,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

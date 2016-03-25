@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_SetFileTime</h1>
-  <p class="funcdesc">Sets the date and time that a file was created, accessed and modified<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Sets the date and time that a file was created, accessed and modified</span><span lang="fr" style="display: none">Définit la date et l'heure de création, accès et modification d'un fichier</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_SetFileTime ( $hFile, $tCreateTime, $tLastAccess, $tLastWrite )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,24 +25,24 @@
     <tbody>
       <tr>
         <td style="width:15%">$hFile</td>
-        <td style="width:85%">Handle to the file. The file handle must have been created using the CreateFile function with the FILE_WRITE_ATTRIBUTES access right.</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Handle to the file.</span><span lang="fr" style="display: none">Handle vers le fichier.</span></span> <span class="segments"><span lang="en">The file handle must have been created using the CreateFile function with the FILE_WRITE_ATTRIBUTES access right.</span><span lang="fr" style="display: none">Le handle du fichier doit avoir été créé à l'aide de la fonction CreateFile avec le droit d'accès FILE_WRITE_ATTRIBUTES.</span></span></td>
       </tr>
       <tr>
         <td>$tCreateTime</td>
-        <td>a $tagFILETIME structure that contains the new date and time the file was created.<br>
-        This be 0 if the application does not need to set this information.</td>
+        <td><span class="segments"><span lang="en">a $tagFILETIME structure that contains the new date and time the file was created.</span><span lang="fr" style="display: none">une structure $tagFILETIME qui contient les nouvelles date et heure du fichier qui a été créé.</span></span><br>
+        <span class="segments"><span lang="en">This be 0 if the application does not need to set this information.</span><span lang="fr" style="display: none">Ceci est 0 si l'application n'a pas besoin de définir cette information.</span></span></td>
       </tr>
       <tr>
         <td>$tLastAccess</td>
-        <td>a $tagFILETIME structure that contains the new date and time the file was last accessed.<br>
-        The last access time includes the last time the file was written to, read from, or (in the case of executable files) run.<br>
-        This can be 0 if the application does not need to set this information.<br>
-        To preserve the existing last access time for a file even after accessing a file, call SetFileTime with this parameter set to -1 before closing the file handle.</td>
+        <td><span class="segments"><span lang="en">a $tagFILETIME structure that contains the new date and time the file was last accessed.</span><span lang="fr" style="display: none">une structure $tagFILETIME qui contient les nouvelles date et heure du fichier qui a été accédé.</span></span><br>
+        <span class="segments"><span lang="en">The last access time includes the last time the file was written to, read from, or (in the case of executable files) run.</span><span lang="fr" style="display: none">La date de dernier accès inclut la date de dernère écriture, de lecture, ou (dans le cas des fichiers exécutables) d'exécution.</span></span><br>
+        <span class="segments"><span lang="en">This can be 0 if the application does not need to set this information.</span><span lang="fr" style="display: none">Ceci peut être 0 si l'application n'a pas besoin de définir cette information.</span></span><br>
+        <span class="segments"><span lang="en">To preserve the existing last access time for a file even after accessing a file, call SetFileTime with this parameter set to -1 before closing the file handle.</span><span lang="fr" style="display: none">Pour conserver l'heure du dernier accès existant pour un fichier, même après avoir accédé à ce fichier, appelez SetFileTime avec ce paramètre défini à -1 avant de fermer le handle du fichier.</span></span></td>
       </tr>
       <tr>
         <td>$tLastWrite</td>
-        <td>a $tagFILETIME structure that contains the new date and time the file was last written to.<br>
-        This can be 0 if the application does not want to set this information.</td>
+        <td><span class="segments"><span lang="en">a $tagFILETIME structure that contains the new date and time the file was last written to.</span><span lang="fr" style="display: none">une structure $tagFILETIME qui contient les nouvelles date et heure du fichier qui a été écrit.</span></span><br>
+        <span class="segments"><span lang="en">This can be 0 if the application does not want to set this information.</span><span lang="fr" style="display: none">Ceci peut être 0 si l'application ne veut pas définir cette information.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -60,9 +60,9 @@
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>Not all file systems can record creation and last access times and not all file systems record them in the same manner.<br>
-  For example, on FAT, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (really, the access date). Therefore, the <a href="_Date_Time_GetFileTime.htm">_Date_Time_GetFileTime()</a> function may not return the same file time information set using <a href="_Date_Time_SetFileTime.htm">_Date_Time_SetFileTime()</a>.<br>
-  NTFS delays updates to the last access time for a file by up to one hour after the last access.<br></p>
+  <p><span class="segments"><span lang="en">Not all file systems can record creation and last access times and not all file systems record them in the same manner.</span><span lang="fr" style="display: none">Les dates de création et du dernier accès ne peuvent être enregistrées sur tous les systèmes de fichiers et l'enregistrement de celles-ci peut ne pas se faire de la même manière.</span></span><br>
+  <span class="segments"><span lang="en">For example, on FAT, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (really, the access date).</span><span lang="fr" style="display: none">Par exemple, en FAT, la date de création a une précision de 10 millisecondes, la date de modification a une précision de 2 secondes, et la date du dernier accès a une précision de 1 jour (c'est bien ça, la date du dernier accès).</span></span> <span class="segments"><span lang="en">Therefore, the <a href="_Date_Time_GetFileTime.htm">_Date_Time_GetFileTime()</a> function may not return the same file time information set using <a href="_Date_Time_SetFileTime.htm">_Date_Time_SetFileTime()</a>.</span><span lang="fr" style="display: none">Par conséquent, la fonction <a href="_Date_Time_GetFileTime.htm">_Date_Time_GetFileTime()</a> peut ne pas retourner les mêmes informations d'horodatage du fichier préalablement définies à l'aide de <a href="_Date_Time_SetFileTime.htm">_Date_Time_SetFileTime()</a>.</span></span><a href="_Date_Time_GetFileTime.htm"></a><a href="_Date_Time_SetFileTime.htm"></a><br>
+  <span class="segments"><span lang="en">NTFS delays updates to the last access time for a file by up to one hour after the last access.</span><span lang="fr" style="display: none">Les délais du système de fichiers NTFS mettent à jour le dernier temps d'accès pour un fichier par l'ajout d'une heure après le dernier accès.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagFILETIME.htm">$tagFILETIME</a>, <a href="_Date_Time_GetFileTime.htm">_Date_Time_GetFileTime</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -71,7 +71,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -91,7 +91,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -115,22 +115,22 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Create test file and set file times</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Create test file and set file times</span><span lang="fr" style="display: none">Créer un fichier de test et définit les dates du fichier</span></span></span></span>
 <span class="S0">    </span><span class="S9">$hFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_CreateFile.htm"><span class="S15">_WinAPI_CreateFile</span></a><span class="S8">(</span><span class="S9">$sTempFile</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">)</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$hFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_ShowError.htm"><span class="S15">_WinAPI_ShowError</span></a><span class="S8">(</span><span class="S7">"Unable to create file"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$hFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_ShowError.htm"><span class="S15">_WinAPI_ShowError</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Unable to create file</span><span lang="fr" style="display: none">Impossible de créer le fichier</span></span></span>"</span><span class="S8">)</span>
 <span class="S0">    </span><span class="S9">$tFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_EncodeFileTime.htm"><span class="S15">_Date_Time_EncodeFileTime</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@HOUR"><span class="S6">@HOUR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MIN"><span class="S6">@MIN</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SEC"><span class="S6">@SEC</span></a><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SetFileTime.htm"><span class="S15">_Date_Time_SetFileTime</span></a><span class="S8">(</span><span class="S9">$hFile</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFile</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFile</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$tFile</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_CloseHandle.htm"><span class="S15">_WinAPI_CloseHandle</span></a><span class="S8">(</span><span class="S9">$hFile</span><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Read file times</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Read file times</span><span lang="fr" style="display: none">Lit les dates du fichier</span></span></span></span>
 <span class="S0">    </span><span class="S9">$hFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_CreateFile.htm"><span class="S15">_WinAPI_CreateFile</span></a><span class="S8">(</span><span class="S9">$sTempFile</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$hFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_ShowError.htm"><span class="S15">_WinAPI_ShowError</span></a><span class="S8">(</span><span class="S7">"Unable to open file"</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><span class="S9">$hFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_ShowError.htm"><span class="S15">_WinAPI_ShowError</span></a><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Unable to open file</span><span lang="fr" style="display: none">Impossible d'ouvrir le fichier</span></span></span>"</span><span class="S8">)</span>
 <span class="S0">    </span><span class="S9">$aTime</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetFileTime.htm"><span class="S15">_Date_Time_GetFileTime</span></a><span class="S8">(</span><span class="S9">$hFile</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_CloseHandle.htm"><span class="S15">_WinAPI_CloseHandle</span></a><span class="S8">(</span><span class="S9">$hFile</span><span class="S8">)</span>
 
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Created ..: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]))</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Accessed .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]))</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Modified .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Created ..:</span><span lang="fr" style="display: none">Créé . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">0</span><span class="S8">]))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Accessed .:</span><span lang="fr" style="display: none">Accédé . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">1</span><span class="S8">]))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Modified .:</span><span lang="fr" style="display: none">Modifié . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$aTime</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

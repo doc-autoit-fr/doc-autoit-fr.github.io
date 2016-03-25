@@ -29,17 +29,17 @@
       </tr>
       <tr>
         <td>$tRECT</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure containing the coordinates of the update rectangle. This parameter is<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> $tagRECT structure containing the coordinates of the update rectangle. This parameter is<br>
         ignored if the $hRegion parameter identifies a region.</td>
       </tr>
       <tr>
         <td>$hRegion</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Identifies the update region. If the $hRegion and $tRECT parameters are 0, the entire client<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Identifies the update region. If the $hRegion and $tRECT parameters are 0, the entire client<br>
         area is added to the update region.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies the redraw flags. This parameter can be a combination of flags that invalidate or validate a window, control repainting, and control which windows are affected:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies the redraw flags. This parameter can be a combination of flags that invalidate or validate a window, control repainting, and control which windows are affected:<br>
         &nbsp;&nbsp;&nbsp; $RDW_ERASE - Causes the window to receive a WM_ERASEBKGND message when the window is repainted<br>
         &nbsp;&nbsp;&nbsp; $RDW_FRAME - Causes any part of the nonclient area of the window that intersects the update region to receive a WM_NCPAINT message.<br>
         &nbsp;&nbsp;&nbsp; $RDW_INTERNALPAINT - Causes a WM_PAINT message to be posted to the window regardless of whether any portion of the window is invalid.<br>
@@ -83,7 +83,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -103,7 +103,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

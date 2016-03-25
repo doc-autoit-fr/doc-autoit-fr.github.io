@@ -29,16 +29,16 @@
       </tr>
       <tr>
         <td>servername</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">name of a remote computer from which the object must be obtained.</span><span lang="fr" style="display: none">nom d'un ordinateur distant à partir duquel l'objet doit être obtenue.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">name of a remote computer from which the object must be obtained.</span><span lang="fr" style="display: none">nom d'un ordinateur distant à partir duquel l'objet doit être obtenue.</span></span></td>
       </tr>
       <tr>
         <td>username</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">name of a usercode on the remote computer.</span><span lang="fr" style="display: none">code utilisateur sur l'ordinateur distant.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">name of a usercode on the remote computer.</span><span lang="fr" style="display: none">code utilisateur sur l'ordinateur distant.</span></span><br>
         <span class="segments"><span lang="en">You have to enter this in the format "computer\usercode" or "domain\usercode".</span><span lang="fr" style="display: none">Vous devez entrer ce code dans le format "ordinateur\usercode" ou "domaine\usercode".</span></span></td>
       </tr>
       <tr>
         <td>password</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">password for the usercode on the remote computer.</span><span lang="fr" style="display: none">mot de passe pour le code utilisateur sur l'ordinateur distant.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">password for the usercode on the remote computer.</span><span lang="fr" style="display: none">mot de passe pour le code utilisateur sur l'ordinateur distant.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -81,7 +81,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -102,7 +102,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -144,7 +144,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

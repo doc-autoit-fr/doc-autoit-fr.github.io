@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDirPath</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The directory to be added to the search path. If this parameter is an empty string (""), the call<br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The directory to be added to the search path. If this parameter is an empty string (""), the call<br>
         removes the current directory from the default DLL search order. If this parameter is not specified,<br>
         the function restores the default search order (Default).</td>
       </tr>
@@ -52,7 +52,7 @@
   <br>
   After calling <a href="_WinAPI_SetDllDirectory.htm">_WinAPI_SetDllDirectory()</a>, the DLL search path is:<br>
   <br>
-  <span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> The directory from which the application was loaded.<br>
+  1. The directory from which the application was loaded.<br>
   2. The directory specified by the $sFilePath parameter.<br>
   3. The system directory.<br>
   4. The 16-bit system directory.<br>
@@ -68,7 +68,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -88,7 +88,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -28,15 +28,15 @@ _GUICtrlRichEdit_SetParaSpacing ( $hWnd [, $vInter = Default [, $iBefore = Defau
 </tr>
 <tr>
 <td>$vInter</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> spacing between lines:<br>either: a number - in space units<br>or: &quot;<number>lines&quot; - in lines</number></td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> spacing between lines:<br>either: a number - in space units<br>or: &quot;<number>lines&quot; - in lines</number></td>
 </tr>
 <tr>
 <td>$iBefore</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> spacing before paragraph(s) (in space units)</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> spacing before paragraph(s) (in space units)</td>
 </tr>
 <tr>
 <td>$iAfter</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> spacing after paragraph(s) (in space units)</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> spacing after paragraph(s) (in space units)</td>
 </tr>
 </tbody></table>
 
@@ -73,7 +73,7 @@ _GUICtrlRichEdit_SetParaSpacing ( $hWnd [, $vInter = Default [, $iBefore = Defau
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -94,7 +94,7 @@ document.write('<\/div>');
 <div class="codeSnippetToolBarText">
 <script type="text/javascript">
 if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier</a>');
 </script>
 </div>
 </div>
@@ -132,7 +132,7 @@ document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getEleme
 <span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_AppendText.htm"><span class="S15">_GUICtrlRichEdit_AppendText</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&amp;</span><span class="S0"> </span><span class="S7">"Second paragraph"</span><span class="S8">)</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetParaSpacing.htm"><span class="S15">_GUICtrlRichEdit_SetParaSpacing</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"2 lines"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">.2</span><span class="S8">,</span><span class="S0"> </span><span class="S3">.25</span><span class="S8">)</span>
-<span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> Spacing of second paragraph is</span> "</span><span class="S8">)</span>
+<span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"1. Spacing of second paragraph is "</span><span class="S8">)</span>
 <span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S3">2</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetSel.htm"><span class="S15">_GUICtrlRichEdit_SetSel</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
 <span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"2. Settings of first paragraph in the selection are "</span><span class="S8">)</span>

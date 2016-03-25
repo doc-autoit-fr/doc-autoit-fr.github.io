@@ -31,7 +31,7 @@
       </tr>
       <tr>
         <td>$sMask</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Filter for result. Multiple filters must be separated by ";"<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Filter for result. Multiple filters must be separated by ";"<br>
         Use "|" to separate 3 possible sets of filters: "Include|Exclude|Exclude_Folders"<br>
         &nbsp;&nbsp;&nbsp; Include = Files/Folders to include (default = "*" [all])<br>
         &nbsp;&nbsp;&nbsp; Exclude = Files/Folders to exclude (default = "" [none])<br>
@@ -39,7 +39,7 @@
       </tr>
       <tr>
         <td>$iReturn</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to return files, folders or both and omit those with certain attributes<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether to return files, folders or both and omit those with certain attributes<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FILESFOLDERS (0) - (Default) Return both files and folders<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FILES (1) - Return files only<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FOLDERS (2) - Return Folders only<br>
@@ -50,21 +50,21 @@
       </tr>
       <tr>
         <td>$iRecur</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether to search recursively in subfolders and to what level<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether to search recursively in subfolders and to what level<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_NORECUR (0) - Do not search in subfolders (Default)<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_RECUR (1) - Search in all subfolders (unlimited recursion)<br>
         Negative integer - Search in subfolders to specified depth</td>
       </tr>
       <tr>
         <td>$iSort</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Sort results in alphabetical and depth order<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Sort results in alphabetical and depth order<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_NOSORT (0) - Not sorted (Default)<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_SORT (1) - Sorted<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FASTSORT (2) - Sorted with faster algorithm (assumes files in folder returned sorted - requires NTFS and not guaranteed)</td>
       </tr>
       <tr>
         <td>$iReturnPath</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies displayed path of results<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies displayed path of results<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_NOPATH (0) - File/folder name only<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_RELPATH (1) - Relative to initial path (Default)<br>
         &nbsp;&nbsp;&nbsp; $FLTAR_FULLPATH (2) - Full path included</td>
@@ -124,7 +124,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -144,7 +144,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

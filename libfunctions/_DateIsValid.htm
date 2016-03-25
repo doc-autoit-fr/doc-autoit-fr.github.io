@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateIsValid</h1>
-  <p class="funcdesc">Checks the given date to determine if it is a valid date<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Checks the given date to determine if it is a valid date</span><span lang="fr" style="display: none">Vérifie la date donnée pour déterminer si c'est une date valide</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateIsValid ( $sDate )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDate</td>
-        <td style="width:85%">The date to be checked.</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The date to be checked.</span><span lang="fr" style="display: none">La date à vérifier.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -34,26 +34,26 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+        <td style="width:90%">1.</td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
-        <td>0 if the specified date is not valid.</td>
+        <td><span class="segments"><span lang="en">0 if the specified date is not valid.</span><span lang="fr" style="display: none">0 si la date spécifiée n'est pas valide.</span></span></td>
       </tr>
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>This function takes a date input in one of the following formats:<br>
-  "yyyy/mm/dd[ hh:mm[:ss]]" or "yyyy/mm/dd[Thh:mm[:ss]]"<br>
-  "yyyy-mm-dd[ hh:mm[:ss]]" or "yyyy-mm-dd[Thh:mm[:ss]]"<br>
-  "yyyy.mm.dd[ hh:mm[:ss]]" or "yyyy.mm.dd[Thh:mm[:ss]]"<br></p>
+  <p><span class="segments"><span lang="en">This function takes a date input in one of the following formats:</span><span lang="fr" style="display: none">Cette fonction prend en entrée une date dans l'un des formats suivants&nbsp;:</span></span><br>
+  <span class="segments"><span lang="en">"yyyy/mm/dd[ hh:mm[:ss]]" or "yyyy/mm/dd[Thh:mm[:ss]]"</span><span lang="fr" style="display: none">«&nbsp;aaaa/mm/jj[ hh:mm[:ss]]&nbsp;» ou «&nbsp;aaaa/mm/jj[Thh:mm[:ss]]&nbsp;»</span></span><br>
+  <span class="segments"><span lang="en">"yyyy-mm-dd[ hh:mm[:ss]]" or "yyyy-mm-dd[Thh:mm[:ss]]"</span><span lang="fr" style="display: none">«&nbsp;aaaa-mm-jj[ hh:mm[:ss]]&nbsp;» ou «&nbsp;aaaa-mm-jj[Thh:mm[:ss]]&nbsp;»</span></span><br>
+  <span class="segments"><span lang="en">"yyyy.mm.dd[ hh:mm[:ss]]" or "yyyy.mm.dd[Thh:mm[:ss]]"</span><span lang="fr" style="display: none">«&nbsp;aaaa.mm.jj[ hh:mm[:ss]]&nbsp;» ou «&nbsp;aaaa.mm.jj[Thh:mm[:ss]]&nbsp;»</span></span><br></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -73,7 +73,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -84,9 +84,9 @@
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a>
 
 <a class="codeSnippetLink" href="../keywords/If.htm"><span class="S5">If</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateIsValid.htm"><span class="S15">_DateIsValid</span></a><span class="S8">(</span><span class="S9">$sDate</span><span class="S8">)</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Then</span></a>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Valid Date"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The specified date is valid."</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Valid Date</span><span lang="fr" style="display: none">Date valide</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">The specified date is valid.</span><span lang="fr" style="display: none">La date spécifiée est valide.</span></span></span>"</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">Else</span></a>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Valid Date"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The specified date is invalid."</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Valid Date</span><span lang="fr" style="display: none">Date valide</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">The specified date is invalid.</span><span lang="fr" style="display: none">La date spécifiée est non valide.</span></span></span>"</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/IfElseEndIf.htm"><span class="S5">EndIf</span></a>
 </span>
 </pre>

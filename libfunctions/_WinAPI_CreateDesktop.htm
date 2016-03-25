@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The requested access to the desktop. This parameter can be one or more of the following values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The requested access to the desktop. This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $DESKTOP_ALL_ACCESS<br>
         &nbsp;&nbsp;&nbsp; $DESKTOP_CREATEMENU<br>
         &nbsp;&nbsp;&nbsp; $DESKTOP_CREATEWINDOW (Default)<br>
@@ -43,16 +43,16 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The optional flags. It can be zero or the following value:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The optional flags. It can be zero or the following value:<br>
         &nbsp;&nbsp;&nbsp; $DF_ALLOWOTHERACCOUNTHOOK</td>
       </tr>
       <tr>
         <td>$iHeap</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The size of the desktop heap, in kilobytes. Default is 0.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The size of the desktop heap, in kilobytes. Default is 0.</td>
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> $tagSECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes.<br>
         If this parameter is 0 (Default), the handle cannot be inherited .</td>
       </tr>
     </tbody>
@@ -89,7 +89,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -109,7 +109,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

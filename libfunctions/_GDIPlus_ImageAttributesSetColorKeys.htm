@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iColorAdjustType</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The category for which the color key is set or cleared:</span><span lang="fr" style="display: none">La catégorie pour laquelle la couleur clé doit être définie ou effacée:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The category for which the color key is set or cleared:</span><span lang="fr" style="display: none">La catégorie pour laquelle la couleur clé doit être définie ou effacée:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - Color adjustment applies to all categories that do not have adjustment settings of their own<br>
         &nbsp;&nbsp;&nbsp; 1 - Color adjustment applies to bitmapped images<br>
         &nbsp;&nbsp;&nbsp; 2 - Color adjustment applies to brush operations in metafiles<br>
@@ -38,15 +38,15 @@
       </tr>
       <tr>
         <td>$bEnable</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If True, transparency range for the specified category is applied; otherwise, transparency</span><span lang="fr" style="display: none">Si Vrai, la plage de transparence pour la catégorie spécifiée est appliquée; autrement, transparence</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If True, transparency range for the specified category is applied; otherwise, transparency</span><span lang="fr" style="display: none">Si Vrai, la plage de transparence pour la catégorie spécifiée est appliquée; autrement, transparence</span></span></td>
       </tr>
       <tr>
         <td>$iARGBLow</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the low color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus faible.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the low color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus faible.</span></span></td>
       </tr>
       <tr>
         <td>$iARGBHigh</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the high color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus haute</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Alpha, Red, Green and Blue components of a color that specifies the high color-key value</span><span lang="fr" style="display: none">Composantes Alpha, Rouge, Vert et Bleu d'une couleur qui indique la valeur de la couleur clé la plus haute</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -73,7 +73,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -93,7 +93,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

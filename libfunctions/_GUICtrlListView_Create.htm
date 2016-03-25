@@ -41,15 +41,15 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control width</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control width</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control height</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control height</td>
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control styles:<br>
         &nbsp;&nbsp;&nbsp; $LVS_ALIGNLEFT - Items are left aligned in icon and small icon view<br>
         &nbsp;&nbsp;&nbsp; $LVS_ALIGNTOP - Items are aligned with the top of the control in icon and small icon view<br>
         &nbsp;&nbsp;&nbsp; $LVS_AUTOARRANGE - Icons are automatically kept arranged in icon and small icon view<br>
@@ -75,7 +75,7 @@
       </tr>
       <tr>
         <td>$iExStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Extended control styles. <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Extended control styles. <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $LVS_EX_BORDERSELECT - When an item is selected the border color of the item changes<br>
         &nbsp;&nbsp;&nbsp; $LVS_EX_CHECKBOXES - Enables check boxes for items in a list-view control<br>
         &nbsp;&nbsp;&nbsp; $LVS_EX_DOUBLEBUFFER - Paints via double-buffering, which reduces flicker<br>
@@ -97,7 +97,7 @@
       </tr>
       <tr>
         <td>$bCoInit</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Initializes the COM library for use by the calling thread.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Initializes the COM library for use by the calling thread.</td>
       </tr>
     </tbody>
   </table>
@@ -129,7 +129,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -149,7 +149,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

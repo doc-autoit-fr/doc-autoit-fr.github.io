@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$iLCID</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The locale identifier (LCID) that specifies the locale or one of the following predefined values.<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_INVARIANT<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_SYSTEM_DEFAULT<br>
         &nbsp;&nbsp;&nbsp; $LOCALE_USER_DEFAULT (Default)<br>
@@ -36,12 +36,12 @@
       </tr>
       <tr>
         <td>$tSYSTEMTIME</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagSYSTEMTIME structure that contains the date information to format.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> $tagSYSTEMTIME structure that contains the date information to format.<br>
         If this parameter is 0 (Default), the function will use the current local system date.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that specifies the date format options.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The flags that specifies the date format options.<br>
         This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $DATE_LONGDATE<br>
         &nbsp;&nbsp;&nbsp; $DATE_SHORTDATE (Default)<br>
@@ -55,7 +55,7 @@
       </tr>
       <tr>
         <td>$sFormat</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The string that is used to form the date. For example, "dddd MMMM, yyyy".<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The string that is used to form the date. For example, "dddd MMMM, yyyy".<br>
         If this parameter is omitted or an empty string (Default), the function returns the string according to the date format for the specified locale.</td>
       </tr>
     </tbody>
@@ -83,7 +83,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -103,7 +103,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

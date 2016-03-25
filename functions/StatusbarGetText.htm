@@ -28,11 +28,11 @@
       </tr>
       <tr>
         <td>text</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The text of the window to check.</span><span lang="fr" style="display: none">Le texte de la fenêtre à contrôler.</span></span> <span class="segments"><span lang="en">Default is an empty string.</span><span lang="fr" style="display: none">La valeur par défaut est une chaîne vide.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The text of the window to check.</span><span lang="fr" style="display: none">Le texte de la fenêtre à contrôler.</span></span> <span class="segments"><span lang="en">Default is an empty string.</span><span lang="fr" style="display: none">La valeur par défaut est une chaîne vide.</span></span></td>
       </tr>
       <tr>
         <td>part</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The "part" number of the status bar to read - the default is 1.</span><span lang="fr" style="display: none">Le numéro de la "partie" de la barre d'état à lire - la valeur par défaut est 1.</span></span> <span class="segments"><span lang="en">1 is the first possible part and usually the one that contains the useful messages like "Ready" "Loading...", etc.</span><span lang="fr" style="display: none">C'est la première partie possible et le plus souvent celle qui contient les messages utiles comme "Ready ", "Loading", etc...</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The "part" number of the status bar to read - the default is 1.</span><span lang="fr" style="display: none">Le numéro de la "partie" de la barre d'état à lire - la valeur par défaut est 1.</span></span> <span class="segments"><span lang="en">1 is the first possible part and usually the one that contains the useful messages like "Ready" "Loading...", etc.</span><span lang="fr" style="display: none">C'est la première partie possible et le plus souvent celle qui contient les messages utiles comme "Ready ", "Loading", etc...</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -60,7 +60,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -80,7 +80,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -29,21 +29,21 @@
       </tr>
       <tr>
         <td>$vPartEdge</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Width of part or parts, for more than 1 part pass in 0-based array in the following format:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Width of part or parts, for more than 1 part pass in 0-based array in the following format:<br>
         &nbsp;&nbsp;&nbsp; $vPartEdge[0] - Right edge of part #1<br>
         &nbsp;&nbsp;&nbsp; $vPartEdge[1] - Right edge of part #2<br>
         &nbsp;&nbsp;&nbsp; $vPartEdge[n] - Right edge of part n</td>
       </tr>
       <tr>
         <td>$vPartText</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Text of part or parts, for more than 1 part pass in 0-based array in the following format:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Text of part or parts, for more than 1 part pass in 0-based array in the following format:<br>
         &nbsp;&nbsp;&nbsp; $vPartText[0] - First part<br>
         &nbsp;&nbsp;&nbsp; $vPartText[1] - Second part<br>
         &nbsp;&nbsp;&nbsp; $vPartText[n] - Last part</td>
       </tr>
       <tr>
         <td>$iStyles</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control styles:<br>
         &nbsp;&nbsp;&nbsp; $SBARS_SIZEGRIP - The status bar control will include a sizing grip at the right end of the status bar<br>
         &nbsp;&nbsp;&nbsp; $SBARS_TOOLTIPS - The status bar will have tooltips<br>
         <br>
@@ -51,7 +51,7 @@
       </tr>
       <tr>
         <td>$iExStyles</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control extended style. These correspond to the standard $WS_EX_* constants. <span class="segments"><span lang="en">See <strong>Extended Style Table</strong>.</span><span lang="fr" style="display: none">Consultez en Appendice le <strong>Tableau des Styles Etendus</strong> .</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control extended style. These correspond to the standard $WS_EX_* constants. <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -78,7 +78,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -99,7 +99,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -264,7 +264,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -428,7 +428,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -594,7 +594,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -759,7 +759,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext5\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext5\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -925,7 +925,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext6\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext6\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

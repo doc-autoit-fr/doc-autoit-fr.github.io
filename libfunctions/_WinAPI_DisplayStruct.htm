@@ -28,31 +28,31 @@ _WinAPI_DisplayStruct ( $tStruct [, $sStruct = '' [, $sTitle = '' [, $iItem = 0 
 </tr>
 <tr>
 <td>$sStruct</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A string representing the structure.<br>If $tStruct is a structure, this parameter can be omitted or be an empty string. In this case, the structure will display as &quot;byte[n]&quot; structure.<br>If $tStruct is a memory address, $sStruct should be a string representing the structure, otherwise, the function fail, and @error set to 10.</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A string representing the structure.<br>If $tStruct is a structure, this parameter can be omitted or be an empty string. In this case, the structure will display as &quot;byte[n]&quot; structure.<br>If $tStruct is a memory address, $sStruct should be a string representing the structure, otherwise, the function fail, and @error set to 10.</td>
 </tr>
 <tr>
 <td>$sTitle</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The title of the window, deault is &quot;Structure: ListView Display&quot;.</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The title of the window, deault is &quot;Structure: ListView Display&quot;.</td>
 </tr>
 <tr>
 <td>$iItem</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The 1-based index or name of the structure member to be selected in the list.<br>If this parameter is 0 (Default), or an incorrect index or name, the first element of the structure will be selected.</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The 1-based index or name of the structure member to be selected in the list.<br>If this parameter is 0 (Default), or an incorrect index or name, the first element of the structure will be selected.</td>
 </tr>
 <tr>
 <td>$iSubItem</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The 1-based index of the array in the structure member pointed to by the $iItem parameter to be selected.<br>If $iItem was not defined as an array in the $sStruct, or invalid array index, the element pointed to by the $iItem parameter will be selected.</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The 1-based index of the array in the structure member pointed to by the $iItem parameter to be selected.<br>If $iItem was not defined as an array in the $sStruct, or invalid array index, the element pointed to by the $iItem parameter will be selected.</td>
 </tr>
 <tr>
 <td>$iFlags</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A set of bit flags that specifies an additional displaying options.<br>This parameter can be 0, or any combination of the following values:<br>    1 - Prevent displaying &quot;<struct>&quot; and &quot;<endstruct>&quot; fields at the beginning and end of the list.<br>    2 - Prevent displaying &quot;<alignment>&quot; fields.<br>    4 - Prevent displaying &quot;<unnamed>&quot; in &quot;Member&quot; column of the list if the structure element has no name.<br>    8 - Prevent highlighting structure elements that are defined as an array.<br>    16 - Prevent perceiving structure elements named &quot;Reserved*&quot; as unused elements.<br>    32 - Prevent using double-click to copy values of the structure elements to the clipboard.<br>    64 - Forced to expand structure elements of BYTE[n] and BOOLEAN[n] types (elements of CHAR[n] and WCHAR[n] types always displays as a string).<br>    128 - Forced to display the values of the structure elements in the hexadecimal representation, if possible.<br>    256 - Forced to return error code instead of displaying a message box if a memory access error occurred.<br>    512 - Forced to disable checking the read access memory allocated to a given structure.</unnamed></alignment></endstruct></struct></td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A set of bit flags that specifies an additional displaying options.<br>This parameter can be 0, or any combination of the following values:<br>    1 - Prevent displaying &quot;<struct>&quot; and &quot;<endstruct>&quot; fields at the beginning and end of the list.<br>    2 - Prevent displaying &quot;<alignment>&quot; fields.<br>    4 - Prevent displaying &quot;<unnamed>&quot; in &quot;Member&quot; column of the list if the structure element has no name.<br>    8 - Prevent highlighting structure elements that are defined as an array.<br>    16 - Prevent perceiving structure elements named &quot;Reserved*&quot; as unused elements.<br>    32 - Prevent using double-click to copy values of the structure elements to the clipboard.<br>    64 - Forced to expand structure elements of BYTE[n] and BOOLEAN[n] types (elements of CHAR[n] and WCHAR[n] types always displays as a string).<br>    128 - Forced to display the values of the structure elements in the hexadecimal representation, if possible.<br>    256 - Forced to return error code instead of displaying a message box if a memory access error occurred.<br>    512 - Forced to disable checking the read access memory allocated to a given structure.</unnamed></alignment></endstruct></struct></td>
 </tr>
 <tr>
 <td>$bTop</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether create a window with &quot;Always On Top&quot; attribute, valid values:<br>    True - The window is created with the $WS_EX_TOPMOST extended style (Default).<br>    False - The window will not have the &quot;TOPMOST&quot; flag set.</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether create a window with &quot;Always On Top&quot; attribute, valid values:<br>    True - The window is created with the $WS_EX_TOPMOST extended style (Default).<br>    False - The window will not have the &quot;TOPMOST&quot; flag set.</td>
 </tr>
 <tr>
 <td>$hParent</td>
-<td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Handle to the parent window.</td>
+<td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Handle to the parent window.</td>
 </tr>
 </tbody></table>
 
@@ -60,7 +60,7 @@ _WinAPI_DisplayStruct ( $tStruct [, $sStruct = '' [, $sTitle = '' [, $iItem = 0 
 <table class="noborder">
 <tbody><tr>
 <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-<td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+<td style="width:90%">1.</td>
 </tr>
 <tr>
 <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -82,7 +82,7 @@ _WinAPI_DisplayStruct ( $tStruct [, $sStruct = '' [, $sTitle = '' [, $iItem = 0 
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -103,7 +103,7 @@ document.write('<\/div>');
 <div class="codeSnippetToolBarText">
 <script type="text/javascript">
 if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier</a>');
 </script>
 </div>
 </div>

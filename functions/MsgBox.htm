@@ -36,11 +36,11 @@
       </tr>
       <tr>
         <td>timeout</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Timeout in seconds.</span><span lang="fr" style="display: none">Temporisation en secondes.</span></span> <span class="segments"><span lang="en">After the timeout has elapsed the message box will be automatically closed.</span><span lang="fr" style="display: none">Après la temporisation, la boite de message sera automatiquement fermée.</span></span> <span class="segments"><span lang="en">The default is 0, which is no timeout.</span><span lang="fr" style="display: none">La valeur par défaut est 0, ce qui équivaut à aucune temporisation.</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -319,7 +319,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -340,7 +340,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -369,7 +369,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

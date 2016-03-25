@@ -33,7 +33,7 @@
       </tr>
       <tr>
         <td>$bConnect</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Specifies whether the first figure in the added path is part of the last figure in this path:</span><span lang="fr" style="display: none">Valeur booléenne qui indique si la première figure du tracé ajouté appartient à la dernière figure du tracé actuel:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Specifies whether the first figure in the added path is part of the last figure in this path:</span><span lang="fr" style="display: none">Valeur booléenne qui indique si la première figure du tracé ajouté appartient à la dernière figure du tracé actuel:</span></span><br>
         &nbsp;&nbsp;&nbsp; True - The first figure in the added $hPath2 is part of the last figure in the $hPath1 path<br>
         &nbsp;&nbsp;&nbsp; False - The first figure in the added $hPath2 is separated from the last figure in the $hPath1 path</td>
       </tr>
@@ -63,7 +63,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -83,7 +83,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

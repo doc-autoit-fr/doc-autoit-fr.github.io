@@ -29,7 +29,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -49,7 +49,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -57,13 +57,13 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<span class="S1">; Calculated the number of seconds since EPOCH (1970/01/01 00:00:00)</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Calculated the number of seconds since EPOCH (1970/01/01 00:00:00)</span><span lang="fr" style="display: none">Calcule le nombre de secondes depuis l'EPOCH (1970/01/01 00:00:00)</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateDiff.htm"><span class="S15">_DateDiff</span></a><span class="S8">(</span><span class="S7">'s'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"1970/01/01 00:00:00"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Number of seconds since EPOCH: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Number of seconds since EPOCH:</span><span lang="fr" style="display: none">Nombre de secondes depuis l'EPOCH :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
 
-<span class="S1">; Calculated the number of Hours this year</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Calculated the number of Hours this year</span><span lang="fr" style="display: none">Calcule le nombre d'heures pour l'année en cours</span></span></span></span>
 <span class="S9">$iDateCalc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateDiff.htm"><span class="S15">_DateDiff</span></a><span class="S8">(</span><span class="S7">'h'</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/01/01 00:00:00"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Number of Hours this year: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Number of Hours this year:</span><span lang="fr" style="display: none">Nombre d'heures pour l'année en cours :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
 </span>
 </pre>
       </div>

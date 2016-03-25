@@ -45,14 +45,14 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Set of flags that specify whether the locked portion of the bitmap is available for reading or for writing and whether the caller has already allocated a buffer.</span><span lang="fr" style="display: none">Ensemble de paramètres qui spécifie si la partie verrouillée du bitmap est disponible pour la lecture ou l'écriture et si une mémoire tampon est deja allouée.</span></span> <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Set of flags that specify whether the locked portion of the bitmap is available for reading or for writing and whether the caller has already allocated a buffer.</span><span lang="fr" style="display: none">Ensemble de paramètres qui spécifie si la partie verrouillée du bitmap est disponible pour la lecture ou l'écriture et si une mémoire tampon est deja allouée.</span></span> <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $GDIP_ILMREAD - A portion of the image is locked for reading<br>
         &nbsp;&nbsp;&nbsp; $GDIP_ILMWRITE - A portion of the image is locked for writing<br>
         &nbsp;&nbsp;&nbsp; $GDIP_ILMUSERINPUTBUF - The buffer is allocated by the user</td>
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Specifies the format of the pixel data in the temporary buffer.</span><span lang="fr" style="display: none">Spécifie le format des données de pixel dans la mémoire tampon temporaire.</span></span> <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Specifies the format of the pixel data in the temporary buffer.</span><span lang="fr" style="display: none">Spécifie le format des données de pixel dans la mémoire tampon temporaire.</span></span> <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants&nbsp;:</span></span><br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF01INDEXED - 1 bpp, indexed<br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF04INDEXED - 4 bpp, indexed<br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF08INDEXED - 8 bpp, indexed<br>
@@ -92,7 +92,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -112,7 +112,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

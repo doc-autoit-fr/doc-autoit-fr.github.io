@@ -33,20 +33,20 @@
       </tr>
       <tr>
         <td>$bIncludeCOM</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True (default):<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> True (default):<br>
         &nbsp;&nbsp;&nbsp; If writing to a .rtf file, includes any COM objects (space consuming)<br>
         &nbsp;&nbsp;&nbsp; If writing to any other file, writes a text represntation of COM objects<br>
         False: Writes spaces instead of COM objects</td>
       </tr>
       <tr>
         <td>$iOpts</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> additional options: (default: 0)<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> additional options: (default: 0)<br>
         &nbsp;&nbsp;&nbsp; $SFF_PLAINRTF - write only rich text keywords common to all languages<br>
         &nbsp;&nbsp;&nbsp; $SF_UNICODE - write Unicode</td>
       </tr>
       <tr>
         <td>$iCodePage</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Generate UTF-8 and text using this code page<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Generate UTF-8 and text using this code page<br>
         Default: do not</td>
       </tr>
     </tbody>
@@ -87,7 +87,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -107,7 +107,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

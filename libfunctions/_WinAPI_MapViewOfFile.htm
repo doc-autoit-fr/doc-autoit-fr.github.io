@@ -32,19 +32,19 @@
       </tr>
       <tr>
         <td>$iOffset</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file offset where the view is to begin.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The file offset where the view is to begin.</td>
       </tr>
       <tr>
         <td>$iBytes</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The number of bytes of a file mapping to map to a view. All bytes must be within the maximum size<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The number of bytes of a file mapping to map to a view. All bytes must be within the maximum size<br>
           specified by <a href="_WinAPI_CreateFileMapping.htm">_WinAPI_CreateFileMapping()</a>. If $iBytes is 0, the mapping extends from the specified<br>
           offset to the end of the file mapping.
         </td>
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The access to the file mapping object. This parameter can be one of the following values.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The access to the file mapping object. This parameter can be one of the following values.<br>
         $FILE_MAP_ALL_ACCESS<br>
         $FILE_MAP_COPY<br>
         $FILE_MAP_READ (Default)<br>
@@ -81,7 +81,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -101,7 +101,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

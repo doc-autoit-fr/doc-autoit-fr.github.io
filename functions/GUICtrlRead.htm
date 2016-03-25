@@ -28,7 +28,7 @@
       </tr>
       <tr>
         <td>advanced</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">returns extended information of a control.</span><span lang="fr" style="display: none">Retourne des informations étendus d'un contrôle.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">returns extended information of a control.</span><span lang="fr" style="display: none">Retourne des informations étendus d'un contrôle.</span></span><br>
         &nbsp;&nbsp;&nbsp; $GUI_READ_DEFAULT (0) = (Default) Returns a value with state or data of a control.<br>
         &nbsp;&nbsp;&nbsp; $GUI_READ_EXTENDED (1) = Returns extended information of a control (see Remarks).<br>
         <br>
@@ -170,7 +170,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -190,7 +190,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

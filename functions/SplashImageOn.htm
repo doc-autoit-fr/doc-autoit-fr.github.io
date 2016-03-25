@@ -32,23 +32,23 @@
       </tr>
       <tr>
         <td>width</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">width of window in pixels.</span><span lang="fr" style="display: none">largeur de la fenêtre en pixels.</span></span> <span class="segments"><span lang="en">(default is 500)</span><span lang="fr" style="display: none">(500 par défaut)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">width of window in pixels.</span><span lang="fr" style="display: none">largeur de la fenêtre en pixels.</span></span> <span class="segments"><span lang="en">(default is 500)</span><span lang="fr" style="display: none">(500 par défaut)</span></span></td>
       </tr>
       <tr>
         <td>height</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">height of window in pixels.</span><span lang="fr" style="display: none">hauteur de la fenêtre en pixels.</span></span> <span class="segments"><span lang="en">(default is 400)</span><span lang="fr" style="display: none">(400 par défaut)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">height of window in pixels.</span><span lang="fr" style="display: none">hauteur de la fenêtre en pixels.</span></span> <span class="segments"><span lang="en">(default is 400)</span><span lang="fr" style="display: none">(400 par défaut)</span></span></td>
       </tr>
       <tr>
         <td>x pos</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">position from left (in pixels) of splash window.</span><span lang="fr" style="display: none">position de la fenêtre splash à partir de la gauche (en pixels).</span></span> <span class="segments"><span lang="en">(default is centered)</span><span lang="fr" style="display: none">(centrée par défaut)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">position from left (in pixels) of splash window.</span><span lang="fr" style="display: none">position de la fenêtre splash à partir de la gauche (en pixels).</span></span> <span class="segments"><span lang="en">(default is centered)</span><span lang="fr" style="display: none">(centrée par défaut)</span></span></td>
       </tr>
       <tr>
         <td>y pos</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">position from top (in pixels) of splash window.</span><span lang="fr" style="display: none">position de la fenêtre splash à partir du haut (en pixels).</span></span> <span class="segments"><span lang="en">(default is centered)</span><span lang="fr" style="display: none">(centrée par défaut)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">position from top (in pixels) of splash window.</span><span lang="fr" style="display: none">position de la fenêtre splash à partir du haut (en pixels).</span></span> <span class="segments"><span lang="en">(default is centered)</span><span lang="fr" style="display: none">(centrée par défaut)</span></span></td>
       </tr>
       <tr>
         <td>opt</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Default is 'always on top/with title'</span><span lang="fr" style="display: none">Par défaut: toujours Au Premier Plan et avec Titre</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Default is 'always on top/with title'</span><span lang="fr" style="display: none">Par défaut: toujours Au Premier Plan et avec Titre</span></span><br>
         <span class="segments"><span lang="en">Add up the following options you want:</span><span lang="fr" style="display: none">Ajoute les options que vous souhaitez.</span></span><br>
         &nbsp;&nbsp;&nbsp; $DLG_NOTITLE (1) = borderless, titleless window<br>
         &nbsp;&nbsp;&nbsp; $DLG_NOTONTOP (2) = Without "always on top" attribute<br>
@@ -77,7 +77,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -97,7 +97,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

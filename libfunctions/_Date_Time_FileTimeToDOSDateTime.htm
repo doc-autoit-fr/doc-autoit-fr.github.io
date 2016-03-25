@@ -25,16 +25,16 @@
     <tbody>
       <tr>
         <td style="width:15%">$tFileTime</td>
-        <td style="width:85%">a $tagFILETIME structure containing the file time to convert to MS-DOS format or a pointer to it</td>
+        <td style="width:85%"><span class="segments"><span lang="en">a $tagFILETIME structure containing the file time to convert to MS-DOS format or a pointer to it</span><span lang="fr" style="display: none">une structure $tagFILETIME contenant l'heure du fichier à convertir au format MS-DOS ou un pointeur vers elle</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant :</span></span><br>
-  [0] - MS-DOS date, packed as follows:<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns an array with the following format:</span><span lang="fr" style="display: none">Retourne un tableau (array) au format suivant&nbsp;:</span></span><br>
+  <span class="segments"><span lang="en">[0] - MS-DOS date, packed as follows:</span><span lang="fr" style="display: none">[0] - date MS-DOS, compressé comme suit :</span></span><br>
   <span class="segments"><span lang="en">Bits 0- 4 Day of the month (1–31)</span><span lang="fr" style="display: none">Bits 0-4 Jour du mois (1–31)</span></span><br>
   <span class="segments"><span lang="en">Bits 5- 8 Month (1 = January, 2 = February, and so on)</span><span lang="fr" style="display: none">Bits 5-8 Mois (1 = janvier, 2 = février, et ainsi de suite)</span></span><br>
   <span class="segments"><span lang="en">Bits 9-15 Year offset from 1980 (add 1980 to get actual year)</span><span lang="fr" style="display: none">Bits 9-15 Décalage de l'année par rapport à 1980 (ajoutez 1980 pour obtenir l'année actuelle)</span></span><br>
-  [1] - MS-DOS time, packed as follows:<br>
+  <span class="segments"><span lang="en">[1] - MS-DOS time, packed as follows:</span><span lang="fr" style="display: none">[1] - temps de MS-DOS, compressé comme suit :</span></span><br>
   <span class="segments"><span lang="en">Bits 0- 4 Second divided by 2</span><span lang="fr" style="display: none">Bits 0-4 Seconde divisée par 2</span></span><br>
   Bits 5-10 Minute (0–59)<br>
   <span class="segments"><span lang="en">Bits 11-15 Hour (0–23 on a 24-hour clock)</span><span lang="fr" style="display: none">Bits 11-15 Heure (0–23 sur une horloge de 24 heures)</span></span><br>
@@ -46,7 +46,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -66,7 +66,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -91,8 +91,8 @@
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Encode a file time</span><span lang="fr" style="display: none">Encode une heure de fichier</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_EncodeFileTime.htm"><span class="S15">_Date_Time_EncodeFileTime</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@HOUR"><span class="S6">@HOUR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MIN"><span class="S6">@MIN</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SEC"><span class="S6">@SEC</span></a><span class="S8">)</span>
 <span class="S0">    </span><span class="S9">$aDOS</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToDOSDateTime.htm"><span class="S15">_Date_Time_FileTimeToDOSDateTime</span></a><span class="S8">(</span><span class="S9">$tFile</span><span class="S8">)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"DOS date .: 0x"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$aDOS</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"DOS time .: 0x"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$aDOS</span><span class="S8">[</span><span class="S3">1</span><span class="S8">],</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">DOS date .:</span><span lang="fr" style="display: none">Date DOS. :</span></span> 0x</span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$aDOS</span><span class="S8">[</span><span class="S3">0</span><span class="S8">],</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">DOS time .:</span><span lang="fr" style="display: none">Heure DOS. :</span></span> 0x</span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/Hex.htm"><span class="S4">Hex</span></a><span class="S8">(</span><span class="S9">$aDOS</span><span class="S8">[</span><span class="S3">1</span><span class="S8">],</span><span class="S0"> </span><span class="S3">4</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

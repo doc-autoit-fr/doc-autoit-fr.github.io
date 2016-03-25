@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$vCryptKey</td>
-        <td><span class="segments"><span lang="en">Password or handle to a key if the CALG_USERKEY flag is specified</span><span lang="fr" style="display: none">Mot de passe ou descripteur (handle) d'une clé si l'indicateur CALG_USERKEY est spécifié</span></span></td>
+        <td><span class="segments"><span lang="en">Password or handle to a key if the CALG_USERKEY flag is specified</span><span lang="fr" style="display: none">Mot de passe ou handle d'une clé si l'indicateur CALG_USERKEY est spécifié</span></span></td>
       </tr>
       <tr>
         <td>$iAlgID</td>
@@ -37,7 +37,7 @@
       </tr>
       <tr>
         <td>$bFinal</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">False if this is only a segment of the full data</span><span lang="fr" style="display: none">False si c'est seulement un segment de données complet</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">False if this is only a segment of the full data</span><span lang="fr" style="display: none">False si c'est seulement un segment de données complet</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -61,7 +61,7 @@
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p><span class="segments"><span lang="en">Returns a binary string regardless of input</span><span lang="fr" style="display: none">Retourne une chaîne binaire quel que soit l'entrée</span></span><br></p>
+  <p><span class="segments"><span lang="en">Returns a binary string regardless of input</span><span lang="fr" style="display: none">Retourne une chaîne binaire quel que soit l'entrée.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_Crypt_DecryptData.htm">_Crypt_DecryptData</a>, <a href="_Crypt_DeriveKey.htm">_Crypt_DeriveKey</a>, <a href="_Crypt_EncryptFile.htm">_Crypt_EncryptFile</a></p>
   <h2><span class="segments"><span lang="en">See Also</span><span lang="fr" style="display: none">Voir aussi</span></span></h2>
@@ -72,7 +72,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -93,7 +93,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -204,7 +204,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

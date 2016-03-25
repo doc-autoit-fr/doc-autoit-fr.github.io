@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control styles:<br>
         &nbsp;&nbsp;&nbsp; $TBSTYLE_ALTDRAG - Allows users to change a toolbar button's position by dragging it while holding down the ALT key.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If this style is not specified, the user must hold down the SHIFT key while dragging a button.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Note that the $CCS_ADJUSTABLE style must be specified to enable toolbar buttons to be dragged.<br>
@@ -50,7 +50,7 @@
       </tr>
       <tr>
         <td>$iExStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control extended styles:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control extended styles:<br>
         &nbsp;&nbsp;&nbsp; $TBSTYLE_EX_DRAWDDARROWS - Allows buttons to have a separate dropdown arrow. Buttons that have the<br>
         &nbsp;&nbsp;&nbsp; $BTNS_DROPDOWN style will be drawn with a drop down arrow in a separate section, to the right of the button.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the arrow is clicked, only the arrow portion of the button will depress, and the toolbar control will send a $TBN_DROPDOWN notification to prompt the application to display the dropdown menu.<br>
@@ -86,7 +86,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -106,7 +106,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> ToolTip style:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> ToolTip style:<br>
         $TTS_ALWAYSTIP (0x01)- Indicates that the ToolTip control appears when the cursor is on a tool even if the ToolTip control's owner window is inactive. Without this style, the ToolTip appears only when the tool's owner window is active.<br>
         $TTS_NOPREFIX (0x02) - Prevents the system from stripping the ampersand character from a string. Without this style the system automatically strips ampersand characters. This allows an application to use the same string as both a menu item and as text in a ToolTip control.<br>
         $TTS_NOANIMATE (0x10) - Disables sliding ToolTip animation.<br>
@@ -63,7 +63,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -83,7 +83,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

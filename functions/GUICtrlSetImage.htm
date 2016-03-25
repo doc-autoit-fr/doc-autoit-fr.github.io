@@ -32,11 +32,11 @@
       </tr>
       <tr>
         <td>iconname</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Icon name if the file contains multiple icons.</span><span lang="fr" style="display: none">Nom de l'icône si le fichier contient plusieurs icônes.</span></span> <span class="segments"><span lang="en">Can be an ordinal name if negative number.</span><span lang="fr" style="display: none">Peut être un nom ordinal si nombre négatif.</span></span> <span class="segments"><span lang="en">Otherwise -1.</span><span lang="fr" style="display: none">Sinon -1.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Icon name if the file contains multiple icons.</span><span lang="fr" style="display: none">Nom de l'icône si le fichier contient plusieurs icônes.</span></span> <span class="segments"><span lang="en">Can be an ordinal name if negative number.</span><span lang="fr" style="display: none">Peut être un nom ordinal si nombre négatif.</span></span> <span class="segments"><span lang="en">Otherwise -1.</span><span lang="fr" style="display: none">Sinon -1.</span></span></td>
       </tr>
       <tr>
         <td>icontype</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">To select a specific icon size :</span><span lang="fr" style="display: none">Pour sélectionner la taille d'une icône spécifique :</span></span> <span class="segments"><span lang="en">0 = small, 1 = normal (default).</span><span lang="fr" style="display: none">0 = petite, 1 = normale (par défaut).</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">To select a specific icon size :</span><span lang="fr" style="display: none">Pour sélectionner la taille d'une icône spécifique :</span></span> <span class="segments"><span lang="en">0 = small, 1 = normal (default).</span><span lang="fr" style="display: none">0 = petite, 1 = normale (par défaut).</span></span><br>
         <span class="segments"><span lang="en">For a TreeViewItem the icon size :</span><span lang="fr" style="display: none">Pour un TreeViewItem la taille de l'icône :</span></span> <span class="segments"><span lang="en">2 = selected, 4 for non-selected item.</span><span lang="fr" style="display: none">2 = sélectionné, 4 pour un item non sélectionné.</span></span></td>
       </tr>
     </tbody>
@@ -46,7 +46,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+        <td style="width:90%">1.</td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -72,7 +72,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -92,7 +92,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

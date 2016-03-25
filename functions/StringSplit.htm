@@ -33,7 +33,7 @@
       <tr>
         <td>flag</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Changes how the string split works, add multiple flag values together if required:</span><span lang="fr" style="display: none">Modifie le fonctionnement de la fonction, ajoutez plusieurs valeurs de flag ensemble si besoin:</span></span><br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Changes how the string split works, add multiple flag values together if required:</span><span lang="fr" style="display: none">Modifie le fonctionnement de la fonction, ajoutez plusieurs valeurs de flag ensemble si besoin:</span></span><br>
           &nbsp;&nbsp;&nbsp; $STR_CHRSPLIT (0) = each character in the delimiter string will mark where to split the string (default)<br>
           &nbsp;&nbsp;&nbsp; $STR_ENTIRESPLIT (1) = entire delimiter string is needed to mark the split<br>
           &nbsp;&nbsp;&nbsp; $STR_NOCOUNT (2) = disable the return count in the first element - effectively makes the array 0-based (must use <a href="UBound.htm">UBound()</a> to get the size of the array in this case).<br>
@@ -64,7 +64,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -85,7 +85,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -130,7 +130,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -177,7 +177,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

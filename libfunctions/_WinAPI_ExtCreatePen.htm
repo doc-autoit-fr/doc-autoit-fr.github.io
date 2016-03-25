@@ -64,20 +64,22 @@
       </tr>
       <tr>
         <td>$iHatch</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A hatch style. For more information, see <strong>_WinAPI_CreateBrushIndirect()</strong>.</td>
+        <td>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A hatch style. For more information, see <a href="_WinAPI_CreateBrushIndirect.htm">_WinAPI_CreateBrushIndirect()</a>.
+        </td>
       </tr>
       <tr>
         <td>$aUserStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The array (dash1, space1, dash2, space2, ... dashN, spaceN) that contains the length of the dashes and spaces in a user-defined style. The first value specifies the length of the first dash, the second value specifies the length of the first space, and so on.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The array (dash1, space1, dash2, space2, ... dashN, spaceN) that contains the length of the dashes and spaces in a user-defined style. The first value specifies the length of the first dash, the second value specifies the length of the first space, and so on.<br>
         This parameter is ignored if $PS_USERSTYLE style is not specified. The style count is limited to 16.</td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array to start filling at.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The index of array to start filling at.</td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The index of array to stop filling at.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The index of array to stop filling at.</td>
       </tr>
     </tbody>
   </table>
@@ -107,7 +109,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -127,7 +129,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

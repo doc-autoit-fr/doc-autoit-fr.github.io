@@ -35,21 +35,21 @@
       </tr>
       <tr>
         <td>$bIcon</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether an icon or a cursor is to be created, valid values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether an icon or a cursor is to be created, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - An icon is to be created (Default).<br>
         &nbsp;&nbsp;&nbsp; False - A cursor is to be created.</td>
       </tr>
       <tr>
         <td>$iXDesiredPixels</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The desired width, in pixels, of the icon or cursor. If this parameter is zero (Default), the function uses the system metric value to set the width.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The desired width, in pixels, of the icon or cursor. If this parameter is zero (Default), the function uses the system metric value to set the width.</td>
       </tr>
       <tr>
         <td>$iYDesiredPixels</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The desired height, in pixels, of the icon or cursor. If this parameter is zero (Default), the function uses the system metric value to set the height.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The desired height, in pixels, of the icon or cursor. If this parameter is zero (Default), the function uses the system metric value to set the height.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This parameter can be one or more of the following values.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> This parameter can be one or more of the following values.<br>
         &nbsp;&nbsp;&nbsp; $LR_DEFAULTCOLOR (Default)<br>
         &nbsp;&nbsp;&nbsp; $LR_DEFAULTSIZE<br>
         &nbsp;&nbsp;&nbsp; $LR_MONOCHROME<br>
@@ -84,7 +84,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -104,7 +104,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

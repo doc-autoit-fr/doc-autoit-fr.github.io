@@ -51,7 +51,7 @@
       </tr>
       <tr>
         <td>$bWord</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> True<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> True<br>
         &nbsp;&nbsp;&nbsp; If text is selected, apply the attribute to whole words in the selected text<br>
         &nbsp;&nbsp;&nbsp; If not:<br>
         &nbsp;&nbsp;&nbsp; If the insertion point is in a word, or at the end of it, apply the attribute to the word<br>
@@ -95,7 +95,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -115,7 +115,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -151,7 +151,7 @@
 <span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetSel.htm"><span class="S15">_GUICtrlRichEdit_SetSel</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S3">2</span><span class="S8">)</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetCharAttributes.htm"><span class="S15">_GUICtrlRichEdit_SetCharAttributes</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"+un"</span><span class="S8">)</span>
-<span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> Two characters underlined</span>"</span><span class="S8">)</span>
+<span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"1. Two characters underlined"</span><span class="S8">)</span>
 <span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S3">2</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetSel.htm"><span class="S15">_GUICtrlRichEdit_SetSel</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">,</span><span class="S0"> </span><span class="S3">5</span><span class="S8">)</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetCharAttributes.htm"><span class="S15">_GUICtrlRichEdit_SetCharAttributes</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"+bo"</span><span class="S8">)</span>

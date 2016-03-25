@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_TzSpecificLocalTimeToSystemTime</h1>
-  <p class="funcdesc">Converts a local time to a time in UTC<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Converts a local time to a time in UTC</span><span lang="fr" style="display: none">Convertit une heure locale en une heure UTC</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_TzSpecificLocalTimeToSystemTime ( $tLocalTime [, $tTimeZone = 0] )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,16 +25,16 @@
     <tbody>
       <tr>
         <td style="width:15%">$tLocalTime</td>
-        <td style="width:85%">a $tagSYSTEMTIME structure that specifies a local time or a pointer to it. The function converts this time to the corresponding UTC time.</td>
+        <td style="width:85%"><span class="segments"><span lang="en">a $tagSYSTEMTIME structure that specifies a local time or a pointer to it.</span><span lang="fr" style="display: none">une structure $tagSYSTEMTIME qui spécifie une heure locale ou un pointeur vers elle.</span></span> <span class="segments"><span lang="en">The function converts this time to the corresponding UTC time.</span><span lang="fr" style="display: none">La fonction convertit cette heure à l'heure UTC correspondante.</span></span></td>
       </tr>
       <tr>
         <td>$tTimeZone</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> a $tagTIME_ZONE_INFORMATION structure that specifies the time zone of interest or a pointer to it.<br>
-        If 0, the function uses the currently active time zone.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">a $tagTIME_ZONE_INFORMATION structure that specifies the time zone of interest or a pointer to it.</span><span lang="fr" style="display: none">une structure $tagTIME_ZONE_INFORMATION qui spécifie le fuseau horaire ou d'un pointeur vers elle.</span></span><br>
+        <span class="segments"><span lang="en">If 0, the function uses the currently active time zone.</span><span lang="fr" style="display: none">Si 0, la fonction utilise le fuseau horaire actuellement actif.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a $tagSYSTEMTIME structure containing the time in UTC.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a $tagSYSTEMTIME structure containing the time in UTC.</span><span lang="fr" style="display: none">Retourne une structure $tagSYSTEMTIME contenant l'heure en UTC.</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagSYSTEMTIME.htm">$tagSYSTEMTIME</a>, <a href="$tagTIME_ZONE_INFORMATION.htm">$tagTIME_ZONE_INFORMATION</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -43,7 +43,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -63,7 +63,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -85,14 +85,14 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Convert system time to local time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Convert system time to local time</span><span lang="fr" style="display: none">Convertit une heure système en une heure locale</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tSystem</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetSystemTime.htm"><span class="S15">_Date_Time_GetSystemTime</span></a><span class="S8">()</span>
 <span class="S0">    </span><span class="S9">$tLocal</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToTzSpecificLocalTime.htm"><span class="S15">_Date_Time_SystemTimeToTzSpecificLocalTime</span></a><span class="S8">(</span><span class="S9">$tSystem</span><span class="S8">)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"System time to local time .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tLocal</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">System time to local time .:</span><span lang="fr" style="display: none">Heure système en heure locale . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tLocal</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S9">$tLocal</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetLocalTime.htm"><span class="S15">_Date_Time_GetLocalTime</span></a><span class="S8">()</span>
 <span class="S0">    </span><span class="S9">$tSystem</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_TzSpecificLocalTimeToSystemTime.htm"><span class="S15">_Date_Time_TzSpecificLocalTimeToSystemTime</span></a><span class="S8">(</span><span class="S9">$tLocal</span><span class="S8">)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Local time to system time .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tSystem</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Local time to system time .:</span><span lang="fr" style="display: none">Heure locale en heure système . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateTimeStr.htm"><span class="S15">_Date_Time_SystemTimeToDateTimeStr</span></a><span class="S8">(</span><span class="S9">$tSystem</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

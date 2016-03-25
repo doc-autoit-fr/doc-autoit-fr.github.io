@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The flags that specifies behavior for this function. It can be a bitwise-OR combination of zero<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The flags that specifies behavior for this function. It can be a bitwise-OR combination of zero<br>
         or more of the following values.<br>
         $CREDUI_FLAGS_ALWAYS_SHOW_UI<br>
         $CREDUI_FLAGS_COMPLETE_USERNAME<br>
@@ -71,23 +71,23 @@
       </tr>
       <tr>
         <td>$iError</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The system error code that specifies why the credential dialog box is needed.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The system error code that specifies why the credential dialog box is needed.</td>
       </tr>
       <tr>
         <td>$bSave</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the "Save" check box is selected in the dialog box (it makes sense only if the<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether the "Save" check box is selected in the dialog box (it makes sense only if the<br>
         $CREDUI_FLAGS_SHOW_SAVE_CHECK_BOX flag is used), valid values:<br>
         &nbsp;&nbsp;&nbsp; True - Selected.<br>
         &nbsp;&nbsp;&nbsp; False - Deselected (Default).</td>
       </tr>
       <tr>
         <td>$hBitmap</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A bitmap handle to display in the dialog box. If this parameter is 0, the default bitmap is used.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A bitmap handle to display in the dialog box. If this parameter is 0, the default bitmap is used.<br>
         The bitmap size is limited to 320x60 pixels.</td>
       </tr>
       <tr>
         <td>$hParent</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The dialog box is modal with respect to the parent window. If this parameter is 0, the desktop<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The dialog box is modal with respect to the parent window. If this parameter is 0, the desktop<br>
         is the parent window of the dialog box.</td>
       </tr>
     </tbody>
@@ -124,7 +124,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -144,7 +144,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

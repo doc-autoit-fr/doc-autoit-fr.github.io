@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_SystemTimeToFileTime</h1>
-  <p class="funcdesc">Converts a system time to file time format<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Converts a system time to file time format</span><span lang="fr" style="display: none">Convertit une heure système au format d'heure d'un fichier</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_SystemTimeToFileTime ( $tSYSTEMTIME )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$tSYSTEMTIME</td>
-        <td style="width:85%">a $tagSYSTEMTIME structure to be converted or a pointer to it.</td>
+        <td style="width:85%"><span class="segments"><span lang="en">a $tagSYSTEMTIME structure to be converted or a pointer to it.</span><span lang="fr" style="display: none">une structure $tagSYSTEMTIME à convertir ou un pointeur vers elle.</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a $tagFILETIME structure that contains the converted file time.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a $tagFILETIME structure that contains the converted file time.</span><span lang="fr" style="display: none">Retourne une structure $tagFILETIME qui contient l'heure convertie du fichier.</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagFILETIME.htm">$tagFILETIME</a>, <a href="$tagSYSTEMTIME.htm">$tagSYSTEMTIME</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -38,7 +38,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -58,7 +58,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -80,10 +80,10 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Get system time</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Get system time</span><span lang="fr" style="display: none">Récupère l'heure système</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tSystem</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetSystemTime.htm"><span class="S15">_Date_Time_GetSystemTime</span></a><span class="S8">()</span>
 <span class="S0">    </span><span class="S9">$tFile</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToFileTime.htm"><span class="S15">_Date_Time_SystemTimeToFileTime</span></a><span class="S8">(</span><span class="S9">$tSystem</span><span class="S8">)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"File time .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$tFile</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">File time .:</span><span lang="fr" style="display: none">Heure du fichier . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_FileTimeToStr.htm"><span class="S15">_Date_Time_FileTimeToStr</span></a><span class="S8">(</span><span class="S9">$tFile</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

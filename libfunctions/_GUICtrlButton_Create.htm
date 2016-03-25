@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control style:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control style:<br>
         &nbsp;&nbsp;&nbsp; $BS_AUTO3STATE - Creates a three-state check box in which the state cycles through selected, unavailable, and cleared each time the user selects the check box.<br>
         &nbsp;&nbsp;&nbsp; $BS_AUTOCHECKBOX - Creates a check box in which the check state switches between selected and cleared each time the user selects the check box.<br>
         &nbsp;&nbsp;&nbsp; $BS_AUTORADIOBUTTON - Same as a radio button, except that when the user selects it, the button automatically highlights itself and removes the selection from any other radio buttons with the same style in the same group.<br>
@@ -84,7 +84,7 @@
       </tr>
       <tr>
         <td>$iExStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control extended style. These correspond to the standard $WS_EX_* constants. <span class="segments"><span lang="en">See <strong>Extended Style Table</strong>.</span><span lang="fr" style="display: none">Consultez en Appendice le <strong>Tableau des Styles Etendus</strong> .</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control extended style. These correspond to the standard $WS_EX_* constants. <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -113,7 +113,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -133,7 +133,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

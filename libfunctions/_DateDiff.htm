@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateDiff</h1>
-  <p class="funcdesc">Returns the difference between 2 dates, expressed in the type requested<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the difference between 2 dates, expressed in the type requested</span><span lang="fr" style="display: none">Retourne la différence entre 2 dates, exprimée dans le type demandé</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateDiff ( $sType, $sStartDate, $sEndDate )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,22 +25,22 @@
     <tbody>
       <tr>
         <td style="width:15%">$sType</td>
-        <td style="width:85%">One of the following:<br>
-        D = Difference in days between the given dates<br>
-        M = Difference in months between the given dates<br>
-        Y = Difference in years between the given dates<br>
-        w = Difference in Weeks between the given dates<br>
-        h = Difference in hours between the given dates<br>
-        n = Difference in minutes between the given dates<br>
-        s = Difference in seconds between the given dates</td>
+        <td style="width:85%"><span class="segments"><span lang="en">One of the following:</span><span lang="fr" style="display: none">Un des suivants&nbsp;:</span></span><br>
+        <span class="segments"><span lang="en">D = Difference in days between the given dates</span><span lang="fr" style="display: none">D = Différence en jours entre les dates données</span></span><br>
+        <span class="segments"><span lang="en">M = Difference in months between the given dates</span><span lang="fr" style="display: none">M = Différence en mois entre les dates données</span></span><br>
+        <span class="segments"><span lang="en">Y = Difference in years between the given dates</span><span lang="fr" style="display: none">Y = Différence en années entre les dates données</span></span><br>
+        <span class="segments"><span lang="en">w = Difference in Weeks between the given dates</span><span lang="fr" style="display: none">w = Différence en semaines entre les dates données</span></span><br>
+        <span class="segments"><span lang="en">h = Difference in hours between the given dates</span><span lang="fr" style="display: none">h = Différence en heures entre les dates données</span></span><br>
+        <span class="segments"><span lang="en">n = Difference in minutes between the given dates</span><span lang="fr" style="display: none">n = Différence en minutes entre les dates données</span></span><br>
+        <span class="segments"><span lang="en">s = Difference in seconds between the given dates</span><span lang="fr" style="display: none">s = Différence en secondes entre les dates données</span></span></td>
       </tr>
       <tr>
         <td>$sStartDate</td>
-        <td>Input Start date in the format "YYYY/MM/DD[ HH:MM:SS]"</td>
+        <td><span class="segments"><span lang="en">Input Start date in the format "YYYY/MM/DD[ HH:MM:SS]"</span><span lang="fr" style="display: none">Entrez la date de début dans le format «&nbsp;AAAA/MM/JJ[ HH:MM:SS]&nbsp;»</span></span></td>
       </tr>
       <tr>
         <td>$sEndDate</td>
-        <td>Input End date in the format "YYYY/MM/DD[ HH:MM:SS]"</td>
+        <td><span class="segments"><span lang="en">Input End date in the format "YYYY/MM/DD[ HH:MM:SS]"</span><span lang="fr" style="display: none">Entrez la date de fin dans le format «&nbsp;AAAA/MM/JJ[ HH:MM:SS]&nbsp;»</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -49,7 +49,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">Difference between the 2 dates.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">Difference between the 2 dates.</span><span lang="fr" style="display: none">Différence entre les 2 dates.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -57,16 +57,16 @@
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - Invalid $sType<br>
-        2 - Invalid $sStartDate<br>
-        3 - Invalid $sEndDate</td>
+        <td><span class="segments"><span lang="en">1 - Invalid $sType</span><span lang="fr" style="display: none">1 - $sType non valide</span></span><br>
+        <span class="segments"><span lang="en">2 - Invalid $sStartDate</span><span lang="fr" style="display: none">2 - $sStartDate non valide</span></span><br>
+        <span class="segments"><span lang="en">3 - Invalid $sEndDate</span><span lang="fr" style="display: none">3 - $sEndDate non valide</span></span></td>
       </tr>
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>Valid dates must be between "2000/01/01 00:00:00". and "3000/12/31 23:59:59"<br>
+  <p><span class="segments"><span lang="en">Valid dates must be between "2000/01/01 00:00:00".</span><span lang="fr" style="display: none">Les dates valides doivent être comprises entre «&nbsp;2000/01/01 00:00:00&nbsp;»</span></span> <span class="segments"><span lang="en">and "3000/12/31 23:59:59"</span><span lang="fr" style="display: none">et «&nbsp;3000/12/31 23:59:59&nbsp;».</span></span><br>
   <br>
-  See <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> for other possible variations of the start and end date formats.<br></p>
+  <span class="segments"><span lang="en">See <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> for other possible variations of the start and end date formats.</span><span lang="fr" style="display: none">Voir <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> pour d'autres variations possibles concernant les formats des dates de début et de fin.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_DateAdd.htm">_DateAdd</a>, <a href="_DateTimeSplit.htm">_DateTimeSplit</a>, <a href="_DateToDayOfWeek.htm">_DateToDayOfWeek</a>, <a href="_DateToDayOfWeekISO.htm">_DateToDayOfWeekISO</a>, <a href="_DateToDayValue.htm">_DateToDayValue</a>, <a href="_DayValueToDate.htm">_DayValueToDate</a>, <a href="_NowCalc.htm">_NowCalc</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -75,7 +75,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -95,7 +95,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -103,13 +103,13 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<span class="S1">; Calculated the number of seconds since EPOCH (1970/01/01 00:00:00)</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Calculated the number of seconds since EPOCH (1970/01/01 00:00:00)</span><span lang="fr" style="display: none">Calcule le nombre de secondes depuis l'EPOCH (1970/01/01 00:00:00)</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateDiff.htm"><span class="S15">_DateDiff</span></a><span class="S8">(</span><span class="S7">'s'</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"1970/01/01 00:00:00"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Number of seconds since EPOCH: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Number of seconds since EPOCH:</span><span lang="fr" style="display: none">Nombre de secondes depuis l'EPOCH :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
 
-<span class="S1">; Calculated the number of Hours this year</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Calculated the number of Hours this year</span><span lang="fr" style="display: none">Calcule le nombre d'heures pour l'année en cours</span></span></span></span>
 <span class="S9">$iDateCalc</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateDiff.htm"><span class="S15">_DateDiff</span></a><span class="S8">(</span><span class="S7">'h'</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/01/01 00:00:00"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">())</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Number of Hours this year: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Number of Hours this year:</span><span lang="fr" style="display: none">Nombre d'heures pour l'année en cours :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iDateCalc</span><span class="S8">)</span>
 </span>
 </pre>
       </div>

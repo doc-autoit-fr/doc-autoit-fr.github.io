@@ -33,23 +33,23 @@
       </tr>
       <tr>
         <td>$vValue</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Value(s) to add - can be a single variable, a delimited string or a 1D array</span><span lang="fr" style="display: none">Valeur(s) à ajouter - peut être une variable unique, une chaîne morcellée (par le séparateur $sDelim_Item) ou un tableau 1D</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Value(s) to add - can be a single variable, a delimited string or a 1D array</span><span lang="fr" style="display: none">Valeur(s) à ajouter - peut être une variable unique, une chaîne morcellée (par le séparateur $sDelim_Item) ou un tableau 1D</span></span></td>
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Column in which insert is to begin (2D array only)</span><span lang="fr" style="display: none">Colonne dans laquelle l'insertion doit commencer (tableau 2D uniquement)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Column in which insert is to begin (2D array only)</span><span lang="fr" style="display: none">Colonne dans laquelle l'insertion doit commencer (tableau 2D uniquement)</span></span></td>
       </tr>
       <tr>
         <td>$sDelim_Item</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into items</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en éléments</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Delimiter used if a string is to be split into items</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en éléments</span></span></td>
       </tr>
       <tr>
         <td>$sDelim_Row</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Delimiter used if a string is to be split into rows (2D only)</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en lignes (2D uniquement)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Delimiter used if a string is to be split into rows (2D only)</span><span lang="fr" style="display: none">Séparateur utilisé si une chaîne doit être divisée en lignes (2D uniquement)</span></span></td>
       </tr>
       <tr>
         <td>$iForce</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Maintains default behaviour,<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Maintains default behaviour,<br>
         &nbsp;&nbsp;&nbsp; $ARRAYFILL_FORCE_DEFAULT (0)<br>
         Forces $vValue addition as a single item,<br>
         &nbsp;&nbsp;&nbsp; $ARRAYFILL_FORCE_SINGLEITEM (1)<br>
@@ -133,7 +133,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -154,7 +154,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -209,7 +209,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -279,7 +279,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

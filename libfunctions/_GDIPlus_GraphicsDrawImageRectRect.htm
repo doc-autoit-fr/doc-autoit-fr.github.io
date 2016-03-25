@@ -65,11 +65,11 @@
       </tr>
       <tr>
         <td>$pAttributes</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pointer to an ImageAttributes structure that specifies the color and size attributes of the image to be drawn.</span><span lang="fr" style="display: none">handle sur une structure ImageAttributes qui spécifie les attributs couleur et taille de l'image qui doit être dessinée.</span></span> <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Pointer to an ImageAttributes structure that specifies the color and size attributes of the image to be drawn.</span><span lang="fr" style="display: none">handle sur une structure ImageAttributes qui spécifie les attributs couleur et taille de l'image qui doit être dessinée.</span></span> <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
       </tr>
       <tr>
         <td>$iUnit</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Specifies the unit of measure for the image</span><span lang="fr" style="display: none">Spécifie l'unité de mesure de l'image</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Specifies the unit of measure for the image</span><span lang="fr" style="display: none">Spécifie l'unité de mesure de l'image</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -94,7 +94,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -115,7 +115,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -176,7 +176,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

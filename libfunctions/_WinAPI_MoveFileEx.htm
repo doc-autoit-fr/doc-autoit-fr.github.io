@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The move options. This parameter can be one or more of the following values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The move options. This parameter can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $MOVE_FILE_COPY_ALLOWED (0x0002)<br>
         &nbsp;&nbsp;&nbsp; $MOVE_FILE_CREATE_HARDLINK (0x0010)<br>
         &nbsp;&nbsp;&nbsp; $MOVE_FILE_DELAY_UNTIL_REBOOT (0x0004)<br>
@@ -55,12 +55,12 @@
       </tr>
       <tr>
         <td>$pProgressProc</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The address of a callback function that is called each time another portion of the file has been moved.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The address of a callback function that is called each time another portion of the file has been moved.<br>
         (See MSDN for more information)</td>
       </tr>
       <tr>
         <td>$pData</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Pointer to the argument to be passed to the callback function.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Pointer to the argument to be passed to the callback function.</td>
       </tr>
     </tbody>
   </table>
@@ -93,7 +93,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -113,7 +113,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

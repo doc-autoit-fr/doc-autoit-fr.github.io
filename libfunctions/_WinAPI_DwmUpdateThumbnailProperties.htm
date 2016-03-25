@@ -29,30 +29,30 @@
       </tr>
       <tr>
         <td>$bVisible</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether make the thumbnail visible or invisible, valid values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether make the thumbnail visible or invisible, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - Visible (Default).<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - Invisible.</td>
       </tr>
       <tr>
         <td>$bClientAreaOnly</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether use only the thumbnail source's client area or entire window, valid values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether use only the thumbnail source's client area or entire window, valid values:<br>
         &nbsp;&nbsp;&nbsp; True&nbsp;&nbsp;&nbsp; - Use only source's client area.<br>
         &nbsp;&nbsp;&nbsp; False&nbsp;&nbsp;&nbsp; - Use entire window (Default).</td>
       </tr>
       <tr>
         <td>$iOpacity</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The opacity with which to render the thumbnail. 0 is fully transparent while 255 (Default) is fully opaque.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The opacity with which to render the thumbnail. 0 is fully transparent while 255 (Default) is fully opaque.</td>
       </tr>
       <tr>
         <td>$tRectDest</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure containing the rectangle in the destination window the thumbnail will be rendered.<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> $tagRECT structure containing the rectangle in the destination window the thumbnail will be rendered.<br>
           By default, the size of this rectangle equal to the source size of the DWM thumbnail which returns the <a href="_WinAPI_DwmQueryThumbnailSourceSize.htm">_WinAPI_DwmQueryThumbnailSourceSize()</a> function.
         </td>
       </tr>
       <tr>
         <td>$tRectSrc</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> $tagRECT structure containing the rectangle that specifies the region of the source window to use as the thumbnail.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> $tagRECT structure containing the rectangle that specifies the region of the source window to use as the thumbnail.<br>
         By default, the entire window is used as the thumbnail.</td>
       </tr>
     </tbody>
@@ -62,7 +62,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+        <td style="width:90%">1.</td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -85,7 +85,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -105,7 +105,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

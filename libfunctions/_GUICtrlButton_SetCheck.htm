@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$iState</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The check state. This parameter can be one of the following values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The check state. This parameter can be one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $BST_CHECKED - Sets the button state to checked.<br>
         &nbsp;&nbsp;&nbsp; $BST_INDETERMINATE - Sets the button state to grayed, indicating an indeterminate state.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Use this value only if the button has the $BS_3STATE or $BS_AUTO3STATE style.<br>
@@ -50,7 +50,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -70,7 +70,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

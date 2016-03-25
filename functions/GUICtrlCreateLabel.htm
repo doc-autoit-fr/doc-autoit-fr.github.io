@@ -40,25 +40,21 @@
       </tr>
       <tr>
         <td>width</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The width of the control (default text autofit in width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut ajustement automatique du texte en largeur ).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The width of the control (default text autofit in width).</span><span lang="fr" style="display: none">La largeur du contrôle (par défaut ajustement automatique du texte en largeur ).</span></span></td>
       </tr>
       <tr>
         <td>height</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The height of the control (default text autofit in height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut ajustement automatique du texte en hauteur ).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The height of the control (default text autofit in height).</span><span lang="fr" style="display: none">La hauteur du contrôle (par défaut ajustement automatique du texte en hauteur ).</span></span></td>
       </tr>
       <tr>
         <td>style</td>
-        <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Label">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm#Label">Styles des contrôles GUI</a>.</span></span><a href="../appendix/GUIStyles.htm#Label"></a><br>
-          &nbsp;&nbsp;&nbsp; default ( -1) : none.<br>
-          &nbsp;&nbsp;&nbsp; forced styles : $SS_NOTIFY, $SS_LEFT
-        </td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Defines the style of the control.</span><span lang="fr" style="display: none">Définit le style de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Label">GUI Control Styles Appendix</a>.</span><span lang="fr" style="display: none">Voir l'Appendice <a href="../appendix/GUIStyles.htm#Label">Styles des contrôles GUI</a>.</span></span><br>
+        &nbsp;&nbsp;&nbsp; default ( -1) : none.<br>
+        &nbsp;&nbsp;&nbsp; forced styles : $SS_NOTIFY, $SS_LEFT</td>
       </tr>
       <tr>
         <td>exStyle</td>
-        <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Defines the extended style of the control.</span><span lang="fr" style="display: none">Définit le style étendu de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span><a href="../appendix/GUIStyles.htm#Extended"></a>
-        </td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Defines the extended style of the control.</span><span lang="fr" style="display: none">Définit le style étendu de la commande.</span></span> <span class="segments"><span lang="en">See <a href="../appendix/GUIStyles.htm#Extended">Extended Style Table</a>.</span><span lang="fr" style="display: none">Consultez en Appendice le <a href="../appendix/GUIStyles.htm#Extended">Tableau des Styles Etendus</a> .</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -94,7 +90,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -114,7 +110,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

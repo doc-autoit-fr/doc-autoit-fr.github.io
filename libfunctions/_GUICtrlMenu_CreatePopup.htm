@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$iStyle</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Style of the menu. It can be one or more of the following values:<br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Style of the menu. It can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $MNS_AUTODISMISS - Menu automatically ends when mouse is outside the menu for 10 seconds<br>
         &nbsp;&nbsp;&nbsp; $MNS_CHECKORBMP - The same space is reserved for the check mark and the bitmap (default)<br>
         &nbsp;&nbsp;&nbsp; $MNS_DRAGDROP - Menu items are OLE drop targets or drag sources<br>
@@ -62,7 +62,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -82,7 +82,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

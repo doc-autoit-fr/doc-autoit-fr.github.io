@@ -33,7 +33,7 @@
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The style of the typeface.</span><span lang="fr" style="display: none">Le style de la police.</span></span> <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The style of the typeface.</span><span lang="fr" style="display: none">Le style de la police.</span></span> <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - Normal weight or thickness of the typeface<br>
         &nbsp;&nbsp;&nbsp; 1 - Bold typeface<br>
         &nbsp;&nbsp;&nbsp; 2 - Italic typeface<br>
@@ -42,7 +42,7 @@
       </tr>
       <tr>
         <td>$iUnit</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Unit of measurement for the font size:</span><span lang="fr" style="display: none">Unité de mesure de la taille de la police:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Unit of measurement for the font size:</span><span lang="fr" style="display: none">Unité de mesure de la taille de la police:</span></span><br>
         &nbsp;&nbsp;&nbsp; 0 - World coordinates, a nonphysical unit<br>
         &nbsp;&nbsp;&nbsp; 1 - Display units<br>
         &nbsp;&nbsp;&nbsp; 2 - A unit is 1 pixel<br>
@@ -78,7 +78,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -98,7 +98,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

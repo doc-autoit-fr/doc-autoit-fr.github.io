@@ -37,7 +37,7 @@
       </tr>
       <tr>
         <td>$hGraphics</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pointer to a Graphics object that specifies a world-to-device transformation.</span><span lang="fr" style="display: none">Handle de l'objet Graphics qui spécifie une transformation des coordonnées universelles en coordonnées du périphérique.</span></span> If 0, the test is done in world coordinates; otherwise, the test is done in device coordinates.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Pointer to a Graphics object that specifies a world-to-device transformation.</span><span lang="fr" style="display: none">Handle de l'objet Graphics qui spécifie une transformation des coordonnées universelles en coordonnées du périphérique.</span></span> If 0, the test is done in world coordinates; otherwise, the test is done in device coordinates.</td>
       </tr>
     </tbody>
   </table>
@@ -62,7 +62,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -82,7 +82,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

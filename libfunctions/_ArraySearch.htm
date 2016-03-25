@@ -33,19 +33,19 @@
       </tr>
       <tr>
         <td>$iStart</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Index of array to start searching at</span><span lang="fr" style="display: none">Index du tableau où commencer la recherche</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Index of array to start searching at</span><span lang="fr" style="display: none">Index du tableau où commencer la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iEnd</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Index of array to stop searching at</span><span lang="fr" style="display: none">Index du tableau où arrêter la recherche</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Index of array to stop searching at</span><span lang="fr" style="display: none">Index du tableau où arrêter la recherche</span></span></td>
       </tr>
       <tr>
         <td>$iCase</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If set to 1, search is case sensitive</span><span lang="fr" style="display: none">Si la valeur est 1, la recherche est sensible à la casse</span></span></td>
       </tr>
       <tr>
         <td>$iCompare</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span><br>
         &nbsp;&nbsp;&nbsp; 0 Casting of variables to the same type (default), "string" = 0, "" = 0 or "0" = 0 match (If $iCase = 0)<br>
         &nbsp;&nbsp;&nbsp; 1 executes a partial search<br>
         &nbsp;&nbsp;&nbsp; 2 comparison match if variables have same type and same value<br>
@@ -53,15 +53,15 @@
       </tr>
       <tr>
         <td>$iForward</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If set to 0, searches the array from end to beginning (instead of beginning to end)</span><span lang="fr" style="display: none">Si défini à 0, la recherche dans le tableau se fait de la fin au début (au lieu du début à la fin)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If set to 0, searches the array from end to beginning (instead of beginning to end)</span><span lang="fr" style="display: none">Si défini à 0, la recherche dans le tableau se fait de la fin au début (au lieu du début à la fin)</span></span></td>
       </tr>
       <tr>
         <td>$iSubItem</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Sub-index to search on in 2D arrays</span><span lang="fr" style="display: none">Sous-index de recherche dans un tableau 2D</span></span></td>
       </tr>
       <tr>
         <td>$bRow</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If True then $iSubItem sets the row to search - False (default) searches columns</span><span lang="fr" style="display: none">Si True, $iSubItem définit la ligne où chercher.Par défaut, False, définit la colonne où chercher</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -99,7 +99,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -120,7 +120,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -164,7 +164,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

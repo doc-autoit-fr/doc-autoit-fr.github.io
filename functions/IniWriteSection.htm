@@ -36,9 +36,7 @@
       </tr>
       <tr>
         <td>index</td>
-        <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If an array is passed as data, this specifies the index to start writing from.</span><span lang="fr" style="display: none">Si un tableau est transmis en données, ce paramètre indique l'indice à partir duquel l'écriture doit commencer.</span></span> <span class="segments"><span lang="en">By default, this is 1 so that the return value of <a href="IniReadSection.htm">IniReadSection()</a> can be used immediately.</span><span lang="fr" style="display: none">Par défaut, c'est 1 de telle façon que la valeur de retour de <a href="IniReadSection.htm">IniReadSection()</a> peut être utilisée immédiatement.</span></span> <span class="segments"><span lang="en">For manually created arrays, this value may need to be different depending on how the array was created.</span><span lang="fr" style="display: none">Pour les tableaux créés à la main, cette valeur peut être différente en fonction de la façon dont le réseau a été créé.</span></span> <span class="segments"><span lang="en">This parameter is ignored if a string is passed as data.</span><span lang="fr" style="display: none">Ce paramètre est ignoré si une chaîne est passée comme donnée.</span></span><a href="IniReadSection.htm"></a>
-        </td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If an array is passed as data, this specifies the index to start writing from.</span><span lang="fr" style="display: none">Si un tableau est transmis en données, ce paramètre indique l'indice à partir duquel l'écriture doit commencer.</span></span> <span class="segments"><span lang="en">By default, this is 1 so that the return value of <a href="IniReadSection.htm">IniReadSection()</a> can be used immediately.</span><span lang="fr" style="display: none">Par défaut, c'est 1 de telle façon que la valeur de retour de <a href="IniReadSection.htm">IniReadSection()</a> peut être utilisée immédiatement.</span></span> <span class="segments"><span lang="en">For manually created arrays, this value may need to be different depending on how the array was created.</span><span lang="fr" style="display: none">Pour les tableaux créés à la main, cette valeur peut être différente en fonction de la façon dont le réseau a été créé.</span></span> <span class="segments"><span lang="en">This parameter is ignored if a string is passed as data.</span><span lang="fr" style="display: none">Ce paramètre est ignoré si une chaîne est passée comme donnée.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -47,7 +45,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%"><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span></td>
+        <td style="width:90%">1.</td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -72,7 +70,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -92,7 +90,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$iLevel</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Impersonation level of the new token:<br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Impersonation level of the new token:<br>
         &nbsp;&nbsp;&nbsp; $SECURITYANONYMOUS. The server process cannot obtain identification information about the client, and it cannot impersonate the client.<br>
         &nbsp;&nbsp;&nbsp; $SECURITYIDENTIFICATION. The server process can obtain information about the client, such as security identifiers and privileges, but it cannot impersonate the client.<br>
         &nbsp;&nbsp;&nbsp; $SECURITYIMPERSONATION. The server process can impersonate the clients security context on its local system. The server cannot impersonate the client on remote systems.<br>
@@ -56,7 +56,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -76,7 +76,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

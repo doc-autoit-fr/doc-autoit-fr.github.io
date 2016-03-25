@@ -29,23 +29,23 @@
       </tr>
       <tr>
         <td>$iWidth</td>
-        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Width, in pixels, of the requested thumbnail image. Default is 0.</td>
+        <td><span class="segments"><span lang="en">&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none">&nbsp;<strong>[optionnel]</strong></span></span> Width, in pixels, of the requested thumbnail image. Default is 0.</td>
       </tr>
       <tr>
         <td>$iHeight</td>
-        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Height, in pixels, of the requested thumbnail image. Default is 0.</td>
+        <td><span class="segments"><span lang="en">&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none">&nbsp;<strong>[optionnel]</strong></span></span> Height, in pixels, of the requested thumbnail image. Default is 0.</td>
       </tr>
       <tr>
         <td>$bKeepRatio</td>
-        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If true destination width and height of the image will be recalculated to keep image aspect ratio. Default is True.</td>
+        <td><span class="segments"><span lang="en">&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none">&nbsp;<strong>[optionnel]</strong></span></span> If true destination width and height of the image will be recalculated to keep image aspect ratio. Default is True.</td>
       </tr>
       <tr>
         <td>$hCallback</td>
-        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Callback function that you provide. During the process of creating or retrieving the thumbnail image, Microsoft Windows GDI+ calls this function to give you the opportunity to abort the process. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
+        <td><span class="segments"><span lang="en">&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none">&nbsp;<strong>[optionnel]</strong></span></span> Callback function that you provide. During the process of creating or retrieving the thumbnail image, Microsoft Windows GDI+ calls this function to give you the opportunity to abort the process. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
       </tr>
       <tr>
         <td>$hCallbackData</td>
-        <td>&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Pointer to a block of memory that contains data to be used by the callback function. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
+        <td><span class="segments"><span lang="en">&nbsp;<strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none">&nbsp;<strong>[optionnel]</strong></span></span> Pointer to a block of memory that contains data to be used by the callback function. <span class="segments"><span lang="en">The default value is NULL.</span><span lang="fr" style="display: none">La valeur par défaut est NULL.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -75,7 +75,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -95,7 +95,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

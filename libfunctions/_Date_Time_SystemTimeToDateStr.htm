@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_SystemTimeToDateStr</h1>
-  <p class="funcdesc">Decode a system time to a date string<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Decode a system time to a date string</span><span lang="fr" style="display: none">Décode une heure système en une date sous forme de chaîne</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_SystemTimeToDateStr ( ByRef $tSYSTEMTIME [, $iFmt = 0] )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,16 +25,16 @@
     <tbody>
       <tr>
         <td style="width:15%">$tSYSTEMTIME</td>
-        <td style="width:85%">$tagSYSTEMTIME structure</td>
+        <td style="width:85%"><span class="segments"><span lang="en">$tagSYSTEMTIME structure</span><span lang="fr" style="display: none">Structure $tagSYSTEMTIME</span></span></td>
       </tr>
       <tr>
         <td>$iFmt</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 0 returns mm/dd/yyyy (Default)<br>
-        1 returns yyyy/mm/dd</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">0 returns mm/dd/yyyy (Default)</span><span lang="fr" style="display: none">0 retourne mm/jj/aaaa (par défaut)</span></span><br>
+        <span class="segments"><span lang="en">1 returns yyyy/mm/dd</span><span lang="fr" style="display: none">1 retourne aaaa/mm/jj</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a date string formatted according to $bFmt.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a date string formatted according to $bFmt.</span><span lang="fr" style="display: none">Retourne une date sous forme d'une chaîne formatée selon $bFmt.</span></span><br>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="$tagSYSTEMTIME.htm">$tagSYSTEMTIME</a>, <a href="_Date_Time_SystemTimeToDateTimeStr.htm">_Date_Time_SystemTimeToDateTimeStr</a>, <a href="_Date_Time_SystemTimeToTimeStr.htm">_Date_Time_SystemTimeToTimeStr</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -43,7 +43,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -63,7 +63,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -85,10 +85,10 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Get current system date</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Get current system date</span><span lang="fr" style="display: none">Récupère la date système actuelle</span></span></span></span>
 <span class="S0">    </span><span class="S9">$tDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetSystemTime.htm"><span class="S15">_Date_Time_GetSystemTime</span></a><span class="S8">()</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Current system date .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateStr.htm"><span class="S15">_Date_Time_SystemTimeToDateStr</span></a><span class="S8">(</span><span class="S9">$tDate</span><span class="S8">))</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Current system date .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateStr.htm"><span class="S15">_Date_Time_SystemTimeToDateStr</span></a><span class="S8">(</span><span class="S9">$tDate</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current system date .:</span><span lang="fr" style="display: none">Date système actuelle . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateStr.htm"><span class="S15">_Date_Time_SystemTimeToDateStr</span></a><span class="S8">(</span><span class="S9">$tDate</span><span class="S8">))</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Current system date .:</span><span lang="fr" style="display: none">Date système actuelle . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_SystemTimeToDateStr.htm"><span class="S15">_Date_Time_SystemTimeToDateStr</span></a><span class="S8">(</span><span class="S9">$tDate</span><span class="S8">,</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

@@ -25,7 +25,7 @@
     <tbody>
       <tr>
         <td style="width:15%">$iStyle</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Style of the menu. It can be one or more of the following values:<br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Style of the menu. It can be one or more of the following values:<br>
         &nbsp;&nbsp;&nbsp; $MNS_AUTODISMISS - Menu automatically ends when mouse is outside the menu for 10 seconds<br>
         &nbsp;&nbsp;&nbsp; $MNS_CHECKORBMP - The same space is reserved for the check mark and the bitmap (default)<br>
         &nbsp;&nbsp;&nbsp; $MNS_DRAGDROP - Menu items are OLE drop targets or drag sources<br>
@@ -62,7 +62,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -82,7 +82,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -148,7 +148,7 @@
 <span class="S0">    </span><span class="S12">#forceref $hWnd, $iMsg, $lParam</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Switch</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WinAPI_LoWord.htm"><span class="S15">_WinAPI_LoWord</span></a><span class="S8">(</span><span class="S9">$wParam</span><span class="S8">)</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$e_idNew</span>
-<span class="S0">            MemoWrite</span><span class="S8">(</span><span class="S7">"New"</span><span class="S8">)</span>
+<span class="S0">            MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">New</span><span lang="fr" style="display: none">Nouveau</span></span></span>"</span><span class="S8">)</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$e_idOpen</span>
 <span class="S0">            MemoWrite</span><span class="S8">(</span><span class="S7">"Open"</span><span class="S8">)</span>
 <span class="S0">        </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S9">$e_idSave</span>

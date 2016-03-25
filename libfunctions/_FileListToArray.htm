@@ -29,11 +29,11 @@
       </tr>
       <tr>
         <td>$sFilter</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> the filter to use, default is *. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> the filter to use, default is *. <span class="segments"><span lang="en">(* and ?</span><span lang="fr" style="display: none">( caractères spéciaux * et ?</span></span> <span class="segments"><span lang="en">wildcards accepted - See Remarks)</span><span lang="fr" style="display: none">acceptés - Voir Remarques)</span></span></td>
       </tr>
       <tr>
         <td>$iFlag</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> specifies whether to return files folders or both<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> specifies whether to return files folders or both<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FILESFOLDERS (0) = (Default) Return both files and folders<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FILES (1) = Return files only<br>
         &nbsp;&nbsp;&nbsp; $FLTA_FOLDERS (2) = Return Folders only<br>
@@ -41,7 +41,7 @@
       </tr>
       <tr>
         <td>$bReturnPath</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True the full path is appended to the file\folder path, otherwise it is relative to the $sFilePath folder. <span class="segments"><span lang="en">Default is False.</span><span lang="fr" style="display: none">Par défaut, False.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> If True the full path is appended to the file\folder path, otherwise it is relative to the $sFilePath folder. <span class="segments"><span lang="en">Default is False.</span><span lang="fr" style="display: none">Par défaut, False.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -82,7 +82,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -103,7 +103,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -149,7 +149,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

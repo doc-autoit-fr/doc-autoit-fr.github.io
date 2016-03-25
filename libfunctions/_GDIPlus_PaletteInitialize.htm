@@ -29,21 +29,21 @@
       </tr>
       <tr>
         <td>$iPaletteType</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">PaletteType constant that specifies the palette type ($GDIP_PaletteType*).</span><span lang="fr" style="display: none">Constante PaletteType qui spécifie le type de palette ($GDIP_PaletteType*).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">PaletteType constant that specifies the palette type ($GDIP_PaletteType*).</span><span lang="fr" style="display: none">Constante PaletteType qui spécifie le type de palette ($GDIP_PaletteType*).</span></span></td>
       </tr>
       <tr>
         <td>$iOptimalColors</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Integer that specifies the number of colors you want to have in an optimal palette based on a specified bitmap.</span><span lang="fr" style="display: none">Entier qui spécifie le nombre de couleurs que vous voulez avoir dans une palette optimale basée sur un bitmap spécifié.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Integer that specifies the number of colors you want to have in an optimal palette based on a specified bitmap.</span><span lang="fr" style="display: none">Entier qui spécifie le nombre de couleurs que vous voulez avoir dans une palette optimale basée sur un bitmap spécifié.</span></span><br>
         <span class="segments"><span lang="en">If this parameter is greater than 0, the palettetype parameter must be set to PaletteTypeOptimal and the bitmap parameter must point to a Bitmap object.</span><span lang="fr" style="display: none">Si ce paramètre est supérieur à 0, le paramètre palettetype doit être réglé sur PaletteTypeOptimal et le paramètre bitmap doit pointer sur un objet Bitmap.</span></span></td>
       </tr>
       <tr>
         <td>$bUseTransparentColor</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Boolean value that specifies whether to include the transparent color in the palette.</span><span lang="fr" style="display: none">Valeur booléenne qui spécifie s'il faut inclure la couleur transparente dans la palette.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Boolean value that specifies whether to include the transparent color in the palette.</span><span lang="fr" style="display: none">Valeur booléenne qui spécifie s'il faut inclure la couleur transparente dans la palette.</span></span><br>
         <span class="segments"><span lang="en">Set to TRUE to include the transparent color; otherwise FALSE.</span><span lang="fr" style="display: none">Réglez à TRUE pour inclure la couleur transparente; FALSE sinon.</span></span></td>
       </tr>
       <tr>
         <td>$hBitmap</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Handle of a Bitmap object for which an optimal palette will be created.</span><span lang="fr" style="display: none">Handle de l'objet Bitmap pour lequel une palette optimale sera créée.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Handle of a Bitmap object for which an optimal palette will be created.</span><span lang="fr" style="display: none">Handle de l'objet Bitmap pour lequel une palette optimale sera créée.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -78,7 +78,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -98,7 +98,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

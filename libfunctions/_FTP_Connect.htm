@@ -43,22 +43,22 @@
       </tr>
       <tr>
         <td>$iPassive</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Passive mode.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Passive mode.</td>
       </tr>
       <tr>
         <td>$iServerPort</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Server port ( 0 is default (21) )</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Server port ( 0 is default (21) )</td>
       </tr>
       <tr>
         <td>$iService</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> This can be one of the following constant values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> This can be one of the following constant values:<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_SERVICE_FTP - FTP service.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_SERVICE_GOPHER - Gopher service. Available only on Windows XP, Windows Server 2003 R2 or earlier.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_SERVICE_HTTP - HTTP service.</td>
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Special flags.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Special flags.<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_PASSIVE<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_TRANSFER_ASCII<br>
         &nbsp;&nbsp;&nbsp; $INTERNET_FLAG_TRANSFER_BINARY</td>
@@ -66,7 +66,7 @@
       <tr>
         <td>$fuContext</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> A variable that contains the application-defined value that associates this search with any application data.<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> A variable that contains the application-defined value that associates this search with any application data.<br>
           This is only used if the application has already called <a href="_FTP_SetStatusCallback.htm">_FTP_SetStatusCallback()</a> to set up a status callback function.
         </td>
       </tr>
@@ -97,7 +97,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -117,7 +117,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

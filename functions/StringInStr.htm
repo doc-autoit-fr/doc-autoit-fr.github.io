@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>casesense</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Flag to indicate if the operations should be case sensitive.</span><span lang="fr" style="display: none">Paramètre pour indiquer si les opérations doivent être sensibles à la casse.</span></span><br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSE (0) = not case sensitive, using the user's locale (default)<br>
         &nbsp;&nbsp;&nbsp; $STR_CASESENSE (1) = case sensitive<br>
         &nbsp;&nbsp;&nbsp; $STR_NOCASESENSEBASIC (2) = not case sensitive, using a basic/faster comparison<br>
@@ -41,15 +41,15 @@
       </tr>
       <tr>
         <td>occurrence</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Which occurrence of the substring to find in the string.</span><span lang="fr" style="display: none">Quelle occurrence de la sous-chaîne à trouver dans la chaîne.</span></span> <span class="segments"><span lang="en">Use a negative occurrence to search from the right side.</span><span lang="fr" style="display: none">Utiliser une occurrence négative pour rechercher à partir de la droite de la chaîne.</span></span> <span class="segments"><span lang="en">The default value is 1 (finds first occurrence).</span><span lang="fr" style="display: none">La valeur par défaut est 1 (trouve la première occurrence).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Which occurrence of the substring to find in the string.</span><span lang="fr" style="display: none">Quelle occurrence de la sous-chaîne à trouver dans la chaîne.</span></span> <span class="segments"><span lang="en">Use a negative occurrence to search from the right side.</span><span lang="fr" style="display: none">Utiliser une occurrence négative pour rechercher à partir de la droite de la chaîne.</span></span> <span class="segments"><span lang="en">The default value is 1 (finds first occurrence).</span><span lang="fr" style="display: none">La valeur par défaut est 1 (trouve la première occurrence).</span></span></td>
       </tr>
       <tr>
         <td>start</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The starting position of the search.</span><span lang="fr" style="display: none">La position de départ de la recherche.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The starting position of the search.</span><span lang="fr" style="display: none">La position de départ de la recherche.</span></span></td>
       </tr>
       <tr>
         <td>count</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The number of characters to search.</span><span lang="fr" style="display: none">Le nombre de caractères à traiter.</span></span> <span class="segments"><span lang="en">This effectively limits the search to a portion of the full string.</span><span lang="fr" style="display: none">Ceci limite la recherche à une partie de la chaîne complète .</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The number of characters to search.</span><span lang="fr" style="display: none">Le nombre de caractères à traiter.</span></span> <span class="segments"><span lang="en">This effectively limits the search to a portion of the full string.</span><span lang="fr" style="display: none">Ceci limite la recherche à une partie de la chaîne complète .</span></span> <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -84,7 +84,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -104,7 +104,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

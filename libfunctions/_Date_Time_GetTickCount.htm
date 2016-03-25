@@ -17,19 +17,19 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_Date_Time_GetTickCount</h1>
-  <p class="funcdesc">Retrieves the number of milliseconds that have elapsed since Windows was started<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Retrieves the number of milliseconds that have elapsed since Windows was started</span><span lang="fr" style="display: none">Récupère le nombre de millisecondes qui se sont écoulées depuis le démarrage de Windows</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _Date_Time_GetTickCount ( )<br></p>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns the number of milliseconds that have elapsed since Windows was started.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns the number of milliseconds that have elapsed since Windows was started.</span><span lang="fr" style="display: none">Retourne le nombre de millisecondes qui se sont écoulées depuis le démarrage de Windows.</span></span><br>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>The elapsed time is stored as a DWORD value. The time will wrap around to zero if Windows is run continuously for 49.7 days.<br></p>
+  <p><span class="segments"><span lang="en">The elapsed time is stored as a DWORD value.</span><span lang="fr" style="display: none">Le temps écoulé est stocké comme une valeur DWORD.</span></span> <span class="segments"><span lang="en">The time will wrap around to zero if Windows is run continuously for 49.7 days.</span><span lang="fr" style="display: none">Le temps sera remis à zéro si Windows est exécuté en continu pendant 49,7 jours.</span></span><br></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
   <script type="text/javascript">
   function copyToClipboard(section) {
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -49,7 +49,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -69,8 +69,8 @@
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUICtrlSetFont.htm"><span class="S4">GUICtrlSetFont</span></a><span class="S8">(</span><span class="S9">$g_idMemo</span><span class="S8">,</span><span class="S0"> </span><span class="S3">9</span><span class="S8">,</span><span class="S0"> </span><span class="S3">400</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Courier New"</span><span class="S8">)</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/GUISetState.htm"><span class="S4">GUISetState</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@SW_SHOW"><span class="S6">@SW_SHOW</span></a><span class="S8">)</span>
 
-<span class="S0">    </span><span class="S1">; Get tick count</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Tick count .: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetTickCount.htm"><span class="S15">_Date_Time_GetTickCount</span></a><span class="S8">())</span>
+<span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Get tick count</span><span lang="fr" style="display: none">Récupère le nombre de cycles</span></span></span></span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Tick count .:</span><span lang="fr" style="display: none">Nombre de cycles . :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_Date_Time_GetTickCount.htm"><span class="S15">_Date_Time_GetTickCount</span></a><span class="S8">())</span>
 
 <span class="S0">    </span><span class="S1">; <span><span class="segments"><span lang="en">Loop until the user exits.</span><span lang="fr" style="display: none">Boucle jusqu'à ce que l'utilisateur quitte.</span></span></span></span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../keywords/Do.htm"><span class="S5">Do</span></a>

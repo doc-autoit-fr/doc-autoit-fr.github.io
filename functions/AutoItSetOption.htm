@@ -28,9 +28,7 @@
       </tr>
       <tr>
         <td>param</td>
-        <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The value to assign to the option.</span><span lang="fr" style="display: none">La valeur à assigner à l'option.</span></span> <span class="segments"><span lang="en">The type and meaning vary by option.</span><span lang="fr" style="display: none">Le type et la signification varient selon l'option.</span></span> <span class="segments"><span lang="en">See remarks below.</span><span lang="fr" style="display: none">Voir remarques ci-dessous.</span></span> <span class="segments"><span lang="en">If the param is not provided, then the function just returns the value already assigned to the option.</span><span lang="fr" style="display: none">Si le paramètre n'est pas indiqué, alors la fonction retourne la valeur qui lui est assignée.</span></span> <span class="segments"><span lang="en">The keyword <a href="../keywords/Default.htm">Default</a> can be used for the parameter to reset the option to its default value.</span><span lang="fr" style="display: none">Le mot clé <a href="../keywords/Default.htm">Default</a> peut être utilisé en paramètre pour réinitialiser la valeur par défaut de l'option.</span></span><a href="../keywords/Default.htm"></a>
-        </td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The value to assign to the option.</span><span lang="fr" style="display: none">La valeur à assigner à l'option.</span></span> <span class="segments"><span lang="en">The type and meaning vary by option.</span><span lang="fr" style="display: none">Le type et la signification varient selon l'option.</span></span> <span class="segments"><span lang="en">See remarks below.</span><span lang="fr" style="display: none">Voir remarques ci-dessous.</span></span> <span class="segments"><span lang="en">If the param is not provided, then the function just returns the value already assigned to the option.</span><span lang="fr" style="display: none">Si le paramètre n'est pas indiqué, alors la fonction retourne la valeur qui lui est assignée.</span></span> <span class="segments"><span lang="en">The keyword <a href="../keywords/Default.htm">Default</a> can be used for the parameter to reset the option to its default value.</span><span lang="fr" style="display: none">Le mot clé <a href="../keywords/Default.htm">Default</a> peut être utilisé en paramètre pour réinitialiser la valeur par défaut de l'option.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -312,7 +310,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -332,7 +330,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

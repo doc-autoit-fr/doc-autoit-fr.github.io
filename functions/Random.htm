@@ -24,15 +24,15 @@
     <tbody>
       <tr>
         <td style="width:15%">Min</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The smallest number to be generated.</span><span lang="fr" style="display: none">Le plus petit nombre qui peut être généré.</span></span> <span class="segments"><span lang="en">The default is 0.</span><span lang="fr" style="display: none">Par défaut c'est 0.</span></span></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The smallest number to be generated.</span><span lang="fr" style="display: none">Le plus petit nombre qui peut être généré.</span></span> <span class="segments"><span lang="en">The default is 0.</span><span lang="fr" style="display: none">Par défaut c'est 0.</span></span></td>
       </tr>
       <tr>
         <td>Max</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The largest number to be generated.</span><span lang="fr" style="display: none">Le plus grand nombre qui peut être généré.</span></span> <span class="segments"><span lang="en">The default is 1.</span><span lang="fr" style="display: none">La valeur par défaut est 1.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The largest number to be generated.</span><span lang="fr" style="display: none">Le plus grand nombre qui peut être généré.</span></span> <span class="segments"><span lang="en">The default is 1.</span><span lang="fr" style="display: none">La valeur par défaut est 1.</span></span></td>
       </tr>
       <tr>
         <td>Flag</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If this is set to 1 then an integer result will be returned.</span><span lang="fr" style="display: none">S'il est mis à 1, un résultat de type 'integer' sera retourné.</span></span> <span class="segments"><span lang="en">Default is a floating point number.</span><span lang="fr" style="display: none">Par défaut c'est un nombre de type 'float'.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If this is set to 1 then an integer result will be returned.</span><span lang="fr" style="display: none">S'il est mis à 1, un résultat de type 'integer' sera retourné.</span></span> <span class="segments"><span lang="en">Default is a floating point number.</span><span lang="fr" style="display: none">Par défaut c'est un nombre de type 'float'.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -69,7 +69,7 @@
   <br>
   <span class="segments"><span lang="en">Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</span><span lang="fr" style="display: none">La redistribution et l'utilisation des codes source et binaire, avec ou sans modification, sont autorisées à condition que les conditions suivantes soient remplies :</span></span><br>
   <br>
-  <span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> <span class="segments"><span lang="en">Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span><span lang="fr" style="display: none">Les redistributions du code source doivent conserver la notice de copyright ci-dessus, cette liste de conditions et la décharge suivante.</span></span><br>
+  1. <span class="segments"><span lang="en">Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</span><span lang="fr" style="display: none">Les redistributions du code source doivent conserver la notice de copyright ci-dessus, cette liste de conditions et la décharge suivante.</span></span><br>
   <br>
   2. <span class="segments"><span lang="en">Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</span><span lang="fr" style="display: none">Les redistributions sous forme binaire doivent reproduire la notice de copyright ci-dessus, cette liste de conditions et la décharge suivante dans la documentation et/ou d'autres documents fournis avec la distribution.</span></span><br>
   <br>
@@ -84,7 +84,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -105,7 +105,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -143,7 +143,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext2\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -178,7 +178,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext3\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -217,7 +217,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext4\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

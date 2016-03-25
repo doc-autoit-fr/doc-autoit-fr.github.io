@@ -34,7 +34,7 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The access to the object. Access can be read, write, or both. If this parameter is 0 (Default), the<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The access to the object. Access can be read, write, or both. If this parameter is 0 (Default), the<br>
         application can query file and device attributes without accessing a device.<br>
         $GENERIC_READ<br>
         $GENERIC_WRITE<br>
@@ -42,7 +42,7 @@
       </tr>
       <tr>
         <td>$iShare</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The sharing mode of an object, which can be read, write, both, or none. If this parameter is 0 (Default) and<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The sharing mode of an object, which can be read, write, both, or none. If this parameter is 0 (Default) and<br>
         function succeeds, the object cannot be shared and cannot be opened again until the handle is closed.<br>
         $FILE_SHARE_DELETE<br>
         $FILE_SHARE_READ<br>
@@ -50,17 +50,19 @@
       </tr>
       <tr>
         <td>$iFlags</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file flags. When <strong>_WinAPI_OpenFileById()</strong> opens a file, it combines the file flags with existing<br>
-        file attributes, and ignores any supplied file attributes. This parameter can include any<br>
-        combination of the following values.<br>
-        $FILE_FLAG_BACKUP_SEMANTICS<br>
-        $FILE_FLAG_NO_BUFFERING<br>
-        $FILE_FLAG_OPEN_NO_RECALL<br>
-        $FILE_FLAG_OPEN_REPARSE_POINT<br>
-        $FILE_FLAG_OVERLAPPED<br>
-        $FILE_FLAG_RANDOM_ACCESS<br>
-        $FILE_FLAG_SEQUENTIAL_SCAN<br>
-        $FILE_FLAG_WRITE_THROUGH</td>
+        <td>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The file flags. When <a href="_WinAPI_OpenFileById.htm">_WinAPI_OpenFileById()</a> opens a file, it combines the file flags with existing<br>
+          file attributes, and ignores any supplied file attributes. This parameter can include any<br>
+          combination of the following values.<br>
+          $FILE_FLAG_BACKUP_SEMANTICS<br>
+          $FILE_FLAG_NO_BUFFERING<br>
+          $FILE_FLAG_OPEN_NO_RECALL<br>
+          $FILE_FLAG_OPEN_REPARSE_POINT<br>
+          $FILE_FLAG_OVERLAPPED<br>
+          $FILE_FLAG_RANDOM_ACCESS<br>
+          $FILE_FLAG_SEQUENTIAL_SCAN<br>
+          $FILE_FLAG_WRITE_THROUGH
+        </td>
       </tr>
     </tbody>
   </table>
@@ -95,7 +97,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -115,7 +117,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

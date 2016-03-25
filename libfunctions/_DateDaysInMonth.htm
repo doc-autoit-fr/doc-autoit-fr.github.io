@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateDaysInMonth</h1>
-  <p class="funcdesc">Returns the number of days in a month, based on the specified month and year<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the number of days in a month, based on the specified month and year</span><span lang="fr" style="display: none">Retourne le nombre de jours dans un mois, basé sur le mois spécifié et l'année</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateDaysInMonth ( $iYear, $iMonthNum )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td style="width:15%">$iYear</td>
-        <td style="width:85%">4-digit year.</td>
+        <td style="width:85%"><span class="segments"><span lang="en">4-digit year.</span><span lang="fr" style="display: none">Année sur 4 chiffres.</span></span></td>
       </tr>
       <tr>
         <td>$iMonthNum</td>
-        <td>Month number (1 = January, 12 = December).</td>
+        <td><span class="segments"><span lang="en">Month number (1 = January, 12 = December).</span><span lang="fr" style="display: none">Numéro du mois (1 = janvier, 12 = décembre).</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -38,7 +38,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">the number of days in the month.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the number of days in the month.</span><span lang="fr" style="display: none">le nombre de jours dans le mois.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -46,7 +46,7 @@
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - Invalid month number or year.</td>
+        <td><span class="segments"><span lang="en">1 - Invalid month number or year.</span><span lang="fr" style="display: none">1 - Numéro du mois ou année non valide.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -58,7 +58,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -78,7 +78,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -87,7 +87,7 @@
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iDays</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateDaysInMonth.htm"><span class="S15">_DateDaysInMonth</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">)</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Days in Month"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"This month has "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/String.htm"><span class="S4">String</span></a><span class="S8">(</span><span class="S9">$iDays</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" days in it."</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Days in Month</span><span lang="fr" style="display: none">Les jours dans le mois</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">This month has</span><span lang="fr" style="display: none">Ce mois a</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../functions/String.htm"><span class="S4">String</span></a><span class="S8">(</span><span class="S9">$iDays</span><span class="S8">)</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" <span><span class="segments"><span lang="en">days in it.</span><span lang="fr" style="display: none">jours.</span></span></span>"</span><span class="S8">)</span>
 </span>
 </pre>
       </div>

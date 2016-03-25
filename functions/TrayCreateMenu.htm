@@ -28,11 +28,11 @@
       </tr>
       <tr>
         <td>menuID</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">If defined, allows you to create a submenu in the referenced menu.</span><span lang="fr" style="display: none">Si défini, vous permet de créer un sous-menu dans le menu référencé.</span></span> <span class="segments"><span lang="en">Default -1 (refers to first level menu).</span><span lang="fr" style="display: none">Par défaut, -1 (se réfère au premier niveau du menu).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">If defined, allows you to create a submenu in the referenced menu.</span><span lang="fr" style="display: none">Si défini, vous permet de créer un sous-menu dans le menu référencé.</span></span> <span class="segments"><span lang="en">Default -1 (refers to first level menu).</span><span lang="fr" style="display: none">Par défaut, -1 (se réfère au premier niveau du menu).</span></span></td>
       </tr>
       <tr>
         <td>menuentry</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Allows you to define the entry number to be created.</span><span lang="fr" style="display: none">Vous permet de définir le nombre d'entrées à créer.</span></span> <span class="segments"><span lang="en">The entries are numbered starting at 0.</span><span lang="fr" style="display: none">Les entrées sont numérotées à partir de 0.</span></span> <span class="segments"><span lang="en">Default -1 (at the bottom).</span><span lang="fr" style="display: none">Par défaut -1 (en bas).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Allows you to define the entry number to be created.</span><span lang="fr" style="display: none">Vous permet de définir le nombre d'entrées à créer.</span></span> <span class="segments"><span lang="en">The entries are numbered starting at 0.</span><span lang="fr" style="display: none">Les entrées sont numérotées à partir de 0.</span></span> <span class="segments"><span lang="en">Default -1 (at the bottom).</span><span lang="fr" style="display: none">Par défaut -1 (en bas).</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -57,7 +57,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -77,7 +77,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

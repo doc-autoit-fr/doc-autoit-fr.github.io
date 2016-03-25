@@ -29,11 +29,11 @@
       </tr>
       <tr>
         <td>$hMatrix</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pointer to a Matrix object that specifies a transformation to be applied to this path before the bounding rectangle is calculated.</span><span lang="fr" style="display: none">Handle de l'objet Matrix qui spécifie une transformation à appliquer à ce GraphicsPath avant que le rectangle de délimitation soit calculé.</span></span> <span class="segments"><span lang="en">The path is not permanently transformed</span><span lang="fr" style="display: none">Le chemin ne se transforme pas en permanence</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Pointer to a Matrix object that specifies a transformation to be applied to this path before the bounding rectangle is calculated.</span><span lang="fr" style="display: none">Handle de l'objet Matrix qui spécifie une transformation à appliquer à ce GraphicsPath avant que le rectangle de délimitation soit calculé.</span></span> <span class="segments"><span lang="en">The path is not permanently transformed</span><span lang="fr" style="display: none">Le chemin ne se transforme pas en permanence</span></span></td>
       </tr>
       <tr>
         <td>$hPen</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pointer to a Pen object that influences the size of the bounding rectangle.</span><span lang="fr" style="display: none">Handle de l'objet Pen qui influe sur la taille du rectangle de délimitation.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Pointer to a Pen object that influences the size of the bounding rectangle.</span><span lang="fr" style="display: none">Handle de l'objet Pen qui influe sur la taille du rectangle de délimitation.</span></span><br>
         <span class="segments"><span lang="en">The bounding rectangle bounds will be large enough to enclose the path when the path is drawn with the specified pen.</span><span lang="fr" style="display: none">Les limites du rectangle délimitant seront suffisamment grandes pour englober le GraphicsPath quand il sera dessiné avec le crayon spécifié.</span></span></td>
       </tr>
     </tbody>
@@ -63,7 +63,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -83,7 +83,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

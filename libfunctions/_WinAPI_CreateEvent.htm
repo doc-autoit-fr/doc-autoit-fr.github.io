@@ -25,23 +25,23 @@
     <tbody>
       <tr>
         <td style="width:15%">$tAttributes</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> a $tagSECURITY_ATTRIBUTES structure or a pointer to it. If 0, the handle cannot be inherited by child processes.<br>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> a $tagSECURITY_ATTRIBUTES structure or a pointer to it. If 0, the handle cannot be inherited by child processes.<br>
         The Descriptor member of the structure specifies a security descriptor for the new event.<br>
         If $tAttributes is 0, the event gets a default security descriptor.<br>
         The ACLs in the default security descriptor for an event come from the primary or impersonation token of the creator.</td>
       </tr>
       <tr>
         <td>$bManualReset</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, the function creates a manual-reset event object, which requires the use of the ResetEvent function to set the event state to nonsignaled.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> If True, the function creates a manual-reset event object, which requires the use of the ResetEvent function to set the event state to nonsignaled.<br>
         If False, the function creates an auto-reset event object and system automatically resets the event state to nonsignaled after a single waiting thread has been released.</td>
       </tr>
       <tr>
         <td>$bInitialState</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, the initial state of the event object is signaled; otherwise, it is nonsignaled</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> If True, the initial state of the event object is signaled; otherwise, it is nonsignaled</td>
       </tr>
       <tr>
         <td>$sName</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The name of the event object. Name comparison is case sensitive.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The name of the event object. Name comparison is case sensitive.<br>
         If $sName matches the name of an existing named event object, this function requests the EVENT_ALL_ACCESS access right.<br>
         In this case the $bManualReset and $bInitialState parameters are ignored because they have already been set by the creating process.<br>
         If the $tAttributes parameter is not 0, it determines whether the handle can be inherited, but its security-descriptor member is ignored.<br>
@@ -75,7 +75,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -95,7 +95,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

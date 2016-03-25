@@ -29,7 +29,7 @@
       </tr>
       <tr>
         <td>$sLocation</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> a string consisting of any logical combination of:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> a string consisting of any logical combination of:<br>
         &nbsp;&nbsp;&nbsp; l - left border<br>
         &nbsp;&nbsp;&nbsp; r - right border<br>
         &nbsp;&nbsp;&nbsp; t - top border<br>
@@ -40,7 +40,7 @@
       </tr>
       <tr>
         <td>$vLineStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> line style - one of:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> line style - one of:<br>
         &nbsp;&nbsp;&nbsp; "none" - no line (initial value)<br>
         &nbsp;&nbsp;&nbsp; .75 - 3/4 point<br>
         &nbsp;&nbsp;&nbsp; 1.5 - 1 1/2 points<br>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td>$sColor</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> one of:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> one of:<br>
         &nbsp;&nbsp;&nbsp; "aut" - autocolor<br>
         &nbsp;&nbsp;&nbsp; "blk" - black (initial value)<br>
         &nbsp;&nbsp;&nbsp; "blu" - blue<br>
@@ -76,7 +76,7 @@
       </tr>
       <tr>
         <td>$iSpace</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> space between the border and the text (in space units) ( (initial value): 0)</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> space between the border and the text (in space units) ( (initial value): 0)</td>
       </tr>
     </tbody>
   </table>
@@ -120,7 +120,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -140,7 +140,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -178,7 +178,7 @@
 <span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S3">1</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_AppendText.htm"><span class="S15">_GUICtrlRichEdit_AppendText</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@CRLF"><span class="S6">@CRLF</span></a><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"Second paragraph"</span><span class="S8">)</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetParaBorder.htm"><span class="S15">_GUICtrlRichEdit_SetParaBorder</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"o"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">3</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"mag"</span><span class="S8">,</span><span class="S0"> </span><span class="S3">0.25</span><span class="S8">)</span>
-<span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">1.</span><span lang="fr" style="display: none">Retourne 1 si la fenêtre existe.</span></span> Second paragraph: with border (should show in Word)</span>"</span><span class="S8">)</span>
+<span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"1. Second paragraph: with border (should show in Word)"</span><span class="S8">)</span>
 <span class="S0">                    </span><a class="codeSnippetLink" href="../keywords/Switch.htm"><span class="S5">Case</span></a><span class="S0"> </span><span class="S3">2</span>
 <span class="S0">                        </span><a class="codeSnippetLink" href="../libfunctions/_GUICtrlRichEdit_SetSel.htm"><span class="S15">_GUICtrlRichEdit_SetSel</span></a><span class="S8">(</span><span class="S9">$g_hRichEdit</span><span class="S8">,</span><span class="S0"> </span><span class="S3">10</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S3">1</span><span class="S8">)</span>
 <span class="S0">                        Report</span><span class="S8">(</span><span class="S7">"2. Settings of first paragraph in selection"</span><span class="S8">)</span>

@@ -24,11 +24,11 @@
     <tbody>
       <tr>
         <td style="width:15%">handle</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">A handle return from <strong>InetGet()</strong>.</span><span lang="fr" style="display: none">Un handle retourné par <strong>InetGet()</strong>.</span></span></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">A handle return from <a href="InetGet.htm">InetGet()</a>.</span><span lang="fr" style="display: none">Un handle retourné par <a href="InetGet.htm">InetGet()</a>.</span></span></td>
       </tr>
       <tr>
         <td>index</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The index for the data to retrieve.</span><span lang="fr" style="display: none">L'index pour les données à récupérer.</span></span> <span class="segments"><span lang="en">If this value is -1 an array containing all of the below data will be returned.</span><span lang="fr" style="display: none">Si cette valeur est -1, un tableau contenant toutes les données ci-dessous sera retourné.</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The index for the data to retrieve.</span><span lang="fr" style="display: none">L'index pour les données à récupérer.</span></span> <span class="segments"><span lang="en">If this value is -1 an array containing all of the below data will be returned.</span><span lang="fr" style="display: none">Si cette valeur est -1, un tableau contenant toutes les données ci-dessous sera retourné.</span></span><br>
         &nbsp;&nbsp;&nbsp; $INET_DOWNLOADREAD (0) - Bytes read so far (this is updated while the download progresses).<br>
         &nbsp;&nbsp;&nbsp; $INET_DOWNLOADSIZE (1) - The size of the download in bytes (this may not always be present).<br>
         &nbsp;&nbsp;&nbsp; $INET_DOWNLOADCOMPLETE (2) - Set to True if the download is complete, False if the download is still ongoing.<br>
@@ -65,7 +65,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -85,7 +85,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

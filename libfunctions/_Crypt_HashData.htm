@@ -33,11 +33,11 @@
       </tr>
       <tr>
         <td>$bFinal</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">False if this is only a segment of the full data, also makes the function return a hash object instead of hash</span><span lang="fr" style="display: none">False si c'est seulement un segment de données complet, et fait que la fonction retourne un objet de hachage au lieu d'un hachage</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">False if this is only a segment of the full data, also makes the function return a hash object instead of hash</span><span lang="fr" style="display: none">False si c'est seulement un segment de données complet, et fait que la fonction retourne un objet de hachage au lieu d'un hachage</span></span></td>
       </tr>
       <tr>
         <td>$hCryptHash</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Hash object returned from a previous call to <strong>_Crypt_HashData()</strong></span><span lang="fr" style="display: none">Objet de hachage retourné par un précédent appel à <strong>_Crypt_HashData()</strong></span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Hash object returned from a previous call to <a href="_Crypt_HashData.htm">_Crypt_HashData()</a></span><span lang="fr" style="display: none">Objet de hachage retourné par un précédent appel à <a href="_Crypt_HashData.htm">_Crypt_HashData()</a></span></span></td>
       </tr>
     </tbody>
   </table>
@@ -74,7 +74,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -94,7 +94,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

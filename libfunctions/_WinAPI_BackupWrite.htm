@@ -55,7 +55,7 @@
       </tr>
       <tr>
         <td>$bSecurity</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Specifies whether the function will restore the access-control list (ACL) data, valid values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Specifies whether the function will restore the access-control list (ACL) data, valid values:<br>
         &nbsp;&nbsp;&nbsp; True - The ACL data will be restored.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Furthermore, you need to specify $WRITE_OWNER and $WRITE_DAC access when opening the file or directory handle.<br>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; If the handle does not have those access rights, the operating system denies access to the ACL data, and ACL data restoration will not occur.<br>
@@ -92,7 +92,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -112,7 +112,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

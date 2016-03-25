@@ -30,9 +30,7 @@
       </tr>
       <tr>
         <td>text</td>
-        <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The text of the window to get the text.</span><span lang="fr" style="display: none">Le texte de la fenêtre à traiter.</span></span> <span class="segments"><span lang="en">Default is an empty string.</span><span lang="fr" style="display: none">La valeur par défaut est une chaîne vide.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span><a href="../intro/windowsbasic.htm#specialtext"></a>
-        </td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The text of the window to get the text.</span><span lang="fr" style="display: none">Le texte de la fenêtre à traiter.</span></span> <span class="segments"><span lang="en">Default is an empty string.</span><span lang="fr" style="display: none">La valeur par défaut est une chaîne vide.</span></span> <span class="segments"><span lang="en">See <a href="../intro/windowsbasic.htm#specialtext">Text special definition</a>.</span><span lang="fr" style="display: none">Consultez <a href="../intro/windowsbasic.htm#specialtext">Définition spéciale de Texte</a> .</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -61,7 +59,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -81,7 +79,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

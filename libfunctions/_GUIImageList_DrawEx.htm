@@ -45,29 +45,29 @@
       </tr>
       <tr>
         <td>$iDX</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The width of the portion of the image to draw relative to the upper-left corner of the image.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The width of the portion of the image to draw relative to the upper-left corner of the image.<br>
         If $iDX and $iDY are zero, the function draws the entire image. The function does not ensure that the parameters are valid.</td>
       </tr>
       <tr>
         <td>$iDY</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The height of the portion of the image to draw, relative to the upper-left corner of the image.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The height of the portion of the image to draw, relative to the upper-left corner of the image.<br>
         If $iDX and $iDY are zero, the function draws the entire image. The function does not ensure that the parameters are valid.</td>
       </tr>
       <tr>
         <td>$iRGBBk</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The background color of the image. This parameter can be an application-defined RGB value or one of the following values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The background color of the image. This parameter can be an application-defined RGB value or one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $CLR_NONE - No background color. The image is drawn transparently.<br>
         &nbsp;&nbsp;&nbsp; $CLR_DEFAULT - The default background color. The image is drawn using the background color of the image list.</td>
       </tr>
       <tr>
         <td>$iRGBFg</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The foreground color of the image. This parameter can be an application-defined RGB value or one of the following values:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The foreground color of the image. This parameter can be an application-defined RGB value or one of the following values:<br>
         &nbsp;&nbsp;&nbsp; $CLR_NONE - No blend color. The image is blended with the color of the destination device context.<br>
         &nbsp;&nbsp;&nbsp; $CLR_DEFAULT - The default foreground color. The image is drawn using the system highlight color as the foreground color.</td>
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Drawing style and overlay image:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Drawing style and overlay image:<br>
         &nbsp;&nbsp;&nbsp; 1 - Draws the image transparently using the mask, regardless of the background color<br>
         &nbsp;&nbsp;&nbsp; 2 - Draws the image, blending 25 percent with the system highlight color<br>
         &nbsp;&nbsp;&nbsp; 4 - Draws the image, blending 50 percent with the system highlight color<br>
@@ -96,7 +96,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -116,7 +116,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

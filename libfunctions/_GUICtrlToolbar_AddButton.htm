@@ -41,11 +41,11 @@
       </tr>
       <tr>
         <td>$iString</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> 0-based index of the button string that was set with AddString</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> 0-based index of the button string that was set with AddString</td>
       </tr>
       <tr>
         <td>$iStyle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Button style. <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Button style. <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $BTNS_AUTOSIZE - The toolbar control should not assign the standard width to the button<br>
         &nbsp;&nbsp;&nbsp; $BTNS_BUTTON - Standard button (Default)<br>
         &nbsp;&nbsp;&nbsp; $BTNS_CHECK - Toggles between the pressed and nonpressed<br>
@@ -59,7 +59,7 @@
       </tr>
       <tr>
         <td>$iState</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Button state. <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Button state. <span class="segments"><span lang="en">Can be a combination of the following:</span><span lang="fr" style="display: none">Peut-être une combinaison des éléments suivants:</span></span><br>
         &nbsp;&nbsp;&nbsp; $TBSTATE_CHECKED - The button has the $TBSTYLE_CHECK style and is being clicked<br>
         &nbsp;&nbsp;&nbsp; $TBSTATE_PRESSED - The button is being clicked<br>
         &nbsp;&nbsp;&nbsp; $TBSTATE_ENABLED - The button accepts user input<br>
@@ -71,7 +71,7 @@
       </tr>
       <tr>
         <td>$iParam</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Application-defined value</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Application-defined value</td>
       </tr>
     </tbody>
   </table>
@@ -96,7 +96,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -116,7 +116,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -24,11 +24,11 @@
     <tbody>
       <tr>
         <td style="width:15%">cursorID</td>
-        <td style="width:85%"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Cursor Id (See Remarks).</span><span lang="fr" style="display: none">Id du curseur (Voir Remarques).</span></span></td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Cursor Id (See Remarks).</span><span lang="fr" style="display: none">Id du curseur (Voir Remarques).</span></span></td>
       </tr>
       <tr>
         <td>override</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Force the requested mouse cursor even when over controls (see below).</span><span lang="fr" style="display: none">Force le curseur souris requis, même lorsqu'il se trouve sur d'autres contrôles (voir ci-dessous ).</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Force the requested mouse cursor even when over controls (see below).</span><span lang="fr" style="display: none">Force le curseur souris requis, même lorsqu'il se trouve sur d'autres contrôles (voir ci-dessous ).</span></span><br>
         &nbsp;&nbsp;&nbsp; $GUI_CURSOR_NOOVERRIDE (0) = (default) Don't override a control's default mouse cursor.<br>
         &nbsp;&nbsp;&nbsp; $GUI_CURSOR_OVERRIDE (1) = override control's default mouse cursor.<br>
         <br>
@@ -36,7 +36,7 @@
       </tr>
       <tr>
         <td>winhandle</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Windows handle as returned by <strong>GUICreate()</strong> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <strong>GUICreate()</strong> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Windows handle as returned by <a href="GUICreate.htm">GUICreate()</a> (default is the previously used window).</span><span lang="fr" style="display: none">Handle Windows retourné par <a href="GUICreate.htm">GUICreate()</a> (par défaut, la fenêtre précédemment utilisée ).</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -56,7 +56,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -76,7 +76,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

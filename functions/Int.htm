@@ -28,8 +28,8 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Defines behavior.</span><span lang="fr" style="display: none">Définit le comportement.</span></span><br>
-        <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Defines behavior.</span><span lang="fr" style="display: none">Définit le comportement.</span></span><br>
+        <span class="segments"><span lang="en">Can be one of the following:</span><span lang="fr" style="display: none">Peut être un des suivants&nbsp;:</span></span><br>
         &nbsp;&nbsp;&nbsp; $NUMBER_AUTO (0) = (default) the result is auto-sized integer. <span class="segments"><span lang="en">See remarks.</span><span lang="fr" style="display: none">Voir remarques.</span></span><br>
         &nbsp;&nbsp;&nbsp; $NUMBER_32BIT (1) = string is interpreted as a 32bit integer<br>
         &nbsp;&nbsp;&nbsp; $NUMBER_64BIT (2) = string is interpreted as a 64bit integer<br>
@@ -52,7 +52,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -72,7 +72,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

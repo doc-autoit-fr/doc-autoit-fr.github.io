@@ -47,7 +47,7 @@
       <tr>
         <td>$iTimeoutMS</td>
         <td>
-          <strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The operation timeout in MILISECONDS.<br>
+          <span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The operation timeout in MILISECONDS.<br>
           This is mostly important for QUERIES only.<br>
           If it is not specified the last set timeout will be used. If it was never set before the default timeout (which depends on the VISA implementation) will be used.<br>
           Timeouts can also be set separatelly with the <a href="_viSetTimeout.htm">_viSetTimeout()</a> function.<br>
@@ -56,7 +56,7 @@
       </tr>
       <tr>
         <td>$sMode</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Control the mode in which the VISA viPrintf is called when $sCommand is not a query.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Control the mode in which the VISA viPrintf is called when $sCommand is not a query.<br>
         Default is @LF, which means "attach @LF mode".<br>
         Some instruments and in particular many GPIB cards do not honor the terminator character attribute in those cases an @LF terminator needs to be added.<br>
         As this is the most common case, by default the mode is set to @LF, which appends @LF to the SCPI command you can also set this mode to @CR and @CRLF if your card uses those terminators.<br>
@@ -165,7 +165,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -185,7 +185,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

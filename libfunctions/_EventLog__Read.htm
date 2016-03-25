@@ -29,16 +29,16 @@
       </tr>
       <tr>
         <td>$bRead</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, operation proceeds sequentially from the last call to this function using this handle.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> If True, operation proceeds sequentially from the last call to this function using this handle.<br>
         If False, the read will operation proceeds from the record specified by the $iOffset parameter.</td>
       </tr>
       <tr>
         <td>$bForward</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> If True, the log is read in date order. If False, the log is read in reverse date order.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> If True, the log is read in date order. If False, the log is read in reverse date order.</td>
       </tr>
       <tr>
         <td>$iOffset</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The number of the event record at which the read operation should start.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The number of the event record at which the read operation should start.<br>
         This parameter is ignored if $bRead is True.</td>
       </tr>
     </tbody>
@@ -87,7 +87,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -107,7 +107,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
@@ -134,7 +134,7 @@
 <span class="S0">    </span><span class="S1">; $hEventLog = _EventLog__Open("", "System")</span>
 <span class="S0">    </span><span class="S1">; $aEvent = _EventLog__Read($hEventLog)</span>
 <span class="S0">    </span><span class="S1">; $aEvent = _EventLog__Read($hEventLog, True, False)</span>
-<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Result ............: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">0</span><span class="S8">])</span>
+<span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"<span><span class="segments"><span lang="en">Result ............:</span><span lang="fr" style="display: none">Résultat..................... :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">0</span><span class="S8">])</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Record number .....: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">1</span><span class="S8">])</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Submitted .........: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">2</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">3</span><span class="S8">])</span>
 <span class="S0">    MemoWrite</span><span class="S8">(</span><span class="S7">"Generated .........: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">4</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">" "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$aEvent</span><span class="S8">[</span><span class="S3">5</span><span class="S8">])</span>

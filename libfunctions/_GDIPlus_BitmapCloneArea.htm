@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td>$iFormat</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">Pixel format for the new bitmap:</span><span lang="fr" style="display: none">Format de pixel pour le nouveau Bitmap:</span></span><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Pixel format for the new bitmap:</span><span lang="fr" style="display: none">Format de pixel pour le nouveau Bitmap:</span></span><br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF01INDEXED = 1 bit per pixel, indexed<br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF04INDEXED = 4 bits per pixel, indexed<br>
         &nbsp;&nbsp;&nbsp; $GDIP_PXF08INDEXED = 8 bits per pixel, indexed<br>
@@ -88,7 +88,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -108,7 +108,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

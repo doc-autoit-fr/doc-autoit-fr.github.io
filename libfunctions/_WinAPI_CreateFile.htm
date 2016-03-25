@@ -38,21 +38,21 @@
       </tr>
       <tr>
         <td>$iAccess</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Access to the object:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Access to the object:<br>
         &nbsp;&nbsp;&nbsp; 1 - Execute<br>
         &nbsp;&nbsp;&nbsp; 2 - Read<br>
         &nbsp;&nbsp;&nbsp; 4 - Write</td>
       </tr>
       <tr>
         <td>$iShare</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> Sharing mode of an object:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Sharing mode of an object:<br>
         &nbsp;&nbsp;&nbsp; 1 - Delete<br>
         &nbsp;&nbsp;&nbsp; 2 - Read<br>
         &nbsp;&nbsp;&nbsp; 4 - Write</td>
       </tr>
       <tr>
         <td>$iAttributes</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The file attributes:<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The file attributes:<br>
         &nbsp;&nbsp;&nbsp; 1 - File should be archived<br>
         &nbsp;&nbsp;&nbsp; 2 - File is hidden<br>
         &nbsp;&nbsp;&nbsp; 4 - File is read only<br>
@@ -60,7 +60,7 @@
       </tr>
       <tr>
         <td>$tSecurity</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> a $tagSECURITY_ATTRIBUTES structure or a pointer to it that determines if the returned handle can be inherited by child processes.<br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> a $tagSECURITY_ATTRIBUTES structure or a pointer to it that determines if the returned handle can be inherited by child processes.<br>
         If $tSecurity is 0, the handle cannot be inherited.</td>
       </tr>
     </tbody>
@@ -90,7 +90,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -110,7 +110,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>

@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>flag</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong><br>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span><br>
         &nbsp;&nbsp;&nbsp; $FSF_CREATEBUTTON (1) = Show Create Folder Button (XP only)<br>
         &nbsp;&nbsp;&nbsp; $FSF_NEWDIALOG (2) = Use New Dialog Style (XP only)<br>
         &nbsp;&nbsp;&nbsp; $FSF_EDITCONTROL (4) = Show Edit Control (XP only)<br>
@@ -41,11 +41,11 @@
       </tr>
       <tr>
         <td>initial dir</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> The full path of the folder you selected/highlighted when displaying dialogue (if it exists in the root folder). <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The full path of the folder you selected/highlighted when displaying dialogue (if it exists in the root folder). <span class="segments"><span lang="en">Default is blank ("").</span><span lang="fr" style="display: none">Par défaut est vide ("").</span></span></td>
       </tr>
       <tr>
         <td>hwnd</td>
-        <td><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The window handle to use as the parent for this dialog.</span><span lang="fr" style="display: none">Le handle de la fenêtre à utiliser comme fenêtre parent pour ce dialogue.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -77,7 +77,7 @@
     if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) { // IE (4+) only
       if (window.clipboardData && clipboardData.setData) {
         clipboardData.setData("text", section + "\r\n");
-        alert("Copied to clipboard");
+        alert("Copié dans le presse-papier");
       }
     }
   }
@@ -97,7 +97,7 @@
         <div class="codeSnippetToolBarText">
           <script type="text/javascript">
           if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) // IE (4+) only
-          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copy to clipboard<\/a>');
+          document.write('<a href="#" id="copy" onclick="copyToClipboard(document.getElementById(\'copytext1\').innerText)">Copier dans le presse-papier<\/a>');
           </script>
         </div>
       </div>
