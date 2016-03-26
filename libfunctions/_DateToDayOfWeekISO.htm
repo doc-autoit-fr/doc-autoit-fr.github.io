@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateToDayOfWeekISO</h1>
-  <p class="funcdesc">Returns the ISO weekday number for a given date<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the ISO weekday number for a given date</span><span lang="fr" style="display: none">Retourne le numéro ISO du jour le la semaine pour une date donnée</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateToDayOfWeekISO ( $iYear, $iMonth, $iDay )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,15 +25,15 @@
     <tbody>
       <tr>
         <td style="width:15%">$iYear</td>
-        <td style="width:85%">A valid year in format YYYY</td>
+        <td style="width:85%"><span class="segments"><span lang="en">A valid year in format YYYY</span><span lang="fr" style="display: none">Une année valide au format AAAA</span></span></td>
       </tr>
       <tr>
         <td>$iMonth</td>
-        <td>A valid month in format MM</td>
+        <td><span class="segments"><span lang="en">A valid month in format MM</span><span lang="fr" style="display: none">Un mois valide au format MM</span></span></td>
       </tr>
       <tr>
         <td>$iDay</td>
-        <td>A valid day in format DD</td>
+        <td><span class="segments"><span lang="en">A valid day in format DD</span><span lang="fr" style="display: none">Un jour valide au format JJ</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -42,7 +42,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">the day of the Week Range is 1 to 7 where 1=Monday.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the day of the Week Range is 1 to 7 where 1=Monday.</span><span lang="fr" style="display: none">le jour de la plage de semaine est de 1 à 7, où 1 = lundi.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -50,7 +50,7 @@
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - Invalid Input Date</td>
+        <td><span class="segments"><span lang="en">1 - Invalid Input Date</span><span lang="fr" style="display: none">1 - Date saisie non valide</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -90,10 +90,10 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<span class="S1">; ISO week day number for a given date 1 = Monday - 7 = Sunday</span>
+<span class="S1">; <span><span class="segments"><span lang="en">ISO week day number for a given date 1 = Monday - 7 = Sunday</span><span lang="fr" style="display: none">Numéro ISO du jour de semaine pour une date donnée, 0 = lundi - 6 = dimanche</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iWeekday</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateToDayOfWeekISO.htm"><span class="S15">_DateToDayOfWeekISO</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a><span class="S8">)</span>
-<span class="S1">; NOT equal to @WDAY</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Today's ISO week day number is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iWeekday</span><span class="S8">)</span>
+<span class="S1">; <span><span class="segments"><span lang="en">NOT equal to @WDAY</span><span lang="fr" style="display: none">PAS égal à @WDAY</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Today's ISO week day number is:</span><span lang="fr" style="display: none">Le numéro ISO du jour de la semaine est :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iWeekday</span><span class="S8">)</span>
 </span>
 </pre>
       </div>

@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateToDayValue</h1>
-  <p class="funcdesc">Returns the day number since noon 4713 BC January 1 for a given Gregorian date<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the day number since noon 4713 BC January 1 for a given Gregorian date</span><span lang="fr" style="display: none">Retourne le numéro du jour depuis le 1ᵉʳ janvier 4713 av. J.-C. pour une date grégorienne donnée</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateToDayValue ( $iYear, $iMonth, $iDay )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,15 +25,15 @@
     <tbody>
       <tr>
         <td style="width:15%">$iYear</td>
-        <td style="width:85%">A valid year in format YYYY</td>
+        <td style="width:85%"><span class="segments"><span lang="en">A valid year in format YYYY</span><span lang="fr" style="display: none">Une année valide au format AAAA</span></span></td>
       </tr>
       <tr>
         <td>$iMonth</td>
-        <td>A valid month in format MM</td>
+        <td><span class="segments"><span lang="en">A valid month in format MM</span><span lang="fr" style="display: none">Un mois valide au format MM</span></span></td>
       </tr>
       <tr>
         <td>$iDay</td>
-        <td>A valid day in format DD</td>
+        <td><span class="segments"><span lang="en">A valid day in format DD</span><span lang="fr" style="display: none">Un jour valide au format JJ</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -42,7 +42,7 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">the Julian date (days since noon 4713 BC January 1)</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the Julian date (days since noon 4713 BC January 1)</span><span lang="fr" style="display: none">la date julienne (jours depuis le 1 4713 BC 1 janvier)</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
@@ -50,7 +50,7 @@
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - Invalid Input Date</td>
+        <td><span class="segments"><span lang="en">1 - Invalid Input Date</span><span lang="fr" style="display: none">1 - Date saisie non valide</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -90,14 +90,14 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<span class="S1">; Julian date of today.</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Julian date of today.</span><span lang="fr" style="display: none">Date julienne d'aujourd'hui.</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$sJulDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateToDayValue.htm"><span class="S15">_DateToDayValue</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@YEAR"><span class="S6">@YEAR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MON"><span class="S6">@MON</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MDAY"><span class="S6">@MDAY</span></a><span class="S8">)</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Todays Julian date is: "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sJulDate</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Todays Julian date is:</span><span lang="fr" style="display: none">La date julienne d'aujourd'hui est :</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$sJulDate</span><span class="S8">)</span>
 
-<span class="S1">; 14 days ago calculation.</span>
+<span class="S1">; <span><span class="segments"><span lang="en">14 days ago calculation.</span><span lang="fr" style="display: none">Calcule des 14 jours avant.</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$Y</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$M</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$D</span>
 <span class="S9">$sJulDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DayValueToDate.htm"><span class="S15">_DayValueToDate</span></a><span class="S8">(</span><span class="S9">$sJulDate</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">-</span></a><span class="S0"> </span><span class="S3">14</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$Y</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$M</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$D</span><span class="S8">)</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"14 days ago:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$M</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$D</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$Y</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">""</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">14 days ago:</span><span lang="fr" style="display: none">14 jours avant :</span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$M</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$D</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"/"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$Y</span><span class="S8">)</span>
 </span>
 </pre>
       </div>

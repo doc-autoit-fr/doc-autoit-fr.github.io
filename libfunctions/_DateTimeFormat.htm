@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_DateTimeFormat</h1>
-  <p class="funcdesc">Returns the date in the PC's regional settings format<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the date in the PC's regional settings format</span><span lang="fr" style="display: none">Retourne la date dans le format des paramètres régionaux du PC</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _DateTimeFormat ( $sDate, $sType )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,18 +25,18 @@
     <tbody>
       <tr>
         <td style="width:15%">$sDate</td>
-        <td style="width:85%">Input date in the format "YYYY/MM/DD[ HH:MM:SS]"</td>
+        <td style="width:85%"><span class="segments"><span lang="en">Input date in the format "YYYY/MM/DD[ HH:MM:SS]"</span><span lang="fr" style="display: none">Date à saisir dans le format «&nbsp;AAAA/MM/JJ[ HH:MM:SS]&nbsp;».</span></span></td>
       </tr>
       <tr>
         <td>$sType</td>
-        <td>one the following:<br>
-        0 - Display a date and/or time. If there is a date part, display it as a short date.<br>
-        If there is a time part, display it as a long time. If present, both parts are displayed.<br>
-        1 - Display a date using the long date format specified in your computer's regional settings.<br>
-        2 - Display a date using the short date format specified in your computer's regional settings.<br>
-        3 - Display a time using the time format specified in your computer's regional settings.<br>
-        4 - Display a time using the 24-hour format (hh:mm).<br>
-        5 - Display a time using the 24-hour format (hh:mm:ss).</td>
+        <td><span class="segments"><span lang="en">one the following:</span><span lang="fr" style="display: none">Un des suivants&nbsp;:</span></span><br>
+        <span class="segments"><span lang="en">0 - Display a date and/or time.</span><span lang="fr" style="display: none">0 - Affiche une date et/ou une heure.</span></span> <span class="segments"><span lang="en">If there is a date part, display it as a short date.</span><span lang="fr" style="display: none">S'il y a une partie de date, l'afficher comme une date courte.</span></span><br>
+        <span class="segments"><span lang="en">If there is a time part, display it as a long time.</span><span lang="fr" style="display: none">S'il y a une partie d'une heure, l'afficher comme une heure longue.</span></span> <span class="segments"><span lang="en">If present, both parts are displayed.</span><span lang="fr" style="display: none">Si présent, les deux parties sont affichées.</span></span><br>
+        <span class="segments"><span lang="en">1 - Display a date using the long date format specified in your computer's regional settings.</span><span lang="fr" style="display: none">1 - Affiche une date en utilisant la date au format long spécifié dans les paramètres régionaux de votre ordinateur.</span></span><br>
+        <span class="segments"><span lang="en">2 - Display a date using the short date format specified in your computer's regional settings.</span><span lang="fr" style="display: none">2 - Affiche une date en utilisant la date au format court spécifié dans les paramètres régionaux de votre ordinateur.</span></span><br>
+        <span class="segments"><span lang="en">3 - Display a time using the time format specified in your computer's regional settings.</span><span lang="fr" style="display: none">3 - Affiche une heure en utilisant l'heure au format spécifié dans les paramètres régionaux de votre ordinateur.</span></span><br>
+        <span class="segments"><span lang="en">4 - Display a time using the 24-hour format (hh:mm).</span><span lang="fr" style="display: none">4 - Affiche une heure en utilisant le format 24 heures (hh:mm).</span></span><br>
+        <span class="segments"><span lang="en">5 - Display a time using the 24-hour format (hh:mm:ss).</span><span lang="fr" style="display: none">5 - Affiche une heure en utilisant le format 24 heures (hh:mm:ss).</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -45,21 +45,21 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">the date in proper format.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the date in proper format.</span><span lang="fr" style="display: none">la date dans le format approprié.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
-        <td>0 and set the @error flag to non-zero.</td>
+        <td><span class="segments"><span lang="en">0 and set the @error flag to non-zero.</span><span lang="fr" style="display: none">0 et met @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - Invalid $sDate<br>
-        2 - Invalid $sType</td>
+        <td><span class="segments"><span lang="en">1 - Invalid $sDate</span><span lang="fr" style="display: none">1 - $sDate non valide</span></span><br>
+        <span class="segments"><span lang="en">2 - Invalid $sType</span><span lang="fr" style="display: none">2 - $sType non valide</span></span></td>
       </tr>
     </tbody>
   </table>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p><span class="segments"><span lang="en">See <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> for other possible variations of the input date format.</span><span lang="fr" style="display: none">Voir <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> pour d'autres variations possibles du format de la date d'entrée.</span></span><br></p>
+  <p><span class="segments"><span lang="en">See <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> for other possible variations of the input date format.</span><span lang="fr" style="display: none">Voir <a href="_DateTimeSplit.htm">_DateTimeSplit()</a> pour d'autres variations possibles du format de la date à saisir.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_NowDate.htm">_NowDate</a>, <a href="_NowTime.htm">_NowTime</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -96,9 +96,9 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<span class="S1">; Show current date/time in the pc's format</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Pc Long format"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateTimeFormat.htm"><span class="S15">_DateTimeFormat</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">(),</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Pc Short format"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateTimeFormat.htm"><span class="S15">_DateTimeFormat</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">(),</span><span class="S0"> </span><span class="S3">2</span><span class="S8">))</span>
+<span class="S1">; <span><span class="segments"><span lang="en">Show current date/time in the pc's format</span><span lang="fr" style="display: none">Affiche la date/heure actuelle dans le format du PC</span></span></span></span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Pc Long format</span><span lang="fr" style="display: none">Format long du PC</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateTimeFormat.htm"><span class="S15">_DateTimeFormat</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">(),</span><span class="S0"> </span><span class="S3">1</span><span class="S8">))</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Pc Short format</span><span lang="fr" style="display: none">Format court du PC</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_DateTimeFormat.htm"><span class="S15">_DateTimeFormat</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../libfunctions/_NowCalc.htm"><span class="S15">_NowCalc</span></a><span class="S8">(),</span><span class="S0"> </span><span class="S3">2</span><span class="S8">))</span>
 </span>
 </pre>
       </div>
