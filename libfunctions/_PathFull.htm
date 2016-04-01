@@ -4,11 +4,11 @@
   <title>Fonction _PathFull</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
-  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
   <link href="../css/custom.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js">
   </script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
   </script>
   <script src="../js/custom.js">
   </script>
@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_PathFull</h1>
-  <p class="funcdesc">Creates a path based on the relative path you provide. The newly created absolute path is returned<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Creates a path based on the relative path you provide.</span><span lang="fr" style="display: none">Crée un chemin d'accès basé sur le chemin d'accès relatif que vous fournissez.</span></span> <span class="segments"><span lang="en">The newly created absolute path is returned</span><span lang="fr" style="display: none">Le chemin d'accès absolu nouvellement créé est retourné.</span></span><br></p>
   <p class="codeheader">#include &lt;File.au3&gt;<br>
   _PathFull ( $sRelativePath [, $sBasePath = @WorkingDir] )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,19 +25,19 @@
     <tbody>
       <tr>
         <td style="width:15%">$sRelativePath</td>
-        <td style="width:85%">The relative path to be created</td>
+        <td style="width:85%"><span class="segments"><span lang="en">The relative path to be created</span><span lang="fr" style="display: none">Le chemin d'accès relatif à être créé</span></span></td>
       </tr>
       <tr>
         <td>$sBasePath</td>
-        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The base path to be used. Default = @WorkingDir</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The base path to be used.</span><span lang="fr" style="display: none">Le chemin de base à utiliser.</span></span> Default = @WorkingDir</td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns a relative path will be built relative to $sBasePath. To bypass this behavior, use an absolute path.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns a relative path will be built relative to $sBasePath.</span><span lang="fr" style="display: none">Retourne un chemin d'accès relatif qui sera construit par rapport à $sBasePath.</span></span> <span class="segments"><span lang="en">To bypass this behavior, use an absolute path.</span><span lang="fr" style="display: none">Pour contourner ce comportement, utilisez un chemin d'accès absolu.</span></span><br>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>UNC paths are supported.<br>
-  Pass "\" to get the root drive of $sBasePath.<br>
-  <span class="segments"><span lang="en">Pass "" or "." to return $sBasePath.</span><span lang="fr" style="display: none">Pass "" or "."to return $sBasePath.</span></span><br></p>
+  <p><span class="segments"><span lang="en">UNC paths are supported.</span><span lang="fr" style="display: none">Les chemins UNC ne sont pas pris en charge.</span></span><br>
+  <span class="segments"><span lang="en">Pass "\" to get the root drive of $sBasePath.</span><span lang="fr" style="display: none">Utilisez "\" pour obtenir la racine du lecteur de $sBasePath.</span></span><br>
+  <span class="segments"><span lang="en">Pass "" or "." to return $sBasePath.</span><span lang="fr" style="display: none">Utilisez "" ou "." pour retourner $sBasePath.</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_PathMake.htm">_PathMake</a>, <a href="_PathSplit.htm">_PathSplit</a>, <a href="_WinAPI_GetFullPathName.htm">_WinAPI_GetFullPathName</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>

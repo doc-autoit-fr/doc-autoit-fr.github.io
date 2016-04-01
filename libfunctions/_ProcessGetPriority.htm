@@ -4,11 +4,11 @@
   <title>Fonction _ProcessGetPriority</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
-  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
   <link href="../css/custom.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js">
   </script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
   </script>
   <script src="../js/custom.js">
   </script>
@@ -91,7 +91,7 @@
 <a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">For</span></a><span class="S0"> </span><span class="S9">$i_ArrayItem</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S3">0</span><span class="S0"> </span><a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">To</span></a><span class="S0"> </span><span class="S3">2</span>
 <span class="S0">    </span><a class="codeSnippetLink" href="../functions/ProcessSetPriority.htm"><span class="S4">ProcessSetPriority</span></a><span class="S8">(</span><span class="S9">$i_Notepad_PID</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$a_RunLevels</span><span class="S8">[</span><span class="S9">$i_ArrayItem</span><span class="S8">])</span>
 <span class="S0">    </span><span class="S9">$i_Priority_Level</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_ProcessGetPriority.htm"><span class="S15">_ProcessGetPriority</span></a><span class="S8">(</span><span class="S9">$i_Notepad_PID</span><span class="S8">)</span>
-<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Notepad Priority"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Should be "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$a_RunLevels</span><span class="S8">[</span><span class="S9">$i_ArrayItem</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">": "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i_Priority_Level</span><span class="S8">)</span>
+<span class="S0">    </span><a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Notepad Priority"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Should be "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$a_RunLevels</span><span class="S8">[</span><span class="S9">$i_ArrayItem</span><span class="S8">]</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">:</span><span lang="fr" style="display: none">: </span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$i_Priority_Level</span><span class="S8">)</span>
 <a class="codeSnippetLink" href="../keywords/For.htm"><span class="S5">Next</span></a>
 <a class="codeSnippetLink" href="../functions/ProcessClose.htm"><span class="S4">ProcessClose</span></a><span class="S8">(</span><span class="S7">'notepad.exe'</span><span class="S8">)</span>
 </span>

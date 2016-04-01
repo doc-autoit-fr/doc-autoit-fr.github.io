@@ -4,11 +4,11 @@
   <title>Fonction _NowTime</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
-  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
   <link href="../css/custom.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js">
   </script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
   </script>
   <script src="../js/custom.js">
   </script>
@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_NowTime</h1>
-  <p class="funcdesc">Returns the current Time in the requested format<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Returns the current Time in the requested format</span><span lang="fr" style="display: none">Retourne l'heure actuelle dans le format demandé</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _NowTime ( [$sType = 3] )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -26,15 +26,15 @@
       <tr>
         <td style="width:15%">$sType</td>
         <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span><br>
-        &nbsp;&nbsp;&nbsp; 3 = (default) Display a time using the time format specified in your computer's regional settings.<br>
+        <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; 3 = (default) Display a time using the time format specified in your computer's regional settings.</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; 3 = (par défaut) Affiche une heure en utilisant le format d'heure spécifié dans les paramètres régionaux de l'ordinateur.</span></span><br>
         <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; 4 - Display a time using the 24-hour format (hh:mm).</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; 4 - Affiche une heure en utilisant le format 24 heures (hh:mm).</span></span><br>
         <span class="segments"><span lang="en">&nbsp;&nbsp;&nbsp; 5 - Display a time using the 24-hour format (hh:mm:ss).</span><span lang="fr" style="display: none">&nbsp;&nbsp;&nbsp; 5 - Affiche une heure en utilisant le format 24 heures (hh:mm:ss).</span></span></td>
       </tr>
     </tbody>
   </table>
-  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2>Returns the current TIME according to the time format used.<br>
+  <h2><span class="segments"><span lang="en">Return Value</span><span lang="fr" style="display: none">Valeur de retour</span></span></h2><span class="segments"><span lang="en">Returns the current TIME according to the time format used.</span><span lang="fr" style="display: none">Retourne l'heure actuelle selon le format d'heure utilisé.</span></span><br>
   <h2><span class="segments"><span lang="en">Remarks</span><span lang="fr" style="display: none">Remarques</span></span></h2>
-  <p>If your computer's regional settings is not accessible it returns the time in the "h:mm:ss tt" format.<br></p>
+  <p><span class="segments"><span lang="en">If your computer's regional settings is not accessible it returns the time in the "h:mm:ss tt" format.</span><span lang="fr" style="display: none">Si les paramètres régionaux de l'ordinateur ne sont pas accessibles, elle retourne l'heure dans le format «&nbsp;h:mm:ss tt&nbsp;».</span></span><br></p>
   <h2><span class="segments"><span lang="en">Related</span><span lang="fr" style="display: none">Liens</span></span></h2>
   <p><a href="_DateTimeFormat.htm">_DateTimeFormat</a>, <a href="_Now.htm">_Now</a>, <a href="_NowCalc.htm">_NowCalc</a>, <a href="_NowCalcDate.htm">_NowCalcDate</a>, <a href="_NowDate.htm">_NowDate</a></p>
   <h2 class="bottom"><span class="segments"><span lang="en">Example</span><span lang="fr" style="display: none">Exemple</span></span></h2>
@@ -71,7 +71,7 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"The time is:"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowTime.htm"><span class="S15">_NowTime</span></a><span class="S8">())</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">The time is:</span><span lang="fr" style="display: none">L'heure est :</span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_NowTime.htm"><span class="S15">_NowTime</span></a><span class="S8">())</span>
 </span>
 </pre>
       </div>

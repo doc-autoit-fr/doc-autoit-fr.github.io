@@ -4,11 +4,11 @@
   <title>Fonction _WeekNumberISO</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
-  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
   <link href="../css/custom.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js">
   </script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
   </script>
   <script src="../js/custom.js">
   </script>
@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_WeekNumberISO</h1>
-  <p class="funcdesc">Calculate the weeknumber of a given date<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Calculate the weeknumber of a given date</span><span lang="fr" style="display: none">Calcule le numéro de semaine pour une date donnée</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _WeekNumberISO ( [$iYear = @YEAR [, $iMonth = @MON [, $iDay = @MDAY]]] )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,15 +25,15 @@
     <tbody>
       <tr>
         <td style="width:15%">$iYear</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Year value (default = current year)</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Year value (default = current year)</span><span lang="fr" style="display: none">Valeur de l'année (par défaut = année actuelle)</span></span></td>
       </tr>
       <tr>
         <td>$iMonth</td>
-        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Month value (default = current month)</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Month value (default = current month)</span><span lang="fr" style="display: none">Valeur du mois (par défaut = mois actuel)</span></span></td>
       </tr>
       <tr>
         <td>$iDay</td>
-        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> Day value (default = current day)</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">Day value (default = current day)</span><span lang="fr" style="display: none">Valeur du jour (par défaut = jour actuel)</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -42,16 +42,16 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">a week number of given date.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">a week number of given date.</span><span lang="fr" style="display: none">un numéro de semaine pour une date donnée.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - faulty parameters values<br>
-        99 - On non-acceptable weekstart value</td>
+        <td><span class="segments"><span lang="en">1 - faulty parameters values</span><span lang="fr" style="display: none">1 - valeurs des paramètres non valides</span></span><br>
+        <span class="segments"><span lang="en">99 - On non-acceptable weekstart value</span><span lang="fr" style="display: none">99 - valeur pour le début de semaine non acceptable</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -89,7 +89,7 @@
         <pre><span><a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;Date.au3&gt;</span>
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Todays weeknumber"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"Todays weeknumber is "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WeekNumberISO.htm"><span class="S15">_WeekNumberISO</span></a><span class="S8">())</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Todays weeknumber</span><span lang="fr" style="display: none">Numéro de semaine pour aujourdhui</span></span></span>"</span><span class="S8">,</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">Todays weeknumber is</span><span lang="fr" style="display: none">Le numéro de semaine pour aujourdhui est</span></span></span> "</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_WeekNumberISO.htm"><span class="S15">_WeekNumberISO</span></a><span class="S8">())</span>
 </span>
 </pre>
       </div>

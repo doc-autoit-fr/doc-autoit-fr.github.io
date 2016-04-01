@@ -4,11 +4,11 @@
   <title>Fonction _TimeToTicks</title>
   <meta charset="UTF-8">
   <link href="../css/default.css" rel="stylesheet">
-  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
   <link href="../css/custom.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.12.0.min.js">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js">
   </script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js">
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js">
   </script>
   <script src="../js/custom.js">
   </script>
@@ -17,7 +17,7 @@
   <h1 class="small"><span class="segments"><span lang="en">Function Reference</span><span lang="fr" style="display: none">Référence UDF</span></span></h1>
   <hr style="height:0px">
   <h1>_TimeToTicks</h1>
-  <p class="funcdesc">Converts the specified hours, minutes, and seconds to ticks<br></p>
+  <p class="funcdesc"><span class="segments"><span lang="en">Converts the specified hours, minutes, and seconds to ticks</span><span lang="fr" style="display: none">Convertit les heures, minutes et secondes spécifiées en cycles</span></span><br></p>
   <p class="codeheader">#include &lt;Date.au3&gt;<br>
   _TimeToTicks ( [$iHours = @HOUR [, $iMins = @MIN [, $iSecs = @SEC]]] )<br></p>
   <h2><span class="segments"><span lang="en">Parameters</span><span lang="fr" style="display: none">Paramètres</span></span></h2>
@@ -25,15 +25,15 @@
     <tbody>
       <tr>
         <td style="width:15%">$iHours</td>
-        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The hours.</td>
+        <td style="width:85%"><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The hours.</span><span lang="fr" style="display: none">Les heures.</span></span></td>
       </tr>
       <tr>
         <td>$iMins</td>
-        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The minutes.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The minutes.</span><span lang="fr" style="display: none">Les minutes.</span></span></td>
       </tr>
       <tr>
         <td>$iSecs</td>
-        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> The seconds.</td>
+        <td><span class="segments"><span lang="en"><strong><span class="segments"><span lang="en">[optional]</span><span lang="fr" style="display: none">[optionnel]</span></span></strong></span><span lang="fr" style="display: none"><strong>[optionnel]</strong></span></span> <span class="segments"><span lang="en">The seconds.</span><span lang="fr" style="display: none">Les secondes.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -42,15 +42,15 @@
     <tbody>
       <tr>
         <td class="valign-top" style="width:10%"><span class="segments"><span lang="en">Success:</span><span lang="fr" style="display: none">Succès&nbsp;:</span></span></td>
-        <td style="width:90%">the number of ticks.</td>
+        <td style="width:90%"><span class="segments"><span lang="en">the number of ticks.</span><span lang="fr" style="display: none">le nombre de cycles.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">Failure:</span><span lang="fr" style="display: none">Échec&nbsp;:</span></span></td>
-        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">Retourne 0 et @error &lt;&gt; 0.</span></span></td>
+        <td><span class="segments"><span lang="en">0 and sets the @error flag to non-zero.</span><span lang="fr" style="display: none">0 et @error &lt;&gt; 0.</span></span></td>
       </tr>
       <tr>
         <td class="valign-top"><span class="segments"><span lang="en">@error:</span><span lang="fr" style="display: none">@error&nbsp;:</span></span></td>
-        <td>1 - The specified hours, minutes, or seconds are not valid.</td>
+        <td><span class="segments"><span lang="en">1 - The specified hours, minutes, or seconds are not valid.</span><span lang="fr" style="display: none">1 - Les heures, minutes ou secondes spécifiées ne sont pas valides.</span></span></td>
       </tr>
     </tbody>
   </table>
@@ -91,12 +91,12 @@
 <a class="codeSnippetLink" href="../keywords/include.htm"><span class="S11">#include</span></a><span class="S0"> </span><span class="S7">&lt;MsgBoxConstants.au3&gt;</span>
 
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iSec</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iMin</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iHour</span>
-<span class="S1">; calculate with time</span>
+<span class="S1">; <span><span class="segments"><span lang="en">calculate with time</span><span lang="fr" style="display: none">calcule avec l'heure</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iStartTicks</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><a class="codeSnippetLink" href="../libfunctions/_TimeToTicks.htm"><span class="S15">_TimeToTicks</span></a><span class="S8">(</span><a class="codeSnippetLink" href="../macros.htm#@HOUR"><span class="S6">@HOUR</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@MIN"><span class="S6">@MIN</span></a><span class="S8">,</span><span class="S0"> </span><a class="codeSnippetLink" href="../macros.htm#@SEC"><span class="S6">@SEC</span></a><span class="S8">)</span>
-<span class="S1">; calculate 45 minutes later</span>
+<span class="S1">; <span><span class="segments"><span lang="en">calculate 45 minutes later</span><span lang="fr" style="display: none">calcule avec 45 minutes en plus</span></span></span></span>
 <a class="codeSnippetLink" href="../keywords/Dim.htm"><span class="S5">Local</span></a><span class="S0"> </span><span class="S9">$iEndTicks</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">=</span></a><span class="S0"> </span><span class="S9">$iStartTicks</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">+</span></a><span class="S0"> </span><span class="S3">45</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">*</span></a><span class="S0"> </span><span class="S3">60</span><span class="S0"> </span><a class="codeSnippetLink" href="../intro/lang_operators.htm"><span class="S8">*</span></a><span class="S0"> </span><span class="S3">1000</span>
 <a class="codeSnippetLink" href="../libfunctions/_TicksToTime.htm"><span class="S15">_TicksToTime</span></a><span class="S8">(</span><span class="S9">$iEndTicks</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iHour</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iMin</span><span class="S8">,</span><span class="S0"> </span><span class="S9">$iSec</span><span class="S8">)</span>
-<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'New Time:'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iHour</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">":"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iMin</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">":"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iSec</span><span class="S8">)</span>
+<a class="codeSnippetLink" href="../functions/MsgBox.htm"><span class="S4">MsgBox</span></a><span class="S8">(</span><span class="S9">$MB_SYSTEMMODAL</span><span class="S8">,</span><span class="S0"> </span><span class="S7">''</span><span class="S8">,</span><span class="S0"> </span><span class="S7">'<span><span class="segments"><span lang="en">New Time:</span><span lang="fr" style="display: none">Nouvelle heure :</span></span></span>'</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iHour</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">:</span><span lang="fr" style="display: none">: </span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iMin</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S7">"<span><span class="segments"><span lang="en">:</span><span lang="fr" style="display: none">: </span></span></span>"</span><span class="S0"> </span><span class="S8">&</span><span class="S0"> </span><span class="S9">$iSec</span><span class="S8">)</span>
 </span>
 </pre>
       </div>
